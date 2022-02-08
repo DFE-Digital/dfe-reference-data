@@ -1,0 +1,19 @@
+Naming/MethodParameterName:
+  AllowedNames:
+    - e
+    - to
+
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: true
+  Exclude:
+    - app/models/teacher_training_public_api/sync_check.rb
+    - app/controllers/candidate_interface/candidate_interface_controller.rb
+
+Naming/VariableNumber:
+  Enabled: false
+
+Naming/InclusiveLanguage:
+  CheckStrings: true

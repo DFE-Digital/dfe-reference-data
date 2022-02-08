@@ -1,0 +1,102 @@
+require: rubocop-rails
+
+Rails/BulkChangeTable:
+  Enabled: false
+
+# We do not want to subclass from ApplicationController. This enables separation
+# between the namespaces, and allows subclassing from ActionController::API in
+# the Vendor API.
+Rails/ApplicationController:
+  Enabled: false
+
+# Rails does not actually allow "dynamic find_by", so this cop yields false positives
+# like `VendorApiToken.find_by_unhashed_token` (which we implement ourselves)
+Rails/DynamicFindBy:
+  Enabled: true
+  Whitelist: [find_by_unhashed_token]
+  AllowedReceivers: ['Hesa::Institution', 'Hesa::Subject', 'Hesa::SubjectCode',
+                      'Hesa::DegreeType', 'Hesa::Grade', 'described_class']
+
+# Not all rake tasks need :environment
+Rails/RakeEnvironment:
+  Enabled: false
+
+# This cop demands a default value for not-null columns, which is not possible
+# when dealing with references
+Rails/NotNullColumn:
+  Enabled: false
+
+Rails/Output:
+  Exclude:
+    - config/initializers/console.rb
+
+Rails/SkipsModelValidations:
+  Enabled: false
+
+Rails/OutputSafety:
+  Enabled: false
+
+Rails/HasManyOrHasOneDependent:
+  Enabled: false
+
+Rails/InverseOf:
+  Enabled: false
+
+Rails/ActiveRecordCallbacksOrder:
+  Enabled: true
+
+Rails/AfterCommitOverride:
+  Enabled: true
+
+Rails/FindById:
+  Enabled: true
+
+Rails/Inquiry:
+  Enabled: true
+
+Rails/MailerName:
+  Enabled: true
+
+Rails/Pluck:
+  Enabled: false
+
+Rails/PluckInWhere:
+  Enabled: true
+
+Rails/RenderInline:
+  Enabled: true
+
+Rails/RenderPlainText:
+  Enabled: true
+
+Rails/ShortI18n:
+  Enabled: true
+
+Rails/SquishedSQLHeredocs:
+  Enabled: false
+
+Rails/WhereExists:
+  Enabled: true
+
+Rails/WhereNot:
+  Enabled: true
+
+Rails/EnvironmentVariableAccess:
+  Enabled: false
+
+Rails/WhereEquals:
+  Enabled: true
+
+Rails/ReversibleMigration:
+  Exclude:
+    - 'db/migrate/20190723150542_change_date_of_birth_from_datetime_to_date.rb'
+    - 'db/migrate/20191002113859_convert_status_enum_to_string.rb'
+    - 'db/migrate/20191010134807_convert_application_choice_id_to_string.rb'
+    - 'db/migrate/20191017113254_alter_application_choices_to_reference_course_options.rb'
+    - 'db/migrate/20191022131332_create_id_on_application_choices.rb'
+    - 'db/migrate/20191121134801_change_default_for_open_on_apply.rb'
+    - 'db/migrate/20191223084849_change_indexes_for_provider_users.rb'
+    - 'db/migrate/20200623101243_change_structured_rejection_reasons_column_type.rb'
+    - 'db/migrate/20200903170404_drop_application_forms_recruitment_cycle_year_default.rb'
+    - 'db/migrate/20201111112518_change_application_choices_structured_rejection_reasons_column_type.rb'
+    - 'db/migrate/20210330105355_change_qualifications_hesa_codes_to_strings.rb'

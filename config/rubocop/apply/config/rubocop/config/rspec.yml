@@ -1,0 +1,61 @@
+require: rubocop-rspec
+
+RSpec/NestedGroups:
+  Enabled: true
+  Max: 4
+  Exclude:
+    - 'spec/forms/provider_interface/offer_wizard_spec.rb'
+
+RSpec/ExampleLength:
+  Enabled: false
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/ContextWording:
+  Enabled: false
+
+# we have a property called "subject" in some factories
+RSpec/EmptyLineAfterSubject:
+  Exclude:
+    - 'spec/factories/*.rb'
+
+RSpec/LetSetup:
+  Enabled: false
+
+# This cop wants us to use `expect().to change(Candidate, :count)` instead
+# of `expect().to change { Candidate.count }`, which does not seem better.
+RSpec/ExpectChange:
+  Enabled: false
+
+RSpec/LeadingSubject:
+  Enabled: false
+
+# In acceptance tests it's often handy to user instance variables to keep track of state
+RSpec/InstanceVariable:
+  Enabled: false
+
+RSpec/PredicateMatcher:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Enabled: false
+
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
+RSpec/StubbedMock:
+  Enabled: true
+
+RSpec/Capybara/FeatureMethods:
+  EnabledMethods:
+    - feature
+    - scenario
+
+RSpec/FactoryBot/CreateList:
+  Exclude:
+    - 'spec/services/generate_test_applications_for_provider_spec.rb'
+
+RSpec/FilePath:
+  Exclude:
+    - 'spec/presenters/vendor_api/**/*'

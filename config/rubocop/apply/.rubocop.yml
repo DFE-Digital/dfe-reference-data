@@ -1,0 +1,66 @@
+inherit_from:
+  - .rubocop_todo.yml
+  - ./config/rubocop/config/rspec.yml
+  - ./config/rubocop/config/rails.yml
+  - ./config/rubocop/config/rake.yml
+  - ./config/rubocop/config/style.yml
+  - ./config/rubocop/config/layout.yml
+  - ./config/rubocop/config/lint.yml
+  - ./config/rubocop/config/metrics.yml
+  - ./config/rubocop/config/naming.yml
+
+require:
+  - ./lib/rubocop/cop/govuk/govuk_button_to.rb
+  - ./lib/rubocop/cop/govuk/govuk_link_to.rb
+  - ./lib/rubocop/cop/govuk/govuk_submit.rb
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/*'
+    - 'db/schema.rb'
+    - 'node_modules/**/*'
+    - 'config/application.rb'
+    - 'config/puma.rb'
+    - 'config/environments/*'
+    - 'config/initializers/nationalities.rb'
+    - 'features/support/env.rb'
+    - 'vendor/**/*'
+    - 'jmeter/**/*'
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Style/OptionalBooleanParameter:
+  Exclude:
+    - 'app/workers/**/*'
+
+# These files call RequestLocals.fetch. Unlike Hash#fetch it requires the
+# fallback to be passed in a block
+Style/RedundantFetchBlock:
+  Exclude:
+    - 'app/controllers/concerns/emit_request_events.rb'
+    - 'app/models/concerns/entity_events.rb'
+
+Govuk:
+  Include:
+    - 'app/views/**/*'
+    - 'app/components/**/*'
+
+Govuk/GovukLinkTo:
+  Exclude:
+    # link_to in components that use their own link classes
+    - 'app/components/utility/header_component.html.erb'
+    - 'app/components/support_interface/tile_component.html.erb'
+    # link_to in filter component
+    - 'app/components/utility/filter_component.html.erb'
+    # link_to in manual error summaries
+    - 'app/views/candidate_interface/references/review/show.html.erb'
+    - 'app/views/candidate_interface/unsubmitted_application_form/review.html.erb'
+    # link_to in footers
+    - 'app/views/layouts/_footer.html'
+    - 'app/views/layouts/_footer_meta_candidate.html.erb'
+    - 'app/views/layouts/_footer_meta_provider.html.erb'
+    # link_to for kaminari pagination links
+    - 'app/views/kaminari/_next_page.html.erb'
+    - 'app/views/kaminari/_prev_page.html.erb'

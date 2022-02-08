@@ -1,0 +1,34 @@
+Lint/AmbiguousBlockAssociation:
+  Exclude:
+    - 'spec/support/slack_notifications.rb'
+    - 'spec/requests/vendor_api/api_authentication_spec.rb'
+
+Lint/DeprecatedOpenSSLConstant:
+  Enabled: true
+
+Lint/MixedRegexpCaptureTypes:
+  Enabled: true
+
+Lint/RaiseException:
+  Enabled: true
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Lint/EmptyFile:
+  Enabled: true
+
+Lint/MissingSuper:
+  Enabled: false
+
+Lint/ConstantDefinitionInBlock:
+  Enabled: true
+
+Lint/SymbolConversion:
+  Enabled: true
+
+Lint/DuplicateBranch:
+  Enabled: true
+
+Lint/EmptyBlock:
+  Enabled: true
