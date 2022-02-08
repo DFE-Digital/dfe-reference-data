@@ -1,22 +1,20 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
 
 require 'dfe_reference_data'
 require 'json'
 
 env = Kernel.binding
 
-if ARGV.length < 1
-  puts "USAGE: export_reference_json <require-name>... <list-expression>"
+if ARGV.empty?
+  puts 'USAGE: export_reference_json <require-name>... <list-expression>'
+else
+  list_expression = ARGV[-1]
+  require_names = ARGV[0..-2]
+
+  require_names.each_entry do |name|
+    env.eval("require '#{name}'")
+  end
+
+  puts JSON.generate(env.eval(list_expression))
 end
-
-list_expression = ARGV[-1]
-require_names = ARGV[0..-2]
-
-puts require_names.join(" ")
-puts list_expression
-
-require_names.each_entry {| name |
-                           env.eval("require '" + name + "'")
-                         }
-
-puts JSON.generate(env.eval(list_expression))

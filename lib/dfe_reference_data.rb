@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 ##
 #
 # A +ReferenceList+ is the core interface to a reference list (the clue's in the
@@ -13,7 +15,7 @@ class ReferenceList
   # must have a field called +id+ that is a unique primary key for that list -
   # eg, no other record has the same +id+.
 
-  def get_all
+  def all
     raise NotImplementedError
   end
 
@@ -21,7 +23,7 @@ class ReferenceList
   # Get all the records in the list, as a hash of hashes. The top-level hash
   # maps an ID to the record with that ID.
 
-  def get_all_as_hash
+  def all_as_hash
     raise NotImplementedError
   end
 
@@ -29,7 +31,7 @@ class ReferenceList
   # Get a single record from the list, given the value of its +id+ field. The
   # record is returned as a hash mapping field name symbols to values. If there
   # is no record with that +id+, returns +nil+.
-  def get_one(id)
+  def one(id)
     raise NotImplementedError
   end
 
@@ -44,23 +46,23 @@ class ReferenceList
   #
   # The records are returned as an array of hashes, one per record, mapping
   # field name symbols to whatever values that field has in that record.
-  def get_some(filter)
-    all = get_all
-    if filter == nil
-      all
+  def some(filter)
+    all_records = all
+    if filter.nil?
+      all_records
     else
-      all.find_all{ |x|
-        filter.all? { |field, value|
+      all_records.find_all do |x|
+        filter.all? do |field, value|
           x[field] == value
-        }
-      }
+        end
+      end
     end
   end
 
   ##
   # Get all records in the list matching the specified +filter+, organised by +field+.
   #
-  # See the #get_some method for details of how +filter+ works, including
+  # See the #some method for details of how +filter+ works, including
   # specifying +nil+ to get all records.
   #
   # The result is returned as a hash mapping values of +field+ found in the
@@ -70,18 +72,16 @@ class ReferenceList
   #
   # The returned records are represented as hashes mapping field names to
   # whatever values those fields have for that record.
-  def get_some_by_field(field, filter = nil)
-    records = get_some(filter)
-    result = Hash.new
-    records.each_entry {|record|
-      if record.has_key? field
-        field_value = record[field]
-        if not result.has_key? field_value
-          result[field_value] = []
-        end
-        result[field_value].push(record)
-      end
-    }
+  def some_by_field(field, filter = nil)
+    records = some(filter)
+    result = {}
+    records.each_entry do |record|
+      next unless record.key? field
+
+      field_value = record[field]
+      result[field_value] = [] unless result.key? field_value
+      result[field_value].push(record)
+    end
 
     result
   end
@@ -99,21 +99,21 @@ class HardcodedReferenceList < ReferenceList
   # automatically.
 
   def initialize(data)
-    @data = Hash.new()
-    data.each_entry { |id, record|
-      @data[id] = record.merge({:id => id})
-    }
+    @data = {}
+    data.each_entry do |id, record|
+      @data[id] = record.merge({ id: id })
+    end
   end
 
-  def get_all
+  def all
     @data.values
   end
 
-  def get_all_as_hash
+  def all_as_hash
     @data
   end
 
-  def get_one(id)
+  def one(id)
     @data[id]
   end
 end
@@ -126,7 +126,6 @@ end
 # existing records, or hide some records.
 
 class TweakedReferenceList < ReferenceList
-
   ##
   # +TweakedReferenceList+ constructor. +base+ must be a +ReferenceList+;
   # +overrides+ must be a hash mapping IDs to either hashes of fields or
@@ -142,43 +141,43 @@ class TweakedReferenceList < ReferenceList
     @base = base
     @overrides = overrides
 
-    @overridden_all = base.get_all_as_hash.clone
+    @overridden_all = base.all_as_hash.clone
 
-    overrides.each_entry{ |id, record|
-      if record == nil
+    overrides.each_entry do |id, record|
+      if record.nil?
         @overridden_all.delete(id)
-      elsif @overridden_all.has_key? id
+      elsif @overridden_all.key? id
         old_record = @overridden_all[id]
         @overridden_all[id] = old_record.merge(record)
       else
-        @overridden_all[id] = record.merge({:id => id})
+        @overridden_all[id] = record.merge({ id: id })
       end
-    }
+    end
   end
 
-  def get_all
+  def all
     @overridden_all.values
   end
 
-  def get_all_as_hash
+  def all_as_hash
     @overridden_all
   end
 
-  def get_one(id)
-    if @overrides.has_key?(id)
+  def one(id)
+    if @overrides.key?(id)
       override = @overrides[id]
-      if override == nil # Hidden record
-        return nil
+      if override.nil? # Hidden record
+        nil
       else
-        old_record = @base.get_one(id)
-        if old_record == nil # Added record
-          return override.merge({:id => id})
+        old_record = @base.one(id)
+        if old_record.nil? # Added record
+          override.merge({ id: id })
         else # Modified record
-          return old_record.merge(override)
+          old_record.merge(override)
         end
       end
     else # Un-overridden record
-      return @base.get_one(id)
+      @base.one(id)
     end
   end
 end
@@ -194,33 +193,33 @@ class JoinedReferenceList < ReferenceList
     @lists = lists
   end
 
-  def get_all
-    all = Array.new()
-    @lists.each_entry { |list|
-      all = all + list.get_all
-    }
+  def all
+    all = []
+    @lists.each_entry do |list|
+      all += list.all
+    end
     all
   end
 
-  def get_all_as_hash
-    all = Hash.new()
-    @lists.each_entry { |list|
-      all.merge(list.get_all_as_hash)
-    }
+  def all_as_hash
+    all = {}
+    @lists.each_entry do |list|
+      all.merge(list.all_as_hash)
+    end
     all
   end
 
-  def get_one(id)
+  def one(id)
     final_result = nil
-    @lists.find { |list|
-      result = list.get_one(id)
-      if result != nil
+    @lists.find do |list|
+      result = list.one(id)
+      if !result.nil?
         final_result = result
         true
       else
         false
       end
-    }
+    end
     final_result
   end
 end
