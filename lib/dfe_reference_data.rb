@@ -215,11 +215,11 @@ class JoinedReferenceList < ReferenceList
     final_result = nil
     @lists.find do |list|
       result = list.one(id)
-      if !result.nil?
+      if result.nil?
+        false
+      else
         final_result = result
         true
-      else
-        false
       end
     end
     final_result
