@@ -1,17 +1,10 @@
-# frozen_string_literal: true
+require "bundler/gem_tasks"
+require "rspec/core/rake_task"
 
-task :test do
-  sh 'rspec'
-end
+RSpec::Core::RakeTask.new(:spec)
+
+task default: :spec
 
 task :rubocop do
-  sh 'rubocop'
-end
-
-task :build do
-  sh 'gem build dfe_reference_data.gemspec'
-end
-
-task install: [:build] do
-  sh 'gem install dfe_reference_data-0.0.0.gem'
+  sh 'bundle exec rubocop'
 end

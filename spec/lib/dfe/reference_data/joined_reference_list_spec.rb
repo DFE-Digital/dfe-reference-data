@@ -1,23 +1,19 @@
-# frozen_string_literal: true
-
-require 'dfe_reference_data'
-
-RSpec.describe JoinedReferenceList do
-  hrl1 = HardcodedReferenceList.new(
+RSpec.describe DfE::ReferenceData::JoinedReferenceList do
+  hrl1 = DfE::ReferenceData::HardcodedReferenceList.new(
     {
       '1' => { name: 'Alaric', child: false },
       '2' => { name: 'Sarah', child: false }
     }
   )
 
-  hrl2 = HardcodedReferenceList.new(
+  hrl2 = DfE::ReferenceData::HardcodedReferenceList.new(
     {
       '3' => { name: 'Jean', child: true },
       '4' => { name: 'Mary', child: true }
     }
   )
 
-  jrl = JoinedReferenceList.new([hrl1, hrl2])
+  jrl = DfE::ReferenceData::JoinedReferenceList.new([hrl1, hrl2])
 
   # NB: These particular tests also make a potentially fragile assumption that
   # the implementation of some preserves the order of entries, it would be
@@ -34,6 +30,6 @@ RSpec.describe JoinedReferenceList do
 
     expect(jrl.one('1')).to eq({ id: '1', name: 'Alaric', child: false })
     expect(jrl.one('3')).to eq({ id: '3', name: 'Jean', child: true })
-    expect(jrl.one('nonexistant')).to eq(nil)
+    expect(jrl.one('nonexistent')).to eq(nil)
   end
 end

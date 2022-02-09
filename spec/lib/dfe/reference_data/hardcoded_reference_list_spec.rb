@@ -1,9 +1,5 @@
-# frozen_string_literal: true
-
-require 'dfe_reference_data'
-
-RSpec.describe HardcodedReferenceList do
-  hrl = HardcodedReferenceList.new(
+RSpec.describe DfE::ReferenceData::HardcodedReferenceList do
+  hrl = DfE::ReferenceData::HardcodedReferenceList.new(
     {
       '1' => { name: 'Alaric', child: false },
       '2' => { name: 'Sarah', child: false },
