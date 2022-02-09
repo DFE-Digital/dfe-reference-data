@@ -72,6 +72,14 @@ class ReferenceList
   #
   # The returned records are represented as hashes mapping field names to
   # whatever values those fields have for that record.
+  #
+  # As a future extension, we could support passing in a list of fields to
+  # create a multi-level hash grouping records by a combination of fields, eg
+  # +some_by_field([:a,:b])+ produces a hash with each value of +a+ as keys, and
+  # values containing hashes mapping each value of +b+ found in records with
+  # that particular value for +a+, to actual records with those values for +a+
+  # and +b+. Like an SQL GROUP BY with multiple column names.
+
   def some_by_field(field, filter = nil)
     records = some(filter)
     result = {}

@@ -1,8 +1,23 @@
 # frozen_string_literal: true
 
-require 'dfe_reference_data'
+module ReferenceDataDemo
+  require 'dfe_reference_data'
 
-periodicTableReferenceList = HardcodedReferenceList.new(
+  HELLO_WORLD = HardcodedReferenceList.new(
+    {
+      "en" => { text: "Hello World" },
+      "fr" => { text: "Bounjour monde" },
+      "jbo" => { text: "coi rodo" }
+    }
+  )
+
+  FICTIONAL_GREETINGS = HardcodedReferenceList.new(
+    {
+      "dalek" => { text: "OBEY! OBEY OR BE EXTERMINATED!" }
+    }
+  )
+
+  ELEMENTS = HardcodedReferenceList.new(
   {
     'H' => { atomic_number: 1, name: 'Hydrogen', atomic_mass: 1.007, number_of_neutrons: 0,
              number_of_protons: 1, number_of_electrons: 1, period: 1, group: 1, phase: 'gas',
@@ -832,3 +847,5 @@ periodicTableReferenceList = HardcodedReferenceList.new(
               specific_heat: nil, number_of_shells: 7, valence: 8 }
   }
 )
+
+end
