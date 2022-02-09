@@ -3,10 +3,6 @@
 ##
 #
 # Some demo data, for use in examples and for experimenting with the system. Do not use in production!
-#
-# OWNER: None
-#
-# USERS: None
 module ReferenceDataDemo
   require 'dfe_reference_data'
 
