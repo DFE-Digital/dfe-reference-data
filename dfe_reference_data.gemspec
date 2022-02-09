@@ -2,7 +2,7 @@
 
 require 'English'
 Gem::Specification.new do |s|
-  s.required_ruby_version = '3.0.0'
+  s.required_ruby_version = '>= 3.0.0'
   s.name          = 'dfe_reference_data'
   s.version       = '0.0.0'
   s.summary       = 'Reference data for Department for Education service implementation'
