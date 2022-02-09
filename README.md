@@ -191,11 +191,13 @@ Users: None.
 
 #### `ReferenceDataDemo::ELEMENTS`
 
-The chemical elements, with related data.
+The chemical elements, with related data. Probably inaccurate. Units unknown.
 
 Owner: None.
 
 Users: None.
+
+Source: Public domain CSV file I had kicking around from a previous project.
 
 | Field | Type | Purpose |
 |---|---|---|
@@ -241,7 +243,7 @@ New reference lists should be included in this gem, in subdirectories of `lib` l
 In order to keep the latency/effort of updates low, I propose the following workflow:
 
 1. If you want to add a new reference list, please first talk to other people who might be interested or have the same data, in order to avoid duplication of effort and to co-ordinate sharing the list going forward.
-2. Decide who the *owner* of this list will be - the team or teams responsible for keeping it up to date; the closest to the "source" of the data we have. Document this, along with the structure of the reference list, in this file as shown above.
+2. Decide who the *owner* of this list will be - the team or teams responsible for keeping it up to date; the closest to the "source" of the data we have. Document this, along with the structure of the reference list, in this file as shown above. If the data comes from an external source, document that too.
 3. The owner of a list may update it at will, without needing pull-request review from anyone.
 4. If you want to update/extend a list you don't "own", please first talk to the owner to co-ordinate your changes, then create a pull request for them to approve.
 5. In the event of any change, make sure your commit message includes any deadlines for this data being published for production use, and tell the Data Infrastructure Team so they can schedule a new release of the gem in a suitable timeframe.
@@ -250,7 +252,7 @@ However, sometimes, storing lists in this gem will be impractical:
 
 1. For data that are too large or numerous to bundle into *every* service, it might be worth storing it in a separate gem, included only into the services that need it. It will still be version-controlled and almost as easy to access, but there's now two dependencies to keep track of.
 
-2. For data that need to be updated in something closer to real time, releasing a new version of a gem might be too unwieldy a mechanism to deploy changes. Please contact the Data Infrastructure Team to discuss this - we have some ideas for solutions to this, but don't want to run off implementing them until we have some concrete instances of the problem to look at. (Spoiler: Maybe some kind of central repository (BigQuery?) that can be updated in near-real-time, combined with a +ReferenceList+ subclass that manages a local cache of an external list in a service's PostgreSQL database for fast lookups?).
+2. For data that need to be updated in something closer to real time, releasing a new version of a gem might be too unwieldy a mechanism to deploy changes. Please contact the Data Infrastructure Team to discuss this - we have some ideas for solutions to this, but don't want to run off implementing them until we have some concrete instances of the problem to look at. (Spoiler: Maybe some kind of central repository (BigQuery?) that can be updated in near-real-time, combined with a `ReferenceList` subclass that manages a local cache of an external list in a service's PostgreSQL database for fast lookups?).
 
 ### What kind of data are suitable for treating as reference lists?
 
