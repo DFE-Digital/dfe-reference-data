@@ -5,7 +5,6 @@
 # A +ReferenceList+ is the core interface to a reference list (the clue's in the
 # name, right?); this class is abstract, defining various utility methods that
 # subclasses are likely to be able to re-use the implementations of.
-
 class ReferenceList
   # Abstract methods, override these please
 
@@ -14,7 +13,6 @@ class ReferenceList
   # name symbols to whatever values that field has in that record; every record
   # must have a field called +id+ that is a unique primary key for that list -
   # eg, no other record has the same +id+.
-
   def all
     raise NotImplementedError
   end
@@ -22,7 +20,6 @@ class ReferenceList
   ##
   # Get all the records in the list, as a hash of hashes. The top-level hash
   # maps an ID to the record with that ID.
-
   def all_as_hash
     raise NotImplementedError
   end
@@ -79,7 +76,6 @@ class ReferenceList
   # values containing hashes mapping each value of +b+ found in records with
   # that particular value for +a+, to actual records with those values for +a+
   # and +b+. Like an SQL GROUP BY with multiple column names.
-
   def some_by_field(field, filter = nil)
     records = some(filter)
     result = {}
@@ -99,14 +95,13 @@ end
 #
 # A +HardcodedReferenceList+ is an implementation of +ReferenceList+ that uses a
 # hardcoded hash as the data source.
-
 class HardcodedReferenceList < ReferenceList
   ##
   # +HardcodedReferenceList+ constructor. +data+ is a hash from IDs to records;
   # the records do not need to contain an +id+ field as those are provided
   # automatically.
-
   def initialize(data)
+    super
     @data = {}
     data.each_entry do |id, record|
       @data[id] = record.merge({ id: id })
@@ -132,7 +127,6 @@ end
 # some local "tweaks" - overrides to the underlying list that either add new
 # records, add new fields to existing records, overwrite existing fields in
 # existing records, or hide some records.
-
 class TweakedReferenceList < ReferenceList
   ##
   # +TweakedReferenceList+ constructor. +base+ must be a +ReferenceList+;
@@ -144,8 +138,8 @@ class TweakedReferenceList < ReferenceList
   #
   # The base list is not modified - this merely wraps it to create a new
   # reference list with some "tweaks" applied.+
-
   def initialize(base, overrides)
+    super
     @base = base
     @overrides = overrides
 
@@ -195,9 +189,9 @@ end
 # A +JoinedReferenceList+ is a wrapper around one or more +ReferenceList+s with
 # disjoint (non-overlapping) ID ranges, which joins them all together into one
 # big one.
-
 class JoinedReferenceList < ReferenceList
   def initialize(lists)
+    super
     @lists = lists
   end
 

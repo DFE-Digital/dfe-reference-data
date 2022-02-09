@@ -17,7 +17,7 @@ tool is provided to enable the latter to be done as part of a build process.
 
 ### Data access
 
-```
+```ruby
 require 'dfe_reference_data'
 require 'dfe_reference_data/demo'
 
@@ -80,7 +80,7 @@ ReferenceDataDemo::ELEMENTS.some_by_field(:phase,{:nonmetal => true})
 
 Sometimes you may need to apply some local modifications to a reference list. Here's how this is done:
 
-```
+```ruby
 require 'dfe_reference_data'
 require 'dfe_reference_data/demo'
 
@@ -103,7 +103,7 @@ my_translations.all
 
 Some reference lists will be presented in sections, as different "subsets" will be needed in different applications. In this case, they can be assembled together into a single list for your application, like so:
 
-```
+```ruby
 require 'dfe_reference_data'
 require 'dfe_reference_data/demo'
 
@@ -131,7 +131,7 @@ my_translations.all
 
 If you'd like to serve static JSON files for your frontend code to use, that's easily done using the `export_reference_json` command line tool. It accepts a list of files to `require` to obtain data sets (`dfe_reference_data` is loaded automatically), and the final command line argument is a Ruby expression to evaluate; its result is converted to JSON and written to standard output. For example:
 
-```
+```shell
 $ export_reference_json 'dfe_reference_data/demo' 'ReferenceDataDemo::HELLO_WORLD.all_as_hash' | jq .
 {
   "en": {
@@ -159,18 +159,22 @@ This gem includes the following reference lists:
 
 These lists are included for use in examples and for you to play around with some non-enormous data sets. Please don't use them in actual code.
 
-```
+```ruby
 require 'dfe_reference_data/demo`
 ```
 
-#### `HELLO_WORLD`
+#### `ReferenceDataDemo::HELLO_WORLD`
+
+Greeting the world, in a few languages.
 
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | string | IETF language code |
 | `text` | string | "Hello World" in the language specified in the `id` field |
 
-#### `ELEMENTS`
+#### `ReferenceDataDemo::ELEMENTS`
+
+The chemical elements, with related data.
 
 | Field | Type | Purpose |
 |---|---|---|
