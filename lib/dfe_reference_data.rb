@@ -101,7 +101,7 @@ class HardcodedReferenceList < ReferenceList
   # the records do not need to contain an +id+ field as those are provided
   # automatically.
   def initialize(data)
-    super
+    super()
     @data = {}
     data.each_entry do |id, record|
       @data[id] = record.merge({ id: id })
@@ -139,7 +139,7 @@ class TweakedReferenceList < ReferenceList
   # The base list is not modified - this merely wraps it to create a new
   # reference list with some "tweaks" applied.+
   def initialize(base, overrides)
-    super
+    super()
     @base = base
     @overrides = overrides
 
@@ -191,7 +191,7 @@ end
 # big one.
 class JoinedReferenceList < ReferenceList
   def initialize(lists)
-    super
+    super()
     @lists = lists
   end
 
