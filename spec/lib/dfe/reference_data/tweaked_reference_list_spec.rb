@@ -1,9 +1,5 @@
-# frozen_string_literal: true
-
-require 'dfe_reference_data'
-
-RSpec.describe TweakedReferenceList do
-  hrl = HardcodedReferenceList.new(
+RSpec.describe DfE::ReferenceData::TweakedReferenceList do
+  hrl = DfE::ReferenceData::HardcodedReferenceList.new(
     {
       '1' => { name: 'Alaric', child: false },
       '2' => { name: 'Sarah', child: false },
@@ -12,7 +8,7 @@ RSpec.describe TweakedReferenceList do
     }
   )
 
-  trl = TweakedReferenceList.new(
+  trl = DfE::ReferenceData::TweakedReferenceList.new(
     hrl,
     {
       '1' => nil,

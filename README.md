@@ -18,34 +18,34 @@ tool is provided to enable the latter to be done as part of a build process.
 ### Data access
 
 ```ruby
-require 'dfe_reference_data'
-require 'dfe_reference_data/demo'
+require 'dfe/reference_data'
+require 'dfe/reference_data/demo'
 
 ## Getting all the data as an array
 
-ReferenceDataDemo::HELLO_WORLD.all
+DfE::ReferenceData::Demo::HELLO_WORLD.all
 # => [{:text=>"Hello World", :id=>"en"},
 #     {:text=>"Bounjour monde", :id=>"fr"},
 #     {:text=>"coi rodo", :id=>"jbo"}]
 
 ## Getting all the data as a hash on the "id" field
 
-ReferenceDataDemo::HELLO_WORLD.all_as_hash
+DfE::ReferenceData::Demo::HELLO_WORLD.all.as_hash
 # => {"en"=>{:text=>"Hello World", :id=>"en"},
 #     "fr"=>{:text=>"Bounjour monde", :id=>"fr"},
 #     "jbo"=>{:text=>"coi rodo", :id=>"jbo"}}
 
 ## Getting a particular record by its id
 
-ReferenceDataDemo::HELLO_WORLD.one("en")
+DfE::ReferenceData::Demo::HELLO_WORLD.one("en")
 # => {:text=>"Hello World", :id=>"en"}
 
 ## Finding all records matching a filter
 
-ReferenceDataDemo::HELLO_WORLD.some({:id => "fr"})
+DfE::ReferenceData::Demo::HELLO_WORLD.some({:id => "fr"})
 # => [{:text=>"Bounjour monde", :id=>"fr"}]
 
-ReferenceDataDemo::ELEMENTS.some({:name => 'Helium'})
+DfE::ReferenceData::Demo::ELEMENTS.some({:name => 'Helium'})
 # =>
 # [{:atomic_number=>2,
 #   :name=>"Helium",
@@ -56,7 +56,7 @@ ReferenceDataDemo::ELEMENTS.some({:name => 'Helium'})
 
 ## Finding all records matching a filter, and grouping them into a hash according to their values for a chosen field
 
-ReferenceDataDemo::ELEMENTS.some_by_field(:phase,{:nonmetal => true})
+DfE::ReferenceData::Demo::ELEMENTS.some_by_field(:phase,{:nonmetal => true})
 # =>
 # {"gas"=>
 #   [{:atomic_number=>1,
@@ -81,11 +81,11 @@ ReferenceDataDemo::ELEMENTS.some_by_field(:phase,{:nonmetal => true})
 Sometimes you may need to apply some local modifications to a reference list. Here's how this is done:
 
 ```ruby
-require 'dfe_reference_data'
-require 'dfe_reference_data/demo'
+require 'dfe/reference_data'
+require 'dfe/reference_data/demo'
 
-my_translations = TweakedReferenceList.new(
-    ReferenceDataDemo::HELLO_WORLD,
+my_translations = DfE::ReferenceData::TweakedReferenceList.new(
+    DfE::ReferenceData::Demo::HELLO_WORLD,
     {
     "en" => {:text => "Hello, World!"}, # Overwrite fields in a record
     "fr" => {:alternative_text => "Allo"}, # Add fields to a record
@@ -104,20 +104,20 @@ my_translations.all
 Some reference lists will be presented in sections, as different "subsets" will be needed in different applications. In this case, they can be assembled together into a single list for your application, like so:
 
 ```ruby
-require 'dfe_reference_data'
-require 'dfe_reference_data/demo'
+require 'dfe/reference_data'
+require 'dfe/reference_data/demo'
 
-ReferenceDataDemo::HELLO_WORLD.all
+DfE::ReferenceData::Demo::HELLO_WORLD.all
 # => [{:text=>"Hello World", :id=>"en"},
 #     {:text=>"Bounjour monde", :id=>"fr"},
 #     {:text=>"coi rodo", :id=>"jbo"}]
 
-ReferenceDataDemo::FICTIONAL_GREETINGS.all
+DfE::ReferenceData::Demo::FICTIONAL_GREETINGS.all
 # => [{:text=>"OBEY! OBEY OR BE EXTERMINATED!", :id=>"dalek"}]
 
-my_translations = JoinedReferenceList.new(
-   [ReferenceDataDemo::HELLO_WORLD,
-    ReferenceDataDemo::FICTIONAL_GREETINGS])
+my_translations = DfE::ReferenceData::JoinedReferenceList.new(
+   [DfE::ReferenceData::Demo::HELLO_WORLD,
+    DfE::ReferenceData::Demo::FICTIONAL_GREETINGS])
 
 my_translations.all
 # =>
@@ -129,10 +129,10 @@ my_translations.all
 
 ### Generating static JSON
 
-If you'd like to serve static JSON files for your frontend code to use, that's easily done using the `export_reference_json` command line tool. It accepts a list of files to `require` to obtain data sets (`dfe_reference_data` is loaded automatically), and the final command line argument is a Ruby expression to evaluate; its result is converted to JSON and written to standard output. For example:
+If you'd like to serve static JSON files for your frontend code to use, that's easily done using the `export_reference_json` command line tool. The argument is a Ruby expression to evaluate; its result is converted to JSON and written to standard output. The `Demo` dataset is included by default. For example:
 
 ```shell
-$ export_reference_json 'dfe_reference_data/demo' 'ReferenceDataDemo::HELLO_WORLD.all_as_hash' | jq .
+$ bundle exec export_reference_json 'DfE::ReferenceData::Demo::HELLO_WORLD.all_as_hash' | jq .
 {
   "en": {
     "text": "Hello World",
@@ -160,10 +160,10 @@ This gem includes the following reference lists:
 These lists are included for use in examples and for you to play around with some non-enormous data sets. Please don't use them in actual code.
 
 ```ruby
-require 'dfe_reference_data/demo`
+require 'dfe/reference_data/demo`
 ```
 
-#### `ReferenceDataDemo::HELLO_WORLD`
+#### `DfE::ReferenceData::Demo::HELLO_WORLD`
 
 Greeting the world, in a few languages.
 
@@ -176,7 +176,7 @@ Users: None.
 | `id` | string | IETF language code |
 | `text` | string | "Hello World" in the language specified in the `id` field |
 
-#### `ReferenceDataDemo::FICTIONAL_GREETINGS`
+#### `DfE::ReferenceData::Demo::FICTIONAL_GREETINGS`
 
 Greeting the world, in fictional cultures.
 
@@ -189,7 +189,7 @@ Users: None.
 | `id` | string | Name of culture |
 | `text` | string | Traditional greeting in the culture named in the `id` field |
 
-#### `ReferenceDataDemo::ELEMENTS`
+#### `DfE::ReferenceData::Demo::ELEMENTS`
 
 The chemical elements, with related data. Probably inaccurate. Units unknown.
 
@@ -234,9 +234,9 @@ Source: Public domain CSV file I had kicking around from a previous project.
 
 Please see the Data Principles for general advice on storing data. (FIXME: Include link when they're published).
 
-It's not hard to add new hardcoded reference lists by instantiating the `HardcodedReferenceList` class  - just see `lib/dfe_reference_data/demo.rb` for an example to copy.
+It's not hard to add new hardcoded reference lists by instantiating the `HardcodedReferenceList` class  - just see `lib/dfe/reference_data/demo.rb` for an example to copy.
 
-You can also add your own subclasses of `ReferenceList`; see the source for `HardcodedReferenceList` in `lib/dfe_reference_data.rb` for an example of what methods you need to re-implement.
+You can also add your own subclasses of `ReferenceList`; see the source for `HardcodedReferenceList` in `lib/dfe/reference_data/hardcoded_refence_list.rb` for an example of what methods you need to re-implement.
 
 New reference lists should be included in this gem, in subdirectories of `lib` like `lib/demo` is, and declare a Ruby module to keep the namespace clean. This means that reference data is version controlled with this gem, and easily available without any external dependencies.
 
