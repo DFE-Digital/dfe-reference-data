@@ -232,7 +232,7 @@ Source: Public domain CSV file I had kicking around from a previous project.
 
 ## Adding new reference lists
 
-Please see the Data Principles for general advice on storing data. (FIXME: Include link when they're published).
+Please see the [Data Principles](https://technical-guidance.education.gov.uk/principles/data/) for general advice on storing data.
 
 It's not hard to add new hardcoded reference lists by instantiating the `HardcodedReferenceList` class  - just see `lib/dfe/reference_data/demo.rb` for an example to copy.
 

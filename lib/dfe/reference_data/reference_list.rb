@@ -88,4 +88,3 @@ class ReferenceList
     result
   end
 end
-
