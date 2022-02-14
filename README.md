@@ -9,6 +9,13 @@ reference data sets, thereby allowing the reference data to be used without
 additional dependencies and for simple version control of the reference data:
 just pull a new release of this gem to get the latest.
 
+However, the hardcoded reference data hashes are hidden behind an abstract
+interface rather than just exposed as hash constants, so that the implementation
+may change if required in future - for instance, for data that needs to change
+more rapidly than a PR -> release new version -> update dependencies cycle
+permits, we might switch to referencing a database, without needing to change
+the code that uses the interface.
+
 Access to the data is provided via native Ruby, or generating static mappings in
 JSON format that can be included directly into frontend code. A command line
 tool is provided to enable the latter to be done as part of a build process.
