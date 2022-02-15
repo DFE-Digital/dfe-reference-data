@@ -237,6 +237,80 @@ Source: Public domain CSV file I had kicking around from a previous project.
 | `number_of_shells` | integer | Number of electron shells |
 | `valence` | integer | Valency |
 
+### Degrees
+
+#### `DfE::ReferenceData::Degrees::TYPES`
+
+```ruby
+require 'dfe/reference_data/degrees/types'
+```
+
+Types of degrees (eg, "BEng", "MA", etc.)
+
+Owner: Apply team.
+
+Users: Apply team.
+
+Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob/main/app/data/degree-types.js
+
+| Field | Type | Purpose |
+|---|---|---|
+| id | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| priority | integer | ? |
+| name | string | The long name of the degree type, eg "Foundation of Arts" |
+| abbreviation | string | The abbreviated name, eg, "FdA" |
+| synonyms | string array | A list of common alternative names |
+| level | string | The qualification level of this degree |
+| dqt_id | uuid | The ID used for this qualification in DQT |
+| hesa_itt_code | string | The ID used for this qualification in HESA |
+
+#### `DfE::ReferenceData::Degrees::SUBJECTS`
+
+```ruby
+require 'dfe/reference_data/degrees/subjects'
+```
+
+Degree subjects
+
+Owner: Apply team.
+
+Users: Apply team.
+
+Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob/main/app/data/degree-subjects.js
+
+| Field | Type | Purpose |
+|---|---|---|
+| id | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| name | string | The long name of the subject, eg "accountancy" |
+| synonyms | string array | A list of common alternative names |
+| dttp_id | uuid | The ID used for this subject in DTTP |
+| hesa_itt_code | string | The ID used for this subject in HESA |
+
+#### `DfE::ReferenceData::Degrees::INSTITUTIONS`
+
+```ruby
+require 'dfe/reference_data/degrees/institutions'
+```
+
+Degree-awarding (or otherwise) institutions
+
+Owner: Apply team.
+
+Users: Apply team.
+
+Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob/main/app/data/degree-institutions.js
+
+| Field | Type | Purpose |
+|---|---|---|
+| id | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| name | string | The full name of the institution |
+| suggestion_synonyms | string array | A list of common alternative names |
+| match_synonyms | string array | A list of common alternative names (?? what's the distinction ??) |
+| dttp_id | uuid | The ID used for this institution in DTTP |
+| hesa_itt_code | string | The ID used for this institution in HESA |
+| ukprn | string | The ID of this institution in the UK Register of Learning Providers |
+
+
 ## Adding new reference lists
 
 Please see the [Data Principles](https://technical-guidance.education.gov.uk/principles/data/) for general advice on storing data.
