@@ -57,7 +57,7 @@ module DfE
           '1eb3625e-d376-4b0b-8521-8a1269ef73ac' => { name: 'level 4 diploma', synonyms: [], level: '4' },
           'b6ba9cfe-5336-4589-a466-674dded38563' => { name: 'level 4 national vocational qualification', synonyms: ['NVQ'], level: '4' },
           '50c8bfd7-8b08-48d8-ab6d-b6be9c17ff79' => { name: 'diploma of higher education', synonyms: ['DipHE'], level: '5' },
-          '8b5bb841-c7fd-43e3-87d8-dc9653c54dda' => { name: 'foundation degree', synonyms: [], level: '5' },
+          '8b5bb841-c7fd-43e3-87d8-dc9653c54dda' => { name: 'foundation degree', synonyms: [], level: '5', degree: :foundation },
           '2e4d3d83-bbf7-4d37-b451-0f6bbf3ac32a' => { name: 'higher national diploma', synonyms: ['HND'], level: '5' },
           'ab446a38-71d5-45c2-8ad6-23990dc66f16' => { name: 'level 5 award', synonyms: [], level: '5' },
           '679215a9-6b4f-41b2-b7d9-f179c3f241ed' => { name: 'level 5 certificate', synonyms: [], level: '5' },
