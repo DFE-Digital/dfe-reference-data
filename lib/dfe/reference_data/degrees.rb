@@ -4385,6 +4385,11 @@ module DfE
             synonyms: [],
             dttp_id: 'a38470f0-5dce-e911-a985-000d3ab79618',
             hesa_itt_code: '100968' },
+          'a042524a-b918-457c-bfaf-2e2432785d6d' =>
+          { name: 'Computing',
+            synonyms: [],
+            dttp_id: nil,
+            hesa_itt_code: '100367' },
           '318170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Computing and information technology',
             synonyms: [],
