@@ -1572,7 +1572,7 @@ module DfE
           { name: 'Royal Holloway, University of London',
             suggestion_synonyms: %w[RH RHUL],
             match_synonyms:
-            ['Royal Holloway', 'Royal Holloway and Bedford New College'],
+            ['Royal Holloway', 'Royal Holloway and Bedford New College', 'Royal Holloway University of London'],
             hesa_itt_code: '141',
             dttp_id: '6c407223-7042-e811-80ff-3863bb3640b8',
             ukprn: '10005553' },
