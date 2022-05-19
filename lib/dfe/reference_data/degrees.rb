@@ -297,8 +297,8 @@ module DfE
             hesa_itt_code: '88' },
           '276a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Social Science',
-            abbreviation: 'BSS',
-            synonyms: [],
+            abbreviation: 'BaSocSc',
+            synonyms: ['BSS'],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dqt_id: '276a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '89' },
