@@ -4152,7 +4152,7 @@ module DfE
             hesa_itt_code: '101129' },
           'c38070f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Classical studies',
-            synonyms: [],
+            synonyms: ['Classics'],
             dttp_id: 'c38070f0-5dce-e911-a985-000d3ab79618',
             hesa_itt_code: '100300' },
           '258570f0-5dce-e911-a985-000d3ab79618' =>
