@@ -3174,8 +3174,7 @@ module DfE
             hesa_itt_code: nil,
             dttp_id: nil,
             ukprn: '10032618',
-            comment: 'Does not have degree-awarding powers but does award level 6 and 7 diplomas, and partners with universities to offer degree top-ups' }
-          }
+            comment: 'Does not have degree-awarding powers but does award level 6 and 7 diplomas, and partners with universities to offer degree top-ups' } }
       )
 
       SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
