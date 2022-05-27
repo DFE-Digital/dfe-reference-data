@@ -1662,7 +1662,7 @@ module DfE
             ukprn: '10007774' },
           '3471f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'University of Reading',
-            suggestion_synonyms: [],
+            suggestion_synonyms: ['Henley Business School'],
             match_synonyms: ['The University of Reading'],
             hesa_itt_code: '157',
             dttp_id: '3471f34a-2887-e711-80d8-005056ac45bb',
