@@ -343,3 +343,18 @@ Reference list data must be:
 2. Not personal or sensitive data. Reference lists are made widely available to DfE services and, potentially, the general public. It should be information that's in the public domain, converted into a digital form for ease of reference.
 3. Useful. Don't shove it in this gem just because you have it lying around (the "demo" lists aside, of course). Reference lists need to be something one or more services actually wants to use.
 4. Canonical. If your reference list overlaps another reference list, talk to the owners of that list to see if you can find a better structure for both of your lists that avoids this duplication, so there is one canonical source for any given datum (rather than copies that can get out of synch). *YES*, this means that code using the lists might need to do a little more work to assemble things from multiple lists; but that's not a big deal compared to the work required to keep redundant data in synch (or the work required to fix things when it gets out of synch).
+
+# Release process
+
+Until we sort out our RubyGems account, dependents will pull the gem from GitHub. The process is:
+
+- Bump the version number in `lib/dfe/reference_data/version.rb`
+- Tag a new version
+- Push to GitHub
+
+The recommended way to accomplish the last two steps is to use https://github.com/svenfuchs/gem-release#gem-tag.
+
+```bash
+gem tag -p # -p will push to GitHub
+```
+
