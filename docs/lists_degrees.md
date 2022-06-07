@@ -25,9 +25,82 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | name | string | The long name of the degree type, eg "Foundation of Arts" |
 | abbreviation | string | The abbreviated name, eg, "FdA" |
 | synonyms | string array | A list of common alternative names |
-| level | string | The qualification level of this degree |
+| qualification | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
 | dqt_id | uuid | The ID used for this qualification in DQT |
 | hesa_itt_code | string | The ID used for this qualification in HESA |
+
+### `DfE::ReferenceData::Degrees::GENERIC_TYPES`
+
+```ruby
+require 'dfe/reference_data/degrees'
+```
+
+Generic "catch-all" degree types, for approximating degree types not listed in
+`TYPES` (eg, "First Degree" to cover any first degree).
+
+Owner: Apply team.
+
+Users: Apply team.
+
+Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob/main/app/data/degree-types.js
+
+Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+| Field | Type | Purpose |
+|---|---|---|
+| id | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| priority | integer | ? |
+| name | string | The long name of the degree type, eg "Foundation of Arts" |
+| abbreviation | string | The abbreviated name, eg, "FdA" |
+| synonyms | string array | A list of common alternative names |
+| qualification | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
+| dqt_id | uuid | The ID used for this qualification in DQT |
+| hesa_itt_code | string | The ID used for this qualification in HESA |
+
+### `DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS`
+
+```ruby
+require 'dfe/reference_data/degrees'
+```
+
+The union of `TYPES` and `GENERIC_TYPES`.
+
+Owner: Apply team.
+
+Users: Apply team.
+
+Source: Automatically derived from joining the `TYPES` and `GENERIC_TYPES` lists.
+
+Quality: Automatically derived from the source data, so only as correct as they are.
+
+| Field | Type | Purpose |
+|---|---|---|
+| id | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| priority | integer | ? |
+| name | string | The long name of the degree type, eg "Foundation of Arts" |
+| abbreviation | string | The abbreviated name, eg, "FdA" |
+| synonyms | string array | A list of common alternative names |
+| qualification | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
+| dqt_id | uuid | The ID used for this qualification in DQT |
+| hesa_itt_code | string | The ID used for this qualification in HESA |
+
+### `DfE::ReferenceData::Degrees::GRADES`
+
+Grades awarded when a degree is granted.
+
+Owner: Apply team.
+
+Users: Apply team.
+
+Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+| Field | Type | Purpose |
+|---|---|---|
+| `id` | UUID | A unique identifier. |
+| `name` | string | The long name of this grade, eg "First-class honours" |
+| `synonyms` | string array | A list of common alternative names |
+| `group` | enumerated symbol | The kind of degree this grade applies to. `main_postgrad`, `other` or `main_undergrad` |
+| `hesa_code` | string | The HESA code for this degree grade. |
 
 ### `DfE::ReferenceData::Degrees::SUBJECTS`
 
