@@ -20,14 +20,14 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 
 | Field | Type | Purpose |
 |---|---|---|
-| id | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
-| priority | integer | ? |
-| name | string | The long name of the degree type, eg "Foundation of Arts" |
-| abbreviation | string | The abbreviated name, eg, "FdA" |
-| synonyms | string array | A list of common alternative names |
-| qualification | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
-| dqt_id | uuid | The ID used for this qualification in DQT |
-| hesa_itt_code | string | The ID used for this qualification in HESA |
+| `id` | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `priority` | integer | ? |
+| `name` | string | The long name of the degree type, eg "Foundation of Arts" |
+| `abbreviation` | string | The abbreviated name, eg, "FdA" |
+| `synonyms` | string array | A list of common alternative names |
+| `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
+| `dqt_id` | uuid | The ID used for this qualification in DQT |
+| `hesa_itt_code` | string | The ID used for this qualification in HESA |
 
 ### `DfE::ReferenceData::Degrees::GENERIC_TYPES`
 
@@ -48,14 +48,14 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 
 | Field | Type | Purpose |
 |---|---|---|
-| id | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
-| priority | integer | ? |
-| name | string | The long name of the degree type, eg "Foundation of Arts" |
-| abbreviation | string | The abbreviated name, eg, "FdA" |
-| synonyms | string array | A list of common alternative names |
-| qualification | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
-| dqt_id | uuid | The ID used for this qualification in DQT |
-| hesa_itt_code | string | The ID used for this qualification in HESA |
+| `id` | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `priority` | integer | ? |
+| `name` | string | The long name of the degree type, eg "Foundation of Arts" |
+| `abbreviation` | string | The abbreviated name, eg, "FdA" |
+| `synonyms` | string array | A list of common alternative names |
+| `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
+| `dqt_id` | uuid | The ID used for this qualification in DQT |
+| `hesa_itt_code` | string | The ID used for this degree in HESA |
 
 ### `DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS`
 
@@ -75,14 +75,14 @@ Quality: Automatically derived from the source data, so only as correct as they 
 
 | Field | Type | Purpose |
 |---|---|---|
-| id | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
-| priority | integer | ? |
-| name | string | The long name of the degree type, eg "Foundation of Arts" |
-| abbreviation | string | The abbreviated name, eg, "FdA" |
-| synonyms | string array | A list of common alternative names |
-| qualification | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
-| dqt_id | uuid | The ID used for this qualification in DQT |
-| hesa_itt_code | string | The ID used for this qualification in HESA |
+| `id` | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `priority` | integer | ? |
+| `name` | string | The long name of the degree type, eg "Foundation of Arts" |
+| `abbreviation` | string | The abbreviated name, eg, "FdA" |
+| `synonyms` | string array | A list of common alternative names |
+| `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
+| `dqt_id` | uuid | The ID used for this qualification in DQT |
+| `hesa_itt_code` | string | The ID used for this degree in HESA |
 
 ### `DfE::ReferenceData::Degrees::GRADES`
 
@@ -120,11 +120,11 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 
 | Field | Type | Purpose |
 |---|---|---|
-| id | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
-| name | string | The long name of the subject, eg "accountancy" |
-| synonyms | string array | A list of common alternative names |
-| dttp_id | uuid | The ID used for this subject in DTTP |
-| hesa_itt_code | string | The ID used for this subject in HESA |
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `name` | string | The long name of the subject, eg "accountancy" |
+| `synonyms` | string array | A list of common alternative names |
+| `dttp_id` | uuid | The ID used for this subject in DTTP |
+| `hesa_itt_code` | string | The ID used for this subject in HESA |
 
 ### `DfE::ReferenceData::Degrees::INSTITUTIONS`
 
@@ -144,12 +144,13 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 
 | Field | Type | Purpose |
 |---|---|---|
-| id | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
-| name | string | The full name of the institution |
-| suggestion_synonyms | string array | A list of common alternative names that *may* be appropriate for this institution |
-| match_synonyms | string array | A list of common alternative names that are *probably* appropriate for this institutions|
-| dttp_id | uuid | The ID used for this institution in DTTP |
-| hesa_itt_code | string | The ID used for this institution in HESA |
-| ukprn | string | The ID of this institution in the UK Register of Learning Providers |
-| closed | optional string | If present, the year in which the institution closed or stopped awarding degrees |
-| comment | optional string | Editor's comments on the entry (not necessarily of interest to external users of the data) |
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `name` | string | The full name of the institution |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this institution |
+| `match_synonyms` | string array | A list of common alternative names that are *probably* appropriate for this institutions|
+| `dttp_id` | uuid | The ID used for this institution in DTTP |
+| `hesa_itt_code` | string | The ID used for this institution in HESA |
+| `ukprn` | string | The ID of this institution in the UK Register of Learning Providers |
+| `closed` | optional string | If present, the year in which the institution closed or stopped awarding degrees |
+| `has_never_awarded_degrees` | optional boolean | If present and true, the institution has never awarded degrees, was included in an earlier version of this list by mistake, and is kept purely to support interpretation of legacy data |
+| `comment` | optional string | Editor's comments on the entry (not necessarily of interest to external users of the data) |
