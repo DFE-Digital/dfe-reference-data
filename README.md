@@ -37,7 +37,7 @@ DfE::ReferenceData::Demo::HELLO_WORLD.all
 
 ## Getting all the data as a hash on the "id" field
 
-DfE::ReferenceData::Demo::HELLO_WORLD.all.as_hash
+DfE::ReferenceData::Demo::HELLO_WORLD.all_as_hash
 # => {"en"=>{:text=>"Hello World", :id=>"en"},
 #     "fr"=>{:text=>"Bounjour monde", :id=>"fr"},
 #     "jbo"=>{:text=>"coi rodo", :id=>"jbo"}}
