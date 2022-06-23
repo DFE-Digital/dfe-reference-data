@@ -4979,7 +4979,8 @@ module DfE
           { name: 'English language and literature',
             synonyms: [],
             dttp_id: nil,
-            hesa_itt_code: nil },
+            hesa_itt_code: nil,
+            comment: 'This is a common combined degree subject. Ideally it would map to 2 HESA codes, 100318 and 100319.' },
           '0b8670f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Enterprise and entrepreneurship',
             synonyms: [],
