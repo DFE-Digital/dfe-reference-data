@@ -7146,7 +7146,7 @@ module DfE
             dttp_id: '4d8370f0-5dce-e911-a985-000d3ab79618',
             hesa_itt_code: '100750' },
           'ba1ffe89-73fb-4de8-a48d-12e644ee5687' =>
-          { name: 'Physical Education',
+          { name: 'Physical education',
             synonyms: ['PE'],
             dttp_id: nil,
             hesa_itt_code: '100433',
