@@ -3166,7 +3166,16 @@ module DfE
             hesa_itt_code: nil,
             dttp_id: nil,
             ukprn: '10007859',
-            comment: 'Given degree awarding powers in 2021' } }
+            comment: 'Given degree awarding powers in 2021' },
+          '23d0e1db-1267-4764-8e42-53ab20925d66' =>
+          { name: 'OTHM',
+            suggestion_synonyms: [],
+            match_synonyms: ['OTHM Qualifications'],
+            hesa_itt_code: nil,
+            dttp_id: nil,
+            ukprn: '10032618',
+            comment: 'Does not have degree-awarding powers but does award level 6 and 7 diplomas, and partners with universities to offer degree top-ups',
+            'has_never_awarded_degrees' => true } }
       )
 
       SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
