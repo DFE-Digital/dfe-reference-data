@@ -4389,7 +4389,8 @@ module DfE
           { name: 'Computing',
             synonyms: [],
             dttp_id: nil,
-            hesa_itt_code: '100367' },
+            hesa_itt_code: '100367',
+            comment: 'This is a common degree subject, and has been mapped to HESA code 100367 (Computing and information technology) which is the closest match.' },
           '318170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Computing and information technology',
             synonyms: [],
