@@ -2709,7 +2709,7 @@ module DfE
           '733e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Leeds Conservatoire',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Leeds College of Music'],
             hesa_itt_code: '351',
             dttp_id: '733e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10034449',
@@ -3139,7 +3139,8 @@ module DfE
             match_synonyms:
             ['Prifysgol Cymru',
              'University of Wales (central functions)',
-             'Royal Welsh College of Music and Drama'],
+             'Royal Welsh College of Music and Drama',
+             'The University of Wales (central functions)'],
             hesa_itt_code: '86',
             dttp_id: '6a228041-7042-e811-80ff-3863bb3640b8',
             comment:
