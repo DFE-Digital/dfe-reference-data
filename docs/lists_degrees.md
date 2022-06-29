@@ -147,7 +147,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
 | `name` | string | The full name of the institution |
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this institution |
-| `match_synonyms` | string array | A list of common alternative names that are *probably* appropriate for this institutions|
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution.|
 | `dttp_id` | uuid | The ID used for this institution in DTTP |
 | `hesa_itt_code` | string | The ID used for this institution in HESA |
 | `ukprn` | string | The ID of this institution in the UK Register of Learning Providers |
