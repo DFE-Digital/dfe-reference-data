@@ -1,7 +1,7 @@
 module DfE
   module ReferenceData
     module Degrees
-      SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
+      SINGLE_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '917f70f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Accountancy',
             synonyms: [],
@@ -1813,12 +1813,6 @@ module DfE
             synonyms: [],
             dttp_id: 'e18070f0-5dce-e911-a985-000d3ab79618',
             hesa_itt_code: '100320' },
-          'dd967b4a-4d22-48a3-a2f8-d5719cee0519' =>
-          { name: 'English language and literature',
-            synonyms: [],
-            dttp_id: nil,
-            hesa_itt_code: nil,
-            comment: 'This is a common combined degree subject. Ideally it would map to 2 HESA codes, 100318 and 100319.' },
           '0b8670f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Enterprise and entrepreneurship',
             synonyms: [],
@@ -5475,6 +5469,20 @@ module DfE
             dttp_id: '1f8170f0-5dce-e911-a985-000d3ab79618',
             hesa_itt_code: '100356' } }
       )
+
+      COMMON_COMPOUND_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
+        {
+          'dd967b4a-4d22-48a3-a2f8-d5719cee0519' =>
+          {
+            name: 'English language and literature',
+            synonyms: [],
+            components: ['dd8070f0-5dce-e911-a985-000d3ab79618', # English language
+                         'df8070f0-5dce-e911-a985-000d3ab79618'] # English literature
+          }
+        }
+      )
+
+      SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new([SINGLE_SUBJECTS, COMMON_COMPOUND_SUBJECTS])
     end
   end
 end
