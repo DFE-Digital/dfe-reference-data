@@ -102,7 +102,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `group` | enumerated symbol | The kind of degree this grade applies to. `main_postgrad`, `other` or `main_undergrad` |
 | `hesa_code` | string | The HESA code for this degree grade. |
 
-### `DfE::ReferenceData::Degrees::SUBJECTS`
+### `DfE::ReferenceData::Degrees::SINGLE_SUBJECTS`
 
 ```ruby
 require 'dfe/reference_data/degrees'
@@ -125,6 +125,54 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `synonyms` | string array | A list of common alternative names |
 | `dttp_id` | uuid | The ID used for this subject in DTTP |
 | `hesa_itt_code` | string | The ID used for this subject in HESA |
+
+### `DfE::ReferenceData::Degrees::COMMON_COMPOUND_SUBJECTS`
+
+```ruby
+require 'dfe/reference_data/degrees'
+```
+
+Common combinations of degree subjects (Eg, subjects of the form "X with Y" or "X and Y")
+
+Owner: Apply team.
+
+Users: Apply team.
+
+Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob/main/app/data/degree-subjects.js
+
+Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+| Field | Type | Purpose |
+|---|---|---|
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `name` | string | The long name of the subject, eg "accountancy" |
+| `synonyms` | string array | A list of common alternative names |
+| `components` | UUID array | The `SINGLE_SUBJECTS` IDs of the compound parts, in order |
+
+### `DfE::ReferenceData::Degrees::SUBJECTS`
+
+```ruby
+require 'dfe/reference_data/degrees'
+```
+
+The union of `SINGLE_SUBJECTS` and `COMMON_COMPOUND_SUBJECTS`.
+
+Owner: Apply team.
+
+Users: Apply team.
+
+Source: Automatically derived from joining the `SINGLE_SUBJECTS` and `COMMON_COMPOUND_SUBJECTS` lists.
+
+Quality: Automatically derived from the source data, so only as correct as they are.
+
+| Field | Type | Purpose |
+|---|---|---|
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `name` | string | The long name of the subject, eg "accountancy" |
+| `synonyms` | string array | A list of common alternative names |
+| `dttp_id` | optional uuid | The ID used for this subject in DTTP (for single subjects) |
+| `hesa_itt_code` | optional string | The ID used for this subject in HESA (for single subjects) |
+| `components` | optional UUID array | The `SINGLE_SUBJECTS` IDs of the compound parts, in order (for compound subjects) |
 
 ### `DfE::ReferenceData::Degrees::INSTITUTIONS`
 
