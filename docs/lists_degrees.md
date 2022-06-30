@@ -98,7 +98,8 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 |---|---|---|
 | `id` | UUID | A unique identifier. |
 | `name` | string | The long name of this grade, eg "First-class honours" |
-| `synonyms` | string array | A list of common alternative names |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this institution |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution. |
 | `group` | enumerated symbol | The kind of degree this grade applies to. `main_postgrad`, `other` or `main_undergrad` |
 | `hesa_code` | string | The HESA code for this degree grade. |
 
