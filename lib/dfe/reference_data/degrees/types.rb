@@ -304,7 +304,7 @@ module DfE
             match_synonyms: ['BSc Hons',
               'BSc (Hons)',
               'BSc Honours',
-              'Bachelor of Science with honours'
+              'Bachelor of Science with honours',
               'Bachelor of Science (Hons)'
             ],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
