@@ -5,10 +5,21 @@ RSpec.describe DfE::ReferenceData::Degrees::COMMON_COMPOUND_SUBJECTS do
 
     it 'returns the values for each attribute' do
       expect(records).to(be_all do |rec|
-        rec.components.all? do |component_id|
-          single_subjects.key?(component_id)
-        end
-      end)
+                           name = rec.name
+                           name_downcased = name.downcase
+                           rec.components.all? do |component_id|
+                             if single_subjects.key?(component_id)
+                               unless name_downcased.match(single_subjects[component_id].name.downcase)
+                                 # It's not necessarily a problem, best tell the user but still return true.
+                                 puts "Possible compound-subject mismatch in COMMON_COMPOUND_SUBJECTS[#{rec.id}]: Does '#{name}' contain '#{single_subjects[component_id].name}'?"
+                               end
+                               true
+                             else
+                               # Component ID isn't in SINGLE_SUBJECTS, definitely a problem
+                               false
+                             end
+                           end
+                         end)
     end
   end
 end
