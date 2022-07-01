@@ -6725,7 +6725,7 @@ module DfE
               suggestion_synonyms: [],
               match_synonyms: [],
               components: ['e58070f0-5dce-e911-a985-000d3ab79618', # French studies
-                           ''] # Subject name
+                           'eb8070f0-5dce-e911-a985-000d3ab79618'] # Spanish studies
           },
           '593eae72-6c71-47f1-88d5-b49cc19109cf' =>
             {
@@ -6733,7 +6733,7 @@ module DfE
               suggestion_synonyms: [],
               match_synonyms: [],
               components: ['e58070f0-5dce-e911-a985-000d3ab79618', # French studies
-                           'eb8070f0-5dce-e911-a985-000d3ab79618'] # Spanish studies
+                           'e98070f0-5dce-e911-a985-000d3ab79618'] # Spanish studies
           },
           'e34b4fa0-cf35-420a-a2b9-130780cc7783' =>
             {
