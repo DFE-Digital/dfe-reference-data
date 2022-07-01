@@ -4,8 +4,8 @@ module DfE
       INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '5c9e1d2d-3fa2-e811-812b-5065f38ba241' =>
           { name: 'The Open University',
-            suggestion_synonyms: ['OU', 'Open University'],
-            match_synonyms: [],
+            suggestion_synonyms: ['OU'],
+            match_synonyms: ['Open University'],
             hesa_itt_code: '1',
             dttp_id: '5c9e1d2d-3fa2-e811-812b-5065f38ba241',
             ukprn: '10007773' },
