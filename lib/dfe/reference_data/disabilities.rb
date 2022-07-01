@@ -74,7 +74,7 @@ module DfE
             name: 'Not available',
             match_synonyms: [],
             hesa_itt_code: '99'
-          },
+          }
         }
       )
     end
