@@ -6933,7 +6933,7 @@ module DfE
             match_synonyms: [],
             components: ['fb8170f0-5dce-e911-a985-000d3ab79618', # Psychology
                          'c38170f0-5dce-e911-a985-000d3ab79618'] # Education studies
-            },
+          },
           '2625d422-6699-49c0-85d9-281c53d5f666' =>
           {
             name: 'Psychology and sociology',
@@ -6941,7 +6941,7 @@ module DfE
             match_synonyms: [],
             components: ['fb8170f0-5dce-e911-a985-000d3ab79618', # Psychology
                          '078270f0-5dce-e911-a985-000d3ab79618'] # Sociology
-            },
+          },
           'd15965d9-197b-4de9-b533-a6ef62d43f60' =>
           {
             name: 'Religion, philosophy and ethics',
