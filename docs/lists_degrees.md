@@ -175,7 +175,7 @@ Quality: Automatically derived from the source data, so only as correct as they 
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
 | `dttp_id` | optional uuid | The ID used for this subject in DTTP (for single subjects) |
 | `hesa_itt_code` | optional string | The ID used for this subject in HESA (for single subjects) |
-| `components` | optional UUID array | The `SINGLE_SUBJECTS` IDs of the compound parts, in order (for compound subjects) |
+| `subject_ids` | optional UUID array | The `SINGLE_SUBJECTS` IDs of the individual parts, in order (for combined subjects) |
 
 ### `DfE::ReferenceData::Degrees::INSTITUTIONS`
 
