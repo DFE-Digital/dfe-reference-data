@@ -3974,6 +3974,12 @@ module DfE
             synonyms: [],
             dttp_id: '0f8570f0-5dce-e911-a985-000d3ab79618',
             hesa_itt_code: '101050' },
+          'ba1ffe89-73fb-4de8-a48d-12e644ee5687' =>
+           { name: 'Physical education',
+             synonyms: ['PE'],
+             dttp_id: nil,
+             hesa_itt_code: '100433',
+             comment: 'This is matched to the 100433 code for "Sport and exercise sciences" following HECOS guidance. A future HECOS update may add PE as a separate code.' },
           '778170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Physical geography',
             synonyms: [],
