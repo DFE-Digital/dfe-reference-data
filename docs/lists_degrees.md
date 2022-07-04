@@ -127,7 +127,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `dttp_id` | uuid | The ID used for this subject in DTTP |
 | `hesa_itt_code` | string | The ID used for this subject in HESA |
 
-### `DfE::ReferenceData::Degrees::COMMON_COMPOUND_SUBJECTS`
+### `DfE::ReferenceData::Degrees::COMBINED_SUBJECTS`
 
 ```ruby
 require 'dfe/reference_data/degrees'
