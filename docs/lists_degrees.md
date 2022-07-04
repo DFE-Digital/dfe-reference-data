@@ -122,7 +122,8 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 |---|---|---|
 | `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
 | `name` | string | The long name of the subject, eg "accountancy" |
-| `synonyms` | string array | A list of common alternative names |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
 | `dttp_id` | uuid | The ID used for this subject in DTTP |
 | `hesa_itt_code` | string | The ID used for this subject in HESA |
 
@@ -146,7 +147,8 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 |---|---|---|
 | `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
 | `name` | string | The long name of the subject, eg "accountancy" |
-| `synonyms` | string array | A list of common alternative names |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
 | `components` | UUID array | The `SINGLE_SUBJECTS` IDs of the compound parts, in order |
 
 ### `DfE::ReferenceData::Degrees::SUBJECTS`
