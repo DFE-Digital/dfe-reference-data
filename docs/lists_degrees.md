@@ -149,7 +149,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `name` | string | The long name of the subject, eg "accountancy" |
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
-| `components` | UUID array | The `SINGLE_SUBJECTS` IDs of the compound parts, in order |
+| `subject_ids` | UUID array | The `SINGLE_SUBJECTS` IDs of the individual subjects, in the same order as they appear in the `name` |
 
 ### `DfE::ReferenceData::Degrees::SUBJECTS`
 
