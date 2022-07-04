@@ -9,7 +9,15 @@ RSpec.describe DfE::ReferenceData::Degrees::COMBINED_SUBJECTS do
                            name_downcased = name.downcase
                            rec.components.all? do |component_id|
                              if single_subjects.key?(component_id)
-                               unless name_downcased.match(single_subjects[component_id].name.downcase)
+                               component_name = single_subjects[component_id].name.downcase
+
+                               # This does nothing if the component doesn't end
+                               # in " studies", but if it does "Film studies" is
+                               # accepted as part of "Film and media studies"
+                               # etc
+                               component_name.delete_suffix!(' studies')
+
+                               unless name_downcased.match(component_name)
                                  # It's not necessarily a problem, best tell the user but still return true.
                                  puts "Possible combined-subject mismatch in COMBINED_SUBJECTS[#{rec.id}]: Does '#{name}' contain '#{single_subjects[component_id].name}'?"
                                end
