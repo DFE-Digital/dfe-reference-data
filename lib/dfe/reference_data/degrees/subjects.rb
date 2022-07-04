@@ -6569,7 +6569,7 @@ module DfE
             hesa_itt_code: '100356' } }
       )
 
-      COMMON_COMPOUND_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
+      COMBINED_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           '469e7cc9-9691-45bd-859d-de8f9515913c' =>
           {
@@ -6970,7 +6970,7 @@ module DfE
         }
       )
 
-      SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new([SINGLE_SUBJECTS, COMMON_COMPOUND_SUBJECTS])
+      SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new([SINGLE_SUBJECTS, COMBINED_SUBJECTS])
     end
   end
 end

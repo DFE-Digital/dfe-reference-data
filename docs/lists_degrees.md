@@ -157,13 +157,13 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 require 'dfe/reference_data/degrees'
 ```
 
-The union of `SINGLE_SUBJECTS` and `COMMON_COMPOUND_SUBJECTS`.
+The union of `SINGLE_SUBJECTS` and `COMBINED_SUBJECTS`.
 
 Owner: Apply team.
 
 Users: Apply team.
 
-Source: Automatically derived from joining the `SINGLE_SUBJECTS` and `COMMON_COMPOUND_SUBJECTS` lists.
+Source: Automatically derived from joining the `SINGLE_SUBJECTS` and `COMBINED_SUBJECTS` lists.
 
 Quality: Automatically derived from the source data, so only as correct as they are.
 
@@ -171,7 +171,8 @@ Quality: Automatically derived from the source data, so only as correct as they 
 |---|---|---|
 | `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
 | `name` | string | The long name of the subject, eg "accountancy" |
-| `synonyms` | string array | A list of common alternative names |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
 | `dttp_id` | optional uuid | The ID used for this subject in DTTP (for single subjects) |
 | `hesa_itt_code` | optional string | The ID used for this subject in HESA (for single subjects) |
 | `components` | optional UUID array | The `SINGLE_SUBJECTS` IDs of the compound parts, in order (for compound subjects) |

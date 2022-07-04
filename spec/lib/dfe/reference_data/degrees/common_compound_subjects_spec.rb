@@ -1,4 +1,4 @@
-RSpec.describe DfE::ReferenceData::Degrees::COMMON_COMPOUND_SUBJECTS do
+RSpec.describe DfE::ReferenceData::Degrees::COMBINED_SUBJECTS do
   describe 'component subject IDs are correct' do
     let(:records) { described_class.all }
     let(:single_subjects) { DfE::ReferenceData::Degrees::SINGLE_SUBJECTS.all_as_hash }
@@ -11,7 +11,7 @@ RSpec.describe DfE::ReferenceData::Degrees::COMMON_COMPOUND_SUBJECTS do
                              if single_subjects.key?(component_id)
                                unless name_downcased.match(single_subjects[component_id].name.downcase)
                                  # It's not necessarily a problem, best tell the user but still return true.
-                                 puts "Possible compound-subject mismatch in COMMON_COMPOUND_SUBJECTS[#{rec.id}]: Does '#{name}' contain '#{single_subjects[component_id].name}'?"
+                                 puts "Possible compound-subject mismatch in COMBINED_SUBJECTS[#{rec.id}]: Does '#{name}' contain '#{single_subjects[component_id].name}'?"
                                end
                                true
                              else
