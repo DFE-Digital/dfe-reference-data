@@ -6870,6 +6870,22 @@ module DfE
                            'f18170f0-5dce-e911-a985-000d3ab79618', # Politics
                            'b58170f0-5dce-e911-a985-000d3ab79618'] # Economics
           },
+          'e5cf103f-8a15-4fd5-a2b3-4fef55a3194f' =>
+            {
+              name: 'Physical education and sports coaching',
+              suggestion_synonyms: [],
+              match_synonyms: ['PE and sports coaching'],
+              components: ['ba1ffe89-73fb-4de8-a48d-12e644ee5687', # Physical education
+                           '837f70f0-5dce-e911-a985-000d3ab79618'] # Sports coaching
+          },
+          '88ca4706-ebbf-414d-b6c9-614ca31aafd9' =>
+            {
+              name: 'Physical education and sports studies',
+              suggestion_synonyms: [],
+              match_synonyms: ['PE and sports studies'],
+              components: ['ba1ffe89-73fb-4de8-a48d-12e644ee5687', # Physical education
+                           '897f70f0-5dce-e911-a985-000d3ab79618'] # Sports studies
+          },
           '06bc865b-d8a3-4cb4-a833-182122531b4a' =>
             {
               name: 'Physics and astrophysics',
@@ -6942,6 +6958,14 @@ module DfE
               match_synonyms: [],
               components: ['078270f0-5dce-e911-a985-000d3ab79618', # Sociology
                            'e58170f0-5dce-e911-a985-000d3ab79618'] # Criminology
+          },
+          'b5fa99d3-db95-43d2-8bf6-bb8775f38aa0' =>
+            {
+              name: 'Sports coaching and physical education',
+              suggestion_synonyms: [],
+              match_synonyms: ['Sports coaching and PE'],
+              components: ['837f70f0-5dce-e911-a985-000d3ab79618', # Sports coaching
+                           'ba1ffe89-73fb-4de8-a48d-12e644ee5687'] # Physical education
           },
         }
       )
