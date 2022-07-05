@@ -1,5 +1,5 @@
 RSpec.describe DfE::ReferenceData::Degrees::COMBINED_SUBJECTS do
-  describe 'component subject IDs are correct' do
+  describe 'subject IDs are correct' do
     let(:records) { described_class.all }
     let(:single_subjects) { DfE::ReferenceData::Degrees::SINGLE_SUBJECTS.all_as_hash }
 
@@ -7,11 +7,11 @@ RSpec.describe DfE::ReferenceData::Degrees::COMBINED_SUBJECTS do
       expect(records).to(be_all do |rec|
                            name = rec.name
                            name_downcased = name.downcase
-                           rec.components.all? do |component_id|
-                             if single_subjects.key?(component_id)
-                               unless name_downcased.match(single_subjects[component_id].name.downcase)
+                           rec.subject_ids.all? do |subject_id|
+                             if single_subjects.key?(subject_id)
+                               unless name_downcased.match(single_subjects[subject_id].name.downcase)
                                  # It's not necessarily a problem, best tell the user but still return true.
-                                 puts "Possible combined-subject mismatch in COMBINED_SUBJECTS[#{rec.id}]: Does '#{name}' contain '#{single_subjects[component_id].name}'?"
+                                 puts "Possible combined-subject mismatch in COMBINED_SUBJECTS[#{rec.id}]: Does '#{name}' contain '#{single_subjects[subject_id].name}'?"
                                end
                                true
                              else

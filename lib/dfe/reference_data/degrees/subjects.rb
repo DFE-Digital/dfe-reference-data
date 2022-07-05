@@ -6576,104 +6576,104 @@ module DfE
             name: 'Accounting and finance',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['937f70f0-5dce-e911-a985-000d3ab79618', # Accounting
-                         '977f70f0-5dce-e911-a985-000d3ab79618'] # Finance
+            subject_ids: ['937f70f0-5dce-e911-a985-000d3ab79618', # Accounting
+                          '977f70f0-5dce-e911-a985-000d3ab79618'] # Finance
           },
           '7ff41fe2-0464-4531-affa-c68d72565adb' =>
           {
             name: 'Banking and finance',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['cd8370f0-5dce-e911-a985-000d3ab79618', # Banking
-                         '977f70f0-5dce-e911-a985-000d3ab79618'] # Finance
+            subject_ids: ['cd8370f0-5dce-e911-a985-000d3ab79618', # Banking
+                          '977f70f0-5dce-e911-a985-000d3ab79618'] # Finance
           },
           '1c15637d-cd62-4854-95ab-aac0b412bcd2' =>
           {
             name: 'Creative writing and English literature',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['3b7f70f0-5dce-e911-a985-000d3ab79618', # Creative writing
-                         'df8070f0-5dce-e911-a985-000d3ab79618'] # English literature
+            subject_ids: ['3b7f70f0-5dce-e911-a985-000d3ab79618', # Creative writing
+                          'df8070f0-5dce-e911-a985-000d3ab79618'] # English literature
           },
           '7c831903-11f7-4984-bdf3-a6ac41abe47d' =>
           {
             name: 'Criminology and psychology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['e58170f0-5dce-e911-a985-000d3ab79618', # Criminology
-                         'fb8170f0-5dce-e911-a985-000d3ab79618'] # Psychology
+            subject_ids: ['e58170f0-5dce-e911-a985-000d3ab79618', # Criminology
+                          'fb8170f0-5dce-e911-a985-000d3ab79618'] # Psychology
           },
           'bf9ab480-1b29-4c15-ba72-4d33e0dc59b1' =>
           {
             name: 'Criminology and sociology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['e58170f0-5dce-e911-a985-000d3ab79618', # Criminology
-                         '078270f0-5dce-e911-a985-000d3ab79618'] # Sociology
+            subject_ids: ['e58170f0-5dce-e911-a985-000d3ab79618', # Criminology
+                          '078270f0-5dce-e911-a985-000d3ab79618'] # Sociology
           },
           'cefefe97-2538-44f2-a8d3-6fb2830b7425' =>
           {
             name: 'Drama and theatre studies',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['5d7f70f0-5dce-e911-a985-000d3ab79618', # Drama
-                         '058370f0-5dce-e911-a985-000d3ab79618'] # Theatre studies
+            subject_ids: ['5d7f70f0-5dce-e911-a985-000d3ab79618', # Drama
+                          '058370f0-5dce-e911-a985-000d3ab79618'] # Theatre studies
           },
           '129ad6e8-bcbf-4762-9ac0-8d6bcef16380' =>
           {
             name: 'Economics and politics',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['b58170f0-5dce-e911-a985-000d3ab79618', # Economics
-                         'f18170f0-5dce-e911-a985-000d3ab79618'] # Politics
+            subject_ids: ['b58170f0-5dce-e911-a985-000d3ab79618', # Economics
+                          'f18170f0-5dce-e911-a985-000d3ab79618'] # Politics
           },
           'fd51c350-c734-414f-b5db-e6839e5cbf60' =>
           {
             name: 'Education and psychology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['c38170f0-5dce-e911-a985-000d3ab79618', # Education studies
-                         'fb8170f0-5dce-e911-a985-000d3ab79618'] # Psychology
+            subject_ids: ['c38170f0-5dce-e911-a985-000d3ab79618', # Education studies
+                          'fb8170f0-5dce-e911-a985-000d3ab79618'] # Psychology
           },
           '4b1494e7-ee59-4d3b-89e9-d4fd35410d97' =>
           {
             name: 'English and American literature',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['e18070f0-5dce-e911-a985-000d3ab79618', # English studies
-                         'ef8570f0-5dce-e911-a985-000d3ab79618'] # North American literature studies
+            subject_ids: ['e18070f0-5dce-e911-a985-000d3ab79618', # English studies
+                          'ef8570f0-5dce-e911-a985-000d3ab79618'] # North American literature studies
           },
           'caf3c7ab-d137-4560-85e9-2a0577c6cf50' =>
           {
             name: 'English and creative writing',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['e18070f0-5dce-e911-a985-000d3ab79618', # English studies
-                         '3b7f70f0-5dce-e911-a985-000d3ab79618'] # Creative writing
+            subject_ids: ['e18070f0-5dce-e911-a985-000d3ab79618', # English studies
+                          '3b7f70f0-5dce-e911-a985-000d3ab79618'] # Creative writing
           },
           '6d50091e-2de1-4c93-af55-fd565aa481ab' =>
           {
             name: 'English and drama',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['e18070f0-5dce-e911-a985-000d3ab79618', # English studies
-                         '5d7f70f0-5dce-e911-a985-000d3ab79618'] # Drama
+            subject_ids: ['e18070f0-5dce-e911-a985-000d3ab79618', # English studies
+                          '5d7f70f0-5dce-e911-a985-000d3ab79618'] # Drama
           },
           'caf2a578-0858-4566-ac20-11522d06dc29' =>
           {
             name: 'English and history',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['e18070f0-5dce-e911-a985-000d3ab79618', # English studies
-                         'c78070f0-5dce-e911-a985-000d3ab79618'] # History
+            subject_ids: ['e18070f0-5dce-e911-a985-000d3ab79618', # English studies
+                          'c78070f0-5dce-e911-a985-000d3ab79618'] # History
           },
           'a96cd0c5-c546-446b-9e77-a1f61dc10841' =>
           {
             name: 'English language and linguistics',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['dd8070f0-5dce-e911-a985-000d3ab79618', # English language
-                         'f18070f0-5dce-e911-a985-000d3ab79618'] # Linguistics
+            subject_ids: ['dd8070f0-5dce-e911-a985-000d3ab79618', # English language
+                          'f18070f0-5dce-e911-a985-000d3ab79618'] # Linguistics
           },
           'dd967b4a-4d22-48a3-a2f8-d5719cee0519' =>
           {
@@ -6682,192 +6682,192 @@ module DfE
             match_synonyms: ['English lang and lit',
                              'English lang and English lit',
                              'English language and English literature'],
-            components: ['dd8070f0-5dce-e911-a985-000d3ab79618', # English language
-                         'df8070f0-5dce-e911-a985-000d3ab79618'] # English literature
+            subject_ids: ['dd8070f0-5dce-e911-a985-000d3ab79618', # English language
+                          'df8070f0-5dce-e911-a985-000d3ab79618'] # English literature
           },
           '89c79bca-b5cd-4cb3-958c-0bd5f94072ea' =>
           {
             name: 'English literature and creative writing',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['df8070f0-5dce-e911-a985-000d3ab79618', # English literature
-                         '3b7f70f0-5dce-e911-a985-000d3ab79618'] # Creative writing
+            subject_ids: ['df8070f0-5dce-e911-a985-000d3ab79618', # English literature
+                          '3b7f70f0-5dce-e911-a985-000d3ab79618'] # Creative writing
           },
           '3a5760e8-0844-4dbc-b9c5-456ea70af23e' =>
           {
             name: 'English literature and history',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['df8070f0-5dce-e911-a985-000d3ab79618', # English literature
-                         'c78070f0-5dce-e911-a985-000d3ab79618'] # History
+            subject_ids: ['df8070f0-5dce-e911-a985-000d3ab79618', # English literature
+                          'c78070f0-5dce-e911-a985-000d3ab79618'] # History
           },
           '390b3f19-71eb-485e-a577-67dbd1b19474' =>
           {
             name: 'Fashion and textiles',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['457f70f0-5dce-e911-a985-000d3ab79618', # Fashion
-                         '417f70f0-5dce-e911-a985-000d3ab79618'] # Textile design
+            subject_ids: ['457f70f0-5dce-e911-a985-000d3ab79618', # Fashion
+                          '417f70f0-5dce-e911-a985-000d3ab79618'] # Textile design
           },
           '6e556245-54b4-4dac-9d80-5846b44e9ee3' =>
           {
             name: 'Finance and accounting',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['977f70f0-5dce-e911-a985-000d3ab79618', # Finance
-                         '937f70f0-5dce-e911-a985-000d3ab79618'] # Accounting
+            subject_ids: ['977f70f0-5dce-e911-a985-000d3ab79618', # Finance
+                          '937f70f0-5dce-e911-a985-000d3ab79618'] # Accounting
           },
           'd03446a1-c1f4-442f-bd8a-1ca8c57071c0' =>
           {
             name: 'Food and nutrition',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['278270f0-5dce-e911-a985-000d3ab79618', # Food science
-                         '658070f0-5dce-e911-a985-000d3ab79618'] # Nutrition
+            subject_ids: ['278270f0-5dce-e911-a985-000d3ab79618', # Food science
+                          '658070f0-5dce-e911-a985-000d3ab79618'] # Nutrition
           },
           '185a2eac-7b83-4707-8fc8-d0248b139175' =>
           {
             name: 'French and Spanish',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['e58070f0-5dce-e911-a985-000d3ab79618', # French studies
-                         'eb8070f0-5dce-e911-a985-000d3ab79618'] # Spanish studies
+            subject_ids: ['e58070f0-5dce-e911-a985-000d3ab79618', # French studies
+                          'eb8070f0-5dce-e911-a985-000d3ab79618'] # Spanish studies
           },
           '593eae72-6c71-47f1-88d5-b49cc19109cf' =>
           {
             name: 'French and German',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['e58070f0-5dce-e911-a985-000d3ab79618', # French studies
-                         'e98070f0-5dce-e911-a985-000d3ab79618'] # Spanish studies
+            subject_ids: ['e58070f0-5dce-e911-a985-000d3ab79618', # French studies
+                          'e98070f0-5dce-e911-a985-000d3ab79618'] # Spanish studies
           },
           'e34b4fa0-cf35-420a-a2b9-130780cc7783' =>
           {
             name: 'French and Italian',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['e58070f0-5dce-e911-a985-000d3ab79618', # French studies
-                         'ef8070f0-5dce-e911-a985-000d3ab79618'] # Italian studies
+            subject_ids: ['e58070f0-5dce-e911-a985-000d3ab79618', # French studies
+                          'ef8070f0-5dce-e911-a985-000d3ab79618'] # Italian studies
           },
           '0b05c67a-cdd6-4ebe-ae01-db17d39dc7b5' =>
           {
             name: 'History and archaeology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
-                         'c18070f0-5dce-e911-a985-000d3ab79618'] # Archaeology
+            subject_ids: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
+                          'c18070f0-5dce-e911-a985-000d3ab79618'] # Archaeology
           },
           'c11ef8de-5487-4caa-9b81-23a04014c288' =>
           {
             name: 'History and education',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
-                         'c38170f0-5dce-e911-a985-000d3ab79618'] # Education
+            subject_ids: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
+                          'c38170f0-5dce-e911-a985-000d3ab79618'] # Education
           },
           '8a8227c0-3a9c-4c58-b86f-2a8a220ef195' =>
           {
             name: 'History and international relations',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
-                         'ef8170f0-5dce-e911-a985-000d3ab79618'] # International relations
+            subject_ids: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
+                          'ef8170f0-5dce-e911-a985-000d3ab79618'] # International relations
           },
           '5b9ad2a5-c692-4ca1-9cf4-c49a4a1c15e4' =>
           {
             name: 'History and philosophy',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
-                         'ff8070f0-5dce-e911-a985-000d3ab79618'] # Philosophy
+            subject_ids: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
+                          'ff8070f0-5dce-e911-a985-000d3ab79618'] # Philosophy
           },
           'd1e64b03-0765-461c-b2dd-9c16983f4296' =>
           {
             name: 'History and politics',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
-                         'f18170f0-5dce-e911-a985-000d3ab79618'] # Politics
+            subject_ids: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
+                          'f18170f0-5dce-e911-a985-000d3ab79618'] # Politics
           },
           '3c4ffcf2-2882-40dd-a71a-68117e4369cf' =>
           {
             name: 'History and sociology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
-                         '078270f0-5dce-e911-a985-000d3ab79618'] # Sociology
+            subject_ids: ['c78070f0-5dce-e911-a985-000d3ab79618', # History
+                          '078270f0-5dce-e911-a985-000d3ab79618'] # Sociology
           },
           '7472c667-cfe1-4bab-a416-43368e1166e5' =>
           {
             name: 'International relations and politics',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['ef8170f0-5dce-e911-a985-000d3ab79618', # International relations
-                         'f18170f0-5dce-e911-a985-000d3ab79618'] # Politics
+            subject_ids: ['ef8170f0-5dce-e911-a985-000d3ab79618', # International relations
+                          'f18170f0-5dce-e911-a985-000d3ab79618'] # Politics
           },
           '3ec00128-38e5-4859-bae1-b3e70548c2e4' =>
           {
             name: 'Law and criminology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['e78170f0-5dce-e911-a985-000d3ab79618', # Law
-                         'e58170f0-5dce-e911-a985-000d3ab79618'] # Criminology
+            subject_ids: ['e78170f0-5dce-e911-a985-000d3ab79618', # Law
+                          'e58170f0-5dce-e911-a985-000d3ab79618'] # Criminology
           },
           'c8b2809c-55a7-4f59-a325-990706a48055' =>
           {
             name: 'Mathematics and philosophy',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['6b8170f0-5dce-e911-a985-000d3ab79618', # Mathematics
-                         'ff8070f0-5dce-e911-a985-000d3ab79618'] # Philosophy
+            subject_ids: ['6b8170f0-5dce-e911-a985-000d3ab79618', # Mathematics
+                          'ff8070f0-5dce-e911-a985-000d3ab79618'] # Philosophy
           },
           'ed8957fa-9b8f-490d-848b-2995a698027b' =>
           {
             name: 'Mathematics and physics',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['6b8170f0-5dce-e911-a985-000d3ab79618', # Mathematics
-                         '918170f0-5dce-e911-a985-000d3ab79618'] # Physics
+            subject_ids: ['6b8170f0-5dce-e911-a985-000d3ab79618', # Mathematics
+                          '918170f0-5dce-e911-a985-000d3ab79618'] # Physics
           },
           '96667ef1-0c31-4266-b3ed-6dc2cfaa1c7b' =>
           {
             name: 'Mathematics and statistics',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['6b8170f0-5dce-e911-a985-000d3ab79618', # Mathematics
-                         '718170f0-5dce-e911-a985-000d3ab79618'] # Statistics
+            subject_ids: ['6b8170f0-5dce-e911-a985-000d3ab79618', # Mathematics
+                          '718170f0-5dce-e911-a985-000d3ab79618'] # Statistics
           },
           '09859fed-2b3e-4e9e-8ab3-ddfe0e942d41' =>
           {
             name: 'Mathematics and finance',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['6b8170f0-5dce-e911-a985-000d3ab79618', # Mathematics
-                         '977f70f0-5dce-e911-a985-000d3ab79618'] # Finance
+            subject_ids: ['6b8170f0-5dce-e911-a985-000d3ab79618', # Mathematics
+                          '977f70f0-5dce-e911-a985-000d3ab79618'] # Finance
           },
           '34c855ba-72fb-400c-841c-a58aa1b9399d' =>
           {
             name: 'Philosophy and politics',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['ff8070f0-5dce-e911-a985-000d3ab79618', # Philosophy
-                         'f18170f0-5dce-e911-a985-000d3ab79618'] # Politics
+            subject_ids: ['ff8070f0-5dce-e911-a985-000d3ab79618', # Philosophy
+                          'f18170f0-5dce-e911-a985-000d3ab79618'] # Politics
           },
           'e8599844-7783-4707-b090-e7f9d5abc6bc' =>
           {
             name: 'Philosophy and theology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['ff8070f0-5dce-e911-a985-000d3ab79618', # Philosophy
-                         '058170f0-5dce-e911-a985-000d3ab79618'] # Theology
+            subject_ids: ['ff8070f0-5dce-e911-a985-000d3ab79618', # Philosophy
+                          '058170f0-5dce-e911-a985-000d3ab79618'] # Theology
           },
           '54dc5ee9-3397-4615-b4cd-0a2ad1c2ac60' =>
           {
             name: 'Philosophy, politics and economics',
             suggestion_synonyms: ['PPE'],
             match_synonyms: [],
-            components: ['ff8070f0-5dce-e911-a985-000d3ab79618', # Philosophy
-                         'f18170f0-5dce-e911-a985-000d3ab79618', # Politics
+            subject_ids: ['ff8070f0-5dce-e911-a985-000d3ab79618', # Philosophy
+                          'f18170f0-5dce-e911-a985-000d3ab79618', # Politics
                          'b58170f0-5dce-e911-a985-000d3ab79618'] # Economics
           },
           'e5cf103f-8a15-4fd5-a2b3-4fef55a3194f' =>
@@ -6875,97 +6875,97 @@ module DfE
             name: 'Physical education and sports coaching',
             suggestion_synonyms: [],
             match_synonyms: ['PE and sports coaching'],
-            components: ['ba1ffe89-73fb-4de8-a48d-12e644ee5687', # Physical education
-                         '837f70f0-5dce-e911-a985-000d3ab79618'] # Sports coaching
+            subject_ids: ['ba1ffe89-73fb-4de8-a48d-12e644ee5687', # Physical education
+                          '837f70f0-5dce-e911-a985-000d3ab79618'] # Sports coaching
           },
           '88ca4706-ebbf-414d-b6c9-614ca31aafd9' =>
           {
             name: 'Physical education and sports studies',
             suggestion_synonyms: [],
             match_synonyms: ['PE and sports studies'],
-            components: ['ba1ffe89-73fb-4de8-a48d-12e644ee5687', # Physical education
-                         '897f70f0-5dce-e911-a985-000d3ab79618'] # Sports studies
+            subject_ids: ['ba1ffe89-73fb-4de8-a48d-12e644ee5687', # Physical education
+                          '897f70f0-5dce-e911-a985-000d3ab79618'] # Sports studies
           },
           '06bc865b-d8a3-4cb4-a833-182122531b4a' =>
           {
             name: 'Physics and astrophysics',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['918170f0-5dce-e911-a985-000d3ab79618', # Physics
-                         '7d8170f0-5dce-e911-a985-000d3ab79618'] # Astrophysics
+            subject_ids: ['918170f0-5dce-e911-a985-000d3ab79618', # Physics
+                          '7d8170f0-5dce-e911-a985-000d3ab79618'] # Astrophysics
           },
           'fa7f8dd7-4c62-4485-bc86-a46906404c82' =>
           {
             name: 'Politics and international relations',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['f18170f0-5dce-e911-a985-000d3ab79618', # Politics
-                         'ef8170f0-5dce-e911-a985-000d3ab79618'] # International relations
+            subject_ids: ['f18170f0-5dce-e911-a985-000d3ab79618', # Politics
+                          'ef8170f0-5dce-e911-a985-000d3ab79618'] # International relations
           },
           'f40d2415-64ce-4087-8bea-61468b788f9c' =>
           {
             name: 'Politics and modern history',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['f18170f0-5dce-e911-a985-000d3ab79618', # Politics
-                         'd18070f0-5dce-e911-a985-000d3ab79618'] # Modern history
+            subject_ids: ['f18170f0-5dce-e911-a985-000d3ab79618', # Politics
+                          'd18070f0-5dce-e911-a985-000d3ab79618'] # Modern history
           },
           'd26637ec-375e-4c3e-832e-844152a6753e' =>
           {
             name: 'Politics and sociology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['f18170f0-5dce-e911-a985-000d3ab79618', # Politics
-                         '078270f0-5dce-e911-a985-000d3ab79618'] # Sociology
+            subject_ids: ['f18170f0-5dce-e911-a985-000d3ab79618', # Politics
+                          '078270f0-5dce-e911-a985-000d3ab79618'] # Sociology
           },
           '77bb4458-42c7-49c5-b4fa-8a921e691cb3' =>
           {
             name: 'Psychology and criminology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['fb8170f0-5dce-e911-a985-000d3ab79618', # Psychology
-                         'e58170f0-5dce-e911-a985-000d3ab79618'] # Criminology
+            subject_ids: ['fb8170f0-5dce-e911-a985-000d3ab79618', # Psychology
+                          'e58170f0-5dce-e911-a985-000d3ab79618'] # Criminology
           },
           '9b071a71-34ab-49ab-ab18-b9ac1668ddfd' =>
           {
             name: 'Psychology and education studies',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['fb8170f0-5dce-e911-a985-000d3ab79618', # Psychology
-                         'c38170f0-5dce-e911-a985-000d3ab79618'] # Education studies
+            subject_ids: ['fb8170f0-5dce-e911-a985-000d3ab79618', # Psychology
+                          'c38170f0-5dce-e911-a985-000d3ab79618'] # Education studies
           },
           '2625d422-6699-49c0-85d9-281c53d5f666' =>
           {
             name: 'Psychology and sociology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['fb8170f0-5dce-e911-a985-000d3ab79618', # Psychology
-                         '078270f0-5dce-e911-a985-000d3ab79618'] # Sociology
+            subject_ids: ['fb8170f0-5dce-e911-a985-000d3ab79618', # Psychology
+                          '078270f0-5dce-e911-a985-000d3ab79618'] # Sociology
           },
           'd15965d9-197b-4de9-b533-a6ef62d43f60' =>
           {
             name: 'Religion, philosophy and ethics',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['038170f0-5dce-e911-a985-000d3ab79618', # Religious studies
-                         'ff8070f0-5dce-e911-a985-000d3ab79618', # Philosophy
-                         '958370f0-5dce-e911-a985-000d3ab79618'] # Ethics
+            subject_ids: ['038170f0-5dce-e911-a985-000d3ab79618', # Religious studies
+                          'ff8070f0-5dce-e911-a985-000d3ab79618', # Philosophy
+                          '958370f0-5dce-e911-a985-000d3ab79618'] # Ethics
           },
           '56671226-925b-415c-9e08-c70fc6865998' =>
           {
             name: 'Sociology and criminology',
             suggestion_synonyms: [],
             match_synonyms: [],
-            components: ['078270f0-5dce-e911-a985-000d3ab79618', # Sociology
-                         'e58170f0-5dce-e911-a985-000d3ab79618'] # Criminology
+            subject_ids: ['078270f0-5dce-e911-a985-000d3ab79618', # Sociology
+                          'e58170f0-5dce-e911-a985-000d3ab79618'] # Criminology
           },
           'b5fa99d3-db95-43d2-8bf6-bb8775f38aa0' =>
           {
             name: 'Sports coaching and physical education',
             suggestion_synonyms: [],
             match_synonyms: ['Sports coaching and PE'],
-            components: ['837f70f0-5dce-e911-a985-000d3ab79618', # Sports coaching
-                         'ba1ffe89-73fb-4de8-a48d-12e644ee5687'] # Physical education
+            subject_ids: ['837f70f0-5dce-e911-a985-000d3ab79618', # Sports coaching
+                          'ba1ffe89-73fb-4de8-a48d-12e644ee5687'] # Physical education
           }
         }
       )
