@@ -24,7 +24,9 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `priority` | integer | ? |
 | `name` | string | The long name of the degree type, eg "Foundation of Arts" |
 | `abbreviation` | string | The abbreviated name, eg, "FdA" |
-| `synonyms` | string array | A list of common alternative names |
+| `hint` | string | An optional hint to be shown alongside the name to users |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this type |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
 | `dqt_id` | uuid | The ID used for this qualification in DQT |
 | `hesa_itt_code` | string | The ID used for this qualification in HESA |
@@ -52,8 +54,9 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `priority` | integer | ? |
 | `name` | string | The long name of the degree type, eg "Foundation of Arts" |
 | `abbreviation` | string | The abbreviated name, eg, "FdA" |
+| `hint` | string | An optional hint to be shown alongside the name to users |
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this type |
-| `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this institution.|
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
 | `dqt_id` | uuid | The ID used for this qualification in DQT |
 | `hesa_itt_code` | string | The ID used for this degree in HESA |
@@ -80,7 +83,9 @@ Quality: Automatically derived from the source data, so only as correct as they 
 | `priority` | integer | ? |
 | `name` | string | The long name of the degree type, eg "Foundation of Arts" |
 | `abbreviation` | string | The abbreviated name, eg, "FdA" |
-| `synonyms` | string array | A list of common alternative names |
+| `hint` | string | An optional hint to be shown alongside the name to users |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this type |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
 | `dqt_id` | uuid | The ID used for this qualification in DQT |
 | `hesa_itt_code` | string | The ID used for this degree in HESA |
