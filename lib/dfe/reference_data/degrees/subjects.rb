@@ -6868,7 +6868,7 @@ module DfE
             match_synonyms: [],
             subject_ids: ['ff8070f0-5dce-e911-a985-000d3ab79618', # Philosophy
                           'f18170f0-5dce-e911-a985-000d3ab79618', # Politics
-                         'b58170f0-5dce-e911-a985-000d3ab79618'] # Economics
+                          'b58170f0-5dce-e911-a985-000d3ab79618'] # Economics
           },
           'e5cf103f-8a15-4fd5-a2b3-4fef55a3194f' =>
           {
