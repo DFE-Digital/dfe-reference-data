@@ -95,13 +95,8 @@ The recommended way to accomplish the last two steps is to use https://github.co
 gem tag -p # -p will push to GitHub
 ```
 
-# Changelog
+# History
 
-- v0.1.1:
-  - Changed degree abbreviation BSS to BASocSc
-  - Added "OTHM Qualifications" as a degree-awarding body
-  - Added "Computing" and "English language and literature" as degree subjects
-  - Added various suggestion synonyms to degree-awarding institutions and degree subjects
-  - Improved documentation
-  - Split the degree source data into separate files to ease editing.
-- v0.1.0: Initial release
+* There is a [log of architectural decisions](docs/decisions) for interested parties to investigate at their leisure.
+
+* And a [changelog](docs/CHANGELOG.md) contains details of every change.
