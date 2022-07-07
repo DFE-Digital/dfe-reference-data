@@ -99,4 +99,4 @@ gem tag -p # -p will push to GitHub
 
 * There is a [log of architectural decisions](docs/decisions).
 
-* And a [changelog](docs/CHANGELOG.md) contains details of every change.
+* a [changelog](docs/CHANGELOG.md) contains details of every change.
