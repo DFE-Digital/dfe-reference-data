@@ -97,6 +97,6 @@ gem tag -p # -p will push to GitHub
 
 # History
 
-* There is a [log of architectural decisions](docs/decisions) for interested parties to investigate at their leisure.
+* There is a [log of architectural decisions](docs/decisions).
 
 * And a [changelog](docs/CHANGELOG.md) contains details of every change.
