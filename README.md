@@ -97,8 +97,13 @@ gem tag -p # -p will push to GitHub
 
 # Changelog
 
-- v1.0:
+## Unreleased
+
   - Split `synonyms` fields in degree data into separate `match_synonyms` and `suggestion_synonyms` fields (see the [documentation](docs/lists_degrees.md) for the difference)
+  - Rename `hesa_itt_code` to `hecos_code` for degree subjects
+
+## Released
+
 - v0.1.1:
   - Changed degree abbreviation BSS to BASocSc
   - Added "OTHM Qualifications" as a degree-awarding body
