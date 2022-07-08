@@ -24,7 +24,7 @@ The representation of such "changing" lists must take into account the following
 * Store a separate reference list per cycle, with any records that don't change between cycles being duplicated.
 * Store a single reference list, but use fields that contain a hash from cycle ID to appropriate cycle-specific attributes of the record - including, if ncessary, a boolean to indicate its availability in that cycle (where that isn't implicit from the presence of other cycle-specific attributes).
 
-## Decision Outcome
+## Decision outcome
 
 Chosen option: "Store a single reference list", because it handles all the needs:
 
