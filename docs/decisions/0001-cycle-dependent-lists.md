@@ -2,7 +2,7 @@
 
 ## Context and problem statement
 
-Some reference data lists change between cycles.
+Some reference data lists change between cycles (year-long periods of time, similar to academic years, into which teacher training applications are organised).
 
 The changes might be a combination of:
 
@@ -33,6 +33,8 @@ Chosen option: "Store a single reference list", because it handles all the needs
 3. Code that performs cross-cycle analytics is the big winner for the single list approach, as we can have an unchanging internal ID that maps to a single record, isolated from the changing relationship of that record to particular cycles. Handling that with a list-per-cycle would be much more complicated.
 
 In addition, the other option would involve duplication of records that have not changed between lists, which creates scope for accidental inconsistencies and all the other dangers of duplicating data.
+
+This same pattern may be appropriate for time-changing data other than things associated with ITT recruitment cycles, but that will need to be assessed on a case by case basis.
 
 ### Example
 
