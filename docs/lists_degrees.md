@@ -132,7 +132,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
 | `dttp_id` | uuid | The ID used for this subject in DTTP |
-| `hesa_itt_code` | string | The ID used for this subject in HESA |
+| `hecos_code` | string | The ID used for this subject in [HECoS](https://www.hesa.ac.uk/support/documentation/hecos) |
 
 ### `DfE::ReferenceData::Degrees::COMBINED_SUBJECTS`
 
@@ -181,7 +181,7 @@ Quality: Automatically derived from the source data, so only as correct as they 
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
 | `dttp_id` | optional uuid | The ID used for this subject in DTTP (for single subjects) |
-| `hesa_itt_code` | optional string | The ID used for this subject in HESA (for single subjects) |
+| `hecos_code` | optional string | The ID used for this subject in HECOS (for single subjects) |
 | `subject_ids` | optional UUID array | The `SINGLE_SUBJECTS` IDs of the individual parts, in order (for combined subjects) |
 
 ### `DfE::ReferenceData::Degrees::INSTITUTIONS`
