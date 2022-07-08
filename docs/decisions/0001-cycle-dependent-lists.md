@@ -1,6 +1,6 @@
 # Handle lists that change between cycles using hash fields
 
-## Context and Problem Statement
+## Context and problem statement
 
 Some reference data lists change between cycles.
 
