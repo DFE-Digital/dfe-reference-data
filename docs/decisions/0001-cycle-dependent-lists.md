@@ -65,7 +65,7 @@ We might represent that with a reference data list like so:
 | 5 | Biology | {2: BIO} |
 | 6 | Chemistry | {2: CHE} |
 
-### Additional Guidance
+### Additional guidance
 
 When faced with a change to a list for an upcoming cycle, a judgement must be made as to when to keep a record with the same ID and add some per-cycle metadata to it, or to create a new record with a new ID and perhaps the same name.
 
