@@ -19,7 +19,7 @@ The representation of such "changing" lists must take into account the following
      2. Meanwhile, a query for all "Physics" records would have to decide how to handle records using the "Science" code, which did not distinguish Physics from other sciences.
      3. And that's just a simple case. The meaning of an "Other" option might change purely because a more specific option was added or removed elsewhere, for instance.
 
-## Considered Options
+## Considered options
 
 * Store a separate reference list per cycle, with any records that don't change between cycles being duplicated.
 * Store a single reference list, but use fields that contain a hash from cycle ID to appropriate cycle-specific attributes of the record - including, if ncessary, a boolean to indicate its availability in that cycle (where that isn't implicit from the presence of other cycle-specific attributes).
