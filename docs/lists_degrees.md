@@ -132,7 +132,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
 | `dttp_id` | uuid | The ID used for this subject in DTTP |
-| `hecos_code` | string | The ID used for this subject in HECOS |
+| `hecos_code` | string | The ID used for this subject in [HECoS](https://www.hesa.ac.uk/support/documentation/hecos) |
 
 ### `DfE::ReferenceData::Degrees::COMBINED_SUBJECTS`
 
