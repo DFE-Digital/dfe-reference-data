@@ -89,10 +89,16 @@ Until we sort out our RubyGems account, dependents will pull the gem from GitHub
 - Tag a new version
 - Push to GitHub
 
-The recommended way to accomplish the last two steps is to use https://github.com/svenfuchs/gem-release#gem-tag.
+The recommended way to accomplish the last two steps is to use the following Rakefile task:
 
 ```bash
-gem tag -p # -p will push to GitHub
+rake prepare_release[minor|major|patch|pre|<specific version number>]
+```
+
+Note that those are literal square brackets, but you have to choose what's inside, for instance:
+
+```bash
+rake prepare_release[minor]
 ```
 
 # History
