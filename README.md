@@ -89,26 +89,20 @@ Until we sort out our RubyGems account, dependents will pull the gem from GitHub
 - Tag a new version
 - Push to GitHub
 
-The recommended way to accomplish the last two steps is to use https://github.com/svenfuchs/gem-release#gem-tag.
+The recommended way to accomplish these steps is to use the following Rakefile task:
 
 ```bash
-gem tag -p # -p will push to GitHub
+rake prepare_release[minor|major|patch|pre|<specific version number>]
 ```
 
-# Changelog
+Note that those are literal square brackets, but you have to choose what's inside, for instance:
 
-## Unreleased
+```bash
+rake prepare_release[minor]
+```
 
-  - Split `synonyms` fields in degree data into separate `match_synonyms` and `suggestion_synonyms` fields (see the [documentation](docs/lists_degrees.md) for the difference)
-  - Rename `hesa_itt_code` to `hecos_code` for degree subjects
+# History
 
-## Released
+* There is a [log of architectural decisions](docs/decisions).
 
-- v0.1.1:
-  - Changed degree abbreviation BSS to BASocSc
-  - Added "OTHM Qualifications" as a degree-awarding body
-  - Added "Computing" and "English language and literature" as degree subjects
-  - Added various suggestion synonyms to degree-awarding institutions and degree subjects
-  - Improved documentation
-  - Split the degree source data into separate files to ease editing.
-- v0.1.0: Initial release
+* a [changelog](docs/CHANGELOG.md) contains details of every change.
