@@ -1,5 +1,23 @@
 # Changelog
 
+## [v1.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.0.0) (2022-07-13)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v0.2.0...v1.0.0)
+
+**Closed issues:**
+
+- Better `CHANGELOG` [\#23](https://github.com/DFE-Digital/dfe-reference-data/issues/23)
+
+**Merged pull requests:**
+
+- Split synonyms for qualifications [\#28](https://github.com/DFE-Digital/dfe-reference-data/pull/28) ([edwardhorsford](https://github.com/edwardhorsford))
+- Add some basic tests for single subjects [\#27](https://github.com/DFE-Digital/dfe-reference-data/pull/27) ([frankieroberto](https://github.com/frankieroberto))
+- Rename hesa to hecos [\#26](https://github.com/DFE-Digital/dfe-reference-data/pull/26) ([edwardhorsford](https://github.com/edwardhorsford))
+- Update readme to mention hints and refer to suggestion and match syno… [\#24](https://github.com/DFE-Digital/dfe-reference-data/pull/24) ([edwardhorsford](https://github.com/edwardhorsford))
+- Add match synonyms to degree types [\#20](https://github.com/DFE-Digital/dfe-reference-data/pull/20) ([edwardhorsford](https://github.com/edwardhorsford))
+- Split synonyms by type, add match synonyms [\#19](https://github.com/DFE-Digital/dfe-reference-data/pull/19) ([edwardhorsford](https://github.com/edwardhorsford))
+- Split out compound subjects [\#18](https://github.com/DFE-Digital/dfe-reference-data/pull/18) ([alaric-dfe](https://github.com/alaric-dfe))
+
 ## [v0.2.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v0.2.0) (2022-07-11)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v0.1.0...v0.2.0)
@@ -28,11 +46,15 @@
 
 ## [v0.1.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v0.1.0) (2022-04-08)
 
-[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/03af38681e06c4cb1df017c1b20dc939e012908c...v0.1.0)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/old-main...v0.1.0)
 
 **Merged pull requests:**
 
 - Add foundation [\#1](https://github.com/DFE-Digital/dfe-reference-data/pull/1) ([JonF1](https://github.com/JonF1))
+
+## [old-main](https://github.com/DFE-Digital/dfe-reference-data/tree/old-main) (2022-02-15)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/03af38681e06c4cb1df017c1b20dc939e012908c...old-main)
 
 
 
