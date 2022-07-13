@@ -278,7 +278,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             level: '5',
-          degree: :foundation },
+            degree: :foundation },
           '2e4d3d83-bbf7-4d37-b451-0f6bbf3ac32a' =>
           { name: 'higher national diploma',
             suggestion_synonyms: ['HND'],
@@ -311,11 +311,10 @@ module DfE
             level: '6' },
           'b580a760-da23-4d38-b803-62ae11de6a65' =>
           { name: 'bachelors degree',
-            suggestion_synonyms: ['ordinary degree',
-              "bachelor's degree"],
-              match_synonyms: [],
-              level: '6',
-          degree: :bachelor },
+            suggestion_synonyms: ['ordinary degree', "bachelor's degree"],
+            match_synonyms: [],
+            level: '6',
+            degree: :bachelor },
           'a4a57564-1707-4aed-8231-1be922f1acee' =>
           { name: 'graduate certificate',
             suggestion_synonyms: [],
@@ -393,7 +392,7 @@ module DfE
             suggestion_synonyms: ['PhD'],
             match_synonyms: [],
             level: '8',
-          degree: :doctor },
+            degree: :doctor },
           'a835ae3d-7ad7-432c-a8a0-8ea8effdb4b0' =>
           { name: 'level 8 award',
             suggestion_synonyms: [],
