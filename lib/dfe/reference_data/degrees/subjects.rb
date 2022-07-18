@@ -856,7 +856,7 @@ module DfE
             hecos_code: '100584' },
           '697f70f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Business and management',
-            suggestion_synonyms: [],
+            suggestion_synonyms: ['Business administration'],
             match_synonyms: [],
             dttp_id: '697f70f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100078' },
@@ -898,7 +898,8 @@ module DfE
             hecos_code: '100954' },
           '6b7f70f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Business studies',
-            suggestion_synonyms: [],
+            suggestion_synonyms: ['Business management',
+                                  'Business administration'],
             match_synonyms: [],
             dttp_id: '6b7f70f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100079' },
@@ -1030,32 +1031,37 @@ module DfE
             hecos_code: '100417' },
           'c18270f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Child care',
-            suggestion_synonyms: [],
+            suggestion_synonyms: ['Childhood',
+                                  'Children'],
             match_synonyms: [],
             dttp_id: 'c18270f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100654' },
           '8f8470f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Child psychology',
-            suggestion_synonyms: [],
+            suggestion_synonyms: ['Childhood',
+                                  'Children'],
             match_synonyms: [],
             dttp_id: '8f8470f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100953' },
           'bd8170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Childhood and youth studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Children and youth studies',
+                             'Children and young people'],
             dttp_id: 'bd8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100455' },
           'bf8170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Childhood studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Children studies',
+                             'Child studies'],
             dttp_id: 'bf8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100456' },
           '9f8070f0-5dce-e911-a985-000d3ab79618' =>
           { name: "Children's nursing",
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Childhood nursing',
+                             'Child nursing'],
             dttp_id: '9f8070f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100280' },
           '738370f0-5dce-e911-a985-000d3ab79618' =>
@@ -1282,7 +1288,10 @@ module DfE
             hecos_code: '101042' },
           '298670f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Combined studies',
-            suggestion_synonyms: ['open degree', 'multiple subjects', 'several subjects', 'open'],
+            suggestion_synonyms: ['open degree',
+                                  'multiple subjects',
+                                  'several subjects',
+                                  'open'],
             match_synonyms: [],
             dttp_id: '298670f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101273' },
@@ -1895,8 +1904,9 @@ module DfE
             hecos_code: '100738' },
           'c18170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Early childhood studies',
-            suggestion_synonyms: [],
-            match_synonyms: [],
+            suggestion_synonyms: ['Early years and childhood studies'],
+            match_synonyms: ['Early childhood',
+                             'Early childhood education'],
             dttp_id: 'c18170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100457' },
           'cb8170f0-5dce-e911-a985-000d3ab79618' =>
@@ -1985,14 +1995,17 @@ module DfE
             hecos_code: '100651' },
           'c38170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Education studies',
-            suggestion_synonyms: [],
+            suggestion_synonyms: ['Learning and teaching',
+                                  'Teaching and learning',
+                                  'Education and learning',
+                                  'Teaching and education'],
             match_synonyms: ['Education'],
             dttp_id: 'c38170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100459' },
           'f98170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Educational psychology',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Psychology in education'],
             dttp_id: 'f98170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100496' },
           '8f8370f0-5dce-e911-a985-000d3ab79618' =>
@@ -4427,7 +4440,7 @@ module DfE
             hecos_code: '100421' },
           '118470f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Office administration',
-            suggestion_synonyms: [],
+            suggestion_synonyms: ['Business administration'],
             match_synonyms: [],
             dttp_id: '118470f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100868' },
@@ -4762,11 +4775,13 @@ module DfE
             dttp_id: '0f8570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101050' },
           'ba1ffe89-73fb-4de8-a48d-12e644ee5687' =>
-           { name: 'Physical education',
-             synonyms: ['PE'],
-             dttp_id: nil,
-             hecos_code: '100433',
-             comment: 'This is matched to the 100433 code for "Sport and exercise sciences" following HECOS guidance. A future HECOS update may add PE as a separate code.' },
+          { name: 'Physical education',
+            suggestion_synonyms: ['PE',
+                                  'Physical education and physical activity'],
+            match_synonyms: [],
+            dttp_id: nil,
+            hecos_code: '100433',
+            comment: 'This is matched to the 100433 code for "Sport and exercise sciences" following HECOS guidance. A future HECOS update may add PE as a separate code.' },
           '778170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Physical geography',
             suggestion_synonyms: [],
@@ -5004,7 +5019,8 @@ module DfE
           'cd8170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Primary education',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Primary education studies',
+                             'Education studies (primary)'],
             dttp_id: 'cd8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100464' },
           '118270f0-5dce-e911-a985-000d3ab79618' =>
@@ -5183,7 +5199,7 @@ module DfE
             hecos_code: '100837' },
           '7b7f70f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Public administration',
-            suggestion_synonyms: [],
+            suggestion_synonyms: ['Business administration'],
             match_synonyms: [],
             dttp_id: '7b7f70f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100090' },
@@ -5838,7 +5854,11 @@ module DfE
           '458570f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Special needs teaching',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: [
+              'Special educational needs teaching',
+              'Special educational needs',
+              'SEN teaching'
+            ],
             dttp_id: '458570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101087' },
           '418570f0-5dce-e911-a985-000d3ab79618' =>
@@ -5856,19 +5876,24 @@ module DfE
           'ff8170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Sport and exercise psychology',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Sports and exercise psychology'],
             dttp_id: 'ff8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100499' },
           '9f8170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Sport and exercise sciences',
-            suggestion_synonyms: [],
-            match_synonyms: [],
+            suggestion_synonyms: ['Sport and physical education',
+                                  'PE',
+                                  'Physical education'],
+            match_synonyms: ['Sports and exercise sciences',
+                             'Sports science',
+                             'Sport science',
+                             'Sport and exercise science'],
             dttp_id: '9f8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100433' },
           'bd8670f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Sport technology',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Sports technology'],
             dttp_id: 'bd8670f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101379' },
           '837f70f0-5dce-e911-a985-000d3ab79618' =>
@@ -5892,7 +5917,7 @@ module DfE
           '897f70f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Sports studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Sport sudies'],
             dttp_id: '897f70f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100098' },
           'db8170f0-5dce-e911-a985-000d3ab79618' =>
@@ -6131,7 +6156,7 @@ module DfE
             hecos_code: '100700' },
           '058370f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Theatre studies',
-            suggestion_synonyms: [],
+            suggestion_synonyms: ['Theatre and performance'],
             match_synonyms: [],
             dttp_id: '058370f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100698' },
@@ -6635,6 +6660,22 @@ module DfE
             subject_ids: ['c38170f0-5dce-e911-a985-000d3ab79618', # Education studies
                           'fb8170f0-5dce-e911-a985-000d3ab79618'] # Psychology
           },
+          '8079fd02-6f30-4926-b7fd-9ac3c114184d' =>
+          {
+            name: 'Education and special needs teaching',
+            suggestion_synonyms: [],
+            match_synonyms: ['Education and special educational needs'],
+            subject_ids: ['c38170f0-5dce-e911-a985-000d3ab79618', # Education studies
+                          '458570f0-5dce-e911-a985-000d3ab79618'] # Special needs teaching
+          },
+          '1caa89b0-3b59-4690-bdfd-7529931008e6' =>
+          {
+            name: 'Education studies and learning support',
+            suggestion_synonyms: ['Teaching and learning support'],
+            match_synonyms: ['Education and learning support'],
+            subject_ids: ['c38170f0-5dce-e911-a985-000d3ab79618', # Education studies
+                          'c98170f0-5dce-e911-a985-000d3ab79618'] # Learning support
+          },
           '4b1494e7-ee59-4d3b-89e9-d4fd35410d97' =>
           {
             name: 'English and American literature',
@@ -6870,6 +6911,15 @@ module DfE
                           'f18170f0-5dce-e911-a985-000d3ab79618', # Politics
                           'b58170f0-5dce-e911-a985-000d3ab79618'] # Economics
           },
+          '0262cbd3-8615-4355-a1fc-ec44c5681d37' =>
+          {
+            name: 'Philosophy, religion and ethics',
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            subject_ids: ['ff8070f0-5dce-e911-a985-000d3ab79618', # Philosophy
+                          '038170f0-5dce-e911-a985-000d3ab79618', # Religious studies
+                          '958370f0-5dce-e911-a985-000d3ab79618'] # Ethics
+          },
           'e5cf103f-8a15-4fd5-a2b3-4fef55a3194f' =>
           {
             name: 'Physical education and sports coaching',
@@ -6882,7 +6932,9 @@ module DfE
           {
             name: 'Physical education and sports studies',
             suggestion_synonyms: [],
-            match_synonyms: ['PE and sports studies'],
+            match_synonyms: ['PE and sports studies',
+                             'Physical education and sport',
+                             'PE and sport'],
             subject_ids: ['ba1ffe89-73fb-4de8-a48d-12e644ee5687', # Physical education
                           '897f70f0-5dce-e911-a985-000d3ab79618'] # Sports studies
           },
@@ -6966,6 +7018,32 @@ module DfE
             match_synonyms: ['Sports coaching and PE'],
             subject_ids: ['837f70f0-5dce-e911-a985-000d3ab79618', # Sports coaching
                           'ba1ffe89-73fb-4de8-a48d-12e644ee5687'] # Physical education
+          },
+          '96d33f57-8d2d-43f5-a81d-3f14213fa5b2' =>
+          {
+            name: 'Sports coaching and sports development',
+            suggestion_synonyms: [],
+            match_synonyms: ['Sports coaching and development'],
+            subject_ids: ['837f70f0-5dce-e911-a985-000d3ab79618', # Sports coaching
+                          '857f70f0-5dce-e911-a985-000d3ab79618'] # Sports development
+          },
+          'dd99c9cd-469a-4305-9092-f392b3d2b04f' =>
+          {
+            name: 'Sport and education studies',
+            suggestion_synonyms: [],
+            match_synonyms: ['Sport studies and education studies',
+                             'Sport and education'],
+            subject_ids: ['897f70f0-5dce-e911-a985-000d3ab79618', # Sport studies
+                          '837f70f0-5dce-e911-a985-000d3ab79618'] # Education studies
+          },
+          '4d5548c7-9692-422f-b04b-e64dbac18947' =>
+          {
+            name: 'Sports studies and sports coaching',
+            suggestion_synonyms: [],
+            match_synonyms: ['Sport, fitness and coaching',
+                             'Sports and coaching'],
+            subject_ids: ['897f70f0-5dce-e911-a985-000d3ab79618', # Sports studies
+                          '837f70f0-5dce-e911-a985-000d3ab79618'] # Sports coaching
           }
         }
       )

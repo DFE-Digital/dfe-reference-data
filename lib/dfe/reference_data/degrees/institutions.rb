@@ -32,7 +32,7 @@ module DfE
             ukprn: '10007811' },
           'bec53e05-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Buckinghamshire New University',
-            suggestion_synonyms: %w[Bucks BNU],
+            suggestion_synonyms: ['Bucks', 'BNU'],
             match_synonyms: ['Buckinghamshire Chilterns University College'],
             hesa_itt_code: '9',
             dttp_id: 'bec53e05-7042-e811-80ff-3863bb3640b8',
@@ -358,7 +358,7 @@ module DfE
             ukprn: '10007146' },
           '1c71f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'University of Hertfordshire',
-            suggestion_synonyms: %w[UH UOH Herts],
+            suggestion_synonyms: ['UH', 'UOH', 'Herts'],
             match_synonyms: [],
             hesa_itt_code: '60',
             dttp_id: '1c71f34a-2887-e711-80d8-005056ac45bb',
@@ -388,7 +388,7 @@ module DfE
             ukprn: '10003678' },
           'd870f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'Leeds Beckett University',
-            suggestion_synonyms: %w[LBU LMU],
+            suggestion_synonyms: ['LBU', 'LMU'],
             match_synonyms: ['Leeds Beckett', 'Leeds Metropolitan University'],
             hesa_itt_code: '64',
             dttp_id: 'd870f34a-2887-e711-80d8-005056ac45bb',
@@ -650,7 +650,7 @@ module DfE
             ukprn: '10007800' },
           '473e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Glasgow Caledonian University',
-            suggestion_synonyms: %w[GCU Caley],
+            suggestion_synonyms: ['GCU', 'Caley'],
             match_synonyms: [],
             hesa_itt_code: '106',
             dttp_id: '473e182c-1425-ec11-b6e6-000d3adf095a',
@@ -865,7 +865,7 @@ module DfE
             ukprn: '10007775' },
           '6c407223-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Royal Holloway, University of London',
-            suggestion_synonyms: %w[RH RHUL],
+            suggestion_synonyms: ['RH', 'RHUL'],
             match_synonyms:
             ['Royal Holloway', 'Royal Holloway and Bedford New College'],
             hesa_itt_code: '141',

@@ -7,6 +7,9 @@ Style/Documentation:
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Style/WordArray:
+  EnforcedStyle: brackets
+
 Metrics/MethodLength:
   Enabled: false
 
@@ -18,3 +21,4 @@ Metrics/ModuleLength:
 
 AllCops:
   NewCops: enable
+  TargetRubyVersion: 2.7.0
