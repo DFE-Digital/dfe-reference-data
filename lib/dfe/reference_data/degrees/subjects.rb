@@ -5854,8 +5854,11 @@ module DfE
           '458570f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Special needs teaching',
             suggestion_synonyms: [],
-            match_synonyms: ['Special educational needs teaching',
-                             'Special educational needs'],
+            match_synonyms: [
+              'Special educational needs teaching',
+              'Special educational needs',
+              'SEN teaching'
+            ],
             dttp_id: '458570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101087' },
           '418570f0-5dce-e911-a985-000d3ab79618' =>
