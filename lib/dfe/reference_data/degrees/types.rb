@@ -45,7 +45,7 @@ module DfE
               'BA Honours',
               'Bachelor of Arts with honours',
               'Bachelor of Arts (Hons)',
-              'Bachelo of Arts (Honours)'
+              'Bachelor of Arts (Honours)'
             ],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dqt_id: 'db695652-c197-e711-80d8-005056ac45bb',
