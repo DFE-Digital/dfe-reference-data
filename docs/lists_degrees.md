@@ -20,7 +20,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 
 | Field | Type | Purpose |
 |---|---|---|
-| `id` | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
 | `priority` | integer | ? |
 | `name` | string | The long name of the degree type, eg "Foundation of Arts" |
 | `abbreviation` | string | The abbreviated name, eg, "FdA" |
@@ -28,7 +28,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this type |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
-| `dqt_id` | uuid | The ID used for this qualification in DQT |
+| `dttp_id` | uuid | The ID used for this qualification in DQT |
 | `hesa_itt_code` | string | The ID used for this qualification in HESA |
 
 ### `DfE::ReferenceData::Degrees::GENERIC_TYPES`
@@ -50,7 +50,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 
 | Field | Type | Purpose |
 |---|---|---|
-| `id` | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
 | `priority` | integer | ? |
 | `name` | string | The long name of the degree type, eg "Foundation of Arts" |
 | `abbreviation` | string | The abbreviated name, eg, "FdA" |
@@ -58,7 +58,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this type |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
-| `dqt_id` | uuid | The ID used for this qualification in DQT |
+| `dttp_id` | uuid | The ID used for this qualification in DQT |
 | `hesa_itt_code` | string | The ID used for this degree in HESA |
 
 ### `DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS`
@@ -79,7 +79,7 @@ Quality: Automatically derived from the source data, so only as correct as they 
 
 | Field | Type | Purpose |
 |---|---|---|
-| `id` | UUID | A unique identifier. The same as `dqt_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
 | `priority` | integer | ? |
 | `name` | string | The long name of the degree type, eg "Foundation of Arts" |
 | `abbreviation` | string | The abbreviated name, eg, "FdA" |
@@ -87,7 +87,7 @@ Quality: Automatically derived from the source data, so only as correct as they 
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this type |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
-| `dqt_id` | uuid | The ID used for this qualification in DQT |
+| `dttp_id` | uuid | The ID used for this qualification in DQT |
 | `hesa_itt_code` | string | The ID used for this degree in HESA |
 
 ### `DfE::ReferenceData::Degrees::GRADES`

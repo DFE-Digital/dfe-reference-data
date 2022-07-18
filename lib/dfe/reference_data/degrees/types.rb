@@ -8,7 +8,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '8b5bb841-c7fd-43e3-87d8-dc9653c54dda',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: nil,
             comment: 'This is specifically for foundation degrees with the FdSc abbreviation, which which don’t have a subject within the degree title, rather than as a generic type for all foundation degrees.' },
           '7022c4c2-ec9a-4eec-98dc-315bfeb1ef3a' =>
@@ -22,7 +22,7 @@ module DfE
             ],
             match_synonyms: [],
             qualification: '8b5bb841-c7fd-43e3-87d8-dc9653c54dda',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: nil },
           '2b5b8af4-cade-421b-9e3d-026f71f143b7' =>
           { priority: 1,
@@ -31,7 +31,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '8b5bb841-c7fd-43e3-87d8-dc9653c54dda',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: nil },
           'a02be347-1d5b-485a-a845-40c2d4b6ee8f' =>
           { priority: 1,
@@ -40,7 +40,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '8b5bb841-c7fd-43e3-87d8-dc9653c54dda',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: nil },
           'db695652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
@@ -54,7 +54,7 @@ module DfE
               'Bachelor of Arts (Hons)'
             ],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'db695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'db695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '51' },
           'dd695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Arts Economics',
@@ -62,7 +62,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'dd695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'dd695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '52' },
           'df695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Arts in Architecture',
@@ -70,7 +70,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'df695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'df695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '53' },
           'e1695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of the Art of Obstetrics',
@@ -78,7 +78,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'e1695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'e1695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '54' },
           'e3695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Architecture',
@@ -86,7 +86,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'e3695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'e3695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '55' },
           'e5695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Applied Science',
@@ -94,7 +94,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'e5695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'e5695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '56' },
           'e7695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Agriculture',
@@ -102,7 +102,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'e7695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'e7695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '57' },
           'e9695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Accountancy',
@@ -110,7 +110,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'e9695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'e9695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '58' },
           'eb695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Administration',
@@ -118,7 +118,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'eb695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'eb695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '59' },
           'ed695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Business Administration',
@@ -126,7 +126,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'ed695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'ed695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '60' },
           'ef695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Combined Studies',
@@ -134,7 +134,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'ef695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'ef695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '61' },
           'f1695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Commerce',
@@ -142,7 +142,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'f1695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'f1695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '62' },
           'f3695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Divinity',
@@ -150,7 +150,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'f3695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'f3695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '63' },
           'f5695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Dental Surgery',
@@ -158,7 +158,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'f5695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'f5695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '64' },
           'f7695652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
@@ -167,7 +167,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'f7695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'f7695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '65' },
           'f9695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Engineering with Business Studies',
@@ -175,7 +175,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'f9695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'f9695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '66' },
           'fb695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Fine Art',
@@ -183,7 +183,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'fb695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'fb695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '67' },
           'fd695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of General Studies',
@@ -191,7 +191,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'fd695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'fd695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '68' },
           'ff695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Humanities',
@@ -199,7 +199,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'ff695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'ff695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '69' },
           '016a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Hygiene',
@@ -207,7 +207,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '016a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '016a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '70' },
           '036a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Law',
@@ -215,7 +215,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '036a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '036a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '71' },
           '056a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Librarianship',
@@ -223,7 +223,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '056a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '056a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '72' },
           '076a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Librarianship and Information Studies',
@@ -231,7 +231,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '076a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '076a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '73' },
           '096a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Literature',
@@ -239,7 +239,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '096a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '096a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '74' },
           '0b6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Land Economy',
@@ -247,7 +247,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '0b6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '0b6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '75' },
           '0d6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Medical Science',
@@ -255,7 +255,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '0d6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '0d6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '76' },
           '0f6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Medicine',
@@ -263,7 +263,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '0f6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '0f6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '77' },
           '116a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Metallurgy',
@@ -271,7 +271,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '116a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '116a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '78' },
           '136a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Metallurgy and Engineering',
@@ -279,7 +279,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '136a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '136a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '79' },
           '156a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Music',
@@ -287,7 +287,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '156a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '156a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '80' },
           '176a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Nursing',
@@ -295,7 +295,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '176a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '176a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '81' },
           '196a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Pharmacy',
@@ -303,7 +303,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '196a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '196a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '82' },
           '1b6a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
@@ -318,7 +318,7 @@ module DfE
               'Bachelor of Science (Hons)'
             ],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '1b6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '1b6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '83' },
           '1d6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Science Economics',
@@ -326,7 +326,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '1d6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '1d6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '84' },
           '1f6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Science and Engineering',
@@ -334,7 +334,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '1f6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '1f6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '85' },
           '216a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Science and Technology',
@@ -342,7 +342,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '216a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '216a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '86' },
           '236a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Science in Social Science', # Is this a subject/type conflation?
@@ -350,7 +350,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '236a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '236a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '87' },
           '256a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Science in Speech Therapy', # Is this a subject/type conflation?
@@ -358,7 +358,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '256a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '256a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '88' },
           '276a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Social Science',
@@ -366,7 +366,7 @@ module DfE
             suggestion_synonyms: ['BSS'],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '276a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '276a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '89' },
           '296a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Surgery',
@@ -374,7 +374,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '296a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '296a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '90' },
           '2b6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Chirurgiae',
@@ -382,7 +382,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '2b6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '2b6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '91' },
           '2d6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Technology',
@@ -390,7 +390,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '2d6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '2d6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '92' },
           '2f6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Theology',
@@ -398,7 +398,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '2f6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '2f6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '93' },
           '316a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Veterinary Medicine',
@@ -406,7 +406,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '316a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '316a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '94' },
           '336a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Veterinary Medicine and Surgery',
@@ -414,7 +414,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '336a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '336a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '95' },
           '356a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Veterinary Science',
@@ -422,7 +422,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '356a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '356a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '96' },
           '376a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Education Scotland and Northern Ireland', # Why the two BEds?
@@ -430,7 +430,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '376a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '376a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '97' },
           '396a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Philosophy',
@@ -438,7 +438,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: '396a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '396a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '98' },
           'c1695652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
@@ -447,7 +447,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'c1695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'c1695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '1' },
           'd5695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'BA with intercalated PGCE', # This is weird
@@ -455,7 +455,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: 'd5695652-c197-e711-80d8-005056ac45bb',
+            dttp_id: 'd5695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '12' },
           '3b6a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
@@ -464,7 +464,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of arts'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '3b6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '3b6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '200' },
           '3d6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Librarianship',
@@ -472,7 +472,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of librarianship'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '3d6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '3d6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '201' },
           '3f6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Literature',
@@ -480,7 +480,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of literature'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '3f6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '3f6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '202' },
           '416a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Music',
@@ -488,7 +488,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of music'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '416a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '416a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '203' },
           '436a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Philosophy',
@@ -496,7 +496,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of philosophy'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '436a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '436a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '204' },
           '456a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
@@ -505,7 +505,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of science'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '456a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '456a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '205' },
           '476a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Theology',
@@ -513,7 +513,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of theology'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '476a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '476a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '206' },
           '496a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Certificate of Membership of Cranfield Institute of Technology', # This one is weird
@@ -521,7 +521,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '25e0b680-c960-48ec-bd4a-338c8bc9c116', # level 7 certificate rather than degree
-            dqt_id: '496a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '496a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '207' },
           '4b6a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
@@ -530,7 +530,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of education'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '4b6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '4b6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '208' },
           '4d6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Business Studies',
@@ -538,7 +538,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of business studies'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '4d6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '4d6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '209' },
           '4f6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Social Studies',
@@ -546,7 +546,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of social studies'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '4f6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '4f6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '210' },
           '516a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
@@ -555,7 +555,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of engineering'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '516a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '516a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '211' },
           '536a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Law',
@@ -563,7 +563,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of law'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '536a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '536a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '212' },
           '556a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Business Administration',
@@ -571,7 +571,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of business administration'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '556a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '556a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '213' },
           '576a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Chemistry',
@@ -579,7 +579,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of chemistry'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '576a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '576a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '214' },
           '596a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Physics',
@@ -587,7 +587,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of physics'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: '596a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '596a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '215' },
           '5b6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Doctor of Divinity',
@@ -595,7 +595,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '181eb0ae-eeb8-487b-9c6a-a4ee3e1907b6',
-            dqt_id: '5b6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '5b6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '300' },
           '5d6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Doctor of Civil Law',
@@ -603,7 +603,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '181eb0ae-eeb8-487b-9c6a-a4ee3e1907b6',
-            dqt_id: '5d6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '5d6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '301' },
           '5f6a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Doctor of Medicine',
@@ -611,7 +611,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '181eb0ae-eeb8-487b-9c6a-a4ee3e1907b6',
-            dqt_id: '5f6a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '5f6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '302' },
           '616a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Doctor of Music',
@@ -619,7 +619,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '181eb0ae-eeb8-487b-9c6a-a4ee3e1907b6',
-            dqt_id: '616a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '616a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '303' },
           '636a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Doctor of Science',
@@ -627,7 +627,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '181eb0ae-eeb8-487b-9c6a-a4ee3e1907b6',
-            dqt_id: '636a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '636a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '304' },
           '656a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Doctor of Philosophy',
@@ -635,7 +635,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '181eb0ae-eeb8-487b-9c6a-a4ee3e1907b6',
-            dqt_id: '656a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '656a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '305' },
           '676a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
@@ -644,7 +644,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '181eb0ae-eeb8-487b-9c6a-a4ee3e1907b6',
-            dqt_id: '676a5652-c197-e711-80d8-005056ac45bb',
+            dttp_id: '676a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '306' },
           '03d6b7af-499c-49e3-96cc-e63f9beda6e5' =>
           { priority: 1,
@@ -653,7 +653,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '181eb0ae-eeb8-487b-9c6a-a4ee3e1907b6',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: nil },
           # These next four are HESA codes found in production data that weren't
           # in the current HESA list, so presumably had been removed; so are
@@ -666,7 +666,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: '3',
             deprecated: true },
           'c6aeedca-9147-4e88-886a-a90302f3d097' =>
@@ -676,7 +676,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: '5',
             deprecated: true },
           '007a0999-87f7-4afc-8ccd-ce1e1d92c9ac' =>
@@ -686,7 +686,7 @@ module DfE
             suggestion_synonyms: ['BA Education'],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: '7',
             deprecated: true },
           'da47d378-f4bb-45ec-bda0-14af40ad974e' =>
@@ -696,7 +696,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: '9',
             deprecated: true } }
       )
@@ -709,7 +709,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: nil,
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: '400' },
           'fdafdcd7-5f21-4363-b7d5-c1f44a852af1' =>
           { priority: 1,
@@ -739,7 +739,7 @@ module DfE
             ],
             match_synonyms: [],
             qualification: nil,
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: '401' },
           '03c4fa67-345e-4d09-8e9b-68c36a450947' =>
           { priority: 1,
@@ -760,7 +760,7 @@ module DfE
             ],
             match_synonyms: [],
             qualification: nil,
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: '402' }
         }
       )
