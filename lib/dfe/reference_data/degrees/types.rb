@@ -7,7 +7,7 @@ module DfE
             name: 'Foundation of Arts',
             abbreviation: 'FdA',
             suggestion_synonyms: [
-              'Foundation degree',
+              'Foundation degree'
             ],
             match_synonyms: [
               'Foundation degree arts',
