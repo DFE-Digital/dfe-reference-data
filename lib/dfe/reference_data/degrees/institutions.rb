@@ -154,7 +154,9 @@ module DfE
           '4ff3791d-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Ravensbourne University London',
             suggestion_synonyms: [],
-            match_synonyms: ['Ravensbourne College of Design and Communication'],
+            match_synonyms: [
+              'Ravensbourne',
+              'Ravensbourne College of Design and Communication'],
             hesa_itt_code: '30',
             dttp_id: '4ff3791d-7042-e811-80ff-3863bb3640b8',
             ukprn: '10005389' },
@@ -866,8 +868,11 @@ module DfE
           '6c407223-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Royal Holloway, University of London',
             suggestion_synonyms: %w[RH RHUL],
-            match_synonyms:
-            ['Royal Holloway', 'Royal Holloway and Bedford New College'],
+            match_synonyms: [
+              'Royal Holloway',
+              'Royal Holloway university of London',
+              'Royal Holloway and Bedford New College'
+            ],
             hesa_itt_code: '141',
             dttp_id: '6c407223-7042-e811-80ff-3863bb3640b8',
             ukprn: '10005553' },
@@ -1407,7 +1412,7 @@ module DfE
           { name: 'BIMM Institute',
             suggestion_synonyms: [],
             match_synonyms:
-            ['BIMM Limited', 'British and Irish Modern Music Institute'],
+            ['BIMM', 'BIMM Limited', 'British and Irish Modern Music Institute'],
             hesa_itt_code: '232',
             dttp_id: '0e3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10037544' },
@@ -2423,8 +2428,12 @@ module DfE
             ukprn: nil },
           '20e5a08c-ee97-e711-80d8-005056ac45bb' =>
           { name: 'NCG (Newcastle College Group)',
-            suggestion_synonyms: ['Newcastle College'],
-            match_synonyms: ['Newcatle College Group'],
+            suggestion_synonyms: [],
+            match_synonyms: [
+              'Newcastle College',
+              'Newcastle College Group',
+              'Newcastle College university centre'
+            ],
             hesa_itt_code: nil,
             dttp_id: '20e5a08c-ee97-e711-80d8-005056ac45bb',
             ukprn: '10004599' },
