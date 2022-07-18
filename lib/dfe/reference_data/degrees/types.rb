@@ -8,10 +8,11 @@ module DfE
             abbreviation: 'FdA',
             suggestion_synonyms: [
               'Foundation degree',
+            ],
+            match_synonyms: [
               'Foundation degree arts',
               'Foundation degree of arts'
             ],
-            match_synonyms: [],
             qualification: '8b5bb841-c7fd-43e3-87d8-dc9653c54dda',
             dqt_id: nil,
             hesa_itt_code: nil },
@@ -40,9 +41,11 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [
               'BA Hons',
-              'BA (Hons)', 'BA Honours',
+              'BA (Hons)',
+              'BA Honours',
               'Bachelor of Arts with honours',
-              'Bachelor of Arts (Hons)'
+              'Bachelor of Arts (Hons)',
+              'Bachelo of Arts (Honours)'
             ],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dqt_id: 'db695652-c197-e711-80d8-005056ac45bb',
