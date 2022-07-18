@@ -156,7 +156,8 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [
               'Ravensbourne',
-              'Ravensbourne College of Design and Communication'],
+              'Ravensbourne College of Design and Communication'
+            ],
             hesa_itt_code: '30',
             dttp_id: '4ff3791d-7042-e811-80ff-3863bb3640b8',
             ukprn: '10005389' },
