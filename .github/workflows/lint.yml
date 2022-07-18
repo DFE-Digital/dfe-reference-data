@@ -14,8 +14,6 @@ jobs:
       with:
         ruby-version: 2.7.0
         bundler-cache: true
-    - name: Install packages
-      run: npm install
     - name: Run linters with autofix
       run: bundle exec rubocop --auto-correct-all
     - name: Push any fixes
