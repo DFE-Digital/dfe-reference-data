@@ -2,7 +2,16 @@ module DfE
   module ReferenceData
     module Degrees
       TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
-        { '7022c4c2-ec9a-4eec-98dc-315bfeb1ef3a' =>
+        { 'be08f598-0860-4de0-b95a-3c448a16cc99' =>
+          { name: 'Foundation degree',
+            abbreviation: 'FdSc',
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            qualification: '8b5bb841-c7fd-43e3-87d8-dc9653c54dda',
+            dqt_id: nil,
+            hesa_itt_code: nil,
+            comment: "This is specifically for foundation degrees with the FdSc abbreviation, which which don’t have a subject within the degree title, rather than as a generic type for all foundation degrees." },
+          '7022c4c2-ec9a-4eec-98dc-315bfeb1ef3a' =>
           { priority: 1,
             name: 'Foundation of Arts',
             abbreviation: 'FdA',
