@@ -1,3 +1,0 @@
-[submodule "spec/protocol/hpack/fixtures"]
-	path = spec/protocol/hpack/fixtures
-	url = https://github.com/http2jp/hpack-test-case.git
