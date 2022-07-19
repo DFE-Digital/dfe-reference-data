@@ -869,7 +869,6 @@ module DfE
           '6c407223-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Royal Holloway, University of London',
             suggestion_synonyms: ['RH', 'RHUL'],
-            match_synonyms:
             match_synonyms: [
               'Royal Holloway',
               'Royal Holloway University of London',
