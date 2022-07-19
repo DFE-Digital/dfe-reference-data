@@ -105,7 +105,7 @@ rake prepare_release[minor]
 
 * There is a [log of architectural decisions](docs/decisions).
 
-* The [changelog](docs/CHANGELOG.md) contains details of every change.
+* The [changelog](CHANGELOG.md) contains details of every change.
 
 ## Upgrade Notes
 
