@@ -507,7 +507,9 @@ module DfE
             match_synonyms: ['masters in science'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
             dqt_id: nil,
-            hesa_itt_code: nil },
+            hesa_itt_code: nil,
+            comment: 'This is a qualificatoin distinct from Master of Science. MSci are typically four year courses
+            including three years of undergraduate study.' },
           '456a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
             name: 'Master of Science',

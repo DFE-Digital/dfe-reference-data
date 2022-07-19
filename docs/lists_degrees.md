@@ -30,6 +30,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
 | `dqt_id` | uuid | The ID used for this qualification in DQT |
 | `hesa_itt_code` | string | The ID used for this qualification in HESA |
+| `comment` | string | Any extra commend or description for the field |
 
 ### `DfE::ReferenceData::Degrees::GENERIC_TYPES`
 
