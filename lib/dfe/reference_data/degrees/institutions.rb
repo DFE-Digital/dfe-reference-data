@@ -871,7 +871,7 @@ module DfE
             suggestion_synonyms: %w[RH RHUL],
             match_synonyms: [
               'Royal Holloway',
-              'Royal Holloway university of London',
+              'Royal Holloway University of London',
               'Royal Holloway and Bedford New College'
             ],
             hesa_itt_code: '141',
