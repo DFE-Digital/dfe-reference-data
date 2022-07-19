@@ -482,6 +482,17 @@ module DfE
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
             dttp_id: '3f6a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '202' },
+          'f3eaa983-d543-4d4b-a239-f46d7cc94825' =>
+          { name: 'Master of Mathematics',
+            abbreviation: 'MMath',
+            suggestion_synonyms: [],
+            match_synonyms: [
+              'masters of mathematics',
+              'masters of maths'
+            ],
+            qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
+            dqt_id: nil,
+            hesa_itt_code: nil },
           '416a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Music',
             abbreviation: 'MMus',
@@ -498,6 +509,24 @@ module DfE
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
             dttp_id: '436a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '204' },
+          'cfae21bd-2b03-4048-bfdd-5f768c5b85e9' =>
+          { name: 'Master of Research',
+            abbreviation: 'MRes',
+            suggestion_synonyms: [],
+            match_synonyms: ['masters of research'],
+            qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
+            dqt_id: nil,
+            hesa_itt_code: nil },
+          'b6d2c5aa-cf99-4831-9bfe-6279349d8ea9' =>
+          { name: 'Master in Science',
+            abbreviation: 'MSci',
+            suggestion_synonyms: [],
+            match_synonyms: ['masters in science'],
+            qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
+            dqt_id: nil,
+            hesa_itt_code: nil,
+            comment: 'This is a qualificatoin distinct from Master of Science. MSci are typically four year courses
+            including three years of undergraduate study.' },
           '456a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
             name: 'Master of Science',
