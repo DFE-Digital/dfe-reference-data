@@ -18,7 +18,7 @@ jobs:
       run: bundle exec rubocop --auto-correct-all
     - name: Push any fixes
       run: |
-        git config --global user.email "lint-bot@example.com"
+        git config --global user.email "lint-bot"
         git config --global user.name "lint-bot"
         git add --all
         git commit -m "Code style fixes" || exit 0
