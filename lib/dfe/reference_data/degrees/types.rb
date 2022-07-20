@@ -448,7 +448,10 @@ module DfE
             name: 'Bachelor of Education', # Why the two BEds?
             abbreviation: 'BEd',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: [
+              'BEd Hons',
+              'BEd (Hons)'
+            ],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dttp_id: 'c1695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '1' },
@@ -695,8 +698,11 @@ module DfE
           { priority: 1,
             name: 'Bachelor of Science in Education',
             abbreviation: 'BSc/Education',
-            suggestion_synonyms: [],
-            match_synonyms: [],
+            suggestion_synonyms: ['BSc Education'],
+            match_synonyms: [
+              'BSc Hons /Education',
+              'BSc (Hons) /Education'
+            ],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dttp_id: nil,
             hesa_itt_code: '3',
@@ -706,7 +712,11 @@ module DfE
             name: 'Bachelor of Technology in Education',
             abbreviation: 'BTech/Education',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: [
+              'BTech /Education',
+              'BTech Hons /Education',
+              'BTech (Hons) /Education'
+            ],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dttp_id: nil,
             hesa_itt_code: '5',
@@ -716,7 +726,10 @@ module DfE
             name: 'Bachelor of Arts in Education',
             abbreviation: 'BA/Education',
             suggestion_synonyms: ['BA Education'],
-            match_synonyms: [],
+            match_synonyms: [
+              'BA Hons /Education',
+              'BA (Hons) /Education'
+            ],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dttp_id: nil,
             hesa_itt_code: '7',
@@ -726,7 +739,9 @@ module DfE
             name: 'Bachelor of Arts in Combined Studies / Education of the Deaf',
             abbreviation: nil,
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: [
+              'BA Combined Studies/Education of the Deaf'
+            ],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dttp_id: nil,
             hesa_itt_code: '9',
