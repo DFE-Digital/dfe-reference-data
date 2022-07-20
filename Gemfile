@@ -7,3 +7,6 @@ group :release do
   gem 'gem-release', require: false
   gem 'github_changelog_generator', require: false
 end
+
+gem 'google-cloud-bigquery'
+gem 'debug'
