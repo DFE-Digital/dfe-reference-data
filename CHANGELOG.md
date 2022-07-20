@@ -1,6 +1,6 @@
 # Changelog
 
-## [v1.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.0.0) (2022-07-13)
+## [v1.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.0.0) (2022-07-20)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v0.2.0...v1.0.0)
 
@@ -10,6 +10,18 @@
 
 **Merged pull requests:**
 
+- Add further match synonyms matching on hons [\#41](https://github.com/DFE-Digital/dfe-reference-data/pull/41) ([edwardhorsford](https://github.com/edwardhorsford))
+- Fix typo in type name [\#40](https://github.com/DFE-Digital/dfe-reference-data/pull/40) ([edwardhorsford](https://github.com/edwardhorsford))
+- Fix quote type [\#39](https://github.com/DFE-Digital/dfe-reference-data/pull/39) ([edwardhorsford](https://github.com/edwardhorsford))
+- Rename attribute degree type attribute from dqt\_id to dttp\_id [\#38](https://github.com/DFE-Digital/dfe-reference-data/pull/38) ([edwardhorsford](https://github.com/edwardhorsford))
+- Add new master level degree types [\#37](https://github.com/DFE-Digital/dfe-reference-data/pull/37) ([edwardhorsford](https://github.com/edwardhorsford))
+- Fix synonyms with incorrect attribute names [\#36](https://github.com/DFE-Digital/dfe-reference-data/pull/36) ([edwardhorsford](https://github.com/edwardhorsford))
+- Add foundation degree as a separate degree type [\#35](https://github.com/DFE-Digital/dfe-reference-data/pull/35) ([edwardhorsford](https://github.com/edwardhorsford))
+- Add institution synonyms [\#34](https://github.com/DFE-Digital/dfe-reference-data/pull/34) ([edwardhorsford](https://github.com/edwardhorsford))
+- Add some degree grade synonyms [\#33](https://github.com/DFE-Digital/dfe-reference-data/pull/33) ([edwardhorsford](https://github.com/edwardhorsford))
+- Minor cleanup of degree type synonyms [\#32](https://github.com/DFE-Digital/dfe-reference-data/pull/32) ([edwardhorsford](https://github.com/edwardhorsford))
+- Automatically fix any code style issues [\#30](https://github.com/DFE-Digital/dfe-reference-data/pull/30) ([frankieroberto](https://github.com/frankieroberto))
+- Add more synonyms and combined subjects [\#29](https://github.com/DFE-Digital/dfe-reference-data/pull/29) ([edwardhorsford](https://github.com/edwardhorsford))
 - Split synonyms for qualifications [\#28](https://github.com/DFE-Digital/dfe-reference-data/pull/28) ([edwardhorsford](https://github.com/edwardhorsford))
 - Add some basic tests for single subjects [\#27](https://github.com/DFE-Digital/dfe-reference-data/pull/27) ([frankieroberto](https://github.com/frankieroberto))
 - Rename hesa to hecos [\#26](https://github.com/DFE-Digital/dfe-reference-data/pull/26) ([edwardhorsford](https://github.com/edwardhorsford))
