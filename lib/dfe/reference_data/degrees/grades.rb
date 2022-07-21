@@ -7,19 +7,24 @@ module DfE
           { hesa_code: '1',
             name: 'First-class honours',
             suggestion_synonyms: ['First class honours with distinction'],
-            match_synonyms: ['First class honours', 'First class hons', 'First', 'First class'],
+            match_synonyms: [
+              'First class honours',
+              'First class hons',
+              'First',
+              'First class'
+            ],
             group: :main_undergrad },
           'e2fe18d4-8655-47cf-ab1a-8c3e0b0f078f' =>
           { hesa_code: '2',
             name: 'Upper second-class honours (2:1)',
             suggestion_synonyms: [],
-            match_synonyms: ['Upper second class honours', '2:1'],
+            match_synonyms: ['Upper second class honours', '2:1', '2.1'],
             group: :main_undergrad },
           '377a46ea-d6c6-4e87-9728-c1f0dd0ef109' =>
           { hesa_code: '3',
             name: 'Lower second-class honours (2:2)',
             suggestion_synonyms: [],
-            match_synonyms: ['Lower second class honours', '2:2'],
+            match_synonyms: ['Lower second class honours', '2:2', '2.2'],
             group: :main_undergrad },
           '7f08cd7c-96d2-4706-9148-32468a6d67f9' =>
           { hesa_code: '4',
@@ -73,19 +78,23 @@ module DfE
           { hesa_code: '13',
             name: 'Merit',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: [
+              'Pass with merit'
+            ],
             group: :main_postgrad },
           'aaba4427-287c-4610-a838-1970dd9090c1' =>
           { hesa_code: '14',
             name: 'Pass',
-            suggestion_synonyms: [],
+            suggestion_synonyms: [
+              'Awarded'
+            ],
             match_synonyms: ['Passed'],
             group: :main_undergrad },
           'f98da8a3-29d2-4be8-938e-2b677463b0d3' =>
           { hesa_code: '98',
             name: 'Not applicable',
             suggestion_synonyms: [],
-            match_synonyms: ['N/A', 'Not classified'],
+            match_synonyms: ['NA', 'N/A', 'Not classified'],
             group: :main_postgrad },
           'e74ba915-381d-430f-9562-2a02e1e566bf' =>
           { hesa_code: '99',

@@ -85,21 +85,10 @@ If the master data being in Ruby becomes a bottleneck (eg, because non-Ruby-conf
 
 Until we sort out our RubyGems account, dependents will pull the gem from GitHub. The process is:
 
-- Bump the version number in `lib/dfe/reference_data/version.rb`
-- Tag a new version
-- Push to GitHub
-
-The recommended way to accomplish these steps is to use the following Rakefile task:
-
-```bash
-rake prepare_release[minor|major|patch|pre|<specific version number>]
-```
-
-Note that those are literal square brackets, but you have to choose what's inside, for instance:
-
-```bash
-rake prepare_release[minor]
-```
+- Run `rake prepare_release[minor|major|patch|pre|<specific version number>]` (note those are literal square brackets, eg `prepare_release[1.0.0]`) to bump the version number in `lib/dfe/reference_data/version.rb` and generate `CHANGELOG.md`
+- Add any upgrade notes for breaking changes to the bottom of this file
+- Run `rake tag_and_push_release` to prepare and tag a release commit and push it to github
+- Mark a Github release by going to https://github.com/DFE-Digital/dfe-reference-data/releases
 
 # History
 
@@ -115,20 +104,26 @@ When moving to a new breaking release (the first part of the version number chan
 
 #### Uniform synonym fields
 
-All lists with synonyms in now use `match_synonyms` and `suggestion_synonyms` fields, instead of sometimes using a more general `synonyms` field. This makes them consistent in how they work - if the user enters a string in a record's `match_synonyms` then we can assume the user wants that record; if the user enters a string in one or more records' `suggestion_synonyms` then the user should be presented with all the matching records and asked to pick one (or confirm if it's right if only one matched). Code looking for a `synonyms` field won't find one any more, and should instead use the union of `match_synonyms` and `suggestion_synonyms` for autocompleting incremental user input.
+All lists with synonyms in now use `match_synonyms` and `suggestion_synonyms` fields, instead of sometimes using a more general `synonyms` field. This makes them consistent in how they work - if the user enters a string in a record’s `match_synonyms` then we can assume the user wants that record. If the user enters a string in one or more records’ `suggestion_synonyms` then the user should be presented with all the matching records and asked to pick one (or confirm if it's right if only one matched).
 
-#### HESA -> HECOS in Degree Subjects
-
-In the `DfE::ReferenceData::Degrees::SUBJECTS` list, the `hesa_itt_code` field has been renamed to `hecos_code`; the original name was just misleading.
+Code looking for a `synonyms` field won’t find one any more, and should instead use the union of `match_synonyms` and `suggestion_synonyms` for use in autocompletes.
 
 #### Degree subjects are now split into Single and Combined subjects
 
-The `DfE::ReferenceData::Degrees::SUBJECTS` has slightly changed structure. It's now made by joining `DfE::ReferenceData::Degrees::SINGLE_SUBJECTS` - which are just the single degree subjects - and `DfE::ReferenceData::Degrees::COMBINED_SUBJECTS` which are a non-exhaustive list of common combined subjects.
+The `DfE::ReferenceData::Degrees::SUBJECTS` has slightly changed structure. It’s now made by joining `DfE::ReferenceData::Degrees::SINGLE_SUBJECTS` - which are the single degree subjects - and `DfE::ReferenceData::Degrees::COMBINED_SUBJECTS` which are a non-exhaustive list of common combined subjects.
 
-`DfE::ReferenceData::Degrees::COMBINED_SUBJECTS` have a `subject_ids` field which is an array of the IDs of the component subjects (as found in `DfE::ReferenceData::Degrees::SINGLE_SUBJECTS`) and don't have a `hecos_code` or `dttp_id`, unlike `DfE::ReferenceData::Degrees::SINGLE_SUBJECTS`.
+`DfE::ReferenceData::Degrees::COMBINED_SUBJECTS` have a `subject_ids` field which is an array of the IDs of the component subjects (as found in `DfE::ReferenceData::Degrees::SINGLE_SUBJECTS`) and doesn’t have a `hecos_code` or `dttp_id`, unlike `DfE::ReferenceData::Degrees::SINGLE_SUBJECTS`.
 
-This means that records from `DfE::ReferenceData::Degrees::SUBJECTS` may follow either structure, depending on whether they're a combined subject or not. You can test for a `SUBJECTS` record being a combined subject by the presence of the `subject_ids` field.
+This means that records from `DfE::ReferenceData::Degrees::SUBJECTS` may follow either structure, depending on whether they’re a combined subject or not. You can test for a `SUBJECTS` record being a combined subject by the presence of the `subject_ids` field.
 
 Note that the `COMBINED_SUBJECTS` records are merely common combinations, not an exhaustive list - where services cannot accept arbitrary combinations of subjects from the `SINGLE_SUBJECTS` list and can only accept a single subject, they should use the `SUBJECTS` list in the hope that many common combinations will be covered by `COMBINED_SUBJECTS` and not lead to the user entering free text because their option wasn't listed.
 
 Where a combined subject has been chosen, you may choose to split it into its component subjects; this can easily be done by consulting the `subject_ids` field in the combined subject record, the contents of which will always be `SINGLE_SUBJECTS` ids.
+
+#### HESA -> HECOS in Degree Subjects
+
+In the `DfE::ReferenceData::Degrees::SUBJECTS` list, the `hesa_itt_code` field has been renamed to `hecos_code`; the original name was misleading.
+
+#### dqt -> dttp_id in Degree types
+
+In the `DfE::ReferenceData::Degrees::TYPES` lists, the `dqt_id` field has been renamed to `dttp_id`; the original name was incorrect.
