@@ -135,6 +135,6 @@ Where a combined subject has been chosen, you may choose to split it into its co
 
 In the `DfE::ReferenceData::Degrees::SUBJECTS` list, the `hesa_itt_code` field has been renamed to `hecos_code`; the original name was misleading.
 
-#### dqt -> dttt_id in Degree types
+#### dqt -> dttp_id in Degree types
 
 In the `DfE::ReferenceData::Degrees::TYPES` lists, the `dqt_id` field has been renamed to `dttp_id`; the original name was incorrect.
