@@ -85,21 +85,10 @@ If the master data being in Ruby becomes a bottleneck (eg, because non-Ruby-conf
 
 Until we sort out our RubyGems account, dependents will pull the gem from GitHub. The process is:
 
-- Bump the version number in `lib/dfe/reference_data/version.rb`
-- Tag a new version
-- Push to GitHub
-
-The recommended way to accomplish these steps is to use the following Rakefile task:
-
-```bash
-rake prepare_release[minor|major|patch|pre|<specific version number>]
-```
-
-Note that those are literal square brackets, but you have to choose what's inside, for instance:
-
-```bash
-rake prepare_release[minor]
-```
+- Run `rake prepare_release[minor|major|patch|pre|<specific version number>]` (note those are literal square brackets, eg `prepare_release[1.0.0]`) to bump the version number in `lib/dfe/reference_data/version.rb` and generate `CHANGELOG.md`
+- Add any upgrade notes for breaking changes to the bottom of this file
+- Run `rake tag_and_push_release` to prepare and tag a release commit and push it to github
+- Mark a Github release by going to https://github.com/DFE-Digital/dfe-reference-data/releases
 
 # History
 
