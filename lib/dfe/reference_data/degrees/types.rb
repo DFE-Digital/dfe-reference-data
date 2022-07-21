@@ -665,13 +665,14 @@ module DfE
             dttp_id: '636a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '304' },
           '656a5652-c197-e711-80d8-005056ac45bb' =>
-          { name: 'Doctor of Philosophy',
+          { name: 'Doctor of Philosophy (DPhil)',
             abbreviation: 'DPhil',
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: '181eb0ae-eeb8-487b-9c6a-a4ee3e1907b6',
             dttp_id: '656a5652-c197-e711-80d8-005056ac45bb',
-            hesa_itt_code: '305' },
+            hesa_itt_code: '305',
+            comment: 'The abbreviation has been appended to the name to disambiguate between PhD and DPhil when used as a select option as discussed https://github.com/DFE-Digital/dfe-reference-data/pull/42' },
           '676a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
             name: 'Doctor of Philosophy',
