@@ -34,6 +34,7 @@ This gem includes the following reference lists:
 
 * [Qualifications](docs/lists_qualifications.md)
 * [Degrees](docs/lists_degrees.md)
+* [Disabilities](docs/disabilities.md)
 * [Demo data](docs/lists_demo.md)
 
 ## Adding new reference lists
