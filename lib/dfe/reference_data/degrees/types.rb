@@ -75,6 +75,17 @@ module DfE
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dttp_id: 'df695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '53' },
+          'd5695652-c197-e711-80d8-005056ac45bb' =>
+          { name: 'Bachelor of Arts with intercalated PGCE', # This is weird
+            abbreviation: nil,
+            suggestion_synonyms: [],
+            match_synonyms: [
+              'BA with intercalated PGCE',
+              'BA (Hons) with intercalated PGCE'
+            ],
+            qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
+            dttp_id: 'd5695652-c197-e711-80d8-005056ac45bb',
+            hesa_itt_code: '12' },
           'e1695652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of the Art of Obstetrics',
             abbreviation: 'BAO',
@@ -363,6 +374,17 @@ module DfE
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dttp_id: '256a5652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '88' },
+          'bdc8208d-e706-4afc-9199-d3cf5785a134' =>
+          { name: 'Bachelor of Science with intercalated PGCE', # This is weird
+            abbreviation: nil,
+            suggestion_synonyms: [],
+            match_synonyms: [
+              'BSc with intercalated PGCE',
+              'BSc (Hons) with intercalated PGCE'
+            ],
+            qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
+            dttp_id: nil,
+            hesa_itt_code: '13' }, # This would usually map to the non-hons type.
           '276a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Bachelor of Social Science',
             abbreviation: 'BaSocSc',
@@ -455,14 +477,6 @@ module DfE
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dttp_id: 'c1695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '1' },
-          'd5695652-c197-e711-80d8-005056ac45bb' =>
-          { name: 'BA with intercalated PGCE', # This is weird
-            abbreviation: nil,
-            suggestion_synonyms: [],
-            match_synonyms: [],
-            qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
-            dttp_id: 'd5695652-c197-e711-80d8-005056ac45bb',
-            hesa_itt_code: '12' },
           '3b6a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
             name: 'Master of Arts',
