@@ -4,6 +4,14 @@
 # name, right?); this class is abstract, defining various utility methods that
 # subclasses are likely to be able to re-use the implementations of.
 class ReferenceList
+  attr_reader :schema
+
+  ##
+  # +ReferenceList+ constructor. +schema+, if provided, is a reference list schema.
+  def initialize(schema = nil)
+    @schema = schema
+  end
+
   # Abstract methods, override these please
 
   ##
@@ -86,5 +94,74 @@ class ReferenceList
     end
 
     result
+  end
+
+  ##
+  # Validate a record against this list's schema
+  # Raises errors if validation fails.
+  def validate_record!(record)
+    record_data = record.data
+    s = schema
+
+    # Actual validation logic
+
+    # 1) All fields in record match schema
+    record_data.each_pair do |key, value|
+      raise UnknownFieldError(record, key) unless s.key?(key)
+
+      fs = s[key]
+      validate_field!(record, key, fs, value)
+    end
+    # 2) All non-optional fields in schema are found in record
+  end
+
+  ##
+  # Check all the records in the list (returned by +all+) against the schema
+  # (returned by +get_schema+). Returns a hash mapping failing records to their
+  # errors.
+  def validate
+    raise NotImplementedError if schema.nil?
+
+    errors = {}
+    all.each do |record|
+      validate_record!(schema)
+    rescue StandardError => e
+      errors[record] = e
+    end
+  end
+
+  private
+
+  ##
+  # Validates a field against a field schema
+  # Raises errors if validation fails.
+  def validate_field!(record, field_name, field_schema, value)
+    case fs
+    when :string
+      raise InvalidFieldError(record, key, fs, "Value #{value} is not a string") unless value.is_a?(String)
+    when :symbol
+      raise InvalidFieldError(record, key, fs, "Value #{value} is not a symbol") unless value.is_a?(Symbol)
+    else
+      if fs.is_a?(Hash)
+        kind = fs[:kind]
+        case kind
+        when nil
+          raise InvalidSchemaError('Complex field schemas need a :kind')
+        when :array
+          raise InvalidFieldError(record, key, fs, "Value #{value} is not an array") unless value.is_a?(Array)
+
+          element_schema = fs[:element]
+          value.each do |element|
+            validate_field!(record, field_name, element_schema, element)
+          end
+        when :optional
+          validate_field!(record, field_name, fs[:schema], value)
+        else
+          raise InvalidSchemaError("Unknown field-type kind #{kind}")
+        end
+      else
+        raise InvalidSchemaError("Incomprehensible schema #{field_schema}")
+      end
+    end
   end
 end
