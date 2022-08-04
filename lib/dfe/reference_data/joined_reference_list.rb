@@ -6,8 +6,8 @@ module DfE
     # disjoint (non-overlapping) ID ranges, which joins them all together into one
     # big one.
     class JoinedReferenceList < ReferenceList
-      def initialize(lists)
-        super()
+      def initialize(lists, schema=nil)
+        super(schema)
         @lists = lists
       end
 

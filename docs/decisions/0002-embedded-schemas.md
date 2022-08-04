@@ -27,13 +27,13 @@ This is the schema for `Dfe::ReferenceData::Qualifications::QUALIFICATIONS`:
 
 ```ruby
 {
-  'id' => :string,
-  'name' => :string,
-  'level' => :string,
-  'suggestion_synonyms' => { kind: :array, element_schema: :string },
-  'match_synonyms' => { kind: :array, element_schema: :string },
-   'degree' => { kind: :optional, schema: :string },
-   'hint' => { kind: :optional, schema: :string }
+  :id => :string,
+  :name => :string,
+  :level => :string,
+  :suggestion_synonyms => { kind: :array, element_schema: :string },
+  :match_synonyms => { kind: :array, element_schema: :string },
+  :degree => { kind: :optional, schema: :string },
+  :hint => { kind: :optional, schema: :string }
 }
 ```
 

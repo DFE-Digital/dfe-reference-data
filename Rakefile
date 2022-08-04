@@ -45,45 +45,49 @@ task :tag_and_push_release do
   puts "Release #{v_version} has been pushed. Please mark a Github release by visiting https://github.com/DFE-Digital/dfe-reference-data/releases/new?tag=#{v_version}"
 end
 
+def bigquery_schema_create_field(schema, name, kind, mode)
+  case kind
+  when :string
+    schema.string name, mode: mode
+  when :symbol
+    schema.string name, mode: mode
+  when :boolean
+    schema.boolean name, mode: mode
+  when :integer
+    schema.integer name, mode: mode
+  else
+    raise "Schema error: #{kind}"
+  end
+end
+
 def create_bigquery_table(dataset, table_name, list)
   table = dataset.table(table_name)
-  table&.delete
 
   list_schema = list.schema
 
+  puts "Creating #{table_name}..."
+
+  if table != nil and table.exists?
+    # Delete previous incarnation
+    table.delete
+  end
+
   table = dataset.create_table table_name do |schema|
-    list_schema.each_pair do |field_name, field_schema|
-      puts "SCHEMA: #{field_name} #{field_schema}"
-      case field_schema
-      when :string
-        schema.string field_name, mode: :required
-      when :symbol
-        schema.string field_name, mode: :required
-      else
-        if field_schema.is_a?(Hash)
-          case field_schema[:kind]
-          when :array
-            case field_schema[:element_schema]
-            when :string
-              schema.string field_name, mode: :repeated
-            when :symbol
-              schema.string field_name, mode: :repeated
-            else
-              raise "Array schema error: #{field_schema}"
-            end
-          when :optional
-            case field_schema[:schema]
-            when :string
-              schema.string field_name, mode: :nullable
-            when :symbol
-              schema.string field_name, mode: :nullabla
-            else
-              raise "Optional schema error: #{field_schema}"
-            end
-          end
+    list_schema.each_pair do |field_name_symbol, field_schema|
+      field_name = field_name_symbol.to_s
+      if field_schema.is_a?(Symbol)
+        bigquery_schema_create_field(schema, field_name, field_schema, :required)
+      elsif field_schema.is_a?(Hash)
+        case field_schema[:kind]
+        when :array
+          bigquery_schema_create_field(schema, field_name, field_schema[:element_schema], :repeated)
+        when :optional
+          bigquery_schema_create_field(schema, field_name, field_schema[:schema], :nullable)
         else
-          raise "Schema error: #{field_schema}"
+          raise "Complex schema kind error: #{field_schema[:kind]}"
         end
+      else
+        raise "Complex schema type error: #{field_schema}"
       end
     end
   end
@@ -99,8 +103,10 @@ def update_reference_list_into_bigquery_table(dataset, table_name, list)
   # FIXME: Collect failures from the entire run and decide how to log them
   puts "Table '#{table_name}' insert results: #{response.insert_count} records inserted, #{response.error_count} records failed"
   unless response.success?
-    response.insert_errors.each do |row|
-      puts "Error: #{row}"
+    # Limit to at most five errors displayed, as they're usually just boring after that
+    response.insert_errors[0,5].each do |error|
+      puts "Row: #{error.row}"
+      puts "Failed with errors: #{error.errors}"
     end
     raise 'Insertion failed' unless response.success?
   end
@@ -115,10 +121,10 @@ BIGQUERY_DATASET = 'dfe_reference_data_dev'
 
 BIGQUERY_TABLES = [
   ['qualifications', DfE::ReferenceData::Qualifications::QUALIFICATIONS],
-#  ['degree_grades', DfE::ReferenceData::Degrees::GRADES],
-#  ['degree_institutions', DfE::ReferenceData::Degrees::INSTITUTIONS],
-#  ['degree_subjects', DfE::ReferenceData::Degrees::SUBJECTS],
-#  ['degree_types', DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS],
+  ['degree_grades', DfE::ReferenceData::Degrees::GRADES],
+  ['degree_institutions', DfE::ReferenceData::Degrees::INSTITUTIONS],
+  ['degree_subjects', DfE::ReferenceData::Degrees::SUBJECTS],
+  ['degree_types', DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS],
 ].freeze
 
 desc 'Push stuff into bigquery FIXME write more later'
@@ -154,5 +160,20 @@ task :update_bigquery_tables do
   BIGQUERY_TABLES.each do |entry|
     (table_name, list) = entry
     update_reference_list_into_bigquery_table(dataset, table_name, list)
+  end
+end
+
+## ABS FIXME This is a standin until I can get spec/lib/dfe/reference_data/all_lists_spec.rb to work
+require_relative 'lib/dfe/reference_data/all_lists'
+task :validate_lists do
+  DfE::ReferenceData::ALL_LISTS.each do |name, list|
+    puts "Validating #{name}..."
+    errors = list.validate()
+    errors.each_entry do |record, error|
+      puts "RECORD: #{record}"
+      puts "HAS ERROR: #{error}"
+      raise error
+#      puts error.backtrace[1..-1].join("\n")
+    end
   end
 end
