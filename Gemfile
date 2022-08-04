@@ -8,5 +8,5 @@ group :release do
   gem 'github_changelog_generator', require: false
 end
 
-gem 'google-cloud-bigquery'
 gem 'debug'
+gem 'google-cloud-bigquery'
