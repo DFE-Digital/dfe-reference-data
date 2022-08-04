@@ -6593,13 +6593,13 @@ module DfE
             dttp_id: '1f8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100356' } },
         {
-          :id => :string,
-          :name => :string,
-          :suggestion_synonyms =>  { kind: :array, element_schema: :string },
-          :match_synonyms =>  { kind: :array, element_schema: :string },
-          :dttp_id => { kind: :optional, schema: :string },
-          :hecos_code => { kind: :optional, schema: :string },
-          :comment => { kind: :optional, schema: :string }
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          dttp_id: { kind: :optional, schema: :string },
+          hecos_code: { kind: :optional, schema: :string },
+          comment: { kind: :optional, schema: :string }
         }
       )
 
@@ -7056,27 +7056,28 @@ module DfE
           }
         },
         {
-          :id => :string,
-          :name => :string,
-          :suggestion_synonyms =>  { kind: :array, element_schema: :string },
-          :match_synonyms =>  { kind: :array, element_schema: :string },
-          :subject_ids => {kind: :array, element_schema: :string },
-          :comment => { kind: :optional, schema: :string }
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          subject_ids: { kind: :array, element_schema: :string },
+          comment: { kind: :optional, schema: :string }
         }
       )
 
       SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new(
         [SINGLE_SUBJECTS, COMBINED_SUBJECTS],
         {
-          :id => :string,
-          :name => :string,
-          :suggestion_synonyms =>  { kind: :array, element_schema: :string },
-          :match_synonyms =>  { kind: :array, element_schema: :string },
-          :subject_ids => {kind: :array, element_schema: :string },
-          :dttp_id => { kind: :optional, schema: :string },
-          :hecos_code => { kind: :optional, schema: :string },
-          :comment => { kind: :optional, schema: :string }
-        })
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          subject_ids: { kind: :array, element_schema: :string },
+          dttp_id: { kind: :optional, schema: :string },
+          hecos_code: { kind: :optional, schema: :string },
+          comment: { kind: :optional, schema: :string }
+        }
+      )
     end
   end
 end

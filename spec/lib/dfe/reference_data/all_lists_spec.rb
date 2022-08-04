@@ -4,10 +4,10 @@ require_relative '../../../../lib/dfe/reference_data/all_lists'
 
 RSpec::Matchers.define :be_a_valid_reference_data_list do
   match do |actual|
-    actual.validate() == {}
+    actual.validate == {}
   end
   failure_message do |actual|
-    "expected that #{actual} would have no validation errors, but we got #{actual.validate()}"
+    "expected that #{actual} would have no validation errors, but we got #{actual.validate}"
   end
 end
 
@@ -18,7 +18,7 @@ RSpec.describe DfE::ReferenceData do
 
   let(:all_lists_with_schemas) do
     all_lists.values.filter do |x|
-      x.schema != nil
+      !x.schema.nil?
     end
   end
 

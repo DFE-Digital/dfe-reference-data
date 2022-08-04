@@ -1,5 +1,11 @@
 module DfE
   module ReferenceData
+    TYPE_CLASSES = {
+      string: String,
+      symbol: Symbol,
+      integer: Integer
+    }.freeze
+
     ##
     #
     # A +ReferenceList+ is the core interface to a reference list (the clue's in the
@@ -137,42 +143,46 @@ module DfE
 
       private
 
+      def validate_simple_field!(record, field_name, field_schema, value)
+        if field_schema == :boolean
+          raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a boolean") unless value.is_a?(TrueClass) || value.is_a?(FalseClass)
+        else
+          desired_class = TYPE_CLASSES[field_schema]
+          raise InvalidSchemaError, "Unknown schema type #{field_schema}" unless desired_class
+          raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a #{field_schema}") unless value.is_a?(desired_class)
+        end
+      end
+
+      def validate_complex_field!(record, field_name, field_schema, value)
+        kind = field_schema[:kind]
+        case kind
+        when nil
+          raise InvalidSchemaError, 'Complex field schemas need a :kind'
+        when :array
+          raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not an array") unless value.is_a?(Array)
+
+          element_schema = field_schema[:element_schema]
+          value.each do |element|
+            validate_simple_field!(record, field_name, element_schema, element)
+          end
+        when :optional
+          validate_simple_field!(record, field_name, field_schema[:schema], value) unless value.nil?
+        else
+          raise InvalidSchemaError, "Unknown complex field schema kind '#{kind}'"
+        end
+      end
+
       ##
       # Validates a field against a field schema
       # Raises errors if validation fails.
       def validate_field!(record, field_name, field_schema, value)
         case field_schema
-        when :string
-          raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a string") unless value.is_a?(String)
-        when :symbol
-          raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a symbol") unless value.is_a?(Symbol)
-        when :boolean
-          raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a boolean") unless value.is_a?(TrueClass) or value.is_a?(FalseClass)
-        when :integer
-          raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not an integer") unless value.is_a?(Integer)
+        when Symbol
+          validate_simple_field!(record, field_name, field_schema, value)
+        when Hash
+          validate_complex_field!(record, field_name, field_schema, value)
         else
-          if field_schema.is_a?(Hash)
-            kind = field_schema[:kind]
-            case kind
-            when nil
-              raise InvalidSchemaError.new('Complex field schemas need a :kind')
-            when :array
-              raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not an array") unless value.is_a?(Array)
-
-              element_schema = field_schema[:element_schema]
-              value.each do |element|
-                validate_field!(record, field_name, element_schema, element)
-              end
-            when :optional
-              if value != nil
-                validate_field!(record, field_name, field_schema[:schema], value)
-              end
-            else
-              raise InvalidSchemaError.new("Unknown field-type kind '#{kind}'")
-            end
-          else
-            raise InvalidSchemaError.new("Incomprehensible schema '#{field_schema}'")
-          end
+          raise InvalidSchemaError, "Incomprehensible schema '#{field_schema}'"
         end
       end
     end

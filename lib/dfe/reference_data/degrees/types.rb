@@ -748,18 +748,18 @@ module DfE
             hesa_itt_code: '9',
             deprecated: true } },
         {
-          :id => :string,
-          :name => :string,
-          :suggestion_synonyms =>  { kind: :array, element_schema: :string },
-          :match_synonyms =>  { kind: :array, element_schema: :string },
-          :priority => { kind: :optional, schema: :integer },
-          :abbreviation => { kind: :optional, schema: :string },
-          :qualification => :string,
-          :dttp_id => { kind: :optional, schema: :string },
-          :hesa_itt_code => { kind: :optional, schema: :string },
-          :deprecated => { kind: :optional, schema: :boolean },
-          :comment => { kind: :optional, schema: :string },
-          :hint => { kind: :optional, schema: :string }
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          priority: { kind: :optional, schema: :integer },
+          abbreviation: { kind: :optional, schema: :string },
+          qualification: :string,
+          dttp_id: { kind: :optional, schema: :string },
+          hesa_itt_code: { kind: :optional, schema: :string },
+          deprecated: { kind: :optional, schema: :boolean },
+          comment: { kind: :optional, schema: :string },
+          hint: { kind: :optional, schema: :string }
         }
       )
       GENERIC_TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -773,8 +773,7 @@ module DfE
             qualification: nil,
             dttp_id: nil,
             hesa_itt_code: '400',
-            generic: true
-          },
+            generic: true },
           'fdafdcd7-5f21-4363-b7d5-c1f44a852af1' =>
           { priority: 1,
             name: 'Higher degree or equivalent',
@@ -830,39 +829,40 @@ module DfE
             generic: true }
         },
         {
-          :id => :string,
-          :name => :string,
-          :suggestion_synonyms =>  { kind: :array, element_schema: :string },
-          :match_synonyms =>  { kind: :array, element_schema: :string },
-          :priority => { kind: :optional, schema: :integer },
-          :abbreviation => { kind: :optional, schema: :string },
-          :qualification => { kind: :optional, schema: :string },
-          :dttp_id => { kind: :optional, schema: :string },
-          :hesa_itt_code => { kind: :optional, schema: :string },
-          :deprecated => { kind: :optional, schema: :boolean },
-          :comment => { kind: :optional, schema: :string },
-          :hint => { kind: :optional, schema: :string },
-          :generic => :boolean
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          priority: { kind: :optional, schema: :integer },
+          abbreviation: { kind: :optional, schema: :string },
+          qualification: { kind: :optional, schema: :string },
+          dttp_id: { kind: :optional, schema: :string },
+          hesa_itt_code: { kind: :optional, schema: :string },
+          deprecated: { kind: :optional, schema: :boolean },
+          comment: { kind: :optional, schema: :string },
+          hint: { kind: :optional, schema: :string },
+          generic: :boolean
         }
       )
 
       TYPES_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
         [TYPES, GENERIC_TYPES],
         {
-          :id => :string,
-          :name => :string,
-          :suggestion_synonyms =>  { kind: :array, element_schema: :string },
-          :match_synonyms =>  { kind: :array, element_schema: :string },
-          :priority => { kind: :optional, schema: :integer },
-          :abbreviation => { kind: :optional, schema: :string },
-          :qualification => { kind: :optional, schema: :string },
-          :dttp_id => { kind: :optional, schema: :string },
-          :hesa_itt_code => { kind: :optional, schema: :string },
-          :deprecated => { kind: :optional, schema: :boolean },
-          :comment => { kind: :optional, schema: :string },
-          :hint => { kind: :optional, schema: :string },
-          :generic => { kind: :optional, schema: :boolean }
-        })
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          priority: { kind: :optional, schema: :integer },
+          abbreviation: { kind: :optional, schema: :string },
+          qualification: { kind: :optional, schema: :string },
+          dttp_id: { kind: :optional, schema: :string },
+          hesa_itt_code: { kind: :optional, schema: :string },
+          deprecated: { kind: :optional, schema: :boolean },
+          comment: { kind: :optional, schema: :string },
+          hint: { kind: :optional, schema: :string },
+          generic: { kind: :optional, schema: :boolean }
+        }
+      )
     end
   end
 end

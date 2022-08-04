@@ -2481,19 +2481,18 @@ module DfE
             dttp_id: nil,
             ukprn: '10032618',
             comment: 'Does not have degree-awarding powers but does award level 6 and 7 diplomas, and partners with universities to offer degree top-ups',
-            has_never_awarded_degrees: true }
-        },
+            has_never_awarded_degrees: true } },
         {
-          :id => :string,
-          :name => :string,
-          :suggestion_synonyms =>  { kind: :array, element_schema: :string },
-          :match_synonyms =>  { kind: :array, element_schema: :string },
-          :hesa_itt_code => { kind: :optional, schema: :string },
-          :dttp_id => { kind: :optional, schema: :string },
-          :ukprn => { kind: :optional, schema: :string },
-          :comment => { kind: :optional, schema: :string },
-          :closed => { kind: :optional, schema: :string },
-          :has_never_awarded_degrees => { kind: :optional, schema: :boolean },
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          hesa_itt_code: { kind: :optional, schema: :string },
+          dttp_id: { kind: :optional, schema: :string },
+          ukprn: { kind: :optional, schema: :string },
+          comment: { kind: :optional, schema: :string },
+          closed: { kind: :optional, schema: :string },
+          has_never_awarded_degrees: { kind: :optional, schema: :boolean }
         }
       )
     end
