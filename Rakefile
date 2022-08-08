@@ -107,7 +107,6 @@ def update_reference_list_into_bigquery_table(dataset, table_name, list)
   rows = list.all.map(&:to_h)
   response = table.insert rows
 
-  # FIXME: Collect failures from the entire run and decide how to log them
   puts "Table '#{table_name}' insert results: #{response.insert_count} records inserted, #{response.error_count} records failed"
   return if response.success?
 
@@ -134,7 +133,7 @@ BIGQUERY_TABLES = [
   ['degree_types', DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS]
 ].freeze
 
-desc 'Push stuff into bigquery FIXME write more later'
+desc 'Create tables in BigQuery corresponding to the reference data lists'
 task :create_bigquery_tables do
   project = Google::Cloud::Bigquery.new(
     project: BIGQUERY_PROJECT,
@@ -148,11 +147,12 @@ task :create_bigquery_tables do
 
   BIGQUERY_TABLES.each do |entry|
     (table_name, list) = entry
-    create_bigquery_table(dataset, table_name, list)
+    table = create_bigquery_table(dataset, table_name, list)
+    table.description = ("Automatically populated from dfe-reference-data")
   end
 end
 
-desc 'Push stuff into bigquery FIXME write more later'
+desc 'Insert records into BigQuery tables from the reference data lists'
 task :update_bigquery_tables do
   project = Google::Cloud::Bigquery.new(
     project: BIGQUERY_PROJECT,
