@@ -11,7 +11,7 @@ An autocomplete-compatible list must have:
 2. (Optionally) a `suggestion_synonyms` field which, in every record in which it is present, is an array of strings. These should be alternative names by which the object may possibly be known, but which might not always refer to this object.
 2. (Optionally) an `hint` field which, in every record in which it is present, is a string. It should be a message to be shown to users to help them decide if this is the object they mean to select.
 
-In addition, for any given list, the combination of `name` and values inside `match_synonyms` must not contain duplicates - there can be no string that matches more than one record in the `name` field or a `match_synonym`. Duplication within `suggestion_synonyms` is fine, but no value inside `suggestion_synonyms` can also occur in a `name` or inside a `match_synonyms`.
+In addition, for any given list, the combination of `name` and values inside `match_synonyms` must not contain duplicates - there can be no string that matches more than one record in the `name` field or a `match_synonym`. Duplication within `suggestion_synonyms` is fine.
 
 ## Matching
 
