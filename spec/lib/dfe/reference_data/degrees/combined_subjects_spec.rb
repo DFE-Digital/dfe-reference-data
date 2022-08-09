@@ -35,4 +35,10 @@ RSpec.describe DfE::ReferenceData::Degrees::COMBINED_SUBJECTS do
       end
     end
   end
+
+  describe 'combined subjects' do
+    it 'is a valid autocomplete-capable list' do
+      DfE::ReferenceData::Degrees::COMBINED_SUBJECTS.validate_autocomplete_compatibility!
+    end
+  end
 end
