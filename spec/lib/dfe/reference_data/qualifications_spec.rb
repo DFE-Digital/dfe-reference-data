@@ -1,7 +1,5 @@
+require 'support/autocomplete'
+
 RSpec.describe DfE::ReferenceData::Qualifications::QUALIFICATIONS do
-  describe 'qualifications' do
-    it 'is a valid autocomplete-capable list' do
-      DfE::ReferenceData::Qualifications::QUALIFICATIONS.validate_autocomplete_compatibility!
-    end
-  end
+  it_should_behave_like 'a valid autocomplete-capable list'
 end

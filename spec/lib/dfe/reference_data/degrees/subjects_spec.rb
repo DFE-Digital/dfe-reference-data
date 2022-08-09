@@ -1,7 +1,5 @@
+require 'support/autocomplete'
+
 RSpec.describe DfE::ReferenceData::Degrees::SUBJECTS do
-  describe 'subjects' do
-    it 'is a valid autocomplete-capable list' do
-      DfE::ReferenceData::Degrees::SUBJECTS.validate_autocomplete_compatibility!
-    end
-  end
+  it_should_behave_like 'a valid autocomplete-capable list'
 end

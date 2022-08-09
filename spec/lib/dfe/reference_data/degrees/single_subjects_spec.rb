@@ -1,3 +1,5 @@
+require 'support/autocomplete'
+
 RSpec.describe DfE::ReferenceData::Degrees::SINGLE_SUBJECTS do
   describe 'single subjects' do
     let(:single_subjects) { DfE::ReferenceData::Degrees::SINGLE_SUBJECTS.all }
@@ -21,9 +23,7 @@ RSpec.describe DfE::ReferenceData::Degrees::SINGLE_SUBJECTS do
         expect(subject[:count]).to eql(1), "#{subject[:name]} is listed #{subject[:count]} times, should only be listed once"
       end
     end
-
-    it 'is a valid autocomplete-capable list' do
-      DfE::ReferenceData::Degrees::SINGLE_SUBJECTS.validate_autocomplete_compatibility!
-    end
   end
+
+  it_should_behave_like 'a valid autocomplete-capable list'
 end
