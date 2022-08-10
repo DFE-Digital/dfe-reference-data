@@ -1,3 +1,6 @@
+require_relative 'record'
+require_relative 'reference_list'
+
 module DfE
   module ReferenceData
     ##

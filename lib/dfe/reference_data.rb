@@ -1,4 +1,3 @@
-require_relative 'reference_data/errors'
 require_relative 'reference_data/record'
 require_relative 'reference_data/reference_list'
 require_relative 'reference_data/hardcoded_reference_list'

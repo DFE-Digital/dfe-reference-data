@@ -1,11 +1,5 @@
 module DfE
   module ReferenceData
-    TYPE_CLASSES = {
-      string: String,
-      symbol: Symbol,
-      integer: Integer
-    }.freeze
-
     ##
     #
     # A +ReferenceList+ is the core interface to a reference list (the clue's in the
@@ -102,88 +96,6 @@ module DfE
         end
 
         result
-      end
-
-      ##
-      # Validate a record against this list's schema
-      # Raises errors if validation fails.
-      def validate_record!(record)
-        record_data = record.data
-        s = schema
-
-        # Actual validation logic
-
-        # 1) All fields in record match schema
-        record_data.each_pair do |key, value|
-          raise UnknownFieldError.new(record, key) unless s.key?(key)
-
-          fs = s[key]
-          validate_field!(record, key, fs, value)
-        end
-        # 2) All non-optional fields in schema are found in record
-        # ABS FIXME
-      end
-
-      ##
-      # Check all the records in the list (returned by +all+) against the schema
-      # (returned by +get_schema+). Returns a hash mapping failing records to their
-      # errors.
-      def validate
-        raise NotImplementedError if schema.nil?
-
-        errors = {}
-        all.each do |record|
-          validate_record!(record)
-        rescue StandardError => e
-          errors[record] = e
-        end
-
-        errors
-      end
-
-      private
-
-      def validate_simple_field!(record, field_name, field_schema, value)
-        if field_schema == :boolean
-          raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a boolean") unless value.is_a?(TrueClass) || value.is_a?(FalseClass)
-        else
-          desired_class = TYPE_CLASSES[field_schema]
-          raise InvalidSchemaError, "Unknown schema type #{field_schema}" unless desired_class
-          raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a #{field_schema}") unless value.is_a?(desired_class)
-        end
-      end
-
-      def validate_complex_field!(record, field_name, field_schema, value)
-        kind = field_schema[:kind]
-        case kind
-        when nil
-          raise InvalidSchemaError, 'Complex field schemas need a :kind'
-        when :array
-          raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not an array") unless value.is_a?(Array)
-
-          element_schema = field_schema[:element_schema]
-          value.each do |element|
-            validate_simple_field!(record, field_name, element_schema, element)
-          end
-        when :optional
-          validate_simple_field!(record, field_name, field_schema[:schema], value) unless value.nil?
-        else
-          raise InvalidSchemaError, "Unknown complex field schema kind '#{kind}'"
-        end
-      end
-
-      ##
-      # Validates a field against a field schema
-      # Raises errors if validation fails.
-      def validate_field!(record, field_name, field_schema, value)
-        case field_schema
-        when Symbol
-          validate_simple_field!(record, field_name, field_schema, value)
-        when Hash
-          validate_complex_field!(record, field_name, field_schema, value)
-        else
-          raise InvalidSchemaError, "Incomprehensible schema '#{field_schema}'"
-        end
       end
     end
   end
