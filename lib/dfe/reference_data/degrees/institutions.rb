@@ -2455,7 +2455,7 @@ module DfE
               'Newcastle College Group',
               'Newcastle College university centre'
             ],
-            hesa_itt_code: nil,
+            hesa_itt_code: '1078',
             dttp_id: '20e5a08c-ee97-e711-80d8-005056ac45bb',
             ukprn: '10004599' },
           '6a228041-7042-e811-80ff-3863bb3640b8' =>
@@ -2480,7 +2480,7 @@ module DfE
              'Grimsby Institute of Further and Higher Education',
              'Grimsby Institute of Further & Higher Education'],
             match_synonyms: [],
-            hesa_itt_code: nil,
+            hesa_itt_code: '1119',
             dttp_id: nil,
             comment:
             'Given degree awarding powers in 2021. Partnership for several colleges.',
@@ -2489,7 +2489,7 @@ module DfE
           { name: 'WCG (Warwickshire College Group)',
             suggestion_synonyms: [],
             match_synonyms: ['Warwickshire College', 'Warwickshire College Group'],
-            hesa_itt_code: nil,
+            hesa_itt_code: '1015',
             dttp_id: nil,
             ukprn: '10007859',
             comment: 'Given degree awarding powers in 2021' },
