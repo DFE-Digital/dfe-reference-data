@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-require 'dfe/reference_data'
-require 'dfe/reference_data/demo'
+require_relative '../lib/dfe/reference_data'
+require_relative '../lib/dfe/reference_data/demo'
 
 env = Kernel.binding
 

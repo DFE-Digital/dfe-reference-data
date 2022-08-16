@@ -23,6 +23,14 @@ module DfE
                   other.data
                 end
       end
+
+      def as_json(*)
+        data
+      end
+
+      def to_json(*args)
+        as_json.to_json(*args)
+      end
     end
     # rubocop:enable Style/OpenStructUse
   end
