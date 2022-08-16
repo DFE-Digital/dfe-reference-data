@@ -59,6 +59,7 @@ $ bundle exec bin/export_reference_json 'DfE::ReferenceData::Demo::ELEMENTS.some
 ```
 
 ```shell
+$ bundle exec bin/export_reference_json 'DfE::ReferenceData::Demo::ELEMENTS.some_by_field(:phase, {group: 1})' | jq .
 {
   "gas": [
     {
