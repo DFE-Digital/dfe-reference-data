@@ -3,7 +3,7 @@
 If you'd like to serve static JSON files for your frontend code to use, that's easily done using the `export_reference_json` command line tool. The argument is a Ruby expression to evaluate; its result is converted to JSON and written to standard output. The `Demo` dataset is included by default. For example:
 
 ```shell
-$ bundle exec export_reference_json 'DfE::ReferenceData::Demo::HELLO_WORLD.all_as_hash' | jq .
+$ bundle exec bin/export_reference_json 'DfE::ReferenceData::Demo::HELLO_WORLD.all_as_hash' | jq .
 {
   "en": {
     "text": "Hello World",
