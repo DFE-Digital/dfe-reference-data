@@ -1070,10 +1070,10 @@ module DfE
             dttp_id: 'bbed6e2f-7042-e811-80ff-3863bb3640b8',
             ukprn: '10007852' },
           '34228041-7042-e811-80ff-3863bb3640b8' =>
-          { name: 'University of St Andrews',
+          { name: 'University of St. Andrews',
             suggestion_synonyms: [],
             match_synonyms:
-            ['The University of St Andrews',
+            ['The University of St. Andrews',
              'The University of Saint Andrews',
              'University of Saint Andrews'],
             hesa_itt_code: '173',
@@ -1932,7 +1932,7 @@ module DfE
             ukprn: '10023434',
             'has_never_awarded_degrees' => true },
           '003e182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'HY Education Limited',
+          { name: 'Apex College London',
             suggestion_synonyms: [],
             match_synonyms: ['Apex College London'],
             hesa_itt_code: '329',
@@ -2376,9 +2376,9 @@ module DfE
             ukprn: '10020381',
             'has_never_awarded_degrees' => true },
           '203f182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'UA92',
+          { name: 'University Academy 92',
             suggestion_synonyms: [],
-            match_synonyms: ['University Academy 92'],
+            match_synonyms: ['UA92'],
             hesa_itt_code: '434',
             dttp_id: '203f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10067648',
