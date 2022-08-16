@@ -42,7 +42,8 @@ end
 TYPE_CLASSES = {
   string: String,
   symbol: Symbol,
-  integer: Integer
+  integer: Integer,
+  real: Float
 }.freeze
 
 def validate_simple_field!(record, field_name, field_schema, value)

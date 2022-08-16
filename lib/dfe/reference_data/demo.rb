@@ -6,12 +6,20 @@ module DfE
           'en' => { text: 'Hello World' },
           'fr' => { text: 'Bounjour monde' },
           'jbo' => { text: 'coi rodo' }
+        },
+        {
+          id: :string,
+          text: :string
         }
       )
 
       FICTIONAL_GREETINGS = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           'dalek' => { text: 'OBEY! OBEY OR BE EXTERMINATED!' }
+        },
+        {
+          id: :string,
+          text: :string
         }
       )
 
@@ -843,6 +851,36 @@ module DfE
                     first_ionization: nil, density: nil, melting_point: nil, boiling_point: nil,
                     number_of_isotopes: nil, discoverer: nil, year: 2006,
                     specific_heat: nil, number_of_shells: 7, valence: 8 }
+        },
+        {
+          id: :string,
+          atomic_number: :integer,
+          name: :string,
+          atomic_mass: :integer,
+          number_of_neutrons: :integer,
+          number_of_protoons: :integer,
+          number_of_electrons: :integer,
+          period: :integer,
+          group: :integer,
+          phase: :string,
+          radioactive: :boolean,
+          natural: :boolean,
+          metal: :boolean,
+          nonmetal: :boolean,
+          metalloid: :boolean,
+          type: :string,
+          atomic_radius: { kind: :optional, schema: :integer },
+          electronegativity: { kind: :optional, schema: :real },
+          first_ionization: { kind: :optional, schema: :real },
+          density: { kind: :optional, schema: :real },
+          melting_point: { kind: :optional, schema: :real },
+          boiling_point: { kind: :optional, schema: :real },
+          number_of_isotopes: { kind: :optional, schema: :integer },
+          discoverer: { kind: :optional, schema: :string },
+          year: { kind: :optional, schema: :integer },
+          specific_heat: { kind: :optional, schema: :real },
+          number_of_shells: :integer,
+          valence: :integer
         }
       )
     end

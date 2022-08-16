@@ -44,10 +44,14 @@ task :tag_and_push_release do
   puts "Release #{v_version} has been pushed. Please mark a Github release by visiting https://github.com/DFE-Digital/dfe-reference-data/releases/new?tag=#{v_version}"
 end
 
-BIGQUERY_PROJECT = 'rugged-abacus-218110'
 BIGQUERY_CREDENTIALS_FILE_PATH = '../dfe-reference-data_bigquery_api_key.json'
 
+# Update the docs in docs/bigquery.md to reflect the location tables are created at:
+
+BIGQUERY_PROJECT = 'rugged-abacus-218110'
 BIGQUERY_DATASET = 'dfe_reference_data_dev'
+
+# Update the docs in docs/bigquery.md to reflect any changes to this list:
 
 BIGQUERY_TABLES = [
   ['qualifications', DfE::ReferenceData::Qualifications::QUALIFICATIONS],

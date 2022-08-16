@@ -58,6 +58,8 @@ module DfE
             schema.boolean name, mode: mode
           when :integer
             schema.integer name, mode: mode
+          when :real
+            schema.float name, mode: mode
           else
             raise "Schema error: #{kind}"
           end
