@@ -23,6 +23,24 @@ $ bundle exec bin/export_reference_json 'DfE::ReferenceData::Demo::HELLO_WORLD.a
 You can use any of the access methods defined in the [Ruby API](ruby.md) to control the output format or to filter the result.
 
 ```shell
+$ bundle exec bin/export_reference_json 'DfE::ReferenceData::Demo::HELLO_WORLD.all' | jq .
+[
+  {
+    "text": "Hello World",
+    "id": "en"
+  },
+  {
+    "text": "Bounjour monde",
+    "id": "fr"
+  },
+  {
+    "text": "coi rodo",
+    "id": "jbo"
+  }
+]
+```
+
+```shell
 $ bundle exec bin/export_reference_json 'DfE::ReferenceData::Demo::ELEMENTS.some({period: 7, group: 18})' | jq .
 [
   {
