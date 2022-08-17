@@ -1933,8 +1933,12 @@ module DfE
             'has_never_awarded_degrees' => true },
           '003e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Apex College London',
-            suggestion_synonyms: [],
-            match_synonyms: ['Apex College London'],
+            suggestion_synonyms: [
+              'HY Education Limited'
+            ],
+            match_synonyms: [
+              'Apex College London'
+            ],
             hesa_itt_code: '329',
             dttp_id: '003e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10041898',
@@ -2104,9 +2108,11 @@ module DfE
             ukprn: '10042500',
             'has_never_awarded_degrees' => true },
           '0c3e182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'British College Of Osteopathic Medicine',
+          { name: 'British College of Osteopathic Medicine',
             suggestion_synonyms: ['BCNO'],
-            match_synonyms: [],
+            match_synonyms: [
+              'BCNO Limited'
+            ],
             hesa_itt_code: '400',
             dttp_id: '0c3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10000911',
@@ -2144,7 +2150,7 @@ module DfE
             'has_never_awarded_degrees' => true },
           '5b3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Sotheby’s Institute of Art',
-            suggestion_synonyms: ['Institute Of Art - London'],
+            suggestion_synonyms: ['Institute of Art - London'],
             match_synonyms: [],
             hesa_itt_code: '405',
             dttp_id: '5b3e182c-1425-ec11-b6e6-000d3adf095a',
@@ -2256,9 +2262,15 @@ module DfE
             ukprn: '10015688',
             'has_never_awarded_degrees' => true },
           '343e182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'Dartington Hall Trust',
-            suggestion_synonyms: ['Schumacher College'],
-            match_synonyms: [],
+          { name: 'Dartington Trust',
+            suggestion_synonyms: [
+              'Schumacher College',
+              'Dartington Arts School'
+            ],
+            match_synonyms: [
+              'Dartington Hall Trust',
+              'Dartington Hall Trust (The)'
+            ],
             hesa_itt_code: '420',
             dttp_id: '343e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10026767',
@@ -2384,9 +2396,12 @@ module DfE
             ukprn: '10067648',
             'has_never_awarded_degrees' => true },
           'e53e182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'TEDI-London',
+          { name: 'The Engineering and Design Institute London (TEDI-London)',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: [
+              'TEDI-London',
+              'TEDI'
+            ],
             hesa_itt_code: '435',
             dttp_id: 'e53e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10083403',
