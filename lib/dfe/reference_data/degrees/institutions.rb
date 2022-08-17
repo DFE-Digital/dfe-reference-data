@@ -2388,9 +2388,11 @@ module DfE
             ukprn: '10020381',
             'has_never_awarded_degrees' => true },
           '203f182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'University Academy 92',
+          { name: 'UA92',
             suggestion_synonyms: [],
-            match_synonyms: ['UA92'],
+            match_synonyms: [
+              'University Academy 92'
+            ],
             hesa_itt_code: '434',
             dttp_id: '203f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10067648',
