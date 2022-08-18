@@ -1,3 +1,5 @@
+require 'support/autocomplete'
+
 RSpec.describe DfE::ReferenceData::Degrees::COMBINED_SUBJECTS do
   describe 'subject IDs are correct' do
     let(:records) { described_class.all }
@@ -35,4 +37,6 @@ RSpec.describe DfE::ReferenceData::Degrees::COMBINED_SUBJECTS do
       end
     end
   end
+
+  it_should_behave_like 'a valid autocomplete-capable list'
 end

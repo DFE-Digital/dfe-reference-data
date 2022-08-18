@@ -18,6 +18,8 @@ Source: https://www.gov.uk/what-different-qualification-levels-mean/list-of-qual
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | UUID | A unique identifier |

@@ -71,8 +71,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms:
             ['University of St Mark and St John',
-             'University of Saint Mark and Saint John',
-             'University of St Mark and St John'],
+             'University of Saint Mark and Saint John'],
             hesa_itt_code: '14',
             dttp_id: '3a71f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10037449' },
