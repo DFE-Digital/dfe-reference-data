@@ -1938,9 +1938,6 @@ module DfE
             suggestion_synonyms: [
               'HY Education Limited'
             ],
-            match_synonyms: [
-              'Apex College London'
-            ],
             hesa_itt_code: '329',
             dttp_id: '003e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10041898',
