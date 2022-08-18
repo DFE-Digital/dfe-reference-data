@@ -637,8 +637,11 @@ module DfE
           'c93e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Robert Gordon University',
             suggestion_synonyms: ['RGU'],
-            match_synonyms:
-            ['The Robert Gordon University', 'Robert Gordon University, Aberdeen'],
+            match_synonyms: [
+              'The Robert Gordon University',
+              'Robert Gordon University, Aberdeen',
+              'RGU Aberdeen'
+            ],
             hesa_itt_code: '104',
             dttp_id: 'c93e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10005500' },
