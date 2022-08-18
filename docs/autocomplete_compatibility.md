@@ -6,7 +6,7 @@ Many lists are used to drive autocompleting user interface components. In order 
 
 An autocomplete-compatible list must have:
 
-1. A `name` field, which is a string value in every record. This should be the "best" name for the identified object, such as a legal or official name.
+1. A `name` field, which is a string value in every record. This should be the "best" name for the identified object, which should usually be the one that regular users are most likely to use - this may not always be the official or legal name. For instance, an organisation may have a well-known trading name that is different from their name as registered with Companies House.
 2. (Optionally) an `match_synonyms` field which, in every record in which it is present, is an array of strings. These should be alternative names by which the object may be known, but which can only refer to this object.
 2. (Optionally) a `suggestion_synonyms` field which, in every record in which it is present, is an array of strings. These should be alternative names by which the object may possibly be known, but which might not always refer to this object.
 2. (Optionally) an `hint` field which, in every record in which it is present, is a string. It should be a message to be shown to users to help them decide if this is the object they mean to select.
