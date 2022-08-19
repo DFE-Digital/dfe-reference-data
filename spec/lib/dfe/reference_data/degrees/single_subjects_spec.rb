@@ -1,3 +1,5 @@
+require 'support/autocomplete'
+
 RSpec.describe DfE::ReferenceData::Degrees::SINGLE_SUBJECTS do
   describe 'single subjects' do
     let(:single_subjects) { DfE::ReferenceData::Degrees::SINGLE_SUBJECTS.all }
@@ -22,4 +24,6 @@ RSpec.describe DfE::ReferenceData::Degrees::SINGLE_SUBJECTS do
       end
     end
   end
+
+  it_should_behave_like 'a valid autocomplete-capable list'
 end

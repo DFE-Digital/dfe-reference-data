@@ -18,6 +18,8 @@ Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
@@ -49,6 +51,8 @@ Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
@@ -78,6 +82,8 @@ Source: Automatically derived from joining the `TYPES` and `GENERIC_TYPES` lists
 
 Quality: Automatically derived from the source data, so only as correct as they are.
 
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
@@ -100,6 +106,8 @@ Owner: Apply team.
 Users: Apply team.
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+This list is [autocomplete compatible](autocomplete_compatability.md).
 
 | Field | Type | Purpose |
 |---|---|---|
@@ -126,6 +134,8 @@ Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
@@ -151,6 +161,8 @@ Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
@@ -174,6 +186,8 @@ Users: Apply team.
 Source: Automatically derived from joining the `SINGLE_SUBJECTS` and `COMBINED_SUBJECTS` lists.
 
 Quality: Automatically derived from the source data, so only as correct as they are.
+
+This list is [autocomplete compatible](autocomplete_compatability.md).
 
 | Field | Type | Purpose |
 |---|---|---|
@@ -200,6 +214,8 @@ Users: Apply team.
 Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob/main/app/data/degree-institutions.js
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+This list is [autocomplete compatible](autocomplete_compatability.md).
 
 | Field | Type | Purpose |
 |---|---|---|

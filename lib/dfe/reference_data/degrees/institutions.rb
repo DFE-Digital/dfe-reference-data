@@ -73,8 +73,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms:
             ['University of St Mark and St John',
-             'University of Saint Mark and Saint John',
-             'University of St Mark and St John'],
+             'University of Saint Mark and Saint John'],
             hesa_itt_code: '14',
             dttp_id: '3a71f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10037449' },
@@ -639,8 +638,11 @@ module DfE
           'c93e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Robert Gordon University',
             suggestion_synonyms: ['RGU'],
-            match_synonyms:
-            ['The Robert Gordon University', 'Robert Gordon University, Aberdeen'],
+            match_synonyms: [
+              'The Robert Gordon University',
+              'Robert Gordon University, Aberdeen',
+              'RGU Aberdeen'
+            ],
             hesa_itt_code: '104',
             dttp_id: 'c93e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10005500' },
@@ -1072,10 +1074,10 @@ module DfE
             dttp_id: 'bbed6e2f-7042-e811-80ff-3863bb3640b8',
             ukprn: '10007852' },
           '34228041-7042-e811-80ff-3863bb3640b8' =>
-          { name: 'University of St Andrews',
+          { name: 'University of St. Andrews',
             suggestion_synonyms: [],
             match_synonyms:
-            ['The University of St Andrews',
+            ['The University of St. Andrews',
              'The University of Saint Andrews',
              'University of Saint Andrews'],
             hesa_itt_code: '173',
@@ -1934,9 +1936,10 @@ module DfE
             ukprn: '10023434',
             has_never_awarded_degrees: true },
           '003e182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'HY Education Limited',
-            suggestion_synonyms: [],
-            match_synonyms: ['Apex College London'],
+          { name: 'Apex College London',
+            suggestion_synonyms: [
+              'HY Education Limited'
+            ],
             hesa_itt_code: '329',
             dttp_id: '003e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10041898',
@@ -2106,9 +2109,11 @@ module DfE
             ukprn: '10042500',
             has_never_awarded_degrees: true },
           '0c3e182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'British College Of Osteopathic Medicine',
+          { name: 'British College of Osteopathic Medicine',
             suggestion_synonyms: ['BCNO'],
-            match_synonyms: [],
+            match_synonyms: [
+              'BCNO Limited'
+            ],
             hesa_itt_code: '400',
             dttp_id: '0c3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10000911',
@@ -2146,7 +2151,7 @@ module DfE
             has_never_awarded_degrees: true },
           '5b3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Sotheby’s Institute of Art',
-            suggestion_synonyms: ['Institute Of Art - London'],
+            suggestion_synonyms: ['Institute of Art - London'],
             match_synonyms: [],
             hesa_itt_code: '405',
             dttp_id: '5b3e182c-1425-ec11-b6e6-000d3adf095a',
@@ -2258,9 +2263,15 @@ module DfE
             ukprn: '10015688',
             has_never_awarded_degrees: true },
           '343e182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'Dartington Hall Trust',
-            suggestion_synonyms: ['Schumacher College'],
-            match_synonyms: [],
+          { name: 'Dartington Trust',
+            suggestion_synonyms: [
+              'Schumacher College',
+              'Dartington Arts School'
+            ],
+            match_synonyms: [
+              'Dartington Hall Trust',
+              'Dartington Hall Trust (The)'
+            ],
             hesa_itt_code: '420',
             dttp_id: '343e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10026767',
@@ -2380,15 +2391,20 @@ module DfE
           '203f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'UA92',
             suggestion_synonyms: [],
-            match_synonyms: ['University Academy 92'],
+            match_synonyms: [
+              'University Academy 92'
+            ],
             hesa_itt_code: '434',
             dttp_id: '203f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10067648',
             has_never_awarded_degrees: true },
           'e53e182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'TEDI-London',
+          { name: 'The Engineering and Design Institute London (TEDI-London)',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: [
+              'TEDI-London',
+              'TEDI'
+            ],
             hesa_itt_code: '435',
             dttp_id: 'e53e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10083403',
@@ -2437,7 +2453,7 @@ module DfE
               'Newcastle College Group',
               'Newcastle College university centre'
             ],
-            hesa_itt_code: nil,
+            hesa_itt_code: '1078',
             dttp_id: '20e5a08c-ee97-e711-80d8-005056ac45bb',
             ukprn: '10004599' },
           '6a228041-7042-e811-80ff-3863bb3640b8' =>
@@ -2462,7 +2478,7 @@ module DfE
              'Grimsby Institute of Further and Higher Education',
              'Grimsby Institute of Further & Higher Education'],
             match_synonyms: [],
-            hesa_itt_code: nil,
+            hesa_itt_code: '1119',
             dttp_id: nil,
             comment:
             'Given degree awarding powers in 2021. Partnership for several colleges.',
@@ -2471,7 +2487,7 @@ module DfE
           { name: 'WCG (Warwickshire College Group)',
             suggestion_synonyms: [],
             match_synonyms: ['Warwickshire College', 'Warwickshire College Group'],
-            hesa_itt_code: nil,
+            hesa_itt_code: '1015',
             dttp_id: nil,
             ukprn: '10007859',
             comment: 'Given degree awarding powers in 2021' },
