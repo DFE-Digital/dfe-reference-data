@@ -1,20 +1,21 @@
 require_relative '../../../sbin/bigquery/importer'
 require 'google/cloud/bigquery'
+require 'securerandom'
 
 BIGQUERY_PROJECT = 'rugged-abacus-218110'.freeze
 BIGQUERY_CREDENTIALS_FILE_PATH = '../dfe-reference-data_bigquery_api_key.json'.freeze
 
 BIGQUERY_DATASET = 'dfe_reference_data_dev'.freeze
 
-TEST_TABLE_NAME = 'test'.freeze
+TEST_TABLE_NAME = "test_#{SecureRandom.uuid}".freeze
+
+FAKE_VERSION = '1.2.3'.freeze
+FAKE_COMMIT = '22596363b3de40b06f981fb85d82312e8c0ed511'.freeze
 
 # Omit this test if we don't have credentials available
 if File.file?(BIGQUERY_CREDENTIALS_FILE_PATH)
 
   RSpec.describe DfE::ReferenceData::BigQuery do
-    FAKE_VERSION = '1.2.3'.freeze
-    FAKE_COMMIT = '22596363b3de40b06f981fb85d82312e8c0ed511'.freeze
-
     let(:test_data) do
       DfE::ReferenceData::HardcodedReferenceList.new(
         {
@@ -138,6 +139,11 @@ if File.file?(BIGQUERY_CREDENTIALS_FILE_PATH)
           array_real: []
         }
       )
+    end
+
+    it 'cleans up afterwards' do
+      table = dataset.table(TEST_TABLE_NAME)
+      table.delete if table&.exists?
     end
   end
 end
