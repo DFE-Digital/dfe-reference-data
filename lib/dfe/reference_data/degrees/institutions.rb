@@ -2497,7 +2497,15 @@ module DfE
             dttp_id: nil,
             ukprn: '10032618',
             comment: 'Does not have degree-awarding powers but does award level 6 and 7 diplomas, and partners with universities to offer degree top-ups',
-            'has_never_awarded_degrees' => true } }
+            'has_never_awarded_degrees' => true },
+          '9906b3dd-d9a8-46ce-a143-cee30ae49da1' =>
+          { name: 'Institute of Chartered Accountants of Scotland',
+            suggestion_synonyms: ['ICAS'],
+            match_synonyms: ['The Institute of Chartered Accountants of Scotland'],
+            hesa_itt_code: nil,
+            dttp_id: nil,
+            ukprn: '10020611',
+            has_never_awarded_degrees: true } }
       )
     end
   end
