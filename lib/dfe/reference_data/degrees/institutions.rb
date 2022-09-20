@@ -1164,7 +1164,7 @@ module DfE
             hesa_itt_code: '188',
             dttp_id: 'f63e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10003324',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'd723a753-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Writtle University College',
             suggestion_synonyms: [],
@@ -1233,7 +1233,7 @@ module DfE
             hesa_itt_code: '199',
             dttp_id: '2f3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10001653',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'fa70f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'University College Birmingham',
             suggestion_synonyms: [],
@@ -1248,7 +1248,7 @@ module DfE
             hesa_itt_code: '201',
             dttp_id: '18f35f0b-7042-e811-80ff-3863bb3640b8',
             ukprn: '10007761',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'e070f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'London Metropolitan University',
             suggestion_synonyms: [],
@@ -1299,7 +1299,7 @@ module DfE
             hesa_itt_code: '209',
             dttp_id: '84db7129-7042-e811-80ff-3863bb3640b8',
             ukprn: '10003945',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '154b9247-7042-e811-80ff-3863bb3640b8' =>
           { name: 'University of Suffolk',
             suggestion_synonyms: ['UOS'],
@@ -1361,7 +1361,7 @@ module DfE
             hesa_itt_code: '220',
             dttp_id: '5d3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10035638',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '993e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Moorlands College',
             suggestion_synonyms: [],
@@ -1369,7 +1369,7 @@ module DfE
             hesa_itt_code: '221',
             dttp_id: '993e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023454',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '933e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Bible College Missio Dei',
             suggestion_synonyms:
@@ -1380,7 +1380,7 @@ module DfE
             hesa_itt_code: '225',
             dttp_id: '933e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10020416',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '893e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'London School of Science and Technology',
             suggestion_synonyms: [],
@@ -1403,7 +1403,7 @@ module DfE
             hesa_itt_code: '229',
             dttp_id: '0b3f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004511',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'b53e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Plymouth College of Art',
             suggestion_synonyms: [],
@@ -1428,7 +1428,7 @@ module DfE
             hesa_itt_code: '236',
             dttp_id: '593e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10003239',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '693e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Kensington College of Business',
             suggestion_synonyms: [],
@@ -1444,7 +1444,7 @@ module DfE
             hesa_itt_code: '238',
             dttp_id: '103e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004061',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '9b3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Mountview Academy of Theatre Arts',
             suggestion_synonyms: [],
@@ -1452,7 +1452,7 @@ module DfE
             hesa_itt_code: '239',
             dttp_id: '9b3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004450',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '9f3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Nazarene Theological College',
             suggestion_synonyms: [],
@@ -1460,7 +1460,7 @@ module DfE
             hesa_itt_code: '240',
             dttp_id: '9f3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004538',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'fc3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The London College',
             suggestion_synonyms: ['The London College UCK', 'UCK Limited'],
@@ -1469,7 +1469,7 @@ module DfE
             dttp_id: 'fc3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10015506',
             comment: 'Not degree awarding',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '083e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Arts Educational Schools',
             suggestion_synonyms: ['The Arts Educational Schools'],
@@ -1477,7 +1477,7 @@ module DfE
             hesa_itt_code: '244',
             dttp_id: '083e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10000381',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '973e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Mont Rose College of Management and Sciences',
             suggestion_synonyms: [],
@@ -1485,7 +1485,7 @@ module DfE
             hesa_itt_code: '246',
             dttp_id: '973e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023777',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'aa3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Norland College',
             suggestion_synonyms: [],
@@ -1515,7 +1515,7 @@ module DfE
             hesa_itt_code: '252',
             dttp_id: '3a3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10022047',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '403e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Fairfield School of Business',
             suggestion_synonyms: [],
@@ -1537,7 +1537,7 @@ module DfE
             hesa_itt_code: '256',
             dttp_id: '873e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10022285',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '8b3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'London School of Theology',
             suggestion_synonyms: [],
@@ -1545,7 +1545,7 @@ module DfE
             hesa_itt_code: '257',
             dttp_id: '8b3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004075',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'd93e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'St Mellitus College',
             suggestion_synonyms: [],
@@ -1553,7 +1553,7 @@ module DfE
             hesa_itt_code: '258',
             dttp_id: 'd93e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10030776',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'a13e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Nelson College London',
             suggestion_synonyms: [],
@@ -1561,7 +1561,7 @@ module DfE
             hesa_itt_code: '260',
             dttp_id: 'a13e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10030129',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'ad3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Northern College of Acupuncture',
             suggestion_synonyms: [],
@@ -1569,7 +1569,7 @@ module DfE
             hesa_itt_code: '261',
             dttp_id: 'ad3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004740',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'b33e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Pearson College',
             suggestion_synonyms: [],
@@ -1577,7 +1577,7 @@ module DfE
             hesa_itt_code: '262',
             dttp_id: 'b33e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10042570',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'cb3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Royal Academy of Dance',
             suggestion_synonyms: [],
@@ -1585,7 +1585,7 @@ module DfE
             hesa_itt_code: '263',
             dttp_id: 'cb3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10005544',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'd33e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'SAE Education',
             suggestion_synonyms: [],
@@ -1593,7 +1593,7 @@ module DfE
             hesa_itt_code: '265',
             dttp_id: 'd33e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10007839',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'f63d182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Academy of Live and Recorded Arts',
             suggestion_synonyms: [],
@@ -1601,7 +1601,7 @@ module DfE
             hesa_itt_code: '269',
             dttp_id: 'f63d182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10000248',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'ed3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The College of Integrated Chinese Medicine',
             suggestion_synonyms: [],
@@ -1609,7 +1609,7 @@ module DfE
             hesa_itt_code: '270',
             dttp_id: 'ed3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10001546',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'e93e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The City College',
             suggestion_synonyms: [],
@@ -1617,7 +1617,7 @@ module DfE
             hesa_itt_code: '271',
             dttp_id: 'e93e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10010213',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '953e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Met Film School',
             suggestion_synonyms: [],
@@ -1625,7 +1625,7 @@ module DfE
             hesa_itt_code: '272',
             dttp_id: '953e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10045476',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '8d3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'London Studio Centre',
             suggestion_synonyms: [],
@@ -1633,7 +1633,7 @@ module DfE
             hesa_itt_code: '274',
             dttp_id: '8d3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004079',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '813e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'London School of Academics',
             suggestion_synonyms: [],
@@ -1641,7 +1641,7 @@ module DfE
             hesa_itt_code: '276',
             dttp_id: '813e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10032594',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'bd3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Regent College',
             suggestion_synonyms: [],
@@ -1656,7 +1656,7 @@ module DfE
             hesa_itt_code: '280',
             dttp_id: '163e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10028216',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '443e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Futureworks',
             suggestion_synonyms: [],
@@ -1664,7 +1664,7 @@ module DfE
             hesa_itt_code: '281',
             dttp_id: '443e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10022087',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '773e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'London Bridge Business Academy',
             suggestion_synonyms: [],
@@ -1672,7 +1672,7 @@ module DfE
             hesa_itt_code: '282',
             dttp_id: '773e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10013109',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'dd3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'St Patrick’s International College',
             suggestion_synonyms: [],
@@ -1687,7 +1687,7 @@ module DfE
             hesa_itt_code: '284',
             dttp_id: '213e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10001386',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'fc3d182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'All Nations Christian College',
             suggestion_synonyms: [],
@@ -1695,7 +1695,7 @@ module DfE
             hesa_itt_code: '285',
             dttp_id: 'fc3d182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10000216',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '143e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Bristol Baptist College',
             suggestion_synonyms: [],
@@ -1703,7 +1703,7 @@ module DfE
             hesa_itt_code: '287',
             dttp_id: '143e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10000894',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'e73e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Cambridge Theological Federation',
             suggestion_synonyms: [],
@@ -1711,7 +1711,7 @@ module DfE
             hesa_itt_code: '288',
             dttp_id: 'e73e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10032072',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '253e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Christie’s Education',
             suggestion_synonyms: [],
@@ -1719,7 +1719,7 @@ module DfE
             hesa_itt_code: '291',
             dttp_id: '253e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10001419',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '273e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'City and Guilds of London Art School',
             suggestion_synonyms: [],
@@ -1727,7 +1727,7 @@ module DfE
             hesa_itt_code: '292',
             dttp_id: '273e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10039082',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '2b3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Cliff College',
             suggestion_synonyms: [],
@@ -1735,7 +1735,7 @@ module DfE
             hesa_itt_code: '293',
             dttp_id: '2b3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10007912',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '263f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'University College of Estate Management',
             suggestion_synonyms: ['UCEM'],
@@ -1750,7 +1750,7 @@ module DfE
             hesa_itt_code: '295',
             dttp_id: '2a3f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10007361',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '573e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'ICOM',
             suggestion_synonyms: [],
@@ -1758,7 +1758,7 @@ module DfE
             hesa_itt_code: '297',
             dttp_id: '573e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023445',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'fa3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Islamic College',
             suggestion_synonyms: [],
@@ -1766,7 +1766,7 @@ module DfE
             hesa_itt_code: '298',
             dttp_id: 'fa3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10029682',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '613e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Istituto Marangoni',
             suggestion_synonyms: [],
@@ -1774,7 +1774,7 @@ module DfE
             hesa_itt_code: '299',
             dttp_id: '613e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10009527',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '673e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Kaplan Open Learning',
             suggestion_synonyms: [],
@@ -1782,7 +1782,7 @@ module DfE
             hesa_itt_code: '300',
             dttp_id: '673e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10021682',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '6b3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'KLC School of Design',
             suggestion_synonyms: [],
@@ -1790,7 +1790,7 @@ module DfE
             hesa_itt_code: '301',
             dttp_id: '6b3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10008325',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '7f3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'London Film School',
             suggestion_synonyms: [],
@@ -1798,7 +1798,7 @@ module DfE
             hesa_itt_code: '304',
             dttp_id: '7f3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004036',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '8f3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Luther King House Educational Trust',
             suggestion_synonyms: [],
@@ -1806,7 +1806,7 @@ module DfE
             hesa_itt_code: '306',
             dttp_id: '8f3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10009612',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'b13e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Oxford Business College',
             suggestion_synonyms: [],
@@ -1821,7 +1821,7 @@ module DfE
             hesa_itt_code: '309',
             dttp_id: 'b73e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10019178',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'd53e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: "Spurgeon's College",
             suggestion_synonyms: [],
@@ -1829,7 +1829,7 @@ module DfE
             hesa_itt_code: '310',
             dttp_id: 'd53e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10006093',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'db3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'St Nicholas Montessori Training',
             suggestion_synonyms: [],
@@ -1837,7 +1837,7 @@ module DfE
             hesa_itt_code: '311',
             dttp_id: 'db3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10045289',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '2c3f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'West Dean College',
             suggestion_synonyms: [],
@@ -1845,7 +1845,7 @@ module DfE
             hesa_itt_code: '312',
             dttp_id: '2c3f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10032288',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'af3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Oak Hill College',
             suggestion_synonyms: [],
@@ -1853,7 +1853,7 @@ module DfE
             hesa_itt_code: '313',
             dttp_id: 'af3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10010227',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '073f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Metanoia Institute',
             suggestion_synonyms: [],
@@ -1861,7 +1861,7 @@ module DfE
             hesa_itt_code: '314',
             dttp_id: '073f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004320',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '0f3f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: "The Queen's Foundation for Ecumenical Theological Education",
             suggestion_synonyms: [],
@@ -1869,7 +1869,7 @@ module DfE
             hesa_itt_code: '315',
             dttp_id: '0f3f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10032282',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '113f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Salvation Army',
             suggestion_synonyms: [],
@@ -1877,7 +1877,7 @@ module DfE
             hesa_itt_code: '316',
             dttp_id: '113f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10021256',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '1e3f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Trinity College Bristol',
             suggestion_synonyms: [],
@@ -1885,7 +1885,7 @@ module DfE
             hesa_itt_code: '317',
             dttp_id: '1e3f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023464',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '913e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Matrix College of Counselling and Psychotherapy',
             suggestion_synonyms: [],
@@ -1893,7 +1893,7 @@ module DfE
             hesa_itt_code: '320',
             dttp_id: '913e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023453',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '093f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Minster Centre',
             suggestion_synonyms: [],
@@ -1901,7 +1901,7 @@ module DfE
             hesa_itt_code: '321',
             dttp_id: '093f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10032277',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'f43d182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'AA School of Architecture',
             suggestion_synonyms: [],
@@ -1916,7 +1916,7 @@ module DfE
             hesa_itt_code: '326',
             dttp_id: '323e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10034324',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'bf3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Regents Theological College',
             suggestion_synonyms: [],
@@ -1924,7 +1924,7 @@ module DfE
             hesa_itt_code: '327',
             dttp_id: 'bf3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10021100',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '833e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'London School of Commerce & IT',
             suggestion_synonyms: [],
@@ -1932,7 +1932,7 @@ module DfE
             hesa_itt_code: '328',
             dttp_id: '833e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023434',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '003e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Apex College London',
             suggestion_synonyms: [
@@ -1941,7 +1941,7 @@ module DfE
             hesa_itt_code: '329',
             dttp_id: '003e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10041898',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'a33e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'New College of the Humanities',
             suggestion_synonyms: ['NCH'],
@@ -1957,7 +1957,7 @@ module DfE
             hesa_itt_code: '331',
             dttp_id: '053f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023452',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '1a3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Cambridge School of Visual and Performing Arts',
             suggestion_synonyms: [],
@@ -1965,7 +1965,7 @@ module DfE
             hesa_itt_code: '332',
             dttp_id: '1a3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10010308',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '043e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Arden University',
             suggestion_synonyms: ['Resource development international'],
@@ -2009,7 +2009,7 @@ module DfE
             hesa_itt_code: '342',
             dttp_id: '233e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10026921',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '733e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Leeds Conservatoire',
             suggestion_synonyms: [],
@@ -2017,7 +2017,7 @@ module DfE
             hesa_itt_code: '351',
             dttp_id: '733e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10034449',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '533e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Hartpury University',
             suggestion_synonyms: [],
@@ -2033,7 +2033,7 @@ module DfE
             hesa_itt_code: '353',
             dttp_id: 'fe3d182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10032036',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '033f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The London School of Architecture',
             suggestion_synonyms: [],
@@ -2041,7 +2041,7 @@ module DfE
             hesa_itt_code: '354',
             dttp_id: '033f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10062810',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '7d3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'London College of International Business Studies',
             suggestion_synonyms: [],
@@ -2049,7 +2049,7 @@ module DfE
             hesa_itt_code: '355',
             dttp_id: '7d3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004023',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '6f3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'LCCM AU UK',
             suggestion_synonyms: [],
@@ -2057,7 +2057,7 @@ module DfE
             hesa_itt_code: '356',
             dttp_id: '6f3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10066551',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'f83d182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'ACM Guildford',
             suggestion_synonyms: [],
@@ -2065,7 +2065,7 @@ module DfE
             hesa_itt_code: '357',
             dttp_id: 'f83d182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10067853',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'f43e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Film Education Training Trust',
             suggestion_synonyms: [],
@@ -2073,7 +2073,7 @@ module DfE
             hesa_itt_code: '359',
             dttp_id: 'f43e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10004035',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'f83e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Institute of Ismaili Studies',
             suggestion_synonyms: [],
@@ -2081,7 +2081,7 @@ module DfE
             hesa_itt_code: '360',
             dttp_id: 'f83e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10067388',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'a83e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Newbold College',
             suggestion_synonyms: [],
@@ -2089,7 +2089,7 @@ module DfE
             hesa_itt_code: '361',
             dttp_id: 'a83e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023456',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '713e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Le Cordon Bleu',
             suggestion_synonyms: [],
@@ -2097,7 +2097,7 @@ module DfE
             hesa_itt_code: '362',
             dttp_id: '713e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10003798',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '493e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Global Banking School',
             suggestion_synonyms: [],
@@ -2105,7 +2105,7 @@ module DfE
             hesa_itt_code: '363',
             dttp_id: '493e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10042500',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '0c3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'British College of Osteopathic Medicine',
             suggestion_synonyms: ['BCNO'],
@@ -2115,7 +2115,7 @@ module DfE
             hesa_itt_code: '400',
             dttp_id: '0c3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10000911',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '6d3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'LAMDA',
             suggestion_synonyms: [],
@@ -2130,7 +2130,7 @@ module DfE
             hesa_itt_code: '402',
             dttp_id: 'cd3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10009292',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'e13e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Study Group',
             suggestion_synonyms: [],
@@ -2138,7 +2138,7 @@ module DfE
             hesa_itt_code: '403',
             dttp_id: 'e13e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10008098',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'd13e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Royal School of Needlework',
             suggestion_synonyms: [],
@@ -2146,7 +2146,7 @@ module DfE
             hesa_itt_code: '404',
             dttp_id: 'd13e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10020436',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '5b3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Sotheby’s Institute of Art',
             suggestion_synonyms: ['Institute of Art - London'],
@@ -2154,7 +2154,7 @@ module DfE
             hesa_itt_code: '405',
             dttp_id: '5b3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10007841',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '553e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Hult International Business School',
             suggestion_synonyms: [],
@@ -2171,7 +2171,7 @@ module DfE
             hesa_itt_code: '407',
             dttp_id: '133f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023458',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '223f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'University Centre Peterborough',
             suggestion_synonyms: [],
@@ -2179,7 +2179,7 @@ module DfE
             hesa_itt_code: '408',
             dttp_id: '223f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10068157',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '1f3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Central Film School London',
             suggestion_synonyms: [],
@@ -2187,7 +2187,7 @@ module DfE
             hesa_itt_code: '409',
             dttp_id: '1f3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10024024',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '3c3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'ESCP Europe Business School',
             suggestion_synonyms: [],
@@ -2195,7 +2195,7 @@ module DfE
             hesa_itt_code: '410',
             dttp_id: '3c3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10002313',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'f23e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Council of the Inns of Court',
             suggestion_synonyms: [],
@@ -2203,7 +2203,7 @@ module DfE
             hesa_itt_code: '412',
             dttp_id: 'f23e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10081618',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '9d3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Navitas UK Holdings',
             suggestion_synonyms: [],
@@ -2211,7 +2211,7 @@ module DfE
             hesa_itt_code: '413',
             dttp_id: '9d3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10053304',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '0d3f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: "The Prince's Foundation",
             suggestion_synonyms: [],
@@ -2219,7 +2219,7 @@ module DfE
             hesa_itt_code: '414',
             dttp_id: '0d3f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10083476',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '383e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Dyson Technical Training',
             suggestion_synonyms: [],
@@ -2235,7 +2235,7 @@ module DfE
             hesa_itt_code: '416',
             dttp_id: 'c53e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023871',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '633e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'JCA | London Fashion Academy',
             suggestion_synonyms: ['JSA Education Group'],
@@ -2243,7 +2243,7 @@ module DfE
             hesa_itt_code: '417',
             dttp_id: '633e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10067601',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '243f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'University Centre Quayside',
             suggestion_synonyms: ['UCQ'],
@@ -2251,7 +2251,7 @@ module DfE
             hesa_itt_code: '418',
             dttp_id: '243f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10025197',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '363e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'David Game College',
             suggestion_synonyms: [],
@@ -2259,7 +2259,7 @@ module DfE
             hesa_itt_code: '419',
             dttp_id: '363e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10015688',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '343e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Dartington Trust',
             suggestion_synonyms: [
@@ -2273,7 +2273,7 @@ module DfE
             hesa_itt_code: '420',
             dttp_id: '343e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10026767',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'a53e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'New Model Institute for Technology and Engineering',
             suggestion_synonyms: ['NMITE'],
@@ -2281,7 +2281,7 @@ module DfE
             hesa_itt_code: '421',
             dttp_id: 'a53e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10067406',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '653e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Kaplan International Colleges U.K.',
             suggestion_synonyms: [],
@@ -2289,7 +2289,7 @@ module DfE
             hesa_itt_code: '422',
             dttp_id: '653e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10082570',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '5f3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'INTO University Partnerships',
             suggestion_synonyms: [],
@@ -2297,7 +2297,7 @@ module DfE
             hesa_itt_code: '423',
             dttp_id: '5f3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10082728',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'ef3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The College of Osteopaths',
             suggestion_synonyms: [],
@@ -2305,7 +2305,7 @@ module DfE
             hesa_itt_code: '424',
             dttp_id: 'ef3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10023442',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'c33e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Regent’s University London',
             suggestion_synonyms: [],
@@ -2320,7 +2320,7 @@ module DfE
             hesa_itt_code: '426',
             dttp_id: '0a3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10036456',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '183e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'British Academy of Jewellery',
             suggestion_synonyms: [],
@@ -2328,7 +2328,7 @@ module DfE
             hesa_itt_code: '427',
             dttp_id: '183e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10038772',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '013f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The London Interdisciplinary School',
             suggestion_synonyms: [],
@@ -2344,7 +2344,7 @@ module DfE
             hesa_itt_code: '429',
             dttp_id: 'bb3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10062833',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'eb3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The College of Health',
             suggestion_synonyms: [],
@@ -2352,7 +2352,7 @@ module DfE
             hesa_itt_code: '430',
             dttp_id: 'eb3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10066502',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '1d3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'CEG UFP',
             suggestion_synonyms: [],
@@ -2369,7 +2369,7 @@ module DfE
             hesa_itt_code: '431',
             dttp_id: '1d3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10057213',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '023e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Applied Business Academy',
             suggestion_synonyms: [],
@@ -2377,7 +2377,7 @@ module DfE
             hesa_itt_code: '432',
             dttp_id: '023e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10062759',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'e33e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Tavistock and Portman NHS Foundation Trust',
             suggestion_synonyms: [],
@@ -2385,7 +2385,7 @@ module DfE
             hesa_itt_code: '433',
             dttp_id: 'e33e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10020381',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '203f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'UA92',
             suggestion_synonyms: [],
@@ -2395,7 +2395,7 @@ module DfE
             hesa_itt_code: '434',
             dttp_id: '203f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10067648',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           'e53e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Engineering and Design Institute London (TEDI-London)',
             suggestion_synonyms: [],
@@ -2415,7 +2415,7 @@ module DfE
             dttp_id: '2d3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10082828',
             comment: 'Not degree awarding',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '1c3f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'ThinkSpace Education',
             suggestion_synonyms: [],
@@ -2423,7 +2423,7 @@ module DfE
             hesa_itt_code: '437',
             dttp_id: '1c3f182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10082743',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '3e3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'European School of Osteopathy',
             suggestion_synonyms: [],
@@ -2431,7 +2431,7 @@ module DfE
             hesa_itt_code: '7009',
             dttp_id: '3e3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10002344',
-            'has_never_awarded_degrees' => true },
+            has_never_awarded_degrees: true },
           '1f7d5c0e-805b-4867-820f-b4e58ec92bac' =>
           { name: 'Council for National Academic Awards',
             suggestion_synonyms:
@@ -2497,7 +2497,15 @@ module DfE
             dttp_id: nil,
             ukprn: '10032618',
             comment: 'Does not have degree-awarding powers but does award level 6 and 7 diplomas, and partners with universities to offer degree top-ups',
-            'has_never_awarded_degrees' => true } }
+            has_never_awarded_degrees: true },
+          '9906b3dd-d9a8-46ce-a143-cee30ae49da1' =>
+          { name: 'Institute of Chartered Accountants of Scotland',
+            suggestion_synonyms: ['ICAS'],
+            match_synonyms: ['The Institute of Chartered Accountants of Scotland'],
+            hesa_itt_code: nil,
+            dttp_id: nil,
+            ukprn: '10020611',
+            has_never_awarded_degrees: true } }
       )
     end
   end
