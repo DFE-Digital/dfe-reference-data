@@ -1,7 +1,6 @@
 module DfE
   module ReferenceData
     module ITT
-
       # FIXME: Publish subjects with no references:
 
       # C7 - Physical education with an EBacc subject
@@ -12,7 +11,7 @@ module DfE
       # 04 - Primary with modern languages
       # 02 - Primary with geography and history
       # 01 - Primary with English
-      
+
       SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           '68d6c39c-3a03-4c7d-8116-4b5357c18f5e' => { name: 'Ancient Hebrew',
@@ -30,7 +29,7 @@ module DfE
                                                       publish_code: '13' },
           '63e4e3ea-38fb-4e82-8dcb-2cc4e2af83dd' => { name: 'Physical education',
                                                       category: 'b2e39f76-9f45-47ea-bb5c-24d02b232a72',
-                                                      # Note: Code C7 applies when combined with an EBacc, but this is a historical relic
+                                                      # NOTE: Code C7 applies when combined with an EBacc, but this is a historical relic
                                                       publish_code: 'C6' },
           '208bf78b-a6f7-401a-ab04-b6d0d36d8fe1' => { name: 'health and social care',
                                                       hecos_code: '100476',
