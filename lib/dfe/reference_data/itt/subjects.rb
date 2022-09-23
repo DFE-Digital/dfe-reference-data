@@ -1,10 +1,12 @@
 module DfE
   module ReferenceData
     module ITT
-      # FIXME: Publish subjects with no references:
+      # FIXME: Publish subjects with no references in the SUBJECTS list - can we
+      # find subjects for them? How do people who chose these courses in
+      # find/apply actually get reported through publish?
 
       # C7 - Physical education with an EBacc subject
-      # 41 - Further Education
+      # 41 - Further Education - is this the study of further education itself, or a generic code for studying any subject with a view to teaching it at further level? How is this used?
       # 07 - Primary with science
       # 06 - Primary with physical education
       # As an exception, 03 - Primary with mathematics IS mapped
@@ -39,7 +41,7 @@ module DfE
                                                       hecos_code: '100184',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' },
           '17865203-96dc-465b-a65c-98622c962cad' => { name: 'religious studies',
                                                       hecos_code: '100339',
                                                       category: '142d7142-7e60-4d2d-a7c8-a9e7d308b0c7',
@@ -51,12 +53,12 @@ module DfE
           '8042327c-f396-40a4-988d-da017833c90c' => { name: 'Design and technology',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' },
           '58764285-62ea-4274-8987-1f1496fbd5a8' => { name: 'applied computing',
                                                       hecos_code: '100358',
                                                       category: '5050634c-2f57-4654-b1aa-ddae3089ac37',
                                                       publish_category: '11',
-                                                      incentive: 'sciency stuff' },
+                                                      incentive: 'science' },
           '5f32df66-87af-485c-baa5-132169ee09be' => { name: 'general sciences',
                                                       hecos_code: '100390',
                                                       category: '46750c03-bbd2-4e2e-881a-a84349970cea',
@@ -75,17 +77,17 @@ module DfE
                                                       hecos_code: '100403',
                                                       category: '499be4ee-3895-4c69-92f1-e95d5670a399',
                                                       publish_category: 'G1',
-                                                      incentive: 'sciency stuff' },
+                                                      incentive: 'science' },
           '5c92bc39-ec2e-4c2f-83b6-58655bf52958' => { name: 'manufacturing engineering',
                                                       hecos_code: '100202',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' },
           '88831d9f-8469-4532-8453-b4c8826b1ff7' => { name: 'design',
                                                       hecos_code: '100048',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' },
           '8c4c1209-8085-4484-9086-e0437d2ac8ed' => { name: 'French language',
                                                       hecos_code: '100321',
                                                       category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
@@ -105,7 +107,7 @@ module DfE
                                                       hecos_code: '100417',
                                                       category: 'c6e125b6-e6da-43bf-8d1b-6f8d6349057c',
                                                       publish_category: 'F1',
-                                                      incentive: 'sciency stuff' },
+                                                      incentive: 'science' },
           '8c536594-0fd6-4fa8-bb40-d30a1739465d' => { name: 'Chinese languages',
                                                       hecos_code: '101165',
                                                       category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
@@ -131,7 +133,7 @@ module DfE
                                                       hecos_code: '100050',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' },
           '9280520e-144f-4760-b0d3-b6f1d3b5faa7' => { name: 'sport and exercise sciences',
                                                       hecos_code: '100433',
                                                       category: 'b2e39f76-9f45-47ea-bb5c-24d02b232a72',
@@ -148,12 +150,12 @@ module DfE
                                                       hecos_code: '100372',
                                                       category: '5050634c-2f57-4654-b1aa-ddae3089ac37',
                                                       publish_category: '11',
-                                                      incentive: 'sciency stuff' },
+                                                      incentive: 'science' },
           '048ef8d9-ed1c-4fb3-87dc-9d6f49cb641e' => { name: 'physics',
                                                       hecos_code: '100425',
                                                       category: 'cc6a43bf-78fd-4253-aa7d-0b301b8ce355',
                                                       publish_category: 'F3',
-                                                      incentive: 'sciency stuff' },
+                                                      incentive: 'science' },
           'c014fa9a-9b32-4bce-9b9c-a8ca201722f8' => { name: 'specialist teaching (primary with mathematics)',
                                                       hecos_code: '101085',
                                                       category: '4b52ca55-cf75-434e-85e7-c08392f9abb7',
@@ -170,7 +172,7 @@ module DfE
                                                       hecos_code: '100150',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' },
           'c5f818be-5062-4049-994f-eb932196093e' => { name: 'historical linguistics',
                                                       hecos_code: '101410',
                                                       category: '057ec850-f246-4830-a4c5-d8e189d9aab4',
@@ -183,12 +185,12 @@ module DfE
                                                       hecos_code: '101017',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' },
           '97b39c3a-3c0a-4629-a44a-b04eed15a2c0' => { name: 'applied physics',
                                                       hecos_code: '101060',
                                                       category: 'cc6a43bf-78fd-4253-aa7d-0b301b8ce355',
                                                       publish_category: 'F3',
-                                                      incentive: 'sciency stuff' },
+                                                      incentive: 'science' },
           '8aeea330-8a16-4874-ae3f-4d5fb212f69c' => { name: 'philosophy',
                                                       hecos_code: '100337',
                                                       category: '142d7142-7e60-4d2d-a7c8-a9e7d308b0c7',
@@ -209,7 +211,7 @@ module DfE
                                                       hecos_code: '100209',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' },
           '68534f24-6eb4-497f-b45b-a6d87703d8c3' => { name: 'sports management',
                                                       hecos_code: '100097',
                                                       category: 'b2e39f76-9f45-47ea-bb5c-24d02b232a72',
@@ -218,7 +220,7 @@ module DfE
                                                       hecos_code: '101038',
                                                       category: 'c6e125b6-e6da-43bf-8d1b-6f8d6349057c',
                                                       publish_category: 'F1',
-                                                      incentive: 'sciency stuff' },
+                                                      incentive: 'science' },
           '192e412b-e4e6-4032-9be5-ef51fd5719cb' => { name: 'travel and tourism',
                                                       hecos_code: '100101',
                                                       # FIXME: no publish_category
@@ -241,7 +243,7 @@ module DfE
                                                       hecos_code: '100406',
                                                       category: '499be4ee-3895-4c69-92f1-e95d5670a399',
                                                       publish_category: 'G1',
-                                                      incentive: 'sciency stuff' },
+                                                      incentive: 'science' },
           '068006ec-27ae-4cd8-9b6f-17368736ea71' => { name: 'Arabic languages',
                                                       hecos_code: '101192',
                                                       category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
@@ -252,7 +254,7 @@ module DfE
                                                       hecos_code: '100891',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT', # FIXME: Questionable
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' }, # FIXME: Questionable
           'd59319a5-6151-46d3-8e07-f0eee7af0eae' => { name: 'Latin language',
                                                       hecos_code: '101420',
                                                       category: '0893125c-ebe1-411c-a890-21bd59e11e09',
@@ -270,7 +272,7 @@ module DfE
                                                       hecos_code: '100366',
                                                       category: '5050634c-2f57-4654-b1aa-ddae3089ac37',
                                                       publish_category: '11',
-                                                      incentive: 'sciency stuff' },
+                                                      incentive: 'science' },
           'c45de961-34e4-45bb-a8ae-8bf83e1476c9' => { name: 'biology',
                                                       hecos_code: '100346',
                                                       category: 'd1dbc6f9-806a-45dc-93c3-ea7ab17aa7fb',
@@ -314,7 +316,7 @@ module DfE
                                                       hecos_code: '100225',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' },
           '598ca321-5086-4aa1-9851-7bb2957b3a22' => { name: 'classical Greek studies',
                                                       hecos_code: '101126',
                                                       category: '0893125c-ebe1-411c-a890-21bd59e11e09',
@@ -333,7 +335,7 @@ module DfE
                                                       hecos_code: '100214',
                                                       category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: 'geography and design' },
+                                                      incentive: 'engineering' },
           '21cf685d-5f27-4a08-a597-2307afb5733d' => { name: 'graphic design',
                                                       hecos_code: '100061',
                                                       category: '6ea9457d-b8a2-4211-b58b-064fed680c99',
@@ -350,7 +352,7 @@ module DfE
                                                       hecos_code: '100409',
                                                       category: '48be902f-9eb4-4f80-8d0b-206143bb7a55',
                                                       publish_category: 'F8',
-                                                      incentive: 'geography and design' }
+                                                      incentive: 'geography' }
         }
       )
 
@@ -361,18 +363,17 @@ module DfE
           'languages' => {
             bursary_amount: '15000'
           },
-          # FIXME: Needs a better name!
-          'geography and design' => {
-            # FIXME: This is assigned to subjects in category
-            # 05798776-a0db-4378-8c9c-4e9bfe69b1c6 as that's what pub/find
-            # assigns to subject code DT, but some of the actual subjects in
-            # this category look potentially removed from that - needs checking
+          # FIXME: Needs a better name! What's it called in the funding manual?
+          'geography' => {
+            bursary_amount: '15000'
+          },
+          'engineering' => {
             bursary_amount: '15000'
           },
           'biology' => {
             bursary_amount: '10000'
           },
-          'sciency stuff except biology' => {
+          'science' => {
             bursary_amount: '24000',
             scholarship: '26000'
           }
@@ -380,7 +381,9 @@ module DfE
       )
 
       # Subject categories as used in Publish, annotated with their age range.
-      # FIXME: Migrate age_range down into SUBJECTS
+      # FIXME: Migrate age_range down into SUBJECTS, if we can fix the issues
+      # with the publish_category mappings therein (see FIXMEs before SUBJECTS
+      # is defined)
       PUBLISH_CATEGORIES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           '00' => {
