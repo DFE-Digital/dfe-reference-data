@@ -465,195 +465,140 @@ module DfE
       # Subject categories as used in Publish, annotated with their age range.
       PUBLISH_CATEGORIES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
-          '00' => {
-            name: 'Primary',
-            age_range: :primary
-          },
-          '01' => {
-            name: 'Primary with English',
-            age_range: :primary
-          },
-          '02' => {
-            name: 'Primary with geography and history',
-            age_range: :primary
-          },
-          '03' => {
-            name: 'Primary with mathematics',
-            age_range: :primary
-          },
-          '04' => {
-            name: 'Primary with modern languages',
-            age_range: :primary
-          },
-          '06' => {
-            name: 'Primary with physical education',
-            age_range: :primary
-          },
-          '07' => {
-            name: 'Primary with science',
-            age_range: :primary
-          },
-          'W1' => {
-            name: 'Art and design',
-            age_range: :secondary
-          },
-          'F0' => {
-            name: 'Science',
-            age_range: :seconday
-          },
-          'C1' => {
-            name: 'Biology',
-            age_range: :secondary
-          },
-          '08' => {
-            name: 'Business studies',
-            age_range: :secondary
-          },
-          'F1' => {
-            name: 'Chemistry',
-            age_range: :secondary
-          },
-          '09' => {
-            name: 'Citizenship',
-            age_range: :secondary
-          },
-          'Q8' => {
-            name: 'Classics',
-            age_range: :secondary
-          },
-          'P3' => {
-            name: 'Communication and media studies',
-            age_range: :secondary
-          },
-          '11' => {
-            name: 'Computing',
-            age_range: :secondary
-          },
-          '12' => {
-            name: 'Dance',
-            age_range: :secondary
-          },
-          'DT' => {
-            name: 'Design and technology',
-            age_range: :secondary
-          },
-          '13' => {
-            name: 'Drama',
-            age_range: :secondary
-          },
-          'L1' => {
-            name: 'Economics',
-            age_range: :secondary
-          },
-          'Q3' => {
-            name: 'English',
-            age_range: :secondary
-          },
-          'F8' => {
-            name: 'Geography',
-            age_range: :secondary
-          },
-          'L5' => {
-            name: 'Health and social care',
-            age_range: :secondary
-          },
-          'V1' => {
-            name: 'History',
-            age_range: :secondary
-          },
-          'G1' => {
-            name: 'Mathematics',
-            age_range: :secondary
-          },
-          'W3' => {
-            name: 'Music',
-            age_range: :secondary
-          },
-          'P1' => {
-            name: 'Philosophy',
-            age_range: :secondary
-          },
-          'C6' => {
-            name: 'Physical education',
-            age_range: :secondary
-          },
-          'F3' => {
-            name: 'Physics',
-            age_range: :secondary
-          },
-          'C8' => {
-            name: 'Psychology',
-            age_range: :secondary
-          },
-          'V6' => {
-            name: 'Religious education',
-            age_range: :secondary
-          },
-          '14' => {
-            name: 'Social sciences',
-            age_range: :secondary
-          },
-          '15' => {
-            name: 'French',
-            age_range: :secondary
-          },
-          '16' => {
-            name: 'English as a second or other language',
-            age_range: :secondary
-          },
-          '17' => {
-            name: 'German',
-            age_range: :secondary
-          },
-          '18' => {
-            name: 'Italian',
-            age_range: :secondary
-          },
-          '19' => {
-            name: 'Japanese',
-            age_range: :secondary
-          },
-          '20' => {
-            name: 'Mandarin',
-            age_range: :secondary
-          },
-          '21' => {
-            name: 'Russian',
-            age_range: :secondary
-          },
-          '22' => {
-            name: 'Spanish',
-            age_range: :secondary
-          },
-          '41' => {
-            name: 'Further education',
-            age_range: :further
-          },
-          'null' => {
-            name: 'Modern Languages',
-            age_range: :secondary
-          },
-          '24' => {
-            name: 'Modern languages (other)',
-            age_range: :secondary
-          },
-          'A0' => {
-            name: 'Latin',
-            age_range: :secondary
-          },
-          'A1' => {
-            name: 'Ancient Greek',
-            age_range: :secondary
-          },
-          'A2' => {
-            name: 'Ancient Hebrew',
-            age_range: :secondary
-          },
-          'C7' => {
-            # NOTE: This is a historical relic
-            name: 'Physical education with an EBacc subject',
-            age_range: :secondary
-          }
+          '00' => { name: 'Primary',
+                    age_range: :primary,
+                    tad_subject_code: '19' },
+          '01' => { name: 'Primary with English',
+                    age_range: :primary,
+                    tad_subject_code: '19' },
+          '02' => { name: 'Primary with geography and history',
+                    age_range: :primary,
+                    tad_subject_code: '19' },
+          '03' => { name: 'Primary with mathematics',
+                    age_range: :primary,
+                    tad_subject_code: '19' },
+          '04' => { name: 'Primary with modern languages',
+                    age_range: :primary,
+                    tad_subject_code: '19' },
+          '06' => { name: 'Primary with physical education',
+                    age_range: :primary,
+                    tad_subject_code: '19' },
+          '07' => { name: 'Primary with science',
+                    age_range: :primary,
+                    tad_subject_code: '19' },
+          'W1' => { name: 'Art and design',
+                    age_range: :secondary,
+                    tad_subject_code: '1' },
+          'F0' => { name: 'Science',
+                    age_range: :seconday,
+                    tad_subject_code: '18' },
+          'C1' => { name: 'Biology',
+                    age_range: :secondary,
+                    tad_subject_code: '2' },
+          '08' => { name: 'Business studies',
+                    age_range: :secondary,
+                    tad_subject_code: '3' },
+          'F1' => { name: 'Chemistry',
+                    age_range: :secondary,
+                    tad_subject_code: '4' },
+          '09' => { name: 'Citizenship',
+                    age_range: :secondary,
+                    tad_subject_code: '16' },
+          'Q8' => { name: 'Classics',
+                    age_range: :secondary,
+                    tad_subject_code: '5' },
+          'P3' => { name: 'Communication and media studies',
+                    age_range: :secondary,
+                    tad_subject_code: '16' },
+          '11' => { name: 'Computing',
+                    age_range: :secondary,
+                    tad_subject_code: '6' },
+          '12' => { name: 'Dance',
+                    age_range: :secondary,
+                    tad_subject_code: '17' },
+          'DT' => { name: 'Design and technology',
+                    age_range: :secondary,
+                    tad_subject_code: '7' },
+          '13' => { name: 'Drama',
+                    age_range: :secondary,
+                    tad_subject_code: '8' },
+          'L1' => { name: 'Economics',
+                    age_range: :secondary,
+                    tad_subject_code: '3' },
+          'Q3' => { name: 'English',
+                    age_range: :secondary,
+                    tad_subject_code: '9' },
+          'F8' => { name: 'Geography',
+                    age_range: :secondary,
+                    tad_subject_code: '10' },
+          'L5' => { name: 'Health and social care',
+                    age_range: :secondary,
+                    tad_subject_code: '16' },
+          'V1' => { name: 'History',
+                    age_range: :secondary,
+                    tad_subject_code: '11' },
+          'G1' => { name: 'Mathematics',
+                    age_range: :secondary,
+                    tad_subject_code: '12' },
+          'W3' => { name: 'Music',
+                    age_range: :secondary,
+                    tad_subject_code: '14' },
+          'P1' => { name: 'Philosophy',
+                    age_range: :secondary,
+                    tad_subject_code: '16' },
+          'C6' => { name: 'Physical education',
+                    age_range: :secondary,
+                    tad_subject_code: '17' },
+          'F3' => { name: 'Physics',
+                    age_range: :secondary,
+                    tad_subject_code: '18' },
+          'C8' => { name: 'Psychology',
+                    age_range: :secondary,
+                    tad_subject_code: '16' },
+          'V6' => { name: 'Religious education',
+                    age_range: :secondary,
+                    tad_subject_code: '20' },
+          '14' => { name: 'Social sciences',
+                    age_range: :secondary,
+                    tad_subject_code: '16' },
+          '15' => { name: 'French',
+                    age_range: :secondary,
+                    tad_subject_code: '13' },
+          '16' => { name: 'English as a second or other language',
+                    age_range: :secondary,
+                    tad_subject_code: '13' },
+          '17' => { name: 'German',
+                    age_range: :secondary,
+                    tad_subject_code: '13' },
+          '18' => { name: 'Italian',
+                    age_range: :secondary,
+                    tad_subject_code: '13' },
+          '19' => { name: 'Japanese',
+                    age_range: :secondary,
+                    tad_subject_code: '13' },
+          '20' => { name: 'Mandarin',
+                    age_range: :secondary,
+                    tad_subject_code: '13' },
+          '21' => { name: 'Russian',
+                    age_range: :secondary,
+                    tad_subject_code: '13' },
+          '22' => { name: 'Spanish',
+                    age_range: :secondary,
+                    tad_subject_code: '13' },
+          '41' => { name: 'Further education',
+                    age_range: :further },
+          '24' => { name: 'Modern languages (other)',
+                    age_range: :secondary,
+                    tad_subject_code: '13' },
+          'A0' => { name: 'Latin',
+                    age_range: :secondary },
+          'A1' => { name: 'Ancient Greek',
+                    age_range: :secondary },
+          'A2' => { name: 'Ancient Hebrew',
+                    age_range: :secondary },
+          'C7' => { name: 'Physical education with an EBacc subject',
+                    # NOTE: This is a historical relic
+                    age_range: :secondary }
         }
       )
 
@@ -796,6 +741,144 @@ module DfE
 
           # Added by Alaric to support Register tracking EYTS
           '5c0ec601-e802-475b-b310-f32068f78f57' => { name: 'Early Years' }
+        }
+      )
+
+      # Taken from a spreadsheet passed to me
+      TAD_CATEGORIES = DfE::ReferenceData::HardcodedReferenceList.new(
+        {
+          '19' => { name: 'Primary',
+                    publish_category: '07',
+                    register_name: 'Primary with science',
+                    type: 'PrimarySubject',
+                    phase: 'Primary',
+                    other_id: '7' },
+
+          '1' => { name: 'Art & Design',
+                   publish_category: 'W1',
+                   register_name: 'Art and design',
+                   type: 'SecondarySubject',
+                   phase: 'Secondary',
+                   other_id: '8' },
+
+          '18' => { name: 'Physics',
+                    publish_category: 'F3',
+                    register_name: 'Physics',
+                    type: 'SecondarySubject',
+                    phase: 'Secondary',
+                    other_id: '29' },
+
+          '2' => { name: 'Biology',
+                   publish_category: nil,
+                   register_name: 'Balanced Science',
+                   type: 'DiscontinuedSubject',
+                   phase: 'Secondary',
+                   other_id: '45' },
+
+          '3' => { name: 'Business Studies',
+                   publish_category: 'L1',
+                   register_name: 'Economics',
+                   type: 'SecondarySubject',
+                   phase: 'Secondary',
+                   other_id: '20' },
+
+          '4' => { name: 'Chemistry',
+                   publish_category: 'F1',
+                   register_name: 'Chemistry',
+                   type: 'SecondarySubject',
+                   phase: 'Secondary',
+                   other_id: '12' },
+
+          '16' => { name: 'Others',
+                    publish_category: nil,
+                    register_name: 'Humanities',
+                    type: 'DiscontinuedSubject',
+                    phase: 'Secondary',
+                    other_id: '44' },
+
+          '5' => { name: 'Classics',
+                   publish_category: 'Q8',
+                   register_name: 'Classics',
+                   type: 'SecondarySubject',
+                   phase: 'Secondary',
+                   other_id: '14' },
+
+          '6' => { name: 'Computing',
+                   publish_category: '11',
+                   register_name: 'Computing',
+                   type: 'SecondarySubject',
+                   phase: 'Secondary',
+                   other_id: '16' },
+
+          '17' => { name: 'Physical education',
+                    publish_category: 'C6',
+                    register_name: 'Physical education',
+                    type: 'SecondarySubject',
+                    phase: 'Secondary',
+                    other_id: '28' },
+
+          '7' => { name: 'Design & Technology',
+                   publish_category: 'DT',
+                   register_name: 'Design and technology',
+                   type: 'SecondarySubject',
+                   phase: 'Secondary',
+                   other_id: '18' },
+
+          '8' => { name: 'Drama',
+                   publish_category: '13',
+                   register_name: 'Drama',
+                   type: 'SecondarySubject',
+                   phase: 'Secondary',
+                   other_id: '19' },
+
+          '9' => { name: 'English',
+                   publish_category: 'Q3',
+                   register_name: 'English',
+                   type: 'SecondarySubject',
+                   phase: 'Secondary',
+                   other_id: '21' },
+
+          '10' => { name: 'Geography',
+                    publish_category: 'F8',
+                    register_name: 'Geography',
+                    type: 'SecondarySubject',
+                    phase: 'Secondary',
+                    other_id: '22' },
+
+          '11' => { name: 'History',
+                    publish_category: 'V1',
+                    register_name: 'History',
+                    type: 'SecondarySubject',
+                    phase: 'Secondary',
+                    other_id: '24' },
+
+          '12' => { name: 'Mathematics',
+                    publish_category: 'G1',
+                    register_name: 'Mathematics',
+                    type: 'SecondarySubject',
+                    phase: 'Secondary',
+                    other_id: '25' },
+
+          '14' => { name: 'Music',
+                    publish_category: 'W3',
+                    register_name: 'Music',
+                    type: 'SecondarySubject',
+                    phase: 'Secondary',
+                    other_id: '26' },
+
+          '20' => { name: 'Religious Education',
+                    publish_category: 'V6',
+                    register_name: 'Religious education',
+                    type: 'SecondarySubject',
+                    phase: 'Secondary',
+                    other_id: '31' },
+
+          '13' => { name: 'Modern Foreign Languages',
+                    publish_category: '24',
+                    register_name: 'Modern languages (other)',
+                    type: 'ModernLanguagesSubject',
+                    phase: 'Secondary',
+                    other_id: '42' }
         }
       )
     end
