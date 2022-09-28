@@ -63,13 +63,13 @@ BIGQUERY_TABLES = [
 
 desc 'Insert records into BigQuery tables from the reference data lists'
 task :update_bigquery_tables do
-  version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
-  commit = `git rev-parse HEAD`.chomp
+  config = DfE::ReferenceData::BigQuery::Config.new()
+  config.project = BIGQUERY_PROJECT
+  config.credentials = JSON.parse(File.read(BIGQUERY_CREDENTIALS_FILE_PATH))
+  config.dataset = BIGQUERY_DATASET
+  config.tables = BIGQUERY_TABLES
+  config.version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
+  config.commit = `git rev-parse HEAD`.chomp
 
-  DfE::ReferenceData::BigQuery.update_tables(BIGQUERY_PROJECT,
-                                             JSON.parse(File.read(BIGQUERY_CREDENTIALS_FILE_PATH)),
-                                             BIGQUERY_DATASET,
-                                             BIGQUERY_TABLES,
-                                             version,
-                                             commit)
+  DfE::ReferenceData::BigQuery.update_tables(config)
 end

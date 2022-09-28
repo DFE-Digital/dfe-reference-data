@@ -3,35 +3,48 @@ require 'google/cloud/bigquery'
 module DfE
   module ReferenceData
     module BigQuery
-      class << self
-        # It just has a lot of inputs, OK? Wrapping them in some object will
-        # just make everything more verbose with little improvement in clarity.
+      class Config
+        attr_accessor :project, :credentials, :dataset, :tables, :version, :commit
 
-        # rubocop:disable Metrics/ParameterLists
-        def update_tables(project, credentials, dataset, tables, version, commit)
-          # rubocop:enable Metrics/ParameterLists
+        def initialize()
+          @project = nil
+          @credentials = nil
+          @dataset = nil
+          @tables = nil
+          @version = nil
+          @commit = nil
+        end
+      end
+
+      class << self
+        def update_tables(config)
           project = Google::Cloud::Bigquery.new(
-            project: project,
+            project: config.project,
             # dfe-reference-data-dev is the user name
-            credentials: credentials,
+            credentials: config.credentials,
             retries: BIGQUERY_RETRIES,
             timeout: BIGQUERY_TIMEOUT
           )
 
-          dataset = project.dataset dataset
+          dataset = project.dataset config.dataset
 
-          # No, rubocop, I do not want to combine these loops because there is an asynchronous process in BigQuery between table creation and table being ready to use, and I wish to start that for all tables before I start trying to use the tables - as retrying and waiting until the first table becomes ready can happen while other tables we will look at later are also becoming ready.
+          # No, rubocop, I do not want to combine these loops because there is
+          # an asynchronous process in BigQuery between table creation and table
+          # being ready to use, and I wish to start that for all tables before I
+          # start trying to use the tables - as retrying and waiting until the
+          # first table becomes ready can happen while other tables we will look
+          # at later are also becoming ready.
 
           # rubocop:disable Style/CombinableLoops
 
-          tables.each do |entry|
+          config.tables.each do |entry|
             (table_name, list) = entry
             puts "Creating #{table_name}..."
             table = create_bigquery_table(dataset, table_name, list)
-            setup_bigquery_table_metadata(table, table_name, list, version, commit)
+            setup_bigquery_table_metadata(table, table_name, list, config.version, config.commit)
           end
 
-          tables.each do |entry|
+          config.tables.each do |entry|
             (table_name, list) = entry
             puts "Populating #{table_name}..."
             update_reference_list_into_bigquery_table_with_retries(dataset, table_name, list)
