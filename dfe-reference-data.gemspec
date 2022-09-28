@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rspec', '~> 3.0')
   s.add_development_dependency('rubocop', '~> 1.25')
   s.add_development_dependency('rubocop-rspec', '~> 2.8')
+  s.add_development_dependency('google-cloud-bigquery', '~> 1.39')
 
   s.add_dependency 'activesupport'
   s.metadata['rubygems_mfa_required'] = 'true'

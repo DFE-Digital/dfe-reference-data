@@ -6,5 +6,4 @@ gemspec
 group :release do
   gem 'gem-release', require: false
   gem 'github_changelog_generator', require: false
-  gem 'google-cloud-bigquery'
 end
