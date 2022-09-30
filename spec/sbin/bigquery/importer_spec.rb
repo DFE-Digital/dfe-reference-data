@@ -80,14 +80,15 @@ if File.file?(BIGQUERY_CREDENTIALS_FILE_PATH)
 
     it 'imported OK' do
       # Just need to check it doesn't throw an error
-      config = DfE::ReferenceData::BigQuery::Config.new()
-      config.project = BIGQUERY_PROJECT
-      config.credentials = JSON.parse(File.read(BIGQUERY_CREDENTIALS_FILE_PATH))
-      config.dataset = BIGQUERY_DATASET
-      config.tables = [[TEST_TABLE_NAME, test_data]]
-      config.version = FAKE_VERSION
-      config.commit = FAKE_COMMIT
-      DfE::ReferenceData::BigQuery.update_tables(config)
+      DfE::ReferenceData::BigQuery::Config.configure do |config|
+        config.project = BIGQUERY_PROJECT
+        config.credentials = JSON.parse(File.read(BIGQUERY_CREDENTIALS_FILE_PATH))
+        config.dataset = BIGQUERY_DATASET
+        config.tables = [[TEST_TABLE_NAME, test_data]]
+        config.version = FAKE_VERSION
+        config.commit = FAKE_COMMIT
+      end
+      DfE::ReferenceData::BigQuery.update_tables
     end
 
     # This is probably not very idiomatic RSpec, suggestions welcome!
