@@ -1,23 +1,23 @@
 require 'google/cloud/bigquery'
+require 'active_support'
 
 module DfE
   module ReferenceData
     module BigQuery
       class Config
-        attr_accessor :project, :credentials, :dataset, :tables, :version, :commit
+        cattr_accessor :project, :credentials, :dataset, :tables, :version, :commit
 
-        def initialize()
-          @project = nil
-          @credentials = nil
-          @dataset = nil
-          @tables = nil
-          @version = nil
-          @commit = nil
+        def self.configure
+          yield(self)
         end
       end
 
       class << self
-        def update_tables(config)
+        def config
+          DfE::ReferenceData::BigQuery::Config
+        end
+
+        def update_tables
           project = Google::Cloud::Bigquery.new(
             project: config.project,
             # dfe-reference-data-dev is the user name
