@@ -1,5 +1,3 @@
-require_relative 'hardcoded_reference_list'
-
 module DfE
   module ReferenceData
     module Qualifications

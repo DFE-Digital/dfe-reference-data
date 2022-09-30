@@ -1,6 +1,3 @@
-require_relative '../hardcoded_reference_list'
-require_relative '../joined_reference_list'
-
 module DfE
   module ReferenceData
     module Degrees
