@@ -12,7 +12,14 @@ module DfE
   module ReferenceData
     module BigQuery
       class Config
+        # Require configuration
         cattr_accessor :project, :credentials, :dataset, :tables, :version, :commit
+
+        # Optional, overridable, configuration
+        cattr_accessor :max_retry_sleep, :bigquery_retries, :bigquery_timeout
+        self.max_retry_sleep = 60 # seconds
+        self.bigquery_retries = 10
+        self.bigquery_timeout = 10
 
         def self.configure
           yield(self)
@@ -29,42 +36,40 @@ module DfE
             project: config.project,
             # dfe-reference-data-dev is the user name
             credentials: config.credentials,
-            retries: BIGQUERY_RETRIES,
-            timeout: BIGQUERY_TIMEOUT
+            retries: config.bigquery_retries,
+            timeout: config.bigquery_timeout
           )
 
           dataset = project.dataset config.dataset
 
-          # No, rubocop, I do not want to combine these loops because there is
-          # an asynchronous process in BigQuery between table creation and table
-          # being ready to use, and I wish to start that for all tables before I
-          # start trying to use the tables - as retrying and waiting until the
-          # first table becomes ready can happen while other tables we will look
-          # at later are also becoming ready.
+          # There is an asynchronous process in BigQuery between table creation
+          # and table being ready to use, so we start that for all tables before
+          # we start trying to use the tables - as retrying and waiting until
+          # the first table becomes ready can happen while other tables we will
+          # look at later are also becoming ready.
 
-          # rubocop:disable Style/CombinableLoops
+          create_tables(dataset)
+          populate_tables(dataset)
+        end
 
+        private
+
+        def create_tables(dataset)
           config.tables.each do |entry|
             (table_name, list) = entry
             puts "Creating #{table_name}..."
             table = create_bigquery_table(dataset, table_name, list)
             setup_bigquery_table_metadata(table, table_name, list, config.version, config.commit)
           end
+        end
 
+        def populate_tables(dataset)
           config.tables.each do |entry|
             (table_name, list) = entry
             puts "Populating #{table_name}..."
             update_reference_list_into_bigquery_table_with_retries(dataset, table_name, list)
           end
-
-          # rubocop:enable Style/CombinableLoops
         end
-
-        private
-
-        MAX_RETRY_SLEEP = 60
-        BIGQUERY_RETRIES = 10
-        BIGQUERY_TIMEOUT = 10
 
         def bigquery_schema_create_field(schema, name, kind, mode)
           case kind
@@ -164,7 +169,7 @@ module DfE
             end
             sleep sleep_time
             sleep_time *= 2
-            sleep_time = MAX_RETRY_SLEEP if sleep_time > MAX_RETRY_SLEEP
+            sleep_time = config.max_retry_sleep if sleep_time > config.max_retry_sleep
           end
         end
       end
