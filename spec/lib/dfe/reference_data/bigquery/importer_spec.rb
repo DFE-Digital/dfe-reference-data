@@ -1,4 +1,4 @@
-require_relative '../../../sbin/bigquery/importer'
+require_relative '../../../../../lib/dfe/reference_data/bigquery/importer'
 require 'google/cloud/bigquery'
 require 'securerandom'
 

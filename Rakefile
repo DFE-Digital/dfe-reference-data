@@ -3,8 +3,8 @@
 require 'bundler/gem_tasks'
 require 'rspec/core/rake_task'
 
-require_relative 'sbin/bigquery/importer'
 require_relative 'lib/dfe/reference_data'
+require_relative 'lib/dfe/reference_data/bigquery/importer'
 
 RSpec::Core::RakeTask.new(:spec)
 

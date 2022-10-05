@@ -1,6 +1,13 @@
 require 'google/cloud/bigquery'
 require 'active_support'
 
+# Although this file is included in the gem, it is not intended to be used by
+# users of the gem and the gem does not declare google/cloud/bigquery as a
+# runtime dependency.
+
+# This file is referenced only at build time, from the corresponding rspecs and
+# the Rakefile.
+
 module DfE
   module ReferenceData
     module BigQuery
