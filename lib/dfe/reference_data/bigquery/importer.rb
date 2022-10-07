@@ -30,7 +30,7 @@ module DfE
         def self.obtain_credentials
           if @@credentials == nil
             if ENV['BIGQUERY_CREDENTIALS']
-              @@credentials = ENV['BIGQUERY_CREDENTIALS']
+              @@credentials = JSON.parse(ENV['BIGQUERY_CREDENTIALS'])
             elsif File.file?('../dfe-reference-data_bigquery_api_key.json')
               @@credentials = JSON.parse(File.read('../dfe-reference-data_bigquery_api_key.json'))
             else
