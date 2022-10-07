@@ -44,13 +44,6 @@ task :tag_and_push_release do
   puts "Release #{v_version} has been pushed. Please mark a Github release by visiting https://github.com/DFE-Digital/dfe-reference-data/releases/new?tag=#{v_version}"
 end
 
-BIGQUERY_CREDENTIALS_FILE_PATH = '../dfe-reference-data_bigquery_api_key.json'
-
-# Update the docs in docs/bigquery.md to reflect the location tables are created at:
-
-BIGQUERY_PROJECT = 'rugged-abacus-218110'
-BIGQUERY_DATASET = 'dfe_reference_data_dev'
-
 # Update the docs in docs/bigquery.md to reflect any changes to this list:
 
 BIGQUERY_TABLES = [
@@ -64,12 +57,16 @@ BIGQUERY_TABLES = [
 desc 'Insert records into BigQuery tables from the reference data lists'
 task :update_bigquery_tables do
   DfE::ReferenceData::BigQuery::Config.configure do |config|
-    config.project = BIGQUERY_PROJECT
-    config.credentials = JSON.parse(File.read(BIGQUERY_CREDENTIALS_FILE_PATH))
-    config.dataset = BIGQUERY_DATASET
+    config.project = ENV["BIGQUERY_PROJECT"] || 'rugged-abacus-218110'
+    config.dataset = ENV["BIGQUERY_DATASET"] ||  'dfe_reference_data_dev'
     config.tables = BIGQUERY_TABLES
     config.version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
     config.commit = `git rev-parse HEAD`.chomp
+
+    # Suffix table names with the major version number, so multiple release
+    # branches can coexist peacefully
+    major_version = (config.version.split '.')[0]
+    config.table_name_suffix = "_v#{major_version}"
   end
 
   DfE::ReferenceData::BigQuery.update_tables

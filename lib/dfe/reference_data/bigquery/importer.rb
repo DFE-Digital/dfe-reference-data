@@ -16,13 +16,28 @@ module DfE
         cattr_accessor :project, :credentials, :dataset, :tables, :version, :commit
 
         # Optional, overridable, configuration
-        cattr_accessor :max_retry_sleep, :bigquery_retries, :bigquery_timeout
+        cattr_accessor :credentials, :max_retry_sleep, :bigquery_retries, :bigquery_timeout, :table_name_suffix
+        self.credentials = nil
         self.max_retry_sleep = 60 # seconds
         self.bigquery_retries = 10
         self.bigquery_timeout = 10
+        self.table_name_suffix = ''
 
         def self.configure
           yield(self)
+        end
+
+        def self.obtain_credentials
+          if @@credentials == nil
+            if ENV['BIGQUERY_CREDENTIALS']
+              @@credentials = ENV['BIGQUERY_CREDENTIALS']
+            elsif File.file?('../dfe-reference-data_bigquery_api_key.json')
+              @@credentials = JSON.parse(File.read('../dfe-reference-data_bigquery_api_key.json'))
+            else
+              raise StandardError.new "No bigquery credentials were found in $BIGQUERY_CREDENTIALS or ../dfe-reference-data_bigquery_api_key.json"
+            end
+          end
+          @@credentials
         end
       end
 
@@ -34,8 +49,7 @@ module DfE
         def update_tables
           project = Google::Cloud::Bigquery.new(
             project: config.project,
-            # dfe-reference-data-dev is the user name
-            credentials: config.credentials,
+            credentials: config.obtain_credentials,
             retries: config.bigquery_retries,
             timeout: config.bigquery_timeout
           )
@@ -56,7 +70,8 @@ module DfE
 
         def create_tables(dataset)
           config.tables.each do |entry|
-            (table_name, list) = entry
+            (table_name_prefix, list) = entry
+            table_name = table_name_prefix + config.table_name_suffix
             puts "Creating #{table_name}..."
             table = create_bigquery_table(dataset, table_name, list)
             setup_bigquery_table_metadata(table, table_name, list, config.version, config.commit)
@@ -65,7 +80,8 @@ module DfE
 
         def populate_tables(dataset)
           config.tables.each do |entry|
-            (table_name, list) = entry
+            (table_name_prefix, list) = entry
+            table_name = table_name_prefix + config.table_name_suffix
             puts "Populating #{table_name}..."
             update_reference_list_into_bigquery_table_with_retries(dataset, table_name, list)
           end

@@ -2,19 +2,24 @@ require_relative '../../../../../lib/dfe/reference_data/bigquery/importer'
 require 'google/cloud/bigquery'
 require 'securerandom'
 
-BIGQUERY_PROJECT = 'rugged-abacus-218110'.freeze
-BIGQUERY_CREDENTIALS_FILE_PATH = '../dfe-reference-data_bigquery_api_key.json'.freeze
-
-BIGQUERY_DATASET = 'dfe_reference_data_dev'.freeze
+BIGQUERY_PROJECT = (ENV["BIGQUERY_QA_PROJECT"] || 'rugged-abacus-218110').freeze
+BIGQUERY_DATASET = (ENV["BIGQUERY_QA_DATASET"] || 'dfe_reference_data_dev').freeze
 
 TEST_TABLE_NAME = "test_#{SecureRandom.uuid}".freeze
 
 FAKE_VERSION = '1.2.3'.freeze
 FAKE_COMMIT = '22596363b3de40b06f981fb85d82312e8c0ed511'.freeze
 
-# Omit this test if we don't have credentials available
-if File.file?(BIGQUERY_CREDENTIALS_FILE_PATH)
+DfE::ReferenceData::BigQuery::Config.configure do |config|
+  config.project = BIGQUERY_PROJECT
+  config.dataset = BIGQUERY_DATASET
+  config.tables = [[TEST_TABLE_NAME, test_data]]
+  config.version = FAKE_VERSION
+  config.commit = FAKE_COMMIT
+end
 
+# Omit this test if we don't have credentials available
+if DfE::ReferenceData::BigQuery::Config.obtain_credentials
   RSpec.describe DfE::ReferenceData::BigQuery do
     let(:test_data) do
       DfE::ReferenceData::HardcodedReferenceList.new(
@@ -69,8 +74,8 @@ if File.file?(BIGQUERY_CREDENTIALS_FILE_PATH)
 
     let(:dataset) do
       project = Google::Cloud::Bigquery.new(
-        project: project,
-        credentials: JSON.parse(File.read(BIGQUERY_CREDENTIALS_FILE_PATH)),
+        project: BIGQUERY_PROJECT,
+        credentials: DfE::ReferenceData::BigQuery::Config.obtain_credentials,
         retries: 10,
         timeout: 10
       )
@@ -80,14 +85,6 @@ if File.file?(BIGQUERY_CREDENTIALS_FILE_PATH)
 
     it 'imported OK' do
       # Just need to check it doesn't throw an error
-      DfE::ReferenceData::BigQuery::Config.configure do |config|
-        config.project = BIGQUERY_PROJECT
-        config.credentials = JSON.parse(File.read(BIGQUERY_CREDENTIALS_FILE_PATH))
-        config.dataset = BIGQUERY_DATASET
-        config.tables = [[TEST_TABLE_NAME, test_data]]
-        config.version = FAKE_VERSION
-        config.commit = FAKE_COMMIT
-      end
       DfE::ReferenceData::BigQuery.update_tables
     end
 
