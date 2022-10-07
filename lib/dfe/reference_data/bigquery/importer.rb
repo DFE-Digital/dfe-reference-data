@@ -27,18 +27,22 @@ module DfE
           yield(self)
         end
 
+        # Access to class variable @@credentials here is deliberate, to cache this global configuration variable
+
+        # rubocop:disable Style/ClassVars
         def self.obtain_credentials
-          if @@credentials == nil
+          if @@credentials.nil?
             if ENV['BIGQUERY_CREDENTIALS']
               @@credentials = JSON.parse(ENV['BIGQUERY_CREDENTIALS'])
             elsif File.file?('../dfe-reference-data_bigquery_api_key.json')
               @@credentials = JSON.parse(File.read('../dfe-reference-data_bigquery_api_key.json'))
             else
-              raise StandardError.new "No bigquery credentials were found in $BIGQUERY_CREDENTIALS or ../dfe-reference-data_bigquery_api_key.json"
+              raise StandardError, 'No bigquery credentials were found in $BIGQUERY_CREDENTIALS or ../dfe-reference-data_bigquery_api_key.json'
             end
           end
           @@credentials
         end
+        # rubocop:enable Style/ClassVars
       end
 
       class << self
