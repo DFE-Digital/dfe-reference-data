@@ -13,7 +13,6 @@ FAKE_COMMIT = '22596363b3de40b06f981fb85d82312e8c0ed511'.freeze
 DfE::ReferenceData::BigQuery::Config.configure do |config|
   config.project = BIGQUERY_PROJECT
   config.dataset = BIGQUERY_DATASET
-  config.tables = [[TEST_TABLE_NAME, test_data]]
   config.version = FAKE_VERSION
   config.commit = FAKE_COMMIT
 end
@@ -84,6 +83,10 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
     end
 
     it 'imported OK' do
+      DfE::ReferenceData::BigQuery::Config.configure do |config|
+        config.tables = [[TEST_TABLE_NAME, test_data]]
+      end
+
       # Just need to check it doesn't throw an error
       DfE::ReferenceData::BigQuery.update_tables
     end
