@@ -102,7 +102,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '20',
             dttp_id: '2f6e5e11-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2008',
+            closed: '2008',
             comment: 'Closed in 2008 to become the University for the creative arts',
             ukprn: '10003574' },
           '4471f34a-2887-e711-80d8-005056ac45bb' =>
@@ -203,7 +203,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '36',
             dttp_id: '81407223-7042-e811-80ff-3863bb3640b8',
-            'closed' => '1996',
+            closed: '1996',
             comment: 'Merged with University of Salford in 1996',
             ukprn: '10005649' },
           'c10b1d33-3fa2-e811-812b-5065f38ba241' =>
@@ -249,7 +249,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '44',
             dttp_id: 'c4db7129-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2005',
+            closed: '2005',
             comment:
             'It merged with the Kent Institute of Art & Design on August 1, 2005 to form the University College for the Creative Arts (now University for the Creative Arts)',
             ukprn: nil },
@@ -326,7 +326,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '55',
             dttp_id: '711c7817-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2012',
+            closed: '2012',
             comment:
             'On 1 August 2002, it merged with the University of North London to form London Metropolitan University.',
             ukprn: nil },
@@ -437,7 +437,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '70',
             dttp_id: '235b7f3b-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2002',
+            closed: '2002',
             comment:
             'UNL existed until 2002, when it merged with London Guildhall University to form London Metropolitan University',
             ukprn: nil },
@@ -546,7 +546,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '86',
             dttp_id: '73228041-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2013',
+            closed: '2013',
             comment:
             'Merged with University of Glamorgan to form University of South Wales',
             ukprn: '10007853' },
@@ -591,7 +591,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '91',
             dttp_id: nil,
-            'closed' => '2013',
+            closed: '2013',
             comment:
             'The university merged with, and became a constituent campus of, the University of Wales Trinity Saint David on 1 August 2013.',
             ukprn: '10007846' },
@@ -601,7 +601,7 @@ module DfE
             match_synonyms: ['The Trinity College Carmarthen Foundation'],
             hesa_itt_code: '92',
             dttp_id: '0e4b9247-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2010',
+            closed: '2010',
             ukprn: '10007048' },
           '2a79b119-1f63-4d3f-bf14-74671d21c7cb' =>
           { name: 'Abertay University',
@@ -936,7 +936,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '153',
             dttp_id: nil,
-            'closed' => '2004',
+            closed: '2004',
             ukprn: nil,
             comment:
             'Merged with UMIST (whose degrees it awarded) in 2004 to form University of Manchester' },
@@ -1140,7 +1140,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '181',
             dttp_id: nil,
-            'closed' => '2002',
+            closed: '2002',
             comment: 'Re-merged with Cardiff University in 2002',
             ukprn: nil },
           'a7db7129-7042-e811-80ff-3863bb3640b8' =>
@@ -1185,7 +1185,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '192',
             dttp_id: '2ef35f0b-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2017',
+            closed: '2017',
             ukprn: '10001802' },
           'df3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Stranmillis University College',
@@ -1272,7 +1272,7 @@ module DfE
             ukprn: '10007798' },
           '1b6e5e11-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Heythrop College',
-            'closed' => '2018',
+            closed: '2018',
             suggestion_synonyms: [],
             match_synonyms: [],
             hesa_itt_code: '205',
@@ -2439,7 +2439,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '9065',
             dttp_id: nil,
-            'closed' => '1993',
+            closed: '1993',
             comment:
             'The Council for National Academic Awards (CNAA) was the national degree-awarding authority in the United Kingdom from 1965 until its dissolution on 20 April 1993',
             ukprn: nil },
@@ -2466,7 +2466,7 @@ module DfE
             dttp_id: '6a228041-7042-e811-80ff-3863bb3640b8',
             comment:
             'Previously a federal university who awarded degrees. Merged into University of Wales Trinity Saint David in 2017.',
-            'closed' => '2017',
+            closed: '2017',
             ukprn: '10008574' },
           '99a3ce14-c21b-4484-aa13-76201840e7e1' =>
           { name: 'TEC Partnership',
@@ -2505,7 +2505,19 @@ module DfE
             hesa_itt_code: nil,
             dttp_id: nil,
             ukprn: '10020611',
-            has_never_awarded_degrees: true } }
+            has_never_awarded_degrees: true } },
+        {
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          hesa_itt_code: { kind: :optional, schema: :string },
+          dttp_id: { kind: :optional, schema: :string },
+          ukprn: { kind: :optional, schema: :string },
+          comment: { kind: :optional, schema: :string },
+          closed: { kind: :optional, schema: :string },
+          has_never_awarded_degrees: { kind: :optional, schema: :boolean }
+        }
       )
     end
   end

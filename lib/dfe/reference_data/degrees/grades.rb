@@ -102,6 +102,14 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             group: :main_postgrad }
+        },
+        {
+          id: :string,
+          name: :string,
+          hesa_code: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          group: :symbol
         }
       )
     end

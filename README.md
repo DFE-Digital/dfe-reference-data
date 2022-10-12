@@ -40,7 +40,7 @@ This gem includes the following reference lists:
 
 Please see the [Data Principles](https://technical-guidance.education.gov.uk/principles/data/) for general advice on storing data.
 
-It's not hard to add new hardcoded reference lists by instantiating the `HardcodedReferenceList` class  - just see `lib/dfe/reference_data/demo.rb` for an example to copy.
+It's not hard to add new hardcoded reference lists by instantiating the `HardcodedReferenceList` class  - just see `lib/dfe/reference_data/demo.rb` for an example to copy, and take a look at the [schema specification](docs/schema.md) for how to add a schema.
 
 You can also add your own subclasses of `ReferenceList`; see the source for `HardcodedReferenceList` in `lib/dfe/reference_data/hardcoded_refence_list.rb` for an example of what methods you need to re-implement.
 

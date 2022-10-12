@@ -408,6 +408,15 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             level: '8' }
+        },
+        {
+          id: :string,
+          name: :string,
+          level: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          degree: { kind: :optional, schema: :symbol },
+          hint: { kind: :optional, schema: :string }
         }
       )
     end
