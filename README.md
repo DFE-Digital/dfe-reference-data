@@ -27,6 +27,7 @@ added.
 
 * [Ruby API](docs/ruby.md)
 * [Static JSON generation](docs/json.md)
+* [BigQuery](docs/bigquery.md)
 
 ## Available reference lists
 
