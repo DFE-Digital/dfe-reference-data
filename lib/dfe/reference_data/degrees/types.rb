@@ -1,28 +1,6 @@
 module DfE
   module ReferenceData
     module Degrees
-      TYPES_SCHEMA = {
-        id: :string,
-        name: :string,
-        suggestion_synonyms: { kind: :array, element_schema: :string },
-        match_synonyms: { kind: :array, element_schema: :string },
-        priority: { kind: :optional, schema: :integer },
-        abbreviation: { kind: :optional, schema: :string },
-        qualification: :string,
-        dttp_id: { kind: :optional, schema: :string },
-        hesa_itt_code: { kind: :optional, schema: :string },
-        deprecated: { kind: :optional, schema: :boolean },
-        comment: { kind: :optional, schema: :string },
-        hint: { kind: :optional, schema: :string }
-      }.freeze
-
-      GENERIC_TYPES_SCHEMA = TYPES_SCHEMA.merge(
-        {
-          qualification: { kind: :optional, schema: :string },
-          generic: :boolean
-        }
-      )
-
       TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
         { 'be08f598-0860-4de0-b95a-3c448a16cc99' =>
           { name: 'Foundation degree',
@@ -790,9 +768,21 @@ module DfE
             dttp_id: nil,
             hesa_itt_code: '9',
             deprecated: true } },
-        TYPES_SCHEMA
+        {
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          priority: { kind: :optional, schema: :integer },
+          abbreviation: { kind: :optional, schema: :string },
+          qualification: :string,
+          dttp_id: { kind: :optional, schema: :string },
+          hesa_itt_code: { kind: :optional, schema: :string },
+          deprecated: { kind: :optional, schema: :boolean },
+          comment: { kind: :optional, schema: :string },
+          hint: { kind: :optional, schema: :string }
+        }
       )
-
       GENERIC_TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           '0584565a-1c98-4c1d-ae64-c241542c0879' =>
@@ -859,12 +849,40 @@ module DfE
             hesa_itt_code: '402',
             generic: true }
         },
-        GENERIC_TYPES_SCHEMA
+        {
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          priority: { kind: :optional, schema: :integer },
+          abbreviation: { kind: :optional, schema: :string },
+          qualification: { kind: :optional, schema: :string },
+          dttp_id: { kind: :optional, schema: :string },
+          hesa_itt_code: { kind: :optional, schema: :string },
+          deprecated: { kind: :optional, schema: :boolean },
+          comment: { kind: :optional, schema: :string },
+          hint: { kind: :optional, schema: :string },
+          generic: :boolean
+        }
       )
 
       TYPES_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
         [TYPES, GENERIC_TYPES],
-        GENERIC_TYPES_SCHEMA
+        {
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          priority: { kind: :optional, schema: :integer },
+          abbreviation: { kind: :optional, schema: :string },
+          qualification: { kind: :optional, schema: :string },
+          dttp_id: { kind: :optional, schema: :string },
+          hesa_itt_code: { kind: :optional, schema: :string },
+          deprecated: { kind: :optional, schema: :boolean },
+          comment: { kind: :optional, schema: :string },
+          hint: { kind: :optional, schema: :string },
+          generic: { kind: :optional, schema: :boolean }
+        }
       )
     end
   end

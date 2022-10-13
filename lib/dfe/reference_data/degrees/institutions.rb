@@ -1,19 +1,6 @@
 module DfE
   module ReferenceData
     module Degrees
-      INSTITUTIONS_SCHEMA = {
-        id: :string,
-        name: :string,
-        suggestion_synonyms: { kind: :array, element_schema: :string },
-        match_synonyms: { kind: :array, element_schema: :string },
-        hesa_itt_code: { kind: :optional, schema: :string },
-        dttp_id: { kind: :optional, schema: :string },
-        ukprn: { kind: :optional, schema: :string },
-        comment: { kind: :optional, schema: :string },
-        closed: { kind: :optional, schema: :string },
-        has_never_awarded_degrees: { kind: :optional, schema: :boolean }
-      }.freeze
-
       INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '5c9e1d2d-3fa2-e811-812b-5065f38ba241' =>
           { name: 'The Open University',
@@ -2519,7 +2506,18 @@ module DfE
             dttp_id: nil,
             ukprn: '10020611',
             has_never_awarded_degrees: true } },
-        INSTITUTIONS_SCHEMA
+        {
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          hesa_itt_code: { kind: :optional, schema: :string },
+          dttp_id: { kind: :optional, schema: :string },
+          ukprn: { kind: :optional, schema: :string },
+          comment: { kind: :optional, schema: :string },
+          closed: { kind: :optional, schema: :string },
+          has_never_awarded_degrees: { kind: :optional, schema: :boolean }
+        }
       )
     end
   end
