@@ -1,6 +1,15 @@
 module DfE
   module ReferenceData
     module Degrees
+      GRADES_SCHEMA = {
+        id: :string,
+        name: :string,
+        hesa_code: :string,
+        suggestion_synonyms: { kind: :array, element_schema: :string },
+        match_synonyms: { kind: :array, element_schema: :string },
+        group: :symbol
+      }.freeze
+
       GRADES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           '8741765a-13d8-4550-a413-c5a860a59d25' =>
@@ -103,14 +112,7 @@ module DfE
             match_synonyms: [],
             group: :main_postgrad }
         },
-        {
-          id: :string,
-          name: :string,
-          hesa_code: :string,
-          suggestion_synonyms: { kind: :array, element_schema: :string },
-          match_synonyms: { kind: :array, element_schema: :string },
-          group: :symbol
-        }
+        GRADES_SCHEMA
       )
     end
   end
