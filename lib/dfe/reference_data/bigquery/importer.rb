@@ -158,7 +158,7 @@ module DfE
         def update_reference_list_into_bigquery_table(dataset, table_name, list)
           table = dataset.table table_name
 
-          # NOTE TO FUTURE SELF: If we start to deal with very large reference
+          # NOTE: TO FUTURE SELF: If we start to deal with very large reference
           # lists we might start to hit BigQuery API limits documented here:
           # https://cloud.google.com/bigquery/quotas#streaming_inserts. If so,
           # we may need to add code to do this in batches - see, eg
