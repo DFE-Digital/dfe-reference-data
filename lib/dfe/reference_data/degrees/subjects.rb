@@ -1,6 +1,35 @@
 module DfE
   module ReferenceData
     module Degrees
+      CORE_SUBJECTS_SCHEMA = {
+        id: :string,
+        name: :string,
+        suggestion_synonyms: { kind: :array, element_schema: :string },
+        match_synonyms: { kind: :array, element_schema: :string },
+        comment: { kind: :optional, schema: :string }
+      }.freeze
+
+      SINGLE_SUBJECTS_SCHEMA = CORE_SUBJECTS_SCHEMA.merge(
+        {
+          dttp_id: { kind: :optional, schema: :string },
+          hecos_code: { kind: :optional, schema: :string }
+        }
+      )
+
+      COMBINED_SUBJECTS_SCHEMA = CORE_SUBJECTS_SCHEMA.merge(
+        {
+          subject_ids: { kind: :array, element_schema: :string }
+        }
+      )
+
+      SUBJECTS_SCHEMA = CORE_SUBJECTS_SCHEMA.merge(
+        {
+          subject_ids: { kind: :array, element_schema: :string },
+          dttp_id: { kind: :optional, schema: :string },
+          hecos_code: { kind: :optional, schema: :string }
+        }
+      )
+
       SINGLE_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '917f70f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Accountancy',
@@ -6592,15 +6621,7 @@ module DfE
             match_synonyms: [],
             dttp_id: '1f8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100356' } },
-        {
-          id: :string,
-          name: :string,
-          suggestion_synonyms: { kind: :array, element_schema: :string },
-          match_synonyms: { kind: :array, element_schema: :string },
-          dttp_id: { kind: :optional, schema: :string },
-          hecos_code: { kind: :optional, schema: :string },
-          comment: { kind: :optional, schema: :string }
-        }
+        SINGLE_SUBJECTS_SCHEMA
       )
 
       COMBINED_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -7055,28 +7076,12 @@ module DfE
                           '837f70f0-5dce-e911-a985-000d3ab79618'] # Sports coaching
           }
         },
-        {
-          id: :string,
-          name: :string,
-          suggestion_synonyms: { kind: :array, element_schema: :string },
-          match_synonyms: { kind: :array, element_schema: :string },
-          subject_ids: { kind: :array, element_schema: :string },
-          comment: { kind: :optional, schema: :string }
-        }
+        COMBINED_SUBJECTS_SCHEMA
       )
 
       SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new(
         [SINGLE_SUBJECTS, COMBINED_SUBJECTS],
-        {
-          id: :string,
-          name: :string,
-          suggestion_synonyms: { kind: :array, element_schema: :string },
-          match_synonyms: { kind: :array, element_schema: :string },
-          subject_ids: { kind: :array, element_schema: :string },
-          dttp_id: { kind: :optional, schema: :string },
-          hecos_code: { kind: :optional, schema: :string },
-          comment: { kind: :optional, schema: :string }
-        }
+        SUBJECTS_SCHEMA
       )
     end
   end
