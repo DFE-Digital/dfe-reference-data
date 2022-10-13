@@ -82,6 +82,19 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
       return project.dataset BIGQUERY_DATASET
     end
 
+    after(:context) do
+      # Annoyingly, we're not allowed to reference let-bound variables in after blocks, so need to repeat this setup code:
+
+      project = Google::Cloud::Bigquery.new(
+        project: BIGQUERY_PROJECT,
+        credentials: DfE::ReferenceData::BigQuery::Config.obtain_credentials,
+        retries: 10,
+        timeout: 10
+      )
+      table = project.dataset(BIGQUERY_DATASET).table(TEST_TABLE_NAME)
+      table.delete if table&.exists?
+    end
+
     it 'imported OK' do
       DfE::ReferenceData::BigQuery::Config.configure do |config|
         config.tables = [[TEST_TABLE_NAME, test_data]]
@@ -99,7 +112,6 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
         results.append(row)
       end
 
-      # FIXME: Make array order insensitive
       expect(results).to contain_exactly(
         {
           id: 'optionals_present',
@@ -142,11 +154,6 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
           array_real: []
         }
       )
-    end
-
-    it 'cleans up afterwards' do
-      table = dataset.table(TEST_TABLE_NAME)
-      table.delete if table&.exists?
     end
   end
 end
