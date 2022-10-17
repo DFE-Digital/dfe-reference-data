@@ -17,8 +17,12 @@ module DfE
       #
       # The base list is not modified - this merely wraps it to create a new
       # reference list with some "tweaks" applied.+
-      def initialize(base, overrides)
-        super()
+      def initialize(base, overrides, schema = nil)
+        if schema.nil?
+          # Default to the schema of the base list, as tweaks will rarely add/remove fields
+          schema = base.schema
+        end
+        super(schema)
         @base = base
         @overrides = overrides
 
