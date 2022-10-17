@@ -3,6 +3,9 @@
 require 'bundler/gem_tasks'
 require 'rspec/core/rake_task'
 
+require_relative 'lib/dfe/reference_data'
+require_relative 'lib/dfe/reference_data/bigquery/importer'
+
 RSpec::Core::RakeTask.new(:spec)
 
 require 'rubocop/rake_task'
@@ -39,4 +42,32 @@ task :tag_and_push_release do
   sh 'git', 'push', '--tags', 'origin'
 
   puts "Release #{v_version} has been pushed. Please mark a Github release by visiting https://github.com/DFE-Digital/dfe-reference-data/releases/new?tag=#{v_version}"
+end
+
+# Update the docs in docs/bigquery.md to reflect any changes to this list:
+
+BIGQUERY_TABLES = [
+  ['qualifications', DfE::ReferenceData::Qualifications::QUALIFICATIONS],
+  ['degree_grades', DfE::ReferenceData::Degrees::GRADES],
+  ['degree_institutions', DfE::ReferenceData::Degrees::INSTITUTIONS],
+  ['degree_subjects', DfE::ReferenceData::Degrees::SUBJECTS],
+  ['degree_types', DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS]
+].freeze
+
+desc 'Insert records into BigQuery tables from the reference data lists'
+task :update_bigquery_tables do
+  DfE::ReferenceData::BigQuery::Config.configure do |config|
+    config.project = ENV['BIGQUERY_PROJECT'] || 'rugged-abacus-218110'
+    config.dataset = ENV['BIGQUERY_DATASET'] || 'dfe_reference_data_dev'
+    config.tables = BIGQUERY_TABLES
+    config.version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
+    config.commit = `git rev-parse HEAD`.chomp
+
+    # Suffix table names with the major version number, so multiple release
+    # branches can coexist peacefully
+    major_version = (config.version.split '.')[0]
+    config.table_name_suffix = "_v#{major_version}"
+  end
+
+  DfE::ReferenceData::BigQuery.update_tables
 end
