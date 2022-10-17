@@ -75,7 +75,10 @@ module DfE
           '4c71f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'York St John University',
             suggestion_synonyms: ['YSJU'],
-            match_synonyms: [],
+            match_synonyms: [
+              'York St. John University',
+              'York Saint John University'
+            ],
             hesa_itt_code: '13',
             dttp_id: '4c71f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10007713' },
@@ -83,8 +86,11 @@ module DfE
           { name: 'Plymouth Marjon University',
             suggestion_synonyms: [],
             match_synonyms:
-            ['University of St Mark and St John',
-             'University of Saint Mark and Saint John'],
+            [
+              'University of St Mark and St John',
+              'University of St. Mark and St. John',
+              'University of Saint Mark and Saint John'
+            ],
             hesa_itt_code: '14',
             dttp_id: '3a71f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10037449' },
@@ -237,7 +243,10 @@ module DfE
           'f670f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'St Mary’s University, Twickenham',
             suggestion_synonyms: [],
-            match_synonyms: ['Saint Mary’s University, Twickenham'],
+            match_synonyms: [
+              'St. Mary’s University, Twickenham',
+              'Saint Mary’s University, Twickenham'
+            ],
             hesa_itt_code: '39',
             dttp_id: 'f670f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10007843' },
@@ -875,9 +884,15 @@ module DfE
             ukprn: '10007771' },
           'b93e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Queen Mary University of London',
-            suggestion_synonyms:
-            ['QMUL', 'QM', "St Bartholomew's Hospital Medical College", 'St Barts'],
-            match_synonyms: ['Queen Mary, University of London'],
+            suggestion_synonyms: [
+              'QMUL',
+              'QM',
+              "St Bartholomew's Hospital Medical College",
+              'St Barts'
+            ],
+            match_synonyms: [
+              'Queen Mary, University of London'
+            ],
             hesa_itt_code: '139',
             dttp_id: 'b93e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10007775' },
@@ -902,7 +917,11 @@ module DfE
           '94407223-7042-e811-80ff-3863bb3640b8' =>
           { name: 'St George’s, University of London',
             suggestion_synonyms: ['SGUL'],
-            match_synonyms: ['St George’s Hospital Medical School'],
+            match_synonyms: [
+              'St. George’s, University of London',
+              'Saint George’s, University of London',
+              'St George’s Hospital Medical School'
+            ],
             hesa_itt_code: '145',
             dttp_id: '94407223-7042-e811-80ff-3863bb3640b8',
             ukprn: '10007782' },
@@ -1085,12 +1104,15 @@ module DfE
             dttp_id: 'bbed6e2f-7042-e811-80ff-3863bb3640b8',
             ukprn: '10007852' },
           '34228041-7042-e811-80ff-3863bb3640b8' =>
-          { name: 'University of St. Andrews',
+          { name: 'University of St Andrews',
             suggestion_synonyms: [],
-            match_synonyms:
-            ['The University of St. Andrews',
-             'The University of Saint Andrews',
-             'University of Saint Andrews'],
+            match_synonyms: [
+              'University of St. Andrews',
+              'The University of St Andrews',
+              'The University of St. Andrews',
+              'The University of Saint Andrews',
+              'University of Saint Andrews'
+            ],
             hesa_itt_code: '173',
             dttp_id: '34228041-7042-e811-80ff-3863bb3640b8',
             ukprn: '10007803' },
@@ -1114,6 +1136,7 @@ module DfE
             match_synonyms:
             ['Prifysgol Cymru Y Drindod Dewi Sant',
              'University of Wales Trinity St David',
+             'University of Wales Trinity St. David',
              'The University of Wales, Lampeter'],
             hesa_itt_code: '176',
             dttp_id: 'b123a753-7042-e811-80ff-3863bb3640b8',
@@ -1210,7 +1233,10 @@ module DfE
           '9b407223-7042-e811-80ff-3863bb3640b8' =>
           { name: 'St Mary’s University College, Belfast',
             suggestion_synonyms: [],
-            match_synonyms: ['St Mary’s University College'],
+            match_synonyms: [
+              'St Mary’s University College',
+              'St. Mary’s University College'
+            ],
             hesa_itt_code: '194',
             dttp_id: '9b407223-7042-e811-80ff-3863bb3640b8',
             comment: 'Does not seem to be degree awarding',
@@ -1689,7 +1715,10 @@ module DfE
           'dd3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'St Patrick’s International College',
             suggestion_synonyms: [],
-            match_synonyms: ['Saint Patrick’s International College'],
+            match_synonyms: [
+              'St. Patrick’s International College',
+              'Saint Patrick’s International College'
+            ],
             hesa_itt_code: '283',
             dttp_id: 'dd3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10006243' },
@@ -1846,7 +1875,10 @@ module DfE
           'db3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'St Nicholas Montessori Training',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: [
+              'St. Nicholas Montessori Training',
+              'Saint Nicholas Montessori Training'
+            ],
             hesa_itt_code: '311',
             dttp_id: 'db3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10045289',
