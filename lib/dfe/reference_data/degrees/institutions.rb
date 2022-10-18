@@ -2573,7 +2573,7 @@ module DfE
 
       GENERIC_INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '02132969-f5bc-47ca-be9c-b6f6d5b05e1b' =>
-          { name: 'Other UK Institution',
+          { name: 'Other UK institution',
             suggestion_synonyms: [],
             match_synonyms: [],
             generic: true } },
