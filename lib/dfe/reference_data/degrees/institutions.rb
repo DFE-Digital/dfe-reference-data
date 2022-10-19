@@ -1197,13 +1197,13 @@ module DfE
           { name: 'University of Wales (central functions)',
             suggestion_synonyms: [],
             match_synonyms: [
-             'Prifysgol Cymru',
-             'Royal Welsh College of Music and Drama',
-             'The University of Wales (central functions)'
+              'Prifysgol Cymru',
+              'Royal Welsh College of Music and Drama',
+              'The University of Wales (central functions)'
             ],
             hesa_itt_code: '0186',
             comment:
-            "A federal university similar to the University of London. From August 2017 it has been functionally integrated with the University of Wales Trinity Saint David.",
+            'A federal university similar to the University of London. From August 2017 it has been functionally integrated with the University of Wales Trinity Saint David.',
             ukprn: '10008574' },
           'f63e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Institute of Cancer Research',
