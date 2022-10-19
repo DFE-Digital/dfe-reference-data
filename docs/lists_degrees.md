@@ -199,13 +199,13 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `hecos_code` | optional string | The ID used for this subject in HECOS (for single subjects) |
 | `subject_ids` | optional UUID array | The `SINGLE_SUBJECTS` IDs of the individual parts, in order (for combined subjects) |
 
-### `DfE::ReferenceData::Degrees::UK_INSTITUTIONS`
+### `DfE::ReferenceData::Degrees::INSTITUTIONS`
 
 ```ruby
 require 'dfe/reference_data/degrees'
 ```
 
-Degree-awarding (or otherwise) institutions in the UK
+Degree-awarding (or otherwise) institutions
 
 Owner: Apply team.
 
@@ -236,7 +236,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 require 'dfe/reference_data/degrees'
 ```
 
-Degree-awarding (or otherwise) institutions
+Generic options for where we do not have a record for a specific institution.
 
 Owner: Apply team.
 
@@ -257,19 +257,19 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `comment` | optional string | Editor's comments on the entry (not necessarily of interest to external users of the data) |
 | `generic` | boolean | Always true, as this record refers to a generic option such as "Other" rather than an actual institutions |
 
-### `DfE::ReferenceData::Degrees::INSTITUTIONS`
+### `DfE::ReferenceData::Degrees::INSTITUTIONS_INCLUDING_GENERICS`
 
 ```ruby
 require 'dfe/reference_data/degrees'
 ```
 
-Degree-awarding (or otherwise) institutions
+Degree-awarding (or otherwise) institutions, plus generic options for when no specific institution is in the list
 
 Owner: Apply team.
 
 Users: Apply team.
 
-Source: The combination of `UK_INSTITUTIONS` and `GENERIC_INSTITUTIONS`
+Source: The combination of `INSTITUTIONS` and `GENERIC_INSTITUTIONS`
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 

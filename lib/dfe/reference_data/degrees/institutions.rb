@@ -1,7 +1,7 @@
 module DfE
   module ReferenceData
     module Degrees
-      UK_INSTITUTIONS_SCHEMA = {
+      INSTITUTIONS_SCHEMA = {
         id: :string,
         name: :string,
         suggestion_synonyms: { kind: :array, element_schema: :string },
@@ -14,7 +14,7 @@ module DfE
         has_never_awarded_degrees: { kind: :optional, schema: :boolean }
       }.freeze
 
-      GENERIC_INSTITUTIONS_SCHEMA = UK_INSTITUTIONS_SCHEMA.merge(
+      GENERIC_INSTITUTIONS_SCHEMA = INSTITUTIONS_SCHEMA.merge(
         {
           id: :string,
           name: :string,
@@ -25,13 +25,13 @@ module DfE
         }
       )
 
-      INSTITUTIONS_SCHEMA = UK_INSTITUTIONS_SCHEMA.merge(
+      INSTITUTIONS_INCLUDING_GENERICS_SCHEMA = INSTITUTIONS_SCHEMA.merge(
         {
           generic: { kind: :optional, schema: :boolean }
         }
       )
 
-      UK_INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
+      INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '5c9e1d2d-3fa2-e811-812b-5065f38ba241' =>
           { name: 'The Open University',
             suggestion_synonyms: ['OU'],
@@ -2568,7 +2568,7 @@ module DfE
             dttp_id: nil,
             ukprn: '10020611',
             has_never_awarded_degrees: true } },
-        UK_INSTITUTIONS_SCHEMA
+        INSTITUTIONS_SCHEMA
       )
 
       GENERIC_INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -2580,9 +2580,9 @@ module DfE
         GENERIC_INSTITUTIONS_SCHEMA
       )
 
-      INSTITUTIONS = DfE::ReferenceData::JoinedReferenceList.new(
-        [UK_INSTITUTIONS, GENERIC_INSTITUTIONS],
-        INSTITUTIONS_SCHEMA
+      INSTITUTIONS_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
+        [INSTITUTIONS, GENERIC_INSTITUTIONS],
+        INSTITUTIONS_INCLUDING_GENERICS_SCHEMA
       )
     end
   end
