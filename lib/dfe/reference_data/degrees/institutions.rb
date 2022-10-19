@@ -1193,6 +1193,18 @@ module DfE
             hesa_itt_code: '185',
             dttp_id: 'a823a753-7042-e811-80ff-3863bb3640b8',
             ukprn: '10007807' },
+          'f34a3ac2-f15d-445e-bc4a-444cf91ac336' =>
+          { name: 'University of Wales (central functions)',
+            suggestion_synonyms: [],
+            match_synonyms: [
+             'Prifysgol Cymru',
+             'Royal Welsh College of Music and Drama',
+             'The University of Wales (central functions)'
+            ],
+            hesa_itt_code: '0186',
+            comment:
+            "A federal university similar to the University of London. From August 2017 it has been functionally integrated with the University of Wales Trinity Saint David.",
+            ukprn: '10008574' },
           'f63e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Institute of Cancer Research',
             suggestion_synonyms: ['ICR', 'University of London'],
@@ -2500,19 +2512,14 @@ module DfE
             dttp_id: '20e5a08c-ee97-e711-80d8-005056ac45bb',
             ukprn: '10004599' },
           '6a228041-7042-e811-80ff-3863bb3640b8' =>
-          { name: 'University of Wales',
+          { name: 'University of Wales, Newport',
             suggestion_synonyms: [],
-            match_synonyms:
-            ['Prifysgol Cymru',
-             'University of Wales (central functions)',
-             'Royal Welsh College of Music and Drama',
-             'The University of Wales (central functions)'],
-            hesa_itt_code: '86',
-            dttp_id: '6a228041-7042-e811-80ff-3863bb3640b8',
+            match_synonyms: [],
+            hesa_itt_code: '0086',
             comment:
-            'Previously a federal university who awarded degrees. Merged into University of Wales Trinity Saint David in 2017.',
-            closed: '2017',
-            ukprn: '10008574' },
+            'Previously a federal university who awarded degrees. Merged into University of South Wales in 2013.',
+            closed: '2013',
+            ukprn: '10007853' },
           '99a3ce14-c21b-4484-aa13-76201840e7e1' =>
           { name: 'TEC Partnership',
             suggestion_synonyms:
