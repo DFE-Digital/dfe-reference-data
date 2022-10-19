@@ -14,6 +14,23 @@ module DfE
         has_never_awarded_degrees: { kind: :optional, schema: :boolean }
       }.freeze
 
+      GENERIC_INSTITUTIONS_SCHEMA = INSTITUTIONS_SCHEMA.merge(
+        {
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          comment: { kind: :optional, schema: :string },
+          generic: :boolean
+        }
+      )
+
+      INSTITUTIONS_INCLUDING_GENERICS_SCHEMA = INSTITUTIONS_SCHEMA.merge(
+        {
+          generic: { kind: :optional, schema: :boolean }
+        }
+      )
+
       INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '5c9e1d2d-3fa2-e811-812b-5065f38ba241' =>
           { name: 'The Open University',
@@ -2552,6 +2569,20 @@ module DfE
             ukprn: '10020611',
             has_never_awarded_degrees: true } },
         INSTITUTIONS_SCHEMA
+      )
+
+      GENERIC_INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
+        { '02132969-f5bc-47ca-be9c-b6f6d5b05e1b' =>
+          { name: 'Other UK institution',
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            generic: true } },
+        GENERIC_INSTITUTIONS_SCHEMA
+      )
+
+      INSTITUTIONS_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
+        [INSTITUTIONS, GENERIC_INSTITUTIONS],
+        INSTITUTIONS_INCLUDING_GENERICS_SCHEMA
       )
     end
   end

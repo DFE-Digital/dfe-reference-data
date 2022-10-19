@@ -229,3 +229,62 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `closed` | optional string | If present, the year in which the institution closed or stopped awarding degrees |
 | `has_never_awarded_degrees` | optional boolean | If present and true, the institution has never awarded degrees, was included in an earlier version of this list by mistake, and is kept purely to support interpretation of legacy data |
 | `comment` | optional string | Editor's comments on the entry (not necessarily of interest to external users of the data) |
+
+### `DfE::ReferenceData::Degrees::GENERIC_INSTITUTIONS`
+
+```ruby
+require 'dfe/reference_data/degrees'
+```
+
+Generic options for where we do not have a record for a specific institution.
+
+Owner: Apply team.
+
+Users: Apply team.
+
+Source: Original
+
+Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
+| Field | Type | Purpose |
+|---|---|---|
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `name` | string | The full name of the institution |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this institution |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution.|
+| `comment` | optional string | Editor's comments on the entry (not necessarily of interest to external users of the data) |
+| `generic` | boolean | Always true, as this record refers to a generic option such as "Other" rather than an actual institutions |
+
+### `DfE::ReferenceData::Degrees::INSTITUTIONS_INCLUDING_GENERICS`
+
+```ruby
+require 'dfe/reference_data/degrees'
+```
+
+Degree-awarding (or otherwise) institutions, plus generic options for when no specific institution is in the list
+
+Owner: Apply team.
+
+Users: Apply team.
+
+Source: The combination of `INSTITUTIONS` and `GENERIC_INSTITUTIONS`
+
+Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
+| Field | Type | Purpose |
+|---|---|---|
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `name` | string | The full name of the institution |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this institution |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution.|
+| `dttp_id` | uuid | The ID used for this institution in DTTP |
+| `hesa_itt_code` | string | The ID used for this institution in HESA |
+| `ukprn` | string | The ID of this institution in the UK Register of Learning Providers |
+| `closed` | optional string | If present, the year in which the institution closed or stopped awarding degrees |
+| `has_never_awarded_degrees` | optional boolean | If present and true, the institution has never awarded degrees, was included in an earlier version of this list by mistake, and is kept purely to support interpretation of legacy data |
+| `comment` | optional string | Editor's comments on the entry (not necessarily of interest to external users of the data) |
+| `generic` | optional boolean | If present and true, this record refers to a generic option such as "Other" rather than an actual institutions |
