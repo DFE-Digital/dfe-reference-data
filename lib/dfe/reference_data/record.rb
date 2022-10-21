@@ -23,6 +23,14 @@ module DfE
                   other.data
                 end
       end
+
+      def to_s
+        if data.key?(:name)
+          "#<DfE::ReferenceData::Record id=#{id} name=#{name}>"
+        else
+          "#<DfE::ReferenceData::Record id=#{id}>"
+        end
+      end
     end
     # rubocop:enable Style/OpenStructUse
   end
