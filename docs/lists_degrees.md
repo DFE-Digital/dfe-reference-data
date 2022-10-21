@@ -31,7 +31,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
 | `dttp_id` | uuid | The ID used for this qualification in DQT |
-| `hesa_itt_code` | string | The ID used for this qualification in HESA |
+| `hesa_itt_code` | string | The HESA [DEGTYPE](https://www.hesa.ac.uk/collection/c22053/e/degtype) code for this degree type |
 | `comment` | string | Any extra commend or description for the field |
 
 ### `DfE::ReferenceData::Degrees::GENERIC_TYPES`
@@ -64,7 +64,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
 | `dttp_id` | uuid | The ID used for this qualification in DQT |
-| `hesa_itt_code` | string | The ID used for this degree in HESA |
+| `hesa_itt_code` | string | The HESA [DEGTYPE](https://www.hesa.ac.uk/collection/c22053/e/degtype) code for this degree type |
 
 ### `DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS`
 
@@ -95,7 +95,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
 | `dttp_id` | uuid | The ID used for this qualification in DQT |
-| `hesa_itt_code` | string | The ID used for this degree in HESA |
+| `hesa_itt_code` | string | The HESA [DEGTYPE](https://www.hesa.ac.uk/collection/c22053/e/degtype) code for this degree type |
 
 ### `DfE::ReferenceData::Degrees::GRADES`
 
@@ -116,7 +116,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this institution |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution. |
 | `group` | enumerated symbol | The kind of degree this grade applies to. `main_postgrad`, `other` or `main_undergrad` |
-| `hesa_code` | string | The HESA code for this degree grade. |
+| `hesa_code` | string | The HESA [DEGCLSS](https://www.hesa.ac.uk/collection/c22053/e/degclss) code for this degree grade. |
 
 ### `DfE::ReferenceData::Degrees::SINGLE_SUBJECTS`
 
@@ -143,7 +143,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
 | `dttp_id` | uuid | The ID used for this subject in DTTP |
-| `hecos_code` | string | The ID used for this subject in [HECoS](https://www.hesa.ac.uk/support/documentation/hecos) |
+| `hecos_code` | string | The HESA [DEGSBJ](https://www.hesa.ac.uk/collection/c22053/e/degsbj) code for this degree subject (from [HECoS](https://www.hesa.ac.uk/support/documentation/hecos)) |
 
 ### `DfE::ReferenceData::Degrees::COMBINED_SUBJECTS`
 
@@ -196,7 +196,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
 | `dttp_id` | optional uuid | The ID used for this subject in DTTP (for single subjects) |
-| `hecos_code` | optional string | The ID used for this subject in HECOS (for single subjects) |
+| `hecos_code` | optional string | The HESA [DEGSBJ](https://www.hesa.ac.uk/collection/c22053/e/degsbj) code for this degree subject (from [HECoS](https://www.hesa.ac.uk/support/documentation/hecos)) (for single subjects) |
 | `subject_ids` | optional UUID array | The `SINGLE_SUBJECTS` IDs of the individual parts, in order (for combined subjects) |
 
 ### `DfE::ReferenceData::Degrees::INSTITUTIONS`
@@ -224,7 +224,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this institution |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution.|
 | `dttp_id` | uuid | The ID used for this institution in DTTP |
-| `hesa_itt_code` | string | The ID used for this institution in HESA |
+| `hesa_itt_code` | string | The HESA [DEGEST](https://www.hesa.ac.uk/collection/c22053/e/degest) code for this institution |
 | `ukprn` | string | The ID of this institution in the UK Register of Learning Providers |
 | `closed` | optional string | If present, the year in which the institution closed or stopped awarding degrees |
 | `has_never_awarded_degrees` | optional boolean | If present and true, the institution has never awarded degrees, was included in an earlier version of this list by mistake, and is kept purely to support interpretation of legacy data |
