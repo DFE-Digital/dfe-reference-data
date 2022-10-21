@@ -93,6 +93,13 @@ module DfE
 
         def bigquery_schema_create_field(schema, name, kind, mode)
           case kind
+          when Hash
+            case kind[:kind]
+            when :code
+              schema.string name, mode: mode
+            else
+              raise "Schema error: #{kind}"
+            end
           # rubocop:disable Lint/DuplicateBranch
           when :string
             schema.string name, mode: mode
@@ -120,6 +127,8 @@ module DfE
               bigquery_schema_create_field(schema, field_name, field_schema[:element_schema], :repeated)
             when :optional
               bigquery_schema_create_field(schema, field_name, field_schema[:schema], :nullable)
+            when :code
+              bigquery_schema_create_field(schema, field_name, :string, :required)
             else
               raise "Complex schema kind error: #{field_schema[:kind]}"
             end

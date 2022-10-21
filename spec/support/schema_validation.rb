@@ -47,13 +47,30 @@ TYPE_CLASSES = {
 }.freeze
 
 class Validator
+  def self.validate_pattern_field!(record, field_name, field_schema, value)
+    raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a string") unless value.is_a?(String)
+    pattern = field_schema[:pattern]
+    raise InvalidSchemaError, "patterns in code schemas must be regexps" unless pattern.is_a?(Regexp)
+    raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} does not match the field pattern") unless pattern.match(value)
+  end
+
   def self.validate_simple_field!(record, field_name, field_schema, value)
-    if field_schema == :boolean
-      raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a boolean") unless value.is_a?(TrueClass) || value.is_a?(FalseClass)
+    if field_schema.is_a?(Hash)
+      kind = field_schema[:kind]
+      case kind
+      when :code
+        validate_pattern_field!(record, field_name, field_schema, value)
+      else
+        raise InvalidSchemaError, "Unknown simple field schema kind '#{kind}'"
+      end
     else
-      desired_class = TYPE_CLASSES[field_schema]
-      raise InvalidSchemaError, "Unknown schema type #{field_schema}" unless desired_class
-      raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a #{field_schema}") unless value.is_a?(desired_class)
+      if field_schema == :boolean
+        raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a boolean") unless value.is_a?(TrueClass) || value.is_a?(FalseClass)
+      else
+        desired_class = TYPE_CLASSES[field_schema]
+        raise InvalidSchemaError, "Unknown schema type #{field_schema}" unless desired_class
+        raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a #{field_schema}") unless value.is_a?(desired_class)
+      end
     end
   end
 
@@ -84,7 +101,13 @@ class Validator
     when Symbol
       validate_simple_field!(record, field_name, field_schema, value)
     when Hash
-      validate_complex_field!(record, field_name, field_schema, value)
+      kind = field_schema[:kind]
+      case kind
+      when :code
+        validate_simple_field!(record, field_name, field_schema, value)
+      else
+        validate_complex_field!(record, field_name, field_schema, value)
+      end
     else
       raise InvalidSchemaError, "Incomprehensible schema '#{field_schema}'"
     end
@@ -131,7 +154,7 @@ class Validator
     records.each do |record|
       validate_record!(record, schema)
     rescue StandardError => e
-      errors[record] = e
+      errors[record.id] = e
     end
     errors
   end
