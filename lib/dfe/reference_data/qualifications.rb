@@ -4,7 +4,7 @@ module DfE
       QUALIFICATIONS_SCHEMA = {
         id: :string,
         name: :string,
-        level: :string,
+        level: { kind: :code, pattern: /^entry|[1-8]$/},
         suggestion_synonyms: { kind: :array, element_schema: :string },
         match_synonyms: { kind: :array, element_schema: :string },
         degree: { kind: :optional, schema: :symbol },
