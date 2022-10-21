@@ -1,6 +1,16 @@
 module DfE
   module ReferenceData
     module Qualifications
+      QUALIFICATIONS_SCHEMA = {
+        id: :string,
+        name: :string,
+        level: :string,
+        suggestion_synonyms: { kind: :array, element_schema: :string },
+        match_synonyms: { kind: :array, element_schema: :string },
+        degree: { kind: :optional, schema: :symbol },
+        hint: { kind: :optional, schema: :string }
+      }.freeze
+
       QUALIFICATIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           '3a736cb8-039e-4a9f-b2fb-1fcc45acce58' =>
@@ -408,7 +418,8 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             level: '8' }
-        }
+        },
+        QUALIFICATIONS_SCHEMA
       )
     end
   end
