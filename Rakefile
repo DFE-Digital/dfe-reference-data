@@ -39,7 +39,7 @@ task :tag_and_push_release do
 
   sh 'gem', 'tag'
 
-  sh 'git', 'push', '--tags', 'origin'
+  sh 'git', 'push', '--tags', 'origin', 'main'
 
   puts "Release #{v_version} has been pushed. Please mark a Github release by visiting https://github.com/DFE-Digital/dfe-reference-data/releases/new?tag=#{v_version}"
 end
