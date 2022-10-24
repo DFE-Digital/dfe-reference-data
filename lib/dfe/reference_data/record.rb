@@ -24,7 +24,7 @@ module DfE
                 end
       end
 
-      def to_s
+      def inspect
         if data.key?(:name)
           "#<DfE::ReferenceData::Record id=#{id} name=#{name}>"
         else
