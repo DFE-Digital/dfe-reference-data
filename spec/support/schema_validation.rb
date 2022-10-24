@@ -6,7 +6,7 @@ class ValidationError < StandardError
 
   def initialize(message, record)
     @record = record
-    super("Validation failed for #{record}: #{message}")
+    super("Validation failed for #{record.inspect}: #{message}")
   end
 end
 
