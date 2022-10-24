@@ -105,7 +105,7 @@ RSpec.describe Validator do
           single_real: 123.456,
           single_code: '0000',
 
-          array_string: 'not an array',
+          array_string: 'not an array'
         },
         'wrong array 2' => {
           single_string: 'hello',
@@ -115,7 +115,7 @@ RSpec.describe Validator do
           single_real: 123.456,
           single_code: '0000',
 
-          array_symbol: ['not a symbol'],
+          array_symbol: ['not a symbol']
         }
       },
       # Schema
@@ -132,13 +132,13 @@ RSpec.describe Validator do
         optional_boolean: { kind: :optional, schema: :boolean },
         optional_integer: { kind: :optional, schema: :integer },
         optional_real: { kind: :optional, schema: :real },
-        optional_code: { kind: :optional, schema: {kind: :code, pattern: /^[0-9]{4}$/ } },
+        optional_code: { kind: :optional, schema: { kind: :code, pattern: /^[0-9]{4}$/ } },
         array_string: { kind: :array, element_schema: :string },
         array_symbol: { kind: :array, element_schema: :symbol },
         array_boolean: { kind: :array, element_schema: :boolean },
         array_integer: { kind: :array, element_schema: :integer },
         array_real: { kind: :array, element_schema: :real },
-        array_code: { kind: :array, element_schema: {kind: :code, pattern: /^[0-9]{4}$/ } },
+        array_code: { kind: :array, element_schema: { kind: :code, pattern: /^[0-9]{4}$/ } }
       }
     )
   end
@@ -147,20 +147,20 @@ RSpec.describe Validator do
     errors = described_class.validate_records(test_data.all, test_data.schema)
 
     expect(errors.keys).to contain_exactly(
-                             'missing fields',
-                             'extra fields',
-                             'wrong string',
-                             'wrong symbol',
-                             'wrong boolean',
-                             'wrong integer',
-                             'wrong real',
-                             'wrong code',
-                             'wrong array 1',
-                             'wrong array 2'
-                           )
-    
+      'missing fields',
+      'extra fields',
+      'wrong string',
+      'wrong symbol',
+      'wrong boolean',
+      'wrong integer',
+      'wrong real',
+      'wrong code',
+      'wrong array 1',
+      'wrong array 2'
+    )
+
     expect(errors['missing fields'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=missing fields>: Field single_string declared as required in the schema, but is missing'
-    expect(errors['extra fields'].to_s).to eq "Validation failed for #<DfE::ReferenceData::Record id=extra fields>: Field undeclared_field not declared in the schema"
+    expect(errors['extra fields'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=extra fields>: Field undeclared_field not declared in the schema'
     expect(errors['wrong string'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong string>: Field single_string does not match the schema string: Value not_a_string is not a string'
     expect(errors['wrong symbol'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong symbol>: Field single_symbol does not match the schema symbol: Value not a symbol is not a symbol'
     expect(errors['wrong boolean'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong boolean>: Field single_boolean does not match the schema boolean: Value not a boolean is not a boolean'

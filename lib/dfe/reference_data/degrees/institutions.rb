@@ -8,7 +8,7 @@ module DfE
         match_synonyms: { kind: :array, element_schema: :string },
         hesa_itt_code: { kind: :optional, schema: { kind: :code, pattern: /^[0-9]+$/ } },
         dttp_id: { kind: :optional, schema: { kind: :code, pattern: /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/ } },
-        ukprn: { kind: :optional, schema:  { kind: :code, pattern: /^[0-9]+$/ } },
+        ukprn: { kind: :optional, schema: { kind: :code, pattern: /^[0-9]+$/ } },
         comment: { kind: :optional, schema: :string },
         closed: { kind: :optional, schema: :string },
         has_never_awarded_degrees: { kind: :optional, schema: :boolean }

@@ -49,28 +49,31 @@ TYPE_CLASSES = {
 class Validator
   def self.validate_pattern_field!(record, field_name, field_schema, value)
     raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a string") unless value.is_a?(String)
+
     pattern = field_schema[:pattern]
-    raise InvalidSchemaError, "patterns in code schemas must be regexps" unless pattern.is_a?(Regexp)
+    raise InvalidSchemaError, 'patterns in code schemas must be regexps' unless pattern.is_a?(Regexp)
     raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} does not match the field pattern") unless pattern.match(value)
   end
 
-  def self.validate_simple_field!(record, field_name, field_schema, value)
-    if field_schema.is_a?(Hash)
-      kind = field_schema[:kind]
-      case kind
-      when :code
-        validate_pattern_field!(record, field_name, field_schema, value)
-      else
-        raise InvalidSchemaError, "Unknown simple field schema kind '#{kind}'"
-      end
+  def self.kind(field_schema)
+    case field_schema
+    when Hash
+      field_schema[:kind]
     else
-      if field_schema == :boolean
-        raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a boolean") unless value.is_a?(TrueClass) || value.is_a?(FalseClass)
-      else
-        desired_class = TYPE_CLASSES[field_schema]
-        raise InvalidSchemaError, "Unknown schema type #{field_schema}" unless desired_class
-        raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a #{field_schema}") unless value.is_a?(desired_class)
-      end
+      field_schema
+    end
+  end
+
+  def self.validate_simple_field!(record, field_name, field_schema, value)
+    case kind(field_schema)
+    when :code
+      validate_pattern_field!(record, field_name, field_schema, value)
+    when :boolean
+      raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a boolean") unless value.is_a?(TrueClass) || value.is_a?(FalseClass)
+    else
+      desired_class = TYPE_CLASSES[field_schema]
+      raise InvalidSchemaError, "Unknown schema type #{field_schema}" unless desired_class
+      raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a #{field_schema}") unless value.is_a?(desired_class)
     end
   end
 
@@ -97,19 +100,15 @@ class Validator
   # Validates a field against a field schema
   # Raises errors if validation fails.
   def self.validate_field!(record, field_name, field_schema, value)
-    case field_schema
-    when Symbol
-      validate_simple_field!(record, field_name, field_schema, value)
-    when Hash
-      kind = field_schema[:kind]
-      case kind
-      when :code
-        validate_simple_field!(record, field_name, field_schema, value)
-      else
-        validate_complex_field!(record, field_name, field_schema, value)
-      end
+    case kind(field_schema)
+    # rubocop:disable Lint/DuplicateBranch
+    when :array
+      validate_complex_field!(record, field_name, field_schema, value)
+    when :optional
+      validate_complex_field!(record, field_name, field_schema, value)
+    # rubocop:enable Lint/DuplicateBranch
     else
-      raise InvalidSchemaError, "Incomprehensible schema '#{field_schema}'"
+      validate_simple_field!(record, field_name, field_schema, value)
     end
   end
 
