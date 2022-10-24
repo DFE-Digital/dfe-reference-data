@@ -1,6 +1,51 @@
 module DfE
   module ReferenceData
     module ITT
+      SUBJECTS_SCHEMA = {
+        id: :string,
+        name: :string,
+        hecos_code: {kind: :optional, schema: :string},
+        register_category: {kind: :optional, schema: :string},
+        publish_category: {kind: :optional, schema: :string},
+        category: {kind: :optional, schema: :string},
+        incentive: {kind: :optional, schema: :string}
+      }.freeze
+
+      INCENTIVES_SCHEMA = {
+        id: :string,
+        bursary_amount: {kind: :optional, schema: :string},
+        scholarship: {kind: :optional, schema: :string}
+      }.freeze
+
+      PUBLISH_CATEGORIES_SCHEMA = {
+        id: :string,
+        name: :string,
+        age_range: :symbol,
+        tad_category: {kind: :optional, schema: :string}
+      }.freeze
+
+      REGISTER_CATEGORIES_SCHEMA = {
+        id: :string,
+        name: :string,
+        publish_category: {kind: :optional, schema: :string}
+      }.freeze
+
+      CATEGORIES_SCHEMA = {
+        id: :string,
+        name: :string,
+      }.freeze
+
+      TAD_CATEGORIES_SCHEMA = {
+        id: :string,
+        name: :string,
+        publish_category: {kind: :optional, schema: :string},
+        register_name: :string,
+        type: :symbol,
+        phase: :symbol,
+        other_id: :string
+      }.freeze
+      
+      
       # From https://docs.google.com/spreadsheets/d/152PMbCj_bmnm8rmqVFLJAA2Hu8-9pkPjDmGyOi85768/edit#gid=2053127863&range=Q85
       PRIMARY_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
         {
@@ -27,7 +72,8 @@ module DfE
           '1c1577a0-9c78-44c6-b252-a375fb29408f' => { name: 'primary with science',
                                                       publish_category: '07',
                                                       category: '50a6f234-2af4-4052-bec4-a3d9241e35dc' }
-        }
+        },
+        SUBJECTS_SCHEMA
       )
 
       SECONDARY_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -434,10 +480,11 @@ module DfE
                                                       publish_category: 'F8',
                                                       incentive: 'geography',
                                                       category: '518be3b3-a0b3-45cb-9299-dfaeea0c4b7e' }
-        }
+        },
+        SUBJECTS_SCHEMA
       )
 
-      SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new([PRIMARY_SUBJECTS, SECONDARY_SUBJECTS])
+      SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new([PRIMARY_SUBJECTS, SECONDARY_SUBJECTS], SUBJECTS_SCHEMA)
 
       # I have given these readable IDs because there's not many of them, and it
       # makes the incentive references more readable.
@@ -460,7 +507,8 @@ module DfE
             bursary_amount: '24000',
             scholarship: '26000'
           }
-        }
+        },
+        INCENTIVES_SCHEMA
       )
 
       # Subject categories as used in Publish, annotated with their age range.
@@ -600,7 +648,8 @@ module DfE
           'C7' => { name: 'Physical education with an EBacc subject',
                     # NOTE: This is a historical relic
                     age_range: :secondary }
-        }
+        },
+        PUBLISH_CATEGORIES_SCHEMA
       )
 
       REGISTER_CATEGORIES = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -701,7 +750,8 @@ module DfE
             name: 'Geography',
             publish_category: 'F8'
           }
-        }
+        },
+        REGISTER_CATEGORIES_SCHEMA
       )
 
       # From https://docs.google.com/spreadsheets/d/152PMbCj_bmnm8rmqVFLJAA2Hu8-9pkPjDmGyOi85768/edit#gid=2053127863&range=Q1
@@ -738,7 +788,8 @@ module DfE
 
           # Added by Alaric to support Register tracking EYTS
           '5c0ec601-e802-475b-b310-f32068f78f57' => { name: 'Early Years' }
-        }
+        },
+        CATEGORIES_SCHEMA
       )
 
       # Taken from a spreadsheet passed to me
@@ -768,7 +819,7 @@ module DfE
           '2' => { name: 'Biology',
                    publish_category: nil,
                    register_name: 'Balanced Science',
-                   type: 'DiscontinuedSubject',
+                   type: :discontinued,
                    phase: :secondary,
                    other_id: '45' },
 
@@ -789,7 +840,7 @@ module DfE
           '16' => { name: 'Others',
                     publish_category: nil,
                     register_name: 'Humanities',
-                    type: 'DiscontinuedSubject',
+                    type: :discontinued,
                     phase: :secondary,
                     other_id: '44' },
 
@@ -876,7 +927,8 @@ module DfE
                     type: :modern_languages,
                     phase: :secondary,
                     other_id: '42' }
-        }
+        },
+        TAD_CATEGORIES_SCHEMA
       )
     end
   end

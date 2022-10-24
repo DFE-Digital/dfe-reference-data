@@ -1,4 +1,5 @@
 RSpec.describe DfE::ReferenceData::ITT::SUBJECTS do
+  it_should_behave_like 'a list of valid records'
   describe 'subjects' do
     let(:records) { described_class.all }
     let(:incentives) { DfE::ReferenceData::ITT::INCENTIVES.all_as_hash }
@@ -37,7 +38,7 @@ RSpec.describe DfE::ReferenceData::ITT::SUBJECTS do
           end
         else
           # No publish_category, this is OK but issue a warning
-          puts "Missing publish_category in SUBJECTS[#{rec.id}] (#{name})"
+          puts "WARNING: Missing publish_category in SUBJECTS[#{rec.id}] (#{name})"
           true
         end
       end
@@ -56,7 +57,7 @@ RSpec.describe DfE::ReferenceData::ITT::SUBJECTS do
           end
         else
           # No register_category, this is OK but issue a warning
-          puts "Missing register_category in SUBJECTS[#{rec.id}] (#{name})"
+          puts "WARNING: Missing register_category in SUBJECTS[#{rec.id}] (#{name})"
           true
         end
       end
@@ -75,10 +76,38 @@ RSpec.describe DfE::ReferenceData::ITT::SUBJECTS do
           end
         else
           # No category, this is OK but issue a warning
-          puts "Missing category in SUBJECTS[#{rec.id}] (#{name})"
+          puts "WARNING: Missing category in SUBJECTS[#{rec.id}] (#{name})"
           true
         end
       end
     end
   end
+end
+
+RSpec.describe DfE::ReferenceData::ITT::PRIMARY_SUBJECTS do
+  it_should_behave_like 'a list of valid records'
+end
+
+RSpec.describe DfE::ReferenceData::ITT::SECONDARY_SUBJECTS do
+  it_should_behave_like 'a list of valid records'
+end
+
+RSpec.describe DfE::ReferenceData::ITT::INCENTIVES do
+  it_should_behave_like 'a list of valid records'
+end
+
+RSpec.describe DfE::ReferenceData::ITT::PUBLISH_CATEGORIES do
+  it_should_behave_like 'a list of valid records'
+end
+
+RSpec.describe DfE::ReferenceData::ITT::REGISTER_CATEGORIES do
+  it_should_behave_like 'a list of valid records'
+end
+
+RSpec.describe DfE::ReferenceData::ITT::TAD_CATEGORIES do
+  it_should_behave_like 'a list of valid records'
+end
+
+RSpec.describe DfE::ReferenceData::ITT::CATEGORIES do
+  it_should_behave_like 'a list of valid records'
 end
