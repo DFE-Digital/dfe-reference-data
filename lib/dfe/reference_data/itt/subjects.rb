@@ -4,48 +4,47 @@ module DfE
       SUBJECTS_SCHEMA = {
         id: :string,
         name: :string,
-        hecos_code: {kind: :optional, schema: :string},
-        register_category: {kind: :optional, schema: :string},
-        publish_category: {kind: :optional, schema: :string},
-        category: {kind: :optional, schema: :string},
-        incentive: {kind: :optional, schema: :string}
+        hecos_code: { kind: :optional, schema: :string },
+        register_category: { kind: :optional, schema: :string },
+        publish_category: { kind: :optional, schema: :string },
+        category: { kind: :optional, schema: :string },
+        incentive: { kind: :optional, schema: :string }
       }.freeze
 
       INCENTIVES_SCHEMA = {
         id: :string,
-        bursary_amount: {kind: :optional, schema: :string},
-        scholarship: {kind: :optional, schema: :string}
+        bursary_amount: { kind: :optional, schema: :string },
+        scholarship: { kind: :optional, schema: :string }
       }.freeze
 
       PUBLISH_CATEGORIES_SCHEMA = {
         id: :string,
         name: :string,
         age_range: :symbol,
-        tad_category: {kind: :optional, schema: :string}
+        tad_category: { kind: :optional, schema: :string }
       }.freeze
 
       REGISTER_CATEGORIES_SCHEMA = {
         id: :string,
         name: :string,
-        publish_category: {kind: :optional, schema: :string}
+        publish_category: { kind: :optional, schema: :string }
       }.freeze
 
       CATEGORIES_SCHEMA = {
         id: :string,
-        name: :string,
+        name: :string
       }.freeze
 
       TAD_CATEGORIES_SCHEMA = {
         id: :string,
         name: :string,
-        publish_category: {kind: :optional, schema: :string},
+        publish_category: { kind: :optional, schema: :string },
         register_name: :string,
         type: :symbol,
         phase: :symbol,
         other_id: :string
       }.freeze
-      
-      
+
       # From https://docs.google.com/spreadsheets/d/152PMbCj_bmnm8rmqVFLJAA2Hu8-9pkPjDmGyOi85768/edit#gid=2053127863&range=Q85
       PRIMARY_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
         {
