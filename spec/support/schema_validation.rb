@@ -90,13 +90,13 @@ class Validator
     end
   end
 
-  def self.is_optional_field?(field_schema)
+  def self.required_field?(field_schema)
     case field_schema
     when Symbol
-      false
+      true
     when Hash
       # A missing array is as good as an empty array
-      ((field_schema[:kind] == :optional) or (field_schema[:kind] == :array))
+      ((field_schema[:kind] != :optional) and (field_schema[:kind] != :array))
     else
       raise InvalidSchemaError, "Incomprehensible schema '#{field_schema}'"
     end
@@ -119,7 +119,7 @@ class Validator
     end
     # 2) All non-optional fields in schema are found in record
     schema.each_pair do |key, field_schema|
-      raise MissingFieldError.new(record, key) if !is_optional_field?(field_schema) && !record_data.key?(key)
+      raise MissingFieldError.new(record, key) if required_field?(field_schema) && !record_data.key?(key)
     end
   end
 
