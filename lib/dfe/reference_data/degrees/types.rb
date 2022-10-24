@@ -23,6 +23,13 @@ module DfE
         }
       )
 
+      TYPES_INCLUDING_GENERICS_SCHEMA = TYPES_SCHEMA.merge(
+        {
+          qualification: { kind: :optional, schema: :string },
+          generic: { kind: :optional, schema: :boolean }
+        }
+      )
+
       TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
         { 'be08f598-0860-4de0-b95a-3c448a16cc99' =>
           { name: 'Foundation degree',
@@ -801,7 +808,6 @@ module DfE
             abbreviation: nil,
             suggestion_synonyms: [],
             match_synonyms: [],
-            qualification: nil,
             dttp_id: nil,
             hesa_itt_code: '400',
             generic: true },
@@ -832,7 +838,6 @@ module DfE
               'Level 8 diploma'
             ],
             match_synonyms: [],
-            qualification: nil,
             dttp_id: nil,
             hesa_itt_code: '401',
             generic: true },
@@ -854,7 +859,6 @@ module DfE
               'Ordinary degree'
             ],
             match_synonyms: [],
-            qualification: nil,
             dttp_id: nil,
             hesa_itt_code: '402',
             generic: true }
@@ -864,7 +868,7 @@ module DfE
 
       TYPES_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
         [TYPES, GENERIC_TYPES],
-        GENERIC_TYPES_SCHEMA
+        TYPES_INCLUDING_GENERICS_SCHEMA
       )
     end
   end

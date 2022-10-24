@@ -1,6 +1,32 @@
 # Changelog
 
-## [v1.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.0.0) (2022-07-20)
+## [v1.1.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.1.0) (2022-10-19)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.0.0...v1.1.0)
+
+**Implemented enhancements:**
+
+- BigQuery integration [\#57](https://github.com/DFE-Digital/dfe-reference-data/pull/57) ([alaric-dfe](https://github.com/alaric-dfe))
+- Schema validation [\#56](https://github.com/DFE-Digital/dfe-reference-data/pull/56) ([alaric-dfe](https://github.com/alaric-dfe))
+
+**Closed issues:**
+
+- Allow degree subjects to be mapped to an array of HESA codes [\#14](https://github.com/DFE-Digital/dfe-reference-data/issues/14)
+
+**Merged pull requests:**
+
+- Added generic institution choices [\#59](https://github.com/DFE-Digital/dfe-reference-data/pull/59) ([alaric-dfe](https://github.com/alaric-dfe))
+- Add synonyms to handle abbreviations for saint [\#58](https://github.com/DFE-Digital/dfe-reference-data/pull/58) ([edwardhorsford](https://github.com/edwardhorsford))
+- Add 'Institute of Chartered Accountants of Scotland' to institutions [\#55](https://github.com/DFE-Digital/dfe-reference-data/pull/55) ([jhenderson](https://github.com/jhenderson))
+- Remove synonym that matches name exactly [\#51](https://github.com/DFE-Digital/dfe-reference-data/pull/51) ([peteryates](https://github.com/peteryates))
+- Minor tweaks to institution names [\#50](https://github.com/DFE-Digital/dfe-reference-data/pull/50) ([edwardhorsford](https://github.com/edwardhorsford))
+- Add new HESA codes from C22053 [\#48](https://github.com/DFE-Digital/dfe-reference-data/pull/48) ([edwardhorsford](https://github.com/edwardhorsford))
+- Autocomplete compatibility [\#47](https://github.com/DFE-Digital/dfe-reference-data/pull/47) ([alaric-dfe](https://github.com/alaric-dfe))
+- Add more synonyms to cover observed free text [\#45](https://github.com/DFE-Digital/dfe-reference-data/pull/45) ([edwardhorsford](https://github.com/edwardhorsford))
+- Add synonym [\#44](https://github.com/DFE-Digital/dfe-reference-data/pull/44) ([edwardhorsford](https://github.com/edwardhorsford))
+- Doctor of Philosophy -\> Doctor of Philosophy \(DPhil\) [\#42](https://github.com/DFE-Digital/dfe-reference-data/pull/42) ([gpeng](https://github.com/gpeng))
+
+## [v1.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.0.0) (2022-07-21)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v0.2.0...v1.0.0)
 

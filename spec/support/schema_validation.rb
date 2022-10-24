@@ -90,6 +90,18 @@ class Validator
     end
   end
 
+  def self.required_field?(field_schema)
+    case field_schema
+    when Symbol
+      true
+    when Hash
+      # A missing array is as good as an empty array
+      ((field_schema[:kind] != :optional) and (field_schema[:kind] != :array))
+    else
+      raise InvalidSchemaError, "Incomprehensible schema '#{field_schema}'"
+    end
+  end
+
   ##
   # Validate a record against a schema
   # Raises errors if validation fails.
@@ -106,7 +118,9 @@ class Validator
       validate_field!(record, key, fs, value)
     end
     # 2) All non-optional fields in schema are found in record
-    # ABS FIXME
+    schema.each_pair do |key, field_schema|
+      raise MissingFieldError.new(record, key) if required_field?(field_schema) && !record_data.key?(key)
+    end
   end
 
   ##
@@ -119,7 +133,6 @@ class Validator
     rescue StandardError => e
       errors[record] = e
     end
-
     errors
   end
 end
@@ -132,7 +145,7 @@ RSpec::Matchers.define :have_all_records_matching_the_schema do
 
   failure_message do |actual|
     errors = Validator.validate_records(actual.all, actual.schema)
-    return "had the following errors: #{errors}"
+    return "had the following errors: #{errors.values}"
   end
 end
 
