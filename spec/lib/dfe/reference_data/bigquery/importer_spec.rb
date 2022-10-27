@@ -29,6 +29,8 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
             single_boolean: true,
             single_integer: 123,
             single_real: 123.456,
+            single_datetime: DateTime.new(2022, 0o4, 0o4, 18, 0o0, 0o0),
+            single_daterange: Date.new(2021, 0o1, 0o1)..Date.new(2021, 12, 31),
 
             optional_string: 'optional hello',
             optional_symbol: :optional_world,
@@ -40,14 +42,21 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
             array_symbol: %i[array of symbols],
             array_boolean: [true, false],
             array_integer: [1, 2, 3],
-            array_real: [1.0, 2.0, 3.0]
+            array_real: [1.0, 2.0, 3.0],
+
+            map: {
+              food: 'Cheese',
+              drink: 'Irn Bru'
+            }
           },
           'optionals_absent' => {
             single_string: 'goodbye',
             single_symbol: :everybody,
             single_boolean: false,
             single_integer: -1,
-            single_real: -123.456
+            single_real: -123.456,
+            single_datetime: DateTime.new(2022, 0o4, 0o4, 18, 0o0, 0o0),
+            single_daterange: Date.new(2021, 0o1, 0o1)..Date.new(2021, 12, 31)
           }
         },
         {
@@ -57,16 +66,22 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
           single_boolean: :boolean,
           single_integer: :integer,
           single_real: :real,
+          single_datetime: :datetime,
+          single_daterange: :daterange,
+
           optional_string: { kind: :optional, schema: :string },
           optional_symbol: { kind: :optional, schema: :symbol },
           optional_boolean: { kind: :optional, schema: :boolean },
           optional_integer: { kind: :optional, schema: :integer },
           optional_real: { kind: :optional, schema: :real },
+
           array_string: { kind: :array, element_schema: :string },
           array_symbol: { kind: :array, element_schema: :symbol },
           array_boolean: { kind: :array, element_schema: :boolean },
           array_integer: { kind: :array, element_schema: :integer },
-          array_real: { kind: :array, element_schema: :real }
+          array_real: { kind: :array, element_schema: :real },
+
+          map: { kind: :map, key: :symbol, value: :string }
         }
       )
     end
@@ -120,6 +135,11 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
           single_boolean: true,
           single_integer: 123,
           single_real: 123.456,
+          single_datetime: DateTime.new(2022, 0o4, 0o4, 18, 0o0, 0o0),
+          single_daterange: {
+            begin: Date.new(2021, 0o1, 0o1),
+            end: Date.new(2021, 12, 31)
+          },
 
           optional_string: 'optional hello',
           optional_symbol: 'optional_world',
@@ -131,7 +151,16 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
           array_symbol: ['array', 'of', 'symbols'],
           array_boolean: [true, false],
           array_integer: [1, 2, 3],
-          array_real: [1.0, 2.0, 3.0]
+          array_real: [1.0, 2.0, 3.0],
+
+          map: [
+            {
+              key: 'food',
+              value: 'Cheese'
+            },
+            { key: 'drink',
+              value: 'Irn Bru' }
+          ]
         },
         {
           id: 'optionals_absent',
@@ -140,6 +169,11 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
           single_boolean: false,
           single_integer: -1,
           single_real: -123.456,
+          single_datetime: DateTime.new(2022, 0o4, 0o4, 18, 0o0, 0o0),
+          single_daterange: {
+            begin: Date.new(2021, 0o1, 0o1),
+            end: Date.new(2021, 12, 31)
+          },
 
           optional_string: nil,
           optional_symbol: nil,
@@ -151,7 +185,9 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
           array_symbol: [],
           array_boolean: [],
           array_integer: [],
-          array_real: []
+          array_real: [],
+
+          map: []
         }
       )
     end

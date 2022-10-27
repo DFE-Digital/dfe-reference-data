@@ -116,8 +116,22 @@ module DfE
             schema.integer name, mode: mode
           when :real
             schema.float name, mode: mode
+          when :datetime
+            schema.datetime name, mode: mode
+          when :daterange
+            schema.record name, mode: mode do |recordschema|
+              recordschema.date 'begin', mode: :required
+              recordschema.date 'end', mode: :required
+            end
           else
             raise "Schema error: #{kind}"
+          end
+        end
+
+        def bigquery_schema_create_map_field(schema, field_name, key_schema, value_schema)
+          schema.record field_name, mode: :repeated do |fields|
+            bigquery_schema_create_field(fields, 'key', key_schema, :required)
+            bigquery_schema_create_field(fields, 'value', value_schema, :required)
           end
         end
 
@@ -131,6 +145,8 @@ module DfE
               bigquery_schema_create_field(schema, field_name, field_schema[:element_schema], :repeated)
             when :optional
               bigquery_schema_create_field(schema, field_name, field_schema[:schema], :nullable)
+            when :map
+              bigquery_schema_create_map_field(schema, field_name, field_schema[:key], field_schema[:value])
             when :code
               bigquery_schema_create_field(schema, field_name, :string, :required)
             else
@@ -168,6 +184,37 @@ module DfE
           }
         end
 
+        def convert_value_to_bigquery_form(value)
+          case value
+          when Array
+            value.map {|x| convert_value_to_bigquery_form(x) }
+          when Hash
+            value.to_a.map do |x|
+              (key,value) = x
+              {
+                key: convert_value_to_bigquery_form(key),
+                value: convert_value_to_bigquery_form(value)
+              }
+            end
+          when Range
+            {
+              begin: convert_value_to_bigquery_form(value.begin),
+              end: convert_value_to_bigquery_form(value.end)
+            }
+          else
+            value
+          end
+        end
+        
+        def convert_record_values_to_bigquery_form!(record)
+          result = {}
+          record.each_entry do |key,value|
+            result[key] = convert_value_to_bigquery_form(value)
+          end
+          
+          result
+        end
+
         def update_reference_list_into_bigquery_table(dataset, table_name, list)
           table = dataset.table table_name
 
@@ -177,8 +224,15 @@ module DfE
           # we may need to add code to do this in batches - see, eg
           # https://github.com/DFE-Digital/dfe-analytics/pull/45/files
 
-          # Do the actual bulk transfer
+          # Obtain the records
           rows = list.all.map(&:to_h)
+
+          # Process fields that need converting
+          rows.map! do |record|
+            convert_record_values_to_bigquery_form!(record)
+          end
+
+          # Do the actual bulk transfer
           response = table.insert rows
 
           puts "Table '#{table_name}' insert results: #{response.insert_count} records inserted, #{response.error_count} records failed"
