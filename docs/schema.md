@@ -28,6 +28,8 @@ Bare types are just represented as a symbol.
 | `:boolean`      | `true` or `false`    |
 | `:integer`      | An integer, from -4611686018427387904 to  4611686018427387903 inclusive |
 | `:real`         | A real number, from -1.7976931348623157e+308 to 1.7976931348623157e+308, stored approximately |
+| `:datetime`     | A date+time, in a Ruby `DateTime` object |
+| `:daterange`    | A range of dates, as a Ruby range of `Date` objects |
 
 ##### Code fields
 
@@ -63,6 +65,16 @@ An array field schema looks like this:
 For instance:
 
 `{kind: :array, element_schema: :string}`
+
+#### Map fields
+
+A map field schema looks like this:
+
+`{kind: :map, key: [SIMPLE FIELD SCHEMA], value: [SIMPLE FIELD SCHEMA]}`
+
+For instance:
+
+`{kind: :map, key: :symbol, value: :daterange}`
 
 ### Examples
 
