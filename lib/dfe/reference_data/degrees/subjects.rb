@@ -11,8 +11,8 @@ module DfE
 
       SINGLE_SUBJECTS_SCHEMA = CORE_SUBJECTS_SCHEMA.merge(
         {
-          dttp_id: { kind: :optional, schema: :string },
-          hecos_code: { kind: :optional, schema: :string }
+          dttp_id: { kind: :optional, schema: { kind: :code, pattern: /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/ } },
+          hecos_code: { kind: :optional, schema: { kind: :code, pattern: /^[0-9]+$/ } }
         }
       )
 
@@ -22,13 +22,7 @@ module DfE
         }
       )
 
-      SUBJECTS_SCHEMA = CORE_SUBJECTS_SCHEMA.merge(
-        {
-          subject_ids: { kind: :array, element_schema: :string },
-          dttp_id: { kind: :optional, schema: :string },
-          hecos_code: { kind: :optional, schema: :string }
-        }
-      )
+      SUBJECTS_SCHEMA = SINGLE_SUBJECTS_SCHEMA.merge(COMBINED_SUBJECTS_SCHEMA)
 
       SINGLE_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '917f70f0-5dce-e911-a985-000d3ab79618' =>

@@ -6,7 +6,7 @@ class ValidationError < StandardError
 
   def initialize(message, record)
     @record = record
-    super("Validation failed for #{record}: #{message}")
+    super("Validation failed for #{record.inspect}: #{message}")
   end
 end
 
@@ -47,8 +47,28 @@ TYPE_CLASSES = {
 }.freeze
 
 class Validator
+  def self.validate_pattern_field!(record, field_name, field_schema, value)
+    raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a string") unless value.is_a?(String)
+
+    pattern = field_schema[:pattern]
+    raise InvalidSchemaError, 'patterns in code schemas must be regexps' unless pattern.is_a?(Regexp)
+    raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} does not match the field pattern") unless pattern.match(value)
+  end
+
+  def self.kind(field_schema)
+    case field_schema
+    when Hash
+      field_schema[:kind]
+    else
+      field_schema
+    end
+  end
+
   def self.validate_simple_field!(record, field_name, field_schema, value)
-    if field_schema == :boolean
+    case kind(field_schema)
+    when :code
+      validate_pattern_field!(record, field_name, field_schema, value)
+    when :boolean
       raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a boolean") unless value.is_a?(TrueClass) || value.is_a?(FalseClass)
     else
       desired_class = TYPE_CLASSES[field_schema]
@@ -80,13 +100,15 @@ class Validator
   # Validates a field against a field schema
   # Raises errors if validation fails.
   def self.validate_field!(record, field_name, field_schema, value)
-    case field_schema
-    when Symbol
-      validate_simple_field!(record, field_name, field_schema, value)
-    when Hash
+    case kind(field_schema)
+    # rubocop:disable Lint/DuplicateBranch
+    when :array
       validate_complex_field!(record, field_name, field_schema, value)
+    when :optional
+      validate_complex_field!(record, field_name, field_schema, value)
+    # rubocop:enable Lint/DuplicateBranch
     else
-      raise InvalidSchemaError, "Incomprehensible schema '#{field_schema}'"
+      validate_simple_field!(record, field_name, field_schema, value)
     end
   end
 
@@ -131,7 +153,7 @@ class Validator
     records.each do |record|
       validate_record!(record, schema)
     rescue StandardError => e
-      errors[record] = e
+      errors[record.id] = e
     end
     errors
   end
