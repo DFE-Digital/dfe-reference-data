@@ -49,6 +49,8 @@ TYPE_CLASSES = {
   datetime: DateTime
 }.freeze
 
+# This class is just a stateless bag of methods, splitting it up will not simplify anything!
+# rubocop:disable Metrics/ClassLength
 class Validator
   def self.validate_pattern_field!(record, field_name, field_schema, value)
     raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a string") unless value.is_a?(String)
@@ -190,6 +192,7 @@ class Validator
     errors
   end
 end
+# rubocop:enable Metrics/ClassLength
 
 RSpec::Matchers.define :have_all_records_matching_the_schema do
   match do |actual|

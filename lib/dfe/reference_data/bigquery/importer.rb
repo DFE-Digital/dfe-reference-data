@@ -45,6 +45,7 @@ module DfE
         # rubocop:enable Style/ClassVars
       end
 
+      # This class is just a stateless bag of methods, splitting it up will not simplify anything!
       class << self
         def config
           DfE::ReferenceData::BigQuery::Config
@@ -100,16 +101,16 @@ module DfE
           end
         end
 
+        # rubocop:disable Lint/DuplicateBranch
+        # rubocop:disable Metrics/CyclomaticComplexity
         def bigquery_schema_create_field(schema, name, field_schema, mode)
           case kind(field_schema)
-          # rubocop:disable Lint/DuplicateBranch
           when :code
             schema.string name, mode: mode
           when :string
             schema.string name, mode: mode
           when :symbol
             schema.string name, mode: mode
-          # rubocop:enable Lint/DuplicateBranch
           when :boolean
             schema.boolean name, mode: mode
           when :integer
@@ -127,6 +128,8 @@ module DfE
             raise "Schema error: #{kind}"
           end
         end
+        # rubocop:enable Lint/DuplicateBranch
+        # rubocop:enable Metrics/CyclomaticComplexity
 
         def bigquery_schema_create_map_field(schema, field_name, key_schema, value_schema)
           schema.record field_name, mode: :repeated do |fields|
@@ -187,10 +190,10 @@ module DfE
         def convert_value_to_bigquery_form(value)
           case value
           when Array
-            value.map {|x| convert_value_to_bigquery_form(x) }
+            value.map { |x| convert_value_to_bigquery_form(x) }
           when Hash
             value.to_a.map do |x|
-              (key,value) = x
+              (key, value) = x
               {
                 key: convert_value_to_bigquery_form(key),
                 value: convert_value_to_bigquery_form(value)
@@ -205,14 +208,25 @@ module DfE
             value
           end
         end
-        
+
         def convert_record_values_to_bigquery_form!(record)
           result = {}
-          record.each_entry do |key,value|
+          record.each_entry do |key, value|
             result[key] = convert_value_to_bigquery_form(value)
           end
-          
+
           result
+        end
+
+        def convert_list_to_bigquery_format(list)
+          rows = list.all.map(&:to_h)
+
+          # Process fields that need converting
+          rows.map! do |record|
+            convert_record_values_to_bigquery_form!(record)
+          end
+
+          rows
         end
 
         def update_reference_list_into_bigquery_table(dataset, table_name, list)
@@ -225,12 +239,7 @@ module DfE
           # https://github.com/DFE-Digital/dfe-analytics/pull/45/files
 
           # Obtain the records
-          rows = list.all.map(&:to_h)
-
-          # Process fields that need converting
-          rows.map! do |record|
-            convert_record_values_to_bigquery_form!(record)
-          end
+          rows = convert_list_to_bigquery_format(list)
 
           # Do the actual bulk transfer
           response = table.insert rows
