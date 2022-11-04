@@ -3,6 +3,7 @@ PATH
   specs:
     dfe-reference-data (1.1.0)
       activesupport
+      tzinfo
 
 GEM
   remote: https://rubygems.org/

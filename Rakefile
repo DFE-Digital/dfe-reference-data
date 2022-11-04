@@ -51,7 +51,8 @@ BIGQUERY_TABLES = [
   ['degree_grades', DfE::ReferenceData::Degrees::GRADES],
   ['degree_institutions', DfE::ReferenceData::Degrees::INSTITUTIONS],
   ['degree_subjects', DfE::ReferenceData::Degrees::SUBJECTS],
-  ['degree_types', DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS]
+  ['degree_types', DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS],
+  ['itt_cycles', DfE::ReferenceData::ITT::CYCLES]
 ].freeze
 
 desc 'Insert records into BigQuery tables from the reference data lists'
