@@ -9,8 +9,6 @@ module DfE
         id: { kind: :code, pattern: /^[0-9]{4}-[0-9]{4}$/},
         find_opens: :datetime,
         apply_opens: :datetime,
-        show_deadline_banner: { kind: :optional, schema: :datetime },
-        show_summer_recruitment_banner: { kind: :optional, schema: :datetime },
         apply_1_deadline: :datetime,
         apply_2_deadline: :datetime,
         end_of_cycle: :datetime,
@@ -39,8 +37,6 @@ module DfE
           '2019-2020' => {
             find_opens: make_local_time(2019, 10, 6, 9),
             apply_opens: make_local_time(2019, 10, 13, 9),
-            show_deadline_banner: make_local_time(2020, 8, 1, 9),
-            show_summer_recruitment_banner: make_local_time(2020, 7, 1, 9),
             apply_1_deadline: make_local_time(2020, 8, 24, 18),
             apply_2_deadline: make_local_time(2020, 9, 18, 18),
             end_of_cycle: make_local_time(2021, 9, 29, 23, 59, 59),
@@ -50,8 +46,6 @@ module DfE
           '2020-2021' => {
             find_opens: make_local_time(2020, 10, 6, 9),
             apply_opens: make_local_time(2020, 10, 13, 9),
-            show_deadline_banner: make_local_time(2021, 8, 1, 9),
-            show_summer_recruitment_banner: make_local_time(2020, 7, 1, 9),
             apply_1_deadline: make_local_time(2021, 9, 7, 18),
             apply_2_deadline: make_local_time(2021, 9, 21, 18),
             end_of_cycle: make_local_time(2021, 9, 29, 23, 59, 59),
@@ -64,8 +58,6 @@ module DfE
           '2021-2022' => {
             find_opens: make_local_time(2021, 10, 5, 9),
             apply_opens: make_local_time(2021, 10, 12, 9),
-            show_deadline_banner: make_local_time(2022, 8, 2, 9), # 5 weeks before Apply 1 deadline
-            show_summer_recruitment_banner: make_local_time(2022, 7, 1), # 20 working days before reject by default date
             apply_1_deadline: make_local_time(2022, 9, 6, 18), # 1st Tuesday of September
             apply_2_deadline: make_local_time(2022, 9, 20, 18), # 2 weeks after Apply 1 deadline
             end_of_cycle: make_local_time(2022, 9, 28, 23, 59, 59), # 1 week and a day after Apply 2 deadline
@@ -78,8 +70,6 @@ module DfE
           '2022-2023' => {
             find_opens: make_local_time(2022, 10, 4, 9), # First Tuesday of October
             apply_opens: make_local_time(2022, 10, 11, 9), # Second Tuesday of October
-            show_deadline_banner: make_local_time(2023, 8, 1, 9), # 5 weeks before Apply 1 deadline
-            show_summer_recruitment_banner: make_local_time(2023, 7, 1), # To be defined the dates for this banner
             apply_1_deadline: make_local_time(2023, 9, 5, 18), # 1st Tuesday of September
             apply_2_deadline: make_local_time(2023, 9, 19, 18), # 2 weeks after Apply 1 deadline
             end_of_cycle: make_local_time(2023, 9, 27, 23, 59, 59), # 1 week and a day after Apply 2 deadline
@@ -92,8 +82,6 @@ module DfE
           '2023-2024' => {
             find_opens: make_local_time(2023, 10, 3, 9), # First Tuesday of October
             apply_opens: make_local_time(2023, 10, 10, 9), # Second Tuesday of October
-            show_summer_recruitment_banner: make_local_time(2024, 7, 1),
-            show_deadline_banner: make_local_time(2024, 7, 30, 9), # 5 weeks before Apply 1 deadline
             apply_1_deadline: make_local_time(2024, 9, 3, 18), # 1st Tuesday of September
             apply_2_deadline: make_local_time(2024, 9, 17, 18), # 2 weeks after Apply 1 deadline
             end_of_cycle: make_local_time(2024, 9, 25, 23, 59, 59), # 1 week and a day after Apply 2 deadline
