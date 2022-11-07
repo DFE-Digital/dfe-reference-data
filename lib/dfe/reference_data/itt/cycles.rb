@@ -6,7 +6,7 @@ module DfE
   module ReferenceData
     module ITT
       CYCLES_SCHEMA = {
-        id: { kind: :code, pattern: /^[0-9]{4}-[0-9]{4}$/},
+        id: { kind: :code, pattern: /^[0-9]{4}-[0-9]{4}$/ },
         find_opens: :datetime,
         apply_opens: :datetime,
         apply_1_deadline: :datetime,
