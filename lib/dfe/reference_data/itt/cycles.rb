@@ -6,7 +6,7 @@ module DfE
   module ReferenceData
     module ITT
       CYCLES_SCHEMA = {
-        id: :integer,
+        id: { kind: :code, pattern: /^[0-9]{4}-[0-9]{4}$/},
         find_opens: :datetime,
         apply_opens: :datetime,
         show_deadline_banner: { kind: :optional, schema: :datetime },
@@ -27,7 +27,7 @@ module DfE
 
       CYCLES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
-          2019 => {
+          '2018-2019' => {
             find_opens: make_local_time(2018, 10, 6, 9),
             apply_opens: make_local_time(2018, 10, 13, 9),
             apply_1_deadline: make_local_time(2019, 8, 24, 18),
@@ -36,7 +36,7 @@ module DfE
             find_closes: make_local_time(2019, 10, 3, 23, 59, 59),
             holidays: {}
           },
-          2020 => {
+          '2019-2020' => {
             find_opens: make_local_time(2019, 10, 6, 9),
             apply_opens: make_local_time(2019, 10, 13, 9),
             show_deadline_banner: make_local_time(2020, 8, 1, 9),
@@ -47,7 +47,7 @@ module DfE
             find_closes: make_local_time(2020, 10, 3, 23, 59, 59),
             holidays: {}
           },
-          2021 => {
+          '2020-2021' => {
             find_opens: make_local_time(2020, 10, 6, 9),
             apply_opens: make_local_time(2020, 10, 13, 9),
             show_deadline_banner: make_local_time(2021, 8, 1, 9),
@@ -61,7 +61,7 @@ module DfE
               easter: Date.new(2021, 4, 2)..Date.new(2021, 4, 16)
             }
           },
-          2022 => {
+          '2021-2022' => {
             find_opens: make_local_time(2021, 10, 5, 9),
             apply_opens: make_local_time(2021, 10, 12, 9),
             show_deadline_banner: make_local_time(2022, 8, 2, 9), # 5 weeks before Apply 1 deadline
@@ -75,7 +75,7 @@ module DfE
               easter: Date.new(2022, 4, 4)..Date.new(2022, 4, 18)
             }
           },
-          2023 => {
+          '2022-2023' => {
             find_opens: make_local_time(2022, 10, 4, 9), # First Tuesday of October
             apply_opens: make_local_time(2022, 10, 11, 9), # Second Tuesday of October
             show_deadline_banner: make_local_time(2023, 8, 1, 9), # 5 weeks before Apply 1 deadline
@@ -89,7 +89,7 @@ module DfE
               easter: Date.new(2023, 3, 27)..Date.new(2023, 4, 10)
             }
           },
-          2024 => {
+          '2023-2024' => {
             find_opens: make_local_time(2023, 10, 3, 9), # First Tuesday of October
             apply_opens: make_local_time(2023, 10, 10, 9), # Second Tuesday of October
             show_summer_recruitment_banner: make_local_time(2024, 7, 1),
