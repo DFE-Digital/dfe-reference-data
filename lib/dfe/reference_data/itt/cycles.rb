@@ -30,7 +30,7 @@ module DfE
             apply_opens: make_local_time(2018, 10, 13, 9),
             apply_1_deadline: make_local_time(2019, 8, 24, 18),
             apply_2_deadline: make_local_time(2019, 9, 18, 18),
-            provider_decision_deadline: make_local_time(2021, 9, 29, 23, 59, 59),
+            provider_decision_deadline: make_local_time(2019, 9, 29, 23, 59, 59),
             find_closes: make_local_time(2019, 10, 3, 23, 59, 59),
             non_working_days: {}
           },
@@ -39,7 +39,7 @@ module DfE
             apply_opens: make_local_time(2019, 10, 13, 9),
             apply_1_deadline: make_local_time(2020, 8, 24, 18),
             apply_2_deadline: make_local_time(2020, 9, 18, 18),
-            provider_decision_deadline: make_local_time(2021, 9, 29, 23, 59, 59),
+            provider_decision_deadline: make_local_time(2020, 9, 29, 23, 59, 59),
             find_closes: make_local_time(2020, 10, 3, 23, 59, 59),
             non_working_days: {}
           },
