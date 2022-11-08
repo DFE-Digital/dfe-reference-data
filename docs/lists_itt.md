@@ -18,7 +18,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 
 | Field               | Type            | Purpose                                                                                                                                            |
 |---------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| `id`                | integer            | The closing year of the recruitment phase of the cycle (eg, 2019 for the cycle where the application deadlines are in 2019)                                                                                                                                |
+| `id`                | string            | A unique ID of the form `YYYY-YYYY`, identifying the opening and closing years of the recruitment phase of the cycle (eg, `2018-2019` for the cycle where the application deadlines are in 2019)                                                                                                                                |
 | `find_opens`        | datetime | The point at which Find Postgraduate Teacher Training starts showing courses in this cycle |
 | `apply_opens`       | datetime | The point at which Apply For Teacher Training starts allowing applications to courses in this cycle |
 | `apply_1_deadline`  | datetime | The point at which Apply For Teacher Training stops accepting apply 1 applications to courses in this cycle |
