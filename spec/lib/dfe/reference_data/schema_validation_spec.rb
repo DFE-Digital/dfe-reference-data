@@ -17,13 +17,19 @@ RSpec.describe Validator do
           optional_integer: 456,
           optional_real: 456.789,
           optional_code: '9999',
+          optional_datetime: DateTime.new(2022, 0o4, 0o4, 12, 0o0, 0o0),
+          optional_daterange: Date.new(2020, 12, 20)..Date.new(2021, 1, 1),
 
           array_string: ['array', 'of', 'strings'],
           array_symbol: %i[array of symbols],
           array_boolean: [true, false],
           array_integer: [1, 2, 3],
           array_real: [1.0, 2.0, 3.0],
-          array_code: ['0000', '9999']
+          array_code: ['0000', '9999'],
+          map: {
+            food: 'Pizza',
+            drink: 'Irn Bru'
+          }
         },
         'good sparse record' => {
           single_string: 'goodbye',
@@ -127,18 +133,24 @@ RSpec.describe Validator do
         single_integer: :integer,
         single_real: :real,
         single_code: { kind: :code, pattern: /^[0-9]{4}$/ },
+
         optional_string: { kind: :optional, schema: :string },
         optional_symbol: { kind: :optional, schema: :symbol },
         optional_boolean: { kind: :optional, schema: :boolean },
         optional_integer: { kind: :optional, schema: :integer },
         optional_real: { kind: :optional, schema: :real },
         optional_code: { kind: :optional, schema: { kind: :code, pattern: /^[0-9]{4}$/ } },
+        optional_datetime: { kind: :optional, schema: :datetime },
+        optional_daterange: { kind: :optional, schema: :daterange },
+
         array_string: { kind: :array, element_schema: :string },
         array_symbol: { kind: :array, element_schema: :symbol },
         array_boolean: { kind: :array, element_schema: :boolean },
         array_integer: { kind: :array, element_schema: :integer },
         array_real: { kind: :array, element_schema: :real },
-        array_code: { kind: :array, element_schema: { kind: :code, pattern: /^[0-9]{4}$/ } }
+        array_code: { kind: :array, element_schema: { kind: :code, pattern: /^[0-9]{4}$/ } },
+
+        map: { kind: :map, key: :symbol, value: :string }
       }
     )
   end
