@@ -35,6 +35,7 @@ This gem includes the following reference lists:
 
 * [Qualifications](docs/lists_qualifications.md)
 * [Degrees](docs/lists_degrees.md)
+* [Initial Teacher Training](docs/lists_itt.md)
 * [Demo data](docs/lists_demo.md)
 
 ## Adding new reference lists
