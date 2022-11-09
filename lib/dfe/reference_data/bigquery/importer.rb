@@ -45,6 +45,7 @@ module DfE
         # rubocop:enable Style/ClassVars
       end
 
+      # This class is just a stateless bag of methods, splitting it up will not simplify anything!
       class << self
         def config
           DfE::ReferenceData::BigQuery::Config
@@ -91,22 +92,49 @@ module DfE
           end
         end
 
-        def bigquery_schema_create_field(schema, name, kind, mode)
-          case kind
-          # rubocop:disable Lint/DuplicateBranch
+        def kind(field_schema)
+          case field_schema
+          when Hash
+            field_schema[:kind]
+          else
+            field_schema
+          end
+        end
+
+        # rubocop:disable Lint/DuplicateBranch
+        # rubocop:disable Metrics/CyclomaticComplexity
+        def bigquery_schema_create_field(schema, name, field_schema, mode)
+          case kind(field_schema)
+          when :code
+            schema.string name, mode: mode
           when :string
             schema.string name, mode: mode
           when :symbol
             schema.string name, mode: mode
-          # rubocop:enable Lint/DuplicateBranch
           when :boolean
             schema.boolean name, mode: mode
           when :integer
             schema.integer name, mode: mode
           when :real
             schema.float name, mode: mode
+          when :datetime
+            schema.datetime name, mode: mode
+          when :daterange
+            schema.record name, mode: mode do |recordschema|
+              recordschema.date 'begin', mode: :required
+              recordschema.date 'end', mode: :required
+            end
           else
             raise "Schema error: #{kind}"
+          end
+        end
+        # rubocop:enable Lint/DuplicateBranch
+        # rubocop:enable Metrics/CyclomaticComplexity
+
+        def bigquery_schema_create_map_field(schema, field_name, key_schema, value_schema)
+          schema.record field_name, mode: :repeated do |fields|
+            bigquery_schema_create_field(fields, 'key', key_schema, :required)
+            bigquery_schema_create_field(fields, 'value', value_schema, :required)
           end
         end
 
@@ -120,6 +148,10 @@ module DfE
               bigquery_schema_create_field(schema, field_name, field_schema[:element_schema], :repeated)
             when :optional
               bigquery_schema_create_field(schema, field_name, field_schema[:schema], :nullable)
+            when :map
+              bigquery_schema_create_map_field(schema, field_name, field_schema[:key], field_schema[:value])
+            when :code
+              bigquery_schema_create_field(schema, field_name, :string, :required)
             else
               raise "Complex schema kind error: #{field_schema[:kind]}"
             end
@@ -157,6 +189,48 @@ module DfE
           }
         end
 
+        def convert_value_to_bigquery_form(value)
+          case value
+          when Array
+            value.map { |x| convert_value_to_bigquery_form(x) }
+          when Hash
+            value.to_a.map do |x|
+              (key, value) = x
+              {
+                key: convert_value_to_bigquery_form(key),
+                value: convert_value_to_bigquery_form(value)
+              }
+            end
+          when Range
+            {
+              begin: convert_value_to_bigquery_form(value.begin),
+              end: convert_value_to_bigquery_form(value.end)
+            }
+          else
+            value
+          end
+        end
+
+        def convert_record_values_to_bigquery_form!(record)
+          result = {}
+          record.each_entry do |key, value|
+            result[key] = convert_value_to_bigquery_form(value)
+          end
+
+          result
+        end
+
+        def convert_list_to_bigquery_format(list)
+          rows = list.all.map(&:to_h)
+
+          # Process fields that need converting
+          rows.map! do |record|
+            convert_record_values_to_bigquery_form!(record)
+          end
+
+          rows
+        end
+
         def update_reference_list_into_bigquery_table(dataset, table_name, list)
           table = dataset.table table_name
 
@@ -166,8 +240,10 @@ module DfE
           # we may need to add code to do this in batches - see, eg
           # https://github.com/DFE-Digital/dfe-analytics/pull/45/files
 
+          # Obtain the records
+          rows = convert_list_to_bigquery_format(list)
+
           # Do the actual bulk transfer
-          rows = list.all.map(&:to_h)
           response = table.insert rows
 
           puts "Table '#{table_name}' insert results: #{response.insert_count} records inserted, #{response.error_count} records failed"

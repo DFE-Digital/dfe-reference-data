@@ -1,4 +1,4 @@
-require 'dfe/reference_data/degrees/types'
-require 'dfe/reference_data/degrees/grades'
-require 'dfe/reference_data/degrees/institutions'
-require 'dfe/reference_data/degrees/subjects'
+require_relative 'degrees/types'
+require_relative 'degrees/grades'
+require_relative 'degrees/institutions'
+require_relative 'degrees/subjects'

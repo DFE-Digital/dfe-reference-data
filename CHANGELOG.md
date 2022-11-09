@@ -1,5 +1,22 @@
 # Changelog
 
+## [v1.2.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.2.0) (2022-11-08)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.1.0...v1.2.0)
+
+**Implemented enhancements:**
+
+- ITT cycles [\#63](https://github.com/DFE-Digital/dfe-reference-data/pull/63) ([alaric-dfe](https://github.com/alaric-dfe))
+- Code pattern schemas [\#62](https://github.com/DFE-Digital/dfe-reference-data/pull/62) ([alaric-dfe](https://github.com/alaric-dfe))
+
+**Fixed bugs:**
+
+- Fix schema validation \(so we can import to bigquery again\) [\#61](https://github.com/DFE-Digital/dfe-reference-data/pull/61) ([alaric-dfe](https://github.com/alaric-dfe))
+
+**Merged pull requests:**
+
+- Reference HESA field definitions in docs [\#54](https://github.com/DFE-Digital/dfe-reference-data/pull/54) ([alaric-dfe](https://github.com/alaric-dfe))
+
 ## [v1.1.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.1.0) (2022-10-19)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.0.0...v1.1.0)

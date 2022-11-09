@@ -9,8 +9,8 @@ module DfE
         priority: { kind: :optional, schema: :integer },
         abbreviation: { kind: :optional, schema: :string },
         qualification: :string,
-        dttp_id: { kind: :optional, schema: :string },
-        hesa_itt_code: { kind: :optional, schema: :string },
+        dttp_id: { kind: :optional, schema: { kind: :code, pattern: /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/ } },
+        hesa_itt_code: { kind: :optional, schema: { kind: :code, pattern: /^[0-9]+$/ } },
         deprecated: { kind: :optional, schema: :boolean },
         comment: { kind: :optional, schema: :string },
         hint: { kind: :optional, schema: :string }

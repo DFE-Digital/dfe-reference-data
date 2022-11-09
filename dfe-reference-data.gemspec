@@ -26,5 +26,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rubocop-rspec', '~> 2.8')
 
   s.add_dependency 'activesupport'
+  s.add_dependency 'tzinfo'
   s.metadata['rubygems_mfa_required'] = 'true'
 end

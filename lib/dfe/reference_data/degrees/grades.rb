@@ -4,7 +4,7 @@ module DfE
       GRADES_SCHEMA = {
         id: :string,
         name: :string,
-        hesa_code: :string,
+        hesa_code: { kind: :code, pattern: /^[0-9]+$/ },
         suggestion_synonyms: { kind: :array, element_schema: :string },
         match_synonyms: { kind: :array, element_schema: :string },
         group: :symbol

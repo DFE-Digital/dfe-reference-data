@@ -1,3 +1,5 @@
+require 'date'
+
 class InvalidSchemaError < StandardError
 end
 
@@ -6,7 +8,7 @@ class ValidationError < StandardError
 
   def initialize(message, record)
     @record = record
-    super("Validation failed for #{record}: #{message}")
+    super("Validation failed for #{record.inspect}: #{message}")
   end
 end
 
@@ -43,17 +45,70 @@ TYPE_CLASSES = {
   string: String,
   symbol: Symbol,
   integer: Integer,
-  real: Float
+  real: Float,
+  datetime: DateTime
 }.freeze
 
+# This class is just a stateless bag of methods, splitting it up will not simplify anything!
+# rubocop:disable Metrics/ClassLength
 class Validator
+  def self.validate_pattern_field!(record, field_name, field_schema, value)
+    raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a string") unless value.is_a?(String)
+
+    pattern = field_schema[:pattern]
+    raise InvalidSchemaError, 'patterns in code schemas must be regexps' unless pattern.is_a?(Regexp)
+    raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} does not match the field pattern") unless pattern.match(value)
+  end
+
+  def self.kind(field_schema)
+    case field_schema
+    when Hash
+      field_schema[:kind]
+    else
+      field_schema
+    end
+  end
+
+  def self.validate_boolean_field!(record, field_name, field_schema, value)
+    raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a boolean") unless value.is_a?(TrueClass) || value.is_a?(FalseClass)
+  end
+
+  def self.validate_daterange_field!(record, field_name, field_schema, value)
+    raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a date range") unless value.is_a?(Range) && value.begin.is_a?(Date) && value.end.is_a?(Date)
+  end
+
   def self.validate_simple_field!(record, field_name, field_schema, value)
-    if field_schema == :boolean
-      raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a boolean") unless value.is_a?(TrueClass) || value.is_a?(FalseClass)
+    case kind(field_schema)
+    when :code
+      validate_pattern_field!(record, field_name, field_schema, value)
+    when :boolean
+      validate_boolean_field!(record, field_name, field_schema, value)
+    when :daterange
+      validate_daterange_field!(record, field_name, field_schema, value)
     else
       desired_class = TYPE_CLASSES[field_schema]
       raise InvalidSchemaError, "Unknown schema type #{field_schema}" unless desired_class
       raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not a #{field_schema}") unless value.is_a?(desired_class)
+    end
+  end
+
+  def self.validate_array_field!(record, field_name, field_schema, value)
+    raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not an array") unless value.is_a?(Array)
+
+    element_schema = field_schema[:element_schema]
+    value.each do |element|
+      validate_simple_field!(record, field_name, element_schema, element)
+    end
+  end
+
+  def self.validate_map_field!(record, field_name, field_schema, value)
+    raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not an hash") unless value.is_a?(Hash)
+
+    key_schema = field_schema[:key]
+    value_schema = field_schema[:value]
+    value.each do |map_key, map_value|
+      validate_simple_field!(record, field_name, key_schema, map_key)
+      validate_simple_field!(record, field_name, value_schema, map_value)
     end
   end
 
@@ -63,14 +118,11 @@ class Validator
     when nil
       raise InvalidSchemaError, 'Complex field schemas need a :kind'
     when :array
-      raise InvalidFieldError.new(record, field_name, field_schema, "Value #{value} is not an array") unless value.is_a?(Array)
-
-      element_schema = field_schema[:element_schema]
-      value.each do |element|
-        validate_simple_field!(record, field_name, element_schema, element)
-      end
+      validate_array_field!(record, field_name, field_schema, value)
     when :optional
       validate_simple_field!(record, field_name, field_schema[:schema], value) unless value.nil?
+    when :map
+      validate_map_field!(record, field_name, field_schema, value)
     else
       raise InvalidSchemaError, "Unknown complex field schema kind '#{kind}'"
     end
@@ -80,13 +132,17 @@ class Validator
   # Validates a field against a field schema
   # Raises errors if validation fails.
   def self.validate_field!(record, field_name, field_schema, value)
-    case field_schema
-    when Symbol
-      validate_simple_field!(record, field_name, field_schema, value)
-    when Hash
+    case kind(field_schema)
+    # rubocop:disable Lint/DuplicateBranch
+    when :array
       validate_complex_field!(record, field_name, field_schema, value)
+    when :optional
+      validate_complex_field!(record, field_name, field_schema, value)
+    when :map
+      validate_complex_field!(record, field_name, field_schema, value)
+    # rubocop:enable Lint/DuplicateBranch
     else
-      raise InvalidSchemaError, "Incomprehensible schema '#{field_schema}'"
+      validate_simple_field!(record, field_name, field_schema, value)
     end
   end
 
@@ -95,8 +151,8 @@ class Validator
     when Symbol
       true
     when Hash
-      # A missing array is as good as an empty array
-      ((field_schema[:kind] != :optional) and (field_schema[:kind] != :array))
+      # A missing array/map is as good as an empty array/map
+      ((field_schema[:kind] != :optional) and (field_schema[:kind] != :array) and (field_schema[:kind] != :map))
     else
       raise InvalidSchemaError, "Incomprehensible schema '#{field_schema}'"
     end
@@ -131,11 +187,12 @@ class Validator
     records.each do |record|
       validate_record!(record, schema)
     rescue StandardError => e
-      errors[record] = e
+      errors[record.id] = e
     end
     errors
   end
 end
+# rubocop:enable Metrics/ClassLength
 
 RSpec::Matchers.define :have_all_records_matching_the_schema do
   match do |actual|
