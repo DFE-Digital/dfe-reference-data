@@ -8,8 +8,6 @@ module DfE
         scholarship: { kind: :optional, schema: :string }
       }.freeze
 
-      # I have given these readable IDs because there's not many of them, and it
-      # makes the incentive references more readable.
       INCENTIVES = DfE::ReferenceData::HardcodedReferenceList.new(
         # SEE https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2022-to-2023-academic-year
         {
