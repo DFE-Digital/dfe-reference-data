@@ -1,5 +1,17 @@
 # Changelog
 
+## [v1.3.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.3.0) (2022-11-16)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.2.0...v1.3.0)
+
+**Implemented enhancements:**
+
+- Initial draft of ITT subjects [\#53](https://github.com/DFE-Digital/dfe-reference-data/pull/53) ([alaric-dfe](https://github.com/alaric-dfe))
+
+**Merged pull requests:**
+
+- Fix ITT docs - I forgot to commit the final changes before the release [\#64](https://github.com/DFE-Digital/dfe-reference-data/pull/64) ([alaric-dfe](https://github.com/alaric-dfe))
+
 ## [v1.2.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.2.0) (2022-11-08)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.1.0...v1.2.0)
