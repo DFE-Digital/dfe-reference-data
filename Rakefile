@@ -52,6 +52,12 @@ BIGQUERY_TABLES = [
   ['degree_institutions', DfE::ReferenceData::Degrees::INSTITUTIONS],
   ['degree_subjects', DfE::ReferenceData::Degrees::SUBJECTS],
   ['degree_types', DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS],
+  ['itt_subjects', DfE::ReferenceData::ITT::SUBJECTS],
+  ['itt_incentives', DfE::ReferenceData::ITT::INCENTIVES],
+  ['itt_categories', DfE::ReferenceData::ITT::CATEGORIES],
+  ['itt_publish_categories', DfE::ReferenceData::ITT::PUBLISH_CATEGORIES],
+  ['itt_register_categories', DfE::ReferenceData::ITT::REGISTER_CATEGORIES],
+  ['itt_tad_categories', DfE::ReferenceData::ITT::TAD_CATEGORIES],
   ['itt_cycles', DfE::ReferenceData::ITT::CYCLES]
 ].freeze
 

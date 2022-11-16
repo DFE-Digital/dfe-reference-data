@@ -165,6 +165,8 @@ module DfE
 
           list_schema = list.schema
 
+          raise "Cannot create a bigquery table for a list without a schema (such as #{table_name})" unless list_schema
+
           if !table.nil? && table.exists?
             # Delete previous incarnation
             table.delete
