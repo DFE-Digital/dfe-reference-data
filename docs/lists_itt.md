@@ -21,12 +21,10 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `id`                | UUID            | A unique identifier.                                                                                                                               |
 | `name`              | string          | The long name of the ITT subject.                                                                                                                  |
 | `hecos_code`        | optional string | The HECoS code for the subject, as per HESA field [SBJCA](https://www.hesa.ac.uk/collection/c22053/e/sbjca)                                        |
-| `start_date`        | optional date   | The date of the first day on which this subject is valid (`YYYYMMDD`); if missing, it is to be assumed to have been valid since the start of time. |
-| `depreciation_date` | optional date   | The date of the last day on which this subject is valid valid (`YYYYMMDD`); if missing, it is to be assumed to be valid until the end of time.     |
-| `category`          | UUID            | The ID of the category that this subject is a specialism of (see `CATEGORIES` below)                                                               |
-| `register_category` | UUID            | The ID of the category that this subject is a specialism of, as per the current Register list (see `REGISTER_CATEGORIES` below)                    |
-| `publish_category`  | string ID           | The ID of the category that this subject is a specialism of, as per the current Publish list (see `PUBLISH_CATEGORIES` below)                                                               |
-| `incentive`         | string ID            | The ID of the incentive for this subject (see `INCENTIVES` below)                                                                                  |
+| `category`          | optional UUID            | The ID of the category that this subject is a specialism of (see `CATEGORIES` below)                                                               |
+| `register_category` | optional UUID            | The ID of the category that this subject is a specialism of, as per the current Register list (see `REGISTER_CATEGORIES` below)                    |
+| `publish_category`  | optional string ID           | The ID of the category that this subject is a specialism of, as per the current Publish list (see `PUBLISH_CATEGORIES` below)                                                               |
+| `incentive`         | optional map from string cycle ID to string incentive ID            | The ID of the incentive for this subject (see `INCENTIVES` below) in the given ITT cycle (see CYCLES below)                                                                                 |
 
 ### `DfE::ReferenceData::ITT::CATEGORIES`
 
@@ -76,7 +74,6 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 
 ### `DfE::ReferenceData::ITT::PUBLISH_CATEGORIES`
 
-
 ```ruby
 require 'dfe/reference_data/itt'
 ```
@@ -105,7 +102,11 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 require 'dfe/reference_data/itt'
 ```
 
-Initial teacher training subject categories, as currently used by TAD.
+Initial teacher training subject categories, as currently used by TAD. The fields other than `id`, `name` and `publish_category` are of unknown utility, should probably be ignored, and unless we find out more about their original intent and find a use for them, they should probably be trimmed.
+
+TODO: November 2023 or beyond: Review whether the `type`, `phase`, `other_id`
+and `register_name` fields have turned out to be useful for anything, and remove
+them if not, then remove this note.
 
 Owner: None.
 
@@ -118,7 +119,8 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | string ID | A unique identifier. |
-| `name` | string | The long name of the allocation subject. |
+| `name` | string | The name of the category. |
+| `publish_category` | UUID | The ID of the corresponding `PUBLISH_CATEGORIES` entry, where one exists
 | `type` | symbol (`primary`, `secondary` or `modern_languages`) | The type of this TAD category |
 | `phase` | symbol (`primary` or `secondary`) | The phase of this TAD category |
 | `other_id` | string ID | An additional `ID` field found in the source spreadsheet, purpose unknown |
@@ -147,6 +149,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `scholarship` | numerical string | The available scholarship (in pounds) |
 
 ### `DfE::ReferenceData::ITT::CYCLES`
+
 Initial teacher training recruitment cycles.
 
 Owner: None.
