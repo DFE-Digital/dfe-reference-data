@@ -33,6 +33,9 @@ module DfE
         id: :string,
         name: :string,
         publish_category: { kind: :optional, schema: :string },
+        stem: :boolean,
+        ebacc: :boolean,
+
         register_name: :string,
         type: :symbol,
         phase: :symbol,
@@ -766,6 +769,9 @@ module DfE
         {
           '19' => { name: 'Primary',
                     publish_category: '07',
+                    stem: false,
+                    ebacc: false,
+
                     register_name: 'Primary with science',
                     type: :primary,
                     phase: :primary,
@@ -773,6 +779,9 @@ module DfE
 
           '1' => { name: 'Art & Design',
                    publish_category: 'W1',
+                   stem: false,
+                   ebacc: false,
+
                    register_name: 'Art and design',
                    type: :secondary,
                    phase: :secondary,
@@ -780,6 +789,9 @@ module DfE
 
           '18' => { name: 'Physics',
                     publish_category: 'F3',
+                    stem: true,
+                    ebacc: true,
+
                     register_name: 'Physics',
                     type: :secondary,
                     phase: :secondary,
@@ -787,6 +799,9 @@ module DfE
 
           '2' => { name: 'Biology',
                    publish_category: nil,
+                   stem: true,
+                   ebacc: true,
+
                    register_name: 'Balanced Science',
                    type: :discontinued,
                    phase: :secondary,
@@ -794,6 +809,9 @@ module DfE
 
           '3' => { name: 'Business Studies',
                    publish_category: 'L1',
+                   stem: false,
+                   ebacc: false,
+
                    register_name: 'Economics',
                    type: :secondary,
                    phase: :secondary,
@@ -801,6 +819,9 @@ module DfE
 
           '4' => { name: 'Chemistry',
                    publish_category: 'F1',
+                   stem: true,
+                   ebacc: true,
+
                    register_name: 'Chemistry',
                    type: :secondary,
                    phase: :secondary,
@@ -808,6 +829,9 @@ module DfE
 
           '16' => { name: 'Others',
                     publish_category: nil,
+                    stem: false,
+                    ebacc: false,
+
                     register_name: 'Humanities',
                     type: :discontinued,
                     phase: :secondary,
@@ -815,6 +839,9 @@ module DfE
 
           '5' => { name: 'Classics',
                    publish_category: 'Q8',
+                   stem: false,
+                   ebacc: true,
+
                    register_name: 'Classics',
                    type: :secondary,
                    phase: :secondary,
@@ -822,6 +849,9 @@ module DfE
 
           '6' => { name: 'Computing',
                    publish_category: '11',
+                   stem: true,
+                   ebacc: true,
+
                    register_name: 'Computing',
                    type: :secondary,
                    phase: :secondary,
@@ -829,6 +859,9 @@ module DfE
 
           '17' => { name: 'Physical education',
                     publish_category: 'C6',
+                    stem: false,
+                    ebacc: false,
+
                     register_name: 'Physical education',
                     type: :secondary,
                     phase: :secondary,
@@ -836,6 +869,9 @@ module DfE
 
           '7' => { name: 'Design & Technology',
                    publish_category: 'DT',
+                   stem: false,
+                   ebacc: false,
+
                    register_name: 'Design and technology',
                    type: :secondary,
                    phase: :secondary,
@@ -843,6 +879,9 @@ module DfE
 
           '8' => { name: 'Drama',
                    publish_category: '13',
+                   stem: false,
+                   ebacc: false,
+
                    register_name: 'Drama',
                    type: :secondary,
                    phase: :secondary,
@@ -850,6 +889,9 @@ module DfE
 
           '9' => { name: 'English',
                    publish_category: 'Q3',
+                   stem: false,
+                   ebacc: true,
+
                    register_name: 'English',
                    type: :secondary,
                    phase: :secondary,
@@ -857,6 +899,9 @@ module DfE
 
           '10' => { name: 'Geography',
                     publish_category: 'F8',
+                    stem: false,
+                    ebacc: true,
+
                     register_name: 'Geography',
                     type: :secondary,
                     phase: :secondary,
@@ -864,6 +909,9 @@ module DfE
 
           '11' => { name: 'History',
                     publish_category: 'V1',
+                    stem: false,
+                    ebacc: true,
+
                     register_name: 'History',
                     type: :secondary,
                     phase: :secondary,
@@ -871,6 +919,9 @@ module DfE
 
           '12' => { name: 'Mathematics',
                     publish_category: 'G1',
+                    stem: true,
+                    ebacc: true,
+
                     register_name: 'Mathematics',
                     type: :secondary,
                     phase: :secondary,
@@ -878,6 +929,9 @@ module DfE
 
           '14' => { name: 'Music',
                     publish_category: 'W3',
+                    stem: false,
+                    ebacc: false,
+
                     register_name: 'Music',
                     type: :secondary,
                     phase: :secondary,
@@ -885,6 +939,9 @@ module DfE
 
           '20' => { name: 'Religious Education',
                     publish_category: 'V6',
+                    stem: false,
+                    ebacc: false,
+
                     register_name: 'Religious education',
                     type: :secondary,
                     phase: :secondary,
@@ -892,6 +949,9 @@ module DfE
 
           '13' => { name: 'Modern Foreign Languages',
                     publish_category: '24',
+                    stem: false,
+                    ebacc: true,
+
                     register_name: 'Modern languages (other)',
                     type: :modern_languages,
                     phase: :secondary,

@@ -93,7 +93,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `id` | string ID | A unique identifier. |
 | `name` | string | The long name of the allocation subject. |
 | `age_range` | symbol (`primary` or `secondary`) | The age range this category applies to |
-| `tad_category` | optional string ID | Where a direct correspondence with a `TAD_CATEGORY` entry exists with this record, the ID of that `TAD_CATEGORY` record is in this field. |
+| `tad_category` | optional string ID | Where a direct correspondence with a `TAD_CATEGORIES` entry exists with this record, the ID of that `TAD_CATEGORIES` record is in this field. |
 
 ### `DfE::ReferenceData::ITT::TAD_CATEGORIES`
 
@@ -102,7 +102,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 require 'dfe/reference_data/itt'
 ```
 
-Initial teacher training subject categories, as currently used by TAD. The fields other than `id`, `name` and `publish_category` are of unknown utility, should probably be ignored, and unless we find out more about their original intent and find a use for them, they should probably be trimmed.
+Initial teacher training subject categories, as currently used by TAD. The fields other than `id`, `name`, `publish_category`, `stem` and `ebacc` are of unknown utility, should probably be ignored, and unless we find out more about their original intent and find a use for them, they should probably be trimmed.
 
 TODO: November 2023 or beyond: Review whether the `type`, `phase`, `other_id`
 and `register_name` fields have turned out to be useful for anything, and remove
@@ -112,7 +112,7 @@ Owner: None.
 
 Users: None.
 
-Source: Spreadsheet provided by email to the author (Alaric)
+Source: Spreadsheet provided by email to the author (Alaric), and `stem`/`ebacc` definitions sent via Slack
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
@@ -121,6 +121,8 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `id` | string ID | A unique identifier. |
 | `name` | string | The name of the category. |
 | `publish_category` | UUID | The ID of the corresponding `PUBLISH_CATEGORIES` entry, where one exists
+| `stem` | boolean | True if the subject is in the Sciences, Technology, Engineering or Mathematics |
+| `ebacc` | boolean | True if the subject is academic discipline within the English Baccalaureate |
 | `type` | symbol (`primary`, `secondary` or `modern_languages`) | The type of this TAD category |
 | `phase` | symbol (`primary` or `secondary`) | The phase of this TAD category |
 | `other_id` | string ID | An additional `ID` field found in the source spreadsheet, purpose unknown |
