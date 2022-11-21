@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.4.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.4.0) (2022-11-21)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.3.0...v1.4.0)
+
+**Implemented enhancements:**
+
+- Added the two extra TAD category booleans [\#65](https://github.com/DFE-Digital/dfe-reference-data/pull/65) ([alaric-dfe](https://github.com/alaric-dfe))
+
 ## [v1.3.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.3.0) (2022-11-16)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.2.0...v1.3.0)
