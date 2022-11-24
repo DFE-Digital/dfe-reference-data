@@ -39,8 +39,9 @@ module DfE
         CODES_FOR_UK_AND_CI = DfE::ReferenceData::HardcodedReferenceList.new(
           {
             nil => { code: 'ZZ' },
-            'Channel Islands' => { code: 'XL' },
             'England' => { code: 'XF' },
+            'Guernsey' => { code: 'GG' },
+            'Jersey' => { code: 'JE' },
             'Northern Ireland' => { code: 'XG' },
             'Scotland' => { code: 'XH' },
             'Wales' => { code: 'XI' },

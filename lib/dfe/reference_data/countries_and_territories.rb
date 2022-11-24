@@ -295,10 +295,11 @@ module DfE
       # https://github.com/DFE-Digital/apply-for-teacher-training/blob/78c9421d8582f63cfdec564b5c0677bfd787552c/app/lib/domicile_resolver.rb#L47-L59
       UK_AND_CI_POSTCODE_PREFIX_COUNTRIES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
-          'Channel Islands' => { prefixes: ['GY', 'JE'] },
           'England' => {
             prefixes: ['AL', 'B', 'BA', 'BB', 'BD', 'BH', 'BL', 'BN', 'BR', 'BS', 'CA', 'CB', 'CM', 'CO', 'CR', 'CT', 'CV', 'CW', 'DA', 'DE', 'DH', 'DL', 'DN', 'DT', 'DY', 'E', 'EC', 'EN', 'EX', 'FY', 'GL', 'GU', 'HA', 'HD', 'HG', 'HP', 'HU', 'HX', 'IG', 'IP', 'KT', 'L', 'LA', 'LE', 'LN', 'LS', 'LU', 'M', 'ME', 'MK', 'N', 'NE', 'NG', 'NN', 'NR', 'NW', 'OL', 'OX', 'PE', 'PL', 'PO', 'PR', 'RG', 'RH', 'RM', 'S', 'SE', 'SG', 'SK', 'SL', 'SM', 'SN', 'SO', 'SP', 'SR', 'SS', 'ST', 'SW', 'TA', 'TF', 'TN', 'TQ', 'TR', 'TS', 'TW', 'UB', 'W', 'WA', 'WC', 'WD', 'WF', 'WN', 'WR', 'WS', 'WV', 'YO']
           },
+          'Guernsey' => { prefixes: ['GY'] },
+          'Jersey' => { prefixes: ['JE'] },
           'Northern Ireland' => { prefixes: ['BT'] },
           'Scotland' => { prefixes: ['AB', 'DD', 'EH', 'FK', 'G', 'HS', 'IV', 'KA', 'KW', 'KY', 'ML', 'PA', 'PH', 'ZE'] },
           'Spanning Two Countries' => { prefixes: ['CH', 'DG', 'HR', 'LD', 'LL', 'NP', 'SY', 'TD'] },
