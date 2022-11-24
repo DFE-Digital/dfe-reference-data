@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.5.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.5.0) (2022-11-24)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.4.1...v1.5.0)
+
+**Implemented enhancements:**
+Add countries and territories list
+Add postcode prefix countries list
+Add countries and domiciles list
+
 ## [v1.4.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.4.1) (2022-11-24)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.4.0...v1.4.1)
