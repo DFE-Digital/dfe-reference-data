@@ -8,6 +8,12 @@ module DfE
     class ReferenceList
       attr_reader :schema
 
+      MATCH_FILTER = ->(pattern_object, record) do
+        pattern_object.all? do |field, value|
+          record[field] == value
+        end
+      end
+
       ##
       # +ReferenceList+ constructor. +schema+, if provided, is a reference list schema.
       def initialize(schema = nil)
@@ -43,25 +49,22 @@ module DfE
       # Utility methods, don't override these unless you have better implementations
 
       ##
-      # Get all the records in the list matching the specified +filter+.
+      # Get all the records in the list matching the specified filter.
       #
-      # The +filter+ is a hash mapping field names to values; records that "match"
-      # the filter have those values for those fields. However, if +filter+ is
+      # The +pattern_object+ is a hash mapping field names to values; records that "match"
+      # the object have those values for those fields. However, if +pattern_object+ is
       # +nil+, all records are returned.
+      #
+      # When passed a block, +pattern_object+ is ignored, and the result of the block is used instead.
       #
       # The records are returned as an array of hashes, one per record, mapping
       # field name symbols to whatever values that field has in that record.
-      def some(filter)
-        all_records = all
-        if filter.nil?
-          all_records
-        else
-          all_records.find_all do |x|
-            filter.all? do |field, value|
-              x[field] == value
-            end
-          end
-        end
+      def some(pattern_object = nil, &block)
+        return all if pattern_object.nil? && block.nil?
+
+        block ||= MATCH_FILTER.curry.call(pattern_object)
+
+        all.find_all(&block)
       end
 
       ##

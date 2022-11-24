@@ -17,11 +17,7 @@ module DfE
       end
 
       def ==(other)
-        data == if other.is_a?(Hash)
-                  other
-                else
-                  other.data
-                end
+        data == (other.respond_to?(:data) ? other.data : other)
       end
 
       def merge(other_record)
