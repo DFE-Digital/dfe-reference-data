@@ -24,6 +24,10 @@ module DfE
                 end
       end
 
+      def merge(other_record)
+        Record.new(data.merge(other_record))
+      end
+
       def inspect
         if data.key?(:name)
           "#<DfE::ReferenceData::Record id=#{id} name=#{name}>"

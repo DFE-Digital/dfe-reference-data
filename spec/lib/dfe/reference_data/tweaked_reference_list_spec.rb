@@ -21,29 +21,26 @@ RSpec.describe DfE::ReferenceData::TweakedReferenceList do
     )
   end
 
-  # NB: These particular tests also make a potentially fragile assumption that
-  # the implementation of some preserves the order of entries, it would be
-  # better if we sorted the results by :id or used an order-insensitive array
-  # comparator
-
   it 'returns correct data from low-level methods' do
-    expect(tweaked_reference_list.all).to eq([
-                                               { id: '2', name: 'Sarah', child: false, favourite_pokemon: 'Eevee' },
-                                               { id: '3', name: 'Jean', child: true },
-                                               { id: '4', name: 'Mary', child: true },
-                                               { id: '5', name: 'Helium', cat: true }
-                                             ])
+    expect(tweaked_reference_list.all.map(&:data)).to contain_exactly(
+      { id: '2', name: 'Sarah', child: false, favourite_pokemon: 'Eevee' },
+      { id: '3', name: 'Jean', child: true },
+      { id: '4', name: 'Mary', child: true },
+      { id: '5', name: 'Helium', cat: true }
+    )
 
-    expect(tweaked_reference_list.all_as_hash).to eq({
-                                                       '2' => { id: '2', name: 'Sarah', child: false,
-                                                                favourite_pokemon: 'Eevee' },
-                                                       '3' => { id: '3', name: 'Jean', child: true },
-                                                       '4' => { id: '4', name: 'Mary', child: true },
-                                                       '5' => { id: '5', name: 'Helium', cat: true }
-                                                     })
+    expect(tweaked_reference_list.all_as_hash.transform_values(&:data)).to eq(
+      {
+        '2' => { id: '2', name: 'Sarah', child: false,
+                 favourite_pokemon: 'Eevee' },
+        '3' => { id: '3', name: 'Jean', child: true },
+        '4' => { id: '4', name: 'Mary', child: true },
+        '5' => { id: '5', name: 'Helium', cat: true }
+      }
+    )
 
     expect(tweaked_reference_list.one('1')).to be_nil
-    expect(tweaked_reference_list.one('2')).to eq({ id: '2', name: 'Sarah', child: false, favourite_pokemon: 'Eevee' })
-    expect(tweaked_reference_list.one('5')).to eq({ id: '5', name: 'Helium', cat: true })
+    expect(tweaked_reference_list.one('2').data).to eq({ id: '2', name: 'Sarah', child: false, favourite_pokemon: 'Eevee' })
+    expect(tweaked_reference_list.one('5').data).to eq({ id: '5', name: 'Helium', cat: true })
   end
 end
