@@ -25,7 +25,6 @@ module DfE
         super(schema)
         @base = base
         @overrides = overrides
-        @overridden_all = nil # Computed on demand in all_as_hash
       end
 
       def all
@@ -34,13 +33,12 @@ module DfE
 
       def all_as_hash
         @all_as_hash ||= @overrides.each_entry.with_object(@base.all_as_hash.clone) do |(id, override), new_all|
-            if override.nil?
-              new_all.delete(id)
-            elsif (existing = new_all[id])
-              new_all[id] = existing.merge(override)
-            else
-              new_all[id] = Record.new(override.merge({ id: }))
-            end
+          if override.nil?
+            new_all.delete(id)
+          elsif (existing = new_all[id])
+            new_all[id] = existing.merge(override)
+          else
+            new_all[id] = Record.new(override.merge({ id: id }))
           end
         end
       end
