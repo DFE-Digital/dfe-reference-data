@@ -8,7 +8,7 @@ module DfE
     class ReferenceList
       attr_reader :schema
 
-      MATCH_FILTER = ->(pattern_object, record) do
+      MATCH_FILTER = lambda do |pattern_object, record|
         pattern_object.all? do |field, value|
           record[field] == value
         end

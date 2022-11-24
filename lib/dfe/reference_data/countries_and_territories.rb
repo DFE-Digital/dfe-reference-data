@@ -1,6 +1,6 @@
 module DfE
   module ReferenceData
-    class CountriesAndTerritories
+    module CountriesAndTerritories
       # https://github.com/DFE-Digital/apply-for-teacher-training/blob/78c9421d8582f63cfdec564b5c0677bfd787552c/config/initializers/countries_and_territories.rb
       # https://github.com/alphagov/govuk-country-and-territory-autocomplete/blob/5214c44/dist/location-autocomplete-canonical-list.json
       COUNTRIES_AND_TERRITORIES = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -284,35 +284,30 @@ module DfE
           'YU' => { name: 'Yugoslavia' },
           'ZA' => { name: 'South Africa' },
           'ZM' => { name: 'Zambia' },
-          'ZW' => { name: 'Zimbabwe' },
+          'ZW' => { name: 'Zimbabwe' }
         },
         {
           id: :string,
-          name: :string,
-        },
+          name: :string
+        }
       )
 
       # https://github.com/DFE-Digital/apply-for-teacher-training/blob/78c9421d8582f63cfdec564b5c0677bfd787552c/app/lib/domicile_resolver.rb#L47-L59
       UK_AND_CI_POSTCODE_PREFIX_COUNTRIES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
-          'Channel Islands' => { prefixes: %w[GY JE] },
+          'Channel Islands' => { prefixes: ['GY', 'JE'] },
           'England' => {
-            prefixes: %w[
-              AL B BA BB BD BH BL BN BR BS CA CB CM CO CR CT CV CW DA DE DH DL DN DT DY
-              E EC EN EX FY GL GU HA HD HG HP HU HX IG IP KT L LA LE LN LS LU M ME MK
-              N NE NG NN NR NW OL OX PE PL PO PR RG RH RM S SE SG SK SL SM SN SO SP SR
-              SS ST SW TA TF TN TQ TR TS TW UB W WA WC WD WF WN WR WS WV YO
-            ],
+            prefixes: ['AL', 'B', 'BA', 'BB', 'BD', 'BH', 'BL', 'BN', 'BR', 'BS', 'CA', 'CB', 'CM', 'CO', 'CR', 'CT', 'CV', 'CW', 'DA', 'DE', 'DH', 'DL', 'DN', 'DT', 'DY', 'E', 'EC', 'EN', 'EX', 'FY', 'GL', 'GU', 'HA', 'HD', 'HG', 'HP', 'HU', 'HX', 'IG', 'IP', 'KT', 'L', 'LA', 'LE', 'LN', 'LS', 'LU', 'M', 'ME', 'MK', 'N', 'NE', 'NG', 'NN', 'NR', 'NW', 'OL', 'OX', 'PE', 'PL', 'PO', 'PR', 'RG', 'RH', 'RM', 'S', 'SE', 'SG', 'SK', 'SL', 'SM', 'SN', 'SO', 'SP', 'SR', 'SS', 'ST', 'SW', 'TA', 'TF', 'TN', 'TQ', 'TR', 'TS', 'TW', 'UB', 'W', 'WA', 'WC', 'WD', 'WF', 'WN', 'WR', 'WS', 'WV', 'YO']
           },
-          'Northern Ireland' => { prefixes: %w[BT] },
-          'Scotland' => { prefixes: %w[AB DD EH FK G HS IV KA KW KY ML PA PH ZE] },
-          'Spanning Two Countries' => { prefixes: %w[CH DG HR LD LL NP SY TD] },
-          'Wales' => { prefixes: %w[CF SA] },
+          'Northern Ireland' => { prefixes: ['BT'] },
+          'Scotland' => { prefixes: ['AB', 'DD', 'EH', 'FK', 'G', 'HS', 'IV', 'KA', 'KW', 'KY', 'ML', 'PA', 'PH', 'ZE'] },
+          'Spanning Two Countries' => { prefixes: ['CH', 'DG', 'HR', 'LD', 'LL', 'NP', 'SY', 'TD'] },
+          'Wales' => { prefixes: ['CF', 'SA'] }
         },
         {
           id: :string,
-          prefixes: { schema: :string, kind: :array },
-        },
+          prefixes: { schema: :string, kind: :array }
+        }
       )
     end
   end
