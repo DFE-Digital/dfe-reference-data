@@ -33,21 +33,16 @@ module DfE
       end
 
       def all_as_hash
-        if @overridden_all.nil?
-          @overridden_all = @base.all_as_hash.clone
-
-          @overrides.each_entry do |id, record|
-            if record.nil?
-              @overridden_all.delete(id)
-            elsif @overridden_all.key? id
-              old_record = @overridden_all[id]
-              @overridden_all[id] = old_record.merge(record)
+        @all_as_hash ||= @overrides.each_entry.with_object(@base.all_as_hash.clone) do |(id, override), new_all|
+            if override.nil?
+              new_all.delete(id)
+            elsif (existing = new_all[id])
+              new_all[id] = existing.merge(override)
             else
-              @overridden_all[id] = Record.new(record.merge({ id: id }))
+              new_all[id] = Record.new(override.merge({ id: }))
             end
           end
         end
-        @overridden_all
       end
 
       def one(record_id)
