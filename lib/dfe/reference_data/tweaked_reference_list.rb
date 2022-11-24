@@ -25,26 +25,28 @@ module DfE
         super(schema)
         @base = base
         @overrides = overrides
-
-        @overridden_all = base.all_as_hash.clone
-
-        overrides.each_entry do |id, record|
-          if record.nil?
-            @overridden_all.delete(id)
-          elsif @overridden_all.key? id
-            old_record = @overridden_all[id]
-            @overridden_all[id] = old_record.merge(record)
-          else
-            @overridden_all[id] = record.merge({ id: id })
-          end
-        end
+        @overridden_all = nil # Computed on demand in all_as_hash
       end
 
       def all
-        @overridden_all.values
+        all_as_hash.values
       end
 
       def all_as_hash
+        if @overridden_all.nil?
+          @overridden_all = @base.all_as_hash.clone
+
+          @overrides.each_entry do |id, record|
+            if record.nil?
+              @overridden_all.delete(id)
+            elsif @overridden_all.key? id
+              old_record = @overridden_all[id]
+              @overridden_all[id] = old_record.merge(record)
+            else
+              @overridden_all[id] = Record.new(record.merge({ id: id }))
+            end
+          end
+        end
         @overridden_all
       end
 
@@ -56,7 +58,7 @@ module DfE
           else
             old_record = @base.one(record_id)
             if old_record.nil? # Added record
-              override.merge({ id: record_id })
+              Record.new(override.merge({ id: record_id }))
             else # Modified record
               old_record.merge(override)
             end
