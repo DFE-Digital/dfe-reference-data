@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.4.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.4.1) (2022-11-24)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.4.0...v1.4.1)
+
+**Fixed bugs:**
+
+- Make TweakedReferenceList correctly return records rather than hashes, in all cases. [\#66](https://github.com/DFE-Digital/dfe-reference-data/pull/66) ([alaric-dfe](https://github.com/alaric-dfe))
+
 ## [v1.4.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.4.0) (2022-11-21)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.3.0...v1.4.0)
