@@ -15,8 +15,8 @@ RSpec.describe DfE::ReferenceData::CountriesAndTerritories do
     it_should_behave_like 'a list of valid records'
 
     it 'contains mappings from UK and Channel Island country/territory names to lists of postcode prefixes' do
-      expect(described_class.one('Wales').prefixes).to eq(%w[CF SA])
-      expect(described_class.one('Jersey').prefixes).to eq(%w[JE])
+      expect(described_class.one('Wales').prefixes).to eq(['CF', 'SA'])
+      expect(described_class.one('Jersey').prefixes).to eq(['JE'])
     end
   end
 end
