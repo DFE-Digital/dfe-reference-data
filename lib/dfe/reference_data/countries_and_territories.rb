@@ -307,7 +307,7 @@ module DfE
         },
         {
           id: :string,
-          prefixes: { schema: :string, kind: :array }
+          prefixes: { kind: :array, element_schema: :string }
         }
       )
     end
