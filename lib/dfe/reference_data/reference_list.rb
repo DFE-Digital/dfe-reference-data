@@ -6,7 +6,7 @@ module DfE
     # name, right?); this class is abstract, defining various utility methods that
     # subclasses are likely to be able to re-use the implementations of.
     class ReferenceList
-      attr_reader :schema
+      attr_reader :schema, :list_description, :list_docs_url, :field_descriptions
 
       MATCH_FILTER = lambda do |pattern_object, record|
         pattern_object.all? do |field, value|
@@ -15,9 +15,26 @@ module DfE
       end
 
       ##
-      # +ReferenceList+ constructor. +schema+, if provided, is a reference list schema.
+      # +ReferenceList+ constructor. +schema+, if provided, is a reference list
+      # schema.
       def initialize(schema = nil)
         @schema = schema
+      end
+
+      ##
+      # Mutator to set the optional documentation fields; returns self to allow cascading.
+      def document(list_description: nil, list_docs_url: nil, field_descriptions: nil)
+        @list_description = list_description
+        @list_docs_url = list_docs_url
+        @field_descriptions = field_descriptions
+
+        self
+      end
+
+      ##
+      # Convenient method to obtain the description of a field.
+      def field_description(field)
+        @field_descriptions[field] if @field_descriptions
       end
 
       # Abstract methods, override these please

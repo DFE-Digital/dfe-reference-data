@@ -9,9 +9,9 @@ module DfE
     # hardcoded hash as the data source.
     class HardcodedReferenceList < ReferenceList
       ##
-      # +HardcodedReferenceList+ constructor. +data+ is a hash from IDs to records;
-      # the records do not need to contain an +id+ field as those are provided
-      # automatically. +schema+, if provided, is a reference list schema.
+      # +HardcodedReferenceList+ constructor. +data+ is a hash from IDs to
+      # records; the records do not need to contain an +id+ field as those are
+      # provided automatically. +schema+ is as per the +ReferenceList+ constructor.
       def initialize(data, schema = nil)
         super()
         @data = {}

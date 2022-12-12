@@ -11,6 +11,13 @@ module DfE
           id: :string,
           text: :string
         }
+      ).document(
+        list_description: 'Friendly greetings in a selection of languages',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_demo.md#dfereferencedatademohello_world',
+        field_descriptions: {
+          id: 'The IETF language code for the greeting',
+          text: 'Hello World in the identified language'
+        }
       )
 
       FICTIONAL_GREETINGS = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -20,6 +27,13 @@ module DfE
         {
           id: :string,
           text: :string
+        }
+      ).document(
+        list_description: 'Friendly greetings in a selection of languages',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_demo.md#dfereferencedatademofictional_greetings',
+        field_descriptions: {
+          id: 'The IETF language code or culture name for the greeting',
+          text: 'Hello World in the identified language or culture'
         }
       )
 
