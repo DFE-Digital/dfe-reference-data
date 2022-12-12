@@ -1,0 +1,20 @@
+name: Feed Bigquery
+on:
+  push:
+    # Match all tags
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+jobs:
+  run-rake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '2.7.0'
+          bundler-cache: true
+      - run: bundle exec rake update_bigquery_tables
+        env:
+          BIGQUERY_CREDENTIALS: ${{ secrets.BIGQUERY_CREDENTIALS }}
+          BIGQUERY_PROJECT: rugged-abacus-218110
+          BIGQUERY_DATASET: dfe_reference_data

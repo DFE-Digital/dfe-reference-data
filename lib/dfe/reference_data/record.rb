@@ -17,11 +17,19 @@ module DfE
       end
 
       def ==(other)
-        data == if other.is_a?(Hash)
-                  other
-                else
-                  other.data
-                end
+        data == (other.respond_to?(:data) ? other.data : other)
+      end
+
+      def merge(other_record)
+        Record.new(data.merge(other_record))
+      end
+
+      def inspect
+        if data.key?(:name)
+          "#<DfE::ReferenceData::Record id=#{id} name=#{name}>"
+        else
+          "#<DfE::ReferenceData::Record id=#{id}>"
+        end
       end
     end
     # rubocop:enable Style/OpenStructUse

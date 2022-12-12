@@ -1,6 +1,35 @@
 module DfE
   module ReferenceData
     module Degrees
+      TYPES_SCHEMA = {
+        id: :string,
+        name: :string,
+        suggestion_synonyms: { kind: :array, element_schema: :string },
+        match_synonyms: { kind: :array, element_schema: :string },
+        priority: { kind: :optional, schema: :integer },
+        abbreviation: { kind: :optional, schema: :string },
+        qualification: :string,
+        dttp_id: { kind: :optional, schema: { kind: :code, pattern: /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/ } },
+        hesa_itt_code: { kind: :optional, schema: { kind: :code, pattern: /^[0-9]+$/ } },
+        deprecated: { kind: :optional, schema: :boolean },
+        comment: { kind: :optional, schema: :string },
+        hint: { kind: :optional, schema: :string }
+      }.freeze
+
+      GENERIC_TYPES_SCHEMA = TYPES_SCHEMA.merge(
+        {
+          qualification: { kind: :optional, schema: :string },
+          generic: :boolean
+        }
+      )
+
+      TYPES_INCLUDING_GENERICS_SCHEMA = TYPES_SCHEMA.merge(
+        {
+          qualification: { kind: :optional, schema: :string },
+          generic: { kind: :optional, schema: :boolean }
+        }
+      )
+
       TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
         { 'be08f598-0860-4de0-b95a-3c448a16cc99' =>
           { name: 'Foundation degree',
@@ -518,7 +547,7 @@ module DfE
               'masters of maths'
             ],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: nil },
           '416a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Music',
@@ -542,7 +571,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters of research'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: nil },
           'b6d2c5aa-cf99-4831-9bfe-6279349d8ea9' =>
           { name: 'Master in Science',
@@ -550,7 +579,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: ['masters in science'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
-            dqt_id: nil,
+            dttp_id: nil,
             hesa_itt_code: nil,
             comment: 'This is a qualificatoin distinct from Master of Science. MSci are typically four year courses
             including three years of undergraduate study.' },
@@ -767,8 +796,10 @@ module DfE
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dttp_id: nil,
             hesa_itt_code: '009',
-            deprecated: true } }
+            deprecated: true } },
+        TYPES_SCHEMA
       )
+
       GENERIC_TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           '0584565a-1c98-4c1d-ae64-c241542c0879' =>
@@ -777,9 +808,9 @@ module DfE
             abbreviation: nil,
             suggestion_synonyms: [],
             match_synonyms: [],
-            qualification: nil,
             dttp_id: nil,
-            hesa_itt_code: '400' },
+            hesa_itt_code: '400',
+            generic: true },
           'fdafdcd7-5f21-4363-b7d5-c1f44a852af1' =>
           { priority: 1,
             name: 'Higher degree or equivalent',
@@ -807,9 +838,9 @@ module DfE
               'Level 8 diploma'
             ],
             match_synonyms: [],
-            qualification: nil,
             dttp_id: nil,
-            hesa_itt_code: '401' },
+            hesa_itt_code: '401',
+            generic: true },
           '03c4fa67-345e-4d09-8e9b-68c36a450947' =>
           { priority: 1,
             name: 'Degree equivalent',
@@ -828,13 +859,17 @@ module DfE
               'Ordinary degree'
             ],
             match_synonyms: [],
-            qualification: nil,
             dttp_id: nil,
-            hesa_itt_code: '402' }
-        }
+            hesa_itt_code: '402',
+            generic: true }
+        },
+        GENERIC_TYPES_SCHEMA
       )
 
-      TYPES_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new([TYPES, GENERIC_TYPES])
+      TYPES_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
+        [TYPES, GENERIC_TYPES],
+        TYPES_INCLUDING_GENERICS_SCHEMA
+      )
     end
   end
 end

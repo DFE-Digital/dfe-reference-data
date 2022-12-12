@@ -1,3 +1,6 @@
+require_relative 'record'
+require_relative 'reference_list'
+
 module DfE
   module ReferenceData
     ##
@@ -8,14 +11,16 @@ module DfE
       ##
       # +HardcodedReferenceList+ constructor. +data+ is a hash from IDs to records;
       # the records do not need to contain an +id+ field as those are provided
-      # automatically.
-      def initialize(data)
+      # automatically. +schema+, if provided, is a reference list schema.
+      def initialize(data, schema = nil)
         super()
         @data = {}
 
         data.each_entry do |id, record|
           @data[id] = Record.new(record.merge({ id: id }))
         end
+
+        super(schema)
       end
 
       def all

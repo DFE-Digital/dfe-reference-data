@@ -1,6 +1,36 @@
 module DfE
   module ReferenceData
     module Degrees
+      INSTITUTIONS_SCHEMA = {
+        id: :string,
+        name: :string,
+        suggestion_synonyms: { kind: :array, element_schema: :string },
+        match_synonyms: { kind: :array, element_schema: :string },
+        hesa_itt_code: { kind: :optional, schema: { kind: :code, pattern: /^[0-9]+$/ } },
+        dttp_id: { kind: :optional, schema: { kind: :code, pattern: /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/ } },
+        ukprn: { kind: :optional, schema: { kind: :code, pattern: /^[0-9]+$/ } },
+        comment: { kind: :optional, schema: :string },
+        closed: { kind: :optional, schema: :string },
+        has_never_awarded_degrees: { kind: :optional, schema: :boolean }
+      }.freeze
+
+      GENERIC_INSTITUTIONS_SCHEMA = INSTITUTIONS_SCHEMA.merge(
+        {
+          id: :string,
+          name: :string,
+          suggestion_synonyms: { kind: :array, element_schema: :string },
+          match_synonyms: { kind: :array, element_schema: :string },
+          comment: { kind: :optional, schema: :string },
+          generic: :boolean
+        }
+      )
+
+      INSTITUTIONS_INCLUDING_GENERICS_SCHEMA = INSTITUTIONS_SCHEMA.merge(
+        {
+          generic: { kind: :optional, schema: :boolean }
+        }
+      )
+
       INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '5c9e1d2d-3fa2-e811-812b-5065f38ba241' =>
           { name: 'The Open University',
@@ -62,7 +92,10 @@ module DfE
           '4c71f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'York St John University',
             suggestion_synonyms: ['YSJU'],
-            match_synonyms: [],
+            match_synonyms: [
+              'York St. John University',
+              'York Saint John University'
+            ],
             hesa_itt_code: '0013',
             dttp_id: '4c71f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10007713' },
@@ -70,8 +103,11 @@ module DfE
           { name: 'Plymouth Marjon University',
             suggestion_synonyms: [],
             match_synonyms:
-            ['University of St Mark and St John',
-             'University of Saint Mark and Saint John'],
+            [
+              'University of St Mark and St John',
+              'University of St. Mark and St. John',
+              'University of Saint Mark and Saint John'
+            ],
             hesa_itt_code: '0014',
             dttp_id: '3a71f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10037449' },
@@ -102,7 +138,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '0020',
             dttp_id: '2f6e5e11-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2008',
+            closed: '2008',
             comment: 'Closed in 2008 to become the University for the creative arts',
             ukprn: '10003574' },
           '4471f34a-2887-e711-80d8-005056ac45bb' =>
@@ -203,7 +239,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '0036',
             dttp_id: '81407223-7042-e811-80ff-3863bb3640b8',
-            'closed' => '1996',
+            closed: '1996',
             comment: 'Merged with University of Salford in 1996',
             ukprn: '10005649' },
           'c10b1d33-3fa2-e811-812b-5065f38ba241' =>
@@ -224,7 +260,10 @@ module DfE
           'f670f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'St Mary’s University, Twickenham',
             suggestion_synonyms: [],
-            match_synonyms: ['Saint Mary’s University, Twickenham'],
+            match_synonyms: [
+              'St. Mary’s University, Twickenham',
+              'Saint Mary’s University, Twickenham'
+            ],
             hesa_itt_code: '0039',
             dttp_id: 'f670f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10007843' },
@@ -249,7 +288,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '0044',
             dttp_id: 'c4db7129-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2005',
+            closed: '2005',
             comment:
             'It merged with the Kent Institute of Art & Design on August 1, 2005 to form the University College for the Creative Arts (now University for the Creative Arts)',
             ukprn: nil },
@@ -326,7 +365,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '0055',
             dttp_id: '711c7817-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2012',
+            closed: '2012',
             comment:
             'On 1 August 2002, it merged with the University of North London to form London Metropolitan University.',
             ukprn: nil },
@@ -437,7 +476,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '0070',
             dttp_id: '235b7f3b-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2002',
+            closed: '2002',
             comment:
             'UNL existed until 2002, when it merged with London Guildhall University to form London Metropolitan University',
             ukprn: nil },
@@ -546,7 +585,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '0086',
             dttp_id: '73228041-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2013',
+            closed: '2013',
             comment:
             'Merged with University of Glamorgan to form University of South Wales',
             ukprn: '10007853' },
@@ -591,7 +630,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '0091',
             dttp_id: nil,
-            'closed' => '2013',
+            closed: '2013',
             comment:
             'The university merged with, and became a constituent campus of, the University of Wales Trinity Saint David on 1 August 2013.',
             ukprn: '10007846' },
@@ -601,7 +640,7 @@ module DfE
             match_synonyms: ['The Trinity College Carmarthen Foundation'],
             hesa_itt_code: '0092',
             dttp_id: '0e4b9247-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2010',
+            closed: '2010',
             ukprn: '10007048' },
           '2a79b119-1f63-4d3f-bf14-74671d21c7cb' =>
           { name: 'Abertay University',
@@ -862,9 +901,15 @@ module DfE
             ukprn: '10007771' },
           'b93e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Queen Mary University of London',
-            suggestion_synonyms:
-            ['QMUL', 'QM', "St Bartholomew's Hospital Medical College", 'St Barts'],
-            match_synonyms: ['Queen Mary, University of London'],
+            suggestion_synonyms: [
+              'QMUL',
+              'QM',
+              "St Bartholomew's Hospital Medical College",
+              'St Barts'
+            ],
+            match_synonyms: [
+              'Queen Mary, University of London'
+            ],
             hesa_itt_code: '0139',
             dttp_id: 'b93e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10007775' },
@@ -889,7 +934,11 @@ module DfE
           '94407223-7042-e811-80ff-3863bb3640b8' =>
           { name: 'St George’s, University of London',
             suggestion_synonyms: ['SGUL'],
-            match_synonyms: ['St George’s Hospital Medical School'],
+            match_synonyms: [
+              'St. George’s, University of London',
+              'Saint George’s, University of London',
+              'St George’s Hospital Medical School'
+            ],
             hesa_itt_code: '0145',
             dttp_id: '94407223-7042-e811-80ff-3863bb3640b8',
             ukprn: '10007782' },
@@ -936,7 +985,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '0153',
             dttp_id: nil,
-            'closed' => '2004',
+            closed: '2004',
             ukprn: nil,
             comment:
             'Merged with UMIST (whose degrees it awarded) in 2004 to form University of Manchester' },
@@ -1072,12 +1121,15 @@ module DfE
             dttp_id: 'bbed6e2f-7042-e811-80ff-3863bb3640b8',
             ukprn: '10007852' },
           '34228041-7042-e811-80ff-3863bb3640b8' =>
-          { name: 'University of St. Andrews',
+          { name: 'University of St Andrews',
             suggestion_synonyms: [],
-            match_synonyms:
-            ['The University of St. Andrews',
-             'The University of Saint Andrews',
-             'University of Saint Andrews'],
+            match_synonyms: [
+              'University of St. Andrews',
+              'The University of St Andrews',
+              'The University of St. Andrews',
+              'The University of Saint Andrews',
+              'University of Saint Andrews'
+            ],
             hesa_itt_code: '0173',
             dttp_id: '34228041-7042-e811-80ff-3863bb3640b8',
             ukprn: '10007803' },
@@ -1101,6 +1153,7 @@ module DfE
             match_synonyms:
             ['Prifysgol Cymru Y Drindod Dewi Sant',
              'University of Wales Trinity St David',
+             'University of Wales Trinity St. David',
              'The University of Wales, Lampeter'],
             hesa_itt_code: '0176',
             dttp_id: 'b123a753-7042-e811-80ff-3863bb3640b8',
@@ -1140,7 +1193,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '0181',
             dttp_id: nil,
-            'closed' => '2002',
+            closed: '2002',
             comment: 'Re-merged with Cardiff University in 2002',
             ukprn: nil },
           'a7db7129-7042-e811-80ff-3863bb3640b8' =>
@@ -1185,7 +1238,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '0192',
             dttp_id: '2ef35f0b-7042-e811-80ff-3863bb3640b8',
-            'closed' => '2017',
+            closed: '2017',
             ukprn: '10001802' },
           'df3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Stranmillis University College',
@@ -1197,7 +1250,10 @@ module DfE
           '9b407223-7042-e811-80ff-3863bb3640b8' =>
           { name: 'St Mary’s University College, Belfast',
             suggestion_synonyms: [],
-            match_synonyms: ['St Mary’s University College'],
+            match_synonyms: [
+              'St Mary’s University College',
+              'St. Mary’s University College'
+            ],
             hesa_itt_code: '0194',
             dttp_id: '9b407223-7042-e811-80ff-3863bb3640b8',
             comment: 'Does not seem to be degree awarding',
@@ -1272,7 +1328,7 @@ module DfE
             ukprn: '10007798' },
           '1b6e5e11-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Heythrop College',
-            'closed' => '2018',
+            closed: '2018',
             suggestion_synonyms: [],
             match_synonyms: [],
             hesa_itt_code: '0205',
@@ -1676,7 +1732,10 @@ module DfE
           'dd3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'St Patrick’s International College',
             suggestion_synonyms: [],
-            match_synonyms: ['Saint Patrick’s International College'],
+            match_synonyms: [
+              'St. Patrick’s International College',
+              'Saint Patrick’s International College'
+            ],
             hesa_itt_code: '0283',
             dttp_id: 'dd3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10006243' },
@@ -1833,7 +1892,10 @@ module DfE
           'db3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'St Nicholas Montessori Training',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: [
+              'St. Nicholas Montessori Training',
+              'Saint Nicholas Montessori Training'
+            ],
             hesa_itt_code: '0311',
             dttp_id: 'db3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10045289',
@@ -2439,7 +2501,7 @@ module DfE
             match_synonyms: [],
             hesa_itt_code: '9065',
             dttp_id: nil,
-            'closed' => '1993',
+            closed: '1993',
             comment:
             'The Council for National Academic Awards (CNAA) was the national degree-awarding authority in the United Kingdom from 1965 until its dissolution on 20 April 1993',
             ukprn: nil },
@@ -2466,7 +2528,7 @@ module DfE
             dttp_id: '6a228041-7042-e811-80ff-3863bb3640b8',
             comment:
             'Previously a federal university who awarded degrees. Merged into University of Wales Trinity Saint David in 2017.',
-            'closed' => '2017',
+            closed: '2017',
             ukprn: '10008574' },
           '99a3ce14-c21b-4484-aa13-76201840e7e1' =>
           { name: 'TEC Partnership',
@@ -2505,7 +2567,22 @@ module DfE
             hesa_itt_code: nil,
             dttp_id: nil,
             ukprn: '10020611',
-            has_never_awarded_degrees: true } }
+            has_never_awarded_degrees: true } },
+        INSTITUTIONS_SCHEMA
+      )
+
+      GENERIC_INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
+        { '02132969-f5bc-47ca-be9c-b6f6d5b05e1b' =>
+          { name: 'Other UK institution',
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            generic: true } },
+        GENERIC_INSTITUTIONS_SCHEMA
+      )
+
+      INSTITUTIONS_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
+        [INSTITUTIONS, GENERIC_INSTITUTIONS],
+        INSTITUTIONS_INCLUDING_GENERICS_SCHEMA
       )
     end
   end

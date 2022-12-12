@@ -17,31 +17,30 @@ module DfE
       #
       # The base list is not modified - this merely wraps it to create a new
       # reference list with some "tweaks" applied.+
-      def initialize(base, overrides)
-        super()
+      def initialize(base, overrides, schema = nil)
+        if schema.nil?
+          # Default to the schema of the base list, as tweaks will rarely add/remove fields
+          schema = base.schema
+        end
+        super(schema)
         @base = base
         @overrides = overrides
-
-        @overridden_all = base.all_as_hash.clone
-
-        overrides.each_entry do |id, record|
-          if record.nil?
-            @overridden_all.delete(id)
-          elsif @overridden_all.key? id
-            old_record = @overridden_all[id]
-            @overridden_all[id] = old_record.merge(record)
-          else
-            @overridden_all[id] = record.merge({ id: id })
-          end
-        end
       end
 
       def all
-        @overridden_all.values
+        all_as_hash.values
       end
 
       def all_as_hash
-        @overridden_all
+        @all_as_hash ||= @overrides.each_entry.with_object(@base.all_as_hash.clone) do |(id, override), new_all|
+          if override.nil?
+            new_all.delete(id)
+          elsif (existing = new_all[id])
+            new_all[id] = existing.merge(override)
+          else
+            new_all[id] = Record.new(override.merge({ id: id }))
+          end
+        end
       end
 
       def one(record_id)
@@ -52,7 +51,7 @@ module DfE
           else
             old_record = @base.one(record_id)
             if old_record.nil? # Added record
-              override.merge({ id: record_id })
+              Record.new(override.merge({ id: record_id }))
             else # Modified record
               old_record.merge(override)
             end
