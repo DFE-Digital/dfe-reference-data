@@ -11,7 +11,7 @@ module DfE
           id: :string,
           text: :string
         }
-      ).document(
+      ).documentation(
         list_description: 'Friendly greetings in a selection of languages',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_demo.md#dfereferencedatademohello_world',
         field_descriptions: {
@@ -28,7 +28,7 @@ module DfE
           id: :string,
           text: :string
         }
-      ).document(
+      ).documentation(
         list_description: 'Friendly greetings in a selection of languages',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_demo.md#dfereferencedatademofictional_greetings',
         field_descriptions: {

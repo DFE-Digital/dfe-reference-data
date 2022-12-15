@@ -30,6 +30,20 @@ module DfE
         }
       )
 
+      TYPES_FIELD_DESCRIPTIONS = {
+        id: 'A unique identifier for this type of degree',
+        # priority: I don't actually know what this is used for!
+        name: 'The long name of the degree type, eg "Foundation of Arts"',
+        abbreviation: 'The abbreviated name, eg, "FdA"',
+        hint: 'An optional hint to be shown alongside the name to users',
+        suggestion_synonyms: 'A list of common alternative names that *may* be appropriate for this type',
+        match_synonyms: 'A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.',
+        qualification: 'The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_qualifications.md)',
+        dttp_id: 'The ID used for this qualification in DQT',
+        hesa_itt_code: 'The HESA DEGTYPE code for this degree type (see [DEGTYPE](https://www.hesa.ac.uk/collection/c22053/e/degtype) documentation)',
+        comment: 'Any extra comment or description for the field'
+      }.freeze
+
       TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
         { 'be08f598-0860-4de0-b95a-3c448a16cc99' =>
           { name: 'Foundation degree',
@@ -798,6 +812,10 @@ module DfE
             hesa_itt_code: '9',
             deprecated: true } },
         TYPES_SCHEMA
+      ).documentation(
+        list_description: 'Types of degrees (eg, "BEng", "MA", etc.)',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreestypes',
+        field_descriptions: TYPES_FIELD_DESCRIPTIONS
       )
 
       GENERIC_TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -864,11 +882,19 @@ module DfE
             generic: true }
         },
         GENERIC_TYPES_SCHEMA
+      ).documentation(
+        list_description: 'Generic "catch-all" degree types, for approximating degree types not listed in TYPES (eg, "First Degree" to cover any first degree).',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesgeneric_types',
+        field_descriptions: TYPES_FIELD_DESCRIPTIONS
       )
 
       TYPES_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
         [TYPES, GENERIC_TYPES],
         TYPES_INCLUDING_GENERICS_SCHEMA
+      ).documentation(
+        list_description: 'Degree types, including specifics such as "BSc" and generic types such as "First degree"',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreestypes_including_generics',
+        field_descriptions: TYPES_FIELD_DESCRIPTIONS
       )
     end
   end

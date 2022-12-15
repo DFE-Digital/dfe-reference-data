@@ -8,6 +8,13 @@ module DfE
         scholarship: { kind: :optional, schema: :string }
       }.freeze
 
+      INCENTIVES_FIELD_DEFINITIONS = {
+        id: 'A unique identifier for this incentive',
+        name: 'A descriptive name for this incentive',
+        bursary_amount: 'The available bursary (in pounds)',
+        scholarship: 'The available scholarship (in pounds)'
+      }.freeze
+
       INCENTIVES = DfE::ReferenceData::HardcodedReferenceList.new(
         # SEE https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2022-to-2023-academic-year
         {
@@ -34,6 +41,10 @@ module DfE
           }
         },
         INCENTIVES_SCHEMA
+      ).documentation(
+        list_description: 'An training incentive available for a particular ITT subject',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittincentives',
+        field_descriptions: INCENTIVES_FIELD_DEFINITIONS
       )
     end
   end

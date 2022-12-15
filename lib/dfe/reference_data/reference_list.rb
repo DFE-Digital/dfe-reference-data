@@ -23,7 +23,7 @@ module DfE
 
       ##
       # Mutator to set the optional documentation fields; returns self to allow cascading.
-      def document(list_description: nil, list_docs_url: nil, field_descriptions: nil)
+      def documentation(list_description: nil, list_docs_url: nil, field_descriptions: nil)
         @list_description = list_description
         @list_docs_url = list_docs_url
         @field_descriptions = field_descriptions

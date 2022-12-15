@@ -16,6 +16,17 @@ module DfE
         non_working_days: { kind: :map, key: :symbol, value: :daterange }
       }.freeze
 
+      CYCLES_FIELD_DESCRIPTIONS = {
+        id: 'A unique ID of the form `YYYY-YYYY`, identifying the opening and closing years of the recruitment phase of the cycle (eg, `2018-2019` for the cycle where the application deadlines are in 2019)',
+        find_opens: 'The point at which Find Postgraduate Teacher Training starts showing courses in this cycle',
+        apply_opens: 'The point at which Apply For Teacher Training starts allowing applications to courses in this cycle',
+        apply_1_deadline: 'The point at which Apply For Teacher Training stops accepting apply 1 applications to courses in this cycle',
+        apply_2_deadline: 'The point at which Apply For Teacher Training stops accepting apply 2 applications to courses in this cycle',
+        provider_decision_deadline: 'The point at which unresolved applications for courses in this cycle are rejected automatically, so all provider application decisions must have been made',
+        find_closes: 'The point at which Find Postgraduate Teacher Training stops showing courses in this cycle',
+        non_working_days: 'Non-working-day periods within this cycle (the symbols being names such as `christmas` and `easter`'
+      }.freeze
+
       # Timezone used to specify dates+times in this file
       TIMEZONE = TZInfo::Timezone.get('Europe/London')
 
@@ -93,6 +104,10 @@ module DfE
           }
         },
         CYCLES_SCHEMA
+      ).documentation(
+        list_description: 'Initial teacher training recruitment cycles.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittcycles',
+        field_descriptions: CYCLES_FIELD_DESCRIPTIONS
       )
     end
   end

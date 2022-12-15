@@ -290,6 +290,13 @@ module DfE
           id: :string,
           name: :string
         }
+      ).documentation(
+        list_description: 'A mapping of ISO country/territory codes to country/territory names.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_countries_and_territories.md#dfereferencedatacountriesandterritoriescountries_and_territories',
+        field_descriptions: {
+          id: 'The country or territory\'s ISO code',
+          name: 'The human-readable name of the country or territory'
+        }
       )
 
       # https://github.com/DFE-Digital/apply-for-teacher-training/blob/78c9421d8582f63cfdec564b5c0677bfd787552c/app/lib/domicile_resolver.rb#L47-L59
@@ -308,6 +315,13 @@ module DfE
         {
           id: :string,
           prefixes: { kind: :array, element_schema: :string }
+        }
+      ).documentation(
+        list_description: 'Postcode prefixes for the UK and Channel Islands grouped by country/territory.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_countries_and_territories.md#dfereferencedatacountriesandterritoriesuk_and_ci_postcode_prefix_countries',
+        field_descriptions: {
+          id: 'The human readable country/territory name',
+          prefixes: 'A list of postcode prefixes (letters only)'
         }
       )
     end
