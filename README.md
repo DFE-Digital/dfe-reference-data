@@ -33,9 +33,13 @@ added.
 
 This gem includes the following reference lists:
 
-* [Qualifications](docs/lists_qualifications.md)
+* [Countries and Territories](docs/lists_countries_and_territories.md)
 * [Degrees](docs/lists_degrees.md)
 * [Initial Teacher Training](docs/lists_itt.md)
+* [Qualifications](docs/lists_qualifications.md)
+
+And for documentation purposes:
+
 * [Demo data](docs/lists_demo.md)
 
 ## Adding new reference lists
@@ -77,7 +81,9 @@ It does not need to be:
 
 ## Adding new output formats
 
-Currently, the "master" data is in Ruby source code, with a Ruby API surrounding it, and a command line tool to generate JSON.
+Currently, the "master" data is in Ruby source code, with a Ruby API surrounding it.
+
+There is a command line tool to generate JSON, and another to upload the lists into BigQuery tables. Github automation runs that on every new release.
 
 However, this is easily extended. We can support other language APIs in a similar manner to the JSON generator, by writing a tool to take the master data and spitting out (for instance) C# source code literals, creating a new representation of the data that can be wrapped in a C# API library to provide an equivalent interface to the Ruby API. The release process can then be extended to produce appropriately versioned and distributed packages for other languages (please use the exact same version identifier as the Ruby gem and the tags in this repo, so the versions all "line up" trivially).
 
