@@ -2581,8 +2581,7 @@ module DfE
             dttp_id: nil,
             ukprn: '10020611',
             has_never_awarded_degrees: true } },
-        INSTITUTIONS_SCHEMA
-      ).documentation(
+        schema: INSTITUTIONS_SCHEMA,
         list_description: 'Degree-awarding (or otherwise) institutions',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesinstitutions',
         field_descriptions: INSTITUTIONS_FIELD_DESCRIPTIONS
@@ -2594,8 +2593,7 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             generic: true } },
-        GENERIC_INSTITUTIONS_SCHEMA
-      ).documentation(
+        schema: GENERIC_INSTITUTIONS_SCHEMA,
         list_description: 'Generic options for where we do not have a record for a specific institution.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesgeneric_institutions',
         field_descriptions: INSTITUTIONS_FIELD_DESCRIPTIONS
@@ -2603,8 +2601,7 @@ module DfE
 
       INSTITUTIONS_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
         [INSTITUTIONS, GENERIC_INSTITUTIONS],
-        INSTITUTIONS_INCLUDING_GENERICS_SCHEMA
-      ).documentation(
+        schema: INSTITUTIONS_INCLUDING_GENERICS_SCHEMA,
         list_description: 'Degree-awarding (or otherwise) institutions, plus generic options for when no specific institution is in the list',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesinstitutions_including_generics',
         field_descriptions: INSTITUTIONS_FIELD_DESCRIPTIONS

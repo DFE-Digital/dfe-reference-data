@@ -29,7 +29,7 @@ module DfE
             'CY' => { code: 'XC' },
             'XK' => { code: 'QO' }
           },
-          {
+          schema: {
             id: { schema: :string, kind: :optional },
             code: :string
           }
@@ -47,7 +47,7 @@ module DfE
             'Wales' => { code: 'XI' },
             'other' => { code: 'XK' }
           },
-          {
+          schema: {
             id: { schema: :string, kind: :optional },
             code: :string
           }

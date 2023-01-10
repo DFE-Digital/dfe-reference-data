@@ -17,8 +17,11 @@ module DfE
       ##
       # +ReferenceList+ constructor. +schema+, if provided, is a reference list
       # schema.
-      def initialize(schema = nil)
+      def initialize(schema: nil, list_description: nil, list_docs_url: nil, field_descriptions: nil)
         @schema = schema
+        @list_description = list_description
+        @list_docs_url = list_docs_url
+        @field_descriptions = field_descriptions
       end
 
       ##

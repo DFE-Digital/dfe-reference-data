@@ -59,7 +59,7 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
             single_daterange: Date.new(2021, 0o1, 0o1)..Date.new(2021, 12, 31)
           }
         },
-        {
+        schema: {
           id: :string,
           single_string: :string,
           single_symbol: :symbol,

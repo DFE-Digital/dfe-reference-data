@@ -40,8 +40,7 @@ module DfE
             scholarship: '26000'
           }
         },
-        INCENTIVES_SCHEMA
-      ).documentation(
+        schema: INCENTIVES_SCHEMA,
         list_description: 'An training incentive available for a particular ITT subject',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittincentives',
         field_descriptions: INCENTIVES_FIELD_DEFINITIONS

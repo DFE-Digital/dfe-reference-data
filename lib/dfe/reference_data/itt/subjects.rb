@@ -114,8 +114,7 @@ module DfE
                                                       register_category: '0fd6679d-9e68-47ea-b783-1bdfb6222fdd',
                                                       category: '5c0ec601-e802-475b-b310-f32068f78f57' }
         },
-        SUBJECTS_SCHEMA
-      ).documentation(
+        schema: SUBJECTS_SCHEMA,
         list_description: 'Initial primary-level teacher training subjects, referred to as "specialisms" in some contexts',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittprimary_subjects-dfereferencedataittsecondary_subjects-and-dfereferencedataittsubjects',
         field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
@@ -522,18 +521,17 @@ module DfE
                                                       incentive: { '2022-2023' => '48881fdb-b38f-4f2d-baf3-f1337a9176e5' },
                                                       category: '518be3b3-a0b3-45cb-9299-dfaeea0c4b7e' }
         },
-        SUBJECTS_SCHEMA
-      ).documentation(
+        schema: SUBJECTS_SCHEMA,
         list_description: 'Initial secondary-level teacher training subjects, referred to as "specialisms" in some contexts',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittprimary_subjects-dfereferencedataittsecondary_subjects-and-dfereferencedataittsubjects',
         field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
       )
 
-      SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new([PRIMARY_SUBJECTS, SECONDARY_SUBJECTS], SUBJECTS_SCHEMA).documentation(
-        list_description: 'Initial teacher training subjects, referred to as "specialisms" in some contexts',
-        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittprimary_subjects-dfereferencedataittsecondary_subjects-and-dfereferencedataittsubjects',
-        field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
-      )
+      SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new([PRIMARY_SUBJECTS, SECONDARY_SUBJECTS],
+                                                             schema: SUBJECTS_SCHEMA,
+                                                             list_description: 'Initial teacher training subjects, referred to as "specialisms" in some contexts',
+                                                             list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittprimary_subjects-dfereferencedataittsecondary_subjects-and-dfereferencedataittsubjects',
+                                                             field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS)
 
       # Subject categories as used in Publish, annotated with their age range.
       PUBLISH_CATEGORIES = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -673,8 +671,7 @@ module DfE
                     # NOTE: This is a historical relic
                     age_range: :secondary }
         },
-        PUBLISH_CATEGORIES_SCHEMA
-      ).documentation(
+        schema: PUBLISH_CATEGORIES_SCHEMA,
         list_description: 'Initial teacher training subject categories, as currently used by Publish.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittpublish_categories',
         field_descriptions: PUBLISH_CATEGORIES_FIELD_DESCRIPTIONS
@@ -779,8 +776,7 @@ module DfE
             publish_category: 'F8'
           }
         },
-        REGISTER_CATEGORIES_SCHEMA
-      ).documentation(
+        schema: REGISTER_CATEGORIES_SCHEMA,
         list_description: 'Initial teacher training subject categories, as currently used by Register.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittregister_categories',
         field_descriptions: REGISTER_CATEGORIES_FIELD_DESCRIPTIONS
@@ -821,8 +817,7 @@ module DfE
           # Added by Alaric to support Register tracking EYTS
           '5c0ec601-e802-475b-b310-f32068f78f57' => { name: 'Early Years' }
         },
-        CATEGORIES_SCHEMA
-      ).documentation(
+        schema: CATEGORIES_SCHEMA,
         list_description: 'Initial teacher training subject categories, under a proposed new categorisation shared between Register and Find/Publish.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittcategories',
         field_descriptions: CATEGORIES_FIELD_DESCRIPTIONS
@@ -1021,8 +1016,7 @@ module DfE
                     phase: :secondary,
                     other_id: '42' }
         },
-        TAD_CATEGORIES_SCHEMA
-      ).documentation(
+        schema: TAD_CATEGORIES_SCHEMA,
         list_description: 'Initial teacher training subject categories, as currently used by TAD.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataitttad_categories',
         field_descriptions: TAD_CATEGORIES_FIELD_DESCRIPTIONS

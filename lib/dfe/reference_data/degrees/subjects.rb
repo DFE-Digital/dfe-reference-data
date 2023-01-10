@@ -6625,8 +6625,7 @@ module DfE
             match_synonyms: [],
             dttp_id: '1f8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100356' } },
-        SINGLE_SUBJECTS_SCHEMA
-      ).documentation(
+        schema: SINGLE_SUBJECTS_SCHEMA,
         list_description: 'Degree subjects',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreessingle_subjects',
         field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
@@ -7084,8 +7083,7 @@ module DfE
                           '837f70f0-5dce-e911-a985-000d3ab79618'] # Sports coaching
           }
         },
-        COMBINED_SUBJECTS_SCHEMA
-      ).documentation(
+        schema: COMBINED_SUBJECTS_SCHEMA,
         list_description: 'Common combinations of degree subjects (Eg, subjects of the form "X with Y" or "X and Y")',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreescombined_subjects',
         field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
@@ -7093,8 +7091,7 @@ module DfE
 
       SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new(
         [SINGLE_SUBJECTS, COMBINED_SUBJECTS],
-        SUBJECTS_SCHEMA
-      ).documentation(
+        schema: SUBJECTS_SCHEMA,
         list_description: 'Degree subjects, including common combined subjects',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreessubjects',
         field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS

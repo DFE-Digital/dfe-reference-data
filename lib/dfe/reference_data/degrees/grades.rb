@@ -112,8 +112,7 @@ module DfE
             match_synonyms: [],
             group: :main_postgrad }
         },
-        GRADES_SCHEMA
-      ).documentation(
+        schema: GRADES_SCHEMA,
         list_description: 'Grades awarded when a degree is granted',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesgrades',
         field_descriptions: {

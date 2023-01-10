@@ -811,8 +811,7 @@ module DfE
             dttp_id: nil,
             hesa_itt_code: '9',
             deprecated: true } },
-        TYPES_SCHEMA
-      ).documentation(
+        schema: TYPES_SCHEMA,
         list_description: 'Types of degrees (eg, "BEng", "MA", etc.)',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreestypes',
         field_descriptions: TYPES_FIELD_DESCRIPTIONS
@@ -881,8 +880,7 @@ module DfE
             hesa_itt_code: '402',
             generic: true }
         },
-        GENERIC_TYPES_SCHEMA
-      ).documentation(
+        schema: GENERIC_TYPES_SCHEMA,
         list_description: 'Generic "catch-all" degree types, for approximating degree types not listed in TYPES (eg, "First Degree" to cover any first degree).',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesgeneric_types',
         field_descriptions: TYPES_FIELD_DESCRIPTIONS
@@ -890,8 +888,7 @@ module DfE
 
       TYPES_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
         [TYPES, GENERIC_TYPES],
-        TYPES_INCLUDING_GENERICS_SCHEMA
-      ).documentation(
+        schema: TYPES_INCLUDING_GENERICS_SCHEMA,
         list_description: 'Degree types, including specifics such as "BSc" and generic types such as "First degree"',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreestypes_including_generics',
         field_descriptions: TYPES_FIELD_DESCRIPTIONS

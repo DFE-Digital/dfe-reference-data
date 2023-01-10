@@ -103,8 +103,7 @@ module DfE
             }
           }
         },
-        CYCLES_SCHEMA
-      ).documentation(
+        schema: CYCLES_SCHEMA,
         list_description: 'Initial teacher training recruitment cycles.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittcycles',
         field_descriptions: CYCLES_FIELD_DESCRIPTIONS
