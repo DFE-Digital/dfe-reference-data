@@ -116,6 +116,10 @@ The `hesa_code` field for `DfE::ReferenceData::Degrees::GRADES`, and `hesa_itt_c
 
 If your service is already zero-padding these fields to send them on to other systems that expect the canonical form, this change will hopefully just make that redundant. However, if you perform other processing using these fields you may need to make some changes to your code.
 
+#### Change to constructor parameters
+
+With the addition of inline documentation for lists, which has required adding a bunch of optional keyword parameters to the constructors of `HardcodedReferenceList`, `TweakedReferenceList`, and `JoinedReferenceList` (not to mention `ReferenceList` itself), the optional schema parameter has been made a named parameter for consistency with the others. If you create instances of those classes in your code with a schema parameter, you'll need to add `schema: ` in front of the schema to make Ruby accept the code.
+
 ### v0.x -> v1.x
 
 #### Uniform synonym fields
