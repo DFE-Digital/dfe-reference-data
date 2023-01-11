@@ -74,6 +74,8 @@ task :update_bigquery_tables do
     # branches can coexist peacefully
     major_version = (config.version.split '.')[0]
     config.table_name_suffix = "_v#{major_version}"
+
+    puts "Updating #{config.project}.#{config.dataset} with version #{major_version}:"
   end
 
   DfE::ReferenceData::BigQuery.update_tables
