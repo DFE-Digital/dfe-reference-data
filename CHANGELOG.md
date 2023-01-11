@@ -1,13 +1,20 @@
 # Changelog
 
+## [v1.6.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.6.0) (2023-01-11)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.5.0...v1.6.0)
+
+**Merged pull requests:**
+
+- Add docs for countries/territories and HESA domiciles [\#68](https://github.com/DFE-Digital/dfe-reference-data/pull/68) ([elliotcm](https://github.com/elliotcm))
+
 ## [v1.5.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.5.0) (2022-11-24)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.4.1...v1.5.0)
 
-**Implemented enhancements:**
-Add countries and territories list
-Add postcode prefix countries list
-Add countries and domiciles list
+**Merged pull requests:**
+
+- Move country and HESA-domicile data from Apply [\#67](https://github.com/DFE-Digital/dfe-reference-data/pull/67) ([elliotcm](https://github.com/elliotcm))
 
 ## [v1.4.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.4.1) (2022-11-24)
 
