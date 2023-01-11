@@ -108,6 +108,14 @@ Until we sort out our RubyGems account, dependents will pull the gem from GitHub
 
 When moving to a new breaking release (the first part of the version number changes), you might need to make changes to your code that uses the lists. This section explains all.
 
+### v1.x -> v2.x
+
+#### Zero-padded HESA codes
+
+The `hesa_code` field for `DfE::ReferenceData::Degrees::GRADES`, and `hesa_itt_code` fields for `DfE::ReferenceData::Degrees::INSTITUTIONS`, `DfE::ReferenceData::Degrees::TYPES` and  `DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS`, are zero-padded to fixed widths in the canonical source data - so have been extended to match that in the reference data lists.
+
+If your service is already zero-padding these fields to send them on to other systems that expect the canonical form, this change will hopefully just make that redundant. However, if you perform other processing using these fields you may need to make some changes to your code.
+
 ### v0.x -> v1.x
 
 #### Uniform synonym fields
