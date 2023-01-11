@@ -1,5 +1,14 @@
 # Changelog
 
+## [v2.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.0.0) (2023-01-11)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.6.0...v2.0.0)
+
+**Merged pull requests:**
+
+- Publishing list docs in BigQuery [\#69](https://github.com/DFE-Digital/dfe-reference-data/pull/69) ([alaric-dfe](https://github.com/alaric-dfe))
+- Zero pad the HESA codes [\#52](https://github.com/DFE-Digital/dfe-reference-data/pull/52) ([alaric-dfe](https://github.com/alaric-dfe))
+
 ## [v1.6.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.6.0) (2023-01-11)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.5.0...v1.6.0)
