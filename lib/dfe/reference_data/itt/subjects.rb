@@ -11,11 +11,28 @@ module DfE
         incentive: { kind: :map, key: :string, value: :string } # Map from DfE::ReferenceData::ITT::CYCLES ID to DfE::ReferenceData::ITT::INCENTIVES ID
       }.freeze
 
+      SUBJECTS_FIELD_DESCRIPTIONS = {
+        id: 'A unique identified for this ITT subject',
+        name: 'The long name of the ITT subject.',
+        hecos_code: 'The HECoS code for the subject, as per HESA field [SBJCA](https://www.hesa.ac.uk/collection/c22053/e/sbjca)',
+        category: 'The ID of the category that this subject is a specialism of',
+        register_category: 'The ID of the category that this subject is a specialism of, as per the current Register categories list',
+        publish_category: 'The ID of the category that this subject is a specialism of, as per the current Publish categories list',
+        incentive: 'The ID of the incentive for this subject in the given ITT cycle'
+      }.freeze
+
       PUBLISH_CATEGORIES_SCHEMA = {
         id: :string,
         name: :string,
         age_range: :symbol,
         tad_category: { kind: :optional, schema: :string }
+      }.freeze
+
+      PUBLISH_CATEGORIES_FIELD_DESCRIPTIONS = {
+        id: 'A unique identifier for this subject category',
+        name: 'The long name of the subject category',
+        age_range: 'The age range this subject category applies to',
+        tad_category: 'Where a direct correspondence with a TAD category exists with this record, the ID of that TAD category'
       }.freeze
 
       REGISTER_CATEGORIES_SCHEMA = {
@@ -24,9 +41,20 @@ module DfE
         publish_category: { kind: :optional, schema: :string }
       }.freeze
 
+      REGISTER_CATEGORIES_FIELD_DESCRIPTIONS = {
+        id: 'A unique identified for this subject category',
+        name: 'The long name for this subject category',
+        publish_category: 'Where a direct correspondence with a Publish category exists, the ID of that Publish category'
+      }.freeze
+
       CATEGORIES_SCHEMA = {
         id: :string,
         name: :string
+      }.freeze
+
+      CATEGORIES_FIELD_DESCRIPTIONS = {
+        id: 'A unique identified for this subject category',
+        name: 'The long name for this subject category'
       }.freeze
 
       TAD_CATEGORIES_SCHEMA = {
@@ -40,6 +68,18 @@ module DfE
         type: :symbol,
         phase: :symbol,
         other_id: :string
+      }.freeze
+
+      TAD_CATEGORIES_FIELD_DESCRIPTIONS = {
+        id: 'A unique identified for this subject category',
+        name: 'The long name for this subject category',
+        publish_category: 'Where a direct correspondence with a Publish category exists, the ID of that Publish category',
+        stem: 'True if the subject is in the Sciences, Technology, Engineering or Mathematics',
+        ebacc: 'True if the subject is academic discipline within the English Baccalaureate',
+        type: 'The type of this subject category',
+        phase: 'The phase (age range) of this subject category',
+        other_id: '(unknown)',
+        register_name: 'The corresponding subject name as believed to be found in Register, according to the author of the spreadsheet (probably not useful, pending removal after review)'
       }.freeze
 
       # From https://docs.google.com/spreadsheets/d/152PMbCj_bmnm8rmqVFLJAA2Hu8-9pkPjDmGyOi85768/edit#gid=2053127863&range=Q85
@@ -74,7 +114,10 @@ module DfE
                                                       register_category: '0fd6679d-9e68-47ea-b783-1bdfb6222fdd',
                                                       category: '5c0ec601-e802-475b-b310-f32068f78f57' }
         },
-        SUBJECTS_SCHEMA
+        schema: SUBJECTS_SCHEMA,
+        list_description: 'Initial primary-level teacher training subjects, referred to as "specialisms" in some contexts',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittprimary_subjects-dfereferencedataittsecondary_subjects-and-dfereferencedataittsubjects',
+        field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
       )
 
       SECONDARY_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -478,10 +521,17 @@ module DfE
                                                       incentive: { '2022-2023' => '48881fdb-b38f-4f2d-baf3-f1337a9176e5' },
                                                       category: '518be3b3-a0b3-45cb-9299-dfaeea0c4b7e' }
         },
-        SUBJECTS_SCHEMA
+        schema: SUBJECTS_SCHEMA,
+        list_description: 'Initial secondary-level teacher training subjects, referred to as "specialisms" in some contexts',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittprimary_subjects-dfereferencedataittsecondary_subjects-and-dfereferencedataittsubjects',
+        field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
       )
 
-      SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new([PRIMARY_SUBJECTS, SECONDARY_SUBJECTS], SUBJECTS_SCHEMA)
+      SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new([PRIMARY_SUBJECTS, SECONDARY_SUBJECTS],
+                                                             schema: SUBJECTS_SCHEMA,
+                                                             list_description: 'Initial teacher training subjects, referred to as "specialisms" in some contexts',
+                                                             list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittprimary_subjects-dfereferencedataittsecondary_subjects-and-dfereferencedataittsubjects',
+                                                             field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS)
 
       # Subject categories as used in Publish, annotated with their age range.
       PUBLISH_CATEGORIES = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -621,7 +671,10 @@ module DfE
                     # NOTE: This is a historical relic
                     age_range: :secondary }
         },
-        PUBLISH_CATEGORIES_SCHEMA
+        schema: PUBLISH_CATEGORIES_SCHEMA,
+        list_description: 'Initial teacher training subject categories, as currently used by Publish.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittpublish_categories',
+        field_descriptions: PUBLISH_CATEGORIES_FIELD_DESCRIPTIONS
       )
 
       REGISTER_CATEGORIES = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -723,7 +776,10 @@ module DfE
             publish_category: 'F8'
           }
         },
-        REGISTER_CATEGORIES_SCHEMA
+        schema: REGISTER_CATEGORIES_SCHEMA,
+        list_description: 'Initial teacher training subject categories, as currently used by Register.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittregister_categories',
+        field_descriptions: REGISTER_CATEGORIES_FIELD_DESCRIPTIONS
       )
 
       # From https://docs.google.com/spreadsheets/d/152PMbCj_bmnm8rmqVFLJAA2Hu8-9pkPjDmGyOi85768/edit#gid=2053127863&range=Q1
@@ -761,7 +817,10 @@ module DfE
           # Added by Alaric to support Register tracking EYTS
           '5c0ec601-e802-475b-b310-f32068f78f57' => { name: 'Early Years' }
         },
-        CATEGORIES_SCHEMA
+        schema: CATEGORIES_SCHEMA,
+        list_description: 'Initial teacher training subject categories, under a proposed new categorisation shared between Register and Find/Publish.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittcategories',
+        field_descriptions: CATEGORIES_FIELD_DESCRIPTIONS
       )
 
       # Taken from a spreadsheet passed to me
@@ -957,7 +1016,10 @@ module DfE
                     phase: :secondary,
                     other_id: '42' }
         },
-        TAD_CATEGORIES_SCHEMA
+        schema: TAD_CATEGORIES_SCHEMA,
+        list_description: 'Initial teacher training subject categories, as currently used by TAD.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataitttad_categories',
+        field_descriptions: TAD_CATEGORIES_FIELD_DESCRIPTIONS
       )
     end
   end

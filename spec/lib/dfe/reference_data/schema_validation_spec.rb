@@ -124,8 +124,7 @@ RSpec.describe Validator do
           array_symbol: ['not a symbol']
         }
       },
-      # Schema
-      {
+      schema: {
         id: :string,
         single_string: :string,
         single_symbol: :symbol,

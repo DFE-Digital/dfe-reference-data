@@ -112,7 +112,17 @@ module DfE
             match_synonyms: [],
             group: :main_postgrad }
         },
-        GRADES_SCHEMA
+        schema: GRADES_SCHEMA,
+        list_description: 'Grades awarded when a degree is granted',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesgrades',
+        field_descriptions: {
+          id: 'A unique identifier for the grade',
+          name: 'The long name of this grade, eg "First-class honours"',
+          suggestion_synonyms: 'A list of common alternative names that may be appropriate for this institution',
+          match_synonyms: 'A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution.',
+          group: 'Degree type, ie `main_postgrad`, `other` or `main_undergrad`',
+          hesa_code: 'The HESA DEGCLSS code for this degree grade. (see [DEGCLSS](https://www.hesa.ac.uk/collection/c22053/e/degclss) documentation)'
+        }
       )
     end
   end

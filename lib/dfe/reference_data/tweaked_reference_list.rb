@@ -16,16 +16,27 @@ module DfE
       # no record with that ID in the base.
       #
       # The base list is not modified - this merely wraps it to create a new
-      # reference list with some "tweaks" applied.+
-      def initialize(base, overrides, schema = nil)
+      # reference list with some "tweaks" applied.
+
+      # Disable long param list warning, as it's keyword params and they're
+      # MEANT for this kind of thing.
+
+      # rubocop:disable Metrics/ParameterLists
+      def initialize(base, overrides, schema: nil, list_description: nil, list_docs_url: nil, field_descriptions: nil)
         if schema.nil?
           # Default to the schema of the base list, as tweaks will rarely add/remove fields
           schema = base.schema
         end
-        super(schema)
+
+        super(schema: schema,
+              list_description: list_description,
+              list_docs_url: list_docs_url,
+              field_descriptions: field_descriptions)
+
         @base = base
         @overrides = overrides
       end
+      # rubocop:enable Metrics/ParameterLists
 
       def all
         all_as_hash.values

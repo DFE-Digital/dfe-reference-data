@@ -31,6 +31,19 @@ module DfE
         }
       )
 
+      INSTITUTIONS_FIELD_DESCRIPTIONS = {
+        id: 'A unique identified for this institution',
+        name: 'The full name of the institution',
+        suggestion_synonyms: 'A list of common alternative names that *may* be appropriate for this institution',
+        match_synonyms: 'A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution.',
+        dttp_id: 'The ID used for this institution in DTTP',
+        hesa_itt_code: 'The HESA DEGEST code for this instutition (see [DEGEST](https://www.hesa.ac.uk/collection/c22053/e/degest) docs)',
+        ukprn: 'The ID of this institution in the UK Register of Learning Providers',
+        closed: 'If present, the year in which the institution closed or stopped awarding degrees',
+        has_never_awarded_degrees: 'If present and true, the institution has never awarded degrees, was included in an earlier version of this list by mistake, and is kept purely to support interpretation of legacy data',
+        comment: 'Editor\'s comments on the entry (not necessarily of interest to external users of the data)'
+      }.freeze
+
       INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '5c9e1d2d-3fa2-e811-812b-5065f38ba241' =>
           { name: 'The Open University',
@@ -2568,7 +2581,10 @@ module DfE
             dttp_id: nil,
             ukprn: '10020611',
             has_never_awarded_degrees: true } },
-        INSTITUTIONS_SCHEMA
+        schema: INSTITUTIONS_SCHEMA,
+        list_description: 'Degree-awarding (or otherwise) institutions',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesinstitutions',
+        field_descriptions: INSTITUTIONS_FIELD_DESCRIPTIONS
       )
 
       GENERIC_INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -2577,12 +2593,18 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             generic: true } },
-        GENERIC_INSTITUTIONS_SCHEMA
+        schema: GENERIC_INSTITUTIONS_SCHEMA,
+        list_description: 'Generic options for where we do not have a record for a specific institution.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesgeneric_institutions',
+        field_descriptions: INSTITUTIONS_FIELD_DESCRIPTIONS
       )
 
       INSTITUTIONS_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
         [INSTITUTIONS, GENERIC_INSTITUTIONS],
-        INSTITUTIONS_INCLUDING_GENERICS_SCHEMA
+        schema: INSTITUTIONS_INCLUDING_GENERICS_SCHEMA,
+        list_description: 'Degree-awarding (or otherwise) institutions, plus generic options for when no specific institution is in the list',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesinstitutions_including_generics',
+        field_descriptions: INSTITUTIONS_FIELD_DESCRIPTIONS
       )
     end
   end

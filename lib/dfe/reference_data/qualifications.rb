@@ -419,7 +419,17 @@ module DfE
             match_synonyms: [],
             level: '8' }
         },
-        QUALIFICATIONS_SCHEMA
+        schema: QUALIFICATIONS_SCHEMA,
+        list_description: 'Types of qualifications, as recognised in the UK.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_qualifications.md#dfereferencedataqualificationsqualifications',
+        field_descriptions: {
+          id: 'A unique identifier',
+          name: 'The long name of the qualification type',
+          suggestion_synonyms: 'A list of common alternative names that *may* be appropriate for this qualification type',
+          match_synonyms: 'A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.',
+          level: 'The level of the qualification. `entry`, `1`, `2`, `3`, `4`, `5`, `6`, or `7`.',
+          degree: 'If the qualification type is a degree, the level of degree - `foundation`, `bachelor`, `master` or `doctor`'
+        }
       )
     end
   end

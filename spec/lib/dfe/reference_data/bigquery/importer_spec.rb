@@ -59,7 +59,7 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
             single_daterange: Date.new(2021, 0o1, 0o1)..Date.new(2021, 12, 31)
           }
         },
-        {
+        schema: {
           id: :string,
           single_string: :string,
           single_symbol: :symbol,
@@ -82,6 +82,16 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
           array_real: { kind: :array, element_schema: :real },
 
           map: { kind: :map, key: :symbol, value: :string }
+        },
+        list_description: 'A list of dummy data',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/spec/lib/dfe/reference_data/bigquery/importer_spec.rb',
+        field_descriptions: {
+          id: 'An ID',
+          single_string: 'A single string',
+          optional_string: 'An optional string',
+          array_string: 'An array of strings',
+          map: 'A map',
+          nonexistant_field: 'A field that does not exist'
         }
       )
     end
@@ -190,6 +200,23 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
           map: []
         }
       )
+    end
+
+    it 'metadata reads back OK' do
+      expect(dataset.table(TEST_TABLE_NAME).description).to eq 'A list of dummy data (see https://github.com/DFE-Digital/dfe-reference-data/blob/main/spec/lib/dfe/reference_data/bigquery/importer_spec.rb for more details)'
+      expect(dataset.table(TEST_TABLE_NAME).fields.map do |x|
+               [x.name, x.description]
+             end).to contain_exactly(['array_boolean', nil],
+                                     ['array_integer', nil],
+                                     ['array_real', nil],
+                                     ['array_string', 'An array of strings'],
+                                     ['single_real', nil],
+                                     ['single_string', 'A single string'],
+                                     ['array_symbol', nil], ['id', 'An ID'], ['map', 'A map'],
+                                     ['optional_boolean', nil],
+                                     ['single_daterange', nil], ['single_datetime', nil], ['single_integer', nil],
+                                     ['optional_integer', nil], ['optional_real', nil], ['optional_string', 'An optional string'], ['optional_symbol', nil], ['single_boolean', nil],
+                                     ['single_symbol', nil])
     end
   end
 end

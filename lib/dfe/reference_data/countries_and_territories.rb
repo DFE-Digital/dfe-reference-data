@@ -286,9 +286,15 @@ module DfE
           'ZM' => { name: 'Zambia' },
           'ZW' => { name: 'Zimbabwe' }
         },
-        {
+        schema: {
           id: :string,
           name: :string
+        },
+        list_description: 'A mapping of ISO country/territory codes to country/territory names.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_countries_and_territories.md#dfereferencedatacountriesandterritoriescountries_and_territories',
+        field_descriptions: {
+          id: 'The country or territory\'s ISO code',
+          name: 'The human-readable name of the country or territory'
         }
       )
 
@@ -305,9 +311,15 @@ module DfE
           'Spanning Two Countries' => { prefixes: ['CH', 'DG', 'HR', 'LD', 'LL', 'NP', 'SY', 'TD'] },
           'Wales' => { prefixes: ['CF', 'SA'] }
         },
-        {
+        schema: {
           id: :string,
           prefixes: { kind: :array, element_schema: :string }
+        },
+        list_description: 'Postcode prefixes for the UK and Channel Islands grouped by country/territory.',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_countries_and_territories.md#dfereferencedatacountriesandterritoriesuk_and_ci_postcode_prefix_countries',
+        field_descriptions: {
+          id: 'The human readable country/territory name',
+          prefixes: 'A list of postcode prefixes (letters only)'
         }
       )
     end

@@ -103,24 +103,24 @@ module DfE
 
         # rubocop:disable Lint/DuplicateBranch
         # rubocop:disable Metrics/CyclomaticComplexity
-        def bigquery_schema_create_field(schema, name, field_schema, mode)
+        def bigquery_schema_create_field(schema, name, description, field_schema, mode)
           case kind(field_schema)
           when :code
-            schema.string name, mode: mode
+            schema.string name, description: description, mode: mode
           when :string
-            schema.string name, mode: mode
+            schema.string name, description: description, mode: mode
           when :symbol
-            schema.string name, mode: mode
+            schema.string name, description: description, mode: mode
           when :boolean
-            schema.boolean name, mode: mode
+            schema.boolean name, description: description, mode: mode
           when :integer
-            schema.integer name, mode: mode
+            schema.integer name, description: description, mode: mode
           when :real
-            schema.float name, mode: mode
+            schema.float name, description: description, mode: mode
           when :datetime
-            schema.datetime name, mode: mode
+            schema.datetime name, description: description, mode: mode
           when :daterange
-            schema.record name, mode: mode do |recordschema|
+            schema.record name, description: description, mode: mode do |recordschema|
               recordschema.date 'begin', mode: :required
               recordschema.date 'end', mode: :required
             end
@@ -131,27 +131,27 @@ module DfE
         # rubocop:enable Lint/DuplicateBranch
         # rubocop:enable Metrics/CyclomaticComplexity
 
-        def bigquery_schema_create_map_field(schema, field_name, key_schema, value_schema)
-          schema.record field_name, mode: :repeated do |fields|
-            bigquery_schema_create_field(fields, 'key', key_schema, :required)
-            bigquery_schema_create_field(fields, 'value', value_schema, :required)
+        def bigquery_schema_create_map_field(schema, field_name, description, key_schema, value_schema)
+          schema.record field_name, description: description, mode: :repeated do |fields|
+            bigquery_schema_create_field(fields, 'key', nil, key_schema, :required)
+            bigquery_schema_create_field(fields, 'value', nil, value_schema, :required)
           end
         end
 
-        def bigquery_schema_create_field_from_schema(schema, field_name, field_schema)
+        def bigquery_schema_create_field_from_schema(schema, field_name, description, field_schema)
           case field_schema
           when Symbol
-            bigquery_schema_create_field(schema, field_name, field_schema, :required)
+            bigquery_schema_create_field(schema, field_name, description, field_schema, :required)
           when Hash
             case field_schema[:kind]
             when :array
-              bigquery_schema_create_field(schema, field_name, field_schema[:element_schema], :repeated)
+              bigquery_schema_create_field(schema, field_name, description, field_schema[:element_schema], :repeated)
             when :optional
-              bigquery_schema_create_field(schema, field_name, field_schema[:schema], :nullable)
+              bigquery_schema_create_field(schema, field_name, description, field_schema[:schema], :nullable)
             when :map
-              bigquery_schema_create_map_field(schema, field_name, field_schema[:key], field_schema[:value])
+              bigquery_schema_create_map_field(schema, field_name, description, field_schema[:key], field_schema[:value])
             when :code
-              bigquery_schema_create_field(schema, field_name, :string, :required)
+              bigquery_schema_create_field(schema, field_name, description, :string, :required)
             else
               raise "Complex schema kind error: #{field_schema[:kind]}"
             end
@@ -175,13 +175,16 @@ module DfE
           dataset.create_table table_name do |schema|
             list_schema.each_pair do |field_name_symbol, field_schema|
               field_name = field_name_symbol.to_s
-              bigquery_schema_create_field_from_schema(schema, field_name, field_schema)
+              bigquery_schema_create_field_from_schema(schema, field_name, list.field_description(field_name_symbol), field_schema)
             end
           end
         end
 
-        def setup_bigquery_table_metadata(table, _table_name, _list, version, commit)
-          table.description = ('Automatically populated from dfe-reference-data')
+        def setup_bigquery_table_metadata(table, _table_name, list, version, commit)
+          descr = 'Automatically populated from dfe-reference-data'
+          descr = list.list_description if list.list_description
+          descr = "#{descr} (see #{list.list_docs_url} for more details)" if list.list_docs_url
+          table.description = descr
           table.labels = {
             autogenerated: true,
             dfe_reference_data_version: version.gsub('.', '_'),

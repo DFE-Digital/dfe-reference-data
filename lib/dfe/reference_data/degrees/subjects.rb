@@ -24,6 +24,16 @@ module DfE
 
       SUBJECTS_SCHEMA = SINGLE_SUBJECTS_SCHEMA.merge(COMBINED_SUBJECTS_SCHEMA)
 
+      SUBJECTS_FIELD_DESCRIPTIONS = {
+        id: 'A unique identifier for this subject',
+        name: 'The long name of the subject, eg "accountancy"',
+        suggestion_synonyms: 'A list of common alternative names that may be appropriate for this subject',
+        match_synonyms: 'A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.',
+        dttp_id: 'The ID used for this subject in DTTP',
+        hecos_code: 'The HESA DEGSBJ code for this degree subject (from [HECoS](https://www.hesa.ac.uk/support/documentation/hecos); see also the [DEGSBJ](https://www.hesa.ac.uk/collection/c22053/e/degsbj) documentation)',
+        subject_ids: 'The subject IDs of the individual single-subject parts of a combined subject'
+      }.freeze
+
       SINGLE_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
         { '917f70f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Accountancy',
@@ -6615,7 +6625,10 @@ module DfE
             match_synonyms: [],
             dttp_id: '1f8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100356' } },
-        SINGLE_SUBJECTS_SCHEMA
+        schema: SINGLE_SUBJECTS_SCHEMA,
+        list_description: 'Degree subjects',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreessingle_subjects',
+        field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
       )
 
       COMBINED_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -7070,12 +7083,18 @@ module DfE
                           '837f70f0-5dce-e911-a985-000d3ab79618'] # Sports coaching
           }
         },
-        COMBINED_SUBJECTS_SCHEMA
+        schema: COMBINED_SUBJECTS_SCHEMA,
+        list_description: 'Common combinations of degree subjects (Eg, subjects of the form "X with Y" or "X and Y")',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreescombined_subjects',
+        field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
       )
 
       SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new(
         [SINGLE_SUBJECTS, COMBINED_SUBJECTS],
-        SUBJECTS_SCHEMA
+        schema: SUBJECTS_SCHEMA,
+        list_description: 'Degree subjects, including common combined subjects',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreessubjects',
+        field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
       )
     end
   end
