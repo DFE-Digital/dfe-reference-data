@@ -1,0 +1,1 @@
+require_relative 'equality_and_diversity/disabilities'

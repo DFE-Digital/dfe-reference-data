@@ -5,16 +5,20 @@ module DfE
     # A +JoinedReferenceList+ is a wrapper around one or more +ReferenceList+s with
     # disjoint (non-overlapping) ID ranges, which joins them all together into one
     # big one.
+
+    # rubocop:disable Metrics/ParameterLists
     class JoinedReferenceList < ReferenceList
-      def initialize(lists, schema: nil, list_description: nil, list_docs_url: nil, field_descriptions: nil)
+      def initialize(lists, schema: nil, list_description: nil, list_usage_guidance: nil, list_docs_url: nil, field_descriptions: nil)
         schema = lists[0].schema if schema.nil? && lists.length.positive?
         @lists = lists
 
         super(schema: schema,
               list_description: list_description,
+              list_usage_guidance: list_usage_guidance,
               list_docs_url: list_docs_url,
               field_descriptions: field_descriptions)
       end
+      # rubocop:enable Metrics/ParameterLists
 
       def all
         all = []

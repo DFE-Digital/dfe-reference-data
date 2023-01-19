@@ -35,6 +35,7 @@ This gem includes the following reference lists:
 
 * [Countries and Territories](docs/lists_countries_and_territories.md)
 * [Degrees](docs/lists_degrees.md)
+* [Equality and Diversity](docs/lists_equality_and_diversity.md)
 * [Initial Teacher Training](docs/lists_itt.md)
 * [Qualifications](docs/lists_qualifications.md)
 
