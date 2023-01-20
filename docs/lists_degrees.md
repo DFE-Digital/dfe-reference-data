@@ -128,7 +128,7 @@ Degree subjects
 
 Owner: Apply team.
 
-Users: Apply team.
+Users: Apply team, Register team.
 
 Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob/main/app/data/degree-subjects.js
 
@@ -155,7 +155,7 @@ Common combinations of degree subjects (Eg, subjects of the form "X with Y" or "
 
 Owner: Apply team.
 
-Users: Apply team.
+Users: Apply team, Register team.
 
 Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob/main/app/data/degree-subjects.js
 
@@ -181,7 +181,7 @@ The union of `SINGLE_SUBJECTS` and `COMBINED_SUBJECTS`.
 
 Owner: Apply team.
 
-Users: Apply team.
+Users: Apply team, Register team.
 
 Source: Automatically derived from joining the `SINGLE_SUBJECTS` and `COMBINED_SUBJECTS` lists.
 
@@ -198,6 +198,60 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `dttp_id` | optional uuid | The ID used for this subject in DTTP (for single subjects) |
 | `hecos_code` | optional string | The HESA [DEGSBJ](https://www.hesa.ac.uk/collection/c22053/e/degsbj) code for this degree subject (from [HECoS](https://www.hesa.ac.uk/support/documentation/hecos)) (for single subjects) |
 | `subject_ids` | optional UUID array | The `SINGLE_SUBJECTS` IDs of the individual parts, in order (for combined subjects) |
+
+### `DfE::ReferenceData::Degrees::GENERIC_SUBJECTS`
+
+```ruby
+require 'dfe/reference_data/degrees'
+```
+
+Generic subject options
+
+Owner: Register team.
+
+Users: Register team.
+
+Source: Manual
+
+Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
+| Field | Type | Purpose |
+|---|---|---|
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `name` | string | The long name of the subject, eg "accountancy" |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
+| `hecos_code` | optional string | The HESA [DEGSBJ](https://www.hesa.ac.uk/collection/c22053/e/degsbj) code for this degree subject (from [HECoS](https://www.hesa.ac.uk/support/documentation/hecos)) (for single subjects) |
+| `generic` | optional boolean | Always true, to indicate that this is a generic option |
+
+### `DfE::ReferenceData::Degrees::SUBJECTS_INCLUDING_GENERICS`
+
+```ruby
+require 'dfe/reference_data/degrees'
+```
+
+The contents of `SUBJECTS`, plus `GENERIC_SUBJECTS`.
+
+Owner: Register team.
+
+Users: Register team.
+
+Source: Automatically derived from joining the `SINGLE_SUBJECTS` and `COMBINED_SUBJECTS` lists.
+
+Quality: Automatically derived from the source data, so only as correct as they are.
+
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
+| Field | Type | Purpose |
+|---|---|---|
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `name` | string | The long name of the subject, eg "accountancy" |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
+| `hecos_code` | optional string | The HESA [DEGSBJ](https://www.hesa.ac.uk/collection/c22053/e/degsbj) code for this degree subject (from [HECoS](https://www.hesa.ac.uk/support/documentation/hecos)) (for single subjects) |
+| `generic` | optional boolean | If present and true, indicates that this is a generic option |
 
 ### `DfE::ReferenceData::Degrees::INSTITUTIONS`
 

@@ -32,7 +32,8 @@ module DfE
         match_synonyms: 'A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.',
         dttp_id: 'The ID used for this subject in DTTP',
         hecos_code: 'The HESA DEGSBJ code for this degree subject (from [HECoS](https://www.hesa.ac.uk/support/documentation/hecos); see also the [DEGSBJ](https://www.hesa.ac.uk/collection/c22053/e/degsbj) documentation)',
-        subject_ids: 'The subject IDs of the individual single-subject parts of a combined subject'
+        subject_ids: 'The subject IDs of the individual single-subject parts of a combined subject',
+        generic: 'If present and true, indicates that this is a generic option'
       }.freeze
 
       SINGLE_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
