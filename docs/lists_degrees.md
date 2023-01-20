@@ -220,7 +220,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
-| `name` | string | The long name of the subject, eg "accountancy" |
+| `name` | string | The name of the generic category of degree subject, for example "not applicable" |
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this subject |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this subject. An answer matching a match synonym can be safely matched to this subject.|
 | `hecos_code` | optional string | The HESA [DEGSBJ](https://www.hesa.ac.uk/collection/c22053/e/degsbj) code for this degree subject (from [HECoS](https://www.hesa.ac.uk/support/documentation/hecos)) (for single subjects) |
