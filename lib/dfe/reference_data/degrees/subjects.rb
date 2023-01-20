@@ -6,7 +6,8 @@ module DfE
         name: :string,
         suggestion_synonyms: { kind: :array, element_schema: :string },
         match_synonyms: { kind: :array, element_schema: :string },
-        comment: { kind: :optional, schema: :string }
+        comment: { kind: :optional, schema: :string },
+        generic: { kind: :optional, schema: :boolean }
       }.freeze
 
       SINGLE_SUBJECTS_SCHEMA = CORE_SUBJECTS_SCHEMA.merge(
@@ -7076,6 +7077,39 @@ module DfE
       SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new(
         [SINGLE_SUBJECTS, COMBINED_SUBJECTS],
         SUBJECTS_SCHEMA
+      )
+
+      GENERIC_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
+        {
+          '208373a5-8bff-41c8-8b13-3d1d0b34e36e' =>
+          {
+            name: 'Not known',
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            hecos_code: '999999',
+            generic: true
+          },
+          'e84cefde-c18f-478d-8649-a0e5e795d318' =>
+          {
+            name: 'Not applicable',
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            hecos_code: '999998',
+            generic: true
+          }
+        },
+        schema: SUBJECTS_SCHEMA,
+        list_description: 'Generic degree subjects',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesgenericsubjects',
+        field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
+      )
+
+      SUBJECTS_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
+        [SUBJECTS, GENERIC_SUBJECTS],
+        schema: SUBJECTS_SCHEMA,
+        list_description: 'Degree subjects, including common combined subjects and generic subject options',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreessubjectsincludinggenerics',
+        field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
       )
     end
   end
