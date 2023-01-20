@@ -6,7 +6,8 @@ module DfE
         name: :string,
         suggestion_synonyms: { kind: :array, element_schema: :string },
         match_synonyms: { kind: :array, element_schema: :string },
-        comment: { kind: :optional, schema: :string }
+        comment: { kind: :optional, schema: :string },
+        generic: { kind: :optional, schema: :boolean }
       }.freeze
 
       SINGLE_SUBJECTS_SCHEMA = CORE_SUBJECTS_SCHEMA.merge(
@@ -7075,6 +7076,33 @@ module DfE
 
       SUBJECTS = DfE::ReferenceData::JoinedReferenceList.new(
         [SINGLE_SUBJECTS, COMBINED_SUBJECTS],
+        SUBJECTS_SCHEMA
+      )
+
+      GENERIC_SUBJECTS = DfE::ReferenceData::HardcodedReferenceList.new(
+        {
+          '208373a5-8bff-41c8-8b13-3d1d0b34e36e' =>
+          {
+            name: 'Not known',
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            hecos_code: '999999',
+            generic: true
+          },
+          'e84cefde-c18f-478d-8649-a0e5e795d318' =>
+          {
+            name: 'Not applicable',
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            hecos_code: '999998',
+            generic: true
+          }
+        },
+        SUBJECTS_SCHEMA
+      )
+
+      SUBJECTS_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
+        [SUBJECTS, GENERIC_SUBJECTS],
         SUBJECTS_SCHEMA
       )
     end
