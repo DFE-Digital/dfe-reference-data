@@ -7098,18 +7098,12 @@ module DfE
             generic: true
           }
         },
-        schema: SUBJECTS_SCHEMA,
-        list_description: 'Generic degree subjects',
-        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesgenericsubjects',
-        field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
+        SUBJECTS_SCHEMA
       )
 
       SUBJECTS_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
         [SUBJECTS, GENERIC_SUBJECTS],
-        schema: SUBJECTS_SCHEMA,
-        list_description: 'Degree subjects, including common combined subjects and generic subject options',
-        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreessubjectsincludinggenerics',
-        field_descriptions: SUBJECTS_FIELD_DESCRIPTIONS
+        SUBJECTS_SCHEMA
       )
     end
   end
