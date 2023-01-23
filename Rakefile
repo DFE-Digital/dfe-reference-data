@@ -58,7 +58,8 @@ BIGQUERY_TABLES = [
   ['itt_publish_categories', DfE::ReferenceData::ITT::PUBLISH_CATEGORIES],
   ['itt_register_categories', DfE::ReferenceData::ITT::REGISTER_CATEGORIES],
   ['itt_tad_categories', DfE::ReferenceData::ITT::TAD_CATEGORIES],
-  ['itt_cycles', DfE::ReferenceData::ITT::CYCLES]
+  ['itt_cycles', DfE::ReferenceData::ITT::CYCLES],
+  ['ead_disabilities_and_health_conditions', DfE::ReferenceData::EqualityAndDiversity::DISABILITIES_AND_HEALTH_CONDITIONS]
 ].freeze
 
 desc 'Insert records into BigQuery tables from the reference data lists'

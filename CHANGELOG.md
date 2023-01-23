@@ -1,5 +1,11 @@
 # Changelog
 
+## Next release
+
+**Merged pull requests:**
+
+- Disability categories [backported from \#70](https://github.com/DFE-Digital/dfe-reference-data/pull/70) ([alaric-dfe](https://github.com/alaric-dfe))
+
 ## [v1.7.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.7.0) (2023-01-20)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v2.0.0...v1.7.0)
