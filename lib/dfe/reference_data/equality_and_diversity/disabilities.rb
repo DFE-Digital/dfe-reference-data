@@ -8,11 +8,10 @@ module DfE
         hesa_code: { kind: :map,  # Map from DfE::ReferenceData::ITT::CYCLES ID to two-digit HESA disability code
                      key: { kind: :code, pattern: /^[0-9]{4}-[0-9]{4}$/ },
                      value: { kind: :code, pattern: /^[0-9]{2}$/ } },
-        generic: { kind: :optional, schema: :boolean },
-        opt_out: { kind: :optional, schema: :boolean }
+        kind: { kind: :optional, schema: :symbol }
       }.freeze
 
-      DISABILITIES = DfE::ReferenceData::HardcodedReferenceList.new(
+      DISABILITIES_AND_HEALTH_CONDITIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         { 'da4faa34-3851-4e04-959a-92ebea3c2b98' =>
           { name: 'Autistic spectrum condition or another condition affecting speech, language, communication or social skills',
             hesa_code: {
@@ -79,7 +78,7 @@ module DfE
             } },
           '3451285e-972b-464c-9726-84cae27b82ea' =>
           { name: 'Another disability, health condition or impairment affecting daily life',
-            generic: true,
+            kind: :generic,
             hesa_code: {
               '2019-2020' => '96',
               '2020-2021' => '96',
@@ -88,23 +87,31 @@ module DfE
             } },
           'd3f0f6de-b9be-4299-ade0-b40eef5d9ef2' =>
           { name: 'Prefer not to say',
-            opt_out: true,
+            kind: :prefer_not_to_say,
             hesa_code: {
               '2019-2020' => '98',
               '2020-2021' => '98',
               '2021-2022' => '98',
               '2022-2023' => '98'
+            } },
+          'b14e142a-adfe-4646-af5d-8236b6a5b48d' =>
+          { name: 'No disabilities or health issues',
+            kind: :none,
+            hesa_code: {
+              '2019-2020' => '95',
+              '2020-2021' => '95',
+              '2021-2022' => '95',
+              '2022-2023' => '95'
             } } },
         schema: DISABILITIES_SCHEMA,
-        list_description: 'Disabilities classifications',
-        list_usage_guidance: 'These items are intended to be referenced from a multiple-value field. The opt-out option is exclusive; if used, no other values can be used. The absence of any options in the multiple-value field is to be interpreted as the user having no disabilities.',
+        list_description: 'Disability and Health Condition classifications',
+        list_usage_guidance: 'These items are intended to be referenced from a multiple-value field. The options with kind :prefer_not_to_say and :none are exclusive; if used, no other values can be used.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_equality_and_diversity.md#dfereferencedataqualityanddiversitydisabilities',
         field_descriptions: {
-          id: 'A unique identifier for this disability option',
-          name: 'The long name of the disability option',
+          id: 'A unique identifier for this option',
+          name: 'The long name of the option',
           hint: 'An optional hint to be shown alongside the name to users',
-          generic: 'If present and true, indicates that this is a generic "other" option and, if selected, the user should be prompted for free text to specify any further detail',
-          opt_out: 'If present and true, indicates that the user has opted out of answering the question. This value is exclusive and cannot be combined with any other option'
+          kind: 'If present, indicates that this is a special kind of option. Valid values are :generic (a generic "other" optoin, and, if selected, the user should be prompted for free text to specify any further detail), :prefer_not_to_say (user opted out of answering the question) and :none (user has no disabilities or health conditions).'
         }
       )
     end
