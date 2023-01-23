@@ -55,7 +55,7 @@ module DfE
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_equality_and_diversity.md#dfereferencedataqualityanddiversitydisabilities',
         field_descriptions: {
           id: 'A unique identifier for this option',
-          name: 'The long name of the option',
+          name: 'The long name of the option. The exact phrasing of the options has varied over time, so interpretations may vary slightly',
           hint: 'An optional hint to be shown alongside the name to users',
           hesa_code: 'The HESA code for this disability/health condition - see [HESA\'s documentation](https://codingmanual.hesa.ac.uk/22056/Disability/field/DISABILITY)',
           kind: 'If present, indicates that this is a special kind of option. Valid values are :generic (a generic "other" option, and, if selected, the user should be prompted for free text to specify any further detail), :prefer_not_to_say (user opted out of answering the question) and :none (user has no disabilities or health conditions).'
