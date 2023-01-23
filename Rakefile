@@ -25,7 +25,7 @@ task :prepare_release, %i[version] do |_, args|
 
   v_version = "v#{version}"
 
-  sh 'bundle', 'exec', 'github_changelog_generator', '--no-verbose', '--user', 'DFE-Digital', '--project', 'dfe-reference-data', '--output', 'CHANGELOG.md', '--future-release', v_version
+  # sh 'bundle', 'exec', 'github_changelog_generator', '--no-verbose', '--user', 'DFE-Digital', '--project', 'dfe-reference-data', '--output', 'CHANGELOG.md', '--future-release', v_version
 end
 
 desc 'Commit current changes (eg, the changes made by prepare_release and any upgrade notes written to README.md), tag, and push to origin'
@@ -39,7 +39,7 @@ task :tag_and_push_release do
 
   sh 'gem', 'tag'
 
-  sh 'git', 'push', '--tags', 'origin', 'main'
+  sh 'git', 'push', '--tags', 'origin' #, 'main'
 
   puts "Release #{v_version} has been pushed. Please mark a Github release by visiting https://github.com/DFE-Digital/dfe-reference-data/releases/new?tag=#{v_version}"
 end
