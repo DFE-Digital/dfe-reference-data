@@ -8,7 +8,7 @@ require 'dfe/reference_data/equality_and_diversity'
 
 Disabilities and health conditions
 
-These items are intended to be referenced from a multiple-value field. The opt-out option is exclusive; if used, no other values can be used. The absence of any options in the multiple-value field is to be interpreted as the user having no disabilities.
+These items are intended to be referenced from a multiple-value field. The opt-out option is exclusive; if used, no other values can be used. The absence of any options in the multiple-value field is to be interpreted as the user having no disabilities or health conditions affecting daily life.
 
 Owner: Register team.
 
