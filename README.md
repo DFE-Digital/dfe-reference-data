@@ -43,6 +43,16 @@ And for documentation purposes:
 
 * [Demo data](docs/lists_demo.md)
 
+## Submitting changes
+
+Please feel free to submit corrections, additions, suggestions, or entire new lists (but see the next section if you're adding a new list).
+
+1. Come and talk in Slack (`#twd_reference_data`) to make sure we're all singing from the same sheet.
+2. Put them in a pull request
+3. Ask for review from people from the teams listed as users and owners of that list in the docs.
+4. If everyone's happy, merge the PR.
+5. Update `CHANGELOG.md` to list your PR as part of the next release.
+
 ## Adding new reference lists
 
 Please see the [Data Principles](https://technical-guidance.education.gov.uk/principles/data/) for general advice on storing data.
