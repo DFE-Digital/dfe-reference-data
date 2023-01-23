@@ -43,15 +43,29 @@ And for documentation purposes:
 
 * [Demo data](docs/lists_demo.md)
 
+## Versions
+
+Whenever we make a change that might require review from users of the data - changing existing IDs, changing data structure, or changing the API for instance - we increase the major version number. Changes that add new records, or add new fields only need a minor version number change. Corrections to content other than IDs gets to be a patch release.
+
+Rather than forcing everyone to change to pick up new data after a major version change, we keep the previous major version updated on a release branch.
+
+Current versions:
+
+| Version | Status     | git branch   |
+|---------|------------|--------------|
+| 2.*     | Current    | `main`       |
+| 1.*     | Deprecated | `v1-release` |
+
 ## Submitting changes
 
 Please feel free to submit corrections, additions, suggestions, or entire new lists (but see the next section if you're adding a new list).
 
 1. Come and talk in Slack (`#twd_reference_data`) to make sure we're all singing from the same sheet.
-2. Put them in a pull request
+2. Put them in a pull request against the `main` branch
 3. Ask for review from people from the teams listed as users and owners of that list in the docs.
 4. If everyone's happy, merge the PR.
-5. Update `CHANGELOG.md` to list your PR as part of the next release.
+5. Update `CHANGELOG.md` (you can just commit that to the `main` branch) to list your PR as part of the next release.
+6. Cherry-pick your branch (it's fine to squash the commits into one) onto any active previous release branches.
 
 ## Adding new reference lists
 
