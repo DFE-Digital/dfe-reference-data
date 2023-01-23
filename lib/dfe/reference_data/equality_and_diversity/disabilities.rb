@@ -96,7 +96,7 @@ module DfE
               '2022-2023' => '98'
             } } },
         schema: DISABILITIES_SCHEMA,
-        list_description: 'Disabilitie classifications',
+        list_description: 'Disabilities classifications',
         list_usage_guidance: 'These items are intended to be referenced from a multiple-value field. The opt-out option is exclusive; if used, no other values can be used. The absence of any options in the multiple-value field is to be interpreted as the user having no disabilities.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_equality_and_diversity.md#dfereferencedataqualityanddiversitydisabilities',
         field_descriptions: {
