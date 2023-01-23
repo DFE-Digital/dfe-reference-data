@@ -17,17 +17,19 @@ module DfE
       ##
       # +ReferenceList+ constructor. +schema+, if provided, is a reference list
       # schema.
-      def initialize(schema: nil, list_description: nil, list_docs_url: nil, field_descriptions: nil)
+      def initialize(schema: nil, list_description: nil, list_usage_guidance: nil, list_docs_url: nil, field_descriptions: nil)
         @schema = schema
         @list_description = list_description
+        @list_usage_guidance = list_usage_guidance
         @list_docs_url = list_docs_url
         @field_descriptions = field_descriptions
       end
 
       ##
       # Mutator to set the optional documentation fields; returns self to allow cascading.
-      def documentation(list_description: nil, list_docs_url: nil, field_descriptions: nil)
+      def documentation(list_description: nil, list_usage_guidance: nil, list_docs_url: nil, field_descriptions: nil)
         @list_description = list_description
+        @list_usage_guidance = list_usage_guidance
         @list_docs_url = list_docs_url
         @field_descriptions = field_descriptions
 

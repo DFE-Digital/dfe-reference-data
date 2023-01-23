@@ -22,7 +22,7 @@ module DfE
       # MEANT for this kind of thing.
 
       # rubocop:disable Metrics/ParameterLists
-      def initialize(base, overrides, schema: nil, list_description: nil, list_docs_url: nil, field_descriptions: nil)
+      def initialize(base, overrides, schema: nil, list_description: nil, list_usage_guidance: nil, list_docs_url: nil, field_descriptions: nil)
         if schema.nil?
           # Default to the schema of the base list, as tweaks will rarely add/remove fields
           schema = base.schema
@@ -30,6 +30,7 @@ module DfE
 
         super(schema: schema,
               list_description: list_description,
+              list_usage_guidance: list_usage_guidance,
               list_docs_url: list_docs_url,
               field_descriptions: field_descriptions)
 
