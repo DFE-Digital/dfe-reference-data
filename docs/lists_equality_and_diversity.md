@@ -1,6 +1,6 @@
 ## Equality and Diversity
 
-### `DfE::ReferenceData::EqualityAndDiversity::DISABILITIES`
+### `DfE::ReferenceData::EqualityAndDiversity::DISABILITIES_AND_HEALTH_CONDITIONS`
 
 ```ruby
 require 'dfe/reference_data/equality_and_diversity'
