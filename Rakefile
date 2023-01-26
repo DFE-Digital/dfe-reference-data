@@ -23,7 +23,7 @@ task :prepare_release, %i[version] do |_, args|
   version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
   raise 'could not retrieve version' if version.empty?
 
-  v_version = "v#{version}"
+  # v_version = "v#{version}"
 
   # This thing gets horribly confused sometimes, let's do it by hand
   # sh 'bundle', 'exec', 'github_changelog_generator', '--no-verbose', '--user', 'DFE-Digital', '--project', 'dfe-reference-data', '--output', 'CHANGELOG.md', '--future-release', v_version
