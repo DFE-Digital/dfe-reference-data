@@ -520,13 +520,19 @@ module DfE
             dttp_id: 'c1695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '001' },
           'd5695652-c197-e711-80d8-005056ac45bb' =>
-          { name: 'BA with intercalated PGCE', # This is weird
+          { name: 'BA with intercalated PGCE',
             abbreviation: nil,
             suggestion_synonyms: [],
             match_synonyms: [],
             qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
             dttp_id: 'd5695652-c197-e711-80d8-005056ac45bb',
             hesa_itt_code: '012' },
+          '348ff3a9-a4b8-4a40-a74d-dcaef9e8ac73' =>
+          { name: 'BSc with intercalated PGCE',
+            abbreviation: nil,
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            qualification: 'b580a760-da23-4d38-b803-62ae11de6a65' },
           '3b6a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
             name: 'Master of Arts',
