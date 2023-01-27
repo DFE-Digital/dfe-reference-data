@@ -908,7 +908,6 @@ module DfE
             abbreviation: nil,
             suggestion_synonyms: [],
             match_synonyms: [],
-            dttp_id: nil,
             hesa_itt_code: '999',
             unknown: true }
         },
