@@ -904,7 +904,7 @@ module DfE
       UNKNOWN_TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           '3e042de2-a453-47dc-9452-90a23399e9ee' =>
-          { name: 'Not Available',
+          { name: 'Not available',
             abbreviation: nil,
             suggestion_synonyms: [],
             match_synonyms: [],
