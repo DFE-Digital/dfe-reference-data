@@ -919,6 +919,7 @@ module DfE
         field_descriptions: TYPES_FIELD_DESCRIPTIONS
       )
 
+      # Not published as Ruby, just the union of all types for importing to BigQuery
       ALL_TYPES = DfE::ReferenceData::JoinedReferenceList.new(
         [TYPES, GENERIC_TYPES, UNKNOWN_TYPES],
         list_description: 'All degree types',
