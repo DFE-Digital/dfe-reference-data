@@ -37,12 +37,6 @@ module DfE
         }
       )
 
-      TYPES_INCLUDING_GENERICS_AND_UNKNOWNS_SCHEMA = TYPES_INCLUDING_GENERICS_SCHEMA.merge(
-        {
-          unknown: { kind: :optional, schema: :boolean }
-        }
-      )
-
       TYPES_FIELD_DESCRIPTIONS = {
         id: 'A unique identifier for this type of degree',
         # priority: I don't actually know what this is used for!
@@ -925,11 +919,9 @@ module DfE
         field_descriptions: TYPES_FIELD_DESCRIPTIONS
       )
 
-      TYPES_INCLUDING_GENERICS_AND_UNKNOWNS = DfE::ReferenceData::JoinedReferenceList.new(
-        [TYPES, GENERIC_TYPES],
-        schema: TYPES_INCLUDING_GENERICS_AND_UNKNOWNS_SCHEMA,
-        list_description: 'Degree types, including specifics such as "BSc", generic types such as "First degree", and a code for unknown degree types',
-        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreestypes_including_generics_and_unknowns',
+      ALL_TYPES = DfE::ReferenceData::JoinedReferenceList.new(
+        [TYPES, GENERIC_TYPES, UNKNOWN_TYPES],
+        list_description: 'All degree types',
         field_descriptions: TYPES_FIELD_DESCRIPTIONS
       )
     end
