@@ -4,6 +4,17 @@ RSpec.describe DfE::ReferenceData::JoinedReferenceList do
       {
         '1' => { name: 'Alaric', child: false },
         '2' => { name: 'Sarah', child: false }
+      },
+      schema: {
+        id: :string,
+        name: :string,
+        child: :boolean
+      },
+      list_description: 'Test 1',
+      list_usage_guidance: 'Use it wisely',
+      field_descriptions: {
+        id: 'An ID',
+        child: 'A childness'
       }
     )
   end
@@ -13,6 +24,17 @@ RSpec.describe DfE::ReferenceData::JoinedReferenceList do
       {
         '3' => { name: 'Jean', child: true },
         '4' => { name: 'Mary', child: true }
+      },
+      schema: {
+        id: :string,
+        name: :string,
+        child: :boolean
+      },
+      list_description: 'Test 2',
+      list_usage_guidance: 'Use it enthusiastically',
+      field_descriptions: {
+        id: 'An ID',
+        name: 'A name'
       }
     )
   end
@@ -37,5 +59,9 @@ RSpec.describe DfE::ReferenceData::JoinedReferenceList do
     expect(joined_reference_list.one('1')).to eq({ id: '1', name: 'Alaric', child: false })
     expect(joined_reference_list.one('3')).to eq({ id: '3', name: 'Jean', child: true })
     expect(joined_reference_list.one('nonexistent')).to be_nil
+    expect(joined_reference_list.schema).to eq({ child: :boolean, id: :string, name: :string })
+    expect(joined_reference_list.list_description).to eq('Union of the following lists: Test 1, Test 2')
+    expect(joined_reference_list.list_usage_guidance).to eq('Please note this guidance from the constituent lists: Use it wisely, Use it enthusiastically')
+    expect(joined_reference_list.field_descriptions).to eq({ child: 'A childness', id: 'An ID', name: 'A name' })
   end
 end

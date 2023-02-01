@@ -52,7 +52,7 @@ BIGQUERY_TABLES = [
   ['degree_grades', DfE::ReferenceData::Degrees::GRADES],
   ['degree_institutions', DfE::ReferenceData::Degrees::INSTITUTIONS],
   ['degree_subjects', DfE::ReferenceData::Degrees::SUBJECTS_INCLUDING_GENERICS],
-  ['degree_types', DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS],
+  ['degree_types', DfE::ReferenceData::Degrees::ALL_TYPES],
   ['itt_subjects', DfE::ReferenceData::ITT::SUBJECTS],
   ['itt_incentives', DfE::ReferenceData::ITT::INCENTIVES],
   ['itt_categories', DfE::ReferenceData::ITT::CATEGORIES],
