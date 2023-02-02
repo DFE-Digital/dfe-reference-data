@@ -10,9 +10,9 @@ require 'dfe/reference_data/degrees'
 
 Types of degrees (eg, "BEng", "MA", etc.)
 
-Owner: Apply team.
+Owner: Apply and Register teams.
 
-Users: Apply team.
+Users: Apply and Register teams.
 
 Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob/main/app/data/degree-types.js
 
@@ -43,9 +43,9 @@ require 'dfe/reference_data/degrees'
 Generic "catch-all" degree types, for approximating degree types not listed in
 `TYPES` (eg, "First Degree" to cover any first degree).
 
-Owner: Apply team.
+Owner: Apply and Register teams.
 
-Users: Apply team.
+Users: Apply and Register teams.
 
 Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob/main/app/data/degree-types.js
 
@@ -74,9 +74,9 @@ require 'dfe/reference_data/degrees'
 
 The union of `TYPES` and `GENERIC_TYPES`.
 
-Owner: Apply team.
+Owner: Apply and Register teams.
 
-Users: Apply team.
+Users: Apply and Register teams.
 
 Source: Automatically derived from joining the `TYPES` and `GENERIC_TYPES` lists.
 
@@ -96,6 +96,40 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
 | `dttp_id` | uuid | The ID used for this qualification in DQT |
 | `hesa_itt_code` | string | The HESA [DEGTYPE](https://www.hesa.ac.uk/collection/c22053/e/degtype) code for this degree type |
+| `generic` | optional boolean | If present and true, indicates this is a generic option for degree types not otherwise covered |
+
+### `DfE::ReferenceData::Degrees::UNKNOWN_TYPES`
+
+```ruby
+require 'dfe/reference_data/degrees'
+```
+
+Degree types for degrees we do not hold any more specific information about.
+
+Owner: Register team.
+
+Users: Register team.
+
+Source: Manual
+
+
+Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
+| Field | Type | Purpose |
+|---|---|---|
+| `id` | UUID | A unique identifier. The same as `dttp_id` if that field is non-`nil`, otherwise a new UUID was minted at import time. |
+| `priority` | integer | ? |
+| `name` | string | The long name of the degree type, eg "Foundation of Arts" |
+| `abbreviation` | string | The abbreviated name, eg, "FdA" |
+| `hint` | string | An optional hint to be shown alongside the name to users |
+| `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this type |
+| `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
+| `qualification` | string | The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](lists_qualifications.md)) |
+| `dttp_id` | uuid | The ID used for this qualification in DQT |
+| `hesa_itt_code` | string | The HESA [DEGTYPE](https://www.hesa.ac.uk/collection/c22053/e/degtype) code for this degree type |
+| `unknown` | boolean | If true, indicates that this indicates a degree we do not have type information about |
 
 ### `DfE::ReferenceData::Degrees::GRADES`
 

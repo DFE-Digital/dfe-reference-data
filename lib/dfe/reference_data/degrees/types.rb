@@ -23,6 +23,13 @@ module DfE
         }
       )
 
+      UNKNOWN_TYPES_SCHEMA = TYPES_SCHEMA.merge(
+        {
+          qualification: { kind: :optional, schema: :string },
+          unknown: :boolean
+        }
+      )
+
       TYPES_INCLUDING_GENERICS_SCHEMA = TYPES_SCHEMA.merge(
         {
           qualification: { kind: :optional, schema: :string },
@@ -41,7 +48,9 @@ module DfE
         qualification: 'The ID of the qualification level of this degree (see [`DfE::ReferenceData::Qualifications::QUALIFICATIONS`](https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_qualifications.md)',
         dttp_id: 'The ID used for this qualification in DQT',
         hesa_itt_code: 'The HESA DEGTYPE code for this degree type (see [DEGTYPE](https://www.hesa.ac.uk/collection/c22053/e/degtype) documentation)',
-        comment: 'Any extra comment or description for the field'
+        comment: 'Any extra comment or description for the field',
+        generic: 'If present and true, indicates this is a generic option for degree types not otherwise covered',
+        unknown: 'If present and true, indicates that this indicates a degree we do not have type information about'
       }.freeze
 
       TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -892,11 +901,34 @@ module DfE
         field_descriptions: TYPES_FIELD_DESCRIPTIONS
       )
 
+      UNKNOWN_TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
+        {
+          '3e042de2-a453-47dc-9452-90a23399e9ee' =>
+          { name: 'Not available',
+            abbreviation: nil,
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            hesa_itt_code: '999',
+            unknown: true }
+        },
+        schema: UNKNOWN_TYPES_SCHEMA,
+        list_description: 'Generic "catch-all" degree types, for approximating degree types not listed in TYPES (eg, "First Degree" to cover any first degree).',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesgeneric_types',
+        field_descriptions: TYPES_FIELD_DESCRIPTIONS
+      )
+
       TYPES_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
         [TYPES, GENERIC_TYPES],
         schema: TYPES_INCLUDING_GENERICS_SCHEMA,
         list_description: 'Degree types, including specifics such as "BSc" and generic types such as "First degree"',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreestypes_including_generics',
+        field_descriptions: TYPES_FIELD_DESCRIPTIONS
+      )
+
+      # Not published as Ruby, just the union of all types for importing to BigQuery
+      ALL_TYPES = DfE::ReferenceData::JoinedReferenceList.new(
+        [TYPES, GENERIC_TYPES, UNKNOWN_TYPES],
+        list_description: 'All degree types',
         field_descriptions: TYPES_FIELD_DESCRIPTIONS
       )
     end

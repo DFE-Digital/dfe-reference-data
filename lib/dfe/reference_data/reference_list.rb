@@ -6,7 +6,7 @@ module DfE
     # name, right?); this class is abstract, defining various utility methods that
     # subclasses are likely to be able to re-use the implementations of.
     class ReferenceList
-      attr_reader :schema, :list_description, :list_docs_url, :field_descriptions
+      attr_reader :schema, :list_description, :list_usage_guidance, :list_docs_url, :field_descriptions
 
       MATCH_FILTER = lambda do |pattern_object, record|
         pattern_object.all? do |field, value|
