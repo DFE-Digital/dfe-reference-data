@@ -23,7 +23,7 @@ task :prepare_release, %i[version] do |_, args|
   version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
   raise 'could not retrieve version' if version.empty?
 
-  v_version = "v#{version}"
+  # v_version = "v#{version}"
 
   # sh 'bundle', 'exec', 'github_changelog_generator', '--no-verbose', '--user', 'DFE-Digital', '--project', 'dfe-reference-data', '--output', 'CHANGELOG.md', '--future-release', v_version
 end
@@ -39,7 +39,7 @@ task :tag_and_push_release do
 
   sh 'gem', 'tag'
 
-  sh 'git', 'push', '--tags', 'origin' #, 'main'
+  sh 'git', 'push', '--tags', 'origin' # , 'main'
 
   puts "Release #{v_version} has been pushed. Please mark a Github release by visiting https://github.com/DFE-Digital/dfe-reference-data/releases/new?tag=#{v_version}"
 end
@@ -51,7 +51,7 @@ BIGQUERY_TABLES = [
   ['degree_grades', DfE::ReferenceData::Degrees::GRADES],
   ['degree_institutions', DfE::ReferenceData::Degrees::INSTITUTIONS],
   ['degree_subjects', DfE::ReferenceData::Degrees::SUBJECTS_INCLUDING_GENERICS],
-  ['degree_types', DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS],
+  ['degree_types', DfE::ReferenceData::Degrees::ALL_TYPES],
   ['itt_subjects', DfE::ReferenceData::ITT::SUBJECTS],
   ['itt_incentives', DfE::ReferenceData::ITT::INCENTIVES],
   ['itt_categories', DfE::ReferenceData::ITT::CATEGORIES],

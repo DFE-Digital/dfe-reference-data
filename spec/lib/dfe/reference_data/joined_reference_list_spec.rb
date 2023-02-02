@@ -13,6 +13,11 @@ RSpec.describe DfE::ReferenceData::JoinedReferenceList do
       {
         '3' => { name: 'Jean', child: true },
         '4' => { name: 'Mary', child: true }
+      },
+      {
+        id: :string,
+        name: :string,
+        child: :boolean
       }
     )
   end
@@ -37,5 +42,6 @@ RSpec.describe DfE::ReferenceData::JoinedReferenceList do
     expect(joined_reference_list.one('1')).to eq({ id: '1', name: 'Alaric', child: false })
     expect(joined_reference_list.one('3')).to eq({ id: '3', name: 'Jean', child: true })
     expect(joined_reference_list.one('nonexistent')).to be_nil
+    expect(joined_reference_list.schema).to eq({ child: :boolean, id: :string, name: :string })
   end
 end

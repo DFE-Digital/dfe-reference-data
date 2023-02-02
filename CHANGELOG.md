@@ -1,5 +1,9 @@
 # Changelog
 
+## Next release
+
+- "Not Available" degree type [\#75](https://github.com/DFE-Digital/dfe-reference-data/pull/75) ([alaric-dfe](https://github.com/alaric-dfe))
+
 ## [v1.8.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.8.0) (2023-01-23)
 -
 -[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.7.0...v1.8.0)

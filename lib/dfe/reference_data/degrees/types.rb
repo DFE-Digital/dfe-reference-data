@@ -23,6 +23,13 @@ module DfE
         }
       )
 
+      UNKNOWN_TYPES_SCHEMA = TYPES_SCHEMA.merge(
+        {
+          qualification: { kind: :optional, schema: :string },
+          unknown: :boolean
+        }
+      )
+
       TYPES_INCLUDING_GENERICS_SCHEMA = TYPES_SCHEMA.merge(
         {
           qualification: { kind: :optional, schema: :string },
@@ -869,6 +876,31 @@ module DfE
       TYPES_INCLUDING_GENERICS = DfE::ReferenceData::JoinedReferenceList.new(
         [TYPES, GENERIC_TYPES],
         TYPES_INCLUDING_GENERICS_SCHEMA
+      )
+
+      UNKNOWN_TYPES = DfE::ReferenceData::HardcodedReferenceList.new(
+        {
+          '3e042de2-a453-47dc-9452-90a23399e9ee' =>
+          { name: 'Not available',
+            abbreviation: nil,
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            hesa_itt_code: '999',
+            unknown: true }
+        },
+        UNKNOWN_TYPES_SCHEMA
+      )
+
+      # Not published as Ruby, just the union of all types for importing to BigQuery
+      ALL_TYPES = DfE::ReferenceData::JoinedReferenceList.new(
+        [TYPES, GENERIC_TYPES, UNKNOWN_TYPES],
+        TYPES_SCHEMA.merge(
+          {
+            qualification: { kind: :optional, schema: :string },
+            generic: { kind: :optional, schema: :boolean },
+            unknown: { kind: :optional, schema: :boolean }
+        }
+      )
       )
     end
   end
