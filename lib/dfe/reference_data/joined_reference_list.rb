@@ -74,6 +74,9 @@ module DfE
         end
       end
 
+      # TODO: This needs to be a little smarter: If a field is compulsory in
+      # some input lists but not compulsory or not present in others, it needs
+      # to be made optional in the resulting list.
       def combine_schemas(lists)
         lists.reduce({}) do |schema_so_far, list|
           schema_so_far.merge(list.schema)

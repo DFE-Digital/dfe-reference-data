@@ -928,6 +928,12 @@ module DfE
       # Not published as Ruby, just the union of all types for importing to BigQuery
       ALL_TYPES = DfE::ReferenceData::JoinedReferenceList.new(
         [TYPES, GENERIC_TYPES, UNKNOWN_TYPES],
+        schema: TYPES_SCHEMA.merge(
+          {
+            qualification: { kind: :optional, schema: :string },
+            generic: { kind: :optional, schema: :boolean },
+            unknown: { kind: :optional, schema: :boolean }
+          }),
         list_description: 'All degree types',
         field_descriptions: TYPES_FIELD_DESCRIPTIONS
       )
