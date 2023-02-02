@@ -933,7 +933,8 @@ module DfE
             qualification: { kind: :optional, schema: :string },
             generic: { kind: :optional, schema: :boolean },
             unknown: { kind: :optional, schema: :boolean }
-          }),
+          }
+        ),
         list_description: 'All degree types',
         field_descriptions: TYPES_FIELD_DESCRIPTIONS
       )
