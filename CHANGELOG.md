@@ -7,6 +7,7 @@
 - Disability categories [\#70](https://github.com/DFE-Digital/dfe-reference-data/pull/70) ([alaric-dfe](https://github.com/alaric-dfe))
 - Generic degree subjects [\#71](https://github.com/DFE-Digital/dfe-reference-data/pull/71) ([alaric-dfe](https://github.com/alaric-dfe))
 - "Not Available" degree type [\#75](https://github.com/DFE-Digital/dfe-reference-data/pull/75) ([alaric-dfe](https://github.com/alaric-dfe))
+- Added ITT subject incentives for 2020-2021, 2021-2022, and 2023-2024 [\#77](https://github.com/DFE-Digital/dfe-reference-data/pull/77) ([alaric-dfe](https://github.com/alaric-dfe))
 
 ## [v2.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.0.0) (2023-01-11)
 
