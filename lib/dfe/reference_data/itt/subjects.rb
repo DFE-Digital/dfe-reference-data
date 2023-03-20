@@ -95,6 +95,9 @@ module DfE
                                                       hecos_code: '101085',
                                                       register_category: '4b52ca55-cf75-434e-85e7-c08392f9abb7',
                                                       publish_category: '03',
+                                                      incentive: {
+                                                        '2020-2021' => '9c781d11-7e11-4920-be17-0bcea0a8c899'
+                                                      },
                                                       category: '50a6f234-2af4-4052-bec4-a3d9241e35dc' },
           'ac245e19-da50-4cd2-bcca-988eee9f6af3' => { name: 'primary with geography and history',
                                                       publish_category: '02',
@@ -125,7 +128,11 @@ module DfE
           '68d6c39c-3a03-4c7d-8116-4b5357c18f5e' => { name: 'Ancient Hebrew',
                                                       hecos_code: '101117',
                                                       register_category: '0893125c-ebe1-411c-a890-21bd59e11e09',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
                                                       publish_category: 'A2',
                                                       category: 'c6d6d59b-f6c5-4a2d-98a1-04f2e99539a9' },
           '60baca6d-04cf-4792-ab88-0cc94851ab51' => { name: 'performing arts',
@@ -147,12 +154,19 @@ module DfE
                                                       hecos_code: '100184',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' },
+                                                      incentive: {
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '17865203-96dc-465b-a65c-98622c962cad' => { name: 'religious studies',
                                                       hecos_code: '100339',
                                                       register_category: '142d7142-7e60-4d2d-a7c8-a9e7d308b0c7',
                                                       publish_category: 'V6',
+                                                      incentive: {
+                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874'
+                                                      },
                                                       category: 'e8d5dffc-bfba-4d8a-843c-806c6d80d86b' },
           '03a8646b-9d70-4054-9ac1-f6a5fa2ffc92' => { name: 'economics',
                                                       hecos_code: '100450',
@@ -162,13 +176,22 @@ module DfE
           '8042327c-f396-40a4-988d-da017833c90c' => { name: 'Design and technology',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' },
+                                                      incentive: {
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '58764285-62ea-4274-8987-1f1496fbd5a8' => { name: 'applied computing',
                                                       hecos_code: '100358',
                                                       register_category: '5050634c-2f57-4654-b1aa-ddae3089ac37',
                                                       publish_category: '11',
-                                                      incentive: { '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8'
+                                                      },
                                                       category: 'bc0a97ed-c09c-4688-9dce-b4ea888b6c51' },
 
           ## MARKED AS "TO BE REMOVED":
@@ -179,66 +202,115 @@ module DfE
 
           '611c8a31-b1e3-4791-83e0-959df107f940' => { name: 'Japanese language',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
                                                       publish_category: '19',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           'c57aabfd-4266-40b0-93ff-77abfbc0a5b6' => { name: 'Portuguese language',
                                                       hecos_code: '101142',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
                                                       publish_category: '24', # Actually "Modern languages (other)"
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           '9e91890d-91fc-4dd8-8007-09d31cee94bf' => { name: 'mathematics',
                                                       hecos_code: '100403',
                                                       register_category: '499be4ee-3895-4c69-92f1-e95d5670a399',
                                                       publish_category: 'G1',
-                                                      incentive: { '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8'
+                                                      },
                                                       category: '71cbc6f2-9b24-4504-86f5-979e573de058' },
           '5c92bc39-ec2e-4c2f-83b6-58655bf52958' => { name: 'manufacturing engineering',
                                                       hecos_code: '100202',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' },
+                                                      incentive: {
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '88831d9f-8469-4532-8453-b4c8826b1ff7' => { name: 'design',
                                                       hecos_code: '100048',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' },
+                                                      incentive: {
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '8c4c1209-8085-4484-9086-e0437d2ac8ed' => { name: 'French language',
                                                       hecos_code: '100321',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => '6c5a3cb6-e769-415f-8c08-b71c7a37be39'
+                                                      },
                                                       publish_category: '15',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           'dac7d7ef-812d-4658-a902-fb6fcf840dea' => { name: 'Italian language',
                                                       hecos_code: '100326',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
                                                       publish_category: '18',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           'a93e09b9-4643-4145-a8e3-91d5d724926b' => { name: 'German language',
                                                       hecos_code: '100323',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => '6c5a3cb6-e769-415f-8c08-b71c7a37be39'
+                                                      },
                                                       publish_category: '17',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           '86603ca5-cced-4749-95a7-9c5fe4f05e25' => { name: 'chemistry',
                                                       hecos_code: '100417',
                                                       register_category: 'c6e125b6-e6da-43bf-8d1b-6f8d6349057c',
                                                       publish_category: 'F1',
-                                                      incentive: { '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8'
+                                                      },
                                                       category: '167b889a-4cbb-47ff-a196-4103cb7ea43d' },
           '8c536594-0fd6-4fa8-bb40-d30a1739465d' => { name: 'Chinese languages',
                                                       hecos_code: '101165',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
                                                       publish_category: '20', # Actually Mandarin in pubfind
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           'fb1bb68c-a9b7-466d-ba82-6902a7934263' => { name: 'English as a second or other language',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       publish_category: '16',
+                                                      # FIXME: Is this eligble for incentives for English? 2020-2021 and 2023-2024 have English incentives, but the funding manual says nothing more specific than "English".
                                                       category: '48721ee7-577b-4819-8f92-b35d48414443' },
           'c81ac20e-3877-4a6d-9366-e50bc500fc1a' => { name: 'recreation and leisure studies',
                                                       hecos_code: '100893',
@@ -259,7 +331,11 @@ module DfE
                                                       hecos_code: '100050',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' },
+                                                      incentive: {
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '9280520e-144f-4760-b0d3-b6f1d3b5faa7' => { name: 'sport and exercise sciences',
                                                       hecos_code: '100433',
@@ -275,18 +351,31 @@ module DfE
                                                       hecos_code: '101361',
                                                       register_category: '6ea9457d-b8a2-4211-b58b-064fed680c99',
                                                       publish_category: 'W1',
+                                                      incentive: {
+                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874'
+                                                      },
                                                       category: '69b468df-f7ca-40cb-9410-ed5f4e5bd61b' },
           'b9a62f65-bad6-4e6a-8b20-37531c28cf3d' => { name: 'information technology',
                                                       hecos_code: '100372',
                                                       register_category: '5050634c-2f57-4654-b1aa-ddae3089ac37',
                                                       publish_category: '11',
-                                                      incentive: { '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8'
+                                                      },
                                                       category: 'bc0a97ed-c09c-4688-9dce-b4ea888b6c51' },
           '048ef8d9-ed1c-4fb3-87dc-9d6f49cb641e' => { name: 'physics',
                                                       hecos_code: '100425',
                                                       register_category: 'cc6a43bf-78fd-4253-aa7d-0b301b8ce355',
                                                       publish_category: 'F3',
-                                                      incentive: { '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8'
+                                                      },
                                                       category: 'd059a9cd-9b70-49bf-8194-9a71081e6cb9' },
           '75fefeb8-9b74-4545-9982-dd56f92a3cfc' => { name: 'hair and beauty sciences',
                                                       hecos_code: '101373',
@@ -303,7 +392,11 @@ module DfE
                                                       hecos_code: '100150',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' },
+                                                      incentive: {
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           'c5f818be-5062-4049-994f-eb932196093e' => { name: 'historical linguistics',
                                                       hecos_code: '101410',
@@ -314,18 +407,31 @@ module DfE
                                                       hecos_code: '100300',
                                                       register_category: '057ec850-f246-4830-a4c5-d8e189d9aab4',
                                                       publish_category: 'Q8',
+                                                      incentive: {
+                                                        '2020-2021' => '95eebd6c-69c5-4883-b3ff-c703b559bc4b',
+                                                        '2021-2022' => '5a6aed38-449d-4ad3-9932-281c28ad328b'
+                                                      },
                                                       category: '95547d49-2a52-4ae0-b4ea-744e0da4bfa2' },
           '2bdeb307-42c2-405a-a8e1-4aa6b6b64721' => { name: 'food and beverage studies',
                                                       hecos_code: '101017',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' },
+                                                      incentive: {
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '97b39c3a-3c0a-4629-a44a-b04eed15a2c0' => { name: 'applied physics',
                                                       hecos_code: '101060',
                                                       register_category: 'cc6a43bf-78fd-4253-aa7d-0b301b8ce355',
                                                       publish_category: 'F3',
-                                                      incentive: { '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8'
+                                                      },
                                                       category: 'd059a9cd-9b70-49bf-8194-9a71081e6cb9' },
           '8aeea330-8a16-4874-ae3f-4d5fb212f69c' => { name: 'philosophy',
                                                       hecos_code: '100337',
@@ -336,6 +442,9 @@ module DfE
                                                       hecos_code: '100642',
                                                       register_category: '4a61215c-0fec-4d19-800b-3eb6eae95e63',
                                                       publish_category: 'W3',
+                                                      incentive: {
+                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874'
+                                                      },
                                                       category: 'cc203931-79bf-4d32-982a-ad56600ba141' },
           'efe5a82a-a125-461b-b158-f555c5a4aa36' => { name: 'UK government / Parliamentary studies',
                                                       hecos_code: '100610',
@@ -346,7 +455,11 @@ module DfE
                                                       hecos_code: '100209',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' },
+                                                      incentive: {
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '68534f24-6eb4-497f-b45b-a6d87703d8c3' => { name: 'sports management',
                                                       hecos_code: '100097',
@@ -357,7 +470,12 @@ module DfE
                                                       hecos_code: '101038',
                                                       register_category: 'c6e125b6-e6da-43bf-8d1b-6f8d6349057c',
                                                       publish_category: 'F1',
-                                                      incentive: { '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8'
+                                                      },
                                                       category: '167b889a-4cbb-47ff-a196-4103cb7ea43d' },
 
           ## MARKED AS 'TO BE REMOVED':
@@ -370,6 +488,9 @@ module DfE
                                                       hecos_code: '100078',
                                                       register_category: 'f95ee557-44de-469b-830c-854d3701d802',
                                                       publish_category: '08',
+                                                      incentive: {
+                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874'
+                                                      },
                                                       category: '139d6fa7-6044-423b-a8ac-2192956c357b' },
           '8508c395-b8fd-43c5-b9e7-6dc108c5f9ba' => { name: 'drama',
                                                       hecos_code: '100069',
@@ -379,31 +500,53 @@ module DfE
           '02444cbe-df64-4708-8bcc-cbe5930b01d6' => { name: 'modern languages',
                                                       hecos_code: '100329',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
                                                       publish_category: '24',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           '5521d902-6db8-4690-9199-c464e37cfd17' => { name: 'statistics',
                                                       hecos_code: '100406',
                                                       register_category: '499be4ee-3895-4c69-92f1-e95d5670a399',
                                                       publish_category: 'G1',
-                                                      incentive: { '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8'
+                                                      },
                                                       category: '71cbc6f2-9b24-4504-86f5-979e573de058' },
           '068006ec-27ae-4cd8-9b6f-17368736ea71' => { name: 'Arabic languages',
                                                       hecos_code: '101192',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
                                                       publish_category: '24', # Actually "Modern languages (other)"
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           'b8d53da8-94ee-4ba1-881b-bb70cd50a873' => { name: 'hospitality',
                                                       hecos_code: '100891',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT', # FIXME: Questionable
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' }, # FIXME: Questionable
+                                                      incentive: { # FIXME: Questionable, how much does hospitality count as food tech?
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           'd59319a5-6151-46d3-8e07-f0eee7af0eae' => { name: 'Latin language',
                                                       hecos_code: '101420',
                                                       register_category: '0893125c-ebe1-411c-a890-21bd59e11e09',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
                                                       publish_category: 'A0',
                                                       category: 'c6d6d59b-f6c5-4a2d-98a1-04f2e99539a9' },
           'b602f1e1-b4aa-4d1d-9565-6f9a26843336' => { name: 'psychology',
@@ -415,17 +558,30 @@ module DfE
                                                       hecos_code: '100302',
                                                       register_category: '3b42c830-7f8c-415d-922d-f93c2796a1a2',
                                                       publish_category: 'V1',
+                                                      incentive: {
+                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874'
+                                                      },
                                                       category: '73ade5bc-0e14-43d9-8a67-6931ba07ab57' },
           'a6b38333-2b66-422a-9a35-2b9089c51902' => { name: 'computer science',
                                                       hecos_code: '100366',
                                                       register_category: '5050634c-2f57-4654-b1aa-ddae3089ac37',
                                                       publish_category: '11',
-                                                      incentive: { '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
+                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8'
+                                                      },
                                                       category: 'bc0a97ed-c09c-4688-9dce-b4ea888b6c51' },
           'c45de961-34e4-45bb-a8ae-8bf83e1476c9' => { name: 'biology',
                                                       hecos_code: '100346',
                                                       register_category: 'd1dbc6f9-806a-45dc-93c3-ea7ab17aa7fb',
-                                                      incentive: { '2022-2023' => '260f30d6-186c-469b-9776-b8515daaf03f' },
+                                                      incentive: {
+                                                        '2020-2021' => '95eebd6c-69c5-4883-b3ff-c703b559bc4b',
+                                                        '2021-2022' => 'dca52a66-92a0-42af-934d-438ff496559e',
+                                                        '2022-2023' => '260f30d6-186c-469b-9776-b8515daaf03f',
+                                                        '2023-2024' => '71730a26-b80b-440f-96ac-8c5814daa2c5'
+                                                      },
                                                       publish_category: 'C1',
                                                       category: 'b51a9678-0a36-4361-983a-fc74f46c1b06' },
           'fc181440-ecc8-4a64-b31c-88af815adc8b' => { name: 'law',
@@ -440,19 +596,34 @@ module DfE
           'f67be4b9-369a-41b8-9f29-229747e55b0c' => { name: 'Russian languages',
                                                       hecos_code: '100330',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
                                                       publish_category: '21',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           '8697cb2b-64bf-43b2-8a03-3c19703d2b53' => { name: 'Spanish language',
                                                       hecos_code: '100332',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => '6c5a3cb6-e769-415f-8c08-b71c7a37be39'
+                                                      },
                                                       publish_category: '22',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           'd685073f-b730-48b9-bc20-accdd66b00b3' => { name: 'Welsh language',
                                                       hecos_code: '100333',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
+                                                      incentive: {
+                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
                                                       publish_category: '24', # Actually "Modern languages (other)"
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
           '431cff55-9ea6-4bcf-beba-ab5ed46d8629' => { name: 'social sciences',
@@ -474,40 +645,68 @@ module DfE
                                                       hecos_code: '100225',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' },
+                                                      incentive: {
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '598ca321-5086-4aa1-9851-7bb2957b3a22' => { name: 'classical Greek studies',
                                                       hecos_code: '101126',
                                                       register_category: '0893125c-ebe1-411c-a890-21bd59e11e09',
-                                                      incentive: { '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4' },
-                                                      publish_category: 'A1', # "Ancient Greek" in pubfind
+                                                      incentive: {
+                                                        # FIXME: Counted as a language rather than "classics", is this correct?
+                                                        '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
+                                                        '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
+                                                        '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b'
+                                                      },
+                                                      publish_category: 'A1', # FIXME: "Ancient Greek" in pubfind, is that valid? Is this not more classics?
                                                       category: 'c6d6d59b-f6c5-4a2d-98a1-04f2e99539a9' },
-
           '071a99ce-413d-4c79-8eec-4239da30c113' => { name: 'business studies',
                                                       hecos_code: '100079',
                                                       register_category: 'f95ee557-44de-469b-830c-854d3701d802',
                                                       publish_category: '08',
+                                                      incentive: {
+                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874'
+                                                      },
                                                       category: '139d6fa7-6044-423b-a8ac-2192956c357b' },
           '0627be0e-1f18-4629-89c8-c6bfc532eb14' => { name: 'English studies',
                                                       hecos_code: '100320',
                                                       register_category: '89ebd882-0e20-4e02-bf76-80427c061aed',
                                                       publish_category: 'Q3',
+                                                      incentive: {
+                                                        '2020-2021' => '6799f9a6-9962-4295-b0cd-96594eb9617a',
+                                                        '2023-2024' => 'e89ced70-7964-4ee5-b5c3-8e7d53b6fb97'
+                                                      },
                                                       category: '48721ee7-577b-4819-8f92-b35d48414443' },
           '7b6df513-64e8-4020-a681-9965aebe7346' => { name: 'textiles technology',
                                                       hecos_code: '100214',
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
-                                                      incentive: { '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3' },
+                                                      incentive: {
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d'
+                                                      },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '21cf685d-5f27-4a08-a597-2307afb5733d' => { name: 'graphic design',
                                                       hecos_code: '100061',
                                                       register_category: '6ea9457d-b8a2-4211-b58b-064fed680c99',
                                                       publish_category: 'W1',
+                                                      incentive: {
+                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874'
+                                                      },
                                                       category: '69b468df-f7ca-40cb-9410-ed5f4e5bd61b' },
           '05044321-4c35-45d5-bb37-42be71be6b80' => { name: 'applied biology',
                                                       hecos_code: '100343',
                                                       register_category: 'd1dbc6f9-806a-45dc-93c3-ea7ab17aa7fb',
                                                       publish_category: 'C1',
+                                                      incentive: {
+                                                        '2020-2021' => '95eebd6c-69c5-4883-b3ff-c703b559bc4b',
+                                                        '2021-2022' => 'dca52a66-92a0-42af-934d-438ff496559e',
+                                                        '2022-2023' => '260f30d6-186c-469b-9776-b8515daaf03f',
+                                                        '2023-2024' => '71730a26-b80b-440f-96ac-8c5814daa2c5'
+                                                      },
                                                       category: 'b51a9678-0a36-4361-983a-fc74f46c1b06' },
           '02b32b63-d178-4e63-9bbd-b6709109f4fc' => { name: 'health studies',
                                                       hecos_code: '100473',
@@ -518,7 +717,11 @@ module DfE
                                                       hecos_code: '100409',
                                                       register_category: '48be902f-9eb4-4f80-8d0b-206143bb7a55',
                                                       publish_category: 'F8',
-                                                      incentive: { '2022-2023' => '48881fdb-b38f-4f2d-baf3-f1337a9176e5' },
+                                                      incentive: {
+                                                        '2020-2021' => '7f35096c-e67d-4822-b1f8-1911ca65117b',
+                                                        '2022-2023' => '48881fdb-b38f-4f2d-baf3-f1337a9176e5',
+                                                        '2023-2024' => 'e1cf830d-00ef-4e6c-8fd9-48920932d167'
+                                                      },
                                                       category: '518be3b3-a0b3-45cb-9299-dfaeea0c4b7e' }
         },
         schema: SUBJECTS_SCHEMA,

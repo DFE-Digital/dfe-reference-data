@@ -6,13 +6,13 @@ RSpec.describe DfE::ReferenceData::ITT::SUBJECTS do
     let(:publish_categories) { DfE::ReferenceData::ITT::PUBLISH_CATEGORIES.all_as_hash }
     let(:register_categories) { DfE::ReferenceData::ITT::REGISTER_CATEGORIES.all_as_hash }
     let(:categories) { DfE::ReferenceData::ITT::CATEGORIES.all_as_hash }
-    let(:cycles) { Dfe::ReferenceData::ITT::CYCLES.all_as_hash }
+    let(:cycles) { DfE::ReferenceData::ITT::CYCLES.all_as_hash }
 
     it 'has a valid incentive' do
       expect(records).to be_all do |rec|
         name = rec.name
         problems_found = false
-        rec.incentives&.each_entry do |cycle_id, incentive_id|
+        rec.incentive&.each_entry do |cycle_id, incentive_id|
           unless cycles.key?(cycle_id)
             puts "Incentive ID mismatch in SUBJECTS[#{rec.id}] (#{name}): cycle ID #{incentive_id} not found in CYCLES"
             problems_found = true
@@ -22,6 +22,9 @@ RSpec.describe DfE::ReferenceData::ITT::SUBJECTS do
             puts "Incentive ID mismatch in SUBJECTS[#{rec.id}] (#{name}): incentive ID #{incentive_id} not found in INCENTIVES"
             problems_found = true
           end
+
+          # Uncomment this to get a handy reference to cross-check the validity of incentive mappings by eye
+          # puts "#{name}: #{cycle_id} => #{incentives[incentive_id].name}"
         end
 
         !problems_found

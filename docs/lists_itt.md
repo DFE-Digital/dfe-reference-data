@@ -12,7 +12,7 @@ Owner: None.
 
 Users: None.
 
-Source: https://github.com/DFE-Digital/register-trainee-teachers/blob/main/config/initializers/course_subjects.rb https://github.com/DFE-Digital/register-trainee-teachers/blob/main/app/lib/hesa/code_sets/course_subjects.rb https://github.com/DFE-Digital/register-trainee-teachers/blob/main/config/initializers/mappings/allocation_subject_to_specialism_mapping.rb
+Source: https://github.com/DFE-Digital/register-trainee-teachers/blob/main/config/initializers/course_subjects.rb for the main list, https://github.com/DFE-Digital/register-trainee-teachers/blob/main/app/lib/hesa/code_sets/course_subjects.rb for hecos_code, https://github.com/DFE-Digital/register-trainee-teachers/blob/main/config/initializers/mappings/allocation_subject_to_specialism_mapping.rb for register categories and https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual for the incentives. Other fields obtained by manually cross-referencing to other lists.
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
@@ -140,7 +140,7 @@ Owner: None.
 
 Users: None.
 
-Source: https://api.publish-teacher-training-courses.service.gov.uk/api/public/v1/subjects (see also https://api.publish-teacher-training-courses.service.gov.uk/docs/api-reference.html#schema-subjectattributes)
+Source: https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
