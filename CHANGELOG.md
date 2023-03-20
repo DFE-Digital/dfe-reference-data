@@ -1,6 +1,6 @@
 # Changelog
 
-## Next release
+## [v2.1.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.1.0) (2023-03-20)
 
 **Merged pull requests:**
 
