@@ -134,7 +134,7 @@ module DfE
         field_descriptions: {
           id: 'A unique identifier for the grade',
           name: 'The long name of this grade, eg "First-class honours"',
-          abbreviation: 'The short name of this grade, eg "2:2"',
+          short_name: 'The short name of this grade, eg "2:2"',
           suggestion_synonyms: 'A list of common alternative names that may be appropriate for this institution',
           match_synonyms: 'A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution.',
           group: 'Degree type, ie `main_postgrad`, `other` or `main_undergrad`',
