@@ -147,6 +147,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 |---|---|---|
 | `id` | UUID | A unique identifier. |
 | `name` | string | The long name of this grade, eg "First-class honours" |
+| `abbreviation` | string | A short name of this grade, eg "1" |
 | `suggestion_synonyms` | string array | A list of common alternative names that *may* be appropriate for this institution |
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution. |
 | `group` | enumerated symbol | The kind of degree this grade applies to. `main_postgrad`, `other` or `main_undergrad` |
