@@ -28,21 +28,21 @@ module DfE
           'e2fe18d4-8655-47cf-ab1a-8c3e0b0f078f' =>
           { hesa_code: '02',
             name: 'Upper second-class honours (2:1)',
-            short_name: 'Upper Second',
+            short_name: 'Upper second',
             suggestion_synonyms: [],
             match_synonyms: ['Upper second class honours', '2:1', '2.1'],
             group: :main_undergrad },
           '377a46ea-d6c6-4e87-9728-c1f0dd0ef109' =>
           { hesa_code: '03',
             name: 'Lower second-class honours (2:2)',
-            short_name: 'Lower Second',
+            short_name: 'Lower second',
             suggestion_synonyms: [],
             match_synonyms: ['Lower second class honours', '2:2', '2.2'],
             group: :main_undergrad },
           '7f08cd7c-96d2-4706-9148-32468a6d67f9' =>
           { hesa_code: '04',
             name: 'Undivided second-class honours',
-            short_name: 'Undivided Second',
+            short_name: 'Undivided second',
             suggestion_synonyms: [],
             match_synonyms: ['Undivided second class honours'],
             group: :other },
@@ -134,7 +134,7 @@ module DfE
         field_descriptions: {
           id: 'A unique identifier for the grade',
           name: 'The long name of this grade, eg "First-class honours"',
-          short_name: 'The short name of this grade, eg "2:2"',
+          short_name: 'The short name of this grade, eg "First"',
           suggestion_synonyms: 'A list of common alternative names that may be appropriate for this institution',
           match_synonyms: 'A list of common alternative names that are equivalent to this institution. An answer matching a match synonym can be safely matched to this institution.',
           group: 'Degree type, ie `main_postgrad`, `other` or `main_undergrad`',
