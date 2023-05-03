@@ -54,7 +54,6 @@ Current versions:
 | Version | Status     | git branch   |
 |---------|------------|--------------|
 | 2.*     | Current    | `main`       |
-| 1.*     | Deprecated | `v1-release` |
 
 ## Submitting changes
 
