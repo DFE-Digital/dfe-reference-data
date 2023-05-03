@@ -1,6 +1,6 @@
 # Changelog
 
-## Next release
+## [v2.2.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.2.0) (2023-05-03)
 
 - Added short names to degree grades [\#78](https://github.com/DFE-Digital/dfe-reference-data/pull/78) ([alaric-dfe](https://github.com/alaric-dfe))
 
