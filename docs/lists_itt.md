@@ -24,7 +24,7 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `category`          | optional UUID            | The ID of the category that this subject is a specialism of (see `CATEGORIES` below)                                                               |
 | `register_category` | optional UUID            | The ID of the category that this subject is a specialism of, as per the current Register list (see `REGISTER_CATEGORIES` below)                    |
 | `publish_category`  | optional string ID           | The ID of the category that this subject is a specialism of, as per the current Publish list (see `PUBLISH_CATEGORIES` below)                                                               |
-| `incentive`         | optional map from string cycle ID to string incentive ID            | The ID of the incentive for this subject (see `INCENTIVES` below) in the given ITT cycle (see CYCLES below)                                                                                 |
+| `incentive`         | optional map from string academic year ID to string incentive ID            | The ID of the incentive for this subject (see `INCENTIVES` below) for courses starting in the given academic year                                                                                |
 
 ### `DfE::ReferenceData::ITT::CATEGORIES`
 

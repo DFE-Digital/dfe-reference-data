@@ -8,7 +8,7 @@ module DfE
         register_category: { kind: :optional, schema: :string },
         publish_category: { kind: :optional, schema: :string },
         category: { kind: :optional, schema: :string },
-        incentive: { kind: :map, key: :string, value: :string } # Map from DfE::ReferenceData::ITT::CYCLES ID to DfE::ReferenceData::ITT::INCENTIVES ID
+        incentive: { kind: :map, key: :string, value: :string } # Map from academic year ID to DfE::ReferenceData::ITT::INCENTIVES ID
       }.freeze
 
       SUBJECTS_FIELD_DESCRIPTIONS = {
@@ -18,7 +18,7 @@ module DfE
         category: 'The ID of the category that this subject is a specialism of',
         register_category: 'The ID of the category that this subject is a specialism of, as per the current Register categories list',
         publish_category: 'The ID of the category that this subject is a specialism of, as per the current Publish categories list',
-        incentive: 'The ID of the incentive for this subject in the given ITT cycle'
+        incentive: 'A map from academic years to the IDs of the incentive for this subject, for courses starting in the academic year'
       }.freeze
 
       PUBLISH_CATEGORIES_SCHEMA = {
