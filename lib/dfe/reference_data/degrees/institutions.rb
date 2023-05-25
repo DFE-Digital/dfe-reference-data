@@ -1408,7 +1408,8 @@ module DfE
              'London Institute of Banking & Finance'],
             hesa_itt_code: '0217',
             dttp_id: 'fe3e182c-1425-ec11-b6e6-000d3adf095a',
-            ukprn: '10008289' },
+            ukprn: '10008289',
+            comment: 'Given degree awarding powers in 2023' },
           '183f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The University of Law',
             suggestion_synonyms: [],
@@ -2193,7 +2194,7 @@ module DfE
           '6d3e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'LAMDA',
             suggestion_synonyms: [],
-            match_synonyms: ['Lamda Limited'],
+            match_synonyms: ['Lamda Limited', 'London Academy of Music and Dramatic Art'],
             hesa_itt_code: '0401',
             dttp_id: '6d3e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10003758',
