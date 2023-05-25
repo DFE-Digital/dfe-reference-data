@@ -35,6 +35,7 @@ GEM
       async
     async-pool (0.3.10)
       async (>= 1.25)
+    awesome_print (1.9.2)
     concurrent-ruby (1.1.10)
     console (1.15.3)
       fiber-local
@@ -169,6 +170,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  awesome_print
   dfe-reference-data!
   gem-release
   github_changelog_generator
