@@ -1466,13 +1466,12 @@ module DfE
             dttp_id: '753e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10003958' },
           '0b3f182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'The National Film and Television School',
-            suggestion_synonyms: [],
-            match_synonyms: [],
+          { name: 'National Film and Television School',
+            suggestion_synonyms: ['NFTS'],
+            match_synonyms: ['The National Film and Television School'],
             hesa_itt_code: '0229',
             dttp_id: '0b3f182c-1425-ec11-b6e6-000d3adf095a',
-            ukprn: '10004511',
-            has_never_awarded_degrees: true },
+            ukprn: '10004511' },
           'b53e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Plymouth College of Art',
             suggestion_synonyms: [],
