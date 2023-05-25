@@ -12,7 +12,12 @@ require 'rubocop/rake_task'
 
 RuboCop::RakeTask.new
 
-task default: %i[spec rubocop]
+task default: %i[rubocop install spec]
+
+desc 'Generate lib/dfe/reference_data/cah.rb from downloaded CSVs'
+task :import_cah_mappings do
+  sh 'bin/import_cah_mappings'
+end
 
 desc 'Prepare a new version for release, version can be major, minor, patch or x.y.z (as per gem-release gem)'
 task :prepare_release, %i[version] do |_, args|
