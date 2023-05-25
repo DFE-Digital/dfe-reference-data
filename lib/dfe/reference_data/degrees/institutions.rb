@@ -1471,7 +1471,8 @@ module DfE
             match_synonyms: ['The National Film and Television School'],
             hesa_itt_code: '0229',
             dttp_id: '0b3f182c-1425-ec11-b6e6-000d3adf095a',
-            ukprn: '10004511' },
+            ukprn: '10004511',
+            comment: 'Given degree awarding powers in 2023' },
           'b53e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Plymouth College of Art',
             suggestion_synonyms: [],
