@@ -25,7 +25,7 @@ begin
         l3 = row['CAH3_Code']
         l3_label = row['CAH3_Label']
 
-        cah_l3[l3] = { name: l3_label, l2: l2 }
+        cah_l3[l3] = { name: l3_label, l1: l1, l2: l2 }
 
         if cah_l2.key?(l2)
           cah_l2[l2][:l3_children].add(l3)
@@ -56,21 +56,23 @@ end
 
 ## Fold sets down to lists
 
-cah_l1.each do |_key, value|
-  value[:l2_children] = value[:l2_childen].to_a
+cah_l1.transform_values! do |value|
+  value[:l2_children] = value[:l2_children].to_a
+  value
 end
 
-cah_l2.each do |_key, value|
-  value[:l3_children] = value[:l3_childen].to_a
+cah_l2.transform_values! do |value|
+  value[:l3_children] = value[:l3_children].to_a
+  value
 end
 
 ## Generate outputs
 
 def output_list(file, name, contents, **meta)
   file.write("    #{name} = DfE::ReferenceData::HardcodedReferenceList.new(\n")
-  file.write("      #{contents.ai(plain: true)},\n")
+  file.write("      #{contents.ai(plain: true, index: false)},\n")
   meta.each do |key, value|
-    file.write("      #{key}: #{value.ai(plain: true)},\n")
+    file.write("      #{key}: #{value.ai(plain: true, index: false)},\n")
   end
   file.write("    )\n")
 end
@@ -121,6 +123,7 @@ File.open('lib/dfe/reference_data/cah.rb', 'w') do |file|
   output_list(file, 'CAH_CATEGORIES_L3', cah_l3,
               schema: {
                 id: :string,
+                l1: :string,
                 l2: :string,
                 name: :string
               },
@@ -128,6 +131,7 @@ File.open('lib/dfe/reference_data/cah.rb', 'w') do |file|
               list_docs_url: 'FIXME',
               field_descriptions: {
                 id: 'A unique identifier',
+                l1: 'The ID of this category\'s level 1 grandparent',
                 l2: 'The ID of this category\'s level 2 parent',
                 name: 'The name of the level 3 category'
               })

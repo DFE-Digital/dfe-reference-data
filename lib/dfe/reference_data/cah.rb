@@ -11,91 +11,149 @@ module DfE
         {
           'CAH01' => {
             name: 'medicine and dentistry',
-            l2_children: []
+            l2_children: [
+              'CAH01-01'
+            ]
           },
           'CAH02' => {
             name: 'subjects allied to medicine',
-            l2_children: []
+            l2_children: [
+              'CAH02-02',
+              'CAH02-04',
+              'CAH02-05',
+              'CAH02-06'
+            ]
           },
           'CAH03' => {
             name: 'biological and sport sciences',
-            l2_children: []
+            l2_children: [
+              'CAH03-01',
+              'CAH03-02'
+            ]
           },
           'CAH04' => {
             name: 'psychology',
-            l2_children: []
+            l2_children: [
+              'CAH04-01'
+            ]
           },
           'CAH05' => {
             name: 'veterinary sciences',
-            l2_children: []
+            l2_children: [
+              'CAH05-01'
+            ]
           },
           'CAH06' => {
             name: 'agriculture, food and related studies',
-            l2_children: []
+            l2_children: [
+              'CAH06-01'
+            ]
           },
           'CAH07' => {
             name: 'physical sciences',
-            l2_children: []
+            l2_children: [
+              'CAH07-01',
+              'CAH07-02',
+              'CAH07-04'
+            ]
           },
           'CAH09' => {
             name: 'mathematical sciences',
-            l2_children: []
+            l2_children: [
+              'CAH09-01'
+            ]
           },
           'CAH10' => {
             name: 'engineering and technology',
-            l2_children: []
+            l2_children: [
+              'CAH10-01',
+              'CAH10-03'
+            ]
           },
           'CAH11' => {
             name: 'computing',
-            l2_children: []
+            l2_children: [
+              'CAH11-01'
+            ]
           },
           'CAH13' => {
             name: 'architecture, building and planning',
-            l2_children: []
+            l2_children: [
+              'CAH13-01'
+            ]
           },
           'CAH15' => {
             name: 'social sciences',
-            l2_children: []
+            l2_children: [
+              'CAH15-01',
+              'CAH15-02',
+              'CAH15-03',
+              'CAH15-04'
+            ]
           },
           'CAH16' => {
             name: 'law',
-            l2_children: []
+            l2_children: [
+              'CAH16-01'
+            ]
           },
           'CAH17' => {
             name: 'business and management',
-            l2_children: []
+            l2_children: [
+              'CAH17-01'
+            ]
           },
           'CAH19' => {
             name: 'language and area studies',
-            l2_children: []
+            l2_children: [
+              'CAH19-01',
+              'CAH19-02',
+              'CAH19-04'
+            ]
           },
           'CAH20' => {
             name: 'historical, philosophical and religious studies',
-            l2_children: []
+            l2_children: [
+              'CAH20-01',
+              'CAH20-02'
+            ]
           },
           'CAH22' => {
             name: 'education and teaching',
-            l2_children: []
+            l2_children: [
+              'CAH22-01'
+            ]
           },
           'CAH23' => {
             name: 'combined and general studies',
-            l2_children: []
+            l2_children: [
+              'CAH23-01'
+            ]
           },
           'CAH24' => {
             name: 'media, journalism and communications',
-            l2_children: []
+            l2_children: [
+              'CAH24-01'
+            ]
           },
           'CAH25' => {
             name: 'design, and creative and performing arts',
-            l2_children: []
+            l2_children: [
+              'CAH25-01',
+              'CAH25-02'
+            ]
           },
           'CAH26' => {
             name: 'geography, earth and environmental studies',
-            l2_children: []
+            l2_children: [
+              'CAH26-01'
+            ]
           },
           'CAHZ5' => {
             name: 'Not applicable',
-            l2_children: []
+            l2_children: [
+              'CAHZ5'
+            ]
           }
         },
         schema: {
@@ -119,182 +177,385 @@ module DfE
           'CAH01-01' => {
             name: 'medicine and dentistry',
             l1: 'CAH01',
-            l3_children: []
+            l3_children: [
+              'CAH01-01-01',
+              'CAH01-01-02',
+              'CAH01-01-03',
+              'CAH01-01-04'
+            ]
           },
           'CAH02-02' => {
             name: 'pharmacology, toxicology and pharmacy',
             l1: 'CAH02',
-            l3_children: []
+            l3_children: [
+              'CAH02-02-01',
+              'CAH02-02-02',
+              'CAH02-02-03'
+            ]
           },
           'CAH02-04' => {
             name: 'nursing and midwifery',
             l1: 'CAH02',
-            l3_children: []
+            l3_children: [
+              'CAH02-04-01',
+              'CAH02-04-02',
+              'CAH02-04-03',
+              'CAH02-04-04',
+              'CAH02-04-05',
+              'CAH02-04-06',
+              'CAH02-04-07',
+              'CAH02-04-08',
+              'CAH02-04-09'
+            ]
           },
           'CAH02-05' => {
             name: 'medical sciences',
             l1: 'CAH02',
-            l3_children: []
+            l3_children: [
+              'CAH02-05-01',
+              'CAH02-05-02',
+              'CAH02-05-03',
+              'CAH02-05-04'
+            ]
           },
           'CAH02-06' => {
             name: 'allied health',
             l1: 'CAH02',
-            l3_children: []
+            l3_children: [
+              'CAH02-06-01',
+              'CAH02-06-02',
+              'CAH02-06-03',
+              'CAH02-06-04',
+              'CAH02-06-05',
+              'CAH02-06-06',
+              'CAH02-06-07'
+            ]
           },
           'CAH03-01' => {
             name: 'biosciences',
             l1: 'CAH03',
-            l3_children: []
+            l3_children: [
+              'CAH03-01-01',
+              'CAH03-01-02',
+              'CAH03-01-03',
+              'CAH03-01-04',
+              'CAH03-01-05',
+              'CAH03-01-06',
+              'CAH03-01-07',
+              'CAH03-01-08',
+              'CAH03-01-09',
+              'CAH03-01-10'
+            ]
           },
           'CAH03-02' => {
             name: 'sport and exercise sciences',
             l1: 'CAH03',
-            l3_children: []
+            l3_children: [
+              'CAH03-02-01'
+            ]
           },
           'CAH04-01' => {
             name: 'psychology',
             l1: 'CAH04',
-            l3_children: []
+            l3_children: [
+              'CAH04-01-01',
+              'CAH04-01-02',
+              'CAH04-01-03',
+              'CAH04-01-04',
+              'CAH04-01-05'
+            ]
           },
           'CAH05-01' => {
             name: 'veterinary sciences',
             l1: 'CAH05',
-            l3_children: []
+            l3_children: [
+              'CAH05-01-01',
+              'CAH05-01-02'
+            ]
           },
           'CAH06-01' => {
             name: 'agriculture, food and related studies',
             l1: 'CAH06',
-            l3_children: []
+            l3_children: [
+              'CAH06-01-01',
+              'CAH06-01-02',
+              'CAH06-01-03',
+              'CAH06-01-04',
+              'CAH06-01-05',
+              'CAH06-01-06',
+              'CAH06-01-07',
+              'CAH06-01-08'
+            ]
           },
           'CAH07-01' => {
             name: 'physics and astronomy',
             l1: 'CAH07',
-            l3_children: []
+            l3_children: [
+              'CAH07-01-01',
+              'CAH07-01-02'
+            ]
           },
           'CAH07-02' => {
             name: 'chemistry',
             l1: 'CAH07',
-            l3_children: []
+            l3_children: [
+              'CAH07-02-01'
+            ]
           },
           'CAH07-04' => {
             name: 'general, applied and forensic sciences',
             l1: 'CAH07',
-            l3_children: []
+            l3_children: [
+              'CAH07-04-01',
+              'CAH07-04-02',
+              'CAH07-04-03',
+              'CAH07-04-04'
+            ]
           },
           'CAH09-01' => {
             name: 'mathematical sciences',
             l1: 'CAH09',
-            l3_children: []
+            l3_children: [
+              'CAH09-01-01',
+              'CAH09-01-02',
+              'CAH09-01-03'
+            ]
           },
           'CAH10-01' => {
             name: 'engineering',
             l1: 'CAH10',
-            l3_children: []
+            l3_children: [
+              'CAH10-01-01',
+              'CAH10-01-02',
+              'CAH10-01-03',
+              'CAH10-01-04',
+              'CAH10-01-05',
+              'CAH10-01-06',
+              'CAH10-01-07',
+              'CAH10-01-08',
+              'CAH10-01-09',
+              'CAH10-01-10'
+            ]
           },
           'CAH10-03' => {
             name: 'materials and technology',
             l1: 'CAH10',
-            l3_children: []
+            l3_children: [
+              'CAH10-03-01',
+              'CAH10-03-02',
+              'CAH10-03-03',
+              'CAH10-03-04',
+              'CAH10-03-05',
+              'CAH10-03-06',
+              'CAH10-03-07'
+            ]
           },
           'CAH11-01' => {
             name: 'computing',
             l1: 'CAH11',
-            l3_children: []
+            l3_children: [
+              'CAH11-01-01',
+              'CAH11-01-02',
+              'CAH11-01-03',
+              'CAH11-01-04',
+              'CAH11-01-05',
+              'CAH11-01-06',
+              'CAH11-01-07',
+              'CAH11-01-08'
+            ]
           },
           'CAH13-01' => {
             name: 'architecture, building and planning',
             l1: 'CAH13',
-            l3_children: []
+            l3_children: [
+              'CAH13-01-01',
+              'CAH13-01-02',
+              'CAH13-01-03',
+              'CAH13-01-04'
+            ]
           },
           'CAH15-01' => {
             name: 'sociology, social policy and anthropology',
             l1: 'CAH15',
-            l3_children: []
+            l3_children: [
+              'CAH15-01-01',
+              'CAH15-01-02',
+              'CAH15-01-03',
+              'CAH15-01-04',
+              'CAH15-01-05',
+              'CAH15-01-06'
+            ]
           },
           'CAH15-02' => {
             name: 'economics',
             l1: 'CAH15',
-            l3_children: []
+            l3_children: [
+              'CAH15-02-01'
+            ]
           },
           'CAH15-03' => {
             name: 'politics',
             l1: 'CAH15',
-            l3_children: []
+            l3_children: [
+              'CAH15-03-01'
+            ]
           },
           'CAH15-04' => {
             name: 'health and social care',
             l1: 'CAH15',
-            l3_children: []
+            l3_children: [
+              'CAH15-04-01',
+              'CAH15-04-02',
+              'CAH15-04-03'
+            ]
           },
           'CAH16-01' => {
             name: 'law',
             l1: 'CAH16',
-            l3_children: []
+            l3_children: [
+              'CAH16-01-01'
+            ]
           },
           'CAH17-01' => {
             name: 'business and management',
             l1: 'CAH17',
-            l3_children: []
+            l3_children: [
+              'CAH17-01-01',
+              'CAH17-01-02',
+              'CAH17-01-03',
+              'CAH17-01-04',
+              'CAH17-01-05',
+              'CAH17-01-06',
+              'CAH17-01-07',
+              'CAH17-01-08',
+              'CAH17-01-09'
+            ]
           },
           'CAH19-01' => {
             name: 'English studies',
             l1: 'CAH19',
-            l3_children: []
+            l3_children: [
+              'CAH19-01-01',
+              'CAH19-01-02',
+              'CAH19-01-03',
+              'CAH19-01-04',
+              'CAH19-01-05',
+              'CAH19-01-06',
+              'CAH19-01-07'
+            ]
           },
           'CAH19-02' => {
             name: 'Celtic studies',
             l1: 'CAH19',
-            l3_children: []
+            l3_children: [
+              'CAH19-02-01',
+              'CAH19-02-02',
+              'CAH19-02-03',
+              'CAH19-02-04'
+            ]
           },
           'CAH19-04' => {
             name: 'languages and area studies',
             l1: 'CAH19',
-            l3_children: []
+            l3_children: [
+              'CAH19-04-01',
+              'CAH19-04-02',
+              'CAH19-04-03',
+              'CAH19-04-04',
+              'CAH19-04-05',
+              'CAH19-04-06',
+              'CAH19-04-07',
+              'CAH19-04-08',
+              'CAH19-04-09'
+            ]
           },
           'CAH20-01' => {
             name: 'history and archaeology',
             l1: 'CAH20',
-            l3_children: []
+            l3_children: [
+              'CAH20-01-01',
+              'CAH20-01-02',
+              'CAH20-01-03',
+              'CAH20-01-04',
+              'CAH20-01-05'
+            ]
           },
           'CAH20-02' => {
             name: 'philosophy and religious studies',
             l1: 'CAH20',
-            l3_children: []
+            l3_children: [
+              'CAH20-02-01',
+              'CAH20-02-02'
+            ]
           },
           'CAH22-01' => {
             name: 'education and teaching',
             l1: 'CAH22',
-            l3_children: []
+            l3_children: [
+              'CAH22-01-01',
+              'CAH22-01-02'
+            ]
           },
           'CAH23-01' => {
             name: 'combined and general studies',
             l1: 'CAH23',
-            l3_children: []
+            l3_children: [
+              'CAH23-01-01',
+              'CAH23-01-02',
+              'CAH23-01-03',
+              'CAH23-01-04'
+            ]
           },
           'CAH24-01' => {
             name: 'media, journalism and communications',
             l1: 'CAH24',
-            l3_children: []
+            l3_children: [
+              'CAH24-01-01',
+              'CAH24-01-02',
+              'CAH24-01-03',
+              'CAH24-01-04',
+              'CAH24-01-05'
+            ]
           },
           'CAH25-01' => {
             name: 'creative arts and design',
             l1: 'CAH25',
-            l3_children: []
+            l3_children: [
+              'CAH25-01-01',
+              'CAH25-01-02',
+              'CAH25-01-03',
+              'CAH25-01-04',
+              'CAH25-01-05'
+            ]
           },
           'CAH25-02' => {
             name: 'performing arts',
             l1: 'CAH25',
-            l3_children: []
+            l3_children: [
+              'CAH25-02-01',
+              'CAH25-02-02',
+              'CAH25-02-03',
+              'CAH25-02-04'
+            ]
           },
           'CAH26-01' => {
             name: 'geography, earth and environmental studies',
             l1: 'CAH26',
-            l3_children: []
+            l3_children: [
+              'CAH26-01-01',
+              'CAH26-01-02',
+              'CAH26-01-03',
+              'CAH26-01-04',
+              'CAH26-01-05',
+              'CAH26-01-06'
+            ]
           },
           'CAHZ5' => {
             name: 'Not applicable',
             l1: 'CAHZ5',
-            l3_children: []
+            l3_children: [
+              'CAHZ5'
+            ]
           }
         },
         schema: {
@@ -319,675 +580,843 @@ module DfE
         {
           'CAH01-01-01' => {
             name: 'medical sciences (non-specific)',
+            l1: 'CAH01',
             l2: 'CAH01-01'
           },
           'CAH01-01-02' => {
             name: 'medicine (non-specific)',
+            l1: 'CAH01',
             l2: 'CAH01-01'
           },
           'CAH01-01-03' => {
             name: 'medicine by specialism',
+            l1: 'CAH01',
             l2: 'CAH01-01'
           },
           'CAH01-01-04' => {
             name: 'dentistry',
+            l1: 'CAH01',
             l2: 'CAH01-01'
           },
           'CAH02-02-01' => {
             name: 'pharmacology',
+            l1: 'CAH02',
             l2: 'CAH02-02'
           },
           'CAH02-02-02' => {
             name: 'toxicology',
+            l1: 'CAH02',
             l2: 'CAH02-02'
           },
           'CAH02-02-03' => {
             name: 'pharmacy',
+            l1: 'CAH02',
             l2: 'CAH02-02'
           },
           'CAH02-04-01' => {
             name: 'nursing (non-specific)',
+            l1: 'CAH02',
             l2: 'CAH02-04'
           },
           'CAH02-04-02' => {
             name: 'adult nursing',
+            l1: 'CAH02',
             l2: 'CAH02-04'
           },
           'CAH02-04-03' => {
             name: 'community nursing',
+            l1: 'CAH02',
             l2: 'CAH02-04'
           },
           'CAH02-04-04' => {
             name: 'midwifery',
+            l1: 'CAH02',
             l2: 'CAH02-04'
           },
           'CAH02-04-05' => {
             name: "children's nursing",
+            l1: 'CAH02',
             l2: 'CAH02-04'
           },
           'CAH02-04-06' => {
             name: 'dental nursing',
+            l1: 'CAH02',
             l2: 'CAH02-04'
           },
           'CAH02-04-07' => {
             name: 'mental health nursing',
+            l1: 'CAH02',
             l2: 'CAH02-04'
           },
           'CAH02-04-08' => {
             name: 'learning disabilities nursing',
+            l1: 'CAH02',
             l2: 'CAH02-04'
           },
           'CAH02-04-09' => {
             name: 'others in nursing',
+            l1: 'CAH02',
             l2: 'CAH02-04'
           },
           'CAH02-05-01' => {
             name: 'medical technology',
+            l1: 'CAH02',
             l2: 'CAH02-05'
           },
           'CAH02-05-02' => {
             name: 'healthcare science (non-specific)',
+            l1: 'CAH02',
             l2: 'CAH02-05'
           },
           'CAH02-05-03' => {
             name: 'biomedical sciences (non-specific)',
+            l1: 'CAH02',
             l2: 'CAH02-05'
           },
           'CAH02-05-04' => {
             name: 'anatomy, physiology and pathology',
+            l1: 'CAH02',
             l2: 'CAH02-05'
           },
           'CAH02-06-01' => {
             name: 'health sciences (non-specific)',
+            l1: 'CAH02',
             l2: 'CAH02-06'
           },
           'CAH02-06-02' => {
             name: 'nutrition and dietetics',
+            l1: 'CAH02',
             l2: 'CAH02-06'
           },
           'CAH02-06-03' => {
             name: 'ophthalmics',
+            l1: 'CAH02',
             l2: 'CAH02-06'
           },
           'CAH02-06-04' => {
             name: 'environmental and public health',
+            l1: 'CAH02',
             l2: 'CAH02-06'
           },
           'CAH02-06-05' => {
             name: 'physiotherapy',
+            l1: 'CAH02',
             l2: 'CAH02-06'
           },
           'CAH02-06-06' => {
             name: 'complementary and alternative medicine',
+            l1: 'CAH02',
             l2: 'CAH02-06'
           },
           'CAH02-06-07' => {
             name: 'counselling, psychotherapy and occupational therapy',
+            l1: 'CAH02',
             l2: 'CAH02-06'
           },
           'CAH03-01-01' => {
             name: 'biosciences (non-specific)',
+            l1: 'CAH03',
             l2: 'CAH03-01'
           },
           'CAH03-01-02' => {
             name: 'biology (non-specific)',
+            l1: 'CAH03',
             l2: 'CAH03-01'
           },
           'CAH03-01-03' => {
             name: 'ecology and environmental biology',
+            l1: 'CAH03',
             l2: 'CAH03-01'
           },
           'CAH03-01-04' => {
             name: 'microbiology and cell science',
+            l1: 'CAH03',
             l2: 'CAH03-01'
           },
           'CAH03-01-05' => {
             name: 'plant sciences',
+            l1: 'CAH03',
             l2: 'CAH03-01'
           },
           'CAH03-01-06' => {
             name: 'zoology',
+            l1: 'CAH03',
             l2: 'CAH03-01'
           },
           'CAH03-01-07' => {
             name: 'genetics',
+            l1: 'CAH03',
             l2: 'CAH03-01'
           },
           'CAH03-01-08' => {
             name: 'molecular biology, biophysics and biochemistry',
+            l1: 'CAH03',
             l2: 'CAH03-01'
           },
           'CAH03-01-09' => {
             name: 'hair and beauty sciences',
+            l1: 'CAH03',
             l2: 'CAH03-01'
           },
           'CAH03-01-10' => {
             name: 'others in biosciences',
+            l1: 'CAH03',
             l2: 'CAH03-01'
           },
           'CAH03-02-01' => {
             name: 'sport and exercise sciences',
+            l1: 'CAH03',
             l2: 'CAH03-02'
           },
           'CAH04-01-01' => {
             name: 'psychology (non-specific)',
+            l1: 'CAH04',
             l2: 'CAH04-01'
           },
           'CAH04-01-02' => {
             name: 'applied psychology',
+            l1: 'CAH04',
             l2: 'CAH04-01'
           },
           'CAH04-01-03' => {
             name: 'developmental psychology',
+            l1: 'CAH04',
             l2: 'CAH04-01'
           },
           'CAH04-01-04' => {
             name: 'psychology and health',
+            l1: 'CAH04',
             l2: 'CAH04-01'
           },
           'CAH04-01-05' => {
             name: 'others in psychology',
+            l1: 'CAH04',
             l2: 'CAH04-01'
           },
           'CAH05-01-01' => {
             name: 'veterinary medicine and dentistry',
+            l1: 'CAH05',
             l2: 'CAH05-01'
           },
           'CAH05-01-02' => {
             name: 'others in veterinary sciences',
+            l1: 'CAH05',
             l2: 'CAH05-01'
           },
           'CAH06-01-01' => {
             name: 'animal science',
+            l1: 'CAH06',
             l2: 'CAH06-01'
           },
           'CAH06-01-02' => {
             name: 'agricultural sciences',
+            l1: 'CAH06',
             l2: 'CAH06-01'
           },
           'CAH06-01-03' => {
             name: 'agriculture',
+            l1: 'CAH06',
             l2: 'CAH06-01'
           },
           'CAH06-01-04' => {
             name: 'rural estate management',
+            l1: 'CAH06',
             l2: 'CAH06-01'
           },
           'CAH06-01-05' => {
             name: 'forestry and arboriculture',
+            l1: 'CAH06',
             l2: 'CAH06-01'
           },
           'CAH06-01-06' => {
             name: 'food and beverage studies (non-specific)',
+            l1: 'CAH06',
             l2: 'CAH06-01'
           },
           'CAH06-01-07' => {
             name: 'food sciences',
+            l1: 'CAH06',
             l2: 'CAH06-01'
           },
           'CAH06-01-08' => {
             name: 'food and beverage production',
+            l1: 'CAH06',
             l2: 'CAH06-01'
           },
           'CAH07-01-01' => {
             name: 'physics',
+            l1: 'CAH07',
             l2: 'CAH07-01'
           },
           'CAH07-01-02' => {
             name: 'astronomy',
+            l1: 'CAH07',
             l2: 'CAH07-01'
           },
           'CAH07-02-01' => {
             name: 'chemistry',
+            l1: 'CAH07',
             l2: 'CAH07-02'
           },
           'CAH07-04-01' => {
             name: 'physical sciences (non-specific)',
+            l1: 'CAH07',
             l2: 'CAH07-04'
           },
           'CAH07-04-02' => {
             name: 'forensic and archaeological sciences',
+            l1: 'CAH07',
             l2: 'CAH07-04'
           },
           'CAH07-04-03' => {
             name: 'sciences (non-specific)',
+            l1: 'CAH07',
             l2: 'CAH07-04'
           },
           'CAH07-04-04' => {
             name: 'natural sciences (non-specific)',
+            l1: 'CAH07',
             l2: 'CAH07-04'
           },
           'CAH09-01-01' => {
             name: 'mathematics',
+            l1: 'CAH09',
             l2: 'CAH09-01'
           },
           'CAH09-01-02' => {
             name: 'operational research',
+            l1: 'CAH09',
             l2: 'CAH09-01'
           },
           'CAH09-01-03' => {
             name: 'statistics',
+            l1: 'CAH09',
             l2: 'CAH09-01'
           },
           'CAH10-01-01' => {
             name: 'engineering (non-specific)',
+            l1: 'CAH10',
             l2: 'CAH10-01'
           },
           'CAH10-01-02' => {
             name: 'mechanical engineering',
+            l1: 'CAH10',
             l2: 'CAH10-01'
           },
           'CAH10-01-03' => {
             name: 'production and manufacturing engineering',
+            l1: 'CAH10',
             l2: 'CAH10-01'
           },
           'CAH10-01-04' => {
             name: 'aeronautical and aerospace engineering',
+            l1: 'CAH10',
             l2: 'CAH10-01'
           },
           'CAH10-01-05' => {
             name: 'naval architecture',
+            l1: 'CAH10',
             l2: 'CAH10-01'
           },
           'CAH10-01-06' => {
             name: 'bioengineering, medical and biomedical engineering',
+            l1: 'CAH10',
             l2: 'CAH10-01'
           },
           'CAH10-01-07' => {
             name: 'civil engineering',
+            l1: 'CAH10',
             l2: 'CAH10-01'
           },
           'CAH10-01-08' => {
             name: 'electrical and electronic engineering',
+            l1: 'CAH10',
             l2: 'CAH10-01'
           },
           'CAH10-01-09' => {
             name: 'chemical, process and energy engineering',
+            l1: 'CAH10',
             l2: 'CAH10-01'
           },
           'CAH10-01-10' => {
             name: 'others in engineering',
+            l1: 'CAH10',
             l2: 'CAH10-01'
           },
           'CAH10-03-01' => {
             name: 'minerals technology',
+            l1: 'CAH10',
             l2: 'CAH10-03'
           },
           'CAH10-03-02' => {
             name: 'materials technology',
+            l1: 'CAH10',
             l2: 'CAH10-03'
           },
           'CAH10-03-03' => {
             name: 'polymers and textiles',
+            l1: 'CAH10',
             l2: 'CAH10-03'
           },
           'CAH10-03-04' => {
             name: 'maritime technology',
+            l1: 'CAH10',
             l2: 'CAH10-03'
           },
           'CAH10-03-05' => {
             name: 'biotechnology',
+            l1: 'CAH10',
             l2: 'CAH10-03'
           },
           'CAH10-03-06' => {
             name: 'others in technology',
+            l1: 'CAH10',
             l2: 'CAH10-03'
           },
           'CAH10-03-07' => {
             name: 'materials science',
+            l1: 'CAH10',
             l2: 'CAH10-03'
           },
           'CAH11-01-01' => {
             name: 'computer science',
+            l1: 'CAH11',
             l2: 'CAH11-01'
           },
           'CAH11-01-02' => {
             name: 'information technology',
+            l1: 'CAH11',
             l2: 'CAH11-01'
           },
           'CAH11-01-03' => {
             name: 'information systems',
+            l1: 'CAH11',
             l2: 'CAH11-01'
           },
           'CAH11-01-04' => {
             name: 'software engineering',
+            l1: 'CAH11',
             l2: 'CAH11-01'
           },
           'CAH11-01-05' => {
             name: 'artificial intelligence',
+            l1: 'CAH11',
             l2: 'CAH11-01'
           },
           'CAH11-01-06' => {
             name: 'computer games and animation',
+            l1: 'CAH11',
             l2: 'CAH11-01'
           },
           'CAH11-01-07' => {
             name: 'business computing',
+            l1: 'CAH11',
             l2: 'CAH11-01'
           },
           'CAH11-01-08' => {
             name: 'others in computing',
+            l1: 'CAH11',
             l2: 'CAH11-01'
           },
           'CAH13-01-01' => {
             name: 'architecture',
+            l1: 'CAH13',
             l2: 'CAH13-01'
           },
           'CAH13-01-02' => {
             name: 'building',
+            l1: 'CAH13',
             l2: 'CAH13-01'
           },
           'CAH13-01-03' => {
             name: 'landscape design',
+            l1: 'CAH13',
             l2: 'CAH13-01'
           },
           'CAH13-01-04' => {
             name: 'planning (urban, rural and regional)',
+            l1: 'CAH13',
             l2: 'CAH13-01'
           },
           'CAH15-01-01' => {
             name: 'social sciences (non-specific)',
+            l1: 'CAH15',
             l2: 'CAH15-01'
           },
           'CAH15-01-02' => {
             name: 'sociology',
+            l1: 'CAH15',
             l2: 'CAH15-01'
           },
           'CAH15-01-03' => {
             name: 'social policy',
+            l1: 'CAH15',
             l2: 'CAH15-01'
           },
           'CAH15-01-04' => {
             name: 'anthropology',
+            l1: 'CAH15',
             l2: 'CAH15-01'
           },
           'CAH15-01-05' => {
             name: 'development studies',
+            l1: 'CAH15',
             l2: 'CAH15-01'
           },
           'CAH15-01-06' => {
             name: 'cultural studies',
+            l1: 'CAH15',
             l2: 'CAH15-01'
           },
           'CAH15-02-01' => {
             name: 'economics',
+            l1: 'CAH15',
             l2: 'CAH15-02'
           },
           'CAH15-03-01' => {
             name: 'politics',
+            l1: 'CAH15',
             l2: 'CAH15-03'
           },
           'CAH15-04-01' => {
             name: 'social work',
+            l1: 'CAH15',
             l2: 'CAH15-04'
           },
           'CAH15-04-02' => {
             name: 'childhood and youth studies',
+            l1: 'CAH15',
             l2: 'CAH15-04'
           },
           'CAH15-04-03' => {
             name: 'health studies',
+            l1: 'CAH15',
             l2: 'CAH15-04'
           },
           'CAH16-01-01' => {
             name: 'law',
+            l1: 'CAH16',
             l2: 'CAH16-01'
           },
           'CAH17-01-01' => {
             name: 'business and management (non-specific)',
+            l1: 'CAH17',
             l2: 'CAH17-01'
           },
           'CAH17-01-02' => {
             name: 'business studies',
+            l1: 'CAH17',
             l2: 'CAH17-01'
           },
           'CAH17-01-03' => {
             name: 'marketing',
+            l1: 'CAH17',
             l2: 'CAH17-01'
           },
           'CAH17-01-04' => {
             name: 'management studies',
+            l1: 'CAH17',
             l2: 'CAH17-01'
           },
           'CAH17-01-05' => {
             name: 'human resource management',
+            l1: 'CAH17',
             l2: 'CAH17-01'
           },
           'CAH17-01-06' => {
             name: 'tourism, transport and travel',
+            l1: 'CAH17',
             l2: 'CAH17-01'
           },
           'CAH17-01-07' => {
             name: 'finance',
+            l1: 'CAH17',
             l2: 'CAH17-01'
           },
           'CAH17-01-08' => {
             name: 'accounting',
+            l1: 'CAH17',
             l2: 'CAH17-01'
           },
           'CAH17-01-09' => {
             name: 'others in business and management',
+            l1: 'CAH17',
             l2: 'CAH17-01'
           },
           'CAH19-01-01' => {
             name: 'English studies (non-specific)',
+            l1: 'CAH19',
             l2: 'CAH19-01'
           },
           'CAH19-01-02' => {
             name: 'English language',
+            l1: 'CAH19',
             l2: 'CAH19-01'
           },
           'CAH19-01-03' => {
             name: 'literature in English',
+            l1: 'CAH19',
             l2: 'CAH19-01'
           },
           'CAH19-01-04' => {
             name: 'studies of specific authors',
+            l1: 'CAH19',
             l2: 'CAH19-01'
           },
           'CAH19-01-05' => {
             name: 'creative writing',
+            l1: 'CAH19',
             l2: 'CAH19-01'
           },
           'CAH19-01-06' => {
             name: 'others in English studies',
+            l1: 'CAH19',
             l2: 'CAH19-01'
           },
           'CAH19-01-07' => {
             name: 'linguistics',
+            l1: 'CAH19',
             l2: 'CAH19-01'
           },
           'CAH19-02-01' => {
             name: 'Celtic studies (non-specific)',
+            l1: 'CAH19',
             l2: 'CAH19-02'
           },
           'CAH19-02-02' => {
             name: 'Gaelic studies',
+            l1: 'CAH19',
             l2: 'CAH19-02'
           },
           'CAH19-02-03' => {
             name: 'Welsh studies',
+            l1: 'CAH19',
             l2: 'CAH19-02'
           },
           'CAH19-02-04' => {
             name: 'others in Celtic studies',
+            l1: 'CAH19',
             l2: 'CAH19-02'
           },
           'CAH19-04-01' => {
             name: 'French studies',
+            l1: 'CAH19',
             l2: 'CAH19-04'
           },
           'CAH19-04-02' => {
             name: 'German and Scandinavian studies',
+            l1: 'CAH19',
             l2: 'CAH19-04'
           },
           'CAH19-04-03' => {
             name: 'Italian studies',
+            l1: 'CAH19',
             l2: 'CAH19-04'
           },
           'CAH19-04-04' => {
             name: 'Iberian studies',
+            l1: 'CAH19',
             l2: 'CAH19-04'
           },
           'CAH19-04-05' => {
             name: 'Slavic studies',
+            l1: 'CAH19',
             l2: 'CAH19-04'
           },
           'CAH19-04-06' => {
             name: 'Asian studies',
+            l1: 'CAH19',
             l2: 'CAH19-04'
           },
           'CAH19-04-07' => {
             name: 'African and modern Middle Eastern studies',
+            l1: 'CAH19',
             l2: 'CAH19-04'
           },
           'CAH19-04-08' => {
             name: 'American and Australasian studies',
+            l1: 'CAH19',
             l2: 'CAH19-04'
           },
           'CAH19-04-09' => {
             name: 'others in language and area studies',
+            l1: 'CAH19',
             l2: 'CAH19-04'
           },
           'CAH20-01-01' => {
             name: 'history',
+            l1: 'CAH20',
             l2: 'CAH20-01'
           },
           'CAH20-01-02' => {
             name: 'history of art, architecture and design',
+            l1: 'CAH20',
             l2: 'CAH20-01'
           },
           'CAH20-01-03' => {
             name: 'archaeology',
+            l1: 'CAH20',
             l2: 'CAH20-01'
           },
           'CAH20-01-04' => {
             name: 'heritage studies',
+            l1: 'CAH20',
             l2: 'CAH20-01'
           },
           'CAH20-01-05' => {
             name: 'classics',
+            l1: 'CAH20',
             l2: 'CAH20-01'
           },
           'CAH20-02-01' => {
             name: 'philosophy',
+            l1: 'CAH20',
             l2: 'CAH20-02'
           },
           'CAH20-02-02' => {
             name: 'theology and religious studies',
+            l1: 'CAH20',
             l2: 'CAH20-02'
           },
           'CAH22-01-01' => {
             name: 'education',
+            l1: 'CAH22',
             l2: 'CAH22-01'
           },
           'CAH22-01-02' => {
             name: 'teacher training',
+            l1: 'CAH22',
             l2: 'CAH22-01'
           },
           'CAH23-01-01' => {
             name: 'combined, general or negotiated studies',
+            l1: 'CAH23',
             l2: 'CAH23-01'
           },
           'CAH23-01-02' => {
             name: 'personal development',
+            l1: 'CAH23',
             l2: 'CAH23-01'
           },
           'CAH23-01-03' => {
             name: 'humanities (non-specific)',
+            l1: 'CAH23',
             l2: 'CAH23-01'
           },
           'CAH23-01-04' => {
             name: 'liberal arts (non-specific)',
+            l1: 'CAH23',
             l2: 'CAH23-01'
           },
           'CAH24-01-01' => {
             name: 'information services',
+            l1: 'CAH24',
             l2: 'CAH24-01'
           },
           'CAH24-01-02' => {
             name: 'publicity studies',
+            l1: 'CAH24',
             l2: 'CAH24-01'
           },
           'CAH24-01-03' => {
             name: 'publishing',
+            l1: 'CAH24',
             l2: 'CAH24-01'
           },
           'CAH24-01-04' => {
             name: 'journalism',
+            l1: 'CAH24',
             l2: 'CAH24-01'
           },
           'CAH24-01-05' => {
             name: 'media studies',
+            l1: 'CAH24',
             l2: 'CAH24-01'
           },
           'CAH25-01-01' => {
             name: 'creative arts and design (non-specific)',
+            l1: 'CAH25',
             l2: 'CAH25-01'
           },
           'CAH25-01-02' => {
             name: 'art',
+            l1: 'CAH25',
             l2: 'CAH25-01'
           },
           'CAH25-01-03' => {
             name: 'design studies',
+            l1: 'CAH25',
             l2: 'CAH25-01'
           },
           'CAH25-01-04' => {
             name: 'cinematics and photography',
+            l1: 'CAH25',
             l2: 'CAH25-01'
           },
           'CAH25-01-05' => {
             name: 'others in creative arts and design',
+            l1: 'CAH25',
             l2: 'CAH25-01'
           },
           'CAH25-02-01' => {
             name: 'performing arts (non-specific)',
+            l1: 'CAH25',
             l2: 'CAH25-02'
           },
           'CAH25-02-02' => {
             name: 'music',
+            l1: 'CAH25',
             l2: 'CAH25-02'
           },
           'CAH25-02-03' => {
             name: 'drama',
+            l1: 'CAH25',
             l2: 'CAH25-02'
           },
           'CAH25-02-04' => {
             name: 'dance',
+            l1: 'CAH25',
             l2: 'CAH25-02'
           },
           'CAH26-01-01' => {
             name: 'geography (non-specific)',
+            l1: 'CAH26',
             l2: 'CAH26-01'
           },
           'CAH26-01-02' => {
             name: 'physical geographical sciences',
+            l1: 'CAH26',
             l2: 'CAH26-01'
           },
           'CAH26-01-03' => {
             name: 'human geography',
+            l1: 'CAH26',
             l2: 'CAH26-01'
           },
           'CAH26-01-04' => {
             name: 'environmental sciences',
+            l1: 'CAH26',
             l2: 'CAH26-01'
           },
           'CAH26-01-05' => {
             name: 'others in geographical studies',
+            l1: 'CAH26',
             l2: 'CAH26-01'
           },
           'CAH26-01-06' => {
             name: 'earth sciences',
+            l1: 'CAH26',
             l2: 'CAH26-01'
           },
           'CAHZ5' => {
             name: 'Not applicable',
+            l1: 'CAHZ5',
             l2: 'CAHZ5'
           }
         },
         schema: {
           id: :string,
+          l1: :string,
           l2: :string,
           name: :string
         },
@@ -995,6 +1424,7 @@ module DfE
         list_docs_url: 'FIXME',
         field_descriptions: {
           id: 'A unique identifier',
+          l1: "The ID of this category's level 1 grandparent",
           l2: "The ID of this category's level 2 parent",
           name: 'The name of the level 3 category'
         }
@@ -4285,7 +4715,7 @@ module DfE
         list_description: 'CAH level 3 codes for HECoS subjects',
         list_docs_url: 'FIXME',
         field_descriptions: {
-          id: 'A unique identifier',
+          id: 'A HECoS subject code',
           cah_l3_id: 'The CAH level 3 ID corresponding to this HECoS subject'
         }
       )
