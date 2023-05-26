@@ -843,7 +843,8 @@ module DfE
             match_synonyms: [],
             dttp_id: nil,
             hesa_itt_code: '400',
-            generic: true },
+            generic: true,
+            depreciated: true },
           'fdafdcd7-5f21-4363-b7d5-c1f44a852af1' =>
           { priority: 1,
             name: 'Higher degree or equivalent',
