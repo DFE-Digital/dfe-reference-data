@@ -121,22 +121,36 @@ RSpec.describe DfE::ReferenceData::ITT::TAD_CATEGORIES do
   it 'has a valid cah_mappings_allow list' do
     expect(records).to be_all do |rec|
       name = rec.name
-      allow_list = rec.cah_mappings_allow
-      block_list = rec.cah_mappings_block
+      associated_allow_list = rec.cah_associated_mappings_allow
+      associated_block_list = rec.cah_associated_mappings_block
+      direct_allow_list = rec.cah_direct_mappings_allow
+      direct_block_list = rec.cah_direct_mappings_block
 
-      allow_list_good = allow_list.all? do |cah|
+      associated_allow_list_good = associated_allow_list.all? do |cah|
         good = (l1.include?(cah) or l2.include?(cah) or l3.include?(cah))
-        puts "ERROR: TAD Category '#{name}' has a cah_mappings_allow entry '#{cah}' which is not found in any of DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L[1,2,3]" unless good
+        puts "ERROR: TAD Category '#{name}' has a cah_associated_mappings_allow entry '#{cah}' which is not found in any of DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L[1,2,3]" unless good
         good
       end
 
-      block_list_good = block_list.all? do |cah|
+      associated_block_list_good = associated_block_list.all? do |cah|
         good = (l1.include?(cah) or l2.include?(cah) or l3.include?(cah))
-        puts "ERROR: TAD Category '#{name}' has a cah_mappings_block entry '#{cah}' which is not found in any of DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L[1,2,3]" unless good
+        puts "ERROR: TAD Category '#{name}' has a cah_associated_mappings_block entry '#{cah}' which is not found in any of DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L[1,2,3]" unless good
         good
       end
 
-      allow_list_good and block_list_good
+      direct_allow_list_good = direct_allow_list.all? do |cah|
+        good = (l1.include?(cah) or l2.include?(cah) or l3.include?(cah))
+        puts "ERROR: TAD Category '#{name}' has a cah_direct_mappings_allow entry '#{cah}' which is not found in any of DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L[1,2,3]" unless good
+        good
+      end
+
+      direct_block_list_good = direct_block_list.all? do |cah|
+        good = (l1.include?(cah) or l2.include?(cah) or l3.include?(cah))
+        puts "ERROR: TAD Category '#{name}' has a cah_direct_mappings_block entry '#{cah}' which is not found in any of DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L[1,2,3]" unless good
+        good
+      end
+
+      associated_allow_list_good and associated_block_list_good and direct_allow_list_good and direct_block_list_good
     end
   end
 end

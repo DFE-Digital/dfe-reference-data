@@ -127,6 +127,11 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 | `phase` | symbol (`primary` or `secondary`) | The phase of this TAD category |
 | `other_id` | string ID | An additional `ID` field found in the source spreadsheet, purpose unknown |
 | `register_name` | string | The corresponding subject name as believed to be found in Register, according to the author of the spreadsheet |
+| `cah_associated_mappings_allow` | ID string array | A list of CAH level 1, 2 or 3 codes or degree subject IDs for subjects that potentially correspond to this TAD category, unless a match in cah_associated_mappings_block is found. |
+| `cah_associated_mappings_block` | ID string array | A list of CAH level 1, 2 or 3 codes or degree subject IDs  for subjects that do NOT even potentially correspond to this TAD category, but would otherwise be matched by a more generic code in cah_associated_mappings_allow |
+| `cah_direct_mappings_allow` | ID string array | A list of CAH level 1, 2 or 3 codes or degree subject IDs for subjects that directly correspond to this TAD category, unless a match in cah_associated_mappings_block is found. |
+| `cah_direct_mappings_block` | ID string array | A list of CAH level 1, 2 or 3 codes or degree subject IDs for subjects that do NOT directly correspond to this TAD category, but would otherwise be matched by a more generic code in cah_associated_mappings_allow |
+
 
 ### `DfE::ReferenceData::ITT::INCENTIVES`
 
