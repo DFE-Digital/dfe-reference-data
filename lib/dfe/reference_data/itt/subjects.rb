@@ -67,7 +67,12 @@ module DfE
         register_name: :string,
         type: :symbol,
         phase: :symbol,
-        other_id: :string
+        other_id: :string,
+
+        cah_associated_mappings_allow: { kind: :array, element_schema: :string },
+        cah_associated_mappings_block: { kind: :array, element_schema: :string },
+        cah_direct_mappings_allow: { kind: :array, element_schema: :string },
+        cah_direct_mappings_block: { kind: :array, element_schema: :string }
       }.freeze
 
       TAD_CATEGORIES_FIELD_DESCRIPTIONS = {
@@ -79,7 +84,11 @@ module DfE
         type: 'The type of this subject category',
         phase: 'The phase (age range) of this subject category',
         other_id: '(unknown)',
-        register_name: 'The corresponding subject name as believed to be found in Register, according to the author of the spreadsheet (probably not useful, pending removal after review)'
+        register_name: 'The corresponding subject name as believed to be found in Register, according to the author of the spreadsheet (probably not useful, pending removal after review)',
+        cah_associated_mappings_allow: 'A list of CAH level 1, 2 or 3 codes or degree subject IDs for subjects that potentially correspond to this TAD category, unless a match in cah_associated_mappings_block is found.',
+        cah_associated_mappings_block: 'A list of CAH level 1, 2 or 3 codes or degree subject IDs  for subjects that do NOT even potentially correspond to this TAD category, but would otherwise be matched by a more generic code in cah_associated_mappings_allow',
+        cah_direct_mappings_allow: 'A list of CAH level 1, 2 or 3 codes or degree subject IDs for subjects that directly correspond to this TAD category, unless a match in cah_associated_mappings_block is found.',
+        cah_direct_mappings_block: 'A list of CAH level 1, 2 or 3 codes or degree subject IDs for subjects that do NOT directly correspond to this TAD category, but would otherwise be matched by a more generic code in cah_associated_mappings_allow'
       }.freeze
 
       # From https://docs.google.com/spreadsheets/d/152PMbCj_bmnm8rmqVFLJAA2Hu8-9pkPjDmGyOi85768/edit#gid=2053127863&range=Q85
@@ -1037,7 +1046,13 @@ module DfE
                     register_name: 'Primary with science',
                     type: :primary,
                     phase: :primary,
-                    other_id: '7' },
+                    other_id: '7',
+
+                    cah_associated_mappings_allow: [],
+                    cah_associated_mappings_block: [],
+
+                    cah_direct_mappings_allow: [],
+                    cah_direct_mappings_block: [] },
 
           '1' => { name: 'Art & Design',
                    publish_category: 'W1',
@@ -1047,7 +1062,13 @@ module DfE
                    register_name: 'Art and design',
                    type: :secondary,
                    phase: :secondary,
-                   other_id: '8' },
+                   other_id: '8',
+
+                   cah_associated_mappings_allow: ['CAH25'],
+                   cah_associated_mappings_block: [],
+
+                   cah_direct_mappings_allow: ['CAH25-01'],
+                   cah_direct_mappings_block: [] },
 
           '18' => { name: 'Physics',
                     publish_category: 'F3',
@@ -1057,7 +1078,13 @@ module DfE
                     register_name: 'Physics',
                     type: :secondary,
                     phase: :secondary,
-                    other_id: '29' },
+                    other_id: '29',
+
+                    cah_associated_mappings_allow: ['CAH10', 'CAH09', 'CAH07'],
+                    cah_associated_mappings_block: [],
+
+                    cah_direct_mappings_allow: ['CAH07-01'],
+                    cah_direct_mappings_block: [] },
 
           '2' => { name: 'Biology',
                    publish_category: nil,
@@ -1067,7 +1094,13 @@ module DfE
                    register_name: 'Balanced Science',
                    type: :discontinued,
                    phase: :secondary,
-                   other_id: '45' },
+                   other_id: '45',
+
+                   cah_associated_mappings_allow: ['CAH03', 'CAH07'],
+                   cah_associated_mappings_block: [],
+
+                   cah_direct_mappings_allow: ['CAH03-01'],
+                   cah_direct_mappings_block: [] },
 
           '3' => { name: 'Business Studies',
                    publish_category: 'L1',
@@ -1077,7 +1110,13 @@ module DfE
                    register_name: 'Economics',
                    type: :secondary,
                    phase: :secondary,
-                   other_id: '20' },
+                   other_id: '20',
+
+                   cah_associated_mappings_allow: ['CAH17'],
+                   cah_associated_mappings_block: [],
+
+                   cah_direct_mappings_allow: ['CAH17'],
+                   cah_direct_mappings_block: [] },
 
           '4' => { name: 'Chemistry',
                    publish_category: 'F1',
@@ -1087,7 +1126,13 @@ module DfE
                    register_name: 'Chemistry',
                    type: :secondary,
                    phase: :secondary,
-                   other_id: '12' },
+                   other_id: '12',
+
+                   cah_associated_mappings_allow: ['CAH10', 'CAH09', 'CAH07'],
+                   cah_associated_mappings_block: [],
+
+                   cah_direct_mappings_allow: ['CAH07-02'],
+                   cah_direct_mappings_block: [] },
 
           '16' => { name: 'Others',
                     publish_category: nil,
@@ -1097,7 +1142,13 @@ module DfE
                     register_name: 'Humanities',
                     type: :discontinued,
                     phase: :secondary,
-                    other_id: '44' },
+                    other_id: '44',
+
+                    cah_associated_mappings_allow: ['CAH01', 'CAH02', 'CAH04', 'CAH05', 'CAH06', 'CAH13', 'CAH15', 'CAH16', 'CAH22', 'CAH23', 'CAHZ5'],
+                    cah_associated_mappings_block: ['CAH15-02'],
+
+                    cah_direct_mappings_allow: [],
+                    cah_direct_mappings_block: [] },
 
           '5' => { name: 'Classics',
                    publish_category: 'Q8',
@@ -1107,7 +1158,13 @@ module DfE
                    register_name: 'Classics',
                    type: :secondary,
                    phase: :secondary,
-                   other_id: '14' },
+                   other_id: '14',
+
+                   cah_associated_mappings_allow: ['CAH20'],
+                   cah_associated_mappings_block: [],
+
+                   cah_direct_mappings_allow: ['CAH20-01-05'],
+                   cah_direct_mappings_block: [] },
 
           '6' => { name: 'Computing',
                    publish_category: '11',
@@ -1117,7 +1174,13 @@ module DfE
                    register_name: 'Computing',
                    type: :secondary,
                    phase: :secondary,
-                   other_id: '16' },
+                   other_id: '16',
+
+                   cah_associated_mappings_allow: ['CAH11', 'CAH10'],
+                   cah_associated_mappings_block: [],
+
+                   cah_direct_mappings_allow: ['CAH11'],
+                   cah_direct_mappings_block: [] },
 
           '17' => { name: 'Physical education',
                     publish_category: 'C6',
@@ -1127,7 +1190,13 @@ module DfE
                     register_name: 'Physical education',
                     type: :secondary,
                     phase: :secondary,
-                    other_id: '28' },
+                    other_id: '28',
+
+                    cah_associated_mappings_allow: ['CAH03'],
+                    cah_associated_mappings_block: [],
+
+                    cah_direct_mappings_allow: ['CAH03-02'],
+                    cah_direct_mappings_block: [] },
 
           '7' => { name: 'Design & Technology',
                    publish_category: 'DT',
@@ -1137,7 +1206,13 @@ module DfE
                    register_name: 'Design and technology',
                    type: :secondary,
                    phase: :secondary,
-                   other_id: '18' },
+                   other_id: '18',
+
+                   cah_associated_mappings_allow: ['CAH10', 'CAH25'],
+                   cah_associated_mappings_block: [],
+
+                   cah_direct_mappings_allow: ['CAH10'],
+                   cah_direct_mappings_block: [] },
 
           '8' => { name: 'Drama',
                    publish_category: '13',
@@ -1147,7 +1222,13 @@ module DfE
                    register_name: 'Drama',
                    type: :secondary,
                    phase: :secondary,
-                   other_id: '19' },
+                   other_id: '19',
+
+                   cah_associated_mappings_allow: ['CAH25'],
+                   cah_associated_mappings_block: [],
+
+                   cah_direct_mappings_allow: ['CAH25-02-03'],
+                   cah_direct_mappings_block: [] },
 
           '9' => { name: 'English',
                    publish_category: 'Q3',
@@ -1157,7 +1238,13 @@ module DfE
                    register_name: 'English',
                    type: :secondary,
                    phase: :secondary,
-                   other_id: '21' },
+                   other_id: '21',
+
+                   cah_associated_mappings_allow: ['CAH19', 'CAH24'],
+                   cah_associated_mappings_block: [],
+
+                   cah_direct_mappings_allow: ['CAH19-01'],
+                   cah_direct_mappings_block: [] },
 
           '10' => { name: 'Geography',
                     publish_category: 'F8',
@@ -1167,7 +1254,13 @@ module DfE
                     register_name: 'Geography',
                     type: :secondary,
                     phase: :secondary,
-                    other_id: '22' },
+                    other_id: '22',
+
+                    cah_associated_mappings_allow: ['CAH26'],
+                    cah_associated_mappings_block: [],
+
+                    cah_direct_mappings_allow: ['CAH26'],
+                    cah_direct_mappings_block: [] },
 
           '11' => { name: 'History',
                     publish_category: 'V1',
@@ -1177,7 +1270,13 @@ module DfE
                     register_name: 'History',
                     type: :secondary,
                     phase: :secondary,
-                    other_id: '24' },
+                    other_id: '24',
+
+                    cah_associated_mappings_allow: ['CAH20'],
+                    cah_associated_mappings_block: [],
+
+                    cah_direct_mappings_allow: ['CAH20-01'],
+                    cah_direct_mappings_block: [] },
 
           '12' => { name: 'Mathematics',
                     publish_category: 'G1',
@@ -1187,7 +1286,13 @@ module DfE
                     register_name: 'Mathematics',
                     type: :secondary,
                     phase: :secondary,
-                    other_id: '25' },
+                    other_id: '25',
+
+                    cah_associated_mappings_allow: ['CAH10', 'CAH09', 'CAH07', 'CAH15-02'],
+                    cah_associated_mappings_block: [],
+
+                    cah_direct_mappings_allow: ['CAH09'],
+                    cah_direct_mappings_block: [] },
 
           '14' => { name: 'Music',
                     publish_category: 'W3',
@@ -1197,7 +1302,13 @@ module DfE
                     register_name: 'Music',
                     type: :secondary,
                     phase: :secondary,
-                    other_id: '26' },
+                    other_id: '26',
+
+                    cah_associated_mappings_allow: ['CAH25'],
+                    cah_associated_mappings_block: [],
+
+                    cah_direct_mappings_allow: ['CAH25-02-02'],
+                    cah_direct_mappings_block: [] },
 
           '20' => { name: 'Religious Education',
                     publish_category: 'V6',
@@ -1207,7 +1318,13 @@ module DfE
                     register_name: 'Religious education',
                     type: :secondary,
                     phase: :secondary,
-                    other_id: '31' },
+                    other_id: '31',
+
+                    cah_associated_mappings_allow: ['CAH20'],
+                    cah_associated_mappings_block: [],
+
+                    cah_direct_mappings_allow: ['CAH20-02'],
+                    cah_direct_mappings_block: [] },
 
           '13' => { name: 'Modern Foreign Languages',
                     publish_category: '24',
@@ -1217,7 +1334,13 @@ module DfE
                     register_name: 'Modern languages (other)',
                     type: :modern_languages,
                     phase: :secondary,
-                    other_id: '42' }
+                    other_id: '42',
+
+                    cah_associated_mappings_allow: ['CAH19'],
+                    cah_associated_mappings_block: [],
+
+                    cah_direct_mappings_allow: ['CAH19-04'],
+                    cah_direct_mappings_block: [] }
         },
         schema: TAD_CATEGORIES_SCHEMA,
         list_description: 'Initial teacher training subject categories, as currently used by TAD.',
