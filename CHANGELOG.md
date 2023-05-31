@@ -1,6 +1,16 @@
 # Changelog
 
+## [v2.3.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.0) (2023-05-31)
+
+**Merged pull requests:**
+
+- Added CAH/TAD subject mappings [\#83](https://github.com/DFE-Digital/dfe-reference-data/pull/83) ([alaric-dfe](https://github.com/alaric-dfe))
+- Updates to our degree institution list following reviewing the Office for Student's spreadsheet of institutions with degree awarding powers, taken today 25 May 2023 [\#81](https://github.com/DFE-Digital/dfe-reference-data/pull/81) ([edwardhorsford](https://github.com/edwardhorsford))
+- Added CAH (Common Aggregation Hierarchy) version version 1.3.4 [\#80](https://github.com/DFE-Digital/dfe-reference-data/pull/80) ([alaric-dfe](https://github.com/alaric-dfe))
+
 ## [v2.2.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.2.0) (2023-05-03)
+
+**Merged pull requests:**
 
 - Added short names to degree grades [\#78](https://github.com/DFE-Digital/dfe-reference-data/pull/78) ([alaric-dfe](https://github.com/alaric-dfe))
 
