@@ -844,7 +844,7 @@ module DfE
             dttp_id: nil,
             hesa_itt_code: '400',
             generic: true,
-            depreciated: true },
+            deprecated: true },
           'fdafdcd7-5f21-4363-b7d5-c1f44a852af1' =>
           { priority: 1,
             name: 'Higher degree or equivalent',
