@@ -541,7 +541,8 @@ module DfE
             abbreviation: nil,
             suggestion_synonyms: [],
             match_synonyms: [],
-            qualification: 'b580a760-da23-4d38-b803-62ae11de6a65' },
+            qualification: 'b580a760-da23-4d38-b803-62ae11de6a65',
+            hesa_itt_code: '099' },
           '3b6a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
             name: 'Master of Arts',
@@ -577,7 +578,7 @@ module DfE
             ],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
             dttp_id: nil,
-            hesa_itt_code: nil },
+            hesa_itt_code: '216' },
           '416a5652-c197-e711-80d8-005056ac45bb' =>
           { name: 'Master of Music',
             abbreviation: 'MMus',
@@ -601,7 +602,7 @@ module DfE
             match_synonyms: ['masters of research'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
             dttp_id: nil,
-            hesa_itt_code: nil },
+            hesa_itt_code: '217' },
           'b6d2c5aa-cf99-4831-9bfe-6279349d8ea9' =>
           { name: 'Master in Science',
             abbreviation: 'MSci',
@@ -609,7 +610,7 @@ module DfE
             match_synonyms: ['masters in science'],
             qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
             dttp_id: nil,
-            hesa_itt_code: nil,
+            hesa_itt_code: '218',
             comment: 'This is a qualificatoin distinct from Master of Science. MSci are typically four year courses
             including three years of undergraduate study.' },
           '456a5652-c197-e711-80d8-005056ac45bb' =>
@@ -769,7 +770,7 @@ module DfE
             match_synonyms: [],
             qualification: '181eb0ae-eeb8-487b-9c6a-a4ee3e1907b6',
             dttp_id: nil,
-            hesa_itt_code: nil },
+            hesa_itt_code: '307' },
           # These next four are HESA codes found in production data that weren't
           # in the current HESA list, so presumably had been removed; so are
           # included here to not break existing data, but probably shouldn't be
@@ -842,7 +843,8 @@ module DfE
             match_synonyms: [],
             dttp_id: nil,
             hesa_itt_code: '400',
-            generic: true },
+            generic: true,
+            deprecated: true },
           'fdafdcd7-5f21-4363-b7d5-c1f44a852af1' =>
           { priority: 1,
             name: 'Higher degree or equivalent',
