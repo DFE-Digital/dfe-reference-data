@@ -1,5 +1,11 @@
 # Changelog
 
+## [v2.3.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.1) (2023-08-23)
+
+**Merged pull requests:**
+
+- Add new hesa degree type codes for 2023 [\#82](https://github.com/DFE-Digital/dfe-reference-data/pull/82) ([edwardhorsford](https://github.com/edwardhorsford))
+
 ## [v2.3.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.0) (2023-05-31)
 
 **Merged pull requests:**
