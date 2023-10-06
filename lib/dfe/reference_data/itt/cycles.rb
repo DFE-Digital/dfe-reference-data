@@ -101,6 +101,18 @@ module DfE
               christmas: Date.new(2023, 12, 18)..Date.new(2024, 1, 5),
               easter: Date.new(2024, 3, 18)..Date.new(2024, 4, 1)
             }
+          },
+          '2024-2025' => {
+            find_opens: make_local_time(2024, 10, 1, 9), # First Tuesday of October
+            apply_opens: make_local_time(2024, 10, 8, 9), # Second Tuesday of October
+            apply_1_deadline: make_local_time(0, 0, 0, 0), # 1st Tuesday of September
+            apply_2_deadline: make_local_time(2025, 9, 15, 18), # 2 weeks after Apply 1 deadline
+            provider_decision_deadline: make_local_time(2025, 9, 25, 23, 59, 59), # 1 week and a day after Apply 2 deadline
+            find_closes: make_local_time(2025, 10, 6, 23, 59, 59), # The evening before the find opens in the new cycle
+            non_working_days: {
+              christmas: Date.new(2024, 12, 16)..Date.new(2025, 1, 3),
+              easter: Date.new(2025, 4, 7)..Date.new(2025, 4, 21)
+            }
           }
         },
         schema: CYCLES_SCHEMA,
