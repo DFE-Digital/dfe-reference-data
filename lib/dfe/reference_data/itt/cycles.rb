@@ -9,7 +9,7 @@ module DfE
         id: { kind: :code, pattern: /^[0-9]{4}-[0-9]{4}$/ },
         find_opens: :datetime,
         apply_opens: :datetime,
-        apply_1_deadline: :datetime,
+        apply_1_deadline: { kind: :optional, schema: :datetime },
         apply_2_deadline: :datetime,
         provider_decision_deadline: :datetime,
         find_closes: :datetime,
@@ -105,9 +105,9 @@ module DfE
           '2024-2025' => {
             find_opens: make_local_time(2024, 10, 1, 9), # First Tuesday of October
             apply_opens: make_local_time(2024, 10, 8, 9), # Second Tuesday of October
-            # apply_1_deadline: make_local_time(0, 0, 0, 0), # 1st Tuesday of September
-            apply_2_deadline: make_local_time(2025, 9, 15, 18), # 2 weeks after Apply 1 deadline
-            provider_decision_deadline: make_local_time(2025, 9, 25, 23, 59, 59), # 1 week and a day after Apply 2 deadline
+            apply_1_deadline: nil, # This deadline is not applicable for this cycle
+            apply_2_deadline: make_local_time(2025, 9, 16, 18), # 3rd Tuesday in September
+            provider_decision_deadline: make_local_time(2025, 9, 24, 23, 59, 59), # 1 week and a day after Apply 2 deadline
             find_closes: make_local_time(2025, 10, 6, 23, 59, 59), # The evening before the find opens in the new cycle
             non_working_days: {
               christmas: Date.new(2024, 12, 16)..Date.new(2025, 1, 3),
