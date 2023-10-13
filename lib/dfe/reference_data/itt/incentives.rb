@@ -24,7 +24,25 @@ module DfE
       INCENTIVES = DfE::ReferenceData::HardcodedReferenceList.new(
         # SEE https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual
         {
-
+          ## 2024-2025
+          'e72a2d66-6de8-4ef2-8704-54d52b00e925' => {
+            name: 'physics, mathematics, computing, chemistry 2024-2025',
+            bursary_amount: '28000',
+            scholarship: '30000'
+          },
+          '0b126183-5b51-4990-b5d1-8fbadb03d25f' => {
+            name: 'french, german, spanish 2024-2025',
+            bursary_amount: '25000',
+            scholarship: '27000'
+          },
+          'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8' => {
+            name: 'languages, geography, biology, design and technology 2024-2025',
+            bursary_amount: '25000'
+          },
+          '98764495-1266-4f51-9d1d-87ce7671c237' => {
+            name: 'english, art & design, music, re 2024-2025',
+            bursary_amount: '10000'
+          },
           ## 2023-2024
           '083d21b6-4e98-43ca-9a63-a9674b4355a8' => {
             name: 'physics, mathematics, computing and chemistry 2023-2024',
