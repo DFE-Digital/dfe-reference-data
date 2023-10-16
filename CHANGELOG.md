@@ -1,5 +1,15 @@
 # Changelog
 
+## [v2.3.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.2) (2023-10-13)
+
+- Updates incentives and cycle data [\#85](https://github.com/DFE-Digital/dfe-reference-data/pull/85)
+
+**Merged pull requests:**
+
+## [v2.3.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.1) (2023-08-24)
+
+- Adds new hesa degree types: [\#82](https://github.com/DFE-Digital/dfe-reference-data/pull/82)
+
 ## [v2.3.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.0) (2023-05-31)
 
 **Merged pull requests:**
