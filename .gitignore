@@ -1,3 +1,4 @@
 pkg
 .bundle/config
 vendor/bundle
+lib/dfe/reference_data/bigquery/*.json

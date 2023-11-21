@@ -31,11 +31,12 @@ module DfE
 
         # rubocop:disable Style/ClassVars
         def self.obtain_credentials
+          expanded_path = File.expand_path('dfe-reference-data_bigquery_api_key.json', __dir__)
           if @@credentials.nil?
             if ENV['BIGQUERY_CREDENTIALS']
               @@credentials = JSON.parse(ENV['BIGQUERY_CREDENTIALS'])
-            elsif File.file?('../dfe-reference-data_bigquery_api_key.json')
-              @@credentials = JSON.parse(File.read('../dfe-reference-data_bigquery_api_key.json'))
+            elsif File.file?(expanded_path)
+              @@credentials = JSON.parse(File.read(expanded_path))
             else
               raise StandardError, 'No bigquery credentials were found in $BIGQUERY_CREDENTIALS or ../dfe-reference-data_bigquery_api_key.json'
             end
