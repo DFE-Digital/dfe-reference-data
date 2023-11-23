@@ -2240,7 +2240,7 @@ module DfE
             dttp_id: '553e182c-1425-ec11-b6e6-000d3adf095a',
             comment:
             'Ashbridge Business School merged with Hult International Business school in 2015',
-            ukprn: '10008899' },
+            ukprn: '10003212' },
           '133f182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'The Sherwood Institute',
             suggestion_synonyms: [],
