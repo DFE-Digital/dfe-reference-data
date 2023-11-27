@@ -18,7 +18,7 @@ DfE::ReferenceData::BigQuery::Config.configure do |config|
 end
 
 # Omit this test if we don't have credentials available
-if DfE::ReferenceData::BigQuery::Config.obtain_credentials
+if DfE::ReferenceData::BigQuery::Config.obtain_credentials.any?
   RSpec.describe DfE::ReferenceData::BigQuery do
     let(:test_data) do
       DfE::ReferenceData::HardcodedReferenceList.new(
@@ -219,4 +219,6 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials
                                      ['single_symbol', nil])
     end
   end
+else
+  puts 'BigQuery credentials missing: Add credentials for importer_spec.rb to run'
 end
