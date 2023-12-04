@@ -45,7 +45,7 @@ module DfE
         has_never_awarded_degrees: 'If present and true, the institution has never awarded degrees, was included in an earlier version of this list by mistake, and is kept purely to support interpretation of legacy data',
         comment: 'Editor\'s comments on the entry (not necessarily of interest to external users of the data)',
         institution_groups: 'The groups to which the institution belongs',
-        postcode: 'Postcode of Unniversity'
+        postcode: 'Postcode of University'
       }.freeze
 
       INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
