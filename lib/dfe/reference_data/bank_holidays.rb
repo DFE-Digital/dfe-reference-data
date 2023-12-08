@@ -15,6 +15,7 @@ module DfE
         notes: 'Notes about the bank holiday'
       }.freeze
 
+      # N.B. England and Wales only
       BANK_HOLIDAYS = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           'd564f857-6e6a-4814-b86c-a55a7040dedc' => {
@@ -121,7 +122,7 @@ module DfE
           }
         },
         schema: BANK_HOLIDAYS_SCHEMA,
-        list_description: 'Bank Holidays and non working days',
+        list_description: 'Bank Holidays(England and Wales)',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_bankholidays.md#dfereferencedatabankholidaysbank_holidays',
         field_descriptions: BANK_HOLIDAYS_FIELD_DEFINITIONS
       )
