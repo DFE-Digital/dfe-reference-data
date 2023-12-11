@@ -33,7 +33,7 @@ module DfE
           },
           'cde43aa2-4b07-4dbf-95d2-9bc59bfbcb8f' => {
             title: 'Early May bank holiday',
-            date: DateTime.new(2022, 5, 2),
+            date: DateTime.new(2022, 5, 2)
           },
           'eb424558-a348-4778-997f-9475b1efebef' => {
             title: 'Spring bank holiday',
