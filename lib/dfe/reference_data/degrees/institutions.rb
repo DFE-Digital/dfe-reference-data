@@ -45,7 +45,7 @@ module DfE
         has_never_awarded_degrees: 'If present and true, the institution has never awarded degrees, was included in an earlier version of this list by mistake, and is kept purely to support interpretation of legacy data',
         comment: 'Editor\'s comments on the entry (not necessarily of interest to external users of the data)',
         institution_groups: 'The groups to which the institution belongs',
-        postcode: 'Postcode of University'
+        postcode: 'Postcode of the institution'
       }.freeze
 
       INSTITUTIONS = DfE::ReferenceData::HardcodedReferenceList.new(
@@ -913,7 +913,7 @@ module DfE
             hesa_itt_code: '0119',
             dttp_id: '1671f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10007792',
-            institution_groups: ['gw4', 'ncuk', 'russell_group'],
+            institution_groups: ['gw4', 'russell_group'],
             postcode: 'EX4 4PY' },
           '2071f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'University of Hull',
@@ -1028,7 +1028,8 @@ module DfE
             hesa_itt_code: '0137',
             dttp_id: '7d1c7817-7042-e811-80ff-3863bb3640b8',
             ukprn: '10004063',
-            institution_groups: ['russell_group'] },
+            institution_groups: ['russell_group'],
+            postcode: 'WC2A 2AE' },
           '853e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'London School of Hygiene and Tropical Medicine',
             suggestion_synonyms: ['LSHTM', 'University of London'],
