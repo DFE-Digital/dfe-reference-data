@@ -33,7 +33,7 @@ module DfE
           },
           '27524138-5b1c-499e-a752-a969e4cc5207' => {
             title: 'Early May bank holiday',
-            date: DateTime.new(2023, 1, 2),
+            date: DateTime.new(2023, 5, 1),
             notes: 'Substitute day'
           },
           'c62a7c2f-a4d6-431d-b6ba-6e9b71c03bef' => {
