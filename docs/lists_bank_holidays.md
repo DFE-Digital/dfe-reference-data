@@ -14,7 +14,7 @@ Owner: None.
 
 Users: None.
 
-Source: https://www.gov.uk/what-different-qualification-levels-mean/list-of-qualification-levels
+Source: https://www.gov.uk/bank-holidays
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
