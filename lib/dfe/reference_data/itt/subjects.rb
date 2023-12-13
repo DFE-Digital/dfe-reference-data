@@ -699,13 +699,13 @@ module DfE
                                                       hecos_code: '101126',
                                                       register_category: '0893125c-ebe1-411c-a890-21bd59e11e09',
                                                       incentive: {
-                                                        # FIXME: Counted as a language rather than "classics", is this correct?
+                                                        # If the course is > 50% language-based it counts as a language when considering incentives
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
                                                         '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
                                                       },
-                                                      publish_category: 'A1', # FIXME: "Ancient Greek" in pubfind, is that valid? Is this not more classics?
+                                                      publish_category: 'A1',
                                                       category: 'c6d6d59b-f6c5-4a2d-98a1-04f2e99539a9' },
           '071a99ce-413d-4c79-8eec-4239da30c113' => { name: 'business studies',
                                                       hecos_code: '100079',
