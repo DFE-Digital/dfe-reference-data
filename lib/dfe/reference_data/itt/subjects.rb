@@ -699,7 +699,7 @@ module DfE
                                                       hecos_code: '101126',
                                                       register_category: '0893125c-ebe1-411c-a890-21bd59e11e09',
                                                       incentive: {
-                                                        # If the course is > 50% language-based it counts as a language when considering incentives
+                                                        # If the Ancient/Classical Greek course is > 50% language-based it counts as a language when considering incentives
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
