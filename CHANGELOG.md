@@ -1,5 +1,13 @@
 # Changelog
 
+## [v2.4.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.4.0) (2023-12-18)
+
+**Merged pull requests:**
+
+- Updates notes for Classical Greek studies [\#93](https://github.com/DFE-Digital/dfe-reference-data/pull/93)
+
+- Add bank holidays to the gem [\#92](https://github.com/DFE-Digital/dfe-reference-data/pull/92)
+
 ## [v2.3.3](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.3) (2023-11-23)
 
 **Merged pull requests:**
