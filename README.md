@@ -134,6 +134,12 @@ Until we sort out our RubyGems account, dependents will pull the gem from GitHub
 
 When moving to a new breaking release (the first part of the version number changes), you might need to make changes to your code that uses the lists. This section explains all.
 
+### v2.x -> v3.x
+
+#### Adding fields into the institutions hash
+
+Two new fields have been added into the institutions hash: `institution_groups: { kind: :array, element_schema: :string } and postcode: { kind: :optional, schema: :string }`. These changes might not be backwards compatible and you may need to make updates to your code.
+
 ### v1.x -> v2.x
 
 #### Zero-padded HESA codes
