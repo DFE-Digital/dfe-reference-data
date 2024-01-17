@@ -1,5 +1,11 @@
 # Changelog
 
+## [v3.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.4.0) (2023-12-18)
+
+**Merged pull requests:**
+
+- Add russell group info to institutions [\#91](https://github.com/DFE-Digital/dfe-reference-data/pull/91)
+
 ## [v2.4.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.4.0) (2023-12-18)
 
 **Merged pull requests:**
