@@ -31,55 +31,67 @@ module DfE
           (THIRTEEN_TO_EIGHTEEN = [13, 18].freeze) => { option: :additional, levels: [:secondary] },
           (FOURTEEN_TO_EIGHTEEN = [14, 18].freeze) => { option: :additional, levels: [:secondary] },
           (FOURTEEN_TO_NINETEEN = [14, 19].freeze) => { option: :additional, levels: [:secondary] },
-        }.freeze
+        }.freeze,
+        schema: {
+          id: {
+            kind: :array,
+            element_schema: :integer,
+          },
+          option: :symbol,
+          levels: {
+            kind: :array,
+            element_schema: :symbol,
+          },
+        }
+      )
+
+      HESA_CODE_SETS = {
+        "13909"	=> THREE_TO_SEVEN,
+        "13911"	=> THREE_TO_NINE,
+        "13912"	=> THREE_TO_ELEVEN,
+        "13913"	=> FIVE_TO_NINE,
+        "13914"	=> FIVE_TO_ELEVEN,
+        "13915"	=> SEVEN_TO_ELEVEN,
+        "13916"	=> SEVEN_TO_FOURTEEN,
+        "13917" => NINE_TO_FOURTEEN,
+        "13918"	=> ELEVEN_TO_SIXTEEN,
+        "13919"	=> ELEVEN_TO_NINETEEN,
+      }.freeze
+
+      COURSE_LEVELS = {
+        early_years: [ZERO_TO_FIVE],
+        primary: [
+          TWO_TO_SEVEN,
+          TWO_TO_ELEVEN,
+          THREE_TO_SEVEN,
+          THREE_TO_EIGHT,
+          THREE_TO_NINE,
+          THREE_TO_ELEVEN,
+          FOUR_TO_ELEVEN,
+          FIVE_TO_NINE,
+          FIVE_TO_ELEVEN,
+          SEVEN_TO_ELEVEN,
+        ],
+        secondary: [
+          TWO_TO_NINETEEN,
+          THREE_TO_SIXTEEN,
+          FOUR_TO_NINETEEN,
+          FIVE_TO_FOURTEEN,
+          FIVE_TO_EIGHTEEN,
+          SEVEN_TO_FOURTEEN,
+          SEVEN_TO_SIXTEEN,
+          SEVEN_TO_EIGHTEEN,
+          NINE_TO_THIRTEEN,
+          NINE_TO_FOURTEEN,
+          NINE_TO_SIXTEEN,
+          ELEVEN_TO_SIXTEEN,
+          ELEVEN_TO_EIGHTEEN,
+          ELEVEN_TO_NINETEEN,
+          THIRTEEN_TO_EIGHTEEN,
+          FOURTEEN_TO_EIGHTEEN,
+          FOURTEEN_TO_NINETEEN,
+        ]
+      }.freeze
     end
-
-    HESA_CODE_SETS = {
-      "13909"	=> THREE_TO_SEVEN,
-      "13911"	=> THREE_TO_NINE,
-      "13912"	=> THREE_TO_ELEVEN,
-      "13913"	=> FIVE_TO_NINE,
-      "13914"	=> FIVE_TO_ELEVEN,
-      "13915"	=> SEVEN_TO_ELEVEN,
-      "13916"	=> SEVEN_TO_FOURTEEN,
-      "13917" => NINE_TO_FOURTEEN,
-      "13918"	=> ELEVEN_TO_SIXTEEN,
-      "13919"	=> ELEVEN_TO_NINETEEN,
-    }
   end
-
-  COURSE_LEVELS = {
-    early_years: [ZERO_TO_FIVE],
-    primary: [
-      TWO_TO_SEVEN,
-      TWO_TO_ELEVEN,
-      THREE_TO_SEVEN,
-      THREE_TO_EIGHT,
-      THREE_TO_NINE,
-      THREE_TO_ELEVEN,
-      FOUR_TO_ELEVEN,
-      FIVE_TO_NINE,
-      FIVE_TO_ELEVEN,
-      SEVEN_TO_ELEVEN,
-    ],
-    secondary: [
-      TWO_TO_NINETEEN,
-      THREE_TO_SIXTEEN,
-      FOUR_TO_NINETEEN,
-      FIVE_TO_FOURTEEN,
-      FIVE_TO_EIGHTEEN,
-      SEVEN_TO_FOURTEEN,
-      SEVEN_TO_SIXTEEN,
-      SEVEN_TO_EIGHTEEN,
-      NINE_TO_THIRTEEN,
-      NINE_TO_FOURTEEN,
-      NINE_TO_SIXTEEN,
-      ELEVEN_TO_SIXTEEN,
-      ELEVEN_TO_EIGHTEEN,
-      ELEVEN_TO_NINETEEN,
-      THIRTEEN_TO_EIGHTEEN,
-      FOURTEEN_TO_EIGHTEEN,
-      FOURTEEN_TO_NINETEEN,
-    ]
-  }.freeze
 end
