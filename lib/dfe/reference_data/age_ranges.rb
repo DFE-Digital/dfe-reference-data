@@ -30,32 +30,32 @@ module DfE
           (ELEVEN_TO_NINETEEN = [11, 19].freeze) => { option: :additional, levels: [:secondary] },
           (THIRTEEN_TO_EIGHTEEN = [13, 18].freeze) => { option: :additional, levels: [:secondary] },
           (FOURTEEN_TO_EIGHTEEN = [14, 18].freeze) => { option: :additional, levels: [:secondary] },
-          (FOURTEEN_TO_NINETEEN = [14, 19].freeze) => { option: :additional, levels: [:secondary] },
+          (FOURTEEN_TO_NINETEEN = [14, 19].freeze) => { option: :additional, levels: [:secondary] }
         }.freeze,
         schema: {
           id: {
             kind: :array,
-            element_schema: :integer,
+            element_schema: :integer
           },
           option: :symbol,
           levels: {
             kind: :array,
-            element_schema: :symbol,
-          },
+            element_schema: :symbol
+          }
         }
       )
 
       HESA_CODE_SETS = {
-        "13909"	=> THREE_TO_SEVEN,
-        "13911"	=> THREE_TO_NINE,
-        "13912"	=> THREE_TO_ELEVEN,
-        "13913"	=> FIVE_TO_NINE,
-        "13914"	=> FIVE_TO_ELEVEN,
-        "13915"	=> SEVEN_TO_ELEVEN,
-        "13916"	=> SEVEN_TO_FOURTEEN,
-        "13917" => NINE_TO_FOURTEEN,
-        "13918"	=> ELEVEN_TO_SIXTEEN,
-        "13919"	=> ELEVEN_TO_NINETEEN,
+        '13909'	=> THREE_TO_SEVEN,
+        '13911'	=> THREE_TO_NINE,
+        '13912'	=> THREE_TO_ELEVEN,
+        '13913'	=> FIVE_TO_NINE,
+        '13914'	=> FIVE_TO_ELEVEN,
+        '13915'	=> SEVEN_TO_ELEVEN,
+        '13916'	=> SEVEN_TO_FOURTEEN,
+        '13917' => NINE_TO_FOURTEEN,
+        '13918'	=> ELEVEN_TO_SIXTEEN,
+        '13919'	=> ELEVEN_TO_NINETEEN
       }.freeze
 
       COURSE_LEVELS = {
@@ -70,7 +70,7 @@ module DfE
           FOUR_TO_ELEVEN,
           FIVE_TO_NINE,
           FIVE_TO_ELEVEN,
-          SEVEN_TO_ELEVEN,
+          SEVEN_TO_ELEVEN
         ],
         secondary: [
           TWO_TO_NINETEEN,
@@ -89,7 +89,7 @@ module DfE
           ELEVEN_TO_NINETEEN,
           THIRTEEN_TO_EIGHTEEN,
           FOURTEEN_TO_EIGHTEEN,
-          FOURTEEN_TO_NINETEEN,
+          FOURTEEN_TO_NINETEEN
         ]
       }.freeze
     end
