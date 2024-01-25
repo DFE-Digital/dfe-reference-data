@@ -1,5 +1,4 @@
 require 'dfe/reference_data/age_ranges'
-require 'byebug'
 
 RSpec.describe DfE::ReferenceData::AgeRanges do
   describe described_class::AGE_RANGES do
