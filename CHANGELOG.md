@@ -1,5 +1,11 @@
 # Changelog
 
+## [v3.1.3](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.3) (2024-01-29)
+
+**Merged pull requests:**
+
+- Add UPPER_BOUND_PRIMARY_AGE to Age Ranges [\#99](https://github.com/DFE-Digital/dfe-reference-data/pull/99)
+
 ## [v3.1.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.2) (2024-01-29)
 
 **Merged pull requests:**

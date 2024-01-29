@@ -1,6 +1,8 @@
 module DfE
   module ReferenceData
     module AgeRanges
+      UPPER_BOUND_PRIMARY_AGE = 11
+
       AGE_RANGES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           (THREE_TO_ELEVEN = [3, 11].freeze) => { option: :main, levels: [:primary] },
