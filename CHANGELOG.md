@@ -1,5 +1,11 @@
 # Changelog
 
+## [v3.1.4](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.4) (2024-01-29)
+
+**Merged pull requests:**
+
+- Add missing require_relative [\#100](https://github.com/DFE-Digital/dfe-reference-data/pull/100)
+
 ## [v3.1.3](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.3) (2024-01-29)
 
 **Merged pull requests:**
