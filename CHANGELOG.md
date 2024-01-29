@@ -1,5 +1,11 @@
 # Changelog
 
+## [v3.1.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.2) (2024-01-29)
+
+**Merged pull requests:**
+
+- Add age range data [\#97](https://github.com/DFE-Digital/dfe-reference-data/pull/97)
+
 ## [v3.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.4.0) (2023-12-18)
 
 **Merged pull requests:**
