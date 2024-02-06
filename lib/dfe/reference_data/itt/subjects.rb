@@ -12,7 +12,7 @@ module DfE
       }.freeze
 
       SUBJECTS_FIELD_DESCRIPTIONS = {
-        id: 'A unique identified for this ITT subject',
+        id: 'A unique identifier for this ITT subject',
         name: 'The long name of the ITT subject.',
         hecos_code: 'The HECoS code for the subject, as per HESA field [SBJCA](https://www.hesa.ac.uk/collection/c22053/e/sbjca)',
         category: 'The ID of the category that this subject is a specialism of',
