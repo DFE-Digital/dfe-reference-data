@@ -141,7 +141,7 @@ module DfE
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: 'A2',
                                                       category: 'c6d6d59b-f6c5-4a2d-98a1-04f2e99539a9' },
@@ -168,7 +168,7 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '17865203-96dc-465b-a65c-98622c962cad' => { name: 'religious studies',
@@ -176,8 +176,8 @@ module DfE
                                                       register_category: '142d7142-7e60-4d2d-a7c8-a9e7d308b0c7',
                                                       publish_category: 'V6',
                                                       incentive: {
-                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874',
-                                                        '2024-2025' => '98764495-1266-4f51-9d1d-87ce7671c237'
+                                                        '2020-2021' => '98d7a2d9-f80a-45c0-9491-5dd8bd8eeefa',
+                                                        '2024-2025' => '7397a91c-c6a5-4e9c-91a2-d6c446baa367'
                                                       },
                                                       category: 'e8d5dffc-bfba-4d8a-843c-806c6d80d86b' },
           '03a8646b-9d70-4054-9ac1-f6a5fa2ffc92' => { name: 'economics',
@@ -192,7 +192,7 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '58764285-62ea-4274-8987-1f1496fbd5a8' => { name: 'applied computing',
@@ -200,10 +200,10 @@ module DfE
                                                       register_category: '5050634c-2f57-4654-b1aa-ddae3089ac37',
                                                       publish_category: '11',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '1265340a-5b61-465d-920a-6d76f96e5f11',
                                                         '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
-                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8',
+                                                        '2023-2024' => '97b16fb5-eb8c-4ef7-b4f7-fcb331d8e4a3',
                                                         '2024-2025' => 'e72a2d66-6de8-4ef2-8704-54d52b00e925'
                                                       },
                                                       category: 'bc0a97ed-c09c-4688-9dce-b4ea888b6c51' },
@@ -217,11 +217,11 @@ module DfE
           '611c8a31-b1e3-4791-83e0-959df107f940' => { name: 'Japanese language',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: '19',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
@@ -229,11 +229,11 @@ module DfE
                                                       hecos_code: '101142',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: '24', # Actually "Modern languages (other)"
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
@@ -242,11 +242,11 @@ module DfE
                                                       register_category: '499be4ee-3895-4c69-92f1-e95d5670a399',
                                                       publish_category: 'G1',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '54e7e70c-73ec-409d-9db9-9006c0742353',
                                                         '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8',
-                                                        '2024-2025' => 'e72a2d66-6de8-4ef2-8704-54d52b00e925'
+                                                        '2024-2025' => 'ea241fff-9aca-4403-b5f7-49eb1af9edcb'
                                                       },
                                                       category: '71cbc6f2-9b24-4504-86f5-979e573de058' },
           '5c92bc39-ec2e-4c2f-83b6-58655bf52958' => { name: 'manufacturing engineering',
@@ -257,7 +257,7 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '88831d9f-8469-4532-8453-b4c8826b1ff7' => { name: 'design',
@@ -268,18 +268,18 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '8c4c1209-8085-4484-9086-e0437d2ac8ed' => { name: 'French language',
                                                       hecos_code: '100321',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
-                                                        '2023-2024' => '6c5a3cb6-e769-415f-8c08-b71c7a37be39',
-                                                        '2024-2025' => '0b126183-5b51-4990-b5d1-8fbadb03d25f'
+                                                        '2023-2024' => '76d0f697-5219-45a8-98b6-0c3762714c3d',
+                                                        '2024-2025' => 'aba35fd8-3d08-4eed-9483-32961c4ee9b4'
                                                       },
                                                       publish_category: '15',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
@@ -287,11 +287,11 @@ module DfE
                                                       hecos_code: '100326',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: '18',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
@@ -299,10 +299,10 @@ module DfE
                                                       hecos_code: '100323',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
-                                                        '2023-2024' => '6c5a3cb6-e769-415f-8c08-b71c7a37be39',
+                                                        '2023-2024' => 'b8366eda-112b-4f98-881e-ccb058721890',
                                                         '2024-2025' => '0b126183-5b51-4990-b5d1-8fbadb03d25f'
                                                       },
                                                       publish_category: '17',
@@ -312,22 +312,22 @@ module DfE
                                                       register_category: 'c6e125b6-e6da-43bf-8d1b-6f8d6349057c',
                                                       publish_category: 'F1',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
-                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8',
-                                                        '2024-2025' => 'e72a2d66-6de8-4ef2-8704-54d52b00e925'
+                                                        '2023-2024' => 'ec3ed999-6520-490a-bfe6-9169bf9aac5e',
+                                                        '2024-2025' => 'b9ee4216-429b-45fa-b5e3-b2f562d5aca7'
                                                       },
                                                       category: '167b889a-4cbb-47ff-a196-4103cb7ea43d' },
           '8c536594-0fd6-4fa8-bb40-d30a1739465d' => { name: 'Chinese languages',
                                                       hecos_code: '101165',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: '20', # Actually Mandarin in pubfind
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
@@ -359,7 +359,7 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '9280520e-144f-4760-b0d3-b6f1d3b5faa7' => { name: 'sport and exercise sciences',
@@ -377,8 +377,8 @@ module DfE
                                                       register_category: '6ea9457d-b8a2-4211-b58b-064fed680c99',
                                                       publish_category: 'W1',
                                                       incentive: {
-                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874',
-                                                        '2024-2025' => '98764495-1266-4f51-9d1d-87ce7671c237'
+                                                        '2020-2021' => '61bf1a5d-6c00-4df9-a730-a45e91bbc2b5',
+                                                        '2024-2025' => 'a324ae47-d9db-4eb5-9039-c767b8ec4f08'
                                                       },
                                                       category: '69b468df-f7ca-40cb-9410-ed5f4e5bd61b' },
           'b9a62f65-bad6-4e6a-8b20-37531c28cf3d' => { name: 'information technology',
@@ -386,10 +386,10 @@ module DfE
                                                       register_category: '5050634c-2f57-4654-b1aa-ddae3089ac37',
                                                       publish_category: '11',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '1265340a-5b61-465d-920a-6d76f96e5f11',
                                                         '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
-                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8',
+                                                        '2023-2024' => '97b16fb5-eb8c-4ef7-b4f7-fcb331d8e4a3',
                                                         '2024-2025' => 'e72a2d66-6de8-4ef2-8704-54d52b00e925'
                                                       },
                                                       category: 'bc0a97ed-c09c-4688-9dce-b4ea888b6c51' },
@@ -398,11 +398,11 @@ module DfE
                                                       register_category: 'cc6a43bf-78fd-4253-aa7d-0b301b8ce355',
                                                       publish_category: 'F3',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '805b8731-c86c-4d15-af62-d41fd497f4b1',
                                                         '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
-                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8',
-                                                        '2024-2025' => 'e72a2d66-6de8-4ef2-8704-54d52b00e925'
+                                                        '2023-2024' => 'a80b6178-3f51-4308-b7c2-76a54891c43d',
+                                                        '2024-2025' => 'd1ac3245-9e10-4e72-99d0-70ecd6fce106'
                                                       },
                                                       category: 'd059a9cd-9b70-49bf-8194-9a71081e6cb9' },
           '75fefeb8-9b74-4545-9982-dd56f92a3cfc' => { name: 'hair and beauty sciences',
@@ -424,7 +424,7 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           'c5f818be-5062-4049-994f-eb932196093e' => { name: 'historical linguistics',
@@ -449,7 +449,7 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '97b39c3a-3c0a-4629-a44a-b04eed15a2c0' => { name: 'applied physics',
@@ -457,10 +457,10 @@ module DfE
                                                       register_category: 'cc6a43bf-78fd-4253-aa7d-0b301b8ce355',
                                                       publish_category: 'F3',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '805b8731-c86c-4d15-af62-d41fd497f4b1',
                                                         '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
-                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8',
+                                                        '2023-2024' => 'a80b6178-3f51-4308-b7c2-76a54891c43d',
                                                         '2024-2025' => 'e72a2d66-6de8-4ef2-8704-54d52b00e925'
                                                       },
                                                       category: 'd059a9cd-9b70-49bf-8194-9a71081e6cb9' },
@@ -474,7 +474,7 @@ module DfE
                                                       register_category: '4a61215c-0fec-4d19-800b-3eb6eae95e63',
                                                       publish_category: 'W3',
                                                       incentive: {
-                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874',
+                                                        '2020-2021' => '9a7383e7-b880-43de-a15d-e3759ada0104',
                                                         '2024-2025' => '98764495-1266-4f51-9d1d-87ce7671c237'
                                                       },
                                                       category: 'cc203931-79bf-4d32-982a-ad56600ba141' },
@@ -491,7 +491,7 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '68534f24-6eb4-497f-b45b-a6d87703d8c3' => { name: 'sports management',
@@ -507,8 +507,8 @@ module DfE
                                                         '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
                                                         '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
-                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8',
-                                                        '2024-2025' => 'e72a2d66-6de8-4ef2-8704-54d52b00e925'
+                                                        '2023-2024' => 'ec3ed999-6520-490a-bfe6-9169bf9aac5e',
+                                                        '2024-2025' => 'b9ee4216-429b-45fa-b5e3-b2f562d5aca7'
                                                       },
                                                       category: '167b889a-4cbb-47ff-a196-4103cb7ea43d' },
 
@@ -523,7 +523,7 @@ module DfE
                                                       register_category: 'f95ee557-44de-469b-830c-854d3701d802',
                                                       publish_category: '08',
                                                       incentive: {
-                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874'
+                                                        '2020-2021' => '92b39de3-7c25-40a9-a3dd-b8ce78f43091'
                                                       },
                                                       category: '139d6fa7-6044-423b-a8ac-2192956c357b' },
           '8508c395-b8fd-43c5-b9e7-6dc108c5f9ba' => { name: 'drama',
@@ -535,11 +535,11 @@ module DfE
                                                       hecos_code: '100329',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: '24',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
@@ -548,7 +548,7 @@ module DfE
                                                       register_category: '499be4ee-3895-4c69-92f1-e95d5670a399',
                                                       publish_category: 'G1',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '54e7e70c-73ec-409d-9db9-9006c0742353',
                                                         '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8',
@@ -559,11 +559,11 @@ module DfE
                                                       hecos_code: '101192',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: '24', # Actually "Modern languages (other)"
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
@@ -575,7 +575,7 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           'd59319a5-6151-46d3-8e07-f0eee7af0eae' => { name: 'Latin language',
@@ -584,7 +584,7 @@ module DfE
                                                       incentive: {
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: 'A0',
                                                       category: 'c6d6d59b-f6c5-4a2d-98a1-04f2e99539a9' },
@@ -606,10 +606,10 @@ module DfE
                                                       register_category: '5050634c-2f57-4654-b1aa-ddae3089ac37',
                                                       publish_category: '11',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '1265340a-5b61-465d-920a-6d76f96e5f11',
                                                         '2021-2022' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
                                                         '2022-2023' => '3bae9ef7-9944-4b41-8de2-634792e712b1',
-                                                        '2023-2024' => '083d21b6-4e98-43ca-9a63-a9674b4355a8',
+                                                        '2023-2024' => '97b16fb5-eb8c-4ef7-b4f7-fcb331d8e4a3',
                                                         '2024-2025' => 'e72a2d66-6de8-4ef2-8704-54d52b00e925'
                                                       },
                                                       category: 'bc0a97ed-c09c-4688-9dce-b4ea888b6c51' },
@@ -620,7 +620,8 @@ module DfE
                                                         '2020-2021' => '95eebd6c-69c5-4883-b3ff-c703b559bc4b',
                                                         '2021-2022' => 'dca52a66-92a0-42af-934d-438ff496559e',
                                                         '2022-2023' => '260f30d6-186c-469b-9776-b8515daaf03f',
-                                                        '2023-2024' => '71730a26-b80b-440f-96ac-8c5814daa2c5'
+                                                        '2023-2024' => '71730a26-b80b-440f-96ac-8c5814daa2c5',
+                                                        '2024-2025' => '56a104da-7a44-43c9-ba5d-9618defca156'
                                                       },
                                                       publish_category: 'C1',
                                                       category: 'b51a9678-0a36-4361-983a-fc74f46c1b06' },
@@ -637,11 +638,11 @@ module DfE
                                                       hecos_code: '100330',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: '21',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
@@ -649,11 +650,11 @@ module DfE
                                                       hecos_code: '100332',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => '6c5a3cb6-e769-415f-8c08-b71c7a37be39',
-                                                        '2024-2025' => '0b126183-5b51-4990-b5d1-8fbadb03d25f'
+                                                        '2024-2025' => '4e1a13ac-15ad-41a7-856d-3278dea7639d'
                                                       },
                                                       publish_category: '22',
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
@@ -661,11 +662,11 @@ module DfE
                                                       hecos_code: '100333',
                                                       register_category: 'd46e3117-5eae-4609-8abc-a49cb4ec38d0',
                                                       incentive: {
-                                                        '2020-2021' => '36a18648-c8bf-4958-afb9-aad4df195c3f',
+                                                        '2020-2021' => '2d304d9a-3a01-4bf7-bf2d-0fe95305ebb0',
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: '24', # Actually "Modern languages (other)"
                                                       category: '262f596b-b8a2-40c2-9efc-1945586ab0c5' },
@@ -692,7 +693,7 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '598ca321-5086-4aa1-9851-7bb2957b3a22' => { name: 'classical Greek studies',
@@ -703,7 +704,7 @@ module DfE
                                                         '2021-2022' => 'd12a7dfb-270d-400e-b0e3-b52e806f28bc',
                                                         '2022-2023' => '636cbae8-763d-4f7e-97fd-4e3ae4c670e4',
                                                         '2023-2024' => 'd16dbff5-4c9c-4c0c-b47e-84a7fa6aec0b',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '06c4bc30-927e-4fdc-92d8-6875e5530a33'
                                                       },
                                                       publish_category: 'A1',
                                                       category: 'c6d6d59b-f6c5-4a2d-98a1-04f2e99539a9' },
@@ -712,7 +713,7 @@ module DfE
                                                       register_category: 'f95ee557-44de-469b-830c-854d3701d802',
                                                       publish_category: '08',
                                                       incentive: {
-                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874'
+                                                        '2020-2021' => '92b39de3-7c25-40a9-a3dd-b8ce78f43091'
                                                       },
                                                       category: '139d6fa7-6044-423b-a8ac-2192956c357b' },
           '0627be0e-1f18-4629-89c8-c6bfc532eb14' => { name: 'English studies',
@@ -722,7 +723,7 @@ module DfE
                                                       incentive: {
                                                         '2020-2021' => '6799f9a6-9962-4295-b0cd-96594eb9617a',
                                                         '2023-2024' => 'e89ced70-7964-4ee5-b5c3-8e7d53b6fb97',
-                                                        '2024-2025' => '98764495-1266-4f51-9d1d-87ce7671c237'
+                                                        '2024-2025' => '9c6bc74d-ae34-46f8-9ce0-d4c665a21587'
                                                       },
                                                       category: '48721ee7-577b-4819-8f92-b35d48414443' },
           '7b6df513-64e8-4020-a681-9965aebe7346' => { name: 'textiles technology',
@@ -733,7 +734,7 @@ module DfE
                                                         '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
                                                         '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
                                                         '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
-                                                        '2024-2025' => 'dc0164b9-2007-4ee1-a5cb-eed49fe3b2e8'
+                                                        '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd'
                                                       },
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '21cf685d-5f27-4a08-a597-2307afb5733d' => { name: 'graphic design',
@@ -741,8 +742,8 @@ module DfE
                                                       register_category: '6ea9457d-b8a2-4211-b58b-064fed680c99',
                                                       publish_category: 'W1',
                                                       incentive: {
-                                                        '2020-2021' => '76233e68-3830-45dd-9222-e8df3c278874',
-                                                        '2024-2025' => '98764495-1266-4f51-9d1d-87ce7671c237'
+                                                        '2020-2021' => 'd4024ca2-da1a-47ff-b497-62fed8fa5249',
+                                                        '2024-2025' => 'a324ae47-d9db-4eb5-9039-c767b8ec4f08'
                                                       },
                                                       category: '69b468df-f7ca-40cb-9410-ed5f4e5bd61b' },
           '05044321-4c35-45d5-bb37-42be71be6b80' => { name: 'applied biology',
@@ -753,7 +754,7 @@ module DfE
                                                         '2020-2021' => '95eebd6c-69c5-4883-b3ff-c703b559bc4b',
                                                         '2021-2022' => 'dca52a66-92a0-42af-934d-438ff496559e',
                                                         '2022-2023' => '260f30d6-186c-469b-9776-b8515daaf03f',
-                                                        '2023-2024' => '71730a26-b80b-440f-96ac-8c5814daa2c5'
+                                                        '2023-2024' => '80464bd0-f509-4d54-b70a-add606b1844f'
                                                       },
                                                       category: 'b51a9678-0a36-4361-983a-fc74f46c1b06' },
           '02b32b63-d178-4e63-9bbd-b6709109f4fc' => { name: 'health studies',
