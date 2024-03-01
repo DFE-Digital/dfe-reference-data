@@ -84,10 +84,13 @@ task :update_bigquery_tables do
 
     # Suffix table names with the major version number, so multiple release
     # branches can coexist peacefully
-    major_version = (config.version.split '.')[0]
-    config.table_name_suffix = "_v#{major_version}"
+    version_parts = config.version.split('.')
+    major_version = version_parts[0]
+    minor_version = version_parts[1] || '0'
 
-    puts "Updating #{config.project}.#{config.dataset} with version #{major_version}:"
+    config.table_name_suffix = "_v#{major_version}_#{minor_version}"
+
+    puts "Updating #{config.project}.#{config.dataset} with version #{config.version}:"
   end
 
   DfE::ReferenceData::BigQuery.update_tables
