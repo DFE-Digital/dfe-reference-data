@@ -1,5 +1,13 @@
 # Changelog
 
+## [v3.2.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.2.0) (2024-03-01)
+
+**Merged pull requests:**
+
+- Update rake task to add minor versions [\#102](https://github.com/DFE-Digital/dfe-reference-data/pull/102)
+
+- Update incentives table [\#101](https://github.com/DFE-Digital/dfe-reference-data/pull/101)
+
 ## [v3.1.4](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.4) (2024-01-29)
 
 **Merged pull requests:**
