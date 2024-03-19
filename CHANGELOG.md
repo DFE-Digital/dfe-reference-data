@@ -1,5 +1,11 @@
 # Changelog
 
+## [v3.3.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.3.0) (2024-03-19)
+
+**Merged pull requests:**
+
+- Add degree_types code mapping [\#104](https://github.com/DFE-Digital/dfe-reference-data/pull/104)
+
 ## [v3.2.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.2.0) (2024-03-01)
 
 **Merged pull requests:**
