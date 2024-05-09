@@ -73,25 +73,32 @@ BIGQUERY_TABLES = [
   ['bank_holidays', DfE::ReferenceData::BankHolidays::BANK_HOLIDAYS]
 ].freeze
 
+BIGQUERY_CONFIGS = [
+  { project: ENV['BIGQUERY_PROJECT_FIRST'] || 'rugged-abacus-218110', dataset: ENV['BIGQUERY_DATASET'] || 'dfe_reference_data_dev' },
+  { project: ENV['BIGQUERY_PROJECT_SECOND'] || 'cross-teacher-services', dataset: ENV['BIGQUERY_DATASET'] || 'dfe_reference_data_dev' }
+].freeze
+
 desc 'Insert records into BigQuery tables from the reference data lists'
 task :update_bigquery_tables do
-  DfE::ReferenceData::BigQuery::Config.configure do |config|
-    config.project = ENV['BIGQUERY_PROJECT'] || 'rugged-abacus-218110'
-    config.dataset = ENV['BIGQUERY_DATASET'] || 'dfe_reference_data_dev'
-    config.tables = BIGQUERY_TABLES
-    config.version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
-    config.commit = `git rev-parse HEAD`.chomp
+  BIGQUERY_CONFIGS.each do |config_entry|
+    DfE::ReferenceData::BigQuery::Config.configure do |config|
+      config.project = config_entry[:project]
+      config.dataset = config_entry[:dataset]
+      config.tables = BIGQUERY_TABLES
+      config.version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
+      config.commit = `git rev-parse HEAD`.chomp
 
-    # Suffix table names with the major version number, so multiple release
-    # branches can coexist peacefully
-    version_parts = config.version.split('.')
-    major_version = version_parts[0]
-    minor_version = version_parts[1] || '0'
+      # Suffix table names with the major version number, so multiple release
+      # branches can coexist peacefully
+      version_parts = config.version.split('.')
+      major_version = version_parts[0]
+      minor_version = version_parts[1] || '0'
 
-    config.table_name_suffix = "_v#{major_version}_#{minor_version}"
+      config.table_name_suffix = "_v#{major_version}_#{minor_version}"
 
-    puts "Updating #{config.project}.#{config.dataset} with version #{config.version}:"
+      puts "Updating #{config.project}.#{config.dataset} with version #{config.version}:"
+    end
+
+    DfE::ReferenceData::BigQuery.update_tables
   end
-
-  DfE::ReferenceData::BigQuery.update_tables
 end
