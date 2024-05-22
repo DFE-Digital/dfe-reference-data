@@ -31,19 +31,16 @@ module DfE
 
         # rubocop:disable Style/ClassVars
         def self.obtain_credentials
-          credential_file_name = case @@project
-                                 when 'rugged-abacus-218110'
-                                   'dfe-reference-data_bigquery_api_key.json'
-                                 when 'cross-teacher-services'
-                                   'dfe-reference-data_bigquery_api_key_cross_teacher_services.json'
-                                 else
-                                   raise StandardError, "Unsupported project: #{@@project}"
-                                 end
-
-          expanded_path = File.expand_path(credential_file_name.to_s, __dir__)
-          raise StandardError, "No BigQuery credentials were found for project #{@@project}" unless File.file?(expanded_path)
-
-          @@credentials = JSON.parse(File.read(expanded_path))
+          expanded_path = File.expand_path('dfe-reference-data_bigquery_api_key.json', __dir__)
+          if @@credentials.nil?
+            if ENV['BIGQUERY_CREDENTIALS']
+              @@credentials = JSON.parse(ENV['BIGQUERY_CREDENTIALS'])
+            elsif File.file?(expanded_path)
+              @@credentials = JSON.parse(File.read(expanded_path))
+            else
+              raise StandardError, 'No bigquery credentials were found in $BIGQUERY_CREDENTIALS or ../dfe-reference-data_bigquery_api_key.json'
+            end
+          end
           @@credentials
         end
         # rubocop:enable Style/ClassVars
