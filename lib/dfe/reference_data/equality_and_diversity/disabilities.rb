@@ -48,7 +48,16 @@ module DfE
           'b14e142a-adfe-4646-af5d-8236b6a5b48d' =>
           { name: 'No disabilities or health issues',
             kind: :none,
-            hesa_code: '95' } },
+            hesa_code: '95' },
+          'e0facf13-af98-4688-ba66-fa7f269dd50c' =>
+          { name: 'No disabilities or health issues - pre 2022',
+            hint: 'No known impairment, health condition or learning difference. Pre 2022 code, replaced by code 95 thereafter',
+            kind: :none,
+            hesa_code: '00' },
+          'e8a66a2f-899c-4a73-b57a-586486d79d0e' =>
+          { name: 'Multiple disabilities',
+            hint: 'Pre 2022 code, replaced by multiple codes thereafter',
+            hesa_code: '08' } },
         schema: DISABILITIES_SCHEMA,
         list_description: 'Disability and Health Condition classifications',
         list_usage_guidance: 'These items are intended to be referenced from a multiple-value field. The options with kind :prefer_not_to_say and :none are exclusive; if used, no other values can be used.',
