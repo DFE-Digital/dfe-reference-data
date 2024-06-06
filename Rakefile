@@ -76,7 +76,7 @@ BIGQUERY_TABLES = [
 desc 'Insert records into BigQuery tables from the reference data lists'
 task :update_bigquery_tables do
   DfE::ReferenceData::BigQuery::Config.configure do |config|
-    config.project = ENV['BIGQUERY_PROJECT'] || 'rugged-abacus-218110'
+    config.project = ENV['BIGQUERY_PROJECT'] || 'cross-teacher-services'
     config.dataset = ENV['BIGQUERY_DATASET'] || 'dfe_reference_data_dev'
     config.tables = BIGQUERY_TABLES
     config.version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp

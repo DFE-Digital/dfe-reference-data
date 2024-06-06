@@ -2,7 +2,7 @@ require_relative '../../../../../lib/dfe/reference_data/bigquery/importer'
 require 'google/cloud/bigquery'
 require 'securerandom'
 
-BIGQUERY_PROJECT = (ENV['BIGQUERY_QA_PROJECT'] || 'rugged-abacus-218110').freeze
+BIGQUERY_PROJECT = (ENV['BIGQUERY_QA_PROJECT'] || 'cross-teacher-services').freeze
 BIGQUERY_DATASET = (ENV['BIGQUERY_QA_DATASET'] || 'dfe_reference_data_dev').freeze
 
 TEST_TABLE_NAME = "test_#{SecureRandom.uuid}".freeze

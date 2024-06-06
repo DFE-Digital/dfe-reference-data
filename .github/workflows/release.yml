@@ -16,5 +16,5 @@ jobs:
       - run: bundle exec rake update_bigquery_tables
         env:
           BIGQUERY_CREDENTIALS: ${{ secrets.BIGQUERY_CREDENTIALS }}
-          BIGQUERY_PROJECT: rugged-abacus-218110
+          BIGQUERY_PROJECT: cross-teacher-services
           BIGQUERY_DATASET: dfe_reference_data

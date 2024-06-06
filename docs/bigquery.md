@@ -1,6 +1,6 @@
 ## BigQuery synchronisation
 
-The following lists are, on each release, automatically written into BigQuery under `rugged-abacus-218110.dfe_reference_data`:
+The following lists are, on each release, automatically written into BigQuery under `cross-teacher-services.dfe_reference_data`:
 
 | List                                                    | BigQuery base table name   |
 |---------------------------------------------------------|----------------------------|
@@ -28,7 +28,7 @@ If you run it yourself, it will write into the `dfe_reference_data_dev` dataset
 instead of `dfe_reference_data` - unless you override this by setting the
 `BIGQUERY_DATASET` environment variable.
 
-The BigQuery project can be overridden from `rugged-abacus-218110` by setting
+The BigQuery project can be overridden from `cross-teacher-services` by setting
 `BIGQUERY_PROJECT`.
 
 ### Testing
@@ -36,7 +36,7 @@ The BigQuery project can be overridden from `rugged-abacus-218110` by setting
 If you have a `dfe-reference-data_bigquery_api_key.json` file or the
 `BIGQUERY_CREDENTIALS` environment variable set when running `rake spec`, then a
 test of the BigQuery importer will be run. This will create a randomly-named
-table in the `rugged-abacus-218110.dfe_reference_data_dev` dataset and,
+table in the `cross-teacher-services.dfe_reference_data_dev` dataset and,
 hopefully, delete it afterwards. The project and dataset used for the test can
 be overriden with the `BIGQUERY_QA_PROJECT` and `BIGQUERY_QA_DATASET`
 environment variables, respectively.

@@ -27,5 +27,5 @@ jobs:
       run: bundle exec rspec
       env:
         BIGQUERY_CREDENTIALS: ${{ secrets.BIGQUERY_CREDENTIALS }}
-        BIGQUERY_QA_PROJECT: rugged-abacus-218110
+        BIGQUERY_QA_PROJECT: cross-teacher-services
         BIGQUERY_QA_DATASET: dfe_reference_data_dev
