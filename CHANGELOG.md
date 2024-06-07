@@ -1,5 +1,13 @@
 # Changelog
 
+## [v3.4.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.4.0) (2024-06-07)
+
+**Merged pull requests:**
+
+- Add codes to disability hesa [\#108](https://github.com/DFE-Digital/dfe-reference-data/pull/108)
+
+- Allow data to be sent to new Big Query project [\#106](https://github.com/DFE-Digital/dfe-reference-data/pull/106)
+
 ## [v3.3.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.3.0) (2024-03-19)
 
 **Merged pull requests:**
