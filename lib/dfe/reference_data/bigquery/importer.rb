@@ -21,7 +21,7 @@ module DfE
         self.max_retry_sleep = 60 # seconds
         self.bigquery_retries = 10
         self.bigquery_timeout = 10
-        self.table_name_suffix = ''
+        self.table_name_suffix = '_latest' # Default suffix
 
         def self.configure
           yield(self)
@@ -236,7 +236,7 @@ module DfE
         end
 
         def update_reference_list_into_bigquery_table(dataset, table_name, list)
-          table = dataset.table table_name
+          table = dataset.table(table_name)
 
           # NOTE: TO FUTURE SELF: If we start to deal with very large reference
           # lists we might start to hit BigQuery API limits documented here:

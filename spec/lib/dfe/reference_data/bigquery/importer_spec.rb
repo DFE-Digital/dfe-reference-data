@@ -5,7 +5,8 @@ require 'securerandom'
 BIGQUERY_PROJECT = (ENV['BIGQUERY_QA_PROJECT'] || 'cross-teacher-services').freeze
 BIGQUERY_DATASET = (ENV['BIGQUERY_QA_DATASET'] || 'dfe_reference_data_dev').freeze
 
-TEST_TABLE_NAME = "test_#{SecureRandom.uuid}".freeze
+TEST_TABLE_NAME_PREFIX = "test_#{SecureRandom.uuid}".freeze
+TEST_TABLE_NAME = "#{TEST_TABLE_NAME_PREFIX}_latest".freeze
 
 FAKE_VERSION = '1.2.3'.freeze
 FAKE_COMMIT = '22596363b3de40b06f981fb85d82312e8c0ed511'.freeze
@@ -122,18 +123,19 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials.any?
 
     it 'imported OK' do
       DfE::ReferenceData::BigQuery::Config.configure do |config|
-        config.tables = [[TEST_TABLE_NAME, test_data]]
+        config.tables = [[TEST_TABLE_NAME_PREFIX, test_data]]
       end
 
       # Just need to check it doesn't throw an error
       DfE::ReferenceData::BigQuery.update_tables
     end
 
-    # This is probably not very idiomatic RSpec, suggestions welcome!
-
     it 'reads back OK' do
       results = []
-      dataset.table(TEST_TABLE_NAME).data.all do |row|
+      table = dataset.table(TEST_TABLE_NAME)
+      expect(table).not_to be_nil, "Table #{TEST_TABLE_NAME} should exist but it does not."
+
+      table.data.all do |row|
         results.append(row)
       end
 
@@ -203,8 +205,11 @@ if DfE::ReferenceData::BigQuery::Config.obtain_credentials.any?
     end
 
     it 'metadata reads back OK' do
-      expect(dataset.table(TEST_TABLE_NAME).description).to eq 'A list of dummy data (see https://github.com/DFE-Digital/dfe-reference-data/blob/main/spec/lib/dfe/reference_data/bigquery/importer_spec.rb for more details)'
-      expect(dataset.table(TEST_TABLE_NAME).fields.map do |x|
+      table = dataset.table(TEST_TABLE_NAME)
+      expect(table).not_to be_nil, "Table #{TEST_TABLE_NAME} should exist but it does not."
+
+      expect(table.description).to eq 'A list of dummy data (see https://github.com/DFE-Digital/dfe-reference-data/blob/main/spec/lib/dfe/reference_data/bigquery/importer_spec.rb for more details)'
+      expect(table.fields.map do |x|
                [x.name, x.description]
              end).to contain_exactly(['array_boolean', nil],
                                      ['array_integer', nil],

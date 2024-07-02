@@ -28,4 +28,3 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `match_synonyms` | string array | A list of common alternative names that are equivalent to this type. An answer matching a match synonym can be safely matched to this type.|
 | `level` | enumerated string | The level of the qualification. `entry`, `1`, `2`, `3`, `4`, `5`, `6`, or `7`. |
 | `degree` | optional enumerated symbol | If the qualification type is a degree, the level of degree - `foundation`, `bachelor`, `master` or `doctor` |
-

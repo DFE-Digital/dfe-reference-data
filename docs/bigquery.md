@@ -13,9 +13,7 @@ The following lists are, on each release, automatically written into BigQuery un
 Edit `BIGQUERY_TABLES` in the Rakefile to change this list.
 
 The table name is made by taking the base table name from the table above, and
-appending a version based on the major version of the release, for instance
-`_v1`. This is to allow existing users of older releases to continue operating,
-rather than changing the data structure out underneath them.
+appending `_latest`. This ensures that the data is always pushed to the same table, providing a consistent and up-to-date reference.
 
 ### Internals
 
@@ -38,5 +36,5 @@ If you have a `dfe-reference-data_bigquery_api_key.json` file or the
 test of the BigQuery importer will be run. This will create a randomly-named
 table in the `cross-teacher-services.dfe_reference_data_dev` dataset and,
 hopefully, delete it afterwards. The project and dataset used for the test can
-be overriden with the `BIGQUERY_QA_PROJECT` and `BIGQUERY_QA_DATASET`
+be overridden with the `BIGQUERY_QA_PROJECT` and `BIGQUERY_QA_DATASET`
 environment variables, respectively.
