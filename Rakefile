@@ -82,13 +82,8 @@ task :update_bigquery_tables do
     config.version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
     config.commit = `git rev-parse HEAD`.chomp
 
-    # Suffix table names with the major version number, so multiple release
-    # branches can coexist peacefully
-    version_parts = config.version.split('.')
-    major_version = version_parts[0]
-    minor_version = version_parts[1] || '0'
-
-    config.table_name_suffix = "_v#{major_version}_#{minor_version}"
+    # Suffix table names with '_latest' to push to the same table
+    config.table_name_suffix = '_latest'
 
     puts "Updating #{config.project}.#{config.dataset} with version #{config.version}:"
   end
