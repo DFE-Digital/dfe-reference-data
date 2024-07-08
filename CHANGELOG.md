@@ -1,5 +1,11 @@
 # Changelog
 
+## [v3.5.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.5.0) (2024-07-08)
+
+**Merged pull requests:**
+
+- Allow BQ tables to be suffixed with _latest [\#110](https://github.com/DFE-Digital/dfe-reference-data/pull/110)
+
 ## [v3.4.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.4.0) (2024-06-07)
 
 **Merged pull requests:**
