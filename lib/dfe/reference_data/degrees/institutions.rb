@@ -2941,6 +2941,13 @@ module DfE
             hesa_itt_code: nil,
             ukprn: '10055902',
             comment: 'Given degree awarding powers in 2022',
+            institution_groups: [] },
+          'dccaef7d-2e28-485c-9eff-0b780f69689f' =>
+          { name: 'The SMB College Group',
+            suggestion_synonyms: [''],
+            match_synonyms: [],
+            hesa_itt_code: nil,
+            ukprn: '10000952',
             institution_groups: [] } },
         schema: INSTITUTIONS_SCHEMA,
         list_description: 'Degree-awarding (or otherwise) institutions',
