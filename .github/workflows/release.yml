@@ -18,3 +18,10 @@ jobs:
           BIGQUERY_CREDENTIALS: ${{ secrets.BIGQUERY_CREDENTIALS }}
           BIGQUERY_PROJECT: cross-teacher-services
           BIGQUERY_DATASET: dfe_reference_data
+      - name: Convert Reference Data to SQLite
+        run: bundle exec rake convert_to_sqlite
+      - name: Upload SQLite Database
+        uses: actions/upload-artifact@v2
+        with:
+          name: reference_data_db_${{ secrets.VERSION }}
+          path: reference_data_${{ secrets.VERSION }}.db
