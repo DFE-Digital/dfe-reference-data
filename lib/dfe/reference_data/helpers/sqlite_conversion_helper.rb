@@ -13,7 +13,7 @@ module DfE
           else
             convert_basic_type_for_sqlite(value)
           end
-        rescue => e
+        rescue StandardError => e
           raise StandardError, "Error converting value for SQLite: #{e.message}"
         end
 
@@ -80,4 +80,3 @@ module DfE
     end
   end
 end
-  
