@@ -116,7 +116,7 @@ module DfE
           },
           '2025-2026' => {
             find_opens: make_local_time(2025, 10, 7, 9), # First Tuesday of October
-            apply_opens: make_local_time(2024, 10, 14, 9), # Second Tuesday of October
+            apply_opens: make_local_time(2025, 10, 14, 9), # Second Tuesday of October
             apply_1_deadline: nil, # This deadline is not applicable for this cycle
             apply_2_deadline: make_local_time(2026, 9, 22, 18), # 3rd Tuesday in September. This is the final and only deadline to send ITT applications in the cycle
             provider_decision_deadline: make_local_time(2026, 9, 30, 23, 59, 59), # 1 week and a day after Apply 2 deadline
