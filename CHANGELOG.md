@@ -1,5 +1,11 @@
 # Changelog
 
+## [v3.5.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.5.1) (2024-09-09)
+
+**Merged pull requests:**
+
+- Add 2025-2026 cycle dates [\#114](https://github.com/DFE-Digital/dfe-reference-data/pull/114)
+
 ## [v3.5.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.5.0) (2024-07-08)
 
 **Merged pull requests:**
