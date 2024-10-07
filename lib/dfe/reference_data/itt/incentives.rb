@@ -92,63 +92,63 @@ module DfE
             itt_categories_id: '262f596b-b8a2-40c2-9efc-1945586ab0c5',
             academic_cycle: ['2026'],
             bursary_amount: '27000',
-            notes: 'languages, geography, biology, design and technology 2024-2025'
+            notes: 'languages, geography, biology, design and technology 2025-2026'
           },
           '4a802b67-1cab-4185-a389-1855d909af9c' => {
             subject_name: 'geography',
             itt_categories_id: '518be3b3-a0b3-45cb-9299-dfaeea0c4b7e',
             academic_cycle: ['2026'],
             bursary_amount: '27000',
-            notes: 'languages, geography, biology, design and technology 2024-2025'
+            notes: 'languages, geography, biology, design and technology 2025-2026'
           },
           '8919ab70-64ad-4c51-bf73-61d377e6422e' => {
             subject_name: 'biology',
             itt_categories_id: 'b51a9678-0a36-4361-983a-fc74f46c1b06',
             academic_cycle: ['2026'],
             bursary_amount: '27000',
-            notes: 'languages, geography, biology, design and technology 2024-2025'
+            notes: 'languages, geography, biology, design and technology 2025-2026'
           },
           'aba9c49c-3b43-4f47-a903-26cd4b35e8d2' => {
             subject_name: 'design and technology',
             itt_categories_id: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5',
             academic_cycle: ['2026'],
             bursary_amount: '25000',
-            notes: 'languages, geography, biology, design and technology 2024-2025'
+            notes: 'languages, geography, biology, design and technology 2025-2026'
           },
           'ff282e02-7726-4684-87d1-7a423233b41f' => {
             subject_name: 'english',
             itt_categories_id: '48721ee7-577b-4819-8f92-b35d48414443',
             academic_cycle: ['2026'],
             bursary_amount: '10000',
-            notes: 'english, art & design, drama, music, re 2024-2025'
+            notes: 'english, art & design, drama, music, re 2025-2026'
           },
           '4427e0e7-e771-4538-8224-be8d570c7996' => {
             subject_name: 'art & design',
             itt_categories_id: '69b468df-f7ca-40cb-9410-ed5f4e5bd61b',
             academic_cycle: ['2026'],
             bursary_amount: '10000',
-            notes: 'english, art & design, drama, music, re 2024-2025'
+            notes: 'english, art & design, drama, music, re 2025-2026'
           },
           '3c038bba-ab48-4b14-8936-f7e2d61019fd' => {
             subject_name: 'drama',
             itt_categories_id: '41f02e8d-de4e-4eff-b02d-a981216ee39e',
             academic_cycle: ['2026'],
             bursary_amount: '10000',
-            notes: 'english, art & design, drama, music, re 2024-2025'
+            notes: 'english, art & design, drama, music, re 2025-2026'
           },
           'c5c20bc4-a2da-4982-82af-d94c610b8646' => {
             subject_name: 'music',
             itt_categories_id: 'cc203931-79bf-4d32-982a-ad56600ba141',
             academic_cycle: ['2026'],
             bursary_amount: '10000',
-            notes: 'english, art & design, drama, music, re 2024-2025'
+            notes: 'english, art & design, drama, music, re 2025-2026'
           },
           'b31d6c8f-d659-43db-99a3-7d5039a033f8' => {
             subject_name: 're',
             itt_categories_id: 'e8d5dffc-bfba-4d8a-843c-806c6d80d86b',
             academic_cycle: ['2026'],
             bursary_amount: '10000',
-            notes: 'english, art & design, drama, music, re 2024-2025'
+            notes: 'english, art & design, drama, music, re 2025-2026'
           },
           ## 2024-2025
           'd1ac3245-9e10-4e72-99d0-70ecd6fce106' => {
