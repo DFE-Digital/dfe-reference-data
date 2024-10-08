@@ -8,6 +8,12 @@ module DfE
 
         class << self
           def convert_to_sqlite(output_file, tables)
+            begin
+              require 'sqlite3'
+            rescue LoadError
+              raise "The 'sqlite3' gem is required to run this task. Please install it by running `gem install sqlite3`."
+            end
+
             versioned_output_file = append_version_to_filename(output_file, DfE::ReferenceData::VERSION)
 
             db = SQLite3::Database.new(versioned_output_file)
@@ -28,7 +34,10 @@ module DfE
             extname = File.extname(output_file)
             basename = File.basename(output_file, extname)
             dirname = File.dirname(output_file)
-            "#{dirname}/#{basename}_#{version}#{extname}"
+
+            basename += "_#{version}" unless basename.include?(version)
+
+            "#{dirname}/#{basename}#{extname}"
           rescue StandardError => e
             raise StandardError, "Error generating versioned filename: #{e.message}"
           end
@@ -55,10 +64,10 @@ module DfE
           end
 
           def insert_record(db, table_name, record)
-            columns = record.keys.map(&:to_s)
+            columns = record.keys.map { |col| "\"#{col}\"" }
             placeholders = (['?'] * columns.size).join(',')
             insert_sql = "INSERT INTO #{table_name} (#{columns.join(',')}) VALUES (#{placeholders})"
-            values = columns.map { |col| convert_value_for_sqlite(record[col.to_sym]) }
+            values = columns.map { |col| convert_value_for_sqlite(record[col.delete('"').to_sym]) }
             db.execute(insert_sql, values)
           rescue StandardError => e
             raise StandardError, "Error converting value for SQLite in #{table_name}: #{e.message}"
@@ -67,7 +76,7 @@ module DfE
           def generate_create_table_sql(table_name, schema)
             columns = schema.map do |field_name, field_schema|
               field_type = field_schema.is_a?(Hash) ? field_schema[:kind] : field_schema
-              "#{field_name} #{convert_to_sqlite_type(field_type)}"
+              "\"#{field_name}\" #{convert_to_sqlite_type(field_type)}"
             end
             "CREATE TABLE IF NOT EXISTS #{table_name} (#{columns.join(', ')})"
           rescue StandardError => e
