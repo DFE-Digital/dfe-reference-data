@@ -1,5 +1,11 @@
 # Changelog
 
+## [v3.6.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.0) (2024-10-10)
+
+**Merged pull requests:**
+
+- Add converter.rb and update Rakefile [\#113](https://github.com/DFE-Digital/dfe-reference-data/pull/113)
+
 ## [v3.5.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.5.1) (2024-09-09)
 
 **Merged pull requests:**
