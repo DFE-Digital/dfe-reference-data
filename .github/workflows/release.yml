@@ -25,5 +25,5 @@ jobs:
     - name: Upload SQLite Database
       uses: actions/upload-artifact@v4
       with:
-        name: reference_data_db_${{ secrets.VERSION }}
-        path: reference_data_${{ secrets.VERSION }}.db
+        name: reference_data_db_${{ github.ref_name }}
+        path: reference_data_${{ github.ref_name }}.db
