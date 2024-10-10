@@ -25,6 +25,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rspec', '~> 3.0')
   s.add_development_dependency('rubocop', '~> 1.25')
   s.add_development_dependency('rubocop-rspec', '~> 2.8')
+  s.add_development_dependency('sqlite3', '~> 1.4')
 
   s.add_dependency 'activesupport'
   s.add_dependency 'tzinfo'

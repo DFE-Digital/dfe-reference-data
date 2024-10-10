@@ -5,6 +5,7 @@ require 'rspec/core/rake_task'
 
 require_relative 'lib/dfe/reference_data'
 require_relative 'lib/dfe/reference_data/bigquery/importer'
+require_relative 'lib/dfe/reference_data/bigquery/converter'
 
 RSpec::Core::RakeTask.new(:spec)
 
@@ -89,4 +90,11 @@ task :update_bigquery_tables do
   end
 
   DfE::ReferenceData::BigQuery.update_tables
+end
+
+desc 'Convert reference data to SQLite'
+task :convert_to_sqlite do
+  version = DfE::ReferenceData::VERSION
+  output_file = File.join(__dir__, "reference_data_#{version}.db")
+  DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, BIGQUERY_TABLES)
 end
