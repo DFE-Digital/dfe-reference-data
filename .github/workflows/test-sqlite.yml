@@ -1,29 +1,36 @@
-name: Feed Bigquery
+name: Test SQLite Conversion
+
 on:
   push:
-    # Match all tags
-    tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+'
+    branches:
+      - test-sqlite-branch
+
 jobs:
-  run-rake:
+  test-sqlite:
     runs-on: ubuntu-latest
+
     steps:
     - uses: actions/checkout@v2
+
     - uses: ruby/setup-ruby@v1
       with:
         ruby-version: '2.7.0'
         bundler-cache: true
+
     - name: Install SQLite3 Gem
       run: gem install sqlite3 -v '~> 1.4.0'
-    - run: bundle exec rake update_bigquery_tables
-      env:
-        BIGQUERY_CREDENTIALS: ${{ secrets.BIGQUERY_CREDENTIALS }}
-        BIGQUERY_PROJECT: cross-teacher-services
-        BIGQUERY_DATASET: dfe_reference_data
+
     - name: Convert Reference Data to SQLite
       run: bundle exec rake convert_to_sqlite
+
+    - name: List files in current directory
+      run: ls -la
+
     - name: Upload SQLite Database
       uses: actions/upload-artifact@v4
       with:
-        name: reference_data_db_${{ github.ref_name }}
-        path: reference_data_v${{ github.ref_name }}.db
+        name: reference_data_db_test_${{ github.sha }}
+        path: reference_data_v*.db
+
+    - name: Debug ref name
+      run: echo "github.ref_name is ${{ github.ref_name }}"

@@ -94,7 +94,10 @@ end
 
 desc 'Convert reference data to SQLite'
 task :convert_to_sqlite do
-  version = DfE::ReferenceData::VERSION
-  output_file = File.join(__dir__, "reference_data_#{version}.db")
+  version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
+  raise 'could not retrieve version' if version.empty?
+
+  output_file = File.join(__dir__, "reference_data_v#{version}.db")
+  puts "SQLite file will be created at: #{output_file}"
   DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, BIGQUERY_TABLES)
 end
