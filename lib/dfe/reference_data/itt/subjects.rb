@@ -555,9 +555,6 @@ module DfE
                                                       hecos_code: '100069',
                                                       register_category: 'e46e935b-d692-431f-bf0d-b0aad57b6035',
                                                       publish_category: '13',
-                                                      incentive: {
-                                                        '2025-2026' => 'bf92df81-2584-4e94-96a5-5b72fedb3fd6'
-                                                      },
                                                       category: '41f02e8d-de4e-4eff-b02d-a981216ee39e' },
           '02444cbe-df64-4708-8bcc-cbe5930b01d6' => { name: 'modern languages',
                                                       hecos_code: '100329',
