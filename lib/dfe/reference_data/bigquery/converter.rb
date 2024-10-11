@@ -14,32 +14,17 @@ module DfE
               raise "The 'sqlite3' gem is required to run this task. Please install it by running `gem install sqlite3`."
             end
 
-            versioned_output_file = append_version_to_filename(output_file, DfE::ReferenceData::VERSION)
-
-            db = SQLite3::Database.new(versioned_output_file)
+            db = SQLite3::Database.new(output_file)
 
             tables.each do |(table_name, list)|
               create_table_and_insert_records(db, table_name, list)
             end
 
-            db.close
             puts "Data successfully converted to #{output_file}"
           rescue SQLite3::Exception => e
-            raise StandardError, "SQLite3 error during conversion: #{e.message}"
+            raise StandardError, "SQLite3 error during conversion: #{e.message}. Output file: #{output_file}"
           ensure
             db&.close
-          end
-
-          def append_version_to_filename(output_file, version)
-            extname = File.extname(output_file)
-            basename = File.basename(output_file, extname)
-            dirname = File.dirname(output_file)
-
-            basename += "_#{version}" unless basename.include?(version)
-
-            "#{dirname}/#{basename}#{extname}"
-          rescue StandardError => e
-            raise StandardError, "Error generating versioned filename: #{e.message}"
           end
 
           def create_table_and_insert_records(db, table_name, list)
@@ -65,12 +50,14 @@ module DfE
 
           def insert_record(db, table_name, record)
             columns = record.keys.map { |col| "\"#{col}\"" }
-            placeholders = (['?'] * columns.size).join(',')
+            placeholders = Array.new(columns.size, '?').join(',')
             insert_sql = "INSERT INTO #{table_name} (#{columns.join(',')}) VALUES (#{placeholders})"
-            values = columns.map { |col| convert_value_for_sqlite(record[col.delete('"').to_sym]) }
+          
+            values = record.keys.map { |col| convert_value_for_sqlite(record[col.to_sym]) }
+          
             db.execute(insert_sql, values)
           rescue StandardError => e
-            raise StandardError, "Error converting value for SQLite in #{table_name}: #{e.message}"
+            raise StandardError, "Error inserting record into #{table_name}: #{e.message}. Record: #{record.inspect}"
           end
 
           def generate_create_table_sql(table_name, schema)
