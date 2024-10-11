@@ -783,8 +783,7 @@ module DfE
                                                       publish_category: 'W1',
                                                       incentive: {
                                                         '2020-2021' => 'd4024ca2-da1a-47ff-b497-62fed8fa5249',
-                                                        '2024-2025' => 'a324ae47-d9db-4eb5-9039-c767b8ec4f08',
-                                                        '2025-2026' => '4427e0e7-e771-4538-8224-be8d570c7996'
+                                                        '2024-2025' => 'a324ae47-d9db-4eb5-9039-c767b8ec4f08'
                                                       },
                                                       category: '69b468df-f7ca-40cb-9410-ed5f4e5bd61b' },
           '05044321-4c35-45d5-bb37-42be71be6b80' => { name: 'applied biology',
