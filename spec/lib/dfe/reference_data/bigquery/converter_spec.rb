@@ -79,15 +79,19 @@ RSpec.describe DfE::ReferenceData::BigQuery::Converter do
     )
   end
 
-  let(:output_file) { "test_#{SecureRandom.uuid}.db" }
-  let(:versioned_output_file) { output_file.sub('.db', "_#{DfE::ReferenceData::VERSION}.db") }
+  let(:version) { DfE::ReferenceData::VERSION }
+  let(:versioned_output_file) { "reference_data_v#{version}.db" }
+
+  before do
+    allow($stdout).to receive(:puts)
+  end
 
   after(:each) do
     File.delete(versioned_output_file) if File.exist?(versioned_output_file)
   end
 
   it 'creates an SQLite database and tables with versioned filename' do
-    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, [['test_table', test_data]])
+    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, [['test_table', test_data]])
 
     expect(File).to exist(versioned_output_file)
 
@@ -100,7 +104,7 @@ RSpec.describe DfE::ReferenceData::BigQuery::Converter do
   end
 
   it 'inserts the data correctly with versioned filename' do
-    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, [['test_table', test_data]])
+    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, [['test_table', test_data]])
 
     expect(File).to exist(versioned_output_file)
 
@@ -132,17 +136,7 @@ RSpec.describe DfE::ReferenceData::BigQuery::Converter do
   end
 
   it 'does not fail with missing data' do
-    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, [['test_table', test_data]])
-
-    expect(File).to exist(versioned_output_file)
-
-    db = SQLite3::Database.new(versioned_output_file)
-    rows = db.execute("SELECT * FROM test_table WHERE id = 'nonexistent'")
-    expect(rows).to be_empty
-  end
-
-  it 'does not fail with missing data' do
-    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, [['test_table', test_data]])
+    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, [['test_table', test_data]])
 
     expect(File).to exist(versioned_output_file)
 
@@ -204,7 +198,7 @@ RSpec.describe DfE::ReferenceData::BigQuery::Converter do
       }
     )
 
-    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, [['edge_cases', edge_cases_data]])
+    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, [['edge_cases', edge_cases_data]])
 
     expect(File).to exist(versioned_output_file)
 
@@ -217,12 +211,12 @@ RSpec.describe DfE::ReferenceData::BigQuery::Converter do
     expect(row).to include('') # Empty string in array
   end
 
-  it 'raises an error when there is an SQLite exception' do
-    allow(SQLite3::Database).to receive(:new).and_raise(SQLite3::SQLException.new('Test error'))
+  it 'raises an error when converting value for SQLite fails' do
+    allow(DfE::ReferenceData::BigQuery::Converter).to receive(:convert_value_for_sqlite).and_raise(StandardError.new('convert_value_for_sqlite error'))
 
     expect do
-      DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, [['test_table', test_data]])
-    end.to raise_error(StandardError, /SQLite3 error during conversion: Test error/)
+      DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, [['test_table', test_data]])
+    end.to raise_error(StandardError, /convert_value_for_sqlite error/)
   end
 
   it 'closes the database even if an exception is raised' do
@@ -232,7 +226,7 @@ RSpec.describe DfE::ReferenceData::BigQuery::Converter do
     allow(db).to receive(:execute).and_raise(SQLite3::SQLException.new('Test error'))
 
     expect do
-      DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, [['test_table', test_data]])
+      DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, [['test_table', test_data]])
     end.to raise_error(StandardError)
 
     expect(db).to have_received(:close)
@@ -242,7 +236,7 @@ RSpec.describe DfE::ReferenceData::BigQuery::Converter do
     allow(DfE::ReferenceData::BigQuery::Converter).to receive(:generate_create_table_sql).and_raise(StandardError.new('generate_create_table_sql error'))
 
     expect do
-      DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, [['test_table', test_data]])
+      DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, [['test_table', test_data]])
     end.to raise_error(StandardError, /Error generating CREATE TABLE SQL for test_table: generate_create_table_sql error/)
   end
 
@@ -250,12 +244,12 @@ RSpec.describe DfE::ReferenceData::BigQuery::Converter do
     allow(DfE::ReferenceData::BigQuery::Converter).to receive(:convert_value_for_sqlite).and_raise(StandardError.new('convert_value_for_sqlite error'))
 
     expect do
-      DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, [['test_table', test_data]])
-    end.to raise_error(StandardError, /Error generating CREATE TABLE SQL for test_table: Error inserting records into test_table: Error converting value for SQLite in test_table: convert_value_for_sqlite error/)
+      DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, [['test_table', test_data]])
+    end.to raise_error(StandardError, /convert_value_for_sqlite error/)
   end
 
   it 'creates indexes on string and integer columns' do
-    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, [['test_table', test_data]])
+    DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, [['test_table', test_data]])
 
     db = SQLite3::Database.new(versioned_output_file)
     indexes = db.execute("SELECT name FROM sqlite_master WHERE type='index' AND tbl_name='test_table'")

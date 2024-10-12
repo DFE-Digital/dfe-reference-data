@@ -95,6 +95,7 @@ end
 desc 'Convert reference data to SQLite'
 task :convert_to_sqlite do
   version = DfE::ReferenceData::VERSION
-  output_file = File.join(__dir__, "reference_data_#{version}.db")
-  DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(output_file, BIGQUERY_TABLES)
+  output_file = File.join(__dir__, 'reference_data.db')
+  versioned_output_file = output_file.sub('.db', "_v#{version}.db")
+  DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, BIGQUERY_TABLES)
 end
