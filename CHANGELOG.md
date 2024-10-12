@@ -1,5 +1,11 @@
 # Changelog
 
+## [v3.6.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.2) (2024-10-12)
+
+**Merged pull requests:**
+
+- Tidy up [\#121](https://github.com/DFE-Digital/dfe-reference-data/pull/121)
+
 ## [v3.6.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.1) (2024-10-11)
 
 **Merged pull requests:**
