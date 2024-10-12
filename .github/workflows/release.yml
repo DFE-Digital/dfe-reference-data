@@ -26,4 +26,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: reference_data_db_${{ github.ref_name }}
-        path: reference_data_v${{ github.ref_name }}.db
+        path: reference_data_${{ github.ref_name }}.db
