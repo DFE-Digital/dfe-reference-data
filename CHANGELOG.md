@@ -1,5 +1,11 @@
 # Changelog
 
+## [v3.6.3](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.3) (2024-10-14)
+
+**Merged pull requests:**
+
+- Update package for 2025-2026 #117 [\#117](https://github.com/DFE-Digital/dfe-reference-data/pull/117)
+
 ## [v3.6.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.2) (2024-10-12)
 
 **Merged pull requests:**
