@@ -458,7 +458,7 @@ module DfE
             bursary_amount: '26000',
             notes: 'classics and biology 2020-2021'
           },
-          '80464bd0-f509-4d54-b70a-add606b1844f' => {
+          '95eebd6c-69c5-4883-b3ff-c703b559bc4b' => {
             subject_name: 'biology',
             itt_categories_id: 'b51a9678-0a36-4361-983a-fc74f46c1b06',
             academic_cycle: ['2021'],
