@@ -451,6 +451,7 @@ module DfE
             scholarship: '17000',
             notes: 'geography 2020-2021'
           },
+          # rubocop:disable Lint/DuplicateHashKey
           '95eebd6c-69c5-4883-b3ff-c703b559bc4b' => {
             subject_name: 'classics',
             itt_categories_id: '95547d49-2a52-4ae0-b4ea-744e0da4bfa2',
@@ -465,6 +466,7 @@ module DfE
             bursary_amount: '26000',
             notes: 'classics and biology 2020-2021'
           },
+          # rubocop:enable Lint/DuplicateHashKey
           'd58055c2-729a-487d-9ec2-4dde74159606' => {
             subject_name: 'design and technology (including engineering and food tech) 2020-2021',
             itt_categories_id: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5',
