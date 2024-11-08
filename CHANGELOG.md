@@ -1,135 +1,184 @@
 # Changelog
 
-## [v3.6.3](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.3) (2024-10-14)
+## [v3.6.4](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.4) (2024-11-08)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.3...v3.6.4)
+
+**Fixed bugs:**
+
+- change incorrect ids [\#125](https://github.com/DFE-Digital/dfe-reference-data/pull/125) ([goodviber](https://github.com/goodviber))
 
 **Merged pull requests:**
 
-- Update package for 2025-2026 #117 [\#117](https://github.com/DFE-Digital/dfe-reference-data/pull/117)
+- Update 2025-26 cycle dates [\#124](https://github.com/DFE-Digital/dfe-reference-data/pull/124) ([elceebee](https://github.com/elceebee))
+
+## [v3.6.3](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.3) (2024-10-14)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.2...v3.6.3)
+
+**Merged pull requests:**
+
+- Release PR [\#123](https://github.com/DFE-Digital/dfe-reference-data/pull/123) ([ericaporter](https://github.com/ericaporter))
+- Release v3.6.2 [\#122](https://github.com/DFE-Digital/dfe-reference-data/pull/122) ([ericaporter](https://github.com/ericaporter))
+- Tidy up [\#121](https://github.com/DFE-Digital/dfe-reference-data/pull/121) ([ericaporter](https://github.com/ericaporter))
+- release v3.6.1 [\#120](https://github.com/DFE-Digital/dfe-reference-data/pull/120) ([ericaporter](https://github.com/ericaporter))
+- Update release.yml [\#119](https://github.com/DFE-Digital/dfe-reference-data/pull/119) ([ericaporter](https://github.com/ericaporter))
+- Update package for 2025-2026 [\#117](https://github.com/DFE-Digital/dfe-reference-data/pull/117) ([ericaporter](https://github.com/ericaporter))
 
 ## [v3.6.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.2) (2024-10-12)
 
-**Merged pull requests:**
-
-- Tidy up [\#121](https://github.com/DFE-Digital/dfe-reference-data/pull/121)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.1...v3.6.2)
 
 ## [v3.6.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.1) (2024-10-11)
 
-**Merged pull requests:**
-
-- Update release.yml[\#119](https://github.com/DFE-Digital/dfe-reference-data/pull/119)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.0...v3.6.1)
 
 ## [v3.6.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.0) (2024-10-10)
 
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.5.1...v3.6.0)
+
 **Merged pull requests:**
 
-- Add converter.rb and update Rakefile [\#113](https://github.com/DFE-Digital/dfe-reference-data/pull/113)
+- Release v3.6.0 [\#118](https://github.com/DFE-Digital/dfe-reference-data/pull/118) ([ericaporter](https://github.com/ericaporter))
+- Update find\_opens date [\#116](https://github.com/DFE-Digital/dfe-reference-data/pull/116) ([ericaporter](https://github.com/ericaporter))
+- release v3.5.1 [\#115](https://github.com/DFE-Digital/dfe-reference-data/pull/115) ([ericaporter](https://github.com/ericaporter))
+- Add 2025-2026 cycle dates [\#114](https://github.com/DFE-Digital/dfe-reference-data/pull/114) ([ericaporter](https://github.com/ericaporter))
+- Add converter.rb and update Rakefile [\#113](https://github.com/DFE-Digital/dfe-reference-data/pull/113) ([ericaporter](https://github.com/ericaporter))
 
 ## [v3.5.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.5.1) (2024-09-09)
 
-**Merged pull requests:**
-
-- Add 2025-2026 cycle dates [\#114](https://github.com/DFE-Digital/dfe-reference-data/pull/114)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.5.0...v3.5.1)
 
 ## [v3.5.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.5.0) (2024-07-08)
 
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.4.0...v3.5.0)
+
 **Merged pull requests:**
 
-- Allow BQ tables to be suffixed with _latest [\#110](https://github.com/DFE-Digital/dfe-reference-data/pull/110)
+- Release v3.5.0 [\#111](https://github.com/DFE-Digital/dfe-reference-data/pull/111) ([ericaporter](https://github.com/ericaporter))
+- Allow BQ tables to be suffixed with \_latest [\#110](https://github.com/DFE-Digital/dfe-reference-data/pull/110) ([ericaporter](https://github.com/ericaporter))
+- Release 3.4.0 [\#109](https://github.com/DFE-Digital/dfe-reference-data/pull/109) ([ericaporter](https://github.com/ericaporter))
+- Add codes to disability hesa [\#108](https://github.com/DFE-Digital/dfe-reference-data/pull/108) ([ericaporter](https://github.com/ericaporter))
+- Allow data to be sent to new Big Query project [\#106](https://github.com/DFE-Digital/dfe-reference-data/pull/106) ([ericaporter](https://github.com/ericaporter))
+- Update Changelog for 3.3.0 [\#105](https://github.com/DFE-Digital/dfe-reference-data/pull/105) ([adamjcolvin](https://github.com/adamjcolvin))
 
 ## [v3.4.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.4.0) (2024-06-07)
 
-**Merged pull requests:**
-
-- Add codes to disability hesa [\#108](https://github.com/DFE-Digital/dfe-reference-data/pull/108)
-
-- Allow data to be sent to new Big Query project [\#106](https://github.com/DFE-Digital/dfe-reference-data/pull/106)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.3.0...v3.4.0)
 
 ## [v3.3.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.3.0) (2024-03-19)
 
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.2.0...v3.3.0)
+
 **Merged pull requests:**
 
-- Add degree_types code mapping [\#104](https://github.com/DFE-Digital/dfe-reference-data/pull/104)
+- Add degree\_types code mapping [\#104](https://github.com/DFE-Digital/dfe-reference-data/pull/104) ([adamjcolvin](https://github.com/adamjcolvin))
+- release v3.2.0 [\#103](https://github.com/DFE-Digital/dfe-reference-data/pull/103) ([ericaporter](https://github.com/ericaporter))
+- Update rake task to add minor versions [\#102](https://github.com/DFE-Digital/dfe-reference-data/pull/102) ([ericaporter](https://github.com/ericaporter))
+- Update incentives table [\#101](https://github.com/DFE-Digital/dfe-reference-data/pull/101) ([ericaporter](https://github.com/ericaporter))
+- Add Missing Require Relative [\#100](https://github.com/DFE-Digital/dfe-reference-data/pull/100) ([adamjcolvin](https://github.com/adamjcolvin))
 
 ## [v3.2.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.2.0) (2024-03-01)
 
-**Merged pull requests:**
-
-- Update rake task to add minor versions [\#102](https://github.com/DFE-Digital/dfe-reference-data/pull/102)
-
-- Update incentives table [\#101](https://github.com/DFE-Digital/dfe-reference-data/pull/101)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.1.4...v3.2.0)
 
 ## [v3.1.4](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.4) (2024-01-29)
 
-**Merged pull requests:**
-
-- Add missing require_relative [\#100](https://github.com/DFE-Digital/dfe-reference-data/pull/100)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.1.3...v3.1.4)
 
 ## [v3.1.3](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.3) (2024-01-29)
 
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.1.2...v3.1.3)
+
 **Merged pull requests:**
 
-- Add UPPER_BOUND_PRIMARY_AGE to Age Ranges [\#99](https://github.com/DFE-Digital/dfe-reference-data/pull/99)
+- Add UPPER\_BOUND\_PRIMARY\_AGE to Age Ranges [\#99](https://github.com/DFE-Digital/dfe-reference-data/pull/99) ([adamjcolvin](https://github.com/adamjcolvin))
+- Update Version to 3.1.0 [\#98](https://github.com/DFE-Digital/dfe-reference-data/pull/98) ([adamjcolvin](https://github.com/adamjcolvin))
+- Add Age Range Data [\#97](https://github.com/DFE-Digital/dfe-reference-data/pull/97) ([adamjcolvin](https://github.com/adamjcolvin))
+- Prepare release v3.0.0 [\#96](https://github.com/DFE-Digital/dfe-reference-data/pull/96) ([ericaporter](https://github.com/ericaporter))
 
 ## [v3.1.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.2) (2024-01-29)
 
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.1.1...v3.1.2)
+
+## [v3.1.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.1) (2024-01-25)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.1.0...v3.1.1)
+
+## [v3.1.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.1.0) (2024-01-25)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.0.0...v3.1.0)
+
+## [v3.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.0.0) (2024-01-16)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v2.3.3...v3.0.0)
+
 **Merged pull requests:**
 
-- Add age range data [\#97](https://github.com/DFE-Digital/dfe-reference-data/pull/97)
-
-## [v3.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.4.0) (2023-12-18)
-
-**Merged pull requests:**
-
-- Add russell group info to institutions [\#91](https://github.com/DFE-Digital/dfe-reference-data/pull/91)
-
-## [v2.4.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.4.0) (2023-12-18)
-
-**Merged pull requests:**
-
-- Updates notes for Classical Greek studies [\#93](https://github.com/DFE-Digital/dfe-reference-data/pull/93)
-
-- Add bank holidays to the gem [\#92](https://github.com/DFE-Digital/dfe-reference-data/pull/92)
+- Include bank holidays file [\#95](https://github.com/DFE-Digital/dfe-reference-data/pull/95) ([ericaporter](https://github.com/ericaporter))
+- v2.4.0 release [\#94](https://github.com/DFE-Digital/dfe-reference-data/pull/94) ([ericaporter](https://github.com/ericaporter))
+- Updates notes for Classical Greek studies [\#93](https://github.com/DFE-Digital/dfe-reference-data/pull/93) ([ericaporter](https://github.com/ericaporter))
+- Add bank holidays to the gem [\#92](https://github.com/DFE-Digital/dfe-reference-data/pull/92) ([ericaporter](https://github.com/ericaporter))
+- Add russell group info to institutions [\#91](https://github.com/DFE-Digital/dfe-reference-data/pull/91) ([ericaporter](https://github.com/ericaporter))
+-  release v2.3.3 [\#90](https://github.com/DFE-Digital/dfe-reference-data/pull/90) ([ericaporter](https://github.com/ericaporter))
+- Update ukprn for Hult [\#89](https://github.com/DFE-Digital/dfe-reference-data/pull/89) ([ericaporter](https://github.com/ericaporter))
+- Tidy importer\_spec.rb [\#88](https://github.com/DFE-Digital/dfe-reference-data/pull/88) ([ericaporter](https://github.com/ericaporter))
+- release v2.3.2 [\#87](https://github.com/DFE-Digital/dfe-reference-data/pull/87) ([ericaporter](https://github.com/ericaporter))
+- Update CHANGELOG.md [\#86](https://github.com/DFE-Digital/dfe-reference-data/pull/86) ([ericaporter](https://github.com/ericaporter))
+- Update incentives table with 2024-2025 incentives per subject grouping [\#85](https://github.com/DFE-Digital/dfe-reference-data/pull/85) ([ericaporter](https://github.com/ericaporter))
+- Add new hesa degree type codes for 2023 [\#82](https://github.com/DFE-Digital/dfe-reference-data/pull/82) ([edwardhorsford](https://github.com/edwardhorsford))
 
 ## [v2.3.3](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.3) (2023-11-23)
 
-**Merged pull requests:**
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v2.3.2...v2.3.3)
 
-- Update ukprn [\#89](https://github.com/DFE-Digital/dfe-reference-data/pull/89)
+## [v2.3.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.2) (2023-10-16)
 
-## [v2.3.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.2) (2023-10-13)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v2.3.1...v2.3.2)
 
-**Merged pull requests:**
+## [v2.3.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.1) (2023-08-23)
 
-- Updates incentives and cycle data [\#85](https://github.com/DFE-Digital/dfe-reference-data/pull/85)
-
-## [v2.3.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.1) (2023-08-24)
-
-**Closed pull request:**
-
-- Adds new hesa degree types: [\#82](https://github.com/DFE-Digital/dfe-reference-data/pull/82)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v2.3.0...v2.3.1)
 
 ## [v2.3.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.3.0) (2023-05-31)
 
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v2.2.0...v2.3.0)
+
 **Merged pull requests:**
 
-- Added CAH/TAD subject mappings [\#83](https://github.com/DFE-Digital/dfe-reference-data/pull/83) ([alaric-dfe](https://github.com/alaric-dfe))
-- Updates to our degree institution list following reviewing the Office for Student's spreadsheet of institutions with degree awarding powers, taken today 25 May 2023 [\#81](https://github.com/DFE-Digital/dfe-reference-data/pull/81) ([edwardhorsford](https://github.com/edwardhorsford))
-- Added CAH (Common Aggregation Hierarchy) version version 1.3.4 [\#80](https://github.com/DFE-Digital/dfe-reference-data/pull/80) ([alaric-dfe](https://github.com/alaric-dfe))
+- CAH mappings [\#83](https://github.com/DFE-Digital/dfe-reference-data/pull/83) ([alaric-dfe](https://github.com/alaric-dfe))
+- Update degree institutions [\#81](https://github.com/DFE-Digital/dfe-reference-data/pull/81) ([edwardhorsford](https://github.com/edwardhorsford))
+- CAH auto-importer, and initial import of CAH version version 1.3.4 [\#80](https://github.com/DFE-Digital/dfe-reference-data/pull/80) ([alaric-dfe](https://github.com/alaric-dfe))
+- Those aren't recruitment cycles, those are academic years! [\#79](https://github.com/DFE-Digital/dfe-reference-data/pull/79) ([alaric-dfe](https://github.com/alaric-dfe))
 
 ## [v2.2.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.2.0) (2023-05-03)
 
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v2.1.0...v2.2.0)
+
 **Merged pull requests:**
 
-- Added short names to degree grades [\#78](https://github.com/DFE-Digital/dfe-reference-data/pull/78) ([alaric-dfe](https://github.com/alaric-dfe))
+- Added abbreviations for degree grades [\#78](https://github.com/DFE-Digital/dfe-reference-data/pull/78) ([alaric-dfe](https://github.com/alaric-dfe))
 
 ## [v2.1.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.1.0) (2023-03-20)
 
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.8.0...v2.1.0)
+
 **Merged pull requests:**
 
-- Disability categories [\#70](https://github.com/DFE-Digital/dfe-reference-data/pull/70) ([alaric-dfe](https://github.com/alaric-dfe))
-- Generic degree subjects [\#71](https://github.com/DFE-Digital/dfe-reference-data/pull/71) ([alaric-dfe](https://github.com/alaric-dfe))
-- "Not Available" degree type [\#75](https://github.com/DFE-Digital/dfe-reference-data/pull/75) ([alaric-dfe](https://github.com/alaric-dfe))
 - Added ITT subject incentives for 2020-2021, 2021-2022, and 2023-2024 [\#77](https://github.com/DFE-Digital/dfe-reference-data/pull/77) ([alaric-dfe](https://github.com/alaric-dfe))
+- Proposed ADR on special records policy [\#76](https://github.com/DFE-Digital/dfe-reference-data/pull/76) ([alaric-dfe](https://github.com/alaric-dfe))
+- "Not available" code for degree types [\#75](https://github.com/DFE-Digital/dfe-reference-data/pull/75) ([alaric-dfe](https://github.com/alaric-dfe))
+- Add new degree type [\#74](https://github.com/DFE-Digital/dfe-reference-data/pull/74) ([edwardhorsford](https://github.com/edwardhorsford))
+- Added 'Not known' and 'Not applicable' generic degree subjects [\#71](https://github.com/DFE-Digital/dfe-reference-data/pull/71) ([alaric-dfe](https://github.com/alaric-dfe))
+- Disability categories [\#70](https://github.com/DFE-Digital/dfe-reference-data/pull/70) ([alaric-dfe](https://github.com/alaric-dfe))
+
+## [v1.8.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.8.0) (2023-01-23)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v1.7.0...v1.8.0)
+
+## [v1.7.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.7.0) (2023-01-20)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v2.0.0...v1.7.0)
 
 ## [v2.0.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v2.0.0) (2023-01-11)
 
@@ -137,8 +186,7 @@
 
 **Merged pull requests:**
 
-- Publishing list docs in BigQuery [\#69](https://github.com/DFE-Digital/dfe-reference-data/pull/69) ([alaric-dfe](https://github.com/alaric-dfe))
-- Zero pad the HESA codes [\#52](https://github.com/DFE-Digital/dfe-reference-data/pull/52) ([alaric-dfe](https://github.com/alaric-dfe))
+- Publishing list docs in BigQuery. [\#69](https://github.com/DFE-Digital/dfe-reference-data/pull/69) ([alaric-dfe](https://github.com/alaric-dfe))
 
 ## [v1.6.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v1.6.0) (2023-01-11)
 
@@ -289,7 +337,7 @@
 
 **Merged pull requests:**
 
-- Add foundation [\#1](https://github.com/DFE-Digital/dfe-reference-data/pull/1) ([JonF1](https://github.com/JonF1))
+- Add foundation [\#1](https://github.com/DFE-Digital/dfe-reference-data/pull/1) ([YoniF1](https://github.com/YoniF1))
 
 ## [old-main](https://github.com/DFE-Digital/dfe-reference-data/tree/old-main) (2022-02-15)
 
