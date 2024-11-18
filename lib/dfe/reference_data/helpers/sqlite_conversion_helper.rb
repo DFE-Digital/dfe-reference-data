@@ -33,7 +33,7 @@ module DfE
         end
 
         def convert_to_sqlite_type(field_type)
-          case field_type.to_s.downcase  # Convert both symbols and strings to lowercase strings
+          case field_type.to_s.downcase # Convert both symbols and strings to lowercase strings
           when 'boolean', 'integer'
             'INTEGER'
           else

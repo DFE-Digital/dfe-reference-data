@@ -30,8 +30,8 @@ module DfE
       # Timezone used to specify dates+times in this file
       TIMEZONE = TZInfo::Timezone.get('Europe/London')
 
-      def self.make_local_time(*args)
-        TIMEZONE.local_to_utc(DateTime.new(*args))
+      def self.make_local_time(*)
+        TIMEZONE.local_to_utc(DateTime.new(*))
       end
 
       CYCLES = DfE::ReferenceData::HardcodedReferenceList.new(
