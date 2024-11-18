@@ -107,19 +107,19 @@ module DfE
         def bigquery_schema_create_field(schema, name, description, field_schema, mode)
           case kind(field_schema)
           when :code
-            schema.string name, description: description, mode: mode
+            schema.string name, description:, mode:
           when :string
-            schema.string name, description: description, mode: mode
+            schema.string name, description:, mode:
           when :symbol
-            schema.string name, description: description, mode: mode
+            schema.string name, description:, mode:
           when :boolean
-            schema.boolean name, description: description, mode: mode
+            schema.boolean name, description:, mode:
           when :integer
-            schema.integer name, description: description, mode: mode
+            schema.integer name, description:, mode:
           when :real
-            schema.float name, description: description, mode: mode
+            schema.float name, description:, mode:
           when :datetime
-            schema.datetime name, description: description, mode: mode
+            schema.datetime name, description:, mode:
           when :daterange
             schema.record name, description: description, mode: mode do |recordschema|
               recordschema.date 'begin', mode: :required
