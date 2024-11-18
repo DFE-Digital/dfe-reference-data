@@ -11,7 +11,7 @@ jobs:
     - uses: actions/checkout@v2
     - uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '2.7.0'
+        ruby-version: '3.2.0'
         bundler-cache: true
     - name: Install SQLite3 Gem
       run: gem install sqlite3 -v '~> 1.4.0'
@@ -22,8 +22,7 @@ jobs:
         BIGQUERY_DATASET: dfe_reference_data
     - name: Convert Reference Data to SQLite
       run: bundle exec rake convert_to_sqlite
-    - name: Upload SQLite Database
-      uses: actions/upload-artifact@v4
-      with:
-        name: reference_data_db_${{ github.ref_name }}
-        path: reference_data_${{ github.ref_name }}.db
+    - name: Create GitHub Release
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: gh release create ${{ github.ref_name }} reference_data_${{ github.ref_name }}.db --notes "Reference data for ${{ github.ref_name }}"
