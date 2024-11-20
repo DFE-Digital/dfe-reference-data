@@ -80,7 +80,7 @@ RSpec.describe DfE::ReferenceData::BigQuery::Converter do
   end
 
   let(:version) { DfE::ReferenceData::VERSION }
-  let(:versioned_output_file) { "reference_data_v#{version}.db" }
+  let(:versioned_output_file) { "reference_data_v#{version}.sqlite3" }
 
   before do
     allow($stdout).to receive(:puts)

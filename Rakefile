@@ -29,10 +29,21 @@ task :prepare_release, %i[version] do |_, args|
   version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
   raise 'could not retrieve version' if version.empty?
 
-  # v_version = "v#{version}"
+  v_version = "v#{version}"
 
-  # This thing gets horribly confused sometimes, let's do it by hand
-  # sh 'bundle', 'exec', 'github_changelog_generator', '--no-verbose', '--user', 'DFE-Digital', '--project', 'dfe-reference-data', '--output', 'CHANGELOG.md', '--future-release', v_version
+  sh 'bundle', 'exec', 'github_changelog_generator', '--no-verbose', '--user', 'DFE-Digital', '--project', 'dfe-reference-data', '--output', 'CHANGELOG.md', '--future-release', v_version
+
+  puts <<~EOMESSAGE
+    Release #{v_version} is almost ready! Before you push:
+
+    - Check that the CHANGELOG.md has no empty sections with no changes listed,
+      duplicate version numbers (e.g. two v1.5.1 entries) or non-version entries
+      (e.g. "push"). There should also only typically be a section added for the
+      latest version being cut, and no changes to previous entries.
+
+        git show -- CHANGELOG.md
+
+  EOMESSAGE
 end
 
 desc 'Commit current changes (eg, the changes made by prepare_release and any upgrade notes written to README.md), tag, and push to origin'
@@ -95,7 +106,7 @@ end
 desc 'Convert reference data to SQLite'
 task :convert_to_sqlite do
   version = DfE::ReferenceData::VERSION
-  output_file = File.join(__dir__, 'reference_data.db')
-  versioned_output_file = output_file.sub('.db', "_v#{version}.db")
+  output_file = File.join(__dir__, 'reference_data.sqlite3')
+  versioned_output_file = output_file.sub('.sqlite3', "_v#{version}.sqlite3")
   DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, BIGQUERY_TABLES)
 end

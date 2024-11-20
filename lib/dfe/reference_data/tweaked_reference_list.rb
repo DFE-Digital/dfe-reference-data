@@ -28,11 +28,11 @@ module DfE
           schema = base.schema
         end
 
-        super(schema: schema,
-              list_description: list_description,
-              list_usage_guidance: list_usage_guidance,
-              list_docs_url: list_docs_url,
-              field_descriptions: field_descriptions)
+        super(schema:,
+              list_description:,
+              list_usage_guidance:,
+              list_docs_url:,
+              field_descriptions:)
 
         @base = base
         @overrides = overrides
@@ -50,7 +50,7 @@ module DfE
           elsif (existing = new_all[id])
             new_all[id] = existing.merge(override)
           else
-            new_all[id] = Record.new(override.merge({ id: id }))
+            new_all[id] = Record.new(override.merge({ id: }))
           end
         end
       end

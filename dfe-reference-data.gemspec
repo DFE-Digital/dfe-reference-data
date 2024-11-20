@@ -2,7 +2,7 @@ require_relative 'lib/dfe/reference_data/version'
 
 require 'English'
 Gem::Specification.new do |s|
-  s.required_ruby_version = Gem::Requirement.new('>= 2.7.0')
+  s.required_ruby_version = Gem::Requirement.new('>= 3.1.0')
   s.name          = 'dfe-reference-data'
   s.version       = DfE::ReferenceData::VERSION
   s.summary       = 'Reference data for Department for Education services'

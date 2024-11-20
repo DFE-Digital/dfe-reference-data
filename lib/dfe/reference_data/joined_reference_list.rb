@@ -16,11 +16,11 @@ module DfE
 
         @lists = lists
 
-        super(schema: schema,
-              list_description: list_description,
-              list_usage_guidance: list_usage_guidance,
-              list_docs_url: list_docs_url,
-              field_descriptions: field_descriptions)
+        super(schema:,
+              list_description:,
+              list_usage_guidance:,
+              list_docs_url:,
+              field_descriptions:)
       end
       # rubocop:enable Metrics/ParameterLists
 
