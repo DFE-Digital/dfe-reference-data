@@ -1,8 +1,8 @@
 # Changelog
 
-## [v3.6.5](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.5) (2024-11-20)
+## [v3.6.6](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.6) (2024-11-22)
 
-[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.5...v3.6.5)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.4...v3.6.6)
 
 **Implemented enhancements:**
 
@@ -15,10 +15,6 @@
 **Merged pull requests:**
 
 - Update 2025-26 cycle dates [\#124](https://github.com/DFE-Digital/dfe-reference-data/pull/124) ([elceebee](https://github.com/elceebee))
-
-## [v3.6.5](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.5) (2024-11-20)
-
-[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.4...v3.6.5)
 
 ## [v3.6.4](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.4) (2024-11-08)
 
