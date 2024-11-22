@@ -24,6 +24,11 @@ desc 'Prepare a new version for release, version can be major, minor, patch or x
 task :prepare_release, %i[version] do |_, args|
   bump_version = args.fetch(:version)
 
+  current_branch = `git branch --show-current`.chomp
+  raise 'could not get current branch' if current_branch.empty?
+
+  sh 'git', 'checkout', '-b', "v#{bump_version}" if current_branch == 'main'
+
   sh 'gem', 'bump', '-v', bump_version, '--no-commit', '--file', 'lib/dfe/reference_data/version.rb'
 
   version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
@@ -32,6 +37,8 @@ task :prepare_release, %i[version] do |_, args|
   v_version = "v#{version}"
 
   sh 'bundle', 'exec', 'github_changelog_generator', '--no-verbose', '--user', 'DFE-Digital', '--project', 'dfe-reference-data', '--output', 'CHANGELOG.md', '--future-release', v_version
+
+  sh 'git', 'commit', '-a', '-m', v_version
 
   puts <<~EOMESSAGE
     Release #{v_version} is almost ready! Before you push:
@@ -44,22 +51,6 @@ task :prepare_release, %i[version] do |_, args|
         git show -- CHANGELOG.md
 
   EOMESSAGE
-end
-
-desc 'Commit current changes (eg, the changes made by prepare_release and any upgrade notes written to README.md), tag, and push to origin'
-task :tag_and_push_release do
-  version = `bundle exec ruby -e 'puts DfE::ReferenceData::VERSION'`.chomp
-  raise 'could not retrieve version' if version.empty?
-
-  v_version = "v#{version}"
-
-  sh 'git', 'commit', '-a', '-m', v_version
-
-  sh 'gem', 'tag'
-
-  sh 'git', 'push', '--tags', 'origin', 'main'
-
-  puts "Release #{v_version} has been pushed. Please mark a Github release by visiting https://github.com/DFE-Digital/dfe-reference-data/releases/new?tag=#{v_version}"
 end
 
 # Update the docs in docs/bigquery.md to reflect any changes to this list:
