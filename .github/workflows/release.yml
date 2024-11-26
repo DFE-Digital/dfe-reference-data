@@ -1,9 +1,8 @@
 name: Feed Bigquery
 on:
-  push:
-    # Match all tags
-    tags:
-      - 'v[0-9]+.[0-9]+.[0-9]+'
+  pull_request:
+    branches:
+      - main
 jobs:
   run-rake:
     runs-on: ubuntu-latest
@@ -25,4 +24,4 @@ jobs:
     - name: Create GitHub Release
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: gh release create ${{ github.ref_name }} reference_data_${{ github.ref_name }}.sqlite3 --notes "Reference data for ${{ github.ref_name }}"
+      run: gh release create ${{ github.head_ref }} --title "${{ github.head_ref }}" reference_data_${{ github.head_ref }}.sqlite3 --notes "reference_data_${{ github.head_ref }}.sqlite3"
