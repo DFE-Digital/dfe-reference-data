@@ -1,6 +1,14 @@
 # Changelog
 
-## [v3.6.6](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.6) (2024-11-22)
+## [v3.6.7](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.7) (2024-11-27)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.6...v3.6.7)
+
+**Merged pull requests:**
+
+- V3.6.6 [\#129](https://github.com/DFE-Digital/dfe-reference-data/pull/129) ([goodviber](https://github.com/goodviber))
+
+## [v3.6.6](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.6) (2024-11-20)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.4...v3.6.6)
 
