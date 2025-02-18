@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dfe-reference-data (3.6.7)
+    dfe-reference-data (3.6.8)
       activesupport
       tzinfo
 
