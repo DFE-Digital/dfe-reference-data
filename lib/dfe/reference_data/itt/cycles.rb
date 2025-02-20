@@ -47,13 +47,13 @@ module DfE
         data.each_with_object({}) do |cycle, hash|
           year = cycle['recruitment_cycle_year'].to_s
           non_working_days = {}
+          byebug
           if cycle['christmas_holiday_range']
             non_working_days[:christmas] = Date.parse(cycle['christmas_holiday_range'][0])..Date.parse(cycle['christmas_holiday_range'][1])
           end
           if cycle['easter_holiday_range']
             non_working_days[:easter] = Date.parse(cycle['easter_holiday_range'][0])..Date.parse(cycle['easter_holiday_range'][1])
           end
-          byebug
           hash[year] = {
             find_opens: make_local_time(cycle['find_opens_at']),
             apply_opens: make_local_time(cycle['apply_opens_at']),
