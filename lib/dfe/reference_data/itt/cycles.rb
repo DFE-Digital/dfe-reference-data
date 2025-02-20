@@ -38,7 +38,6 @@ module DfE
       end
 
       def self.fetch_cycles_data
-        byebug
         url = URI('https://www.apply-for-teacher-training.service.gov.uk/publications/recruitment-cycle-timetables.json')
         response = Net::HTTP.get(url)
         JSON.parse(response)
@@ -54,6 +53,7 @@ module DfE
           if cycle['easter_holiday_range']
             non_working_days[:easter] = Date.parse(cycle['easter_holiday_range'][0])..Date.parse(cycle['easter_holiday_range'][1])
           end
+          byebug
           hash[year] = {
             find_opens: make_local_time(cycle['find_opens_at']),
             apply_opens: make_local_time(cycle['apply_opens_at']),
