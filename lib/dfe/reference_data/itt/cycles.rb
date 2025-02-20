@@ -44,7 +44,7 @@ module DfE
       end
 
       def self.build_cycles(data)
-        data.each_with_object({}) do |cycle, hash|
+        data["data"].each_with_object({}) do |cycle, hash|
           byebug
           year = cycle['recruitment_cycle_year'].to_s
           non_working_days = {}
