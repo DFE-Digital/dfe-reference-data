@@ -3,6 +3,7 @@ require 'time'
 require 'date'
 require 'net/http'
 require 'json'
+require 'byebug'
 
 module DfE
   module ReferenceData
@@ -37,6 +38,7 @@ module DfE
       end
 
       def self.fetch_cycles_data
+        byebug
         url = URI('https://www.apply-for-teacher-training.service.gov.uk/publications/recruitment-cycle-timetables.json')
         response = Net::HTTP.get(url)
         JSON.parse(response)
