@@ -1,6 +1,8 @@
 require 'tzinfo'
 require 'time'
 require 'date'
+require 'net/http'
+require 'json'
 
 module DfE
   module ReferenceData
@@ -34,6 +36,54 @@ module DfE
         TIMEZONE.local_to_utc(DateTime.new(*args))
       end
 
+      def self.fetch_cycles_data
+        url = URI('https://www.apply-for-teacher-training.service.gov.uk/publications/recruitment-cycle-timetables.json')
+        response = Net::HTTP.get(url)
+        JSON.parse(response)
+      end
+
+      def self.build_cycles(data)
+        data.each_with_object({}) do |cycle, hash|
+          year = cycle['recruitment_cycle_year'].to_s
+          non_working_days = {}
+          if cycle['christmas_holiday_range']
+            non_working_days[:christmas] = Date.parse(cycle['christmas_holiday_range'][0])..Date.parse(cycle['christmas_holiday_range'][1])
+          end
+          if cycle['easter_holiday_range']
+            non_working_days[:easter] = Date.parse(cycle['easter_holiday_range'][0])..Date.parse(cycle['easter_holiday_range'][1])
+          end
+          hash[year] = {
+            find_opens: make_local_time(cycle['find_opens_at']),
+            apply_opens: make_local_time(cycle['apply_opens_at']),
+            apply_1_deadline: make_local_time(cycle['apply_deadline_at']),
+            apply_2_deadline: make_local_time(cycle['apply_deadline_at']),
+            provider_decision_deadline: make_local_time(cycle['reject_by_default_at']),
+            find_closes: make_local_time(cycle['find_closes_at']),
+            non_working_days: non_working_days
+          }
+        end
+      end
+
+      begin
+        data = fetch_cycles_data
+        CYCLES = DfE::ReferenceData::HardcodedReferenceList.new(
+          build_cycles(data),
+          schema: CYCLES_SCHEMA,
+          list_description: 'Initial teacher training recruitment cycles.',
+          list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittcycles',
+          field_descriptions: CYCLES_FIELD_DESCRIPTIONS
+        )
+      rescue StandardError => e
+        warn "Failed to fetch cycles data: #{e.message}"
+        CYCLES = DfE::ReferenceData::HardcodedReferenceList.new(
+          {},
+          schema: CYCLES_SCHEMA,
+          list_description: 'Initial teacher training recruitment cycles.',
+          list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittcycles',
+          field_descriptions: CYCLES_FIELD_DESCRIPTIONS
+        )
+      end
+=begin
       CYCLES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           '2018-2019' => {
@@ -43,7 +93,9 @@ module DfE
             apply_2_deadline: make_local_time(2019, 9, 18, 18),
             provider_decision_deadline: make_local_time(2019, 9, 29, 23, 59, 59),
             find_closes: make_local_time(2019, 10, 3, 23, 59, 59),
-            non_working_days: {}
+            non_working_days: {
+              christmas: Date.new(2018, 12, 20)..Date.new(2019, 1, 1),
+            }
           },
           '2019-2020' => {
             find_opens: make_local_time(2019, 10, 6, 9),
@@ -133,6 +185,7 @@ module DfE
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_itt.md#dfereferencedataittcycles',
         field_descriptions: CYCLES_FIELD_DESCRIPTIONS
       )
+=end
     end
   end
 end
