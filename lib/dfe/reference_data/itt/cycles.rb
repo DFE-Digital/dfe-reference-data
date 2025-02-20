@@ -34,7 +34,7 @@ module DfE
       TIMEZONE = TZInfo::Timezone.get('Europe/London')
 
       def self.make_local_time(*args)
-        TIMEZONE.local_to_utc(DateTime.new(*args))
+        TIMEZONE.local_to_utc(DateTime.parse(*args))
       end
 
       def self.fetch_cycles_data
