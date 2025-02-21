@@ -47,7 +47,7 @@ module DfE
         "#{year - 1}-#{year}"
       end
 
-      def non_working_days(cycle)
+      def self.non_working_days(cycle)
         non_working_days = {}
         non_working_days[:christmas] = Date.parse(cycle['christmas_holiday_range'][0])..Date.parse(cycle['christmas_holiday_range'][1]) if cycle['christmas_holiday_range']
         non_working_days[:easter] = Date.parse(cycle['easter_holiday_range'][0])..Date.parse(cycle['easter_holiday_range'][1]) if cycle['easter_holiday_range']
