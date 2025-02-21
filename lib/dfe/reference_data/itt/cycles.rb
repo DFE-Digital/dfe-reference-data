@@ -53,6 +53,7 @@ module DfE
           non_working_days = {}
           non_working_days[:christmas] = Date.parse(cycle['christmas_holiday_range'][0])..Date.parse(cycle['christmas_holiday_range'][1]) if cycle['christmas_holiday_range']
           non_working_days[:easter] = Date.parse(cycle['easter_holiday_range'][0])..Date.parse(cycle['easter_holiday_range'][1]) if cycle['easter_holiday_range']
+          byebug
           hash[year] = {
             find_opens: make_local_time(cycle['find_opens_at']),
             apply_opens: make_local_time(cycle['apply_opens_at']),
