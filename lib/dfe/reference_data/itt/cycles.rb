@@ -3,7 +3,6 @@ require 'time'
 require 'date'
 require 'net/http'
 require 'json'
-require 'byebug'
 
 module DfE
   module ReferenceData
@@ -54,25 +53,19 @@ module DfE
         non_working_days
       end
 
-      def self.build_cycle(cycle)
-        #year = format_year_range(cycle['recruitment_cycle_year'])
-        {
-          find_opens: make_local_time(cycle['find_opens_at']),
-          apply_opens: make_local_time(cycle['apply_opens_at']),
-          apply_1_deadline: make_local_time(cycle['apply_deadline_at']),
-          apply_2_deadline: make_local_time(cycle['apply_deadline_at']),
-          provider_decision_deadline: make_local_time(cycle['reject_by_default_at']),
-          find_closes: make_local_time(cycle['find_closes_at']),
-          non_working_days: holidays(cycle)
-        }
-      end
-
       def self.build_cycles(data)
         data['data'].each_with_object({}) do |cycle, hash|
           year = format_year_range(cycle['recruitment_cycle_year'])
-          hash[year] = build_cycle(cycle)
+          hash[year] = {
+            find_opens: make_local_time(cycle['find_opens_at']),
+            apply_opens: make_local_time(cycle['apply_opens_at']),
+            apply_1_deadline: make_local_time(cycle['apply_deadline_at']),
+            apply_2_deadline: make_local_time(cycle['apply_deadline_at']),
+            provider_decision_deadline: make_local_time(cycle['reject_by_default_at']),
+            find_closes: make_local_time(cycle['find_closes_at']),
+            non_working_days: holidays(cycle)
+          }
         end
-        byebug
       end
 
       begin
