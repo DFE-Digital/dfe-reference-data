@@ -3,7 +3,6 @@ require 'time'
 require 'date'
 require 'net/http'
 require 'json'
-require 'byebug'
 
 module DfE
   module ReferenceData
@@ -58,10 +57,6 @@ module DfE
       def self.build_cycles(data)
         data['data'].each_with_object({}) do |cycle, hash|
           year = format_year_range(cycle['recruitment_cycle_year'])
-          
-          #non_working_days[:christmas] = Date.parse(cycle['christmas_holiday_range'][0])..Date.parse(cycle['christmas_holiday_range'][1]) if cycle['christmas_holiday_range']
-          #non_working_days[:easter] = Date.parse(cycle['easter_holiday_range'][0])..Date.parse(cycle['easter_holiday_range'][1]) if cycle['easter_holiday_range']
-          byebug
           hash[year] = {
             find_opens: make_local_time(cycle['find_opens_at']),
             apply_opens: make_local_time(cycle['apply_opens_at']),
