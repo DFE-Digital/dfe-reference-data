@@ -43,10 +43,14 @@ module DfE
         JSON.parse(response)
       end
 
+      def self.format_year_range(year)
+        "#{year}-#{year + 1}"
+      end
+
       def self.build_cycles(data)
         data["data"].each_with_object({}) do |cycle, hash|
           byebug
-          year = cycle['recruitment_cycle_year'].to_s
+          year = format_year_range(cycle['recruitment_cycle_year'].to_s)
           non_working_days = {}
           if cycle['christmas_holiday_range']
             non_working_days[:christmas] = Date.parse(cycle['christmas_holiday_range'][0])..Date.parse(cycle['christmas_holiday_range'][1])
