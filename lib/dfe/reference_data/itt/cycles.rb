@@ -47,17 +47,18 @@ module DfE
         "#{year - 1}-#{year}"
       end
 
-      def self.non_working_days(cycle)
+      def self.holidays(cycle)
         non_working_days = {}
         non_working_days[:christmas] = Date.parse(cycle['christmas_holiday_range'][0])..Date.parse(cycle['christmas_holiday_range'][1]) if cycle['christmas_holiday_range']
         non_working_days[:easter] = Date.parse(cycle['easter_holiday_range'][0])..Date.parse(cycle['easter_holiday_range'][1]) if cycle['easter_holiday_range']
+        non_working_days
       end
 
 
       def self.build_cycles(data)
         data['data'].each_with_object({}) do |cycle, hash|
           year = format_year_range(cycle['recruitment_cycle_year'])
-          non_working_days(cycle)
+          holidays(cycle)
           #non_working_days[:christmas] = Date.parse(cycle['christmas_holiday_range'][0])..Date.parse(cycle['christmas_holiday_range'][1]) if cycle['christmas_holiday_range']
           #non_working_days[:easter] = Date.parse(cycle['easter_holiday_range'][0])..Date.parse(cycle['easter_holiday_range'][1]) if cycle['easter_holiday_range']
           byebug
