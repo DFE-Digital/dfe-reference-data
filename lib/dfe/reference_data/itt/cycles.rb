@@ -3,7 +3,6 @@ require 'time'
 require 'date'
 require 'net/http'
 require 'json'
-require 'byebug'
 
 module DfE
   module ReferenceData
@@ -69,7 +68,6 @@ module DfE
       def self.build_cycles(data)
         data['data'].each_with_object({}) do |cycle, hash|
           year = format_year_range(cycle['recruitment_cycle_year'])
-          byebug
           hash[year] = build_cycle(cycle)
         end
       end
