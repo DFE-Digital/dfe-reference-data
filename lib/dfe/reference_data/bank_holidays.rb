@@ -161,6 +161,70 @@ module DfE
           '17bbc7a6-2eae-458a-a042-cea58e039e83' => {
             title: 'Boxing Day',
             date: DateTime.new(2025, 12, 26)
+          },
+          '3c7dbc08-7aa5-48a9-95bf-379a9c192f3d' => {
+            title: 'New Year’s Day',
+            date: DateTime.new(2026, 1, 1)
+          },
+          'e4627680-1f98-418e-9368-f0fdf2675bff' => {
+            title: 'Good Friday',
+            date: DateTime.new(2026, 4, 3)
+          },
+          '14fcba2c-e532-4c0e-9c24-c75d3f216742' => {
+            title: 'Easter Monday',
+            date: DateTime.new(2026, 4, 6)
+          },
+          '8fe0ae13-1d7d-41eb-a05e-a635c998d096' => {
+            title: 'Early May bank holiday',
+            date: DateTime.new(2026, 5, 4)
+          },
+          'bee66569-30a8-4312-8aef-b59513f4b9cc' => {
+            title: 'Spring bank holiday',
+            date: DateTime.new(2026, 5, 25)
+          },
+          '5ea9da90-16a4-4c34-959f-997982d1be79' => {
+            title: 'Summer bank holiday',
+            date: DateTime.new(2026, 8, 31)
+          },
+          'cce849b9-943c-45ee-821f-665ad7405050' => {
+            title: 'Christmas Day',
+            date: DateTime.new(2026, 12, 25)
+          },
+          '634f3d1a-1f5c-4435-acba-7526d5da2023' => {
+            title: 'Boxing Day (substitute day)',
+            date: DateTime.new(2026, 12, 28)
+          },
+          'e5d3ec0f-6737-44d4-af75-d225e125368a' => {
+            title: 'New Year’s Day',
+            date: DateTime.new(2027, 1, 1)
+          },
+          '885518be-a2a6-4250-92e5-66161d1e21cd' => {
+            title: 'Good Friday',
+            date: DateTime.new(2027, 3, 26)
+          },
+          '6f36203c-1c4f-47c2-a6c2-c1216953d2a2' => {
+            title: 'Easter Monday',
+            date: DateTime.new(2027, 3, 29)
+          },
+          '1cef6f3d-ece6-400f-bdc7-7efc35f41f3c' => {
+            title: 'Early May bank holiday',
+            date: DateTime.new(2027, 5, 3)
+          },
+          '852ae9fa-6303-453b-a856-99bebb252e0e' => {
+            title: 'Spring bank holiday',
+            date: DateTime.new(2027, 5, 31)
+          },
+          '6b459547-00a4-47d2-a3cd-fa60ec001cd3' => {
+            title: 'Summer bank holiday',
+            date: DateTime.new(2027, 8, 30)
+          },
+          'be003839-145f-4379-8b98-8423de78c201' => {
+            title: 'Christmas Day (substitute day)',
+            date: DateTime.new(2027, 12, 27),
+          },
+          '7c728d36-d2d8-4f2f-86bd-e8a1625d1cab' => {
+            title: 'Boxing Day (substitute day)',
+            date: DateTime.new(2027, 12, 28)
           }
         },
         schema: BANK_HOLIDAYS_SCHEMA,
