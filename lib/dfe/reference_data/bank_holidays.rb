@@ -220,7 +220,7 @@ module DfE
           },
           'be003839-145f-4379-8b98-8423de78c201' => {
             title: 'Christmas Day (substitute day)',
-            date: DateTime.new(2027, 12, 27),
+            date: DateTime.new(2027, 12, 27)
           },
           '7c728d36-d2d8-4f2f-86bd-e8a1625d1cab' => {
             title: 'Boxing Day (substitute day)',
