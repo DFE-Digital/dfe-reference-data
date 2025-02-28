@@ -1,5 +1,13 @@
 # Changelog
 
+## [v3.6.8](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.8) (2025-02-18)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.7...v3.6.8)
+
+**Fixed bugs:**
+
+- update graphic design [\#131](https://github.com/DFE-Digital/dfe-reference-data/pull/131) ([goodviber](https://github.com/goodviber))
+
 ## [v3.6.7](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.7) (2024-11-28)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.6...v3.6.7)
