@@ -779,8 +779,8 @@ module DfE
                                                       category: '81900c77-7f9a-4f3a-93e9-02fcbc2ff8a5' },
           '21cf685d-5f27-4a08-a597-2307afb5733d' => { name: 'graphic design',
                                                       hecos_code: '100061',
-                                                      register_category: '6ea9457d-b8a2-4211-b58b-064fed680c99',
-                                                      publish_category: 'W1',
+                                                      register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
+                                                      publish_category: 'DT',
                                                       incentive: {
                                                         '2020-2021' => 'd4024ca2-da1a-47ff-b497-62fed8fa5249',
                                                         '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd',
