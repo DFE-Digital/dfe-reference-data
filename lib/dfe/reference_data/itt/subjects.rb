@@ -782,7 +782,9 @@ module DfE
                                                       register_category: '05798776-a0db-4378-8c9c-4e9bfe69b1c6',
                                                       publish_category: 'DT',
                                                       incentive: {
-                                                        '2020-2021' => 'd4024ca2-da1a-47ff-b497-62fed8fa5249',
+                                                        '2020-2021' => 'd58055c2-729a-487d-9ec2-4dde74159606',
+                                                        '2022-2023' => '9dc69724-4836-4141-9edf-52d473d4d0b3',
+                                                        '2023-2024' => 'd41a2664-88d2-4cec-a5e1-edc7aa81095d',
                                                         '2024-2025' => '65585baf-049f-4407-b1b6-9a01d597b7fd',
                                                         '2025-2026' => 'aba9c49c-3b43-4f47-a903-26cd4b35e8d2'
                                                       },
