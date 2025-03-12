@@ -25,10 +25,10 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 
 | Field           | Type   | Purpose                                                                                                                        |
 | --------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------ |
-| `Country_Code`  | string | The country or territory's ISO code.                                                                                           |
-| `Name`          | string | The human-readable name of the country or territory                                                                            |
-| `Official_Name` | string | The human-readable full ‘official name’. Used when the formal version of a country’s name is needed                            |
-| `Citizen_Names` | string | The human-readable citizen names. They are not the legal names for the citizen, they do not relate to the citizen’s ethnicity. |
+| `country_code`  | string | The country or territory's ISO code.                                                                                           |
+| `name`          | string | The human-readable name of the country or territory.                                                                           |
+| `official_name` | string | The human-readable full ‘official name’. Used when the formal version of a country’s name is needed.                           |
+| `citizen_names` | string | The human-readable citizen names. They are not the legal names for the citizen, they do not relate to the citizen’s ethnicity. |
 
 ### `DfE::ReferenceData::CountriesAndTerritories::UK_AND_CI_POSTCODE_PREFIX_COUNTRIES`
 

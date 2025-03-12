@@ -1,8 +1,6 @@
 module DfE
   module ReferenceData
     module CountriesAndTerritories
-      # https://github.com/DFE-Digital/apply-for-teacher-training/blob/78c9421d8582f63cfdec564b5c0677bfd787552c/config/initializers/countries_and_territories.rb
-      # https://github.com/alphagov/govuk-country-and-territory-autocomplete/blob/5214c44/dist/location-autocomplete-canonical-list.json
       COUNTRIES_AND_TERRITORIES = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           'AF' => { name: 'Afghanistan', official_name: 'The Islamic Republic of Afghanistan', citizen_names: 'Afghan'},
@@ -225,14 +223,18 @@ module DfE
           'ZW' => { name: 'Zimbabwe', official_name: 'The Republic of Zimbabwe', citizen_names: 'Zimbabwean'}
         },
         schema: {
-          id: :string,
-          name: :string
+          country_code: :string,
+          name: :string,
+          official_name: :string,
+          citizen_names: :string
         },
-        list_description: 'A mapping of ISO country/territory codes to country/territory names.',
+        list_description: 'A mapping of ISO country/territory codes to country/territory names, official names, and citizen names.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_countries_and_territories.md#dfereferencedatacountriesandterritoriescountries_and_territories',
         field_descriptions: {
-          id: 'The country or territory\'s ISO code',
-          name: 'The human-readable name of the country or territory'
+          country_code: 'The country or territory\'s ISO code',
+          name: 'The human-readable name of the country or territory',
+          official_name: 'The human-readable full ‘official name’. Used when the formal version of a country’s name is needed',
+          citizen_names: 'The human-readable citizen names. They are not the legal names for the citizen, they do not relate to the citizen’s ethnicity.'
         }
       )
 

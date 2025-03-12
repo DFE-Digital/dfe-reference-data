@@ -12,7 +12,7 @@ A mapping of HECoS and legacy codes to Data source, subject name, and current su
 
 Owner: Teaching Record team.
 
-Users: TRS, Register for ITT, Apply for QTS team.
+Users: TRS, Register for ITT, Apply for QTS.
 
 Source:
 DQT
@@ -23,11 +23,13 @@ Quality: Manually updated on an ad-hoc basis. Please submit a pull request if in
 
 This list is [autocomplete compatible](autocomplete_compatability.md).
 
-| Field          | Type    | Purpose                                                                                            |
-| -------------- | ------- | -------------------------------------------------------------------------------------------------- |
-| `Subject_Code` | string  | The subject's code.                                                                                |
-| `Code_Source`  | string  | The source of the code.                                                                            |
-| `Name`         | string  | The human-readable name of the subject                                                             |
-| `Active`       | boolean | A flag designating whether this code is currently accepted as a subject specialism by the TRS API. |
+| Field                | Type      | Purpose                                                                             |
+| -------------------- | --------- | ----------------------------------------------------------------------------------- |
+| `subject_code`       | string    | The subject's code.                                                                 |
+| `code_source`        | string    | The source of the code.                                                             |
+| `name`               | string    | The human-readable name of the subject.                                             |
+| `subject_specialism` | boolean   | A flag designating whether this code is currently accepted as a subject specialism. |
+| `start_date`         | timestamp | The start date of this subject code's validity.                                     |
+| `end_date`           | timestamp | The start date of this subject code's validity.                                     |
 
 This list is currently in development and subject to changes.
