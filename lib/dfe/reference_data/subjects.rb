@@ -1,6 +1,6 @@
 module DfE
   module ReferenceData
-    module subjects
+    module Subjects
       Subjects = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           'X8830' => { code_source: 'DQT_Legacy', name: 'Academic Studies In Education', subject_specialism: 'FALSE', start_date: '1900-01-01 00:00:00', end_date: '2025-04-30 23:59:59'},
@@ -636,7 +636,6 @@ module DfE
           'B9503' => { code_source: 'DQT_Legacy', name: 'Speech Therapy', subject_specialism: 'FALSE', start_date: '1900-01-01 00:00:00', end_date: '2025-04-30 23:59:59'},
           'B9504' => { code_source: 'DQT_Legacy', name: 'Speech Training', subject_specialism: 'FALSE', start_date: '1900-01-01 00:00:00', end_date: '2025-04-30 23:59:59'},
           'X2007' => { code_source: 'DQT_Legacy', name: 'Sport', subject_specialism: 'FALSE', start_date: '1900-01-01 00:00:00', end_date: '2025-04-30 23:59:59'},
-          'C600' => { code_source: 'DQT_Legacy', name: 'Sport & exercise science', subject_specialism: 'FALSE', start_date: '1900-01-01 00:00:00', end_date: '2025-04-30 23:59:59'},
           'C690' => { code_source: 'DQT_Legacy', name: 'Sport & exercise science not elsewhere classified', subject_specialism: 'FALSE', start_date: '1900-01-01 00:00:00', end_date: '2025-04-30 23:59:59'},
           'N890' => { code_source: 'DQT_Legacy', name: 'Sport and Active Leisure', subject_specialism: 'FALSE', start_date: '1900-01-01 00:00:00', end_date: '2025-04-30 23:59:59'},
           'X9015' => { code_source: 'DQT_Legacy', name: 'Sport and Physical Activity', subject_specialism: 'FALSE', start_date: '1900-01-01 00:00:00', end_date: '2025-04-30 23:59:59'},
