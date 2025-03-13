@@ -8,14 +8,6 @@ module DfE
         COUNTRIES_AND_TERRITORIES = DfE::ReferenceData::TweakedReferenceList.new(
           DfE::ReferenceData::CountriesAndTerritories::COUNTRIES_AND_TERRITORIES,
           {
-            'QO' => { name: 'Kosovo' },
-            'XC' => { name: 'Cyprus' },
-            'XF' => { name: 'England' },
-            'XG' => { name: 'Northern Ireland' },
-            'XH' => { name: 'Scotland' },
-            'XI' => { name: 'Wales' },
-            'XK' => { name: 'United Kingdom' },
-            'XL' => { name: 'Channel Islands' },
             'XX' => { name: 'Antarctica' },
             'ZZ' => nil
           }
@@ -25,7 +17,6 @@ module DfE
         SPECIAL_ISO_CODES = DfE::ReferenceData::HardcodedReferenceList.new(
           {
             nil => { code: 'ZZ' },
-            'AQ' => { code: 'XX' },
             'CY' => { code: 'XC' },
             'XK' => { code: 'QO' }
           },

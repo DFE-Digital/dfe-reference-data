@@ -5,8 +5,8 @@ RSpec.describe DfE::ReferenceData::HESA::Domiciles do
     it_should_behave_like 'a list of valid records'
 
     it 'contains normal mappings from ISO codes to country names' do
-      expect(described_class.one('AW').name).to eq('Aruba')
-      expect(described_class.one('UM-81').name).to eq('Baker Island')
+      expect(described_class.one('AU').name).to eq('Australia')
+      expect(described_class.one('GB-SCT').name).to eq('Scotland')
     end
 
     it 'provides some HESA-specific mappings' do

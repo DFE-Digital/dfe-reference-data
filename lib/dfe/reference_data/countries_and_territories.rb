@@ -217,7 +217,7 @@ module DfE
           'VE' => { name: 'Venezuela', official_name: 'The Bolivarian Republic of Venezuela', citizen_names: 'Venezuelan' },
           'VN' => { name: 'Vietnam', official_name: 'The Socialist Republic of Viet Nam', citizen_names: 'Vietnamese' },
           'GB-WLS' => { name: 'Wales', official_name: 'Wales', citizen_names: 'Briton, British' },
-          'GB-CYM' => { name: 'Wales', official_name: 'Wales', citizen_names: 'Briton, British' },
+          'GB-CYM' => { name: 'Wales (Cymru)', official_name: 'Wales', citizen_names: 'Briton, British' },
           'YE' => { name: 'Yemen', official_name: 'The Republic of Yemen', citizen_names: 'Yemeni' },
           'ZM' => { name: 'Zambia', official_name: 'The Republic of Zambia', citizen_names: 'Zambian' },
           'ZW' => { name: 'Zimbabwe', official_name: 'The Republic of Zimbabwe', citizen_names: 'Zimbabwean' }
