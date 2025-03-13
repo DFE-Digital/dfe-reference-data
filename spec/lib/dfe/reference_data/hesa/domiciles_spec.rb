@@ -10,8 +10,7 @@ RSpec.describe DfE::ReferenceData::HESA::Domiciles do
     end
 
     it 'provides some HESA-specific mappings' do
-      expect(described_class.one('XC').name).to eq('Cyprus')
-      expect(described_class.one('XG').name).to eq('Northern Ireland')
+      expect(described_class.one('XX').name).to eq('Antarctica')
       expect(described_class.one('ZZ')).to be_nil
     end
   end
@@ -20,7 +19,7 @@ RSpec.describe DfE::ReferenceData::HESA::Domiciles do
     it_should_behave_like 'a list of valid records'
 
     it 'provides some HESA-specific mappings' do
-      expect(described_class.one('AQ').code).to eq('XX')
+      expect(described_class.one('XC').code).to eq('CY')
       expect(described_class.one(nil).code).to eq('ZZ')
     end
   end
