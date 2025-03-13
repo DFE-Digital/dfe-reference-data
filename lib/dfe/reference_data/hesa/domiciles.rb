@@ -16,7 +16,7 @@ module DfE
             'XI' => { name: 'Wales', official_name: 'Wales', citizen_names: nil },
             'XK' => { name: 'United Kingdom', official_name: 'United Kingdom', citizen_names: nil },
             'XL' => { name: 'Channel Islands', official_name: 'Channel Islands', citizen_names: nil },
-            'XX' => { name: 'Antarctica', official_name: 'Antarctica', citizen_names: nil },
+            'XX' => { name: 'Antarctica', official_name: 'Antarctica', citizen_names: nil }
           }
         )
 
