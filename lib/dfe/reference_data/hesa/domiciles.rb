@@ -17,14 +17,12 @@ module DfE
             'XK' => { name: 'United Kingdom', official_name: 'United Kingdom', citizen_names: nil },
             'XL' => { name: 'Channel Islands', official_name: 'Channel Islands', citizen_names: nil },
             'XX' => { name: 'Antarctica', official_name: 'Antarctica', citizen_names: nil },
-            'ZZ' => nil
           }
         )
 
         # https://github.com/DFE-Digital/apply-for-teacher-training/blob/78c9421d8582f63cfdec564b5c0677bfd787552c/app/lib/domicile_resolver.rb#L3-L12
         SPECIAL_ISO_CODES = DfE::ReferenceData::HardcodedReferenceList.new(
           {
-            nil => { code: 'ZZ' },
             'AQ' => { code: 'XX' },
             'CY' => { code: 'XC' },
             'XK' => { code: 'QO' }
