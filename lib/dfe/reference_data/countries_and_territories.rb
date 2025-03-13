@@ -226,7 +226,7 @@ module DfE
           id: :string,
           name: :string,
           official_name: :string,
-          citizen_names: :string
+          citizen_names: : { schema: :string, kind: :optional }
         },
         list_description: 'A mapping of ISO country codes to country names, official names, and citizen names.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_countries_and_territories.md#dfereferencedatacountriesandterritoriescountries_and_territories',
