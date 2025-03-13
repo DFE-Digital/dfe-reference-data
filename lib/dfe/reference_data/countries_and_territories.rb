@@ -223,16 +223,16 @@ module DfE
           'ZW' => { name: 'Zimbabwe', official_name: 'The Republic of Zimbabwe', citizen_names: 'Zimbabwean'}
         },
         schema: {
-          country_code: :string,
+          id: :string,
           name: :string,
           official_name: :string,
           citizen_names: :string
         },
-        list_description: 'A mapping of ISO country/territory codes to country/territory names, official names, and citizen names.',
+        list_description: 'A mapping of ISO country codes to country names, official names, and citizen names.',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_countries_and_territories.md#dfereferencedatacountriesandterritoriescountries_and_territories',
         field_descriptions: {
-          country_code: 'The country or territory\'s ISO code',
-          name: 'The human-readable name of the country or territory',
+          id: 'The country ISO code',
+          name: 'The human-readable name of the country',
           official_name: 'The human-readable full ‘official name’. Used when the formal version of a country’s name is needed',
           citizen_names: 'The human-readable citizen names. They are not the legal names for the citizen, they do not relate to the citizen’s ethnicity.'
         }

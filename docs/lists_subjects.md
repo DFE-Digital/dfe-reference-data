@@ -25,7 +25,7 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 
 | Field                | Type      | Purpose                                                                             |
 | -------------------- | --------- | ----------------------------------------------------------------------------------- |
-| `subject_code`       | string    | The subject's code.                                                                 |
+| `id`                 | string    | The subject's code.                                                                 |
 | `code_source`        | string    | The source of the code.                                                             |
 | `name`               | string    | The human-readable name of the subject.                                             |
 | `subject_specialism` | boolean   | A flag designating whether this code is currently accepted as a subject specialism. |
