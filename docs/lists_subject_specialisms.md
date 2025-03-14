@@ -2,10 +2,10 @@
 
 - A mapping of HECoS and legacy subject codes to Data Source, Subject Name, and current Subject specialism eligibility
 
-### `DfE::ReferenceData::CountriesAndTerritories::SUBJECTS`
+### `DfE::ReferenceData::SubjectSpecialisms::SUBJECT_SPECIALISMS`
 
 ```ruby
-require 'dfe/reference_data/subjects'
+require 'dfe/reference_data/subjects_specialisms'
 ```
 
 A mapping of HECoS and legacy codes to Data source, subject name, and current subject specialism eligibility.
