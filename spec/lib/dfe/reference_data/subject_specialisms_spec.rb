@@ -1,4 +1,4 @@
-require 'dfe/reference_data/countries_and_territories'
+require 'dfe/reference_data/subject_specialisms'
 
 RSpec.describe DfE::ReferenceData::SubjectSpecialisms do
   describe described_class::SUBJECT_SPECIALISMS do
