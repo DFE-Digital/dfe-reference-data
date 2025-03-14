@@ -16,8 +16,8 @@ RSpec.describe DfE::ReferenceData::CountriesSubjectSpecialismsAndTerritories do
     end
 
     it 'contains mappings from HECoS codes to Subject Specialism flags' do
-      expect(described_class.one('100320').subject_specialism).to eq(TRUE)
-      expect(described_class.one('100328').subject_specialism).to eq(FALSE)
+      expect(described_class.one('100320').subject_specialism).to eq(true)
+      expect(described_class.one('100328').subject_specialism).to eq(false)
     end
   end
 end
