@@ -1,6 +1,6 @@
 require 'dfe/reference_data/countries_and_territories'
 
-RSpec.describe DfE::ReferenceData::CountriesSubjectSpecialismsAndTerritories do
+RSpec.describe DfE::ReferenceData::SubjectSpecialisms do
   describe described_class::SUBJECT_SPECIALISMS do
     it_should_behave_like 'a list of valid records'
     it_should_behave_like 'a valid autocomplete-capable list'
