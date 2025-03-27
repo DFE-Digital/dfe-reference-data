@@ -146,7 +146,7 @@ module DfE
           'NG' => { name: 'Nigeria', official_name: 'The Federal Republic of Nigeria', citizen_names: 'Nigerian' },
           'KP' => { name: 'North Korea', official_name: 'The Democratic People\'s Republic of Korea', citizen_names: 'North Korean' },
           'MK' => { name: 'North Macedonia', official_name: 'Republic of North Macedonia', citizen_names: 'Macedonian' },
-          'GB-NIR' => { name: 'Northen Ireland', official_name: 'Northen Ireland', citizen_names: 'Briton, British' },
+          'GB-NIR' => { name: 'Northern Ireland', official_name: 'Northern Ireland', citizen_names: 'Briton, British' },
           'NO' => { name: 'Norway', official_name: 'The Kingdom of Norway', citizen_names: 'Norwegian' },
           'OM' => { name: 'Oman', official_name: 'The Sultanate of Oman', citizen_names: 'Omani' },
           'PK' => { name: 'Pakistan', official_name: 'The Islamic Republic of Pakistan', citizen_names: 'Pakistani' },
