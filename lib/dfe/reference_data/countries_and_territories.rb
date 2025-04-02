@@ -89,6 +89,7 @@ module DfE
           'HT' => { name: 'Haiti', official_name: 'The Republic of Haiti', citizen_names: 'Haitian' },
           'HN' => { name: 'Honduras', official_name: 'The Republic of Honduras', citizen_names: 'Honduran' },
           'HU' => { name: 'Hungary', official_name: 'Hungary', citizen_names: 'Hungarian' },
+          'HK' => { name: 'Hong Kong', official_name: 'Hong Kong Special Administrative Region of the People\'s Republic of China', citizen_names: 'Hongkonger or Cantonese' },
           'IS' => { name: 'Iceland', official_name: 'Iceland', citizen_names: 'Icelandic' },
           'IN' => { name: 'India', official_name: 'The Republic of India', citizen_names: 'Indian' },
           'ID' => { name: 'Indonesia', official_name: 'The Republic of Indonesia', citizen_names: 'Indonesian' },
