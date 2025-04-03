@@ -13,7 +13,7 @@ A mapping of ISO country/territory codes to country/territory names.
 
 Owner: Teaching Record team.
 
-Users: TRS, Register for ITT, Apply for ITT, Apply for QTS team.
+Users: Teaching Record System, Register for Teacher Training, Apply for Teacher Training, Apply for Qualified Teacher Status in England team.
 
 Source:
 [UK Country Codes](https://www.gov.uk/government/publications/open-standards-for-government/country-codes)

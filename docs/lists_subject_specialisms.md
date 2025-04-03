@@ -12,7 +12,7 @@ A mapping of HECoS and legacy codes to Data source, subject name, and current su
 
 Owner: Teaching Record team.
 
-Users: TRS, Register for ITT, Apply for QTS.
+Users: TRS, Register for Teacher Training, Apply for Qualified Teacher Status in England team.
 
 Source:
 DQT
