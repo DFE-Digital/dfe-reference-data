@@ -74,6 +74,13 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             group: :other },
+          'd2ffefd5-43f7-4c9e-aae5-341df5d880d0' =>
+          { hesa_code: '09',
+            name: 'Pass - degree awarded without honours following an honours course',
+            short_name: 'Pass without honours',
+            suggestion_synonyms: [],
+            match_synonyms: [],
+            group: :other },
           '4d3cc9d3-81dd-4457-ae2b-ee0bd298c51e' =>
           { hesa_code: '10',
             name: 'Ordinary degree',
