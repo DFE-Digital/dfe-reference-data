@@ -1,5 +1,13 @@
 # Changelog
 
+## [v3.7.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.7.0) (2025-04-09)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.9...v3.7.0)
+
+**Implemented enhancements:**
+
+- V3.7.0 [\#141](https://github.com/DFE-Digital/dfe-reference-data/pull/141) ([Reyko](https://github.com/Reyko))
+
 ## [v3.6.9](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.9) (2025-02-28)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.8...v3.6.9)
