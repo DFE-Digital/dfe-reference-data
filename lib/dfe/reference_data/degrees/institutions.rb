@@ -2942,7 +2942,7 @@ module DfE
             ukprn: '10055902',
             comment: 'Given degree awarding powers in 2022',
             institution_groups: [] },
-            'c6501667-3718-43e3-9390-71bc20ccb6c7' =>
+          'c6501667-3718-43e3-9390-71bc20ccb6c7' =>
           { name: 'Wimbledon School of Art',
             suggestion_synonyms: [],
             match_synonyms: [],
