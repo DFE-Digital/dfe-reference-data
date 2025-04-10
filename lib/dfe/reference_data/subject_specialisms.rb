@@ -1791,6 +1791,9 @@ module DfE
           '101509' => { code_source: 'HECoS', name: 'fascism', subject_specialism: false, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
           '101510' => { code_source: 'HECoS', name: 'environmentalism', subject_specialism: false, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
           '101511' => { code_source: 'HECoS', name: 'ophthalmic dispensing', subject_specialism: false, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil }
+          '999001' => { code_source: 'AfQTS', name: 'citizenship', subject_specialism: true, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
+          '999002' => { code_source: 'AfQTS', name: 'physical_education', subject_specialism: true, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
+          '999003' => { code_source: 'AfQTS', name: 'design_and_technology dispensing', subject_specialism: true, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil }
         },
         schema: {
           id: :string,
