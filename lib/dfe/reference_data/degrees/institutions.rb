@@ -708,8 +708,7 @@ module DfE
           { name: 'University of South Wales',
             suggestion_synonyms:
             ['University of Glamorgan',
-             'University of Wales, Newport',
-             'Royal Welsh College of Music and Drama'],
+             'University of Wales, Newport'],
             match_synonyms: ['Prifysgol De Cymru'],
             hesa_itt_code: '0090',
             dttp_id: '8723a753-7042-e811-80ff-3863bb3640b8',
@@ -2866,7 +2865,6 @@ module DfE
             match_synonyms:
             ['Prifysgol Cymru',
              'University of Wales (central functions)',
-             'Royal Welsh College of Music and Drama',
              'The University of Wales (central functions)'],
             hesa_itt_code: '0086',
             dttp_id: '6a228041-7042-e811-80ff-3863bb3640b8',
