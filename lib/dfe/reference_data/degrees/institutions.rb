@@ -2268,15 +2268,6 @@ module DfE
             ukprn: '10034324',
             has_never_awarded_degrees: true,
             institution_groups: [] },
-          'bf3e182c-1425-ec11-b6e6-000d3adf095a' =>
-          { name: 'Regents Theological College',
-            suggestion_synonyms: [],
-            match_synonyms: [],
-            hesa_itt_code: '0327',
-            dttp_id: 'bf3e182c-1425-ec11-b6e6-000d3adf095a',
-            ukprn: '10021100',
-            has_never_awarded_degrees: true,
-            institution_groups: [] },
           '833e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'London School of Commerce & IT',
             suggestion_synonyms: [],
@@ -3235,7 +3226,8 @@ module DfE
             suggestion_synonyms: [],
             match_synonyms: [],
             hesa_itt_code: '0264',
-            ukprn: nil,
+            ukprn: '10021100',
+            has_never_awarded_degrees: true,
             comment: nil,
             institution_groups: [] },
           'f993ad25-a276-44f6-9e84-5d4e429475d9' =>
