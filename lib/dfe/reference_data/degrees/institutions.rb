@@ -2366,7 +2366,7 @@ module DfE
           '733e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Leeds Conservatoire',
             suggestion_synonyms: [],
-            match_synonyms: ['Leeds College of Music'],
+            match_synonyms: [],
             hesa_itt_code: '0351',
             dttp_id: '733e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10034449',
