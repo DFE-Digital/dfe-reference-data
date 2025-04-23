@@ -2376,7 +2376,7 @@ module DfE
           { name: 'Hartpury University',
             suggestion_synonyms: [],
             match_synonyms:
-            ['Hartpury College', 'Hartpury University and Hartpury College'],
+            ['Hartpury University and Hartpury College'],
             hesa_itt_code: '0352',
             dttp_id: '533e182c-1425-ec11-b6e6-000d3adf095a',
             ukprn: '10080811',
