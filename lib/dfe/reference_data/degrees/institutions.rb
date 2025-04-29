@@ -2865,7 +2865,6 @@ module DfE
             match_synonyms:
             ['Prifysgol Cymru',
              'University of Wales (central functions)'],
-            hesa_itt_code: '0086',
             dttp_id: '6a228041-7042-e811-80ff-3863bb3640b8',
             comment:
             'Previously a federal university who awarded degrees. Merged into University of Wales Trinity Saint David in 2017.',
