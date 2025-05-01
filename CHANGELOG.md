@@ -1,5 +1,31 @@
 # Changelog
 
+## [v3.7.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.7.1) (2025-04-30)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.7.0...v3.7.1)
+
+**Merged pull requests:**
+
+- Add 274 missing institutions for previous degrees [\#143](https://github.com/DFE-Digital/dfe-reference-data/pull/143) ([Reyko](https://github.com/Reyko))
+
+## [v3.7.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.7.0) (2025-04-11)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.10...v3.7.0)
+
+**Merged pull requests:**
+
+- v3.7.0 [\#142](https://github.com/DFE-Digital/dfe-reference-data/pull/142) ([Reyko](https://github.com/Reyko))
+- Add missing degree type mapping for 4 specific degrees [\#141](https://github.com/DFE-Digital/dfe-reference-data/pull/141) ([Reyko](https://github.com/Reyko))
+- Add degree grade value for HESA code '09' [\#140](https://github.com/DFE-Digital/dfe-reference-data/pull/140) ([stevehook](https://github.com/stevehook))
+
+## [v3.6.10](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.10) (2025-03-03)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.9...v3.6.10)
+
+**Implemented enhancements:**
+
+- update graphic design incentive [\#136](https://github.com/DFE-Digital/dfe-reference-data/pull/136) ([goodviber](https://github.com/goodviber))
+
 ## [v3.6.9](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.6.9) (2025-02-28)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.6.8...v3.6.9)
