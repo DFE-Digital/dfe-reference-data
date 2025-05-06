@@ -1,11 +1,20 @@
 # Changelog
 
+## [v3.8.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.0) (2025-05-06)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.7.1...v3.8.0)
+
+**Merged pull requests:**
+
+- Trs reference data updates [\#139](https://github.com/DFE-Digital/dfe-reference-data/pull/139) ([JohnHBKing](https://github.com/JohnHBKing))
+
 ## [v3.7.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.7.1) (2025-04-30)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.7.0...v3.7.1)
 
 **Merged pull requests:**
 
+- v3.7.1 [\#144](https://github.com/DFE-Digital/dfe-reference-data/pull/144) ([goodviber](https://github.com/goodviber))
 - Add 274 missing institutions for previous degrees [\#143](https://github.com/DFE-Digital/dfe-reference-data/pull/143) ([Reyko](https://github.com/Reyko))
 
 ## [v3.7.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.7.0) (2025-04-11)
