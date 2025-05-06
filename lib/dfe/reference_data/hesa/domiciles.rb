@@ -8,15 +8,15 @@ module DfE
         COUNTRIES_AND_TERRITORIES = DfE::ReferenceData::TweakedReferenceList.new(
           DfE::ReferenceData::CountriesAndTerritories::COUNTRIES_AND_TERRITORIES,
           {
-            'QO' => { name: 'Kosovo' },
-            'XC' => { name: 'Cyprus' },
-            'XF' => { name: 'England' },
-            'XG' => { name: 'Northern Ireland' },
-            'XH' => { name: 'Scotland' },
-            'XI' => { name: 'Wales' },
-            'XK' => { name: 'United Kingdom' },
-            'XL' => { name: 'Channel Islands' },
-            'XX' => { name: 'Antarctica' },
+            'QO' => { name: 'Kosovo', official_name: 'Kosovo', citizen_names: nil },
+            'XC' => { name: 'Cyprus', official_name: 'Cyprus', citizen_names: nil },
+            'XF' => { name: 'England', official_name: 'England', citizen_names: nil },
+            'XG' => { name: 'Northern Ireland', official_name: 'Northern Ireland', citizen_names: nil },
+            'XH' => { name: 'Scotland', official_name: 'Scotland', citizen_names: nil },
+            'XI' => { name: 'Wales', official_name: 'Wales', citizen_names: nil },
+            'XK' => { name: 'United Kingdom', official_name: 'United Kingdom', citizen_names: nil },
+            'XL' => { name: 'Channel Islands', official_name: 'Channel Islands', citizen_names: nil },
+            'XX' => { name: 'Antarctica', official_name: 'Antarctica', citizen_names: nil },
             'ZZ' => nil
           }
         )

@@ -6,8 +6,8 @@ RSpec.describe DfE::ReferenceData::CountriesAndTerritories do
     it_should_behave_like 'a valid autocomplete-capable list'
 
     it 'contains mappings from ISO codes to country names' do
-      expect(described_class.one('AW').name).to eq('Aruba')
-      expect(described_class.one('UM-81').name).to eq('Baker Island')
+      expect(described_class.one('AU').name).to eq('Australia')
+      expect(described_class.one('GB-SCT').name).to eq('Scotland')
     end
   end
 
