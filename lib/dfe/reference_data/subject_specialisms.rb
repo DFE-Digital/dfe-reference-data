@@ -1494,7 +1494,7 @@ module DfE
           '101106' => { code_source: 'HECoS', name: 'engineering geology', subject_specialism: false, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
           '101107' => { code_source: 'HECoS', name: 'Shakespeare studies', subject_specialism: false, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
           '101108' => { code_source: 'HECoS', name: 'colonial and post-colonial literature', subject_specialism: false, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
-          '101109' => { code_source: 'HECoS', name: 'English as a second language', subject_specialism: false, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
+          '101109' => { code_source: 'HECoS', name: 'English as a second language', subject_specialism: true, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
           '101111' => { code_source: 'HECoS', name: 'Scottish literature', subject_specialism: false, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
           '101112' => { code_source: 'HECoS', name: 'ancient Middle Eastern languages', subject_specialism: false, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
           '101113' => { code_source: 'HECoS', name: 'ancient Egyptian studies', subject_specialism: false, start_date: DateTime.new(1900, 1, 1, 0, 0, 0), end_date: nil },
