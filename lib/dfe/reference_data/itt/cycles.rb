@@ -121,10 +121,21 @@ module DfE
             apply_1_deadline: nil, # This deadline is not applicable for this cycle
             apply_2_deadline: make_local_time(2026, 9, 16, 18), # 3rd Wednesday in September. This is the final and only deadline to send ITT applications in the cycle
             provider_decision_deadline: make_local_time(2026, 9, 24, 23, 59, 59), # 1 week and a day after Apply 2 deadline
-            find_closes: make_local_time(2026, 9, 30, 23, 59, 59), # The evening before find opens in the new cycle, estimated as of 15 October 2024
+            find_closes: make_local_time(2026, 9, 30, 23, 59, 59), # The evening before find opens in the new cycle
             non_working_days: {
-              christmas: Date.new(2025, 12, 22)..Date.new(2026, 1, 2),
-              easter: Date.new(2026, 3, 30)..Date.new(2026, 4, 10)
+              christmas: Date.new(2025, 12, 27)..Date.new(2026, 12, 31), # Starting in 2025-26, we are only adding the days between boxing day and new years as extra non-working days
+              # Starting in 2025-26, we are no longer adding extra days around the Easter holidays
+            }
+          },
+          '2026-2027' => {
+            find_opens: make_local_time(2026, 10, 1, 9), # Thursday, first weekday in October
+            apply_opens: make_local_time(2026, 10, 8, 9), # Second Thursday of October, one week after find opens
+            apply_1_deadline: nil, # This deadline is not applicable for this cycle
+            apply_2_deadline: make_local_time(2027, 9, 21, 18), # 4th Tuesday in September. This is the final and only deadline to send ITT applications in the cycle
+            provider_decision_deadline: make_local_time(2027, 9, 29, 23, 59, 59), # 1 week and a day after Apply 2 deadline
+            find_closes: make_local_time(2027, 10, 4, 23, 59, 59), # The evening before find opens in the new cycle, estimated as of 24 July 2025
+            non_working_days: {
+              christmas: Date.new(2026, 12, 27)..Date.new(2026, 12, 31),
             }
           }
         },
