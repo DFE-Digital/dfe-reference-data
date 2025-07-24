@@ -123,7 +123,7 @@ module DfE
             provider_decision_deadline: make_local_time(2026, 9, 24, 23, 59, 59), # 1 week and a day after Apply 2 deadline
             find_closes: make_local_time(2026, 9, 30, 23, 59, 59), # The evening before find opens in the new cycle
             non_working_days: {
-              christmas: Date.new(2025, 12, 27)..Date.new(2026, 12, 31), # Starting in 2025-26, we are only adding the days between boxing day and new years as extra non-working days
+              christmas: Date.new(2025, 12, 27)..Date.new(2026, 12, 31) # Starting in 2025-26, we are only adding the days between boxing day and new years as extra non-working days
               # Starting in 2025-26, we are no longer adding extra days around the Easter holidays
             }
           },
@@ -135,7 +135,7 @@ module DfE
             provider_decision_deadline: make_local_time(2027, 9, 29, 23, 59, 59), # 1 week and a day after Apply 2 deadline
             find_closes: make_local_time(2027, 10, 4, 23, 59, 59), # The evening before find opens in the new cycle, estimated as of 24 July 2025
             non_working_days: {
-              christmas: Date.new(2026, 12, 27)..Date.new(2026, 12, 31),
+              christmas: Date.new(2026, 12, 27)..Date.new(2026, 12, 31)
             }
           }
         },
