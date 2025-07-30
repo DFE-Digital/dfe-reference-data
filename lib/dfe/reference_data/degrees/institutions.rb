@@ -113,7 +113,7 @@ module DfE
             hesa_itt_code: '0012',
             dttp_id: 'ce70f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10001143',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '4c71f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'York St John University',
             suggestion_synonyms: ['YSJU'],
@@ -204,7 +204,7 @@ module DfE
             hesa_itt_code: '0026',
             dttp_id: 'fc70f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10007152',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '2871f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'University of Northampton',
             suggestion_synonyms: ['UON'],
@@ -294,7 +294,7 @@ module DfE
             dttp_id: 'c10b1d33-3fa2-e811-812b-5065f38ba241',
             comment: 'Name changed to Solent University in 2018',
             ukprn: '10006022',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '0c71f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'University of Cumbria',
             suggestion_synonyms: [],
@@ -322,7 +322,7 @@ module DfE
             hesa_itt_code: '0040',
             dttp_id: 'da70f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10003863',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '054b9247-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Trinity Laban Conservatoire of Music and Dance',
             suggestion_synonyms: [],
@@ -365,15 +365,15 @@ module DfE
             hesa_itt_code: '0048',
             dttp_id: 'c670f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10000571',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           'dfdb7129-7042-e811-80ff-3863bb3640b8' =>
-          { name: 'University of Bolton',
+          { name: 'University of Manchester',
             suggestion_synonyms: [],
             match_synonyms: ['The University of Bolton'],
             hesa_itt_code: '0049',
             dttp_id: 'dfdb7129-7042-e811-80ff-3863bb3640b8',
             ukprn: '10006841',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           'b1c53e05-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Bournemouth University',
             suggestion_synonyms: [],
@@ -409,7 +409,7 @@ module DfE
             hesa_itt_code: '0053',
             dttp_id: '59e01caa-a141-e811-80ff-3863bb351d40',
             ukprn: '10007141',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '1871f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'University of Gloucestershire',
             suggestion_synonyms: [],
@@ -452,7 +452,7 @@ module DfE
             hesa_itt_code: '0058',
             dttp_id: '1471f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10007144',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '1a71f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'University of Greenwich',
             suggestion_synonyms: [],
@@ -511,7 +511,7 @@ module DfE
             hesa_itt_code: '0065',
             dttp_id: 'de70f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10003957',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           'e670f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'Manchester Metropolitan University',
             suggestion_synonyms: ['MMU'],
@@ -610,7 +610,7 @@ module DfE
             hesa_itt_code: '0077',
             dttp_id: 'f870f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10006299',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '3c71f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'University of Sunderland',
             suggestion_synonyms: [],
@@ -618,7 +618,7 @@ module DfE
             hesa_itt_code: '0078',
             dttp_id: '3c71f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10007159',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '2a96fc9d-a141-e811-80ff-3863bb351d40' =>
           { name: 'Teesside University',
             suggestion_synonyms: [],
@@ -667,7 +667,7 @@ module DfE
             hesa_itt_code: '0085',
             dttp_id: '4671f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10007166',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '73228041-7042-e811-80ff-3863bb3640b8' =>
           { name: 'The University of Wales, Newport',
             suggestion_synonyms: [],
@@ -744,7 +744,7 @@ module DfE
             dttp_id: nil,
             comment: 'Renamed from University of Abertay Dundee in September 2019',
             ukprn: '10007849',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '51f35f0b-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Glasgow School of Art',
             suggestion_synonyms: [],
@@ -761,7 +761,7 @@ module DfE
             hesa_itt_code: '0100',
             dttp_id: '40f3791d-7042-e811-80ff-3863bb3640b8',
             ukprn: '10005337',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           'ec100b72-97b9-4f64-a255-a6482fdc62bc' =>
           { name: 'Royal Conservatoire of Scotland',
             suggestion_synonyms: ['RCS'],
@@ -791,7 +791,7 @@ module DfE
             dttp_id: '1a3f182c-1425-ec11-b6e6-000d3adf095a',
             comment: 'Name changed in 2007',
             ukprn: '10007800',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '473e182c-1425-ec11-b6e6-000d3adf095a' =>
           { name: 'Glasgow Caledonian University',
             suggestion_synonyms: ['GCU', 'Caley'],
@@ -808,7 +808,7 @@ module DfE
             dttp_id: '43f35f0b-7042-e811-80ff-3863bb3640b8',
             comment: 'Name changed in 2009',
             ukprn: '10007772',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '513e2cff-6f42-e811-80ff-3863bb3640b8' =>
           { name: 'Aston University',
             suggestion_synonyms: [],
@@ -1512,7 +1512,7 @@ module DfE
             hesa_itt_code: '0202',
             dttp_id: 'e070f34a-2887-e711-80d8-005056ac45bb',
             ukprn: '10004048',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '0471f34a-2887-e711-80d8-005056ac45bb' =>
           { name: 'University of Buckingham',
             suggestion_synonyms: ['UB'],
@@ -1573,7 +1573,7 @@ module DfE
             comment:
             'Renamed from University Campus Suffolk to University of Suffolk in 2016',
             ukprn: '10014001',
-            institution_groups: [] },
+            institution_groups: ['millionplus_group'] },
           '436e5e11-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Leeds Arts University',
             suggestion_synonyms: [],
