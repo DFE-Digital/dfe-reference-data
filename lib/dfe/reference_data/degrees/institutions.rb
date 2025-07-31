@@ -367,12 +367,13 @@ module DfE
             ukprn: '10000571',
             institution_groups: ['millionplus_group'] },
           'dfdb7129-7042-e811-80ff-3863bb3640b8' =>
-          { name: 'University of Manchester',
+          { name: 'University of Greater Manchester',
             suggestion_synonyms: [],
-            match_synonyms: ['The University of Bolton'],
+            match_synonyms: ['The University of Bolton', 'University of Bolton'],
             hesa_itt_code: '0049',
             dttp_id: 'dfdb7129-7042-e811-80ff-3863bb3640b8',
             ukprn: '10006841',
+            comment: 'Renamed from University of Bolton to University of Greater Manchester in December 2024',
             institution_groups: ['millionplus_group'] },
           'b1c53e05-7042-e811-80ff-3863bb3640b8' =>
           { name: 'Bournemouth University',
