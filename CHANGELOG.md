@@ -1,8 +1,12 @@
 # Changelog
 
-## [v3.8.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.1) (2025-06-11)
+## [v3.8.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.2) (2025-07-31)
 
-[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.0...v3.8.1)
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.0...v3.8.2)
+
+**Implemented enhancements:**
+
+- millionplus\_group [\#149](https://github.com/DFE-Digital/dfe-reference-data/pull/149) ([goodviber](https://github.com/goodviber))
 
 **Merged pull requests:**
 
