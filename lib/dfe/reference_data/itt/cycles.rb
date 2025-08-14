@@ -108,7 +108,7 @@ module DfE
             apply_1_deadline: nil, # This deadline is not applicable for this cycle
             apply_2_deadline: make_local_time(2025, 9, 16, 18), # 3rd Tuesday in September. This is the final and only deadline to send ITT applications in the cycle
             provider_decision_deadline: make_local_time(2025, 9, 24, 23, 59, 59), # 1 week and a day after Apply 2 deadline
-            find_closes: make_local_time(2025, 9, 30, 23, 59, 59), # The evening before find opens in the new cycle
+            find_closes: make_local_time(2025, 9, 29, 23, 59, 59), # The evening before find opens in the new cycle
             non_working_days: {
               christmas: Date.new(2024, 12, 16)..Date.new(2025, 1, 3),
               easter: Date.new(2025, 4, 7)..Date.new(2025, 4, 21)
@@ -116,22 +116,22 @@ module DfE
           },
           '2025-2026' => {
             # For published dates, see: https://www.gov.uk/government/publications/recruiting-postgraduate-trainee-teachers-recruitment-cycle-dates/recruiting-postgraduate-trainee-teachers-recruitment-cycle-dates
-            find_opens: make_local_time(2025, 10, 1, 9), # Wednesday, first weekday in October
-            apply_opens: make_local_time(2025, 10, 8, 9), # Second Wednesday of October, one week after find opens
+            find_opens: make_local_time(2025, 9, 30, 9), # Tuesday, first weekday in October
+            apply_opens: make_local_time(2025, 10, 7, 9), # First Tuesday of October, one week after find opens
             apply_1_deadline: nil, # This deadline is not applicable for this cycle
-            apply_2_deadline: make_local_time(2026, 9, 16, 18), # 3rd Wednesday in September. This is the final and only deadline to send ITT applications in the cycle
-            provider_decision_deadline: make_local_time(2026, 9, 24, 23, 59, 59), # 1 week and a day after Apply 2 deadline
-            find_closes: make_local_time(2026, 9, 30, 23, 59, 59), # The evening before find opens in the new cycle
+            apply_2_deadline: make_local_time(2026, 9, 15, 18), # 3rd Tuesday in September. This is the final and only deadline to send ITT applications in the cycle
+            provider_decision_deadline: make_local_time(2026, 9, 23, 23, 59, 59), # 1 week and a day after Apply 2 deadline
+            find_closes: make_local_time(2026, 9, 28, 23, 59, 59), # The evening before find opens in the new cycle
             non_working_days: {
               christmas: Date.new(2025, 12, 27)..Date.new(2026, 12, 31) # Starting in 2025-26, we are only adding the days between boxing day and new years as extra non-working days
               # Starting in 2025-26, we are no longer adding extra days around the Easter holidays
             }
           },
           '2026-2027' => {
-            find_opens: make_local_time(2026, 10, 1, 9), # Thursday, first weekday in October
-            apply_opens: make_local_time(2026, 10, 8, 9), # Second Thursday of October, one week after find opens
+            find_opens: make_local_time(2026, 9, 29, 9), # Tuesday, first weekday in October
+            apply_opens: make_local_time(2026, 10, 6, 9), # First Tuesday of October, one week after find opens
             apply_1_deadline: nil, # This deadline is not applicable for this cycle
-            apply_2_deadline: make_local_time(2027, 9, 21, 18), # 4th Tuesday in September. This is the final and only deadline to send ITT applications in the cycle
+            apply_2_deadline: make_local_time(2027, 9, 21, 18), # 3rd Tuesday in September. This is the final and only deadline to send ITT applications in the cycle
             provider_decision_deadline: make_local_time(2027, 9, 29, 23, 59, 59), # 1 week and a day after Apply 2 deadline
             find_closes: make_local_time(2027, 10, 4, 23, 59, 59), # The evening before find opens in the new cycle, estimated as of 24 July 2025
             non_working_days: {
