@@ -18,8 +18,6 @@ Source: https://github.com/DFE-Digital/apply-for-teacher-training-prototype/blob
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
-Last updated: 07/04/25
-
 This list is [autocomplete compatible](autocomplete_compatability.md).
 
 | Field | Type | Purpose |
