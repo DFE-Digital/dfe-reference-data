@@ -18,8 +18,6 @@ Source: https://github.com/DFE-Digital/apply-for-teacher-training/blob/main/conf
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
-Last updated: 19/1/23
-
 | Field       | Type            | Purpose                                                                                                                                                                                                                                                                                                                                |
 |-------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | `id`        | UUID            | A unique identifier for this disability/health condition option                                                                                                                                                                                                                                                                        |
