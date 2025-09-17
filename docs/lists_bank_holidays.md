@@ -12,7 +12,7 @@ Bank Holidays.
 
 Owner: None.
 
-Users: DFE-Digital/find-covid-19-finance-for-schools-and-providers,DFE-Digital/cross-service-dataform,DFE-Digital/bat-dataform,DFE-Digital/teacher-misconduct-prototype, DFE-Digital/git-dataform.
+Users: find-covid-19-finance-for-schools-and-providers,cross-service-dataform,bat-dataform,teacher-misconduct-prototype, git-dataform.
 
 Source: https://www.gov.uk/bank-holidays
 
