@@ -18,8 +18,6 @@ Source: https://www.gov.uk/bank-holidays
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
-Last update: 28/2/2025
-
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | UUID | A unique identifier |
