@@ -10,11 +10,13 @@ Initial teacher training subjects, referred to as "specialisms" in some contexts
 
 Owner: None.
 
-Users: None.
+Users: Teacher Record System.
 
 Source: https://github.com/DFE-Digital/register-trainee-teachers/blob/main/config/initializers/course_subjects.rb for the main list, https://github.com/DFE-Digital/register-trainee-teachers/blob/main/app/lib/hesa/code_sets/course_subjects.rb for hecos_code, https://github.com/DFE-Digital/register-trainee-teachers/blob/main/config/initializers/mappings/allocation_subject_to_specialism_mapping.rb for register categories and https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual for the incentives. Other fields obtained by manually cross-referencing to other lists.
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+Last updated: 3/3/25
 
 | Field               | Type            | Purpose                                                                                                                                            |
 |---------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -149,6 +151,8 @@ Source: https://www.gov.uk/government/publications/initial-teacher-training-itt-
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
+Last updated: 14/10/24
+
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | string ID | A unique identifier. |
@@ -166,6 +170,8 @@ Users: Data Insights team.
 Source: https://github.com/DFE-Digital/apply-for-teacher-training/blob/main/app/services/cycle_timetable.rb
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+Last updated: 15/08/25
 
 | Field               | Type            | Purpose                                                                                                                                            |
 |---------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
