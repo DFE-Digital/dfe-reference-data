@@ -14,7 +14,7 @@ Top-level CAH categories.
 
 Owner: Data Insights.
 
-Users: Data Insights.
+Users: bat-dataform, cross-service-dataform
 
 Source: https://www.hesa.ac.uk/support/documentation/hecos/cah - taken at version 1.3.4
 
@@ -32,7 +32,7 @@ Mid-level CAH categories.
 
 Owner: Data Insights.
 
-Users: Data Insights.
+Users: bat-dataform, cross-service-dataform
 
 Source: https://www.hesa.ac.uk/support/documentation/hecos/cah - taken at version 1.3.4
 
@@ -51,7 +51,7 @@ Bottom-level CAH categories.
 
 Owner: Data Insights.
 
-Users: Data Insights.
+Users: bat-dataform, cross-service-dataform
 
 Source: https://www.hesa.ac.uk/support/documentation/hecos/cah - taken at version 1.3.4
 
@@ -70,11 +70,13 @@ Mapping from HECoS subject codes to level 3 CAH IDs.
 
 Owner: Data Insights.
 
-Users: Data Insights.
+Users: bat-dataform, cross-service-dataform
 
 Source: https://www.hesa.ac.uk/support/documentation/hecos/cah - taken at version 1.3.4
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
+
+Last updated: 26 May 2023
 
 | Field | Type | Purpose |
 |---|---|---|
