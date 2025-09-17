@@ -48,8 +48,6 @@ Source: Public domain CSV file I had kicking around from a previous project.
 
 Quality: Unmaintained, source data was of questionable accuracy and quality.
 
-Last updated: 15/12/2022
-
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | string | Chemical symbol |
