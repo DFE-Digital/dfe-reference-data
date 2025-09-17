@@ -76,8 +76,6 @@ Source: https://www.hesa.ac.uk/support/documentation/hecos/cah - taken at versio
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
-Last updated: 26 May 2023
-
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | ID string | A HESA [DEGSBJ](https://www.hesa.ac.uk/collection/c22053/e/degsbj) code for this degree subject (from [HECoS](https://www.hesa.ac.uk/support/documentation/hecos)) |
