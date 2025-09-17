@@ -74,4 +74,3 @@ This list is NOT [autocomplete compatible](autocomplete_compatability.md).
 | `id`   | string/null | Human-readable country/territory name |
 | `code` | string      | HESA code                             |
 
-Last updated: 14/03/25
