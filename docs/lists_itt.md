@@ -16,8 +16,6 @@ Source: https://github.com/DFE-Digital/register-trainee-teachers/blob/main/confi
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
-Last updated: 3/3/25
-
 | Field               | Type            | Purpose                                                                                                                                            |
 |---------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
 | `id`                | UUID            | A unique identifier.                                                                                                                               |
@@ -151,8 +149,6 @@ Source: https://www.gov.uk/government/publications/initial-teacher-training-itt-
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
-Last updated: 14/10/24
-
 | Field | Type | Purpose |
 |---|---|---|
 | `id` | string ID | A unique identifier. |
@@ -170,8 +166,6 @@ Users: Data Insights team.
 Source: https://github.com/DFE-Digital/apply-for-teacher-training/blob/main/app/services/cycle_timetable.rb
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
-
-Last updated: 15/08/25
 
 | Field               | Type            | Purpose                                                                                                                                            |
 |---------------------|-----------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
