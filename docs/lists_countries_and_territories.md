@@ -46,8 +46,6 @@ Source: https://github.com/DFE-Digital/apply-for-teacher-training/blob/78c9421d8
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
-Last updated: 02/04/2025
-
 This list is NOT [autocomplete compatible](autocomplete_compatability.md).
 
 | Field      | Type         | Purpose                                    |
