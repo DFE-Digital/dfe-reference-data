@@ -18,8 +18,6 @@ Source: https://www.gov.uk/what-different-qualification-levels-mean/list-of-qual
 
 Quality: Manually updated on an ad-hoc basis. Please submit a pull request if inaccuracies or omissions are found.
 
-Last updated: 10/01/23
-
 This list is [autocomplete compatible](autocomplete_compatability.md).
 
 | Field | Type | Purpose |
