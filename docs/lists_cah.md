@@ -14,7 +14,7 @@ Top-level CAH categories.
 
 Owner: Data Insights.
 
-Users: Data Insights.
+Users: Data Insight (cross-service-dataform), Becoming a Teacher teams.
 
 Source: https://www.hesa.ac.uk/support/documentation/hecos/cah - taken at version 1.3.4
 
@@ -32,7 +32,7 @@ Mid-level CAH categories.
 
 Owner: Data Insights.
 
-Users: Data Insights.
+Users: bat-dataform, cross-service-dataform
 
 Source: https://www.hesa.ac.uk/support/documentation/hecos/cah - taken at version 1.3.4
 
@@ -51,7 +51,7 @@ Bottom-level CAH categories.
 
 Owner: Data Insights.
 
-Users: Data Insights.
+Users: bat-dataform, cross-service-dataform
 
 Source: https://www.hesa.ac.uk/support/documentation/hecos/cah - taken at version 1.3.4
 
@@ -70,7 +70,7 @@ Mapping from HECoS subject codes to level 3 CAH IDs.
 
 Owner: Data Insights.
 
-Users: Data Insights.
+Users: bat-dataform, cross-service-dataform
 
 Source: https://www.hesa.ac.uk/support/documentation/hecos/cah - taken at version 1.3.4
 
