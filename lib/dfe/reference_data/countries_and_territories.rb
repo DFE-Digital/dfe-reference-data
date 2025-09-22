@@ -151,6 +151,7 @@ module DfE
           'NO' => { name: 'Norway', official_name: 'The Kingdom of Norway', citizen_names: 'Norwegian' },
           'OM' => { name: 'Oman', official_name: 'The Sultanate of Oman', citizen_names: 'Omani' },
           'PK' => { name: 'Pakistan', official_name: 'The Islamic Republic of Pakistan', citizen_names: 'Pakistani' },
+          'PS' => { name: 'Palestine', official_name: 'State of Palestine', citizen_names: 'Palestinian' },
           'PW' => { name: 'Palau', official_name: 'The Republic of Palau', citizen_names: 'Palauan' },
           'PA' => { name: 'Panama', official_name: 'The Republic of Panama', citizen_names: 'Panamanian' },
           'PG' => { name: 'Papua New Guinea', official_name: 'The Independent State of Papua New Guinea', citizen_names: 'Papua New Guinean' },
