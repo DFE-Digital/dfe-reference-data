@@ -12,7 +12,7 @@ Bank Holidays.
 
 Owner: None.
 
-Users: None.
+Users: Data Insights (cross teacher services), Becoming a Teacher, Teacher Misconduct and Get into Teaching teams.
 
 Source: https://www.gov.uk/bank-holidays
 
