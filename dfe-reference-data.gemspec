@@ -28,8 +28,8 @@ Gem::Specification.new do |s|
   s.add_development_dependency('sqlite3', '~> 1.4')
 
   s.add_dependency 'activesupport'
-  s.add_dependency 'tzinfo'
   s.add_dependency 'bigdecimal'
+  s.add_dependency 'tzinfo'
 
   s.metadata['rubygems_mfa_required'] = 'true'
 end
