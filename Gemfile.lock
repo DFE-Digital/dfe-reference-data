@@ -3,6 +3,7 @@ PATH
   specs:
     dfe-reference-data (3.8.3)
       activesupport
+      bigdecimal
       tzinfo
 
 GEM
@@ -36,6 +37,7 @@ GEM
     async-pool (0.3.10)
       async (>= 1.25)
     awesome_print (1.9.2)
+    bigdecimal (3.3.1)
     concurrent-ruby (1.1.10)
     console (1.15.3)
       fiber-local
