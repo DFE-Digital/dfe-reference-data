@@ -29,5 +29,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'activesupport'
   s.add_dependency 'tzinfo'
+  s.add_dependency 'bigdecimal'
+
   s.metadata['rubygems_mfa_required'] = 'true'
 end
