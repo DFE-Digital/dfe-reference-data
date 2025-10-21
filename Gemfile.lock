@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    dfe-reference-data (3.8.3)
+    dfe-reference-data (3.8.4)
       activesupport
       bigdecimal
       openssl

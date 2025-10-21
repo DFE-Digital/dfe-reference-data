@@ -1,11 +1,27 @@
 # Changelog
 
-## [v3.8.3](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.3) (2025-08-01)
+## [v3.8.4](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.4) (2025-10-21)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.3...v3.8.4)
+
+**Implemented enhancements:**
+
+- bigdecimal for ruby 3.4.5 [\#155](https://github.com/DFE-Digital/dfe-reference-data/pull/155) ([goodviber](https://github.com/goodviber))
+
+**Merged pull requests:**
+
+- gem openssl [\#156](https://github.com/DFE-Digital/dfe-reference-data/pull/156) ([goodviber](https://github.com/goodviber))
+- Update country list in line with changes to FCDO data [\#154](https://github.com/DFE-Digital/dfe-reference-data/pull/154) ([elceebee](https://github.com/elceebee))
+- dfe reference data documentation updates [\#153](https://github.com/DFE-Digital/dfe-reference-data/pull/153) ([AndrewPetrie1](https://github.com/AndrewPetrie1))
+- Sync cycle dates with apply [\#152](https://github.com/DFE-Digital/dfe-reference-data/pull/152) ([CatalinVoineag](https://github.com/CatalinVoineag))
+
+## [v3.8.3](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.3) (2025-08-05)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.2...v3.8.3)
 
 **Merged pull requests:**
 
+- v3.8.3 [\#151](https://github.com/DFE-Digital/dfe-reference-data/pull/151) ([goodviber](https://github.com/goodviber))
 - Add 2026-2027 dates to cycle reference data [\#148](https://github.com/DFE-Digital/dfe-reference-data/pull/148) ([elceebee](https://github.com/elceebee))
 
 ## [v3.8.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.2) (2025-07-31)
