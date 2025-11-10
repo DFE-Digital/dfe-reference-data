@@ -4,7 +4,6 @@ PATH
     dfe-reference-data (3.8.4)
       activesupport
       bigdecimal
-      openssl
       tzinfo
 
 GEM
@@ -182,6 +181,7 @@ DEPENDENCIES
   gem-release
   github_changelog_generator
   google-cloud-bigquery (~> 1.39)
+  openssl
   rake (~> 12.0)
   rspec (~> 3.0)
   rubocop (~> 1.25)
