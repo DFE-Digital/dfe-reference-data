@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.bindir        = 'exe'
   s.executables   = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths = ['lib']
-
+  # rubocop:disable Gemspec/DevelopmentDependencies
   s.add_development_dependency('awesome_print')
   s.add_development_dependency('google-cloud-bigquery', '~> 1.39')
   s.add_development_dependency('openssl')
@@ -28,7 +28,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rubocop', '~> 1.81', '>= 1.81.1')
   s.add_development_dependency('rubocop-rspec', '~> 2.8')
   s.add_development_dependency('sqlite3', '~> 1.4')
-
+  # rubocop:enable Gemspec/DevelopmentDependencies
   s.add_dependency 'activesupport'
   s.add_dependency 'bigdecimal'
   s.add_dependency 'tzinfo'

@@ -87,7 +87,7 @@ RSpec.describe DfE::ReferenceData::BigQuery::Converter do
   end
 
   after(:each) do
-    File.delete(versioned_output_file) if File.exist?(versioned_output_file)
+    FileUtils.rm_f(versioned_output_file)
   end
 
   it 'creates an SQLite database and tables with versioned filename' do
