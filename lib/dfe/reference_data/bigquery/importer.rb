@@ -47,6 +47,7 @@ module DfE
       end
 
       # This class is just a stateless bag of methods, splitting it up will not simplify anything!
+      # rubocop:disable Metrics/ClassLength
       class << self
         def config
           DfE::ReferenceData::BigQuery::Config
@@ -281,6 +282,7 @@ module DfE
           end
         end
       end
+      # rubocop:enable Metrics/ClassLength
     end
   end
 end
