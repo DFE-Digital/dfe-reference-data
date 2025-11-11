@@ -21,6 +21,7 @@ Gem::Specification.new do |s|
   # rubocop:disable Gemspec/DevelopmentDependencies
   s.add_development_dependency('awesome_print')
   s.add_development_dependency('google-cloud-bigquery', '~> 1.39')
+  s.add_development_dependency('mutex_m')
   s.add_development_dependency('openssl')
   s.add_development_dependency('racc', '~> 1.8', '>= 1.8.1')
   s.add_development_dependency('rake', '~> 12.0')
