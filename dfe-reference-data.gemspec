@@ -24,10 +24,10 @@ Gem::Specification.new do |s|
   s.add_development_dependency('openssl')
   s.add_development_dependency('rake', '~> 12.0')
   s.add_development_dependency('rspec', '~> 3.0')
-  s.add_development_dependency('rubocop', '~> 1.25')
+  s.add_development_dependency('rubocop', '~> 1.81', '>= 1.81.1')
   s.add_development_dependency('rubocop-rspec', '~> 2.8')
   s.add_development_dependency('sqlite3', '~> 1.4')
-  s.add_development_dependency('racc')
+  s.add_development_dependency('racc', '~> 1.8', '>= 1.8.1')
 
   s.add_dependency 'activesupport'
   s.add_dependency 'bigdecimal'
