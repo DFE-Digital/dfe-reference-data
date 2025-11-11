@@ -177,8 +177,8 @@ RSpec.describe Validator do
     expect(errors['wrong boolean'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong boolean>: Field single_boolean does not match the schema boolean: Value not a boolean is not a boolean'
     expect(errors['wrong integer'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong integer>: Field single_integer does not match the schema integer: Value not an integer is not a integer'
     expect(errors['wrong real'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong real>: Field single_real does not match the schema real: Value not a real is not a real'
-    expect(errors['wrong code'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong code>: Field single_code does not match the schema {:kind=>:code, :pattern=>/^[0-9]{4}$/}: Value 11110 does not match the field pattern'
-    expect(errors['wrong array 1'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong array 1>: Field array_string does not match the schema {:kind=>:array, :element_schema=>:string}: Value not an array is not an array'
+    expect(errors['wrong code'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong code>: Field single_code does not match the schema {kind: :code, pattern: /^[0-9]{4}$/}: Value 11110 does not match the field pattern'
+    expect(errors['wrong array 1'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong array 1>: Field array_string does not match the schema {kind: :array, element_schema: :string}: Value not an array is not an array'
     expect(errors['wrong array 2'].to_s).to eq 'Validation failed for #<DfE::ReferenceData::Record id=wrong array 2>: Field array_symbol does not match the schema symbol: Value not a symbol is not a symbol'
   end
 end
