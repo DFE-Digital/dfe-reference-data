@@ -207,8 +207,8 @@ DEPENDENCIES
   gem-release
   github_changelog_generator
   google-cloud-bigquery (~> 1.39)
-  mutex_m
-  openssl
+  mutex_m (~> 0.3.0)
+  openssl (~> 3.3.1)
   racc (~> 1.8, >= 1.8.1)
   rake (~> 12.0)
   rspec (~> 3.0)
