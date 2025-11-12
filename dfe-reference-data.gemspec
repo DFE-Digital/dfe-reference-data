@@ -18,18 +18,20 @@ Gem::Specification.new do |s|
   s.bindir        = 'exe'
   s.executables   = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths = ['lib']
-
+  # rubocop:disable Gemspec/DevelopmentDependencies
   s.add_development_dependency('awesome_print')
   s.add_development_dependency('google-cloud-bigquery', '~> 1.39')
+  s.add_development_dependency('mutex_m', '~> 0.3.0')
+  s.add_development_dependency('openssl', '~> 3.3.1')
+  s.add_development_dependency('racc', '~> 1.8', '>= 1.8.1')
   s.add_development_dependency('rake', '~> 12.0')
   s.add_development_dependency('rspec', '~> 3.0')
-  s.add_development_dependency('rubocop', '~> 1.25')
+  s.add_development_dependency('rubocop', '~> 1.81', '>= 1.81.1')
   s.add_development_dependency('rubocop-rspec', '~> 2.8')
   s.add_development_dependency('sqlite3', '~> 1.4')
-
+  # rubocop:enable Gemspec/DevelopmentDependencies
   s.add_dependency 'activesupport'
   s.add_dependency 'bigdecimal'
-  s.add_dependency 'openssl'
   s.add_dependency 'tzinfo'
 
   s.metadata['rubygems_mfa_required'] = 'true'
