@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
   # rubocop:disable Gemspec/DevelopmentDependencies
   s.add_development_dependency('awesome_print')
-  s.add_development_dependency('google-cloud-bigquery', '~> 1.39')
+  s.add_development_dependency('google-cloud-bigquery', '~> 1.61')
   s.add_development_dependency('mutex_m', '~> 0.3.0')
   s.add_development_dependency('openssl', '~> 3.3.1')
   s.add_development_dependency('racc', '~> 1.8', '>= 1.8.1')
