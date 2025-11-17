@@ -1,5 +1,15 @@
 # Changelog
 
+## [v3.8.5](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.5) (2025-11-17)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.4...v3.8.5)
+
+**Implemented enhancements:**
+
+- move bigdecimal to dev [\#160](https://github.com/DFE-Digital/dfe-reference-data/pull/160) ([goodviber](https://github.com/goodviber))
+- update google cloud bigquery gem [\#159](https://github.com/DFE-Digital/dfe-reference-data/pull/159) ([goodviber](https://github.com/goodviber))
+- move openssl to development [\#158](https://github.com/DFE-Digital/dfe-reference-data/pull/158) ([goodviber](https://github.com/goodviber))
+
 ## [v3.8.4](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.4) (2025-10-21)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.3...v3.8.4)
@@ -10,6 +20,7 @@
 
 **Merged pull requests:**
 
+- v3.8.4 [\#157](https://github.com/DFE-Digital/dfe-reference-data/pull/157) ([goodviber](https://github.com/goodviber))
 - gem openssl [\#156](https://github.com/DFE-Digital/dfe-reference-data/pull/156) ([goodviber](https://github.com/goodviber))
 - Update country list in line with changes to FCDO data [\#154](https://github.com/DFE-Digital/dfe-reference-data/pull/154) ([elceebee](https://github.com/elceebee))
 - dfe reference data documentation updates [\#153](https://github.com/DFE-Digital/dfe-reference-data/pull/153) ([AndrewPetrie1](https://github.com/AndrewPetrie1))
