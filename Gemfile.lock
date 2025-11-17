@@ -3,7 +3,6 @@ PATH
   specs:
     dfe-reference-data (3.8.4)
       activesupport
-      bigdecimal
       tzinfo
 
 GEM
@@ -206,6 +205,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
+  bigdecimal (~> 3.3, >= 3.3.1)
   dfe-reference-data!
   gem-release
   github_changelog_generator
