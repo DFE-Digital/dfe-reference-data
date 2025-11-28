@@ -17,6 +17,17 @@ module DfE
             'XK' => { name: 'United Kingdom', official_name: 'United Kingdom', citizen_names: nil },
             'XL' => { name: 'Channel Islands', official_name: 'Channel Islands', citizen_names: nil },
             'XX' => { name: 'Antarctica', official_name: 'Antarctica', citizen_names: nil },
+            'CK' => { name: 'Cook Islands', official_name: 'Cook Islands', citizen_names: nil },
+            'FO' => { name: 'Faroe Islands', official_name: 'Faroe Islands', citizen_names: nil },
+            'GL' => { name: 'Greenland', official_name: 'Greenland', citizen_names: nil },
+            'GU' => { name: 'Guam', official_name: 'Guam', citizen_names: nil },
+            'MO' => { name: 'Macao', official_name: 'Macao', citizen_names: nil },
+            'MQ' => { name: 'Martinique', official_name: 'Martinique', citizen_names: nil },
+            'NU' => { name: 'Niuean', official_name: 'Niuean', citizen_names: nil },
+            'PR' => { name: 'Puerto Rico', official_name: 'Puerto Rico', citizen_names: nil },
+            'TW' => { name: 'Taiwan', official_name: 'Taiwan', citizen_names: nil },
+            'WF' => { name: 'Wallis and Futuna', official_name: 'Wallis and Futuna', citizen_names: nil },
+
             'ZZ' => nil
           }
         )
