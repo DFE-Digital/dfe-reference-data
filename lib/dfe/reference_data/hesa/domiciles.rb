@@ -17,6 +17,9 @@ module DfE
             'XK' => { name: 'United Kingdom', official_name: 'United Kingdom', citizen_names: nil },
             'XL' => { name: 'Channel Islands', official_name: 'Channel Islands', citizen_names: nil },
             'XX' => { name: 'Antarctica', official_name: 'Antarctica', citizen_names: nil },
+            'MO' => { name: 'Macao', official_name: 'Macao', citizen_names: nil },
+            'PR' => { name: 'Puerto Rico', official_name: 'Puerto Rico', citizen_names: nil },
+            'TW' => { name: 'Taiwan', official_name: 'Taiwan', citizen_names: nil },
             'ZZ' => nil
           }
         )
@@ -27,7 +30,10 @@ module DfE
             nil => { code: 'ZZ' },
             'AQ' => { code: 'XX' },
             'CY' => { code: 'XC' },
-            'XK' => { code: 'QO' }
+            'XK' => { code: 'QO' },
+            'TW' => { code: 'TW' },
+            'MO' => { code: 'MO' },
+            'PR' => { code: 'PR' }
           },
           schema: {
             id: { schema: :string, kind: :optional },
