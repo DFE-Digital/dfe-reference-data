@@ -1,5 +1,13 @@
 # Changelog
 
+## [v3.8.6](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.6) (2025-12-03)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.5...v3.8.6)
+
+**Merged pull requests:**
+
+- Add missing domiciles [\#162](https://github.com/DFE-Digital/dfe-reference-data/pull/162) ([CatalinVoineag](https://github.com/CatalinVoineag))
+
 ## [v3.8.5](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.5) (2025-11-17)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.4...v3.8.5)
@@ -9,6 +17,10 @@
 - move bigdecimal to dev [\#160](https://github.com/DFE-Digital/dfe-reference-data/pull/160) ([goodviber](https://github.com/goodviber))
 - update google cloud bigquery gem [\#159](https://github.com/DFE-Digital/dfe-reference-data/pull/159) ([goodviber](https://github.com/goodviber))
 - move openssl to development [\#158](https://github.com/DFE-Digital/dfe-reference-data/pull/158) ([goodviber](https://github.com/goodviber))
+
+**Merged pull requests:**
+
+- v3.8.5 [\#161](https://github.com/DFE-Digital/dfe-reference-data/pull/161) ([goodviber](https://github.com/goodviber))
 
 ## [v3.8.4](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.4) (2025-10-21)
 
