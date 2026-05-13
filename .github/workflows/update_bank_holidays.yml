@@ -1,0 +1,41 @@
+# .github/workflows/update-api-file.yml
+name: Update Bank Holidays
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Runs every hour
+    - cron: "0 * * * *"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  update-bank-holiday-file:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v5
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true
+
+      - name: Pull file from API
+        env:
+          GOV_UK_BANK_HOLIDAYS_URL: 'https://www.gov.uk/bank-holidays.json'
+        run: bundle exec rake update_bank_holidays
+
+      - name: Create pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          commit-message: "Update bank holidays"
+          title: "Update bank holidays"
+          body: |
+            This PR updates bank holidays data.
+          branch: update-bank-holidays-data
+          delete-branch: true

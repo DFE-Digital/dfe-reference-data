@@ -126,7 +126,7 @@ GEM
     openssl (3.3.1)
     os (1.1.4)
     parallel (1.27.0)
-    parser (3.3.10.0)
+    parser (3.3.11.1)
       ast (~> 2.4.1)
       racc
     prism (1.6.0)
@@ -212,6 +212,7 @@ DEPENDENCIES
   google-cloud-bigquery (~> 1.61)
   mutex_m (~> 0.3.0)
   openssl (~> 3.3.1)
+  parser (~> 3.3.11.1)
   racc (~> 1.8, >= 1.8.1)
   rake (~> 12.0)
   rspec (~> 3.0)
