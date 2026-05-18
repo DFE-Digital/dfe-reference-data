@@ -15,7 +15,7 @@ module DfE
           title: "Easter Monday",
           date: DateTime.new(2022, 4, 18)
         }
-      }
+      }.freeze
     end
   end
 end

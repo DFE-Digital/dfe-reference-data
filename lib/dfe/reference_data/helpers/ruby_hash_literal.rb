@@ -12,16 +12,10 @@ module DfE
             hash_to_ruby(object, indent)
           when Array
             array_to_ruby(object, indent)
-          when String
-            object.inspect
-          when Symbol
-            object.inspect
-          when Integer, Float, Rational, Complex
-            object.inspect
-          when TrueClass, FalseClass, NilClass
+          when String, Symbol, Integer, Float, Rational, Complex, TrueClass, FalseClass, NilClass
             object.inspect
           when DateTime
-            "DateTime.new(#{object.strftime("%Y, %-m, %-d")})"
+            "DateTime.new(#{object.strftime('%Y, %-m, %-d')})"
           else
             raise ArgumentError, "Cannot convert #{object.class} to Ruby source"
           end

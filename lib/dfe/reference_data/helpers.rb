@@ -1,1 +1,5 @@
-module DfE::ReferenceData::Helpers; end
+module DfE
+  module ReferenceData
+    module Helpers; end
+  end
+end

@@ -10,7 +10,7 @@ module DfE
       class BankHolidays
         RAW_DATA_PATH = File.expand_path('../raw_data/bank_holidays.json', __dir__)
         BANK_HOLIDAYS_RB_PATH = File.expand_path('../bank_holidays.rb', __dir__)
-        ENGLAND_AND_WALES_DIVISION = 'england-and-wales'
+        ENGLAND_AND_WALES_DIVISION = 'england-and-wales'.freeze
 
         def self.generate_bank_holidays_data_from_raw_data(file_path = RAW_DATA_PATH, rb_path = BANK_HOLIDAYS_RB_PATH)
           records = JSON.parse(File.read(file_path))
@@ -30,7 +30,7 @@ module DfE
           england_events = gov_uk_data.dig(ENGLAND_AND_WALES_DIVISION, 'events') || []
 
           existing = JSON.parse(File.read(file_path))
-          existing_dates = existing.map { |r| r['date'] }.to_set
+          existing_dates = existing.to_set { |r| r['date'] }
 
           new_events = england_events.reject { |e| existing_dates.include?(e['date']) }
           return [] if new_events.empty?

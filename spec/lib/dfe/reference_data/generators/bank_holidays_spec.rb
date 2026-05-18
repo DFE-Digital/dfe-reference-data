@@ -108,7 +108,7 @@ RSpec.describe DfE::ReferenceData::Generators::BankHolidays do
     it 'preserves existing records in the written file' do
       new_records
       written = JSON.parse(File.read(tmp_json.path))
-      existing_ids = %w[3a7c3c1d-7d6d-475d-af54-7989cf294d6e 6c1f10f3-c36c-4dec-8f88-3d224cf100fd 0b7dbaf9-3591-4e01-8fb0-b2fe4172ae6e]
+      existing_ids = ['3a7c3c1d-7d6d-475d-af54-7989cf294d6e', '6c1f10f3-c36c-4dec-8f88-3d224cf100fd', '0b7dbaf9-3591-4e01-8fb0-b2fe4172ae6e']
       expect(written.map { |r| r['id'] }).to include(*existing_ids)
     end
 
