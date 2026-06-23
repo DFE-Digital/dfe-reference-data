@@ -6,6 +6,8 @@ require 'rspec/core/rake_task'
 require_relative 'lib/dfe/reference_data'
 require_relative 'lib/dfe/reference_data/bigquery/importer'
 require_relative 'lib/dfe/reference_data/bigquery/converter'
+require_relative 'lib/dfe/reference_data/dqt/degree_types'
+require_relative 'lib/dfe/reference_data/helpers/v2/country_list_compiler'
 
 RSpec::Core::RakeTask.new(:spec)
 
@@ -100,4 +102,16 @@ task :convert_to_sqlite do
   output_file = File.join(__dir__, 'reference_data.sqlite3')
   versioned_output_file = output_file.sub('.sqlite3', "_v#{version}.sqlite3")
   DfE::ReferenceData::BigQuery::Converter.convert_to_sqlite(versioned_output_file, BIGQUERY_TABLES)
+end
+
+namespace :v2 do
+  desc 'Generate countries hash entries'
+  task :generate_countries_hash do
+    DfE::ReferenceData::Helpers::V2::CountryListCompiler.new.generate_countries_hash
+  end
+
+  desc 'Generate territories hash entries'
+  task :generate_territories_hash do
+    DfE::ReferenceData::Helpers::V2::CountryListCompiler.new.generate_territories_hash
+  end
 end

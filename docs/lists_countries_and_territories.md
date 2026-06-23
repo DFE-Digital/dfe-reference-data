@@ -3,10 +3,10 @@
 - A mapping of ISO country/territory codes to country/territory names and nationalities.
 - Postcode prefixes for the UK and Channel Islands grouped by country/territory.
 
-### `DfE::ReferenceData::CountriesAndTerritories::FCDO_COUNTRIES_AND_TERRITORIES`
+### `DfE::ReferenceData::CountriesAndTerritories::V2::COUNTRIES
 
 ```ruby
-require 'dfe/reference_data/countries_and_territories'
+require 'dfe/reference_data/v2/countries_and_territories'
 ```
 A mapping of Foreign, Commonwealth and Development Office country/territory codes to country/territory names.
 
@@ -16,7 +16,7 @@ Source:
 [Geographical Countries](https://www.gov.uk/government/publications/geographical-names-and-information)
 Last updated on 22nd December 2025.
 
-Quality: Manually updated from Foreigh, Commonwealth and Development Office data.
+Quality: Manually updated from Foreign, Commonwealth and Development Office data.
 
 This list is [autocomplete compatible](autocomplete_compatability.md).
 
@@ -26,6 +26,26 @@ This list is [autocomplete compatible](autocomplete_compatability.md).
 | `name`          | string | The human-readable name of the country or territory.                                                                           |
 | `official_name` | string | The human-readable full ‘official name’. Used when the formal version of a country’s name is needed.                           |
 | `citizen_names` | string | The human-readable citizen names. They are not the legal names for the citizen, they do not relate to the citizen’s ethnicity. |
+
+### `DfE::ReferenceData::CountriesAndTerritories::V2::TERRITORIES`
+
+```ruby
+require 'dfe/reference_data/v2/countries_and_territories'
+```
+A list of all countries and territories. It was previously included in reference data.
+Additional list to include all possible territories, can be used for domiciles as well as source of countries that might not be recognised but nontheless can issue passport etc.
+
+Owner: Data insights team
+
+Source:
+DFE reference data/verified using ISO data.
+
+This list is [autocomplete compatible](autocomplete_compatability.md).
+
+| Field           | Type   | Purpose                                                                                                                        |
+| --------------- | ------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| `id`            | string | The country or territory's ISO code.                                                                                           |
+| `name`          | string | The human-readable name of the country or territory.                                                                           |
 
 ### `DfE::ReferenceData::CountriesAndTerritories::COUNTRIES_AND_TERRITORIES`
 
