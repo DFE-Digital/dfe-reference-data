@@ -20,6 +20,19 @@ task :import_cah_mappings do
   sh 'bin/import_cah_mappings'
 end
 
+desc 'Pull new bank holidays from GOV_UK_BANK_HOLIDAYS_URL and update raw data and constants'
+task :update_bank_holidays do
+  new_records = DfE::ReferenceData::Generators::BankHolidays.download_latest_file
+  if new_records.empty?
+    puts 'No new bank holidays found.'
+  else
+    puts "#{new_records.size} new bank holiday(s) added:"
+    new_records.each { |r| puts "  #{r['date']} #{r['title']}" }
+    DfE::ReferenceData::Generators::BankHolidays.generate_bank_holidays_data_from_raw_data
+    puts 'lib/dfe/reference_data/bank_holidays.rb updated.'
+  end
+end
+
 desc 'Prepare a new version for release, version can be major, minor, patch or x.y.z (as per gem-release gem)'
 task :prepare_release, %i[version] do |_, args|
   bump_version = args.fetch(:version)
