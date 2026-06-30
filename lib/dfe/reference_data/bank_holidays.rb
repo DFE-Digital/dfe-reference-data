@@ -16,6 +16,105 @@ module DfE
       }.freeze
 
       BANK_HOLIDAYS_DATA = {
+        "c69634e3-dc7d-4eb9-8c38-f0cd281b55bf" => {
+          title: "New Year’s Day",
+          date: DateTime.new(2019, 1, 1)
+        },
+        "25e0ffb2-b969-49aa-adc6-17d69b3cb474" => {
+          title: "Good Friday",
+          date: DateTime.new(2019, 4, 19)
+        },
+        "e81ece1b-71b4-4a5c-b516-d6965c681c49" => {
+          title: "Easter Monday",
+          date: DateTime.new(2019, 4, 22)
+        },
+        "0a024f55-19c6-4c3d-ab08-0a5d783f18bb" => {
+          title: "Early May bank holiday",
+          date: DateTime.new(2019, 5, 6)
+        },
+        "4c78c601-68db-40ce-a843-45c25fc1a06f" => {
+          title: "Spring bank holiday",
+          date: DateTime.new(2019, 5, 27)
+        },
+        "37fa25ab-f1e2-4cd0-9089-f622bfab79f5" => {
+          title: "Summer bank holiday",
+          date: DateTime.new(2019, 8, 26)
+        },
+        "d9bde831-36dc-4dff-b898-58c560cac8d1" => {
+          title: "Christmas Day",
+          date: DateTime.new(2019, 12, 25)
+        },
+        "50f65c9b-af7f-4846-93a6-421a0d95eed6" => {
+          title: "Boxing Day",
+          date: DateTime.new(2019, 12, 26)
+        },
+        "f69abf69-102a-4ce8-ba6f-a3dcb3823878" => {
+          title: "New Year’s Day",
+          date: DateTime.new(2020, 1, 1)
+        },
+        "801b3d8d-aff0-4421-b86b-15bee64baefd" => {
+          title: "Good Friday",
+          date: DateTime.new(2020, 4, 10)
+        },
+        "7d6914da-9b22-4812-83c4-436e14d5b553" => {
+          title: "Easter Monday",
+          date: DateTime.new(2020, 4, 13)
+        },
+        "7b4ad7ae-d254-4638-81a2-f7d1d3ce071d" => {
+          title: "Early May bank holiday (VE day)",
+          date: DateTime.new(2020, 5, 8)
+        },
+        "c0451399-62e8-44db-be09-dd6a7ebe7754" => {
+          title: "Spring bank holiday",
+          date: DateTime.new(2020, 5, 25)
+        },
+        "d6b9f438-b9f3-4d47-b17e-594f5047a94d" => {
+          title: "Summer bank holiday",
+          date: DateTime.new(2020, 8, 31)
+        },
+        "28c93ea2-b336-4be7-93f6-1658aa78e069" => {
+          title: "Christmas Day",
+          date: DateTime.new(2020, 12, 25)
+        },
+        "d082c474-d879-4885-a5e0-dd213cf95885" => {
+          title: "Boxing Day",
+          date: DateTime.new(2020, 12, 28),
+          notes: "Substitute day"
+        },
+        "70c29b83-3af3-4a83-97b3-90e57d6705b8" => {
+          title: "New Year’s Day",
+          date: DateTime.new(2021, 1, 1)
+        },
+        "795abf60-59f1-401e-9227-d1742f9be0a2" => {
+          title: "Good Friday",
+          date: DateTime.new(2021, 4, 2)
+        },
+        "00db114d-1d81-4bff-b534-cd4fb88f8f81" => {
+          title: "Easter Monday",
+          date: DateTime.new(2021, 4, 5)
+        },
+        "7a89ec4c-8c25-497b-9128-0954f930f331" => {
+          title: "Early May bank holiday",
+          date: DateTime.new(2021, 5, 3)
+        },
+        "0c7eab88-e700-45d4-9dbe-f714d387134b" => {
+          title: "Spring bank holiday",
+          date: DateTime.new(2021, 5, 31)
+        },
+        "0e1753c4-f6c0-47e1-bb0a-bd26fe7736df" => {
+          title: "Summer bank holiday",
+          date: DateTime.new(2021, 8, 30)
+        },
+        "a42559f8-56b4-4a9d-924c-756cd815de3d" => {
+          title: "Christmas Day",
+          date: DateTime.new(2021, 12, 27),
+          notes: "Substitute day"
+        },
+        "730cf900-abd1-4fab-a87b-ba36d7947798" => {
+          title: "Boxing Day",
+          date: DateTime.new(2021, 12, 28),
+          notes: "Substitute day"
+        },
         "3a7c3c1d-7d6d-475d-af54-7989cf294d6e" => {
           title: "New Year’s Day",
           date: DateTime.new(2022, 1, 3),
@@ -224,9 +323,38 @@ module DfE
           title: "Boxing Day (substitute day)",
           date: DateTime.new(2027, 12, 28)
         },
-        "7c728d36-d2d8-4f2f-86bd-e8a3625d1cab" => {
-          title: "International Slawosz day",
-          date: DateTime.new(2027, 12, 29)
+        "26fab6eb-7b46-4240-9685-ba353261a2f4" => {
+          title: "New Year’s Day",
+          date: DateTime.new(2028, 1, 3),
+          notes: "Substitute day"
+        },
+        "6a9adb1c-bd12-4558-aa77-f28171c3a827" => {
+          title: "Good Friday",
+          date: DateTime.new(2028, 4, 14)
+        },
+        "c9070494-3fc2-4b44-98e6-586514547ff1" => {
+          title: "Easter Monday",
+          date: DateTime.new(2028, 4, 17)
+        },
+        "d8f794c2-6fad-497a-904b-4166dc948255" => {
+          title: "Early May bank holiday",
+          date: DateTime.new(2028, 5, 1)
+        },
+        "f79df0fa-3995-4bc0-8f94-d81ebeb96d95" => {
+          title: "Spring bank holiday",
+          date: DateTime.new(2028, 5, 29)
+        },
+        "6c8bfa7f-926c-4d1a-bbcc-cdbd139b29af" => {
+          title: "Summer bank holiday",
+          date: DateTime.new(2028, 8, 28)
+        },
+        "30876df4-8326-4d8b-be29-27314ff1b4f1" => {
+          title: "Christmas Day",
+          date: DateTime.new(2028, 12, 25)
+        },
+        "37037733-0d9b-4b90-9550-c12b915ed067" => {
+          title: "Boxing Day",
+          date: DateTime.new(2028, 12, 26)
         }
       }.freeze
 

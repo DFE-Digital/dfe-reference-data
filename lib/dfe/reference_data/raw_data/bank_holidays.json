@@ -1,5 +1,128 @@
 [
   {
+    "id": "c69634e3-dc7d-4eb9-8c38-f0cd281b55bf",
+    "title": "New Year’s Day",
+    "date": "2019-01-01"
+  },
+  {
+    "id": "25e0ffb2-b969-49aa-adc6-17d69b3cb474",
+    "title": "Good Friday",
+    "date": "2019-04-19"
+  },
+  {
+    "id": "e81ece1b-71b4-4a5c-b516-d6965c681c49",
+    "title": "Easter Monday",
+    "date": "2019-04-22"
+  },
+  {
+    "id": "0a024f55-19c6-4c3d-ab08-0a5d783f18bb",
+    "title": "Early May bank holiday",
+    "date": "2019-05-06"
+  },
+  {
+    "id": "4c78c601-68db-40ce-a843-45c25fc1a06f",
+    "title": "Spring bank holiday",
+    "date": "2019-05-27"
+  },
+  {
+    "id": "37fa25ab-f1e2-4cd0-9089-f622bfab79f5",
+    "title": "Summer bank holiday",
+    "date": "2019-08-26"
+  },
+  {
+    "id": "d9bde831-36dc-4dff-b898-58c560cac8d1",
+    "title": "Christmas Day",
+    "date": "2019-12-25"
+  },
+  {
+    "id": "50f65c9b-af7f-4846-93a6-421a0d95eed6",
+    "title": "Boxing Day",
+    "date": "2019-12-26"
+  },
+  {
+    "id": "f69abf69-102a-4ce8-ba6f-a3dcb3823878",
+    "title": "New Year’s Day",
+    "date": "2020-01-01"
+  },
+  {
+    "id": "801b3d8d-aff0-4421-b86b-15bee64baefd",
+    "title": "Good Friday",
+    "date": "2020-04-10"
+  },
+  {
+    "id": "7d6914da-9b22-4812-83c4-436e14d5b553",
+    "title": "Easter Monday",
+    "date": "2020-04-13"
+  },
+  {
+    "id": "7b4ad7ae-d254-4638-81a2-f7d1d3ce071d",
+    "title": "Early May bank holiday (VE day)",
+    "date": "2020-05-08"
+  },
+  {
+    "id": "c0451399-62e8-44db-be09-dd6a7ebe7754",
+    "title": "Spring bank holiday",
+    "date": "2020-05-25"
+  },
+  {
+    "id": "d6b9f438-b9f3-4d47-b17e-594f5047a94d",
+    "title": "Summer bank holiday",
+    "date": "2020-08-31"
+  },
+  {
+    "id": "28c93ea2-b336-4be7-93f6-1658aa78e069",
+    "title": "Christmas Day",
+    "date": "2020-12-25"
+  },
+  {
+    "id": "d082c474-d879-4885-a5e0-dd213cf95885",
+    "title": "Boxing Day",
+    "date": "2020-12-28",
+    "notes": "Substitute day"
+  },
+  {
+    "id": "70c29b83-3af3-4a83-97b3-90e57d6705b8",
+    "title": "New Year’s Day",
+    "date": "2021-01-01"
+  },
+  {
+    "id": "795abf60-59f1-401e-9227-d1742f9be0a2",
+    "title": "Good Friday",
+    "date": "2021-04-02"
+  },
+  {
+    "id": "00db114d-1d81-4bff-b534-cd4fb88f8f81",
+    "title": "Easter Monday",
+    "date": "2021-04-05"
+  },
+  {
+    "id": "7a89ec4c-8c25-497b-9128-0954f930f331",
+    "title": "Early May bank holiday",
+    "date": "2021-05-03"
+  },
+  {
+    "id": "0c7eab88-e700-45d4-9dbe-f714d387134b",
+    "title": "Spring bank holiday",
+    "date": "2021-05-31"
+  },
+  {
+    "id": "0e1753c4-f6c0-47e1-bb0a-bd26fe7736df",
+    "title": "Summer bank holiday",
+    "date": "2021-08-30"
+  },
+  {
+    "id": "a42559f8-56b4-4a9d-924c-756cd815de3d",
+    "title": "Christmas Day",
+    "date": "2021-12-27",
+    "notes": "Substitute day"
+  },
+  {
+    "id": "730cf900-abd1-4fab-a87b-ba36d7947798",
+    "title": "Boxing Day",
+    "date": "2021-12-28",
+    "notes": "Substitute day"
+  },
+  {
     "id": "3a7c3c1d-7d6d-475d-af54-7989cf294d6e",
     "title": "New Year’s Day",
     "date": "2022-01-03",
@@ -257,5 +380,46 @@
     "id": "7c728d36-d2d8-4f2f-86bd-e8a1625d1cab",
     "title": "Boxing Day (substitute day)",
     "date": "2027-12-28"
+  },
+  {
+    "id": "26fab6eb-7b46-4240-9685-ba353261a2f4",
+    "title": "New Year’s Day",
+    "date": "2028-01-03",
+    "notes": "Substitute day"
+  },
+  {
+    "id": "6a9adb1c-bd12-4558-aa77-f28171c3a827",
+    "title": "Good Friday",
+    "date": "2028-04-14"
+  },
+  {
+    "id": "c9070494-3fc2-4b44-98e6-586514547ff1",
+    "title": "Easter Monday",
+    "date": "2028-04-17"
+  },
+  {
+    "id": "d8f794c2-6fad-497a-904b-4166dc948255",
+    "title": "Early May bank holiday",
+    "date": "2028-05-01"
+  },
+  {
+    "id": "f79df0fa-3995-4bc0-8f94-d81ebeb96d95",
+    "title": "Spring bank holiday",
+    "date": "2028-05-29"
+  },
+  {
+    "id": "6c8bfa7f-926c-4d1a-bbcc-cdbd139b29af",
+    "title": "Summer bank holiday",
+    "date": "2028-08-28"
+  },
+  {
+    "id": "30876df4-8326-4d8b-be29-27314ff1b4f1",
+    "title": "Christmas Day",
+    "date": "2028-12-25"
+  },
+  {
+    "id": "37037733-0d9b-4b90-9550-c12b915ed067",
+    "title": "Boxing Day",
+    "date": "2028-12-26"
   }
 ]
