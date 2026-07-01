@@ -1,5 +1,5 @@
 module DfE
   module ReferenceData
-    VERSION = '3.8.6'.freeze
+    VERSION = '3.9.0'.freeze
   end
 end

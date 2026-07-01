@@ -1,11 +1,21 @@
 # Changelog
 
+## [v3.9.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.9.0) (2026-07-01)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.6...v3.9.0)
+
+**Merged pull requests:**
+
+- Update bank holidays [\#168](https://github.com/DFE-Digital/dfe-reference-data/pull/168) ([github-actions[bot]](https://github.com/apps/github-actions))
+- Automatically add bank holidays from GOV.UK to reference data [\#165](https://github.com/DFE-Digital/dfe-reference-data/pull/165) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
+
 ## [v3.8.6](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.6) (2025-12-03)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.5...v3.8.6)
 
 **Merged pull requests:**
 
+- v3.8.6 [\#163](https://github.com/DFE-Digital/dfe-reference-data/pull/163) ([CatalinVoineag](https://github.com/CatalinVoineag))
 - Add missing domiciles [\#162](https://github.com/DFE-Digital/dfe-reference-data/pull/162) ([CatalinVoineag](https://github.com/CatalinVoineag))
 
 ## [v3.8.5](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.8.5) (2025-11-17)
