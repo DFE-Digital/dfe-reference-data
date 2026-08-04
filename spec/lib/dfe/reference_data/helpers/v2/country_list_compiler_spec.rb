@@ -1,3 +1,4 @@
+require 'tmpdir'
 require 'dfe/reference_data/helpers/v2/country_list_compiler'
 
 RSpec.describe DfE::ReferenceData::Helpers::V2::CountryListCompiler do
@@ -161,13 +162,14 @@ RSpec.describe DfE::ReferenceData::Helpers::V2::CountryListCompiler do
     before do
       stub_const("#{described_class}::FCDO_COUNTRIES", fcdo_fixture)
       stub_const("#{described_class}::LEGACY_COUNTRIES_AND_TERRITORIES", legacy_fixture)
-      allow(CSV).to receive(:open).with('raw_data/full_countries_and_territories.csv', 'wb') do |_path, mode, &block|
-        CSV.open(output_csv_path, mode, &block)
+      allow(CSV).to receive(:open).and_wrap_original do |original, path, *rest, **kwargs, &block|
+        path = output_csv_path if path == 'raw_data/full_countries_and_territories.csv'
+        original.call(path, *rest, **kwargs, &block)
       end
     end
 
     it 'writes a header row' do
-      expect(csv_rows.headers).to eq(%w[code name full_name citizen_name FCDO_list Legacy_list is_domicile])
+      expect(csv_rows.headers).to eq(['code', 'name', 'full_name', 'citizen_name', 'FCDO_list', 'Legacy_list', 'is_domicile'])
     end
 
     it 'writes one row per country' do

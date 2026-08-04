@@ -1,5 +1,5 @@
 require 'csv'
-require 'debug'
+
 module DfE
   module ReferenceData
     module Helpers
@@ -29,10 +29,9 @@ module DfE
           # columns:
           # code, name, full_name, citizen_name, FCDO_list, Legacy list
           def create_full_csv
-            #debugger
             build_all_countries_data
             CSV.open('raw_data/full_countries_and_territories.csv', 'wb') do |csv|
-              csv << %w[code name full_name citizen_name FCDO_list Legacy_list is_domicile]
+              csv << ['code', 'name', 'full_name', 'citizen_name', 'FCDO_list', 'Legacy_list', 'is_domicile']
               @all_countries_data.each do |country|
                 csv << [country[:code], country[:name], country[:full_name], country[:citizen_name], country[:fcdo_list_name], country[:legacy_list_name], @domicile_codes.include?(country[:code])]
               end
@@ -41,20 +40,18 @@ module DfE
 
           def generate_countries_hash
             @fcdo_codes.each do |code|
-              begin
-                country = @fcdo_codes_index[code]
-                puts "\"#{code}\" => { name: \"#{country.name}\", official_name: \"#{country.official_name}\", citizen_names: \"#{country.citizen_names}\" },"
-              rescue
-                debugger
-              end
+              country = @fcdo_codes_index[code]
+              puts "\"#{code}\" => { name: \"#{country.name}\", official_name: \"#{country.official_name}\", citizen_names: \"#{country.citizen_names}\" },"
             end
           end
+
           def generate_territories_hash
             @domicile_codes.each do |code|
               country = @legacy_codes_index[code]
               puts "\"#{code}\" => { name: \"#{country.name}\" },"
             end
           end
+
           def build_all_countries_data
             compile_all_countries_symbols
             build_indexes
@@ -67,7 +64,7 @@ module DfE
                 full_name: @fcdo_codes_index[code]&.official_name,
                 citizen_name: @fcdo_codes_index[code]&.citizen_names,
                 fcdo_list_name: @fcdo_codes_index[code]&.name,
-                legacy_list_name: @legacy_codes_index[code]&.name,
+                legacy_list_name: @legacy_codes_index[code]&.name
               }
             end
           end

@@ -11,9 +11,9 @@ def validate_autocomplete_compatible_record!(record)
   throw "Record #{record.id} lacks a name string" unless !data[:name].nil? && data[:name].is_a?(String)
   throw "Record #{record.id} has a non-string hint" unless data[:hint].nil? || data[:hint].is_a?(String)
   ms = data[:match_synonyms]
-  throw "Record #{record.id} has non-array-of-strings match synonyms" unless ms.nil? || ms.is_a?(Array) || ms.all? { |e| e.is_a?(String) }
+  throw "Record #{record.id} has non-array-of-strings match synonyms" unless ms.nil? || ms.is_a?(Array) || ms.all?(String)
   ss = data[:suggestion_synonyms]
-  throw "Record #{record.id} has non-array-of-strings suggestion synonyms" unless ss.nil? || ss.is_a?(Array) || ss.all? { |e| e.is_a?(String) }
+  throw "Record #{record.id} has non-array-of-strings suggestion synonyms" unless ss.nil? || ss.is_a?(Array) || ss.all?(String)
 end
 
 # rubocop:enable Metrics/AbcSize

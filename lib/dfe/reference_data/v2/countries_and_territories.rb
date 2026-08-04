@@ -199,7 +199,7 @@ module DfE
             "VN" => { name: "Vietnam", official_name: "The Socialist Republic of Viet Nam", citizen_names: "Vietnamese" },
             "YE" => { name: "Yemen", official_name: "The Republic of Yemen", citizen_names: "Yemeni" },
             "ZM" => { name: "Zambia", official_name: "The Republic of Zambia", citizen_names: "Zambian" },
-            "ZW" => { name: "Zimbabwe", official_name: "The Republic of Zimbabwe", citizen_names: "Zimbabwean" },
+            "ZW" => { name: "Zimbabwe", official_name: "The Republic of Zimbabwe", citizen_names: "Zimbabwean" }
           },
           schema: {
             id: :string,
@@ -327,17 +327,17 @@ module DfE
             "XQZ" => { name: "Akrotiri" },
             "XXD" => { name: "Dhekelia" },
             "YT" => { name: "Mayotte" },
-            "YU" => { name: "Yugoslavia" },
+            "YU" => { name: "Yugoslavia" }
           },
           schema: {
             id: :string,
-            name: :string,
+            name: :string
           },
           list_description: 'List of territories',
           list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_countries_and_territories.md#dfereferencedatacountriesandterritoriescountries_and_territories',
           field_descriptions: {
             id: 'List of territories,',
-            name: 'The human-readable name of the territory',
+            name: 'The human-readable name of the territory'
           }
         )
       end
