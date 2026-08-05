@@ -1,11 +1,20 @@
 # Changelog
 
+## [v3.10.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.10.0) (2026-08-05)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.9.0...v3.10.0)
+
+**Merged pull requests:**
+
+- Add new version of countries data. [\#166](https://github.com/DFE-Digital/dfe-reference-data/pull/166) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
+
 ## [v3.9.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.9.0) (2026-07-01)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.8.6...v3.9.0)
 
 **Merged pull requests:**
 
+- v3.9.0 release for bank holidays automation and change [\#169](https://github.com/DFE-Digital/dfe-reference-data/pull/169) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
 - Update bank holidays [\#168](https://github.com/DFE-Digital/dfe-reference-data/pull/168) ([github-actions[bot]](https://github.com/apps/github-actions))
 - Automatically add bank holidays from GOV.UK to reference data [\#165](https://github.com/DFE-Digital/dfe-reference-data/pull/165) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
 
