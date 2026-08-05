@@ -33,6 +33,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('sqlite3', '~> 1.4')
   # rubocop:enable Gemspec/DevelopmentDependencies
   s.add_dependency 'activesupport'
+  s.add_dependency 'csv'
   s.add_dependency 'tzinfo'
 
   s.metadata['rubygems_mfa_required'] = 'true'

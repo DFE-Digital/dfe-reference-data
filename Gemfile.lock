@@ -3,6 +3,7 @@ PATH
   specs:
     dfe-reference-data (3.9.0)
       activesupport
+      csv
       tzinfo
 
 GEM
@@ -50,6 +51,7 @@ GEM
     connection_pool (2.5.4)
     console (1.15.3)
       fiber-local
+    csv (3.3.6)
     declarative (0.0.20)
     diff-lcs (1.6.2)
     drb (2.2.3)
