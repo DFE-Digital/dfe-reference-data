@@ -183,7 +183,7 @@ module DfE
             "TO" => { name: "Tonga", official_name: "The Kingdom of Tonga", citizen_names: "Tongan" },
             "TT" => { name: "Trinidad and Tobago", official_name: "The Republic of Trinidad and Tobago", citizen_names: "Trinidad and Tobago citizen" },
             "TN" => { name: "Tunisia", official_name: "Republic of Tunisia", citizen_names: "Tunisian" },
-            "TR" => { name: "Turkey", official_name: "Republic of T�rkiye", citizen_names: "Turk, Turkish" },
+            "TR" => { name: "Turkey", official_name: "Republic of Türkiye", citizen_names: "Turk, Turkish" },
             "TM" => { name: "Turkmenistan", official_name: "Turkmenistan", citizen_names: "Turkmen" },
             "TV" => { name: "Tuvalu", official_name: "Tuvalu", citizen_names: "Tuvaluan" },
             "UG" => { name: "Uganda", official_name: "The Republic of Uganda", citizen_names: "Ugandan" },

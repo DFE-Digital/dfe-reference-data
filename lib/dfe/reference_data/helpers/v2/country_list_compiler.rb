@@ -23,7 +23,9 @@ module DfE
             @domicile_codes = @legacy_codes - @fcdo_codes
             build_all_countries_data
 
-            raise unless @fcdo_codes.all? { |code| @legacy_codes.include?(code) }
+            missing_codes = @fcdo_codes - @legacy_codes
+
+            raise "Missing legacy codes: #{missing_codes.join(', ')}" unless missing_codes.empty?
           end
 
           # columns:

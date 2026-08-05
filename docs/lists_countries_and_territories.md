@@ -3,7 +3,19 @@
 - A mapping of ISO country/territory codes to country/territory names and nationalities.
 - Postcode prefixes for the UK and Channel Islands grouped by country/territory.
 
-### `DfE::ReferenceData::CountriesAndTerritories::V2::COUNTRIES
+### V2 list generation
+
+The list for V2 is generated from CSV files located in `raw_data` directory. Using scripts helps with understanding process and assures better quality.
+Those are one off scripts, already run to generate `V2` lists. They are included as an example approach how to generate ruby structures from different data sources,
+as well keeping those sources for reference.
+ 
+To generate ruby structure, that later was copied to countries as `DfE::ReferenceData::CountriesAndTerritories::V2::COUNTRIES`, 
+2 rake tasks were created:
+
+`rake v2:generate_countries_hash`
+`rake v2:generate_territories_hash`
+
+### `DfE::ReferenceData::CountriesAndTerritories::V2::COUNTRIES`
 
 ```ruby
 require 'dfe/reference_data/v2/countries_and_territories'

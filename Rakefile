@@ -118,12 +118,12 @@ task :convert_to_sqlite do
 end
 
 namespace :v2 do
-  desc 'Generate countries hash entries'
+  desc 'Generate countries hash entries - one off script'
   task :generate_countries_hash do
     DfE::ReferenceData::Helpers::V2::CountryListCompiler.new.generate_countries_hash
   end
 
-  desc 'Generate territories hash entries'
+  desc 'Generate territories hash entries - one off script'
   task :generate_territories_hash do
     DfE::ReferenceData::Helpers::V2::CountryListCompiler.new.generate_territories_hash
   end

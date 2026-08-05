@@ -8,5 +8,5 @@ data that might not be expected.
 
 ## Solution
 
-Solution is to add a version namespace (V2, V3, etc.). Version `V1` is ommited.
+Solution is to add a version namespace (V2, V3, etc.). Version `V1` is omitted.
 For example, updates to the countries list were introduced in version `V2`: `DfE::ReferenceData::V2::CountriesAndTerritories`.
