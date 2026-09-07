@@ -35,6 +35,11 @@ task :update_bank_holidays do
   end
 end
 
+desc 'Print the InternationalQualifications LIST hash generated from raw_data/international_qualifications.csv (redirect to a file to capture it)'
+task :generate_international_qualifications do
+  puts DfE::ReferenceData::Generators::InternationalQualifications.generate_ruby_literal
+end
+
 desc 'Prepare a new version for release, version can be major, minor, patch or x.y.z (as per gem-release gem)'
 task :prepare_release, %i[version] do |_, args|
   bump_version = args.fetch(:version)
