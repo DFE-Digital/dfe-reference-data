@@ -93,7 +93,8 @@ BIGQUERY_TABLES = [
   ['cah_categories_l2', DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L2],
   ['cah_categories_l3', DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L3],
   ['hecos_cah_subject_mappings', DfE::ReferenceData::CommonAggregationHierarchy::HECOS_CAH_SUBJECT_MAPPINGS],
-  ['bank_holidays', DfE::ReferenceData::BankHolidays::BANK_HOLIDAYS]
+  ['bank_holidays', DfE::ReferenceData::BankHolidays::BANK_HOLIDAYS],
+  ['international_qualifications', DfE::ReferenceData::InternationalQualifications::INTERNATIONAL_QUALIFICATIONS]
 ].freeze
 
 desc 'Insert records into BigQuery tables from the reference data lists'

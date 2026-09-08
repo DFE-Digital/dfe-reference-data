@@ -690,12 +690,12 @@ module DfE
             grades: ['notable', 'apto', 'sobresaliente', 'aprobado'] }
         }.freeze
 
-      DATA = DfE::ReferenceData::HardcodedReferenceList.new(
+      INTERNATIONAL_QUALIFICATIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         LIST,
         schema: SCHEMA,
         list_description: 'International qualifications list',
         list_usage_guidance: 'To find an equivalent of international qualifications',
-        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_international_qualifications.md#dfereferencedatainternationalqualificationsdata',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_international_qualifications.md#dfereferencedatainternationalqualificationsinternational_qualifications',
         field_descriptions: {
           id: 'A unique identifier for this qualification record (one per country and qualification combination)',
           country: 'The country in which the qualification is awarded, lower case. `n/a` for country-agnostic qualifications such as the International Baccalaureate',
