@@ -1,6 +1,6 @@
 ## International Qualifications
 
-### `DfE::ReferenceData::InternationalQualifications::DATA`
+### `DfE::ReferenceData::InternationalQualifications::INTERNATIONAL_QUALIFICATIONS`
 
 ```ruby
 require 'dfe/reference_data/international_qualifications'
