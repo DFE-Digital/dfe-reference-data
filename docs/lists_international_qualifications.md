@@ -6,7 +6,7 @@
 require 'dfe/reference_data/international_qualifications'
 ```
 
-International (non-UK) qualifications, mapped to their broad UK equivalence.
+Table showing key non-UK qualifications and their equivalence to UK GCSE and degree-level qualifications, highlighting which qualifications are recognised as equivalent to GCSEs.
 
 Each record is one qualification in one country (for example the Chinese
 *gaokao*, or a French *licence*). It carries the UK ENIC comparability
@@ -109,7 +109,3 @@ DfE::ReferenceData::Generators::InternationalQualifications.generate
 DfE::ReferenceData::Generators::InternationalQualifications.generate_ruby_literal('path/to/other.csv')
 # => "{\n  '<uuid>' =>\n  { country: 'china', ... } }.freeze"
 ```
-
-New qualification groups added to the CSV need a stable `id`; run
-`ruby international_qualifications_scripts/add_uuids.rb` to fill in any missing
-UUIDs (existing ids are left untouched).
