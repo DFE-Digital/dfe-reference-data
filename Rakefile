@@ -35,6 +35,11 @@ task :update_bank_holidays do
   end
 end
 
+desc 'Print the InternationalQualifications LIST hash generated from raw_data/international_qualifications.csv (redirect to a file to capture it)'
+task :generate_international_qualifications do
+  puts DfE::ReferenceData::Generators::InternationalQualifications.generate_ruby_literal
+end
+
 desc 'Prepare a new version for release, version can be major, minor, patch or x.y.z (as per gem-release gem)'
 task :prepare_release, %i[version] do |_, args|
   bump_version = args.fetch(:version)
@@ -88,7 +93,8 @@ BIGQUERY_TABLES = [
   ['cah_categories_l2', DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L2],
   ['cah_categories_l3', DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L3],
   ['hecos_cah_subject_mappings', DfE::ReferenceData::CommonAggregationHierarchy::HECOS_CAH_SUBJECT_MAPPINGS],
-  ['bank_holidays', DfE::ReferenceData::BankHolidays::BANK_HOLIDAYS]
+  ['bank_holidays', DfE::ReferenceData::BankHolidays::BANK_HOLIDAYS],
+  ['international_qualifications', DfE::ReferenceData::InternationalQualifications::INTERNATIONAL_QUALIFICATIONS]
 ].freeze
 
 desc 'Insert records into BigQuery tables from the reference data lists'
