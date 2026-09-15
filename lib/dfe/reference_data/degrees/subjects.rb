@@ -46,7 +46,7 @@ module DfE
           '937f70f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Accounting',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Accounting Education'],
             dttp_id: '937f70f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100105' },
           '558270f0-5dce-e911-a985-000d3ab79618' =>
@@ -730,7 +730,7 @@ module DfE
           '0d8170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Biology',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Biology Education'],
             dttp_id: '0d8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100346' },
           'f98570f0-5dce-e911-a985-000d3ab79618' =>
@@ -935,7 +935,7 @@ module DfE
           { name: 'Business studies',
             suggestion_synonyms: ['Business management',
                                   'Business administration'],
-            match_synonyms: [],
+            match_synonyms: ['Business Education'],
             dttp_id: '6b7f70f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100079' },
           '7d8770f0-5dce-e911-a985-000d3ab79618' =>
@@ -1061,7 +1061,7 @@ module DfE
           '818170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Chemistry',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Chemistry Education'],
             dttp_id: '818170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100417' },
           'c18270f0-5dce-e911-a985-000d3ab79618' =>
@@ -1132,7 +1132,7 @@ module DfE
           'b38570f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Chinese studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Chinese'],
             dttp_id: 'b38570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101164' },
           '5d8070f0-5dce-e911-a985-000d3ab79618' =>
@@ -1916,7 +1916,7 @@ module DfE
           'af8570f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Dutch studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Dutch'],
             dttp_id: 'af8570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101161' },
           '918770f0-5dce-e911-a985-000d3ab79618' =>
@@ -2007,7 +2007,7 @@ module DfE
           'b58170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Economics',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Economics Education'],
             dttp_id: 'b58170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100450' },
           '098470f0-5dce-e911-a985-000d3ab79618' =>
@@ -2220,7 +2220,7 @@ module DfE
           'e18070f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'English studies',
             suggestion_synonyms: [],
-            match_synonyms: ['English'],
+            match_synonyms: ['English', 'English Education'],
             dttp_id: 'e18070f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100320' },
           '0b8670f0-5dce-e911-a985-000d3ab79618' =>
@@ -2688,7 +2688,7 @@ module DfE
           'e58070f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'French studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['French', 'French Education'],
             dttp_id: 'e58070f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100322' },
           'f58370f0-5dce-e911-a985-000d3ab79618' =>
@@ -2772,7 +2772,7 @@ module DfE
           '578170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'General science',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Science', 'Science Education'],
             dttp_id: '578170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100390' },
           '2b8670f0-5dce-e911-a985-000d3ab79618' =>
@@ -2880,7 +2880,7 @@ module DfE
           'e98070f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'German studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['German'],
             dttp_id: 'e98070f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100324' },
           '618670f0-5dce-e911-a985-000d3ab79618' =>
@@ -2988,7 +2988,7 @@ module DfE
           'd98170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Health studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Health Education'],
             dttp_id: 'd98170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100473' },
           'bd8070f0-5dce-e911-a985-000d3ab79618' =>
@@ -3510,7 +3510,7 @@ module DfE
           'ef8070f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Italian studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Italian'],
             dttp_id: 'ef8070f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100327' },
           '838770f0-5dce-e911-a985-000d3ab79618' =>
@@ -3552,7 +3552,7 @@ module DfE
           'bb8570f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Japanese studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Japanese'],
             dttp_id: 'bb8570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101168' },
           '158470f0-5dce-e911-a985-000d3ab79618' =>
@@ -3612,7 +3612,7 @@ module DfE
           'fb8570f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Korean studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Korean'],
             dttp_id: 'fb8570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101212' },
           'bd8470f0-5dce-e911-a985-000d3ab79618' =>
@@ -3906,7 +3906,7 @@ module DfE
           '6b8170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Mathematics',
             suggestion_synonyms: [],
-            match_synonyms: ['maths'],
+            match_synonyms: ['maths', 'Mathematics Education'],
             dttp_id: '6b8170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100403' },
           'cb8670f0-5dce-e911-a985-000d3ab79618' =>
@@ -4838,7 +4838,7 @@ module DfE
           '918170f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Physics',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Physics Education'],
             dttp_id: '918170f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100425' },
           '818070f0-5dce-e911-a985-000d3ab79618' =>
@@ -4934,7 +4934,7 @@ module DfE
           'a38570f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Polish studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Polish'],
             dttp_id: 'a38570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101152' },
           'db8270f0-5dce-e911-a985-000d3ab79618' =>
@@ -5024,7 +5024,7 @@ module DfE
           '918570f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Portuguese studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Portuguese'],
             dttp_id: '918570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101141' },
           '0b8270f0-5dce-e911-a985-000d3ab79618' =>
@@ -5529,7 +5529,7 @@ module DfE
           'a18570f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Russian studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Russian'],
             dttp_id: 'a18570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101151' },
           'eb8370f0-5dce-e911-a985-000d3ab79618' =>
@@ -5883,7 +5883,7 @@ module DfE
           'eb8070f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Spanish studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Spanish'],
             dttp_id: 'eb8070f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '100325' },
           '458570f0-5dce-e911-a985-000d3ab79618' =>
@@ -6360,7 +6360,7 @@ module DfE
           'e18570f0-5dce-e911-a985-000d3ab79618' =>
           { name: 'Turkish studies',
             suggestion_synonyms: [],
-            match_synonyms: [],
+            match_synonyms: ['Turkish'],
             dttp_id: 'e18570f0-5dce-e911-a985-000d3ab79618',
             hecos_code: '101195' },
           '9d8270f0-5dce-e911-a985-000d3ab79618' =>
