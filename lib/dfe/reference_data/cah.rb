@@ -1432,3291 +1432,8793 @@ module DfE
       HECOS_CAH_SUBJECT_MAPPINGS = DfE::ReferenceData::HardcodedReferenceList.new(
         {
           '100003' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'ceramics',
+            hecos_definition:
+            'The study of the creation and design of ceramic artefacts.',
+            cah_l3_name: 'design studies',
+            note:
+            'Includes all ceramics within arts and crafts areas. For ceramics as materials science or technology, use materials science.'
           },
           '100005' => {
-            cah_l3_id: 'CAH10-01-06'
+            cah_l3_id: 'CAH10-01-06',
+            hecos_subject: 'clinical engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the design, development and maintenance of equipment used for diagnosing illness and treating patients.',
+            cah_l3_name: 'bioengineering, medical and biomedical engineering',
+            note:
+             'There are NHS accredited BSc Clinical Engineering programmes for entry to the Clinical Engineer profession. Biomedical engineering can lead into further training in this too.'
           },
           '100033' => {
-            cah_l3_id: 'CAH10-03-02'
+            cah_l3_id: 'CAH10-03-02',
+            hecos_subject: 'metallurgy',
+            hecos_definition:
+             'The study of the development, processing, enhancement, modification and application of metallic materials.',
+            cah_l3_name: 'materials technology',
+            note: nil
           },
           '100035' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'musical theatre',
+            hecos_definition:
+             'The study of the definition and styles of music within the theatrical arena.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100036' => {
-            cah_l3_id: 'CAH02-06-03'
+            cah_l3_id: 'CAH02-06-03',
+            hecos_subject: 'optometry',
+            hecos_definition:
+             'The study of the principles and techniques for examining, diagnosing and treating conditions of the human visual system.',
+            cah_l3_name: 'ophthalmics',
+            note: nil
           },
           '100037' => {
-            cah_l3_id: 'CAH02-06-03'
+            cah_l3_id: 'CAH02-06-03',
+            hecos_subject: 'orthoptics',
+            hecos_definition:
+             'The study of principles and techniques for the correction of vision defects in humans using therapeutic exercises.',
+            cah_l3_name: 'ophthalmics',
+            note: nil
           },
           '100038' => {
-            cah_l3_id: 'CAH02-05-04'
+            cah_l3_id: 'CAH02-05-04',
+            hecos_subject: 'pathobiology',
+            hecos_definition: 'The study of the biological nature of diseases.',
+            cah_l3_name: 'anatomy, physiology and pathology',
+            note: nil
           },
           '100046' => {
-            cah_l3_id: 'CAH19-01-05'
+            cah_l3_id: 'CAH19-01-05',
+            hecos_subject: 'creative writing',
+            hecos_definition: 'The study of the creation of fictional text.',
+            cah_l3_name: 'creative writing',
+            note: nil
           },
           '100048' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'design',
+            hecos_definition:
+             'The study of design for everyday objects, taking into account technology and commerce as well as appearance and current art thinking.',
+            cah_l3_name: 'design studies',
+            note: 'May involve the use of computers as design tools.'
           },
           '100050' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'product design',
+            hecos_definition:
+             'The study of/training in the design of industrial and consumer products to meet aesthetic, functional and commercial requirements.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100051' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'textile design',
+            hecos_definition: 'The study of/training in the design of textiles.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100052' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'ergonomics',
+            hecos_definition:
+             'The study of the efficiency and effectiveness of the interface between people and machines.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100054' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'fashion',
+            hecos_definition:
+             'A broad subject which covers every aspect of the fashion process, from initial design concept to the production of a catwalk collection.',
+            cah_l3_name: 'design studies',
+            note:
+             'May include pattern-cutting and garment production, CAD, illustration, concept development and communication, design, trend forecasting, and fashion business and marketing.'
           },
           '100055' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'fashion design',
+            hecos_definition:
+             'The study of/training in the design and use of textiles and other materials to create items of apparel.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100057' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'animation',
+            hecos_definition:
+             'The study of/training in the particular techniques associated with the creation of the illusion of movement in a video sequence, by the filming of successive drawings or the positions of puppets.',
+            cah_l3_name: 'cinematics and photography',
+            note:
+             'For computer generated visual effects, including CGI animation, use \'computer animation and visual effects\'.'
           },
           '100058' => {
-            cah_l3_id: 'CAH24-01-05'
+            cah_l3_id: 'CAH24-01-05',
+            hecos_subject: 'film studies',
+            hecos_definition:
+             'The study of communication between people through film, concentrating on business, management and financial aspects and not on the production of the artwork and ideas themselves.',
+            cah_l3_name: 'media studies',
+            note:
+             'May involve study of the film industry, technical innovations and the role of audiences.'
           },
           '100059' => {
-            cah_l3_id: 'CAH25-01-02'
+            cah_l3_id: 'CAH25-01-02',
+            hecos_subject: 'fine art',
+            hecos_definition:
+             'The aesthetic representation in one medium of what is reality in another. Encompasses all artistic media.',
+            cah_l3_name: 'art',
+            note: nil
           },
           '100060' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'graphic arts',
+            hecos_definition:
+             'The study of a broad range of art forms, typically two-dimensional.',
+            cah_l3_name: 'design studies',
+            note:
+             'May include calligraphy, photography, drawing, painting, printmaking, lithography, typography, serigraphy (silk-screen printing), computer graphics, and bindery. May also include drawn plans and layouts for interior and architectural designs.'
           },
           '100061' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'graphic design',
+            hecos_definition:
+             'The study of/training in the use of artistic techniques effectively to communicate ideas and information to business and consumer audiences via forms of printed media.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100062' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'illustration',
+            hecos_definition:
+             'The study of/training in the use of artistic techniques effectively to communicate ideas and information to business and consumer audiences via drawn or painted images.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100063' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'photography',
+            hecos_definition:
+             'The study of/training in all aspects of the creation of still images.',
+            cah_l3_name: 'cinematics and photography',
+            note: nil
           },
           '100065' => {
-            cah_l3_id: 'CAH23-01-04'
+            cah_l3_id: 'CAH23-01-04',
+            hecos_subject: 'liberal arts',
+            hecos_definition:
+             'The interdisciplinary study of topics within the humanities, as well as social, natural and formal sciences.',
+            cah_l3_name: 'liberal arts (non-specific)',
+            note:
+             'The liberal arts is generally accepted as covering the following: humanities, including archaeology, art, history, literature, linguistics, philosophy, religion, modern and classical languages, music, theatre, and so on; social sciences, including psychology, law, sociology, politics, gender studies, anthropology, economics, geography, business, and so on; natural sciences, including biology, chemistry, physics, Earth sciences, and so on; and including mathematics and statistics.'
           },
           '100067' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'acting',
+            hecos_definition:
+             'The study of/training in the communication of dramatic information, ideas, moods, and feelings through the achievement of naturalistic and believable behaviour in imaginary circumstances.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100068' => {
-            cah_l3_id: 'CAH25-02-04'
+            cah_l3_id: 'CAH25-02-04',
+            hecos_subject: 'dance',
+            hecos_definition:
+             'The study of and/or training in the movement of the body, particularly in time to music.',
+            cah_l3_name: 'dance',
+            note: 'May include some study of/training in music and/or drama.'
           },
           '100069' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'drama',
+            hecos_definition: 'The study of and/or training in acting and stagecraft.',
+            cah_l3_name: 'drama',
+            note:
+             'May include the study of theatre management and the supervision and production of scenery, costume, lighting etc.'
           },
           '100070' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'music',
+            hecos_definition:
+             'The study of melody, harmony and rhythm produced in accordance with specified patterns and sequences.',
+            cah_l3_name: 'music',
+            note: 'May include performance, theory, analysis and history of music.'
           },
           '100071' => {
-            cah_l3_id: 'CAH25-02-01'
+            cah_l3_id: 'CAH25-02-01',
+            hecos_subject: 'performing arts',
+            hecos_definition:
+             'The study of art forms in which artists use their body, voice, or objects to convey artistic expression.  Performing arts include a variety of disciplines but all are intended to be performed in front of a live audience.',
+            cah_l3_name: 'performing arts (non-specific)',
+            note: nil
           },
           '100074' => {
-            cah_l3_id: 'CAH17-01-03'
+            cah_l3_id: 'CAH17-01-03',
+            hecos_subject: 'advertising',
+            hecos_definition:
+             'The study of the use of promotional displays, whether presented orally or visually, in order to sell items and services or to publicise events.',
+            cah_l3_name: 'marketing',
+            note:
+             'Concentrates on business, management and financial aspects and not on the production of the artwork and ideas themselves.'
           },
           '100075' => {
-            cah_l3_id: 'CAH17-01-03'
+            cah_l3_id: 'CAH17-01-03',
+            hecos_subject: 'marketing',
+            hecos_definition:
+             'The study of techniques involved in the management of an organisation\'s relationship with its customers and the world at large.',
+            cah_l3_name: 'marketing',
+            note: nil
           },
           '100076' => {
-            cah_l3_id: 'CAH24-01-02'
+            cah_l3_id: 'CAH24-01-02',
+            hecos_subject: 'public relations',
+            hecos_definition:
+             'The study of creating, promoting and maintaining a favourable image among the public towards an individual or organisation.',
+            cah_l3_name: 'publicity studies',
+            note: nil
           },
           '100078' => {
-            cah_l3_id: 'CAH17-01-01'
+            cah_l3_id: 'CAH17-01-01',
+            hecos_subject: 'business and management',
+            hecos_definition:
+             'The study of planning, organising, directing, and controlling the functions and processes of an organisation. Includes management theory, human resources management, accounting, purchasing and logistics, organisation and production, marketing, and business decision-making.',
+            cah_l3_name: 'business and management (non-specific)',
+            note: nil
           },
           '100079' => {
-            cah_l3_id: 'CAH17-01-02'
+            cah_l3_id: 'CAH17-01-02',
+            hecos_subject: 'business studies',
+            hecos_definition:
+             'The study of organisations and the environment in which they operate.',
+            cah_l3_name: 'business studies',
+            note: nil
           },
           '100080' => {
-            cah_l3_id: 'CAH17-01-02'
+            cah_l3_id: 'CAH17-01-02',
+            hecos_subject: 'international business',
+            hecos_definition:
+             'The study of organisations and their operations throughout the world.',
+            cah_l3_name: 'business studies',
+            note: nil
           },
           '100083' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'event management',
+            hecos_definition:
+             'The study of the planning, administration and running of public or social occasions, such as conferences, shows and visits.',
+            cah_l3_name: 'tourism, transport and travel',
+            note: nil
           },
           '100084' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'hospitality management',
+            hecos_definition:
+             'The study of the hospitality industry and its management.',
+            cah_l3_name: 'tourism, transport and travel',
+            note: nil
           },
           '100085' => {
-            cah_l3_id: 'CAH17-01-05'
+            cah_l3_id: 'CAH17-01-05',
+            hecos_subject: 'human resource management',
+            hecos_definition:
+             'The specific techniques involved in the management and development of an organisation\'s human resources.',
+            cah_l3_name: 'human resource management',
+            note: nil
           },
           '100087' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'international hospitality management',
+            hecos_definition:
+             'The study of business with relation to management of food and drink operations, front office and customer service, in hospitality businesses worldwide.',
+            cah_l3_name: 'tourism, transport and travel',
+            note:
+             'May include how hospitality businesses are created and developed globally, systems that support effective food and drink operations and facilities.'
           },
           '100088' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'leadership',
+            hecos_definition:
+             'Study of skills required to assume a future leadership position, may include psychology, writing, negotiation, finance, ethical decision making, logic, organizational behaviour, human resource management, personal skills; managing individuals and teams.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100089' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'management studies',
+            hecos_definition: 'The study of managing organisations.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100090' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'public administration',
+            hecos_definition:
+             'The study of the functions and structure of those bodies concerned with the administrative duties of government.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100091' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'public services',
+            hecos_definition:
+             'The study of how to deliver state funded services effectively and efficiently, including the decision-making processes of managers and policymakers working in the public sector.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100092' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'retail management',
+            hecos_definition:
+             'The study of techniques involved in the management of retail outlets.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100093' => {
-            cah_l3_id: 'CAH10-03-06'
+            cah_l3_id: 'CAH10-03-06',
+            hecos_subject: 'logistics',
+            hecos_definition:
+             'The study of the optimal methods of mass distribution services.',
+            cah_l3_name: 'others in technology',
+            note: nil
           },
           '100095' => {
-            cah_l3_id: 'CAH03-02-01'
+            cah_l3_id: 'CAH03-02-01',
+            hecos_subject: 'sports coaching',
+            hecos_definition:
+             'The study of the delivery (teaching, instructing and coaching) of enhanced sport performance and the critical analysis of the integration of the variables involved.',
+            cah_l3_name: 'sport and exercise sciences',
+            note: nil
           },
           '100096' => {
-            cah_l3_id: 'CAH03-02-01'
+            cah_l3_id: 'CAH03-02-01',
+            hecos_subject: 'sports development',
+            hecos_definition:
+             'The study of the monitoring, analysis, diagnosis and prescription of actions to enhance the component elements of sport.',
+            cah_l3_name: 'sport and exercise sciences',
+            note: nil
           },
           '100097' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'sports management',
+            hecos_definition:
+             'The study of management theories, concepts and principles of practice in the context of sport industries, organisations and initiatives.',
+            cah_l3_name: 'tourism, transport and travel',
+            note: nil
           },
           '100098' => {
-            cah_l3_id: 'CAH03-02-01'
+            cah_l3_id: 'CAH03-02-01',
+            hecos_subject: 'sports studies',
+            hecos_definition:
+             'The study of the nature and provision of sport through analysis of its socio-cultural and health impacts.',
+            cah_l3_name: 'sport and exercise sciences',
+            note: nil
           },
           '100100' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'tourism management',
+            hecos_definition: 'The study of the management of tourism.',
+            cah_l3_name: 'tourism, transport and travel',
+            note: nil
           },
           '100101' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'travel and tourism',
+            hecos_definition:
+             'The study of the travel and tourism industries, including structure, regulation, distribution methods, the impact and development of tourism and its impact.',
+            cah_l3_name: 'tourism, transport and travel',
+            note:
+             'Does not include transport studies, transport management and transport systems.'
           },
           '100102' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'travel management',
+            hecos_definition:
+             'The specific study of the travel industry, its structure, regulation and distribution methods.',
+            cah_l3_name: 'tourism, transport and travel',
+            note: nil
           },
           '100104' => {
-            cah_l3_id: 'CAH17-01-08'
+            cah_l3_id: 'CAH17-01-08',
+            hecos_subject: 'accountancy',
+            hecos_definition:
+             'The study of the provision and analysis of financial information for a variety of decision-making, accountability, managerial, regulatory and resource allocation purposes.',
+            cah_l3_name: 'accounting',
+            note:
+             'This subject of study covers the practice of a professional accountant, reporting financial information to others (cf. accounting).'
           },
           '100105' => {
-            cah_l3_id: 'CAH17-01-08'
+            cah_l3_id: 'CAH17-01-08',
+            hecos_subject: 'accounting',
+            hecos_definition:
+             'The study of the process of, and systems used in, producing financial statements, and how they affect, and are affected by, individuals, organisations, markets, society and the environment.',
+            cah_l3_name: 'accounting',
+            note:
+             'This subject of study covers how to record and classify financial information (cf. accountancy).'
           },
           '100106' => {
-            cah_l3_id: 'CAH17-01-07'
+            cah_l3_id: 'CAH17-01-07',
+            hecos_subject: 'actuarial science',
+            hecos_definition:
+             'The study of the application of mathematical and statistical concepts to the assessment and management of financial risk.',
+            cah_l3_name: 'finance',
+            note: nil
           },
           '100107' => {
-            cah_l3_id: 'CAH17-01-07'
+            cah_l3_id: 'CAH17-01-07',
+            hecos_subject: 'finance',
+            hecos_definition:
+             'The study of financial systems, regulations and reporting.',
+            cah_l3_name: 'finance',
+            note: nil
           },
           '100109' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'clothing production',
+            hecos_definition:
+             'The study of the methods and processes used in the production of clothing.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '100110' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'footwear production',
+            hecos_definition: 'The study of the design and production of footwear.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '100114' => {
-            cah_l3_id: 'CAH10-01-04'
+            cah_l3_id: 'CAH10-01-04',
+            hecos_subject: 'aeronautical engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the research, design, development and production of aircraft.',
+            cah_l3_name: 'aeronautical and aerospace engineering',
+            note:
+             'Involves fairly intensive study of mathematics and its applications in several fields including aerodynamics, stress analyses and inertial mechanics.'
           },
           '100115' => {
-            cah_l3_id: 'CAH10-01-04'
+            cah_l3_id: 'CAH10-01-04',
+            hecos_subject: 'aerospace engineering',
+            hecos_definition:
+             'The study of the principles of engineering of vehicles that operate inside and outside the earth__s atmosphere.',
+            cah_l3_name: 'aeronautical and aerospace engineering',
+            note:
+             'Involves the study and application of mathematics along with the operational aspects of aviation including maintenance.'
           },
           '100116' => {
-            cah_l3_id: 'CAH10-01-04'
+            cah_l3_id: 'CAH10-01-04',
+            hecos_subject: 'space technology',
+            hecos_definition:
+             'The study of the principles of space flight including the design of launch vehicles, trajectory control and in some cases, recovery of payloads.',
+            cah_l3_name: 'aeronautical and aerospace engineering',
+            note:
+             'Involves the study of mathematics and its application to flight science beyond earth__s atmosphere.'
           },
           '100117' => {
-            cah_l3_id: 'CAH10-01-04'
+            cah_l3_id: 'CAH10-01-04',
+            hecos_subject: 'avionics',
+            hecos_definition:
+             'The study of electronics as applied to aeronautics and astronautics.',
+            cah_l3_name: 'aeronautical and aerospace engineering',
+            note:
+             'Involves the study and application of mathematics and experimentation including testing of circuits under extreme environmental conditions.'
           },
           '100118' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'satellite engineering',
+            hecos_definition:
+             'The study of the principles of engineering as applied to all aspects of satellite technology for many purposes including remote sensing, communication, navigation, imaging and dispensing payload.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note:
+             'Involves the study of mathematics, energy management and testing the performance of equipment under extreme environmental conditions.'
           },
           '100120' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'architectural engineering',
+            hecos_definition:
+             'The study of the application of engineering principles and technology to building design and construction.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '100121' => {
-            cah_l3_id: 'CAH13-01-01'
+            cah_l3_id: 'CAH13-01-01',
+            hecos_subject: 'architectural technology',
+            hecos_definition:
+             'The theory and practice of advanced techniques and new materials in architectural design and construction.',
+            cah_l3_name: 'architecture',
+            note: nil
           },
           '100122' => {
-            cah_l3_id: 'CAH13-01-01'
+            cah_l3_id: 'CAH13-01-01',
+            hecos_subject: 'architecture',
+            hecos_definition:
+             'The study of the design, construction and erection of buildings. Combines design creativity with technical competence.',
+            cah_l3_name: 'architecture',
+            note: nil
           },
           '100124' => {
-            cah_l3_id: 'CAH13-01-03'
+            cah_l3_id: 'CAH13-01-03',
+            hecos_subject: 'landscape architecture and design',
+            hecos_definition:
+             'The study of the planning, design, construction and management of large land-based spaces and scenery within the context of human activity in the urban, domestic or natural environment.',
+            cah_l3_name: 'landscape design',
+            note:
+             'Includes buildings within the landscape and the habitat surrounding them.'
           },
           '100126' => {
-            cah_l3_id: 'CAH10-01-06'
+            cah_l3_id: 'CAH10-01-06',
+            hecos_subject: 'biomechanics',
+            hecos_definition:
+             'The study of mechanical laws and the effect of physical forces on the movement and structure of individual organisms.',
+            cah_l3_name: 'bioengineering, medical and biomedical engineering',
+            note:
+             'Includes the range of length scales from nano mechanics of extracellular matrix molecules and membrane ion channels, through cell mechanics, to tissue mechanics and ultimately to organ, system and whole body level mechanics. Biomechanics can equally apply to biological systems as well as artificial systems such as implantable devices, prosthetics and orthotics. Counts as medical technology although may be studied as part of mechanical engineering.'
           },
           '100127' => {
-            cah_l3_id: 'CAH10-01-06'
+            cah_l3_id: 'CAH10-01-06',
+            hecos_subject: 'biomedical engineering',
+            hecos_definition:
+             'The study of the application of engineering principles to medical and biomedical problems.',
+            cah_l3_name: 'bioengineering, medical and biomedical engineering',
+            note: 'For more general biological issues, use bioengineering.'
           },
           '100128' => {
-            cah_l3_id: 'CAH10-01-06'
+            cah_l3_id: 'CAH10-01-06',
+            hecos_subject: 'dental technology',
+            hecos_definition:
+             'The study of the design and fabrication of dental prosthetics and restorative appliances.',
+            cah_l3_name: 'bioengineering, medical and biomedical engineering',
+            note: nil
           },
           '100129' => {
-            cah_l3_id: 'CAH02-05-01'
+            cah_l3_id: 'CAH02-05-01',
+            hecos_subject: 'diagnostic imaging',
+            hecos_definition:
+             'The study of the principles and techniques in the use of radiation to provide medical diagnostic information.',
+            cah_l3_name: 'medical technology',
+            note: nil
           },
           '100130' => {
-            cah_l3_id: 'CAH10-01-06'
+            cah_l3_id: 'CAH10-01-06',
+            hecos_subject: 'prosthetics and orthotics',
+            hecos_definition:
+             'The development and study of assistive devices including prosthetics and orthotics that can promote or substitute for lost or reduced functional capabilities.',
+            cah_l3_name: 'bioengineering, medical and biomedical engineering',
+            note: nil
           },
           '100131' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'radiology',
+            hecos_definition:
+             'The study of the principles and techniques in the use of radiation to provide diagnostic information and therapy in medicine.',
+            cah_l3_name: 'medicine by specialism',
+            note: 'includes radiography'
           },
           '100132' => {
-            cah_l3_id: 'CAH02-05-01'
+            cah_l3_id: 'CAH02-05-01',
+            hecos_subject: 'therapeutic imaging',
+            hecos_definition:
+             'The study of the treatment of human diseases by means of controlled exposure to forms of radiation.',
+            cah_l3_name: 'medical technology',
+            note: nil
           },
           '100134' => {
-            cah_l3_id: 'CAH10-03-05'
+            cah_l3_id: 'CAH10-03-05',
+            hecos_subject: 'biotechnology',
+            hecos_definition:
+             'The study of the use of biological processes or organisms for the production of materials and services.',
+            cah_l3_name: 'biotechnology',
+            note:
+             'Includes the use of techniques for the improvement of the characteristics of economically important plants and animals and for the development of micro-organisms to act on the environment.'
           },
           '100135' => {
-            cah_l3_id: 'CAH10-01-09'
+            cah_l3_id: 'CAH10-01-09',
+            hecos_subject: 'bioprocessing',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to biological processes in industry.',
+            cah_l3_name: 'chemical, process and energy engineering',
+            note: nil
           },
           '100136' => {
-            cah_l3_id: 'CAH10-03-05'
+            cah_l3_id: 'CAH10-03-05',
+            hecos_subject: 'environmental biotechnology',
+            hecos_definition:
+             'The study of the integration of sciences and engineering in order to utilise the biochemical potential of microorganisms, plants and parts thereof for the restoration and preservation of the environment and for the sustainable use of resources.',
+            cah_l3_name: 'biotechnology',
+            note: nil
           },
           '100137' => {
-            cah_l3_id: 'CAH10-03-05'
+            cah_l3_id: 'CAH10-03-05',
+            hecos_subject: 'industrial biotechnology',
+            hecos_definition:
+             'The study of the use of plants, microorganisms and their constituent molecular and biochemical components for use in potentially large-scale applications in industry.',
+            cah_l3_name: 'biotechnology',
+            note: nil
           },
           '100138' => {
-            cah_l3_id: 'CAH10-01-06'
+            cah_l3_id: 'CAH10-01-06',
+            hecos_subject: 'medical biotechnology',
+            hecos_definition:
+             'The study of biotechnology as applied to the development of human/veterinary diagnostic, therapeutic systems.',
+            cah_l3_name: 'bioengineering, medical and biomedical engineering',
+            note: nil
           },
           '100139' => {
-            cah_l3_id: 'CAH10-03-05'
+            cah_l3_id: 'CAH10-03-05',
+            hecos_subject: 'plant biotechnology',
+            hecos_definition:
+             'The study of the use of plant-based biological processes for the production of materials and services.',
+            cah_l3_name: 'biotechnology',
+            note:
+             'Includes the use of techniques for the improvement of the characteristics of economically important plants and for the development of micro-organisms to act on the environment.'
           },
           '100141' => {
-            cah_l3_id: 'CAH10-01-09'
+            cah_l3_id: 'CAH10-01-09',
+            hecos_subject: 'biochemical engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to industrial production of organic chemical compounds such as proteins and enzymes.',
+            cah_l3_name: 'chemical, process and energy engineering',
+            note: nil
           },
           '100143' => {
-            cah_l3_id: 'CAH10-01-09'
+            cah_l3_id: 'CAH10-01-09',
+            hecos_subject: 'chemical engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to industrial processing to produce food, pharmaceuticals, plastics, petroleum products etc, and alternatives to them.',
+            cah_l3_name: 'chemical, process and energy engineering',
+            note: nil
           },
           '100144' => {
-            cah_l3_id: 'CAH10-01-09'
+            cah_l3_id: 'CAH10-01-09',
+            hecos_subject: 'pharmaceutical engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to industrial preparation of drugs.',
+            cah_l3_name: 'chemical, process and energy engineering',
+            note: nil
           },
           '100145' => {
-            cah_l3_id: 'CAH10-03-03'
+            cah_l3_id: 'CAH10-03-03',
+            hecos_subject: 'polymer science and technology',
+            hecos_definition:
+             'The study of the synthesis, design, production, processing and use of organic polymer materials',
+            cah_l3_name: 'polymers and textiles',
+            note: nil
           },
           '100147' => {
-            cah_l3_id: 'CAH13-01-02'
+            cah_l3_id: 'CAH13-01-02',
+            hecos_subject: 'building services engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to everything inside a building which makes it safe and comfortable to be in.',
+            cah_l3_name: 'building',
+            note:
+             'From CIBSE website: Includes energy supply - gas, electricity and renewable sources heating and ventilating water , drainage and plumbing daylighting and artificial lighting escalators and lifts ventilation and refrigeration harnessing solar, wind and biomass energy communications, telephones and IT networks security and alarm systems fire detection and protection air conditioning and refrigeration facade engineering'
           },
           '100148' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'civil engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the designing and construction of public works, e.g. buildings, bridges, pipelines etc. Involves the study and application of specialist mathematics.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '100149' => {
-            cah_l3_id: 'CAH13-01-02'
+            cah_l3_id: 'CAH13-01-02',
+            hecos_subject: 'construction',
+            hecos_definition:
+             'The study of scientific, mathematical and management principles as they apply to the planning, design, and building of facilities and structures.',
+            cah_l3_name: 'building',
+            note:
+             'Includes the whole construction process, including management, surveying, quantity surveying and architectural technology.'
           },
           '100150' => {
-            cah_l3_id: 'CAH13-01-02'
+            cah_l3_id: 'CAH13-01-02',
+            hecos_subject: 'construction and the built environment',
+            hecos_definition:
+             'The multidisciplinary study of how the implementation of building solutions relates to investment in, and the ownership, use, development, management, maintenance and improvement of land, buildings and facilities in the context of identifiable physical, urban, rural or maritime parameters.',
+            cah_l3_name: 'building',
+            note:
+             'Has a particular focus on the environment and sustainability. Covers broad-based programmes, broader than construction management or construction.'
           },
           '100151' => {
-            cah_l3_id: 'CAH13-01-02'
+            cah_l3_id: 'CAH13-01-02',
+            hecos_subject: 'construction management',
+            hecos_definition:
+             'The study of the implementation of construction projects to the client\'s specification from inception to completion.',
+            cah_l3_name: 'building',
+            note:
+             'Focuses on management aspects, including project management, law, sustainability, economics, business management in a construction context. Narrower focus than construction and the built environment.'
           },
           '100152' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'offshore engineering',
+            hecos_definition:
+             'The study and principles of engineering as they apply to the construction of structures sited in the sea and their interaction with wind and waves. Involves the study and application of specialist mathematics.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '100153' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'structural engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the design and construction of structures in the built environment.',
+            cah_l3_name: 'civil engineering',
+            note: 'Involves the study and application of specialist mathematics.'
           },
           '100154' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'transport engineering',
+            hecos_definition:
+             'The study and principles of engineering as they apply to the planning, development and construction of the routes for any form of terrestrial transport.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '100155' => {
-            cah_l3_id: 'CAH10-03-01'
+            cah_l3_id: 'CAH10-03-01',
+            hecos_subject: 'minerals technology',
+            hecos_definition:
+             'The study of the production of minerals and metals and their separation from other elements contained within mineral deposits.',
+            cah_l3_name: 'minerals technology',
+            note: nil
           },
           '100156' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'highways engineering',
+            hecos_definition:
+             'The study and principles of engineering as they apply to the planning, development and construction of the routes for road transport.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '100157' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'railway engineering',
+            hecos_definition:
+             'The study and principles of engineering as they apply to the planning, development and construction of the routes for rail transport.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '100159' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'telecommunications engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the reliable transmission, over some distance, of information bearing signals by means of electromagnetic waves (radio, optical or electro-magnetic signals) over imperfect media.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100160' => {
-            cah_l3_id: 'CAH10-01-01'
+            cah_l3_id: 'CAH10-01-01',
+            hecos_subject: 'computer aided engineering',
+            hecos_definition:
+             'The study and development of the use of computers with particular application to engineering problems. Includes aspects of software design and programming skills.',
+            cah_l3_name: 'engineering (non-specific)',
+            note: nil
           },
           '100162' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'computer systems engineering',
+            hecos_definition:
+             'The integrated study of the principles of engineering as they apply to the design, creation, integration and management of computers within complex situations, using techniques from computer science, electronic engineering and control engineering.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100163' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'electrical and electronic engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the practical uses of electricity. Electrical Engineering: The study of the principles of engineering as they apply to the practical uses of electrical systems, examples of systems are power generation, transmission and motors, and typically electrical engineering involves high currents. Electronic Engineering: The study of the principles of engineering as they apply to devices whereby electrons are conducted at low currents through a semi-conductor, free space or gas.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: 'Involves the study of charged particles.'
           },
           '100164' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'electrical engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the practical uses of electrical systems, examples of systems are power generation, transmission and motors, and typically electrical engineering involves high currents.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note:
+             'Involves the study of charged particles. Closely linked with electronic engineering.'
           },
           '100165' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'electronic engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to devices whereby electrons are conducted at low currents through a semi-conductor, free space or gas.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100166' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'control systems',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to electrical and electronic methods of measurement, regulation and operation.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100168' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'microelectronic engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to micro and sub-micro scale electronic designs and components.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100169' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'optoelectronic engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to devices in which an optical input produces electrical output or in which electrical stimulation produces visible, ultraviolet or infrared output.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100170' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'mechatronics and robotics',
+            hecos_definition: 'The study of designing, building and use of robots.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '100172' => {
-            cah_l3_id: 'CAH10-01-09'
+            cah_l3_id: 'CAH10-01-09',
+            hecos_subject: 'nuclear engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to industrial use and development of nuclear energy.',
+            cah_l3_name: 'chemical, process and energy engineering',
+            note: nil
           },
           '100175' => {
-            cah_l3_id: 'CAH10-01-09'
+            cah_l3_id: 'CAH10-01-09',
+            hecos_subject: 'energy engineering',
+            hecos_definition:
+             'The study and principles of engineering as they apply to the development and exploitation of various forms of energy, e.g. wind, water, solar etc. Involves the study and application of specialist mathematics.',
+            cah_l3_name: 'chemical, process and energy engineering',
+            note: nil
           },
           '100176' => {
-            cah_l3_id: 'CAH10-01-09'
+            cah_l3_id: 'CAH10-01-09',
+            hecos_subject: 'gas engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to gases and their production and use.',
+            cah_l3_name: 'chemical, process and energy engineering',
+            note: nil
           },
           '100177' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'microwave engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to very short wavelength electromagnetic radiation used for a variety of applications, including the transmission and receipt of data.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100178' => {
-            cah_l3_id: 'CAH10-01-09'
+            cah_l3_id: 'CAH10-01-09',
+            hecos_subject: 'petroleum engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the extraction, processing and refining of petroleum.',
+            cah_l3_name: 'chemical, process and energy engineering',
+            note: nil
           },
           '100180' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'environmental engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the sympathetic use of natural resources.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '100182' => {
-            cah_l3_id: 'CAH10-01-01'
+            cah_l3_id: 'CAH10-01-01',
+            hecos_subject: 'engineering design',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the design and development of devices, systems and processes.',
+            cah_l3_name: 'engineering (non-specific)',
+            note: nil
           },
           '100183' => {
-            cah_l3_id: 'CAH10-01-10'
+            cah_l3_id: 'CAH10-01-10',
+            hecos_subject: 'fire safety engineering',
+            hecos_definition:
+             'The study of devices, structures and systems and the design, development and operation of these to reduce the risk of injury or damage through fire.',
+            cah_l3_name: 'others in engineering',
+            note: nil
           },
           '100184' => {
-            cah_l3_id: 'CAH10-01-01'
+            cah_l3_id: 'CAH10-01-01',
+            hecos_subject: 'general or integrated engineering',
+            hecos_definition:
+             'The study of design, development, construction, operation and maintenance of any device, process or system, which uses the resources of nature to fulfil human needs and aspirations.',
+            cah_l3_name: 'engineering (non-specific)',
+            note: 'Includes negotiated studies in engineering'
           },
           '100185' => {
-            cah_l3_id: 'CAH10-01-10'
+            cah_l3_id: 'CAH10-01-10',
+            hecos_subject: 'safety engineering',
+            hecos_definition:
+             'The study of devices, structures, systems and processes and the design, development and operation of these to reduce the risk of injury or sickness.',
+            cah_l3_name: 'others in engineering',
+            note: 'includes JACS3 water quality control and public health engineering'
           },
           '100186' => {
-            cah_l3_id: 'CAH10-03-06'
+            cah_l3_id: 'CAH10-03-06',
+            hecos_subject: 'emergency and disaster technologies',
+            hecos_definition:
+             'The study of technical responses to emergencies and disasters.',
+            cah_l3_name: 'others in technology',
+            note: nil
           },
           '100188' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'systems engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to an assembly of components with interdependent functions.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100190' => {
-            cah_l3_id: 'CAH10-01-02'
+            cah_l3_id: 'CAH10-01-02',
+            hecos_subject: 'mechanical engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the design, development manufacture and operation of machinery.',
+            cah_l3_name: 'mechanical engineering',
+            note: nil
           },
           '100192' => {
-            cah_l3_id: 'CAH10-01-02'
+            cah_l3_id: 'CAH10-01-02',
+            hecos_subject: 'electromechanical engineering',
+            hecos_definition: 'The study of electrically-operated mechanical devices.',
+            cah_l3_name: 'mechanical engineering',
+            note:
+             'For a focus on instrumentation and / or control systems, use control systems.'
           },
           '100193' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'maintenance engineering',
+            hecos_definition:
+             'The study of the techniques and skills involved in the routine maintenance of industrial machinery.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '100194' => {
-            cah_l3_id: 'CAH10-03-04'
+            cah_l3_id: 'CAH10-03-04',
+            hecos_subject: 'marine technology',
+            hecos_definition:
+             'The study of the processes and systems used in boats, ships and other marine craft.',
+            cah_l3_name: 'maritime technology',
+            note: nil
           },
           '100196' => {
-            cah_l3_id: 'CAH13-01-04'
+            cah_l3_id: 'CAH13-01-04',
+            hecos_subject: 'housing',
+            hecos_definition:
+             'The study of the development and management of housing projects in the private and social sectors and in land use planning.',
+            cah_l3_name: 'planning (urban, rural and regional)',
+            note: nil
           },
           '100197' => {
-            cah_l3_id: 'CAH13-01-04'
+            cah_l3_id: 'CAH13-01-04',
+            hecos_subject: 'planning',
+            hecos_definition:
+             'The study of the interaction between town and country land use.',
+            cah_l3_name: 'planning (urban, rural and regional)',
+            note: 'Includes the use of land for building.'
           },
           '100198' => {
-            cah_l3_id: 'CAH13-01-04'
+            cah_l3_id: 'CAH13-01-04',
+            hecos_subject: 'transport planning',
+            hecos_definition:
+             'The study of the development and management of transportation systems.',
+            cah_l3_name: 'planning (urban, rural and regional)',
+            note: nil
           },
           '100199' => {
-            cah_l3_id: 'CAH13-01-04'
+            cah_l3_id: 'CAH13-01-04',
+            hecos_subject: 'urban and regional planning',
+            hecos_definition:
+             'The study of the planning of the infrastructure and development of settlements, including new towns and the management of change.',
+            cah_l3_name: 'planning (urban, rural and regional)',
+            note: nil
           },
           '100201' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'automotive engineering',
+            hecos_definition: 'The study of mechanical self propulsion in vehicles.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '100202' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'manufacturing engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the design, installation and maintenance of production-line technologies.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '100203' => {
-            cah_l3_id: 'CAH10-03-02'
+            cah_l3_id: 'CAH10-03-02',
+            hecos_subject: 'materials engineering',
+            hecos_definition:
+             'The study of the development, processing, enhancement/modification and application of engineering materials.',
+            cah_l3_name: 'materials technology',
+            note: nil
           },
           '100204' => {
-            cah_l3_id: 'CAH10-01-10'
+            cah_l3_id: 'CAH10-01-10',
+            hecos_subject: 'mining engineering',
+            hecos_definition:
+             'The study of the design, development and operational evaluation of mineral extraction, processing and refining systems, including open pit and shaft mines, prospecting and site analysis equipment and instruments, environmental and safety systems, mine equipment and facilities, mineral processing and refining methods and systems, and logistics and communications systems.',
+            cah_l3_name: 'others in engineering',
+            note: nil
           },
           '100205' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'motorcycle engineering',
+            hecos_definition:
+             'The study of mechanical engineering as applied to motorcycles.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note:
+             'May include engine technology, power train engineering, chassis performance, management, materials, diagnostics and design.'
           },
           '100206' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'motorsport engineering',
+            hecos_definition:
+             'The study of mechanical engineering as applied to motorsport.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note:
+             'May include engine technology, power train engineering, chassis performance, racing engineering, management, materials, simulation and data analysis.'
           },
           '100207' => {
-            cah_l3_id: 'CAH10-01-05'
+            cah_l3_id: 'CAH10-01-05',
+            hecos_subject: 'naval architecture',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to ships and their reaction to water and its pressures.',
+            cah_l3_name: 'naval architecture',
+            note: 'Involves the study and application of specialist mathematics.'
           },
           '100209' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'production and manufacturing engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the management and control of factory and workshop techniques and the industrial developments in technology and materials.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '100210' => {
-            cah_l3_id: 'CAH10-03-03'
+            cah_l3_id: 'CAH10-03-03',
+            hecos_subject: 'leather technology',
+            hecos_definition: 'The study of the processing and use of leather.',
+            cah_l3_name: 'polymers and textiles',
+            note: 'Includes tanning and methods of preserving leather.'
           },
           '100211' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'fabrication',
+            hecos_definition:
+             'The study of the processes involved in the production and manufacture of metallic objects and structures.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '100212' => {
-            cah_l3_id: 'CAH10-03-01'
+            cah_l3_id: 'CAH10-03-01',
+            hecos_subject: 'minerals processing',
+            hecos_definition:
+             'The study of the processing of minerals and metals from their raw or ore states.',
+            cah_l3_name: 'minerals technology',
+            note: nil
           },
           '100213' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'quality management',
+            hecos_definition:
+             'The study of approaches to ensuring the consistency of organisational behaviour, products and services through the use of techniques for planning, control, assurance and improvement.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '100214' => {
-            cah_l3_id: 'CAH10-03-03'
+            cah_l3_id: 'CAH10-03-03',
+            hecos_subject: 'textiles technology',
+            hecos_definition: 'The study of the use and development of textiles.',
+            cah_l3_name: 'polymers and textiles',
+            note: nil
           },
           '100216' => {
-            cah_l3_id: 'CAH13-01-02'
+            cah_l3_id: 'CAH13-01-02',
+            hecos_subject: 'building surveying',
+            hecos_definition:
+             'The study of techniques for the analysis of a building\'s performance from design and construction, through to maintenance and repair.',
+            cah_l3_name: 'building',
+            note: nil
           },
           '100217' => {
-            cah_l3_id: 'CAH13-01-02'
+            cah_l3_id: 'CAH13-01-02',
+            hecos_subject: 'quantity surveying',
+            hecos_definition:
+             'The study of the financial management, project management and commercial management of construction projects.',
+            cah_l3_name: 'building',
+            note: nil
           },
           '100218' => {
-            cah_l3_id: 'CAH17-01-02'
+            cah_l3_id: 'CAH17-01-02',
+            hecos_subject: 'real estate',
+            hecos_definition:
+             'The study of the development, buying, selling, appraisal and management of land, including policy, law, investment, marketing, management, leasing and rental business.',
+            cah_l3_name: 'business studies',
+            note: nil
           },
           '100219' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'surveying',
+            hecos_definition:
+             'The study and practice of measuring altitudes, angles and distances on the land surface so that they can be accurately plotted on a map.',
+            cah_l3_name: 'civil engineering',
+            note:
+             'May include the use of satellite information. Includes the setting out on the ground of the positions of proposed structures.'
           },
           '100221' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'music technology',
+            hecos_definition:
+             'The study of the technical aspects involved with the musical arts, particularly the use of electronic devices and music industry business practices.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100222' => {
-            cah_l3_id: 'CAH10-03-06'
+            cah_l3_id: 'CAH10-03-06',
+            hecos_subject: 'audio technology',
+            hecos_definition:
+             'The study of the systems and processes used in the manipulation and amplification of sound. Includes the recording of sound and/or music.',
+            cah_l3_name: 'others in technology',
+            note: nil
           },
           '100223' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'music production',
+            hecos_definition:
+             'The study of/training in the techniques required to obtain accurate and lifelike recordings of musical performances.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100225' => {
-            cah_l3_id: 'CAH10-03-07'
+            cah_l3_id: 'CAH10-03-07',
+            hecos_subject: 'materials science',
+            hecos_definition:
+             'The study of the crystalline and granular structure of materials, including electronic atomic and molecular configurations.',
+            cah_l3_name: 'materials science',
+            note: 'May include the study of mining and mining techniques.'
           },
           '100229' => {
-            cah_l3_id: 'CAH10-01-04'
+            cah_l3_id: 'CAH10-01-04',
+            hecos_subject: 'aviation studies',
+            hecos_definition:
+             'The study of the technical aspects of flying and navigation.',
+            cah_l3_name: 'aeronautical and aerospace engineering',
+            note: nil
           },
           '100230' => {
-            cah_l3_id: 'CAH10-03-06'
+            cah_l3_id: 'CAH10-03-06',
+            hecos_subject: 'navigation',
+            hecos_definition: 'The study of the processes involved in navigation.',
+            cah_l3_name: 'others in technology',
+            note: nil
           },
           '100233' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'acupuncture',
+            hecos_definition:
+             'The study of/training in the method of treating various conditions by pricking the skin or tissues with needles.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '100234' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'alternative medicines and therapies',
+            hecos_definition:
+             'The study of the methods of diagnosis and treatment considered outside the scope of mainstream medicine in the UK.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note:
+             'For medicines and therapies used alongside conventional medicine, use \'complementary medicines and therapies\'.'
           },
           '100235' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'aromatherapy',
+            hecos_definition:
+             'The use of scented plant extracts and essential oils in massage.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '100236' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'Chinese medical techniques',
+            hecos_definition:
+             'The study of the range of medical techniques with roots in China, such as moxibustion, massage, cupping, gwa sha, breath work (Qi Gong) and exercise (Tai Chi).',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: 'May include acupuncture.'
           },
           '100237' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'herbal medicine',
+            hecos_definition:
+             'The study of the use of herbs in the treatment of illness.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '100239' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'reflexology',
+            hecos_definition:
+             'A system of massage through reflex points on the feet, hands and head used to relieve tension and treat illness.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '100241' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'chiropractic',
+            hecos_definition:
+             'The study of the diagnosis and manipulative treatment of mechanical disorders of the joints.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '100242' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'complementary medicines and therapies',
+            hecos_definition:
+             'The study of medicines and therapies used alongside conventional medicine, but not covered within clinical medicine, to prevent and alleviate illness and disease as well as enhance health and well-being.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note:
+             'For medicines and therapies that are outside the scope of mainstream medicine in the UK, use \'alternative medicines and therapies\'.'
           },
           '100243' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'osteopathy',
+            hecos_definition:
+             'The study of the treatment of disease through the manipulation of bones.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '100246' => {
-            cah_l3_id: 'CAH02-06-01'
+            cah_l3_id: 'CAH02-06-01',
+            hecos_subject: 'health sciences',
+            hecos_definition:
+             'The study, using scientific principles, of the functioning of the human body and mind, their maintenance and improvement, including the study of the occurrence, diagnosis and treatment of disease and disability.',
+            cah_l3_name: 'health sciences (non-specific)',
+            note: nil
           },
           '100247' => {
-            cah_l3_id: 'CAH02-06-02'
+            cah_l3_id: 'CAH02-06-02',
+            hecos_subject: 'nutrition',
+            hecos_definition:
+             'The study of the process of assimilating nutrient materials into animal or plant tissue. Designed to enhance health and the quality of life of those treated.',
+            cah_l3_name: 'nutrition and dietetics',
+            note: nil
           },
           '100248' => {
-            cah_l3_id: 'CAH02-06-04'
+            cah_l3_id: 'CAH02-06-04',
+            hecos_subject: 'occupational health',
+            hecos_definition:
+             'The monitoring and evaluation of health standards related to industrial and commercial workplaces and locations.',
+            cah_l3_name: 'environmental and public health',
+            note: nil
           },
           '100249' => {
-            cah_l3_id: 'CAH02-06-07'
+            cah_l3_id: 'CAH02-06-07',
+            hecos_subject: 'occupational therapy',
+            hecos_definition:
+             'The study of therapeutic regimes to assist recovery from mental or physical ailments/injury.',
+            cah_l3_name: 'counselling, psychotherapy and occupational therapy',
+            note: nil
           },
           '100250' => {
-            cah_l3_id: 'CAH02-02-01'
+            cah_l3_id: 'CAH02-02-01',
+            hecos_subject: 'pharmacology',
+            hecos_definition:
+             'The study of the therapeutic and toxic effects of drugs on human tissues and systems.',
+            cah_l3_name: 'pharmacology',
+            note: nil
           },
           '100251' => {
-            cah_l3_id: 'CAH02-02-03'
+            cah_l3_id: 'CAH02-02-03',
+            hecos_subject: 'pharmacy',
+            hecos_definition:
+             'The study of the professional practice of pharmacy, including instruction in principles of medicinal chemistry, drug behaviour, and mixing, preparing and dispensing of prescription medications.',
+            cah_l3_name: 'pharmacy',
+            note: nil
           },
           '100252' => {
-            cah_l3_id: 'CAH02-06-05'
+            cah_l3_id: 'CAH02-06-05',
+            hecos_subject: 'physiotherapy',
+            hecos_definition:
+             'The study of the planning and execution of treatment programmes to prevent or remedy physical dysfunction, relieve pain and prevent further disability.',
+            cah_l3_name: 'physiotherapy',
+            note: nil
           },
           '100253' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'podiatry',
+            hecos_definition:
+             'The study of the diagnosis and management of pathologies of the lower limb and foot.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '100254' => {
-            cah_l3_id: 'CAH02-06-07'
+            cah_l3_id: 'CAH02-06-07',
+            hecos_subject: 'psychotherapy',
+            hecos_definition:
+             'The study and application of psychological processes of therapy.',
+            cah_l3_name: 'counselling, psychotherapy and occupational therapy',
+            note: 'Included in NHS scientific, therapeutic & technical area'
           },
           '100255' => {
-            cah_l3_id: 'CAH02-06-01'
+            cah_l3_id: 'CAH02-06-01',
+            hecos_subject: 'speech and language therapy',
+            hecos_definition:
+             'The study of speech, language and communication difficulties as well as swallowing difficulties and approaches to assessment and intervention to support people living with such difficulties.',
+            cah_l3_name: 'health sciences (non-specific)',
+            note: nil
           },
           '100257' => {
-            cah_l3_id: 'CAH02-05-02'
+            cah_l3_id: 'CAH02-05-02',
+            hecos_subject: 'audiology',
+            hecos_definition:
+             'The study of human hearing and balance systems and their function; and the assessment, treatment, management and prevention of disorders of these functions.',
+            cah_l3_name: 'healthcare science (non-specific)',
+            note: nil
           },
           '100258' => {
-            cah_l3_id: 'CAH02-05-04'
+            cah_l3_id: 'CAH02-05-04',
+            hecos_subject: 'clinical physiology',
+            hecos_definition:
+             'The study of the major physiology systems in humans, measurement techniques in their normal and abnormal function, and their use in the diagnosis and treatment of disease.',
+            cah_l3_name: 'anatomy, physiology and pathology',
+            note: nil
           },
           '100259' => {
-            cah_l3_id: 'CAH03-01-07'
+            cah_l3_id: 'CAH03-01-07',
+            hecos_subject: 'genetics',
+            hecos_definition:
+             'The scientific study of origin, heredity and variation in organisms.',
+            cah_l3_name: 'genetics',
+            note:
+             'Includes the inheritance of biological information. Includes both healthcare and biological science perspectives.'
           },
           '100260' => {
-            cah_l3_id: 'CAH02-05-02'
+            cah_l3_id: 'CAH02-05-02',
+            hecos_subject: 'healthcare science',
+            hecos_definition:
+             'The study of life sciences, physiological sciences, clinical engineering, medical physics, bioinformatics, and audiology in order to prevent, diagnose and treat medical conditions, and rehabilitate patients from them.',
+            cah_l3_name: 'healthcare science (non-specific)',
+            note: nil
           },
           '100261' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'ophthalmology',
+            hecos_definition:
+             'The study of the eye, disruption to sight and diseases of the eye. Also includes treatment of eye disorders.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '100262' => {
-            cah_l3_id: 'CAH02-05-04'
+            cah_l3_id: 'CAH02-05-04',
+            hecos_subject: 'physiology',
+            hecos_definition:
+             'The study of the function and behaviour of the human body, including subjects such as respiration, circulation, digestion, excretion, reproduction and neuroscience.',
+            cah_l3_name: 'anatomy, physiology and pathology',
+            note:
+             'Physiology is the term used in HE. Physiological sciences is used in NHS.'
           },
           '100264' => {
-            cah_l3_id: 'CAH02-05-04'
+            cah_l3_id: 'CAH02-05-04',
+            hecos_subject: 'anatomy',
+            hecos_definition:
+             'The scientific study of the structure and function of the human body, including tissues, organs and systems.',
+            cah_l3_name: 'anatomy, physiology and pathology',
+            note: nil
           },
           '100265' => {
-            cah_l3_id: 'CAH02-05-03'
+            cah_l3_id: 'CAH02-05-03',
+            hecos_subject: 'biomedical sciences',
+            hecos_definition:
+             'The integrative scientific study of biological issues related to the support of the diagnosis and treatment of disease.',
+            cah_l3_name: 'biomedical sciences (non-specific)',
+            note: nil
           },
           '100266' => {
-            cah_l3_id: 'CAH01-01-04'
+            cah_l3_id: 'CAH01-01-04',
+            hecos_subject: 'clinical dentistry',
+            hecos_definition:
+             'The study of the observation, diagnosis and treatment of disease or damage to teeth and gums through direct interaction with human patients.',
+            cah_l3_name: 'dentistry',
+            note: nil
           },
           '100267' => {
-            cah_l3_id: 'CAH01-01-02'
+            cah_l3_id: 'CAH01-01-02',
+            hecos_subject: 'clinical medicine',
+            hecos_definition:
+             'The study of the observation, diagnosis and treatment of an illness or disease through direct interaction with human patients.',
+            cah_l3_name: 'medicine (non-specific)',
+            note: nil
           },
           '100268' => {
-            cah_l3_id: 'CAH01-01-04'
+            cah_l3_id: 'CAH01-01-04',
+            hecos_subject: 'dentistry',
+            hecos_definition:
+             'The study of the vocational science concerned with the observation, diagnosis and treatment of damage, disease and disorder to the teeth and gums of homo sapiens, in both clinical and non-clinical settings.',
+            cah_l3_name: 'dentistry',
+            note: nil
           },
           '100270' => {
-            cah_l3_id: 'CAH01-01-01'
+            cah_l3_id: 'CAH01-01-01',
+            hecos_subject: 'medical sciences',
+            hecos_definition:
+             'The study of sciences dealing with the maintenance of health and the prevention and treatment of disease.',
+            cah_l3_name: 'medical sciences (non-specific)',
+            note: nil
           },
           '100271' => {
-            cah_l3_id: 'CAH01-01-02'
+            cah_l3_id: 'CAH01-01-02',
+            hecos_subject: 'medicine',
+            hecos_definition:
+             'Vocational science of preventing, diagnosing, alleviating or curing disease in homo sapiens through the observation, diagnosis and treatment of an illness or disease.',
+            cah_l3_name: 'medicine (non-specific)',
+            note: 'Includes both pre-clinical and clinical practice.'
           },
           '100272' => {
-            cah_l3_id: 'CAH02-05-03'
+            cah_l3_id: 'CAH02-05-03',
+            hecos_subject: 'neuroscience',
+            hecos_definition:
+             'The study of the anatomy, physiology, biophysics, biochemistry, molecular biology, pharmacology and behaviour of human nerve cells and nervous systems.',
+            cah_l3_name: 'biomedical sciences (non-specific)',
+            note: nil
           },
           '100273' => {
-            cah_l3_id: 'CAH02-06-01'
+            cah_l3_id: 'CAH02-06-01',
+            hecos_subject: 'operating department practice',
+            hecos_definition:
+             'The study of support to operating theatre staff, including provision of care to patients, before, during and after surgery.',
+            cah_l3_name: 'health sciences (non-specific)',
+            note: nil
           },
           '100274' => {
-            cah_l3_id: 'CAH02-05-04'
+            cah_l3_id: 'CAH02-05-04',
+            hecos_subject: 'pathology',
+            hecos_definition:
+             'The study of the nature, causes and development of human diseases, and the mechanisms of disease infestation and transfer.',
+            cah_l3_name: 'anatomy, physiology and pathology',
+            note: nil
           },
           '100275' => {
-            cah_l3_id: 'CAH01-01-04'
+            cah_l3_id: 'CAH01-01-04',
+            hecos_subject: 'pre-clinical dentistry',
+            hecos_definition:
+             'The vocational study of the science concerned with the diagnosis and treatment of damage, disease and disorder to the teeth and gums of homo sapiens.',
+            cah_l3_name: 'dentistry',
+            note: nil
           },
           '100276' => {
-            cah_l3_id: 'CAH01-01-02'
+            cah_l3_id: 'CAH01-01-02',
+            hecos_subject: 'pre-clinical medicine',
+            hecos_definition:
+             'The vocational study of the science of preventing, diagnosing, alleviating or curing disease in homo sapiens without direct involvement with patients.',
+            cah_l3_name: 'medicine (non-specific)',
+            note: nil
           },
           '100277' => {
-            cah_l3_id: 'CAH02-02-02'
+            cah_l3_id: 'CAH02-02-02',
+            hecos_subject: 'toxicology',
+            hecos_definition:
+             'The study of the nature, source, identification and characteristics of poisons, toxic substances, and exogenous chemical agents and their effects on human tissues and systems.',
+            cah_l3_name: 'toxicology',
+            note: nil
           },
           '100279' => {
-            cah_l3_id: 'CAH02-04-02'
+            cah_l3_id: 'CAH02-04-02',
+            hecos_subject: 'adult nursing',
+            hecos_definition:
+             'The study of the principles and techniques to allow nurses to assess, manage, treat and monitor the provision of care of adults in a variety of settings.',
+            cah_l3_name: 'adult nursing',
+            note: nil
           },
           '100280' => {
-            cah_l3_id: 'CAH02-04-05'
+            cah_l3_id: 'CAH02-04-05',
+            hecos_subject: 'children\'s nursing',
+            hecos_definition:
+             'The study of the principles and techniques to allow nurses to support and provide care for children and their families, from infancy to adolescence.',
+            cah_l3_name: 'children\'s nursing',
+            note: nil
           },
           '100281' => {
-            cah_l3_id: 'CAH02-04-03'
+            cah_l3_id: 'CAH02-04-03',
+            hecos_subject: 'community nursing',
+            hecos_definition:
+             'The study of principles and techniques for assessing, managing, treating and monitoring the health care needs of patients and families outside of a hospital environment.',
+            cah_l3_name: 'community nursing',
+            note: nil
           },
           '100282' => {
-            cah_l3_id: 'CAH02-04-09'
+            cah_l3_id: 'CAH02-04-09',
+            hecos_subject: 'critical care nursing',
+            hecos_definition:
+             'The study of the principles and techniques to allow nurses to assess, manage, treat and monitor the provision of care to critically ill patients.',
+            cah_l3_name: 'others in nursing',
+            note: nil
           },
           '100283' => {
-            cah_l3_id: 'CAH02-04-06'
+            cah_l3_id: 'CAH02-04-06',
+            hecos_subject: 'dental nursing',
+            hecos_definition:
+             'The study of principles and techniques in providing assistance to dentists undertaking procedures and care to persons undergoing such procedures.',
+            cah_l3_name: 'dental nursing',
+            note: nil
           },
           '100284' => {
-            cah_l3_id: 'CAH02-04-09'
+            cah_l3_id: 'CAH02-04-09',
+            hecos_subject: 'emergency nursing',
+            hecos_definition:
+             'The study of the principles and techniques to allow nurses to assess, manage, treat and monitor the provision of care for patients at first contact in the Emergency department.',
+            cah_l3_name: 'others in nursing',
+            note: nil
           },
           '100285' => {
-            cah_l3_id: 'CAH02-04-03'
+            cah_l3_id: 'CAH02-04-03',
+            hecos_subject: 'general practice nursing',
+            hecos_definition:
+             'The study of the principles and techniques for the assessing, screening, treating, care and education of patients within general practitioner practices.',
+            cah_l3_name: 'community nursing',
+            note: nil
           },
           '100286' => {
-            cah_l3_id: 'CAH02-04-08'
+            cah_l3_id: 'CAH02-04-08',
+            hecos_subject: 'learning disabilities nursing',
+            hecos_definition:
+             'The study of the principles and techniques to provide support for children and adults with learning difficulties.',
+            cah_l3_name: 'learning disabilities nursing',
+            note: nil
           },
           '100287' => {
-            cah_l3_id: 'CAH02-04-07'
+            cah_l3_id: 'CAH02-04-07',
+            hecos_subject: 'mental health nursing',
+            hecos_definition:
+             'The study of the principles and therapeutic interventions that allow nurses to provide care for people with mental health needs.',
+            cah_l3_name: 'mental health nursing',
+            note: nil
           },
           '100288' => {
-            cah_l3_id: 'CAH02-04-04'
+            cah_l3_id: 'CAH02-04-04',
+            hecos_subject: 'midwifery',
+            hecos_definition:
+             'The study of the principles and techniques to allow midwives to deliver babies and treat mothers in the pre-natal, delivery and post-delivery periods.',
+            cah_l3_name: 'midwifery',
+            note: nil
           },
           '100289' => {
-            cah_l3_id: 'CAH02-04-09'
+            cah_l3_id: 'CAH02-04-09',
+            hecos_subject: 'neonatal nursing',
+            hecos_definition:
+             'The study of the principles and techniques to allow nurses to support and provide care for new-born babies who are premature or who are born sick, and their families.',
+            cah_l3_name: 'others in nursing',
+            note: nil
           },
           '100290' => {
-            cah_l3_id: 'CAH02-04-01'
+            cah_l3_id: 'CAH02-04-01',
+            hecos_subject: 'nursing',
+            hecos_definition:
+             'The study of principles and techniques for assessing, managing, treating and monitoring patients.',
+            cah_l3_name: 'nursing (non-specific)',
+            note: nil
           },
           '100291' => {
-            cah_l3_id: 'CAH02-04-09'
+            cah_l3_id: 'CAH02-04-09',
+            hecos_subject: 'older people nursing',
+            hecos_definition:
+             'The study of the principles and techniques to allow nurses to assess, manage, treat and monitor the provision of care for older adults.',
+            cah_l3_name: 'others in nursing',
+            note: nil
           },
           '100292' => {
-            cah_l3_id: 'CAH02-04-09'
+            cah_l3_id: 'CAH02-04-09',
+            hecos_subject: 'palliative care nursing',
+            hecos_definition:
+             'The study of principles and techniques for assessing, managing, treating and monitoring the provision of palliative care for individuals with life-limiting conditions.',
+            cah_l3_name: 'others in nursing',
+            note: nil
           },
           '100293' => {
-            cah_l3_id: 'CAH02-04-03'
+            cah_l3_id: 'CAH02-04-03',
+            hecos_subject: 'school nursing',
+            hecos_definition:
+             'The study of principles and techniques for the provision of nursing care within a school setting or to children and young people of school age.',
+            cah_l3_name: 'community nursing',
+            note: nil
           },
           '100294' => {
-            cah_l3_id: 'CAH02-04-09'
+            cah_l3_id: 'CAH02-04-09',
+            hecos_subject: 'theatre nursing',
+            hecos_definition:
+             'The study of the principles and techniques to allow nurses to assess, manage, treat and monitor the provision of care for patients undergoing surgical intervention.',
+            cah_l3_name: 'others in nursing',
+            note: nil
           },
           '100295' => {
-            cah_l3_id: 'CAH02-04-03'
+            cah_l3_id: 'CAH02-04-03',
+            hecos_subject: 'health visiting',
+            hecos_definition:
+             'The study of the promotion of health and health education specialising in working with families with children under 5 years old and older people.',
+            cah_l3_name: 'community nursing',
+            note: nil
           },
           '100298' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'ancient history',
+            hecos_definition:
+             'Historical studies of the period from earliest recorded times to about 500 CE.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100299' => {
-            cah_l3_id: 'CAH20-01-03'
+            cah_l3_id: 'CAH20-01-03',
+            hecos_subject: 'archaeology',
+            hecos_definition:
+             'The study of human activity in the past through analysis of the material culture and environmental data left behind by past human populations.',
+            cah_l3_name: 'archaeology',
+            note: nil
           },
           '100300' => {
-            cah_l3_id: 'CAH20-01-05'
+            cah_l3_id: 'CAH20-01-05',
+            hecos_subject: 'classical studies',
+            hecos_definition:
+             'The study of the civilisations of ancient Greece and Rome. May involve investigation into their relationship with modern day civilisation.',
+            cah_l3_name: 'classics',
+            note: nil
           },
           '100301' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'economic history',
+            hecos_definition:
+             'Study of the growth and development of economies in history.',
+            cah_l3_name: 'history',
+            note: 'May include the study of industrialisation.'
           },
           '100302' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'history',
+            hecos_definition:
+             'The study and interpretation of the past, including the gathering, recording, synthesizing and criticizing of evidence and theories about past events.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100306' => {
-            cah_l3_id: 'CAH20-01-02'
+            cah_l3_id: 'CAH20-01-02',
+            hecos_subject: 'history of art',
+            hecos_definition:
+             'Historical study of developments in the arts and consideration of art history methods and techniques. Includes the enhancement of visual awareness and expertise as an aspect of cultural history.',
+            cah_l3_name: 'history of art, architecture and design',
+            note: nil
           },
           '100307' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'history of science',
+            hecos_definition:
+             'Investigation of the historical development of the sciences in their economic and cultural context. Includes the influence of non-scientific factors and the impact of science on society.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100308' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'local history',
+            hecos_definition:
+             'Social historical study of a particular locality such as a town or village.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100309' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'medieval history',
+            hecos_definition: 'Historical studies of the period 600-1500 AD.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100310' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'modern history',
+            hecos_definition:
+             'Historical studies of the period c.1550AD to the present.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100311' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'Scottish history',
+            hecos_definition: 'Historical studies of Scotland.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100312' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'social history',
+            hecos_definition:
+             'The study of the interpretation of the underlying processes of change in society. Includes the study of the growth and development of societies in history.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100314' => {
-            cah_l3_id: 'CAH23-01-03'
+            cah_l3_id: 'CAH23-01-03',
+            hecos_subject: 'humanities',
+            hecos_definition:
+             'The study of human culture through a range of disciplines that are critical or speculative, rather than scientific, thinking, including archaeology, classical studies, history, languages, literature and area studies, philosophy and religious studies, visual and performing arts.',
+            cah_l3_name: 'humanities (non-specific)',
+            note: nil
           },
           '100316' => {
-            cah_l3_id: 'CAH19-04-08'
+            cah_l3_id: 'CAH19-04-08',
+            hecos_subject: 'American studies',
+            hecos_definition:
+             'The study of societies, cultures, languages and literatures of the Americas.',
+            cah_l3_name: 'American and Australasian studies',
+            note:
+             'Includes the languages spoken in the USA and Canada. For English, use "English language", for French, use "French language", for Spanish, use "Spanish language". For other languages spoken in Latin America, use "Latin American studies"'
           },
           '100317' => {
-            cah_l3_id: 'CAH19-01-06'
+            cah_l3_id: 'CAH19-01-06',
+            hecos_subject: 'British Sign Language studies',
+            hecos_definition:
+             'The study of British Sign language, its structure, history, grammar and use. This may include the study of the British deaf community and culture and interpretation between BSL and English. May also include the linguistic study of BSL and comparison with other signed and spoken languages.',
+            cah_l3_name: 'others in English studies',
+            note: nil
           },
           '100318' => {
-            cah_l3_id: 'CAH19-01-02'
+            cah_l3_id: 'CAH19-01-02',
+            hecos_subject: 'English language',
+            hecos_definition:
+             'The study of the history, grammar and use of English. Includes pronunciation and articulation.',
+            cah_l3_name: 'English language',
+            note:
+             'Covers English courses that are predominantly language based. For English roughly equally balanced between language and literature, use English studies.'
           },
           '100319' => {
-            cah_l3_id: 'CAH19-01-03'
+            cah_l3_id: 'CAH19-01-03',
+            hecos_subject: 'English literature',
+            hecos_definition: 'The study of texts originally written in English.',
+            cah_l3_name: 'literature in English',
+            note:
+             'Covers English that is predominantly literature based. Includes the use of techniques of literary analysis and interpretation. For English roughly equally balanced between language and literature, use English studies. For English specifically about English literature prior to 1900, use English literature 1200-1700 or English literature 1700-1900 as appropriate.'
           },
           '100320' => {
-            cah_l3_id: 'CAH19-01-01'
+            cah_l3_id: 'CAH19-01-01',
+            hecos_subject: 'English studies',
+            hecos_definition: 'The study of English language and literature.',
+            cah_l3_name: 'English studies (non-specific)',
+            note:
+             'Covers English courses that are roughly equally balanced between language and literature. May include the use of techniques of literary analysis and interpretation. May include creative writing. May include the study of English society and culture. For English that is predominantly literature based, use English literature. For English that is predominantly language based, use English language. For English specifically about English literature prior to 1900, use English literature 1200-1700 or English literature 1700-1900 as appropriate.'
           },
           '100321' => {
-            cah_l3_id: 'CAH19-04-01'
+            cah_l3_id: 'CAH19-04-01',
+            hecos_subject: 'French language',
+            hecos_definition:
+             'The study of the French language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'French studies',
+            note: nil
           },
           '100322' => {
-            cah_l3_id: 'CAH19-04-01'
+            cah_l3_id: 'CAH19-04-01',
+            hecos_subject: 'French studies',
+            hecos_definition:
+             'The study of French society, culture, language and literature.',
+            cah_l3_name: 'French studies',
+            note:
+             'For studies focused only on French language, use the French language term.'
           },
           '100323' => {
-            cah_l3_id: 'CAH19-04-02'
+            cah_l3_id: 'CAH19-04-02',
+            hecos_subject: 'German language',
+            hecos_definition:
+             'The study of the German language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'German and Scandinavian studies',
+            note: nil
           },
           '100324' => {
-            cah_l3_id: 'CAH19-04-02'
+            cah_l3_id: 'CAH19-04-02',
+            hecos_subject: 'German studies',
+            hecos_definition:
+             'The study of German society, culture, language and literature._',
+            cah_l3_name: 'German and Scandinavian studies',
+            note:
+             'For studies focused only on German language, use the German language term.'
           },
           '100325' => {
-            cah_l3_id: 'CAH19-04-04'
+            cah_l3_id: 'CAH19-04-04',
+            hecos_subject: 'Spanish studies',
+            hecos_definition:
+             'The study of Spanish societies, cultures, languages and literatures._',
+            cah_l3_name: 'Iberian studies',
+            note:
+             'For Hispanic studies, use a combination of Spanish studies, Portuguese studies and Latin American studies. For studies focused only on Spanish language, use the modern Spanish language term.'
           },
           '100326' => {
-            cah_l3_id: 'CAH19-04-03'
+            cah_l3_id: 'CAH19-04-03',
+            hecos_subject: 'Italian language',
+            hecos_definition:
+             'The study of the Italian language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Italian studies',
+            note: nil
           },
           '100327' => {
-            cah_l3_id: 'CAH19-04-03'
+            cah_l3_id: 'CAH19-04-03',
+            hecos_subject: 'Italian studies',
+            hecos_definition:
+             'The study of Italian society, culture, language and literature._',
+            cah_l3_name: 'Italian studies',
+            note:
+             'For studies focused only on Italian language, use the Italian language term.'
           },
           '100328' => {
-            cah_l3_id: 'CAH19-01-07'
+            cah_l3_id: 'CAH19-01-07',
+            hecos_subject: 'linguistics',
+            hecos_definition:
+             'The study of the nature of language, its development and acquisition.',
+            cah_l3_name: 'linguistics',
+            note: 'May involve some study of human vocal anatomy.'
           },
           '100329' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'modern languages',
+            hecos_definition:
+             'Reading, writing, and speaking a language or languages, other than the mother tongue, that is currently in day to day use.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '100330' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Russian languages',
+            hecos_definition:
+             'The study of the Russian language varieties, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Slavic studies',
+            note: 'For Ukranian language varieties, use "Ukranian language".'
           },
           '100331' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Russian and East European studies',
+            hecos_definition:
+             'The study of Russian and East European societies, cultures, languages and literatures.',
+            cah_l3_name: 'Slavic studies',
+            note: nil
           },
           '100332' => {
-            cah_l3_id: 'CAH19-04-04'
+            cah_l3_id: 'CAH19-04-04',
+            hecos_subject: 'Spanish language',
+            hecos_definition:
+             'The study of the Spanish language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Iberian studies',
+            note: nil
           },
           '100333' => {
-            cah_l3_id: 'CAH19-02-03'
+            cah_l3_id: 'CAH19-02-03',
+            hecos_subject: 'Welsh language',
+            hecos_definition:
+             'The study of the history, grammar and use of Welsh. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Welsh studies',
+            note: nil
           },
           '100335' => {
-            cah_l3_id: 'CAH19-02-03'
+            cah_l3_id: 'CAH19-02-03',
+            hecos_subject: 'Welsh studies',
+            hecos_definition:
+             'The study of Welsh society, culture, languages and literatures._',
+            cah_l3_name: 'Welsh studies',
+            note:
+             'For studies focused only on Welsh language, use the modern Welsh language term.'
           },
           '100337' => {
-            cah_l3_id: 'CAH20-02-01'
+            cah_l3_id: 'CAH20-02-01',
+            hecos_subject: 'philosophy',
+            hecos_definition:
+             'The critical examination of fundamental beliefs about meaning, truth and reality, right and wrong.',
+            cah_l3_name: 'philosophy',
+            note: nil
           },
           '100338' => {
-            cah_l3_id: 'CAH20-02-01'
+            cah_l3_id: 'CAH20-02-01',
+            hecos_subject: 'philosophy of science',
+            hecos_definition:
+             'The study of the philosophy of the sciences, including scientific methodology, the nature of scientific knowledge and the use of formal logic.',
+            cah_l3_name: 'philosophy',
+            note: nil
           },
           '100339' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'religious studies',
+            hecos_definition:
+             'Identification and classification of religions and the comparative study of the world\'s religious traditions.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100340' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'theology',
+            hecos_definition:
+             'The study of the interpretation of doctrinal concepts such as faith, revelation and grace.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100343' => {
-            cah_l3_id: 'CAH03-01-10'
+            cah_l3_id: 'CAH03-01-10',
+            hecos_subject: 'applied biology',
+            hecos_definition: 'The study of biology of commercial or social importance.',
+            cah_l3_name: 'others in biosciences',
+            note: nil
           },
           '100344' => {
-            cah_l3_id: 'CAH03-01-08'
+            cah_l3_id: 'CAH03-01-08',
+            hecos_subject: 'biochemistry',
+            hecos_definition:
+             'The scientific study of the chemical compounds and reactions occurring in the cells of living organisms including the molecular and biochemical analysis of life processes. Involves aspects of cellular organisation, processes and specialisation and how the structure and function of DNA, RNA proteins, enzymes and membranes determine biological forms.',
+            cah_l3_name: 'molecular biology, biophysics and biochemistry',
+            note: nil
           },
           '100345' => {
-            cah_l3_id: 'CAH03-01-01'
+            cah_l3_id: 'CAH03-01-01',
+            hecos_subject: 'biological sciences',
+            hecos_definition:
+             'The study of living systems to increase the understanding of how the natural world works.',
+            cah_l3_name: 'biosciences (non-specific)',
+            note:
+             'Includes (not exhaustive list):      neurosciences     plant sciences     physiology     pharmacology     cancer studies     microbiology     genomics     bioinformatics     biotechnology     stem cell research'
           },
           '100346' => {
-            cah_l3_id: 'CAH03-01-02'
+            cah_l3_id: 'CAH03-01-02',
+            hecos_subject: 'biology',
+            hecos_definition: 'The broadly based scientific study of living organisms.',
+            cah_l3_name: 'biology (non-specific)',
+            note: nil
           },
           '100347' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'ecology',
+            hecos_definition:
+             'The study of organisms in their environment, their interactions and history.',
+            cah_l3_name: 'ecology and environmental biology',
+            note: nil
           },
           '100348' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'environmental biology',
+            hecos_definition:
+             'The study of animals\' and plants\' relationship to their terrestrial and marine habitats.',
+            cah_l3_name: 'ecology and environmental biology',
+            note: nil
           },
           '100350' => {
-            cah_l3_id: 'CAH03-01-10'
+            cah_l3_id: 'CAH03-01-10',
+            hecos_subject: 'human biology',
+            hecos_definition:
+             'An interdisciplinary subject that focuses on understanding the human being from the biological, social science, and humanities perspectives and that addresses contemporary issues related to biology and society, such as global health and disease, environmental policy, bioethics, and biotechnology.',
+            cah_l3_name: 'others in biosciences',
+            note: nil
           },
           '100351' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'marine biology',
+            hecos_definition: 'The study of saltwater and oceanic biology.',
+            cah_l3_name: 'ecology and environmental biology',
+            note: nil
           },
           '100352' => {
-            cah_l3_id: 'CAH03-01-08'
+            cah_l3_id: 'CAH03-01-08',
+            hecos_subject: 'medical biochemistry',
+            hecos_definition:
+             'The study of the biochemical aspects of metabolic processes in humans.',
+            cah_l3_name: 'molecular biology, biophysics and biochemistry',
+            note: nil
           },
           '100353' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'microbiology',
+            hecos_definition:
+             'The scientific study of micro-organisms encompassing major components of genetics and molecular biology. Includes bacteriology, virology, cell structure and function, and may include some immunology.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100354' => {
-            cah_l3_id: 'CAH03-01-08'
+            cah_l3_id: 'CAH03-01-08',
+            hecos_subject: 'molecular biology',
+            hecos_definition: 'The study of biological activity at the molecular level.',
+            cah_l3_name: 'molecular biology, biophysics and biochemistry',
+            note:
+             'The field of molecular biology overlaps with biology and chemistry and in particular, genetics and biochemistry. A key area of molecular biology concerns understanding how various cellular systems interact in terms of the way DNA, RNA and protein synthesis function.'
           },
           '100355' => {
-            cah_l3_id: 'CAH03-01-05'
+            cah_l3_id: 'CAH03-01-05',
+            hecos_subject: 'plant sciences',
+            hecos_definition:
+             'The study of plants including their classification, structure, physiology, ecology and economic importance.',
+            cah_l3_name: 'plant sciences',
+            note:
+             'Includes the importance of plants for a balanced ecosystem including the process of energy fixation and conversion in to the biosphere (and thus with food and fuel).'
           },
           '100356' => {
-            cah_l3_id: 'CAH03-01-06'
+            cah_l3_id: 'CAH03-01-06',
+            hecos_subject: 'zoology',
+            hecos_definition:
+             'The scientific study of all aspects of animal biology: their reproduction, development, physiology, behaviour, mechanics of locomotion, diseases and interactions with the environment.',
+            cah_l3_name: 'zoology',
+            note: nil
           },
           '100358' => {
-            cah_l3_id: 'CAH11-01-08'
+            cah_l3_id: 'CAH11-01-08',
+            hecos_subject: 'applied computing',
+            hecos_definition:
+             'The study of the application of practical and professional computer science skills of analysis, design and development to specific computing topics, such as computer games development, computer security and forensics, business and systems analysis, multimedia, geographical information systems.',
+            cah_l3_name: 'others in computing',
+            note:
+             'Only used for courses that cover many aspects of the subject either as options, pathways or integrated. _Where the course is a specialist one, use the individual specialist term, for example \'computer and video games\' or \'geographical information systems\'.'
           },
           '100359' => {
-            cah_l3_id: 'CAH11-01-05'
+            cah_l3_id: 'CAH11-01-05',
+            hecos_subject: 'artificial intelligence',
+            hecos_definition:
+             'The study of principles and techniques for the computer-based simulation and modelling of intelligent animal behaviour patterns.',
+            cah_l3_name: 'artificial intelligence',
+            note: nil
           },
           '100360' => {
-            cah_l3_id: 'CAH11-01-07'
+            cah_l3_id: 'CAH11-01-07',
+            hecos_subject: 'business computing',
+            hecos_definition:
+             'The study of how computers are used with business, including the basic skills of designing and building computer systems, and the development of the use of IT in any business.',
+            cah_l3_name: 'business computing',
+            note: nil
           },
           '100361' => {
-            cah_l3_id: 'CAH11-01-07'
+            cah_l3_id: 'CAH11-01-07',
+            hecos_subject: 'business information systems',
+            hecos_definition:
+             'The study, design or application of computer systems which capture, process and transmit information in the context of a business organisation.',
+            cah_l3_name: 'business computing',
+            note:
+             'information systems part of business information technology. _For wider IT in business, use business information technology.'
           },
           '100362' => {
-            cah_l3_id: 'CAH11-01-07'
+            cah_l3_id: 'CAH11-01-07',
+            hecos_subject: 'business information technology',
+            hecos_definition:
+             'The study of the practical application of computing to the commercial world, including e-commerce, information systems and computer consultancy.',
+            cah_l3_name: 'business computing',
+            note:
+             'For information systems parts of this subject, use business information systems.'
           },
           '100363' => {
-            cah_l3_id: 'CAH11-01-06'
+            cah_l3_id: 'CAH11-01-06',
+            hecos_subject: 'computer animation and visual effects',
+            hecos_definition:
+             'The study of techniques associated with the creation of computer generated visual effects for use in static or moving imagery.',
+            cah_l3_name: 'computer games and animation',
+            note:
+             'For animation not using computer generated effects (for example stop motion), use animation.'
           },
           '100365' => {
-            cah_l3_id: 'CAH11-01-01'
+            cah_l3_id: 'CAH11-01-01',
+            hecos_subject: 'computer networks',
+            hecos_definition:
+             'The study of computer network systems and computer communications techniques/protocols.',
+            cah_l3_name: 'computer science',
+            note: nil
           },
           '100366' => {
-            cah_l3_id: 'CAH11-01-01'
+            cah_l3_id: 'CAH11-01-01',
+            hecos_subject: 'computer science',
+            hecos_definition:
+             'The study of the design and application of electronic computer systems, including computer architectures, software and systems design.',
+            cah_l3_name: 'computer science',
+            note: nil
           },
           '100367' => {
-            cah_l3_id: 'CAH11-01-02'
+            cah_l3_id: 'CAH11-01-02',
+            hecos_subject: 'computing and information technology',
+            hecos_definition:
+             'The study of the theory and practice of computer science and computer systems, and the design, implementation and operation of technological information systems and services.',
+            cah_l3_name: 'information technology',
+            note: nil
           },
           '100368' => {
-            cah_l3_id: 'CAH11-01-08'
+            cah_l3_id: 'CAH11-01-08',
+            hecos_subject: 'creative computing',
+            hecos_definition:
+             'The study of how technical computation methods interact with and support the media industries, with particular application to audio and visual media, and systems in arts, music, film, computer and video games and other digital media.',
+            cah_l3_name: 'others in computing',
+            note: nil
           },
           '100369' => {
-            cah_l3_id: 'CAH26-01-05'
+            cah_l3_id: 'CAH26-01-05',
+            hecos_subject: 'geographical information systems',
+            hecos_definition:
+             'The study of the collection, transmission, processing and use of geographical data using information technology.',
+            cah_l3_name: 'others in geographical studies',
+            note: nil
           },
           '100370' => {
-            cah_l3_id: 'CAH24-01-01'
+            cah_l3_id: 'CAH24-01-01',
+            hecos_subject: 'information management',
+            hecos_definition:
+             'The study of the specification, use, processing, analysis and availability of data within its context.',
+            cah_l3_name: 'information services',
+            note: nil
           },
           '100371' => {
-            cah_l3_id: 'CAH11-01-03'
+            cah_l3_id: 'CAH11-01-03',
+            hecos_subject: 'information systems',
+            hecos_definition:
+             'The study, design or application of computer systems which capture, process and transmit information.',
+            cah_l3_name: 'information systems',
+            note:
+             'For knowledge-based systems and techniques, use \'knowledge and information systems\''
           },
           '100372' => {
-            cah_l3_id: 'CAH11-01-02'
+            cah_l3_id: 'CAH11-01-02',
+            hecos_subject: 'information technology',
+            hecos_definition:
+             'The study of the application of computers and telecommunications equipment to store, retrieve, transmit and manipulate data, often in the context of a business or other enterprise.',
+            cah_l3_name: 'information technology',
+            note: nil
           },
           '100373' => {
-            cah_l3_id: 'CAH11-01-02'
+            cah_l3_id: 'CAH11-01-02',
+            hecos_subject: 'internet technologies',
+            hecos_definition:
+             'The study of internet-related computing including Cloud Computing.',
+            cah_l3_name: 'information technology',
+            note: nil
           },
           '100374' => {
-            cah_l3_id: 'CAH11-01-04'
+            cah_l3_id: 'CAH11-01-04',
+            hecos_subject: 'software engineering',
+            hecos_definition:
+             'The study of techniques and principles for the design, construction, testing and maintenance of computer programs to satisfy the requirements of specific operational problems.',
+            cah_l3_name: 'software engineering',
+            note: nil
           },
           '100375' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'web and multimedia design',
+            hecos_definition:
+             'The study of/training in the use of artistic techniques in design using a variety of materials.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100376' => {
-            cah_l3_id: 'CAH11-01-04'
+            cah_l3_id: 'CAH11-01-04',
+            hecos_subject: 'computer and information security',
+            hecos_definition:
+             'The study of topics around denying access to unauthorised users to computer and information systems, detecting vulnerabilities through ethical hacking and penetration testing and managing the overall information security process. It investigates security threats and resolutions of them.',
+            cah_l3_name: 'software engineering',
+            note: nil
           },
           '100379' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'climate science',
+            hecos_definition: 'The study of secular weather conditions and climates.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '100380' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'environmental geoscience',
+            hecos_definition:
+             'The study of how to apply knowledge of the natural world, in particular the understanding of minerals, soils and rocks, combined with surface processes, to the solution of environmental issues, for example the mitigation of environmental hazards, while at the same time allowing for growth and development.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '100381' => {
-            cah_l3_id: 'CAH26-01-04'
+            cah_l3_id: 'CAH26-01-04',
+            hecos_subject: 'environmental sciences',
+            hecos_definition:
+             'The study of the terrestrial, aquatic and atmospheric environment and human interaction with it.',
+            cah_l3_name: 'environmental sciences',
+            note: nil
           },
           '100382' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'meteorology',
+            hecos_definition:
+             'The study of atmospheric conditions related to weather conditions and forecasting.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '100384' => {
-            cah_l3_id: 'CAH07-04-02'
+            cah_l3_id: 'CAH07-04-02',
+            hecos_subject: 'archaeological sciences',
+            hecos_definition:
+             'The study of the scientific analysis of the material remains of past cultures. Includes an approach to reconstruct and understand the past. Also includes the application of physical, chemical and biological techniques to aid scientific, archaeological and geoarchaeological investigations.',
+            cah_l3_name: 'forensic and archaeological sciences',
+            note: nil
           },
           '100385' => {
-            cah_l3_id: 'CAH11-01-08'
+            cah_l3_id: 'CAH11-01-08',
+            hecos_subject: 'computer forensics',
+            hecos_definition:
+             'The application of scientific investigation and analysis techniques in gathering, preserving and evaluating evidence from computer devices, so that it is suitable for presentation in courts of law.',
+            cah_l3_name: 'others in computing',
+            note: nil
           },
           '100386' => {
-            cah_l3_id: 'CAH07-04-02'
+            cah_l3_id: 'CAH07-04-02',
+            hecos_subject: 'forensic biology',
+            hecos_definition: 'The application of biology to law enforcement.',
+            cah_l3_name: 'forensic and archaeological sciences',
+            note:
+             'May include searching scenes and evidential items to identify any body fluids present, collecting and examining hairs and textile fibres, DNA analysis, entomology, anthropology and forensic pathology.'
           },
           '100387' => {
-            cah_l3_id: 'CAH04-01-02'
+            cah_l3_id: 'CAH04-01-02',
+            hecos_subject: 'forensic psychology',
+            hecos_definition:
+             'The psychological aspects of crime and criminal behaviour.',
+            cah_l3_name: 'applied psychology',
+            note: nil
           },
           '100388' => {
-            cah_l3_id: 'CAH07-04-02'
+            cah_l3_id: 'CAH07-04-02',
+            hecos_subject: 'forensic science',
+            hecos_definition:
+             'The application of scientific investigation and analysis techniques in gathering, preserving and evaluating evidence, so that it is suitable for presentation in courts of law.',
+            cah_l3_name: 'forensic and archaeological sciences',
+            note:
+             'The techniques used include fingerprinting (both traditional and genetic), analysis of blood and poison samples, ballistics etc.'
           },
           '100390' => {
-            cah_l3_id: 'CAH07-04-03'
+            cah_l3_id: 'CAH07-04-03',
+            hecos_subject: 'general science',
+            hecos_definition:
+             'The study of a broad range of scientific subjects, where specialisation is not required, or where multiple specialisations can be studied at a late stage in the course of study.',
+            cah_l3_name: 'sciences (non-specific)',
+            note: nil
           },
           '100391' => {
-            cah_l3_id: 'CAH07-04-04'
+            cah_l3_id: 'CAH07-04-04',
+            hecos_subject: 'natural sciences',
+            hecos_definition:
+             'The study of the description, prediction, and understanding of natural phenomena, based on observational and empirical evidence.',
+            cah_l3_name: 'natural sciences (non-specific)',
+            note: nil
           },
           '100392' => {
-            cah_l3_id: 'CAH07-04-03'
+            cah_l3_id: 'CAH07-04-03',
+            hecos_subject: 'applied science',
+            hecos_definition:
+             'The study of the application of scientific principles and knowledge to practical problems, the development of existing technologies and the invention of new ones.',
+            cah_l3_name: 'sciences (non-specific)',
+            note: nil
           },
           '100394' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'earth sciences',
+            hecos_definition:
+             'The study of the earth as a unified system; includes earth resources, surface and crustal processes.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '100395' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'geology',
+            hecos_definition:
+             'The study of the origin, history, structure and composition of the earth. Encourages understanding of environmental problems and includes techniques on searching for mineral resources and other raw materials.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '100396' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'geophysics',
+            hecos_definition:
+             'The study of the physical structure and dynamics of the earth.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '100398' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'palaeontology',
+            hecos_definition: 'The study of the fossil record.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '100400' => {
-            cah_l3_id: 'CAH09-01-01'
+            cah_l3_id: 'CAH09-01-01',
+            hecos_subject: 'applied mathematics',
+            hecos_definition:
+             'The study of the application of mathematical principles to the solution of functional area problems.',
+            cah_l3_name: 'mathematics',
+            note: nil
           },
           '100401' => {
-            cah_l3_id: 'CAH09-01-01'
+            cah_l3_id: 'CAH09-01-01',
+            hecos_subject: 'financial mathematics',
+            hecos_definition:
+             'The study of the application of mathematics to the finance industry, including the development, critique, and use of various financial models.',
+            cah_l3_name: 'mathematics',
+            note: nil
           },
           '100402' => {
-            cah_l3_id: 'CAH09-01-01'
+            cah_l3_id: 'CAH09-01-01',
+            hecos_subject: 'mathematical modelling',
+            hecos_definition:
+             'The study of the use of mathematical principles to construct simplified representations and simulations of \'real-world\' processes, allowing calculations and predictions to be made.',
+            cah_l3_name: 'mathematics',
+            note: nil
           },
           '100403' => {
-            cah_l3_id: 'CAH09-01-01'
+            cah_l3_id: 'CAH09-01-01',
+            hecos_subject: 'mathematics',
+            hecos_definition:
+             'The rigorous analysis of quantities, magnitudes, forms and their relationships, using symbolic logic and language, both in its own right and as applied to other disciplines.',
+            cah_l3_name: 'mathematics',
+            note: nil
           },
           '100404' => {
-            cah_l3_id: 'CAH09-01-02'
+            cah_l3_id: 'CAH09-01-02',
+            hecos_subject: 'operational research',
+            hecos_definition:
+             'The development and application of complex mathematical or simulation models to solve problems involving operational systems, where the system concerned is subject to human intervention.',
+            cah_l3_name: 'operational research',
+            note: nil
           },
           '100405' => {
-            cah_l3_id: 'CAH09-01-01'
+            cah_l3_id: 'CAH09-01-01',
+            hecos_subject: 'pure mathematics',
+            hecos_definition:
+             'The rigorous analysis of quantities, magnitudes, forms and their relationships, using symbolic logic and language.',
+            cah_l3_name: 'mathematics',
+            note: nil
           },
           '100406' => {
-            cah_l3_id: 'CAH09-01-03'
+            cah_l3_id: 'CAH09-01-03',
+            hecos_subject: 'statistics',
+            hecos_definition:
+             'The study of the collection and analysis of numerical data.',
+            cah_l3_name: 'statistics',
+            note: nil
           },
           '100408' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'environmental geography',
+            hecos_definition:
+             'The study of the relationship between natural and human environments.',
+            cah_l3_name: 'physical geographical sciences',
+            note: nil
           },
           '100409' => {
-            cah_l3_id: 'CAH26-01-01'
+            cah_l3_id: 'CAH26-01-01',
+            hecos_subject: 'geography',
+            hecos_definition:
+             'The systematic study of the spatial distribution and interrelationships of people, natural resources, plant and animal life.',
+            cah_l3_name: 'geography (non-specific)',
+            note:
+             'May include historical and political geography, cultural geography, economic and physical geography, regional science, cartographic methods, remote sensing, spatial analysis, and applications to areas such as land-use planning, development studies, and analyses of specific countries, regions, and resources.'
           },
           '100410' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'physical geography',
+            hecos_definition:
+             'The spatially-related study of natural features of the earth.',
+            cah_l3_name: 'physical geographical sciences',
+            note:
+             'Includes topographical, physical, biological, environmental and information management concepts.'
           },
           '100413' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'analytical chemistry',
+            hecos_definition:
+             'The study of the development and application of methods to determine the chemical composition of substances.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '100414' => {
-            cah_l3_id: 'CAH07-01-02'
+            cah_l3_id: 'CAH07-01-02',
+            hecos_subject: 'astronomy',
+            hecos_definition: 'The scientific study of celestial bodies.',
+            cah_l3_name: 'astronomy',
+            note: nil
           },
           '100415' => {
-            cah_l3_id: 'CAH07-01-02'
+            cah_l3_id: 'CAH07-01-02',
+            hecos_subject: 'astrophysics',
+            hecos_definition:
+             'The study of the physical nature of the universe including cosmology and astronomical techniques.',
+            cah_l3_name: 'astronomy',
+            note: nil
           },
           '100416' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'chemical physics',
+            hecos_definition:
+             'The study of sub-atomic particles, atoms and molecules in all states of matter and how they interact with each other and their environment.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '100417' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'chemistry',
+            hecos_definition:
+             'The study of individual atoms and molecules and the way they react together naturally and synthetically.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '100418' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'marine sciences',
+            hecos_definition: 'The study of the coastal environment and mariculture.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '100419' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'medical physics',
+            hecos_definition:
+             'The study of the application of techniques and technologies from physics to the development and maintenance of critical equipment for patient care, including how the equipment is used to diagnose and treat disease.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '100420' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'medicinal chemistry',
+            hecos_definition:
+             'The study of aspects of chemistry, such as drug design, of importance to medical science.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '100421' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'ocean sciences',
+            hecos_definition: 'The study of oceans, the seabed and atmosphere.',
+            cah_l3_name: 'earth sciences',
+            note:
+             'Includes oceanography. May include studies associated with physics, chemistry, geology and biology.'
           },
           '100422' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'organic chemistry',
+            hecos_definition:
+             'The study of organic compounds and their reaction mechanisms.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '100423' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'pharmaceutical chemistry',
+            hecos_definition: 'The study of drug function.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '100424' => {
-            cah_l3_id: 'CAH07-04-01'
+            cah_l3_id: 'CAH07-04-01',
+            hecos_subject: 'physical sciences',
+            hecos_definition:
+             'The study of non-living systems to increase the understanding of how the physical world works.',
+            cah_l3_name: 'physical sciences (non-specific)',
+            note:
+             'Involves designing and conducting experiments to collect physical evidence of natural phenomena. Includes (not exhaustive list): astronomy chemistry geosciences mathematics materials science meteorology physics'
           },
           '100425' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'physics',
+            hecos_definition:
+             'The study of the properties of matter and energy and the relationships between them, making extensive use of mathematical techniques and models.',
+            cah_l3_name: 'physics',
+            note:
+             'May include mechanics, optics, electricity, magnetism and acoustics. May also include atomic, nuclear, particle and solid state studies.'
           },
           '100426' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'theoretical physics',
+            hecos_definition:
+             'The mathematical principles and techniques of physics theory and explanation of physical phenomena.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '100427' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'acoustics',
+            hecos_definition: 'The study of sound and sound waves.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '100428' => {
-            cah_l3_id: 'CAH10-01-04'
+            cah_l3_id: 'CAH10-01-04',
+            hecos_subject: 'aerodynamics',
+            hecos_definition:
+             'The study of the relative motion between a body and gases (typically air), especially predicting the forces acting on a body.',
+            cah_l3_name: 'aeronautical and aerospace engineering',
+            note:
+             'Involves the study and application of specialist mathematics, physical laws and complex experimental measurement and visualization techniques.'
           },
           '100429' => {
-            cah_l3_id: 'CAH10-01-02'
+            cah_l3_id: 'CAH10-01-02',
+            hecos_subject: 'dynamics',
+            hecos_definition:
+             'The study of the forces that change or produce the motion of bodies. May include the study of kinetics.',
+            cah_l3_name: 'mechanical engineering',
+            note: nil
           },
           '100430' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'mechanics',
+            hecos_definition:
+             'The study of the equilibrium of bodies or their motion within a particular frame of reference.',
+            cah_l3_name: 'physics',
+            note: 'May also be called stress analysis.'
           },
           '100431' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'thermodynamics',
+            hecos_definition:
+             'The study of the interrelationship and interconversion of different forms of energy.',
+            cah_l3_name: 'physics',
+            note:
+             'Includes the study of the effects of pressure, temperature, and so on. May also be called heat exchange technology. Involves the study and application of specialist mathematics.'
           },
           '100433' => {
-            cah_l3_id: 'CAH03-02-01'
+            cah_l3_id: 'CAH03-02-01',
+            hecos_subject: 'sport and exercise sciences',
+            hecos_definition:
+             'The applied scientific study of the anatomy, physiology, biomechanics and psychology of the human body with a view to optimising performance in sporting and physical activities.',
+            cah_l3_name: 'sport and exercise sciences',
+            note: 'Includes non-teacher training physical education.'
           },
           '100436' => {
-            cah_l3_id: 'CAH15-01-04'
+            cah_l3_id: 'CAH15-01-04',
+            hecos_subject: 'anthropology',
+            hecos_definition:
+             'The comparative study of human beings, their antecedents and related primates, and their cultural behaviour and institutions.',
+            cah_l3_name: 'anthropology',
+            note: nil
           },
           '100437' => {
-            cah_l3_id: 'CAH15-01-04'
+            cah_l3_id: 'CAH15-01-04',
+            hecos_subject: 'social anthropology',
+            hecos_definition:
+             'The study of the branch of anthropology that deals with social phenomena such as kinship systems or beliefs.',
+            cah_l3_name: 'anthropology',
+            note: nil
           },
           '100439' => {
-            cah_l3_id: 'CAH24-01-04'
+            cah_l3_id: 'CAH24-01-04',
+            hecos_subject: 'broadcast journalism',
+            hecos_definition:
+             'The study of reporting, photographing and editing news stories for all types of broadcast media.',
+            cah_l3_name: 'journalism',
+            note: nil
           },
           '100440' => {
-            cah_l3_id: 'CAH24-01-05'
+            cah_l3_id: 'CAH24-01-05',
+            hecos_subject: 'digital media',
+            hecos_definition:
+             'The study of human communication through electronic media.',
+            cah_l3_name: 'media studies',
+            note:
+             'May involve study of the internet, World Wide Web, technical innovations and the role of audiences. Concentrates on business, management and financial aspects and not on the equipment and technology.'
           },
           '100441' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'film production',
+            hecos_definition:
+             'The study of the organisation, financing and presentation of events on film.',
+            cah_l3_name: 'cinematics and photography',
+            note: nil
           },
           '100442' => {
-            cah_l3_id: 'CAH24-01-04'
+            cah_l3_id: 'CAH24-01-04',
+            hecos_subject: 'journalism',
+            hecos_definition:
+             'The study of reporting, photographing and editing news stories.',
+            cah_l3_name: 'journalism',
+            note:
+             'Includes the ownership and control of the press and the power it conveys. Also includes study of political, ethical and economic influences.'
           },
           '100443' => {
-            cah_l3_id: 'CAH24-01-05'
+            cah_l3_id: 'CAH24-01-05',
+            hecos_subject: 'media production',
+            hecos_definition:
+             'The study of the technologies, systems, techniques and professional practice in the creation of works using sound, images and/or the written word.',
+            cah_l3_name: 'media studies',
+            note: nil
           },
           '100444' => {
-            cah_l3_id: 'CAH24-01-05'
+            cah_l3_id: 'CAH24-01-05',
+            hecos_subject: 'media and communication studies',
+            hecos_definition:
+             'The study of communication between people through broadcasting, cinema, the press and by electronic means.',
+            cah_l3_name: 'media studies',
+            note:
+             'May involve the study of the media industry, technical innovations and the role of audiences.'
           },
           '100445' => {
-            cah_l3_id: 'CAH24-01-04'
+            cah_l3_id: 'CAH24-01-04',
+            hecos_subject: 'multimedia journalism',
+            hecos_definition:
+             'Writing text reports for newspapers, magazines and websites. Writing features, interviews and reviews. Taking, editing and publishing still images online. Filming, editing and publishing video reports. Recording, editing and publishing audio reports including podcasts.',
+            cah_l3_name: 'journalism',
+            note: nil
           },
           '100449' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'business economics',
+            hecos_definition:
+             'The study of the application of economic theory to business decision making, matching economic principles to their uses and limitations in a business context.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '100450' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'economics',
+            hecos_definition:
+             'The systematic study of the production, conservation and allocation of resources in conditions of scarcity, together with the organisational frameworks related to these processes.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '100451' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'financial economics',
+            hecos_definition:
+             'The study of the application of economic principles and analytical techniques in the area of finance.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '100452' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'international economics',
+            hecos_definition:
+             'The systematic study and analysis of international commercial behaviour and trade policy.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '100454' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'adult education',
+            hecos_definition:
+             'The study of teaching and learning, the arrangement of the curriculum, and the investigation of the learning process in order to improve learning ability and efficiency in adults.',
+            cah_l3_name: 'education',
+            note: nil
           },
           '100455' => {
-            cah_l3_id: 'CAH15-04-02'
+            cah_l3_id: 'CAH15-04-02',
+            hecos_subject: 'childhood and youth studies',
+            hecos_definition:
+             'The interdisciplinary study of the development of children and young people, including policies, practices and issues affecting them.',
+            cah_l3_name: 'childhood and youth studies',
+            note: 'For just children, use childhood studies.'
           },
           '100456' => {
-            cah_l3_id: 'CAH15-04-02'
+            cah_l3_id: 'CAH15-04-02',
+            hecos_subject: 'childhood studies',
+            hecos_definition:
+             'The interdisciplinary study of the development of children, including policies, practices and issues affecting them.',
+            cah_l3_name: 'childhood and youth studies',
+            note:
+             'Where youth studies is also included, use childhood and youth studies.'
           },
           '100457' => {
-            cah_l3_id: 'CAH15-04-02'
+            cah_l3_id: 'CAH15-04-02',
+            hecos_subject: 'early childhood studies',
+            hecos_definition:
+             'The study of sociological, social policy, psychological and educational perspectives related to children aged 0-5.',
+            cah_l3_name: 'childhood and youth studies',
+            note:
+             'Not focused primarily on education or teaching. For academic studies in how young children age 0-5 learn and are taught, but not including teacher training, use early years education. For training for teachers specialising in 0-5 years, use early years teaching.'
           },
           '100459' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'education studies',
+            hecos_definition:
+             'The study of teaching and learning, the arrangement of the curriculum, and the investigation of the learning process in order to improve learning ability and efficiency.',
+            cah_l3_name: 'education',
+            note: nil
           },
           '100460' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'further education',
+            hecos_definition:
+             'The study of teaching and learning, the arrangement of the curriculum, and the investigation of the learning process in order to improve learning ability and efficiency in people in education years 12 to 13',
+            cah_l3_name: 'education',
+            note: nil
           },
           '100461' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'higher education',
+            hecos_definition:
+             'The study of teaching and learning, the arrangement of the curriculum, and the investigation of the learning process in order to improve learning ability and efficiency in people in higher education.',
+            cah_l3_name: 'education',
+            note: nil
           },
           '100462' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'learning support',
+            hecos_definition:
+             'Development of skills, knowledge and critical understanding necessary to effectively support teachers and learners in the process of teaching and learning in a variety of contexts, and to build upon the unique features of the support role in ways that contribute to raising learner achievement.',
+            cah_l3_name: 'education',
+            note:
+             'May include, pupil inspiration, development of creative teaching and learning strategies, inclusive practice, child development and safeguarding/child protection.'
           },
           '100463' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'early years education',
+            hecos_definition:
+             'Academic studies in how young children age 0-5 learn and are taught, but not including teacher training.',
+            cah_l3_name: 'education',
+            note:
+             'Does not include training for teachers. For training for teachers specialising in 0-5 years, use early years teaching. For the study of sociological, social policy, psychological and educational perspectives related to children aged 0-5, use early childhood studies.'
           },
           '100464' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'primary education',
+            hecos_definition:
+             'The study of teaching and learning, the arrangement of the curriculum, and the investigation of the learning process in order to improve learning ability and efficiency in children in school years 1 to 6 inclusive.',
+            cah_l3_name: 'education',
+            note: nil
           },
           '100465' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'secondary education',
+            hecos_definition:
+             'The study of teaching and learning, the arrangement of the curriculum, and the investigation of the learning process in order to improve learning ability and efficiency in children in school years 7 to 11 inclusive.',
+            cah_l3_name: 'education',
+            note: nil
           },
           '100466' => {
-            cah_l3_id: 'CAH15-04-01'
+            cah_l3_id: 'CAH15-04-01',
+            hecos_subject: 'youth and community work',
+            hecos_definition:
+             'The study of social work services aimed at support of vulnerable/under-privileged youths in society.',
+            cah_l3_name: 'social work',
+            note: nil
           },
           '100468' => {
-            cah_l3_id: 'CAH06-01-04'
+            cah_l3_id: 'CAH06-01-04',
+            hecos_subject: 'countryside management',
+            hecos_definition:
+             'The study of policies, methods and techniques relevant to the land use planning, management, conservation of, access to and recreation in the countryside.',
+            cah_l3_name: 'rural estate management',
+            note: nil
           },
           '100469' => {
-            cah_l3_id: 'CAH26-01-03'
+            cah_l3_id: 'CAH26-01-03',
+            hecos_subject: 'environmental management',
+            hecos_definition:
+             'The study of how and why humans interact with the environment, with a focus on the application of scientific principles and management techniques to real-life environmental problems such as pollution, energy provision and climate change.',
+            cah_l3_name: 'human geography',
+            note: 'May include environmental sciences, environmental economics and law.'
           },
           '100471' => {
-            cah_l3_id: 'CAH15-01-01'
+            cah_l3_id: 'CAH15-01-01',
+            hecos_subject: 'social sciences',
+            hecos_definition:
+             'The study of society and the manner in which people behave and influence the world around us. Social science covers a broad range of disciplines that can help explain how our own society works.',
+            cah_l3_name: 'social sciences (non-specific)',
+            note: nil
           },
           '100473' => {
-            cah_l3_id: 'CAH15-04-03'
+            cah_l3_id: 'CAH15-04-03',
+            hecos_subject: 'health studies',
+            hecos_definition:
+             'The multidisciplinary study of the physical and mental welfare of human beings in their social and cultural context.',
+            cah_l3_name: 'health studies',
+            note: nil
           },
           '100475' => {
-            cah_l3_id: 'CAH03-02-01'
+            cah_l3_id: 'CAH03-02-01',
+            hecos_subject: 'sports therapy',
+            hecos_definition:
+             'The applied scientific study of anatomy, exercise physiology, psychology and biomechanics within the context of human body conditioning and the prevention, recognition and evaluation, management, treatment and rehabilitation of sport and exercise related injuries and illness.',
+            cah_l3_name: 'sport and exercise sciences',
+            note: nil
           },
           '100476' => {
-            cah_l3_id: 'CAH15-04-03'
+            cah_l3_id: 'CAH15-04-03',
+            hecos_subject: 'health and social care',
+            hecos_definition:
+             'The study of the theory and practice of delivery of services for people with needs relating to illness, wellbeing, relationships and activities in the community, including the ethical, legal, social, economic and political factors that influence provision and delivery.',
+            cah_l3_name: 'health studies',
+            note: nil
           },
           '100478' => {
-            cah_l3_id: 'CAH26-01-03'
+            cah_l3_id: 'CAH26-01-03',
+            hecos_subject: 'human geography',
+            hecos_definition:
+             'The systematic study of the spatial distribution and interrelationships of people, natural resources, plant and animal life.',
+            cah_l3_name: 'human geography',
+            note: nil
           },
           '100482' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'business law',
+            hecos_definition:
+             'The study of the features and ideas involved in a legal system as it refers to commercial organisations, including its major concepts, values, principles and rules, its relevant legal institutions and procedures.',
+            cah_l3_name: 'law',
+            note: 'Covers both business and commercial aspects.'
           },
           '100483' => {
-            cah_l3_id: 'CAH15-01-03'
+            cah_l3_id: 'CAH15-01-03',
+            hecos_subject: 'criminal justice',
+            hecos_definition:
+             'The study of policies implemented by local and central governments to influence and support criminal justice in society.',
+            cah_l3_name: 'social policy',
+            note: nil
           },
           '100484' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'criminology',
+            hecos_definition:
+             'The systematic study of crime, criminal behaviour, causes and prevention.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100485' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'law',
+            hecos_definition:
+             'The study of the features and ideas involved in a legal system, including its major concepts, values, principles and rules, its main legal institutions and procedures, and the relevant social, economic, political, historical, philosophical, ethical, cultural and environmental contexts in which the law operates.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100486' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'policing',
+            hecos_definition:
+             'The study of forensic investigative skills, knowledge of criminal and other related law, appreciation of mental health and wider understanding of the social context in which policing is conducted.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100488' => {
-            cah_l3_id: 'CAH15-01-05'
+            cah_l3_id: 'CAH15-01-05',
+            hecos_subject: 'international development',
+            hecos_definition:
+             'The systematic study of the economic development process and its application to the problems of specific countries and regions.',
+            cah_l3_name: 'development studies',
+            note:
+             'Includes instruction in economic development theory, industrialization, land reform, infrastructural development, investment policy, the role of governments and business in development, international development organizations, and the study of social, health, and environmental influences on economic development.'
           },
           '100489' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'international politics',
+            hecos_definition:
+             'The study of political structures, functions and theories among the international community.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100490' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'international relations',
+            hecos_definition:
+             'The study of the interaction between members of the international community.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100491' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'politics',
+            hecos_definition:
+             'The study of activities related to the institution of the state and the machinery of government or the method through which social conflict is expressed and attempts to resolve conflict are made.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100493' => {
-            cah_l3_id: 'CAH04-01-02'
+            cah_l3_id: 'CAH04-01-02',
+            hecos_subject: 'applied psychology',
+            hecos_definition:
+             'The study of the application of psychological evidence and theories to real world situations.',
+            cah_l3_name: 'applied psychology',
+            note: nil
           },
           '100494' => {
-            cah_l3_id: 'CAH04-01-04'
+            cah_l3_id: 'CAH04-01-04',
+            hecos_subject: 'clinical psychology',
+            hecos_definition:
+             'The study of clinical aspects of the psychological consequences of emotional, cognitive, behavioural or neurological disorders.',
+            cah_l3_name: 'psychology and health',
+            note: 'Included in NHS scientific, therapeutic & technical area'
           },
           '100495' => {
-            cah_l3_id: 'CAH02-06-07'
+            cah_l3_id: 'CAH02-06-07',
+            hecos_subject: 'counselling',
+            hecos_definition:
+             'The study of how to help other people to maintain a healthy and positive mental disposition in addressing problems.',
+            cah_l3_name: 'counselling, psychotherapy and occupational therapy',
+            note: nil
           },
           '100496' => {
-            cah_l3_id: 'CAH04-01-03'
+            cah_l3_id: 'CAH04-01-03',
+            hecos_subject: 'educational psychology',
+            hecos_definition:
+             'The study of the psychology of learning and teaching in educational settings.',
+            cah_l3_name: 'developmental psychology',
+            note: nil
           },
           '100497' => {
-            cah_l3_id: 'CAH04-01-01'
+            cah_l3_id: 'CAH04-01-01',
+            hecos_subject: 'psychology',
+            hecos_definition:
+             'The scientific study of behaviour, experience and mental processes of individuals within social networks.',
+            cah_l3_name: 'psychology (non-specific)',
+            note:
+             'May include study of the brain, the senses, genetics, the biological and physiological bases of behaviour, social interaction and identity.'
           },
           '100498' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'social psychology',
+            hecos_definition:
+             'The study of behaviour and mental processes in social contexts.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '100499' => {
-            cah_l3_id: 'CAH04-01-02'
+            cah_l3_id: 'CAH04-01-02',
+            hecos_subject: 'sport and exercise psychology',
+            hecos_definition:
+             'The study of psychological approaches to performance in physical activities.',
+            cah_l3_name: 'applied psychology',
+            note: nil
           },
           '100501' => {
-            cah_l3_id: 'CAH15-04-01'
+            cah_l3_id: 'CAH15-04-01',
+            hecos_subject: 'social care',
+            hecos_definition:
+             'The study of policy, theory and practice of non-medical services and support that help people lead an active life and do the everyday things that many of us take for granted.',
+            cah_l3_name: 'social work',
+            note:
+             'May include the study of how ethical, legal, social, economic and political factors influence the provision and development of services.'
           },
           '100502' => {
-            cah_l3_id: 'CAH15-01-03'
+            cah_l3_id: 'CAH15-01-03',
+            hecos_subject: 'social policy',
+            hecos_definition:
+             'The study of the policies of institutions which are designed to modify the balance of sociological factors.',
+            cah_l3_name: 'social policy',
+            note: nil
           },
           '100503' => {
-            cah_l3_id: 'CAH15-04-01'
+            cah_l3_id: 'CAH15-04-01',
+            hecos_subject: 'social work',
+            hecos_definition:
+             'The study of the organised means of providing basic support services for vulnerable/under-privileged individuals and/or groups.',
+            cah_l3_name: 'social work',
+            note: nil
           },
           '100505' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'sociology',
+            hecos_definition:
+             'The systematic study of human social institutions and social relationships.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100507' => {
-            cah_l3_id: 'CAH22-01-02'
+            cah_l3_id: 'CAH22-01-02',
+            hecos_subject: 'adult education teaching',
+            hecos_definition:
+             'The training of others to impart, explain and disseminate knowledge, skills and learning to adults.',
+            cah_l3_name: 'teacher training',
+            note:
+             'May include teaching of management training techniques, restructuring of teaching methods to take account of part-time study etc.'
           },
           '100508' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'post compulsory education and training',
+            hecos_definition:
+             'The training of others to impart, explain and disseminate knowledge, skills and learning to over 16 year olds including adults and those in education years 12 and 13.',
+            cah_l3_name: 'education',
+            note: nil
           },
           '100509' => {
-            cah_l3_id: 'CAH22-01-02'
+            cah_l3_id: 'CAH22-01-02',
+            hecos_subject: 'higher education teaching',
+            hecos_definition:
+             'The training of others to impart, explain and disseminate knowledge, skills and learning to people registered on a higher education course.',
+            cah_l3_name: 'teacher training',
+            note: nil
           },
           '100510' => {
-            cah_l3_id: 'CAH22-01-02'
+            cah_l3_id: 'CAH22-01-02',
+            hecos_subject: 'early years teaching',
+            hecos_definition: 'Training for teachers specialising in 0-5 years.',
+            cah_l3_name: 'teacher training',
+            note:
+             'For academic studies in how young children age 0-5 learn and are taught, but not including teacher training, use early years education. For the study of sociological, social policy, psychological and educational perspectives related to children aged 0-5, use early childhood studies.'
           },
           '100511' => {
-            cah_l3_id: 'CAH22-01-02'
+            cah_l3_id: 'CAH22-01-02',
+            hecos_subject: 'primary teaching',
+            hecos_definition:
+             'The training of others to impart, explain and disseminate knowledge, skills and learning to children between the ages of 3 and 11.',
+            cah_l3_name: 'teacher training',
+            note: nil
           },
           '100512' => {
-            cah_l3_id: 'CAH22-01-02'
+            cah_l3_id: 'CAH22-01-02',
+            hecos_subject: 'secondary teaching',
+            hecos_definition:
+             'The training of others to impart, explain and disseminate knowledge, skills and learning to children between the ages of 11 and 18.',
+            cah_l3_name: 'teacher training',
+            note: nil
           },
           '100513' => {
-            cah_l3_id: 'CAH22-01-02'
+            cah_l3_id: 'CAH22-01-02',
+            hecos_subject: 'teaching English as a foreign language',
+            hecos_definition:
+             'The training of others to teach English to people whose first language is not English.',
+            cah_l3_name: 'teacher training',
+            note: nil
           },
           '100516' => {
-            cah_l3_id: 'CAH06-01-02'
+            cah_l3_id: 'CAH06-01-02',
+            hecos_subject: 'agricultural sciences',
+            hecos_definition:
+             'The specifically scientific study of aspects of agriculture, excluding wider non-laboratory-based agricultural subjects such as economics, business management and land use.',
+            cah_l3_name: 'agricultural sciences',
+            note: nil
           },
           '100517' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'agriculture',
+            hecos_definition:
+             'The study of crop and animal production methods and of the underpinning scientific, economic and business principles.',
+            cah_l3_name: 'agriculture',
+            note:
+             'This subject also covers technological and economic problems encountered in current production systems; evaluation of new techniques and their application to commercial practice; organising and managing a business; identifying and evaluating public concerns over food production practices and evaluating the wider consequences of agricultural activities.'
           },
           '100518' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'animal management',
+            hecos_definition:
+             'The study of the skills and knowledge that can be applied to the conservation, health and science of animals, including their husbandry, environment and sustainability.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '100519' => {
-            cah_l3_id: 'CAH06-01-01'
+            cah_l3_id: 'CAH06-01-01',
+            hecos_subject: 'equine studies',
+            hecos_definition:
+             'The study of horses, their health, livery and use as farm, domestic and recreational animals.',
+            cah_l3_name: 'animal science',
+            note: nil
           },
           '100520' => {
-            cah_l3_id: 'CAH06-01-05'
+            cah_l3_id: 'CAH06-01-05',
+            hecos_subject: 'forestry and arboriculture',
+            hecos_definition:
+             'The study of planting and caring for trees and the management of woods and forests for conservation purposes, commercial exploitation and recreational use.',
+            cah_l3_name: 'forestry and arboriculture',
+            note: nil
           },
           '100522' => {
-            cah_l3_id: 'CAH06-01-01'
+            cah_l3_id: 'CAH06-01-01',
+            hecos_subject: 'animal behaviour',
+            hecos_definition:
+             'The scientific study of the psychological and neurological bases of animal sensation, perception, cognition, behaviour, and behavioural interactions within and outside the species.',
+            cah_l3_name: 'animal science',
+            note: nil
           },
           '100523' => {
-            cah_l3_id: 'CAH06-01-01'
+            cah_l3_id: 'CAH06-01-01',
+            hecos_subject: 'animal science',
+            hecos_definition:
+             'The scientific study of animals, their nutrition, treatment and care.',
+            cah_l3_name: 'animal science',
+            note:
+             'May include the study of animal\'s diseases and their cure (for this specifically, use animal pathology), veterinary nursing (for this specifically, use veterinary nursing), the study of drugs, their characteristics, actions and uses with animals (for this specifically, use animal pathology).'
           },
           '100526' => {
-            cah_l3_id: 'CAH06-01-08'
+            cah_l3_id: 'CAH06-01-08',
+            hecos_subject: 'food and beverage production',
+            hecos_definition:
+             'The study of the process of commercial manufacture of food and drink, including production techniques and the amount and rate at which foodstuffs are produced.',
+            cah_l3_name: 'food and beverage production',
+            note: nil
           },
           '100527' => {
-            cah_l3_id: 'CAH06-01-07'
+            cah_l3_id: 'CAH06-01-07',
+            hecos_subject: 'food science',
+            hecos_definition: 'The study of the properties and behaviour of food.',
+            cah_l3_name: 'food sciences',
+            note:
+             '_Includes the application of physical, chemical and biological sciences to food systems.'
           },
           '100529' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'horticulture',
+            hecos_definition:
+             'The study of plants grown for their appearance for use in municipal and other large area planting schemes, gardens, parks and landscapes.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '100531' => {
-            cah_l3_id: 'CAH05-01-01'
+            cah_l3_id: 'CAH05-01-01',
+            hecos_subject: 'veterinary medicine',
+            hecos_definition:
+             'The study of the observation, diagnosis and treatment of illness, disease or damage through direct interaction with non-human patients.',
+            cah_l3_name: 'veterinary medicine and dentistry',
+            note:
+             'This is the professional veterinary medicine and science subject that includes the whole veterinary degree programme, and is distinguished from non-professional routes, e.g. "bioveterinary science" courses which do not lead to professional recognition.'
           },
           '100532' => {
-            cah_l3_id: 'CAH05-01-02'
+            cah_l3_id: 'CAH05-01-02',
+            hecos_subject: 'veterinary nursing',
+            hecos_definition:
+             'The study of principles and techniques for assessing, managing, treating and monitoring non-human patients and educating their owners in animal care.',
+            cah_l3_name: 'others in veterinary sciences',
+            note:
+             'Applies to courses and programmes designed for those studying towards a professional veterinary nursing qualification, or for postgraduate programmes for those already registered as veterinary nurses.'
           },
           '100539' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'broadcast engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the equipment required to acquire, store, process and transmit information typically associated with the public and private service delivery, to a large customer base or territory, of radio and/or television programmes.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100540' => {
-            cah_l3_id: 'CAH02-05-04'
+            cah_l3_id: 'CAH02-05-04',
+            hecos_subject: 'cellular pathology',
+            hecos_definition:
+             'The study of the effects and nature of diseases in cellular structures.',
+            cah_l3_name: 'anatomy, physiology and pathology',
+            note: nil
           },
           '100544' => {
-            cah_l3_id: 'CAH10-03-04'
+            cah_l3_id: 'CAH10-03-04',
+            hecos_subject: 'marine engineering',
+            hecos_definition:
+             'The study and principles of engineering as they apply to coastal and off-shore structures and the prevention of damage, decay and erosion to the natural environment.',
+            cah_l3_name: 'maritime technology',
+            note: 'Includes the study and application of specialist mathematics'
           },
           '100545' => {
-            cah_l3_id: 'CAH10-03-02'
+            cah_l3_id: 'CAH10-03-02',
+            hecos_subject: 'corrosion technology',
+            hecos_definition: 'The study and control of the corrosion of metals.',
+            cah_l3_name: 'materials technology',
+            note: nil
           },
           '100546' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'digital circuit engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to discrete values of input and output voltage levels.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100548' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'engineering surveying',
+            hecos_definition:
+             'The study and practice of measuring altitudes, angles and distances on the land surface in order to plan sites and constructions. Includes specialist underwater surveying techniques.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '100549' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'environmental impact assessment',
+            hecos_definition:
+             'The study and principles of engineering as they apply to the assessment and repair of insensitive environmental exploitation or natural upheaval.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '100550' => {
-            cah_l3_id: 'CAH10-03-01'
+            cah_l3_id: 'CAH10-03-01',
+            hecos_subject: 'gemmology',
+            hecos_definition:
+             'The processing, cutting and polishing of precious stones.',
+            cah_l3_name: 'minerals technology',
+            note: nil
           },
           '100551' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'geotechnical engineering',
+            hecos_definition:
+             'The study and practice, using engineering principles, of geological approaches to the investigation of the formation, characterisation and structure of the surface and sub-surface of the Earth.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '100553' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'integrated circuit design',
+            hecos_definition:
+             'The study of the most efficient processing of semiconductor material to form integrated circuits.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '100560' => {
-            cah_l3_id: 'CAH10-03-06'
+            cah_l3_id: 'CAH10-03-06',
+            hecos_subject: 'musical instrument manufacture',
+            hecos_definition:
+             'The study of the systems and processes used in the manufacture of musical instruments.',
+            cah_l3_name: 'others in technology',
+            note: nil
           },
           '100564' => {
-            cah_l3_id: 'CAH10-01-04'
+            cah_l3_id: 'CAH10-01-04',
+            hecos_subject: 'aerospace propulsion systems',
+            hecos_definition: 'The study of aerospace locomotion and its driving force.',
+            cah_l3_name: 'aeronautical and aerospace engineering',
+            note:
+             'Involves the study and application of specialist mathematics especially relating to thermodynamics.'
           },
           '100565' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'public health engineering',
+            hecos_definition:
+             'The study of engineering principles, design and construction, with particular emphasis on public health and safety.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '100566' => {
-            cah_l3_id: 'CAH10-03-01'
+            cah_l3_id: 'CAH10-03-01',
+            hecos_subject: 'quarrying',
+            hecos_definition: 'The study of the extraction and processing of stone.',
+            cah_l3_name: 'minerals technology',
+            note: nil
           },
           '100568' => {
-            cah_l3_id: 'CAH10-01-05'
+            cah_l3_id: 'CAH10-01-05',
+            hecos_subject: 'ship design',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the design of floating vessels.',
+            cah_l3_name: 'naval architecture',
+            note: 'Involves the study and application of specialist mathematics.'
           },
           '100572' => {
-            cah_l3_id: 'CAH10-01-06'
+            cah_l3_id: 'CAH10-01-06',
+            hecos_subject: 'tissue engineering and regenerative medicine',
+            hecos_definition:
+             'The use of engineering principles to design and manufacture replacement tissues.',
+            cah_l3_name: 'bioengineering, medical and biomedical engineering',
+            note: nil
           },
           '100573' => {
-            cah_l3_id: 'CAH10-01-10'
+            cah_l3_id: 'CAH10-01-10',
+            hecos_subject: 'water quality control',
+            hecos_definition:
+             'The study of engineering structures and fluid mechanics with particular emphasis on improving and maintaining water supplies and the disposal of waste water.',
+            cah_l3_name: 'others in engineering',
+            note: 'May include considerations of health, hygiene and recreational use.'
           },
           '100577' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'fluid mechanics',
+            hecos_definition:
+             'The study of the mechanical and flow properties of liquids, gases and plasmas.',
+            cah_l3_name: 'physics',
+            note:
+             'May also be called fluid dynamics. Includes hydraulics, hydrodynamics and aerodynamics. Involves the study and application of specialist mathematics. For classification of purely aerodynamics subjects, use aerodynamics.'
           },
           '100579' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'structural mechanics',
+            hecos_definition:
+             'The study of the equilibrium and motion of structures either of themselves or influenced by forces outside them.',
+            cah_l3_name: 'physics',
+            note: 'Involves the study and application of specialist mathematics.'
           },
           '100580' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'acoustics and vibration',
+            hecos_definition: 'The study of oscillation and resonance.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '100581' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'electrical power',
+            hecos_definition:
+             'The study of the rates at which electrical energy is fed into or taken from a device or system. Involves the study and application of specialist mathematics.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note:
+             'For generation specifically, use \'electrical power generation\'. For distribution specifically, use \'electrical power distribution\'.'
           },
           '100583' => {
-            cah_l3_id: 'CAH13-01-01'
+            cah_l3_id: 'CAH13-01-01',
+            hecos_subject: 'architectural design',
+            hecos_definition:
+             'The study of the design of buildings for human activity, taking into account both internal and external environmental factors.',
+            cah_l3_name: 'architecture',
+            note: nil
           },
           '100584' => {
-            cah_l3_id: 'CAH13-01-02'
+            cah_l3_id: 'CAH13-01-02',
+            hecos_subject: 'building technology',
+            hecos_definition:
+             'The study of building design and its relationship with construction.',
+            cah_l3_name: 'building',
+            note: nil
           },
           '100585' => {
-            cah_l3_id: 'CAH13-01-02'
+            cah_l3_id: 'CAH13-01-02',
+            hecos_subject: 'conservation of buildings',
+            hecos_definition:
+             'The study of the repair, restoration and preservation of old or damaged and/or culturally significant buildings including conservation technology.',
+            cah_l3_name: 'building',
+            note: nil
           },
           '100586' => {
-            cah_l3_id: 'CAH13-01-02'
+            cah_l3_id: 'CAH13-01-02',
+            hecos_subject: 'property development',
+            hecos_definition:
+             'The practical and theoretical study of property that is to be improved or altered in some way from its original purpose, or to be modernised or expanded within its current purpose.',
+            cah_l3_name: 'building',
+            note: nil
           },
           '100587' => {
-            cah_l3_id: 'CAH25-01-02'
+            cah_l3_id: 'CAH25-01-02',
+            hecos_subject: 'drawing',
+            hecos_definition:
+             'The study of/training in the expression of emotions, ideas or views of reality through representation by lines on a surface. Includes the use of such media as pen & ink, pencil, charcoal, pastel etc.',
+            cah_l3_name: 'art',
+            note: nil
           },
           '100588' => {
-            cah_l3_id: 'CAH13-01-03'
+            cah_l3_id: 'CAH13-01-03',
+            hecos_subject: 'landscape studies',
+            hecos_definition:
+             'The planning and management of the built and natural environment as landscape.',
+            cah_l3_name: 'landscape design',
+            note: nil
           },
           '100589' => {
-            cah_l3_id: 'CAH25-01-02'
+            cah_l3_id: 'CAH25-01-02',
+            hecos_subject: 'painting',
+            hecos_definition:
+             'The study of/training in the expression of emotions, ideas or views of reality through representation by the application of paints and chemical colour substances to canvasses or other materials.',
+            cah_l3_name: 'art',
+            note: nil
           },
           '100590' => {
-            cah_l3_id: 'CAH13-01-03'
+            cah_l3_id: 'CAH13-01-03',
+            hecos_subject: 'garden design',
+            hecos_definition:
+             'The study of the design, construction and management of public and private gardens.',
+            cah_l3_name: 'landscape design',
+            note: nil
           },
           '100592' => {
-            cah_l3_id: 'CAH25-01-02'
+            cah_l3_id: 'CAH25-01-02',
+            hecos_subject: 'sculpture',
+            hecos_definition:
+             'The representation of reality using three-dimensional media, e.g. stone, metal, wood etc.',
+            cah_l3_name: 'art',
+            note: nil
           },
           '100593' => {
-            cah_l3_id: 'CAH13-01-04'
+            cah_l3_id: 'CAH13-01-04',
+            hecos_subject: 'rural planning',
+            hecos_definition:
+             'The study of the planning of the infrastructure, development and management of settlement in the country.',
+            cah_l3_name: 'planning (urban, rural and regional)',
+            note: nil
           },
           '100594' => {
-            cah_l3_id: 'CAH13-01-04'
+            cah_l3_id: 'CAH13-01-04',
+            hecos_subject: 'urban studies',
+            hecos_definition:
+             'The study of the interaction of the planning process and management policies on the built environment.',
+            cah_l3_name: 'planning (urban, rural and regional)',
+            note: nil
           },
           '100595' => {
-            cah_l3_id: 'CAH25-01-02'
+            cah_l3_id: 'CAH25-01-02',
+            hecos_subject: 'printmaking',
+            hecos_definition:
+             'The study of/training in the expression of emotions, ideas or views of reality by rendering art concepts onto surfaces and transferring images, via ink or dyes, onto paper or fabric.',
+            cah_l3_name: 'art',
+            note: nil
           },
           '100597' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'applied economics',
+            hecos_definition:
+             'The study of the application of economic principles and analytical techniques to the study of particular industries, activities or the exploitation of particular resources.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '100599' => {
-            cah_l3_id: 'CAH20-01-04'
+            cah_l3_id: 'CAH20-01-04',
+            hecos_subject: 'fine art conservation',
+            hecos_definition:
+             'The study of the conservation, protection and restoration of fine art artefacts.',
+            cah_l3_name: 'heritage studies',
+            note: nil
           },
           '100600' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'agricultural economics',
+            hecos_definition:
+             'The study of the application of economic principles and analytical techniques in the area of agriculture.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '100601' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'economic policy',
+            hecos_definition:
+             'The study of the application of economic principles and analytical techniques in the area of government policy.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '100604' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'econometrics',
+            hecos_definition:
+             'The study of the systematic mathematical and statistical analysis of economic phenomena and problems.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '100606' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'economic systems',
+            hecos_definition:
+             'The study of economic systems based upon particular doctrines.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '100609' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'democracy',
+            hecos_definition:
+             'The study of the system of government based on the consent of the governed.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100610' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'UK government/parliamentary studies',
+            hecos_definition:
+             'The study of the structure and function of the UK system of government.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100612' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'European Union politics',
+            hecos_definition:
+             'The study of the structures, functions and theories of politics within the European Union.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100616' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'strategic studies',
+            hecos_definition:
+             'The study of strategies designed to promote and defend the autonomy and interests of a country within the international community.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100617' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'war and peace studies',
+            hecos_definition:
+             'The interdisciplinary study of violent conflict between political entities, its impact, resolution, and avoidance.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100618' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'comparative politics',
+            hecos_definition:
+             'The comparative study of differing political structures, political functions and political theories.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '100619' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'applied sociology',
+            hecos_definition:
+             'The study of the application of sociological principles and techniques to particular social institutions or types of social relationship.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100621' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'gender studies',
+            hecos_definition: 'The study of the sociological influence of gender.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100622' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'women\'s studies',
+            hecos_definition: 'The study of the role and influence of women in society.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100623' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'men\'s studies',
+            hecos_definition: 'The study of the role and influence of men in society.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100624' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'ethnicity',
+            hecos_definition: 'The study of the sociological influence of ethnicity.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100625' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'disability studies',
+            hecos_definition: 'The study of the sociological influence of disability.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100626' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'religion in society',
+            hecos_definition: 'The study of the sociological influence of religion.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100627' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'socio-economics',
+            hecos_definition:
+             'The study of the interrelationship between sociological and economic factors.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100628' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'social theory',
+            hecos_definition: 'The study of the concept of social behaviour.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100629' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'political sociology',
+            hecos_definition: 'The study of the sociological dimensions of politics.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100630' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'typography',
+            hecos_definition:
+             'The study of/training in the use of artistic techniques in the design and production of prefabricated fonts and the layout of text in all its forms, including printed and digital materials.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100631' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'sociology of science and technology',
+            hecos_definition:
+             'The study of the influence of new scientific and technological developments on society.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '100632' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'visual communication',
+            hecos_definition:
+             'The study of/training in the use of artistic techniques in design to impart information.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100633' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'furniture design and making',
+            hecos_definition:
+             'The study of/training in the design and making of furniture for residential, commercial and public environments.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100636' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'interactive and electronic design',
+            hecos_definition:
+             'The study of/training in the design of non-static computer-generated images.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '100637' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'musicianship and performance studies',
+            hecos_definition:
+             'The study of/training in the mastering of musical instruments and performing art as solo and/or ensemble performers.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100639' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'instrumental or vocal performance',
+            hecos_definition:
+             'The study of performance in relation to various genres of music, theatre and performing arts (concert, recital, play, ballet, operetta, circus acts, poetry).',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100642' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'music education and teaching',
+            hecos_definition:
+             'The study associated with the teaching and learning of music, developing music skills and appreciation.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100643' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'music and arts management',
+            hecos_definition:
+             'The study of managing music organisations, operations, facilities, and personnel.',
+            cah_l3_name: 'music',
+            note:
+             'Includes instruction in business and financial management, music law and applications to specific activities such as managing theatres, recording studios, bands and individual artists.'
           },
           '100644' => {
-            cah_l3_id: 'CAH17-01-03'
+            cah_l3_id: 'CAH17-01-03',
+            hecos_subject: 'music marketing',
+            hecos_definition:
+             'The study of the organisation of branding, pricing and promotion of the spectrum of musical products and services.',
+            cah_l3_name: 'marketing',
+            note:
+             'Including event promotion, music products merchandising, artist agency and promotion.'
           },
           '100645' => {
-            cah_l3_id: 'CAH15-01-03'
+            cah_l3_id: 'CAH15-01-03',
+            hecos_subject: 'international social policy',
+            hecos_definition:
+             'The study of the policies of international institutions which are designed to modify the balance of sociological factors.',
+            cah_l3_name: 'social policy',
+            note: nil
           },
           '100647' => {
-            cah_l3_id: 'CAH15-01-03'
+            cah_l3_id: 'CAH15-01-03',
+            hecos_subject: 'public policy',
+            hecos_definition:
+             'The study of policies implemented by local and central governments to influence sociological factors.',
+            cah_l3_name: 'social policy',
+            note: nil
           },
           '100648' => {
-            cah_l3_id: 'CAH15-01-03'
+            cah_l3_id: 'CAH15-01-03',
+            hecos_subject: 'health policy',
+            hecos_definition:
+             'The study of policies implemented by local and central governments to influence the public health of societies.',
+            cah_l3_name: 'social policy',
+            note: nil
           },
           '100649' => {
-            cah_l3_id: 'CAH15-01-03'
+            cah_l3_id: 'CAH15-01-03',
+            hecos_subject: 'welfare policy',
+            hecos_definition:
+             'The study of policies implemented by local and central governments to provide support for vulnerable and under-privileged members of society.',
+            cah_l3_name: 'social policy',
+            note: nil
           },
           '100650' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'conducting',
+            hecos_definition:
+             'The study of directing musical performance by way of visible gestures.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100651' => {
-            cah_l3_id: 'CAH15-01-03'
+            cah_l3_id: 'CAH15-01-03',
+            hecos_subject: 'education policy',
+            hecos_definition:
+             'The study of policies implemented by local and central governments to provide for the educational needs of society.',
+            cah_l3_name: 'social policy',
+            note: nil
           },
           '100652' => {
-            cah_l3_id: 'CAH15-01-03'
+            cah_l3_id: 'CAH15-01-03',
+            hecos_subject: 'security policy',
+            hecos_definition:
+             'The study of policies implemented by local and central governments to uphold and defend the structure and authority of the state.',
+            cah_l3_name: 'social policy',
+            note: nil
           },
           '100653' => {
-            cah_l3_id: 'CAH15-04-03'
+            cah_l3_id: 'CAH15-04-03',
+            hecos_subject: 'health and welfare',
+            hecos_definition:
+             'The study of Social Work services aimed at support of the health and welfare of vulnerable/under-privileged individuals and/or groups.',
+            cah_l3_name: 'health studies',
+            note: nil
           },
           '100654' => {
-            cah_l3_id: 'CAH15-04-02'
+            cah_l3_id: 'CAH15-04-02',
+            hecos_subject: 'child care',
+            hecos_definition:
+             'The study of social work services aimed at support of vulnerable/under-privileged children in society.',
+            cah_l3_name: 'childhood and youth studies',
+            note: nil
           },
           '100655' => {
-            cah_l3_id: 'CAH15-04-01'
+            cah_l3_id: 'CAH15-04-01',
+            hecos_subject: 'community work',
+            hecos_definition:
+             'The study of Social Work services aimed at support of vulnerable/under-privileged people within particular communities in society.',
+            cah_l3_name: 'social work',
+            note: nil
           },
           '100656' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'jazz performance',
+            hecos_definition:
+             'The study of performance in the jazz genre, and the preparation of individuals to master the performance of jazz.',
+            cah_l3_name: 'music',
+            note:
+             'Includes instruction in improvisation, jazz instrument and ensemble performance.'
           },
           '100657' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'popular music performance',
+            hecos_definition:
+             'The study of performance in the genre of music classified as popular music.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100658' => {
-            cah_l3_id: 'CAH23-01-02'
+            cah_l3_id: 'CAH23-01-02',
+            hecos_subject: 'careers guidance',
+            hecos_definition:
+             'The study of the provision of support services aimed at helping people to make informed and rational career decisions.',
+            cah_l3_name: 'personal development',
+            note: nil
           },
           '100659' => {
-            cah_l3_id: 'CAH15-04-01'
+            cah_l3_id: 'CAH15-04-01',
+            hecos_subject: 'community justice',
+            hecos_definition:
+             'The study of voluntary sector services aimed at the support of victims and/or provision to offenders.',
+            cah_l3_name: 'social work',
+            note: nil
           },
           '100661' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'historical performance practice',
+            hecos_definition:
+             'The study of historical interpretation, utilising period instruments and gaining insight into traditional approaches and original sources.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100662' => {
-            cah_l3_id: 'CAH15-04-01'
+            cah_l3_id: 'CAH15-04-01',
+            hecos_subject: 'probation/after-care',
+            hecos_definition:
+             'The study of the provision of services aimed at supervising criminal offenders and supporting their rehabilitation into society following punishment.',
+            cah_l3_name: 'social work',
+            note: nil
           },
           '100663' => {
-            cah_l3_id: 'CAH15-01-04'
+            cah_l3_id: 'CAH15-01-04',
+            hecos_subject: 'physical and biological anthropology',
+            hecos_definition:
+             'The study of the branch of anthropology that deals with physical and biological factors in societies.',
+            cah_l3_name: 'anthropology',
+            note: nil
           },
           '100664' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'history of music',
+            hecos_definition:
+             'The study of the historical development of music and musical styles.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100665' => {
-            cah_l3_id: 'CAH26-01-03'
+            cah_l3_id: 'CAH26-01-03',
+            hecos_subject: 'economic geography',
+            hecos_definition:
+             'The study of the relationship between economic factors and the distribution and interaction of people with the natural environment.',
+            cah_l3_name: 'human geography',
+            note: nil
           },
           '100666' => {
-            cah_l3_id: 'CAH26-01-03'
+            cah_l3_id: 'CAH26-01-03',
+            hecos_subject: 'urban geography',
+            hecos_definition:
+             'The study of the relationship between people and the environment in towns and cities.',
+            cah_l3_name: 'human geography',
+            note: nil
           },
           '100667' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'musicology',
+            hecos_definition:
+             'The systematic study of the forms and methods of music art, and the functions of music in societies and cultures.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100668' => {
-            cah_l3_id: 'CAH26-01-03'
+            cah_l3_id: 'CAH26-01-03',
+            hecos_subject: 'political geography',
+            hecos_definition:
+             'The study of the influence of political factors in the distribution of populations and their effect on the environment.',
+            cah_l3_name: 'human geography',
+            note: nil
           },
           '100669' => {
-            cah_l3_id: 'CAH26-01-03'
+            cah_l3_id: 'CAH26-01-03',
+            hecos_subject: 'transport geography',
+            hecos_definition:
+             'The study of the influence of travel and transport on populations and the environment.',
+            cah_l3_name: 'human geography',
+            note: nil
           },
           '100670' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'environmental history',
+            hecos_definition:
+             'The study of earlier and continuing topographical, topological and social developments and their influence on populations and the environment.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100671' => {
-            cah_l3_id: 'CAH26-01-03'
+            cah_l3_id: 'CAH26-01-03',
+            hecos_subject: 'cultural geography',
+            hecos_definition:
+             'The study of the influence of beliefs and value systems on populations and the environment.',
+            cah_l3_name: 'human geography',
+            note: nil
           },
           '100674' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'ethnomusicology and world music',
+            hecos_definition:
+             'The study of music and dance from all parts of the world, focusing on the systematic study of the forms and methods of music art, and the functions of music, in Western and non-Western societies and cultures.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100676' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'English law',
+            hecos_definition: 'The study of the Law of England.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100677' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'Northern Irish law',
+            hecos_definition: 'The study of the law of Northern Ireland.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100678' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'Scots law',
+            hecos_definition: 'The study of the law of Scotland.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100680' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'European Union law',
+            hecos_definition: 'The study of European law.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100681' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'public international law',
+            hecos_definition:
+             'The study of the law governing countries beyond the boundaries of the European Union.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100683' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'comparative law',
+            hecos_definition: 'The study of different legal structures and systems.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100684' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'public law',
+            hecos_definition:
+             'The study of the definition and application of public law.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100685' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'criminal law',
+            hecos_definition:
+             'The study of the definition and application of criminal law.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100686' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'private law',
+            hecos_definition:
+             'The study of the definition and application of private law.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100689' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'property law',
+            hecos_definition: 'The study of the law of property.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100690' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'torts',
+            hecos_definition: 'The study of civil wrongs and injuries.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100691' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'jurisprudence',
+            hecos_definition: 'The science or philosophy of law.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100692' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'legal practice',
+            hecos_definition:
+             'The study of the duties and requirements of legal representation.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100693' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'medical law',
+            hecos_definition:
+             'The study of the law relating to the practice of medicine.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '100695' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'music composition',
+            hecos_definition:
+             'The creation of a new piece of original music and structure.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100697' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'directing for theatre',
+            hecos_definition:
+             'The study of/training in the supervision and direction of dramatic performances.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100698' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'theatre studies',
+            hecos_definition:
+             'The study of the technical aspects of theatrical performances.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100700' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'theatre production',
+            hecos_definition:
+             'The study of the management, planning, design and preparation of plays and other theatrical entertainment programmes.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100702' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'technical theatre studies',
+            hecos_definition:
+             'The study of how to apply special effects and techniques to the communication of dramatic information through technical theatre methods.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100703' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'stage management',
+            hecos_definition:
+             'The study of the management of lighting, props, scenery and other technical items associated with theatrical performances and management of the stage.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100704' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'technical stage management',
+            hecos_definition:
+             'The study of technical stage management, including set design, lighting design, theatre acoustics and technical direction.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100705' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'theatrical wardrobe design',
+            hecos_definition:
+             'The study of/training in the design of costumes for theatrical performances.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100706' => {
-            cah_l3_id: 'CAH25-01-05'
+            cah_l3_id: 'CAH25-01-05',
+            hecos_subject: 'hair and make-up',
+            hecos_definition:
+             'The study of methods and processes for hair design and make-up, face and body paints for theatre, film, fashion and other lens-based and live performance creative media.',
+            cah_l3_name: 'others in creative arts and design',
+            note: 'Includes the use of prosthetics and special effects.'
           },
           '100707' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'circus arts',
+            hecos_definition:
+             'The study of the range of circus art skills to gain a high level of expertise and performing ability in a particular circus discipline such as trapeze, tightrope or juggling.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100708' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'stage design',
+            hecos_definition:
+             'The study of the design of sets and scenery for use in theatres, film and television.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100710' => {
-            cah_l3_id: 'CAH25-02-03'
+            cah_l3_id: 'CAH25-02-03',
+            hecos_subject: 'community theatre',
+            hecos_definition:
+             'The study of theatre performance and practice focusing on community and education developed through projects with people in the local community.',
+            cah_l3_name: 'drama',
+            note: nil
           },
           '100711' => {
-            cah_l3_id: 'CAH25-02-04'
+            cah_l3_id: 'CAH25-02-04',
+            hecos_subject: 'choreography',
+            hecos_definition:
+             'The study of/training in the arrangement and planning of staged dance.',
+            cah_l3_name: 'dance',
+            note: nil
           },
           '100712' => {
-            cah_l3_id: 'CAH25-02-04'
+            cah_l3_id: 'CAH25-02-04',
+            hecos_subject: 'dance performance',
+            hecos_definition:
+             'The study of the advancement of creative dance performance, including the technical and artistic complexities inherent in performance.',
+            cah_l3_name: 'dance',
+            note: nil
           },
           '100714' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'history of photography',
+            hecos_definition:
+             'The study of the development of the generating of still images.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100716' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'cinematography',
+            hecos_definition:
+             'The study of the technical aspects of creating moving images for film, tv and video.',
+            cah_l3_name: 'cinematics and photography',
+            note:
+             'For artistic aspects, use cinematics. For production, use film production. For directing, use film directing.'
           },
           '100717' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'visual and audio effects',
+            hecos_definition:
+             'The study of/training in the production of special visual and/or audio effects in the production of moving image sequences.',
+            cah_l3_name: 'cinematics and photography',
+            note: nil
           },
           '100721' => {
-            cah_l3_id: 'CAH25-01-05'
+            cah_l3_id: 'CAH25-01-05',
+            hecos_subject: 'metal work',
+            hecos_definition:
+             'The study of all crafts which use metals as a source material.',
+            cah_l3_name: 'others in creative arts and design',
+            note: nil
           },
           '100724' => {
-            cah_l3_id: 'CAH25-01-05'
+            cah_l3_id: 'CAH25-01-05',
+            hecos_subject: 'glass crafts',
+            hecos_definition:
+             'The study of all crafts which involve the use of glass as a source material.',
+            cah_l3_name: 'others in creative arts and design',
+            note: nil
           },
           '100725' => {
-            cah_l3_id: 'CAH25-01-05'
+            cah_l3_id: 'CAH25-01-05',
+            hecos_subject: 'silversmithing and goldsmithing',
+            hecos_definition:
+             'The study of the craft of creating artefacts using the materials of silver and gold.',
+            cah_l3_name: 'others in creative arts and design',
+            note: nil
           },
           '100726' => {
-            cah_l3_id: 'CAH25-01-05'
+            cah_l3_id: 'CAH25-01-05',
+            hecos_subject: 'clock and watchmaking',
+            hecos_definition: 'The study of the craft of creating chronometers.',
+            cah_l3_name: 'others in creative arts and design',
+            note: nil
           },
           '100728' => {
-            cah_l3_id: 'CAH25-01-05'
+            cah_l3_id: 'CAH25-01-05',
+            hecos_subject: 'surface decoration',
+            hecos_definition:
+             'The study of all crafts which involve changing the appearance of objects by adding ornament or colour to their outer layer.',
+            cah_l3_name: 'others in creative arts and design',
+            note: nil
           },
           '100729' => {
-            cah_l3_id: 'CAH19-01-05'
+            cah_l3_id: 'CAH19-01-05',
+            hecos_subject: 'scriptwriting',
+            hecos_definition:
+             'The study of/training in the writing of scripts for theatre, television or motion picture productions.',
+            cah_l3_name: 'creative writing',
+            note: nil
           },
           '100730' => {
-            cah_l3_id: 'CAH19-01-05'
+            cah_l3_id: 'CAH19-01-05',
+            hecos_subject: 'poetry writing',
+            hecos_definition: 'The study of/training in the writing of poems.',
+            cah_l3_name: 'creative writing',
+            note: nil
           },
           '100731' => {
-            cah_l3_id: 'CAH19-01-05'
+            cah_l3_id: 'CAH19-01-05',
+            hecos_subject: 'professional writing',
+            hecos_definition: 'The study of writing as a professional skill.',
+            cah_l3_name: 'creative writing',
+            note: '_Excludes the writing of fiction.'
           },
           '100734' => {
-            cah_l3_id: 'CAH11-01-01'
+            cah_l3_id: 'CAH11-01-01',
+            hecos_subject: 'computer architectures',
+            hecos_definition: 'The study of the systemic structure of computer systems.',
+            cah_l3_name: 'computer science',
+            note: nil
           },
           '100735' => {
-            cah_l3_id: 'CAH11-01-01'
+            cah_l3_id: 'CAH11-01-01',
+            hecos_subject: 'operating systems',
+            hecos_definition:
+             'The study of software which is designed to facilitate the efficient co-ordination and use of system components.',
+            cah_l3_name: 'computer science',
+            note: nil
           },
           '100736' => {
-            cah_l3_id: 'CAH11-01-01'
+            cah_l3_id: 'CAH11-01-01',
+            hecos_subject: 'human-computer interaction',
+            hecos_definition:
+             'The study, design and application of principles and techniques aimed at optimising the interaction between computer systems and their human users.',
+            cah_l3_name: 'computer science',
+            note: nil
           },
           '100737' => {
-            cah_l3_id: 'CAH11-01-01'
+            cah_l3_id: 'CAH11-01-01',
+            hecos_subject: 'multimedia computing science',
+            hecos_definition:
+             'The study of the area of computer science concerned with the computer controlled delivery of information in a variety of forms, including text, pictures, video, graphics and animation. Often associated with information presentation on the Internet.',
+            cah_l3_name: 'computer science',
+            note: nil
           },
           '100738' => {
-            cah_l3_id: 'CAH11-01-07'
+            cah_l3_id: 'CAH11-01-07',
+            hecos_subject: 'e-business',
+            hecos_definition:
+             'The study of commercial activity delivered through electronic means.',
+            cah_l3_name: 'business computing',
+            note: nil
           },
           '100739' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'beauty therapy',
+            hecos_definition:
+             'The study of therapies to enhance well-being, appearance, relaxation or uplift to meet clients\' needs. Includes treatments such as injectables and laser/light therapies.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '100741' => {
-            cah_l3_id: 'CAH11-01-01'
+            cah_l3_id: 'CAH11-01-01',
+            hecos_subject: 'high performance computing',
+            hecos_definition:
+             'The study of high-performance computing using supercomputers and clusters to solve advanced computational problems.',
+            cah_l3_name: 'computer science',
+            note: nil
           },
           '100743' => {
-            cah_l3_id: 'CAH17-01-09'
+            cah_l3_id: 'CAH17-01-09',
+            hecos_subject: 'systems thinking',
+            hecos_definition:
+             'The study of holistic approaches to complex problems, to consideration of the roles other people play and to assessing how all the different components within that situation are related.',
+            cah_l3_name: 'others in business and management',
+            note:
+             'Systems thinking can be used in any subject area and has been applied to the study of medical, environmental, political, economic, human resources, and educational systems, among many others.'
           },
           '100744' => {
-            cah_l3_id: 'CAH02-06-02'
+            cah_l3_id: 'CAH02-06-02',
+            hecos_subject: 'dietetics',
+            hecos_definition:
+             'The study of nutritional services, menu planning and diet formulation for individuals, families and institutions.',
+            cah_l3_name: 'nutrition and dietetics',
+            note: nil
           },
           '100746' => {
-            cah_l3_id: 'CAH02-04-09'
+            cah_l3_id: 'CAH02-04-09',
+            hecos_subject: 'clinical practice nursing',
+            hecos_definition:
+             'The study of the principles and techniques for assessing, managing, treating and monitoring in the following care specialisms: diabetes, cancer, cardiac, renal, respiratory disease or disorders or sexual health.',
+            cah_l3_name: 'others in nursing',
+            note: nil
           },
           '100747' => {
-            cah_l3_id: 'CAH02-04-09'
+            cah_l3_id: 'CAH02-04-09',
+            hecos_subject: 'medical nursing',
+            hecos_definition:
+             'The study of the principles and techniques to allow nurses to assess, manage, treat and monitor the provision of care for patients undergoing investigations that do not require surgical intervention.',
+            cah_l3_name: 'others in nursing',
+            note: nil
           },
           '100748' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'cardiology',
+            hecos_definition:
+             'The study of techniques aimed at diagnosing and treating disorders of the human cardiovascular system.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '100749' => {
-            cah_l3_id: 'CAH02-06-01'
+            cah_l3_id: 'CAH02-06-01',
+            hecos_subject: 'paramedic science',
+            hecos_definition:
+             'The study of the principles and techniques to allow provision of on-site care for persons with acute illnesses or injuries.',
+            cah_l3_name: 'health sciences (non-specific)',
+            note: nil
           },
           '100750' => {
-            cah_l3_id: 'CAH02-06-01'
+            cah_l3_id: 'CAH02-06-01',
+            hecos_subject: 'physician associate studies',
+            hecos_definition:
+             'The study of the principles and techniques required to take medical histories, perform examinations, diagnose illnesses, and analyse test results under direct supervision of a doctor.',
+            cah_l3_name: 'health sciences (non-specific)',
+            note: nil
           },
           '100751' => {
-            cah_l3_id: 'CAH11-01-03'
+            cah_l3_id: 'CAH11-01-03',
+            hecos_subject: 'information modelling',
+            hecos_definition:
+             'The study of the modelling of information flows within an organisation and how these flows can be optimised and incorporated into the design of a large-scale computer system.',
+            cah_l3_name: 'information systems',
+            note: nil
           },
           '100753' => {
-            cah_l3_id: 'CAH11-01-03'
+            cah_l3_id: 'CAH11-01-03',
+            hecos_subject: 'systems analysis and design',
+            hecos_definition:
+             'The study of standard methodologies for the design of large-scale computer systems.',
+            cah_l3_name: 'information systems',
+            note: nil
           },
           '100754' => {
-            cah_l3_id: 'CAH11-01-03'
+            cah_l3_id: 'CAH11-01-03',
+            hecos_subject: 'databases',
+            hecos_definition:
+             'The study, design or application of information systems which act as structured repositories for large amounts of information.',
+            cah_l3_name: 'information systems',
+            note: nil
           },
           '100755' => {
-            cah_l3_id: 'CAH11-01-03'
+            cah_l3_id: 'CAH11-01-03',
+            hecos_subject: 'data management',
+            hecos_definition:
+             'The study of the management of computer systems which capture, process and transmit data.',
+            cah_l3_name: 'information systems',
+            note: nil
           },
           '100756' => {
-            cah_l3_id: 'CAH11-01-03'
+            cah_l3_id: 'CAH11-01-03',
+            hecos_subject: 'systems auditing',
+            hecos_definition:
+             'The study and development of techniques for inspecting, correcting and verifying information systems.',
+            cah_l3_name: 'information systems',
+            note: nil
           },
           '100757' => {
-            cah_l3_id: 'CAH11-01-03'
+            cah_l3_id: 'CAH11-01-03',
+            hecos_subject: 'intelligent systems',
+            hecos_definition:
+             'The study of digitally-based products and systems within manufactured goods, including telematic devices, human interfaces and reasoning for computing systems.',
+            cah_l3_name: 'information systems',
+            note: 'Includes expert systems.'
           },
           '100758' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'British history',
+            hecos_definition: 'Historical studies focusing on the British Isles.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100759' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'Irish history',
+            hecos_definition: 'Historical studies of Ireland.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100760' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'Welsh history',
+            hecos_definition: 'Historical studies of Wales.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100761' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'English history',
+            hecos_definition: 'Historical studies of England.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100762' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'European history',
+            hecos_definition: 'Historical studies focusing on continental Europe.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100763' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'German history',
+            hecos_definition: 'Historical studies of Germany.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100764' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'Italian history',
+            hecos_definition: 'Historical studies of Italy.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100765' => {
-            cah_l3_id: 'CAH19-04-04'
+            cah_l3_id: 'CAH19-04-04',
+            hecos_subject: 'Iberian studies',
+            hecos_definition:
+             'The study of Spanish and Portuguese societies, cultures, histories, languages and literatures._',
+            cah_l3_name: 'Iberian studies',
+            note: nil
           },
           '100766' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'Russian history',
+            hecos_definition: 'Historical studies of Russia.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100767' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'American history',
+            hecos_definition: 'Historical studies of the Americas.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100768' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'USA history',
+            hecos_definition: 'Historical studies of the United States of America.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100769' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'Latin American history',
+            hecos_definition: 'The study of the history of Latin America.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100771' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'Chinese history',
+            hecos_definition: 'Historical studies of China.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100772' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'South Asian history',
+            hecos_definition: 'Historical studies of the Indian sub-continent.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100773' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'South East Asian history',
+            hecos_definition: 'Historical studies of South East Asia.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100774' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'Byzantine studies',
+            hecos_definition:
+             'Historical studies in the Byzantine Empire from 300-600 AD.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100777' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'world history',
+            hecos_definition: 'Historical studies considered globally.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100778' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'international history',
+            hecos_definition: 'Historical studies of relations between nation states.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100779' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'family history',
+            hecos_definition: 'Genealogical study of family or personal descent.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100780' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'history of religions',
+            hecos_definition:
+             'Historical study of religious movements and their interaction with other cultures.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100781' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'intellectual history',
+            hecos_definition:
+             'The history of ideas and the study of intellectual movements.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100782' => {
-            cah_l3_id: 'CAH20-01-02'
+            cah_l3_id: 'CAH20-01-02',
+            hecos_subject: 'history of architecture',
+            hecos_definition:
+             'Historical study of building design and architectural movements.',
+            cah_l3_name: 'history of art, architecture and design',
+            note: nil
           },
           '100783' => {
-            cah_l3_id: 'CAH20-01-02'
+            cah_l3_id: 'CAH20-01-02',
+            hecos_subject: 'history of design',
+            hecos_definition: 'Historical study of design styles and movements.',
+            cah_l3_name: 'history of art, architecture and design',
+            note: nil
           },
           '100784' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'history of mathematics',
+            hecos_definition: 'Historical studies of the mathematical sciences.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100785' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'history of medicine',
+            hecos_definition: 'Historical studies of medical sciences and practices.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100786' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'military history',
+            hecos_definition:
+             'Historical studies of the development of armed forces and their deployment in warfare.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '100787' => {
-            cah_l3_id: 'CAH20-01-03'
+            cah_l3_id: 'CAH20-01-03',
+            hecos_subject: 'Egyptology',
+            hecos_definition:
+             'The archaeological study of the civilisations of ancient Egypt.',
+            cah_l3_name: 'archaeology',
+            note: nil
           },
           '100791' => {
-            cah_l3_id: 'CAH20-02-01'
+            cah_l3_id: 'CAH20-02-01',
+            hecos_subject: 'mental philosophy',
+            hecos_definition: 'The study of the philosophy of thinking and the mind.',
+            cah_l3_name: 'philosophy',
+            note: nil
           },
           '100792' => {
-            cah_l3_id: 'CAH20-02-01'
+            cah_l3_id: 'CAH20-02-01',
+            hecos_subject: 'social philosophy',
+            hecos_definition:
+             'The study of philosophical questions about an individual\'s responsibility and obligations to society.',
+            cah_l3_name: 'philosophy',
+            note: nil
           },
           '100793' => {
-            cah_l3_id: 'CAH20-02-01'
+            cah_l3_id: 'CAH20-02-01',
+            hecos_subject: 'ethics',
+            hecos_definition:
+             'The study of the concept of morality and codes of behaviour.',
+            cah_l3_name: 'philosophy',
+            note: nil
           },
           '100794' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'theology and religious studies',
+            hecos_definition:
+             'The study of the nature of divinity and of beliefs in their social context.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100795' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'Christian studies',
+            hecos_definition:
+             'The study of the theory and practice of Roman Catholic, Protestant, Orthodox and other Christian denominations.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100796' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'Islamic studies',
+            hecos_definition: 'The study of the theory and practice of Islam.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100797' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'Judaism',
+            hecos_definition:
+             'The study of the theory and practice of the Jewish religion.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100798' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'buddhism',
+            hecos_definition:
+             'The study of the theory and practice of the Buddhist religious tradition.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100799' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'divinity',
+            hecos_definition:
+             'Investigation into the nature of a deity and other divine beings.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100800' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'religious writings',
+            hecos_definition:
+             'The study and interpretation of religious writings in their historical, theological and philosophical contexts.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100801' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'biblical studies',
+            hecos_definition:
+             'The study of the Old and New Testaments, the apocryphal writings and patristic exegesis.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100802' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'pastoral studies',
+            hecos_definition: 'The study of religious practice in its social setting.',
+            cah_l3_name: 'theology and religious studies',
+            note: 'Includes the work of the Ministry in religious education.'
           },
           '100803' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'comparative religious studies',
+            hecos_definition:
+             'The comparative study of different religious beliefs, customs and observations.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '100805' => {
-            cah_l3_id: 'CAH20-01-04'
+            cah_l3_id: 'CAH20-01-04',
+            hecos_subject: 'heritage studies',
+            hecos_definition:
+             'The study of objects, practices, traditions and social and cultural movements that form or influence collections.',
+            cah_l3_name: 'heritage studies',
+            note:
+             'Includes intangible heritage, and areas distinct from history and or geography.'
           },
           '100807' => {
-            cah_l3_id: 'CAH20-01-04'
+            cah_l3_id: 'CAH20-01-04',
+            hecos_subject: 'heritage management',
+            hecos_definition:
+             'The study of the management of existing and newly designated sites of heritage importance, including working with heritage organisations, legal consultants, the voluntary sector, governments and international bodies.',
+            cah_l3_name: 'heritage studies',
+            note: nil
           },
           '100808' => {
-            cah_l3_id: 'CAH17-01-02'
+            cah_l3_id: 'CAH17-01-02',
+            hecos_subject: 'European business studies',
+            hecos_definition:
+             'The study of organisations and their operations within Europe.',
+            cah_l3_name: 'business studies',
+            note: nil
           },
           '100810' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'strategic management',
+            hecos_definition:
+             'The study of the techniques involved in the formation and implementation of a strategy within an organisation.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100811' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'creative management',
+            hecos_definition:
+             'The study of techniques for creative problem solving and the management of creativity in others.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100812' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'project management',
+            hecos_definition:
+             'The study of the techniques specific to the planning, managing and monitoring of projects.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100813' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'change management',
+            hecos_definition:
+             'The specific techniques involved in the planning and management of change within an organisation.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100814' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'organisational development',
+            hecos_definition:
+             'The techniques involved in the development of an organisation\'s physical and human resources, structure and culture.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100815' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'institutional management',
+            hecos_definition:
+             'The study of the specific techniques required for the management of specific types of institutions.',
+            cah_l3_name: 'management studies',
+            note:
+             'Institutional management is particularly associated with the organisation and wellbeing of the people within the buildings rather than the buildings themselves and the amenities within them.'
           },
           '100817' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'management and organisation of education',
+            hecos_definition:
+             'The study of the personnel and administration necessary for the efficient organisation of an education establishment.',
+            cah_l3_name: 'management studies',
+            note:
+             'May include investigation of disparate subjects such as office skills, book-keeping, interpersonal skills, child welfare etc.'
           },
           '100819' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'land management',
+            hecos_definition: 'The techniques involved in the management of land.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100820' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'property management',
+            hecos_definition:
+             'The study of the techniques involved in the management of buildings and other structures.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100821' => {
-            cah_l3_id: 'CAH11-01-04'
+            cah_l3_id: 'CAH11-01-04',
+            hecos_subject: 'requirements engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the systematic collection, defining, processing and management of descriptions of desired characteristics for a product, service or system.',
+            cah_l3_name: 'software engineering',
+            note: nil
           },
           '100822' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'cell biology',
+            hecos_definition:
+             'The study of the organisation of the cell, cell membrane and cell communication.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100823' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'emergency and disaster management',
+            hecos_definition:
+             'The study of the techniques for managing emergencies and disasters.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100825' => {
-            cah_l3_id: 'CAH13-01-02'
+            cah_l3_id: 'CAH13-01-02',
+            hecos_subject: 'property valuation and auctioneering',
+            hecos_definition:
+             'The study of the techniques involved in the valuation and auctioneering of property.',
+            cah_l3_name: 'building',
+            note: nil
           },
           '100826' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'parasitology',
+            hecos_definition:
+             'The study of the transmission and control of parasitic diseases and their vectors.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100827' => {
-            cah_l3_id: 'CAH17-01-07'
+            cah_l3_id: 'CAH17-01-07',
+            hecos_subject: 'banking',
+            hecos_definition: 'The study of the banking industry.',
+            cah_l3_name: 'finance',
+            note: nil
           },
           '100828' => {
-            cah_l3_id: 'CAH17-01-07'
+            cah_l3_id: 'CAH17-01-07',
+            hecos_subject: 'investment',
+            hecos_definition:
+             'The study of the investment industry and the techniques used therein.',
+            cah_l3_name: 'finance',
+            note: nil
           },
           '100829' => {
-            cah_l3_id: 'CAH03-01-06'
+            cah_l3_id: 'CAH03-01-06',
+            hecos_subject: 'behavioural biology',
+            hecos_definition:
+             'The study of the behavioural strategies used by organisms in their natural environment to maximise fitness. Includes foraging, social and reproductive (including parental care, sexual selection and mate choice) behaviour, behavioural responses to predators, communication, migration and homing.',
+            cah_l3_name: 'zoology',
+            note: nil
           },
           '100830' => {
-            cah_l3_id: 'CAH17-01-07'
+            cah_l3_id: 'CAH17-01-07',
+            hecos_subject: 'insurance',
+            hecos_definition:
+             'The study of the insurance industry and the techniques used therein.',
+            cah_l3_name: 'finance',
+            note: nil
           },
           '100831' => {
-            cah_l3_id: 'CAH17-01-07'
+            cah_l3_id: 'CAH17-01-07',
+            hecos_subject: 'taxation',
+            hecos_definition:
+             'The study of the rules and operations of taxation systems.',
+            cah_l3_name: 'finance',
+            note: nil
           },
           '100832' => {
-            cah_l3_id: 'CAH17-01-07'
+            cah_l3_id: 'CAH17-01-07',
+            hecos_subject: 'financial management',
+            hecos_definition:
+             'The study of the management of money, capital and credit.',
+            cah_l3_name: 'finance',
+            note: nil
           },
           '100834' => {
-            cah_l3_id: 'CAH03-01-06'
+            cah_l3_id: 'CAH03-01-06',
+            hecos_subject: 'developmental biology',
+            hecos_definition:
+             'The study of the development of multi-cellular organisms.',
+            cah_l3_name: 'zoology',
+            note: nil
           },
           '100835' => {
-            cah_l3_id: 'CAH17-01-07'
+            cah_l3_id: 'CAH17-01-07',
+            hecos_subject: 'financial risk',
+            hecos_definition:
+             'The study of the risks involved in the handling of money, capital and credit.',
+            cah_l3_name: 'finance',
+            note: nil
           },
           '100836' => {
-            cah_l3_id: 'CAH17-01-08'
+            cah_l3_id: 'CAH17-01-08',
+            hecos_subject: 'management accountancy',
+            hecos_definition:
+             'The study of the application of cost and management accounting techniques within organisations.',
+            cah_l3_name: 'accounting',
+            note: nil
           },
           '100837' => {
-            cah_l3_id: 'CAH17-01-08'
+            cah_l3_id: 'CAH17-01-08',
+            hecos_subject: 'public accountancy',
+            hecos_definition:
+             'The study of the application of accounting techniques that are specific to public sector organisations.',
+            cah_l3_name: 'accounting',
+            note: nil
           },
           '100838' => {
-            cah_l3_id: 'CAH17-01-08'
+            cah_l3_id: 'CAH17-01-08',
+            hecos_subject: 'book-keeping',
+            hecos_definition:
+             'The techniques involved in recording financial information within organisations.',
+            cah_l3_name: 'accounting',
+            note: nil
           },
           '100840' => {
-            cah_l3_id: 'CAH17-01-08'
+            cah_l3_id: 'CAH17-01-08',
+            hecos_subject: 'audit management',
+            hecos_definition:
+             'The study of techniques involved in auditing financial accounts.',
+            cah_l3_name: 'accounting',
+            note: nil
           },
           '100841' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'popular music',
+            hecos_definition:
+             'The study of popular music that is accessible to the general public and disseminated by one or more of the mass media, including the study of musical concepts in popular music cultures.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100842' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'film music and screen music',
+            hecos_definition:
+             'The analytical study of film/screen music including techniques of musical style and composition for the moving image.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100843' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'jazz',
+            hecos_definition: 'The study of music classified as in the style of jazz.',
+            cah_l3_name: 'music',
+            note: 'Includes instruction in the history of jazz and jazz theory.'
           },
           '100844' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'sacred music',
+            hecos_definition:
+             'The study of the use of music in the church and the role of music in worship and other world religions.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100845' => {
-            cah_l3_id: 'CAH17-01-08'
+            cah_l3_id: 'CAH17-01-08',
+            hecos_subject: 'financial reporting',
+            hecos_definition:
+             'The study of specific techniques involved in explaining and disclosing transactions involving money, capital and credit.',
+            cah_l3_name: 'accounting',
+            note: nil
           },
           '100846' => {
-            cah_l3_id: 'CAH17-01-03'
+            cah_l3_id: 'CAH17-01-03',
+            hecos_subject: 'market research',
+            hecos_definition:
+             'The study of techniques involved in the identification, definition and research of markets for an organisation\'s products or services.',
+            cah_l3_name: 'marketing',
+            note: nil
           },
           '100847' => {
-            cah_l3_id: 'CAH03-01-10'
+            cah_l3_id: 'CAH03-01-10',
+            hecos_subject: 'reproductive biology',
+            hecos_definition:
+             'The study of the reproduction of multi-cellular organisms.',
+            cah_l3_name: 'others in biosciences',
+            note: nil
           },
           '100848' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'aquatic biology',
+            hecos_definition: 'The study of marine, freshwater and esturine biology.',
+            cah_l3_name: 'ecology and environmental biology',
+            note: nil
           },
           '100849' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'freshwater biology',
+            hecos_definition: 'The study of freshwater and estuarine biology.',
+            cah_l3_name: 'ecology and environmental biology',
+            note: nil
           },
           '100850' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'population biology',
+            hecos_definition: 'The study of organism numbers and population dynamics.',
+            cah_l3_name: 'ecology and environmental biology',
+            note: nil
           },
           '100851' => {
-            cah_l3_id: 'CAH17-01-03'
+            cah_l3_id: 'CAH17-01-03',
+            hecos_subject: 'sales management',
+            hecos_definition:
+             'The study of the techniques involved in the management of a sales function within an organisation.',
+            cah_l3_name: 'marketing',
+            note: nil
           },
           '100853' => {
-            cah_l3_id: 'CAH17-01-03'
+            cah_l3_id: 'CAH17-01-03',
+            hecos_subject: 'international marketing',
+            hecos_definition:
+             'The study of the techniques involved in marketing goods or services to other countries or cultures.',
+            cah_l3_name: 'marketing',
+            note: nil
           },
           '100854' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'community music',
+            hecos_definition:
+             'The study of music in everyday life and the development of the professional and critical skills required in community-based music making, including the facilitating of community music projects.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100855' => {
-            cah_l3_id: 'CAH17-01-03'
+            cah_l3_id: 'CAH17-01-03',
+            hecos_subject: 'promotion and advertising',
+            hecos_definition:
+             'The study of the techniques involved in the promotion and advertising of an organisation or an organisation\'s products.',
+            cah_l3_name: 'marketing',
+            note: nil
           },
           '100856' => {
-            cah_l3_id: 'CAH17-01-03'
+            cah_l3_id: 'CAH17-01-03',
+            hecos_subject: 'corporate image',
+            hecos_definition:
+             'The study of the way an organisation is perceived by its members and the public. Includes the impact of promotional displays in order subliminally to recall a particular company or product.',
+            cah_l3_name: 'marketing',
+            note: nil
           },
           '100858' => {
-            cah_l3_id: 'CAH03-01-10'
+            cah_l3_id: 'CAH03-01-10',
+            hecos_subject: 'evolution',
+            hecos_definition:
+             'The study of organisms\' adaptation to their environment and the mechanisms of heredity and change.',
+            cah_l3_name: 'others in biosciences',
+            note: nil
           },
           '100861' => {
-            cah_l3_id: 'CAH17-01-05'
+            cah_l3_id: 'CAH17-01-05',
+            hecos_subject: 'staff development',
+            hecos_definition:
+             'The study of the specific techniques involved in the development of an organisation\'s human resources.',
+            cah_l3_name: 'human resource management',
+            note: nil
           },
           '100862' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'sonic arts',
+            hecos_definition:
+             'The creation of an original piece of music using practices that predominantly focus on a relationship between the wide notions of the visual and aural domains of art and sound perception.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '100864' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'ecosystem ecology and land use',
+            hecos_definition:
+             'The study of large-scale ecology including catchment and regional studies, landscape ecology and interactions between ecology and land use patterns.',
+            cah_l3_name: 'ecology and environmental biology',
+            note: nil
           },
           '100865' => {
-            cah_l3_id: 'CAH03-01-10'
+            cah_l3_id: 'CAH03-01-10',
+            hecos_subject: 'biometry',
+            hecos_definition:
+             'The study of quantitative techniques and measurement in the biological sciences.',
+            cah_l3_name: 'others in biosciences',
+            note: nil
           },
           '100866' => {
-            cah_l3_id: 'CAH17-01-05'
+            cah_l3_id: 'CAH17-01-05',
+            hecos_subject: 'health and safety management',
+            hecos_definition:
+             'The study of issues relating to health and safety in the workplace.',
+            cah_l3_name: 'human resource management',
+            note: nil
           },
           '100867' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'electronic music',
+            hecos_definition:
+             'The study of music in the genre classified as electronic.',
+            cah_l3_name: 'music',
+            note:
+             'Includes mastering electronic music production, remixing and composition using electronic techniques and digital music technologies.'
           },
           '100868' => {
-            cah_l3_id: 'CAH17-01-09'
+            cah_l3_id: 'CAH17-01-09',
+            hecos_subject: 'office administration',
+            hecos_definition:
+             'The study of the skills involved in organising and running an office, its personnel and processes.',
+            cah_l3_name: 'others in business and management',
+            note: nil
           },
           '100869' => {
-            cah_l3_id: 'CAH11-01-03'
+            cah_l3_id: 'CAH11-01-03',
+            hecos_subject: 'bioinformatics',
+            hecos_definition:
+             'The study of the application of computer-based technologies and services to biological, biomedical, and biotechnology research.',
+            cah_l3_name: 'information systems',
+            note: nil
           },
           '100870' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'jazz composition',
+            hecos_definition:
+             'The preparation of individuals to master the composition of jazz.',
+            cah_l3_name: 'music',
+            note: 'Includes instruction in related musical styles such as Blues.'
           },
           '100872' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'mycology',
+            hecos_definition:
+             'The study of fungi, symbiotic relationships and their role in decay.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100873' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'plant cell science',
+            hecos_definition:
+             'The study of the cellular organisation and function in plants.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100874' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'plant pathology',
+            hecos_definition:
+             'The study of the diseases of plants and their treatments.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100875' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'tourism',
+            hecos_definition: 'The study of UK and international tourism.',
+            cah_l3_name: 'tourism, transport and travel',
+            note: nil
           },
           '100880' => {
-            cah_l3_id: 'CAH03-01-06'
+            cah_l3_id: 'CAH03-01-06',
+            hecos_subject: 'applied zoology',
+            hecos_definition:
+             'The study of zoological topics of commercial or social importance.',
+            cah_l3_name: 'zoology',
+            note: nil
           },
           '100881' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'cell zoology',
+            hecos_definition:
+             'The study of cellular organisation and functions in animals.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100882' => {
-            cah_l3_id: 'CAH03-01-06'
+            cah_l3_id: 'CAH03-01-06',
+            hecos_subject: 'entomology',
+            hecos_definition: 'The study of insects, including their role as pests.',
+            cah_l3_name: 'zoology',
+            note: nil
           },
           '100883' => {
-            cah_l3_id: 'CAH03-01-06'
+            cah_l3_id: 'CAH03-01-06',
+            hecos_subject: 'marine zoology',
+            hecos_definition:
+             'The biological study of animals in seawater environments.',
+            cah_l3_name: 'zoology',
+            note: nil
           },
           '100884' => {
-            cah_l3_id: 'CAH06-01-02'
+            cah_l3_id: 'CAH06-01-02',
+            hecos_subject: 'pest management',
+            hecos_definition:
+             'The study of vertebrate and invertebrate pests, their roles as disease vectors and agents of damage, and their control.',
+            cah_l3_name: 'agricultural sciences',
+            note: nil
           },
           '100885' => {
-            cah_l3_id: 'CAH25-02-04'
+            cah_l3_id: 'CAH25-02-04',
+            hecos_subject: 'ballet',
+            hecos_definition:
+             'The study of ballet dance technique, including pointe, pas de deux, choreography, solo and repertory work as well as conventional academic methodology and skills.',
+            cah_l3_name: 'dance',
+            note: nil
           },
           '100886' => {
-            cah_l3_id: 'CAH25-02-04'
+            cah_l3_id: 'CAH25-02-04',
+            hecos_subject: 'contemporary dance',
+            hecos_definition:
+             'The study of technical, creative and professional elements of contemporary dance informed by contextual and theoretical study.',
+            cah_l3_name: 'dance',
+            note: nil
           },
           '100887' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'moving image techniques',
+            hecos_definition:
+             'The study of the techniques and principles associated with the production of moving image sequences.',
+            cah_l3_name: 'cinematics and photography',
+            note: nil
           },
           '100888' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'film directing',
+            hecos_definition:
+             'The study of/training in the direction and arrangement of equipment and actors in the production of a moving image sequence.',
+            cah_l3_name: 'cinematics and photography',
+            note: nil
           },
           '100890' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'film and sound recording',
+            hecos_definition:
+             'The study of/training in the recording of audio and video elements in the production of a moving image sequence.',
+            cah_l3_name: 'cinematics and photography',
+            note: nil
           },
           '100891' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'hospitality',
+            hecos_definition:
+             'The study of the provision of food, drink and accommodation in a service context.',
+            cah_l3_name: 'tourism, transport and travel',
+            note: 'Includes event management.'
           },
           '100893' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'recreation and leisure studies',
+            hecos_definition:
+             'The study of the nature, provision and impact of recreation and leisure and their management and development.',
+            cah_l3_name: 'tourism, transport and travel',
+            note: nil
           },
           '100894' => {
-            cah_l3_id: 'CAH17-01-06'
+            cah_l3_id: 'CAH17-01-06',
+            hecos_subject: 'spa management',
+            hecos_definition: 'The study of the organisation and management of spas.',
+            cah_l3_name: 'tourism, transport and travel',
+            note: nil
           },
           '100895' => {
-            cah_l3_id: 'CAH25-01-05'
+            cah_l3_id: 'CAH25-01-05',
+            hecos_subject: 'crafts',
+            hecos_definition:
+             'The study of the use of a variety of materials individually and in combination to create pleasing and useful items. Includes a high proportion of practical work.',
+            cah_l3_name: 'others in creative arts and design',
+            note: nil
           },
           '100896' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'salon management',
+            hecos_definition: 'The study of the organisation and management of salons.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '100898' => {
-            cah_l3_id: 'CAH03-01-07'
+            cah_l3_id: 'CAH03-01-07',
+            hecos_subject: 'human genetics',
+            hecos_definition:
+             'The study of the genetics of the human species, including chromosome theory and the mechanism of gene action.',
+            cah_l3_name: 'genetics',
+            note: nil
           },
           '100899' => {
-            cah_l3_id: 'CAH03-01-07'
+            cah_l3_id: 'CAH03-01-07',
+            hecos_subject: 'medical genetics',
+            hecos_definition:
+             'The investigation of genetic abnormalities and their treatment in humans',
+            cah_l3_name: 'genetics',
+            note: nil
           },
           '100900' => {
-            cah_l3_id: 'CAH03-01-07'
+            cah_l3_id: 'CAH03-01-07',
+            hecos_subject: 'molecular genetics',
+            hecos_definition:
+             'The study of genetic factors and processes at molecular level.',
+            cah_l3_name: 'genetics',
+            note: nil
           },
           '100901' => {
-            cah_l3_id: 'CAH03-01-07'
+            cah_l3_id: 'CAH03-01-07',
+            hecos_subject: 'genomics',
+            hecos_definition:
+             'The study of the branch of genetics that studies organisms in terms of their genomes (their full DNA sequences).',
+            cah_l3_name: 'genetics',
+            note: nil
           },
           '100902' => {
-            cah_l3_id: 'CAH03-01-07'
+            cah_l3_id: 'CAH03-01-07',
+            hecos_subject: 'population genetics',
+            hecos_definition:
+             'The study of speciation and population genetics, gene flow/population structure, hybrid zones, island populations, genetic drift and conservation genetics.',
+            cah_l3_name: 'genetics',
+            note: 'Includes adaptation and the evolution of life histories.'
           },
           '100906' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'applied microbiology',
+            hecos_definition:
+             'The study of topics in microbiology of commercial, environmental or social importance. Includes interactions between the environment and microbial systems, bioremediation and microbial diversity.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100907' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'medical microbiology',
+            hecos_definition:
+             'The study of the interactions between micro-organism and their human hosts.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100908' => {
-            cah_l3_id: 'CAH05-01-02'
+            cah_l3_id: 'CAH05-01-02',
+            hecos_subject: 'veterinary microbiology',
+            hecos_definition:
+             'The study of the interactions between micro-organisms and their animal hosts.',
+            cah_l3_name: 'others in veterinary sciences',
+            note: nil
           },
           '100909' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'bacteriology',
+            hecos_definition: 'The study of bacteria and bacterial diseases.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100910' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'virology',
+            hecos_definition: 'The study of viruses and viral diseases.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100911' => {
-            cah_l3_id: 'CAH03-01-04'
+            cah_l3_id: 'CAH03-01-04',
+            hecos_subject: 'immunology',
+            hecos_definition:
+             'The study of the immune system as a defence mechanism against infection.',
+            cah_l3_name: 'microbiology and cell science',
+            note: nil
           },
           '100912' => {
-            cah_l3_id: 'CAH02-05-03'
+            cah_l3_id: 'CAH02-05-03',
+            hecos_subject: 'blood sciences',
+            hecos_definition: 'The study of sera and blood-related products.',
+            cah_l3_name: 'biomedical sciences (non-specific)',
+            note: nil
           },
           '100913' => {
-            cah_l3_id: 'CAH24-01-01'
+            cah_l3_id: 'CAH24-01-01',
+            hecos_subject: 'librarianship',
+            hecos_definition:
+             'The training of professional library staff in the administration of library resources and services.',
+            cah_l3_name: 'information services',
+            note: nil
           },
           '100914' => {
-            cah_l3_id: 'CAH24-01-01'
+            cah_l3_id: 'CAH24-01-01',
+            hecos_subject: 'curatorial studies',
+            hecos_definition:
+             'The study of the administration of museum resources and services.',
+            cah_l3_name: 'information services',
+            note: nil
           },
           '100915' => {
-            cah_l3_id: 'CAH24-01-01'
+            cah_l3_id: 'CAH24-01-01',
+            hecos_subject: 'archives and records management',
+            hecos_definition:
+             'The study of the professional administration of archive resources and services. Includes the collecting and cataloguing of information.',
+            cah_l3_name: 'information services',
+            note: nil
           },
           '100916' => {
-            cah_l3_id: 'CAH24-01-01'
+            cah_l3_id: 'CAH24-01-01',
+            hecos_subject: 'information services',
+            hecos_definition:
+             'The study of the administration of information resources and services, including the collection, sorting and ordering of data and information.',
+            cah_l3_name: 'information services',
+            note:
+             'Encompasses the cataloguing of sources and the arrangement of archives. May include care, management and organisation of exhibits.'
           },
           '100918' => {
-            cah_l3_id: 'CAH24-01-01'
+            cah_l3_id: 'CAH24-01-01',
+            hecos_subject: 'museum studies',
+            hecos_definition:
+             'The study of museums, their history, collections, practices and social roles.',
+            cah_l3_name: 'information services',
+            note: nil
           },
           '100919' => {
-            cah_l3_id: 'CAH24-01-02'
+            cah_l3_id: 'CAH24-01-02',
+            hecos_subject: 'publicity studies',
+            hecos_definition:
+             'The study of the transmission of information and/or knowledge. Includes study of the techniques of attracting attention.',
+            cah_l3_name: 'publicity studies',
+            note:
+             'May include media practices and production, cultural differences and communication on an individual, group or national basis.'
           },
           '100920' => {
-            cah_l3_id: 'CAH24-01-05'
+            cah_l3_id: 'CAH24-01-05',
+            hecos_subject: 'television studies',
+            hecos_definition:
+             'The study of communication between people through television, concentrating on business, management and financial aspects and not on the production of the artwork and ideas themselves.',
+            cah_l3_name: 'media studies',
+            note:
+             'May involve study of the television industry, technical innovations and the role of audiences.'
           },
           '100921' => {
-            cah_l3_id: 'CAH24-01-05'
+            cah_l3_id: 'CAH24-01-05',
+            hecos_subject: 'radio studies',
+            hecos_definition:
+             'The study of communication between people through radio, concentrating on business, management and financial aspects and not on the production of the artwork and ideas themselves.',
+            cah_l3_name: 'media studies',
+            note:
+             'May involve study of the radio industry, technical innovations and the role of audiences._'
           },
           '100922' => {
-            cah_l3_id: 'CAH24-01-05'
+            cah_l3_id: 'CAH24-01-05',
+            hecos_subject: 'paper-based media studies',
+            hecos_definition:
+             'The study of the communication between people through paper-based media, concentrating on business, management and financial aspects and not on the printing and technical expertise.',
+            cah_l3_name: 'media studies',
+            note:
+             'May involve the study of books, newspapers and magazines, technical development and the role of audiences.'
           },
           '100923' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'television production',
+            hecos_definition:
+             'The study of the organisation and presentation of events on television.',
+            cah_l3_name: 'cinematics and photography',
+            note: nil
           },
           '100924' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'radio production',
+            hecos_definition:
+             'The study of the organisation and presentation of events on radio.',
+            cah_l3_name: 'cinematics and photography',
+            note: nil
           },
           '100925' => {
-            cah_l3_id: 'CAH24-01-03'
+            cah_l3_id: 'CAH24-01-03',
+            hecos_subject: 'publishing',
+            hecos_definition:
+             'The study of the production, distribution and sale of information made available by printed, electronic or other means.',
+            cah_l3_name: 'publishing',
+            note: nil
           },
           '100926' => {
-            cah_l3_id: 'CAH24-01-03'
+            cah_l3_id: 'CAH24-01-03',
+            hecos_subject: 'electronic publishing',
+            hecos_definition:
+             'The study of the production, distribution and sale of information by electronic means.',
+            cah_l3_name: 'publishing',
+            note: nil
           },
           '100927' => {
-            cah_l3_id: 'CAH24-01-03'
+            cah_l3_id: 'CAH24-01-03',
+            hecos_subject: 'online publishing',
+            hecos_definition:
+             'The study of the production and distribution of information via the internet.',
+            cah_l3_name: 'publishing',
+            note: nil
           },
           '100932' => {
-            cah_l3_id: 'CAH03-01-08'
+            cah_l3_id: 'CAH03-01-08',
+            hecos_subject: 'plant biochemistry',
+            hecos_definition:
+             'The study of cellular processes in plants including the understanding of the expression of genetic information.',
+            cah_l3_name: 'molecular biology, biophysics and biochemistry',
+            note: nil
           },
           '100936' => {
-            cah_l3_id: 'CAH06-01-01'
+            cah_l3_id: 'CAH06-01-01',
+            hecos_subject: 'animal health',
+            hecos_definition:
+             'The study of animals with the object of ensuring good husbandry and welfare and the prevention of animal diseases.',
+            cah_l3_name: 'animal science',
+            note: nil
           },
           '100937' => {
-            cah_l3_id: 'CAH03-01-06'
+            cah_l3_id: 'CAH03-01-06',
+            hecos_subject: 'animal physiology',
+            hecos_definition:
+             'The study of systemic function and behaviour of the animal frame, including processes such as respiration, circulation, digestion, excretion, and reproduction.',
+            cah_l3_name: 'zoology',
+            note: nil
           },
           '100938' => {
-            cah_l3_id: 'CAH05-01-02'
+            cah_l3_id: 'CAH05-01-02',
+            hecos_subject: 'veterinary pathology',
+            hecos_definition:
+             'Study of the causes and effects of disease and/or damage to the animal, including_post-mortem diagnosis',
+            cah_l3_name: 'others in veterinary sciences',
+            note: nil
           },
           '100939' => {
-            cah_l3_id: 'CAH05-01-02'
+            cah_l3_id: 'CAH05-01-02',
+            hecos_subject: 'veterinary pharmacology',
+            hecos_definition:
+             'The study of drugs, their characteristics, actions, uses and effects on animals.',
+            cah_l3_name: 'others in veterinary sciences',
+            note: nil
           },
           '100940' => {
-            cah_l3_id: 'CAH06-01-01'
+            cah_l3_id: 'CAH06-01-01',
+            hecos_subject: 'animal nutrition',
+            hecos_definition:
+             'The study of the process of assimilating nutrient materials into animal tissue.',
+            cah_l3_name: 'animal science',
+            note: nil
           },
           '100941' => {
-            cah_l3_id: 'CAH05-01-02'
+            cah_l3_id: 'CAH05-01-02',
+            hecos_subject: 'veterinary pharmacy',
+            hecos_definition:
+             'The study of the preparation and dispensing of animal-related drugs.',
+            cah_l3_name: 'others in veterinary sciences',
+            note:
+             'Involves an understanding of the food-chain and its interaction with human beings.'
           },
           '100942' => {
-            cah_l3_id: 'CAH05-01-02'
+            cah_l3_id: 'CAH05-01-02',
+            hecos_subject: 'veterinary public health',
+            hecos_definition:
+             'The study of the application of professional veterinary skills, knowledge and resources to help to protect and improve human health.',
+            cah_l3_name: 'others in veterinary sciences',
+            note:
+             'Encompasses identification of risks; control measures, epidemiology, food hygiene measures, veterinary legislation, disease outbreak controls, etc.'
           },
           '100945' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'crop protection',
+            hecos_definition:
+             'The study of the development of immunities in crops. Also includes the study of artificial barriers, preventatives or exterminators for the animals/insects which attack crops.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '100946' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'crop nutrition',
+            hecos_definition:
+             'The study of the process of assimilating nutrient materials into crop tissue with the aim of understanding and providing the correct nutrient balance.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '100947' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'crop production',
+            hecos_definition:
+             'The study of growing and harvesting crops and the relationship of arable production to its environment and humans.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '100948' => {
-            cah_l3_id: 'CAH03-01-08'
+            cah_l3_id: 'CAH03-01-08',
+            hecos_subject: 'biomolecular science',
+            hecos_definition:
+             'The study of the molecular processes in the life sciences.',
+            cah_l3_name: 'molecular biology, biophysics and biochemistry',
+            note: nil
           },
           '100949' => {
-            cah_l3_id: 'CAH03-01-08'
+            cah_l3_id: 'CAH03-01-08',
+            hecos_subject: 'biophysical science',
+            hecos_definition:
+             'The study of the use of the methods of physical science in the biological sciences.',
+            cah_l3_name: 'molecular biology, biophysics and biochemistry',
+            note: nil
           },
           '100950' => {
-            cah_l3_id: 'CAH04-01-02'
+            cah_l3_id: 'CAH04-01-02',
+            hecos_subject: 'occupational psychology',
+            hecos_definition:
+             'The psychology of selection, motivation and performance in the workplace.',
+            cah_l3_name: 'applied psychology',
+            note: nil
           },
           '100952' => {
-            cah_l3_id: 'CAH04-01-03'
+            cah_l3_id: 'CAH04-01-03',
+            hecos_subject: 'developmental psychology',
+            hecos_definition:
+             'The study of the development of psychological processes across the life cycle.',
+            cah_l3_name: 'developmental psychology',
+            note: nil
           },
           '100953' => {
-            cah_l3_id: 'CAH04-01-03'
+            cah_l3_id: 'CAH04-01-03',
+            hecos_subject: 'child psychology',
+            hecos_definition:
+             'The study of the development of psychological processes in childhood.',
+            cah_l3_name: 'developmental psychology',
+            note: nil
           },
           '100954' => {
-            cah_l3_id: 'CAH04-01-02'
+            cah_l3_id: 'CAH04-01-02',
+            hecos_subject: 'business psychology',
+            hecos_definition:
+             'The study of how to improve working life, using techniques from an understanding of human behaviour, for effective and sustainable performance in respect of individuals and organisations.',
+            cah_l3_name: 'applied psychology',
+            note: nil
           },
           '100956' => {
-            cah_l3_id: 'CAH11-01-04'
+            cah_l3_id: 'CAH11-01-04',
+            hecos_subject: 'programming',
+            hecos_definition:
+             'The study of the conversion of designs into computer instruction sets in order to satisfy the requirements of specific operational problems.',
+            cah_l3_name: 'software engineering',
+            note: nil
           },
           '100958' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'psychology of ageing',
+            hecos_definition:
+             'The study of psychological aspects of the ageing process in adults.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '100959' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'research methods in psychology',
+            hecos_definition:
+             'The study of the techniques, methodology and analyses, both qualitative and quantitative, that are used in psychology.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '100960' => {
-            cah_l3_id: 'CAH11-01-04'
+            cah_l3_id: 'CAH11-01-04',
+            hecos_subject: 'object-oriented programming',
+            hecos_definition:
+             'Programming using object-oriented programming languages and environments.',
+            cah_l3_name: 'software engineering',
+            note: nil
           },
           '100961' => {
-            cah_l3_id: 'CAH11-01-05'
+            cah_l3_id: 'CAH11-01-05',
+            hecos_subject: 'natural language processing',
+            hecos_definition:
+             'The study of principles and techniques for the computer-based modelling and simulation of the human use of language.',
+            cah_l3_name: 'artificial intelligence',
+            note: nil
           },
           '100962' => {
-            cah_l3_id: 'CAH23-01-02'
+            cah_l3_id: 'CAH23-01-02',
+            hecos_subject: 'research skills',
+            hecos_definition:
+             'The study of investigative method and the collection of information.',
+            cah_l3_name: 'personal development',
+            note: nil
           },
           '100963' => {
-            cah_l3_id: 'CAH11-01-03'
+            cah_l3_id: 'CAH11-01-03',
+            hecos_subject: 'knowledge and information systems',
+            hecos_definition:
+             'The study of the principles and methodologies for the capture, representation, storage and application of human knowledge in a computer system.',
+            cah_l3_name: 'information systems',
+            note:
+             'For specific subject information systems without knowledge-based systems or methods, use \'information systems\'.'
           },
           '100966' => {
-            cah_l3_id: 'CAH11-01-05'
+            cah_l3_id: 'CAH11-01-05',
+            hecos_subject: 'neural computing',
+            hecos_definition:
+             'The study of computer-based hardware and software constructs which aim to model and simulate the salient features of animal nervous systems.',
+            cah_l3_name: 'artificial intelligence',
+            note: nil
           },
           '100968' => {
-            cah_l3_id: 'CAH11-01-05'
+            cah_l3_id: 'CAH11-01-05',
+            hecos_subject: 'computer vision',
+            hecos_definition: 'The study and development of digital image perception.',
+            cah_l3_name: 'artificial intelligence',
+            note: nil
           },
           '100970' => {
-            cah_l3_id: 'CAH19-01-07'
+            cah_l3_id: 'CAH19-01-07',
+            hecos_subject: 'applied linguistics',
+            hecos_definition:
+             'An interdisciplinary field of linguistics that identifies, investigates, and offers solutions to language-related real-life problems. This includes the study of language acquisition_methods and language pathology therapies.',
+            cah_l3_name: 'linguistics',
+            note: nil
           },
           '100971' => {
-            cah_l3_id: 'CAH19-01-07'
+            cah_l3_id: 'CAH19-01-07',
+            hecos_subject: 'phonetics and phonology',
+            hecos_definition:
+             'The study of speech and language from the point of view of sound analysis.',
+            cah_l3_name: 'linguistics',
+            note: nil
           },
           '100972' => {
-            cah_l3_id: 'CAH19-01-07'
+            cah_l3_id: 'CAH19-01-07',
+            hecos_subject: 'phonetics',
+            hecos_definition:
+             'The study of speech processes, including the production, and perception of speech sound. Includes speech acoustics, anatomy and physiology.',
+            cah_l3_name: 'linguistics',
+            note: nil
           },
           '100973' => {
-            cah_l3_id: 'CAH19-01-07'
+            cah_l3_id: 'CAH19-01-07',
+            hecos_subject: 'phonology',
+            hecos_definition: 'The study of the sound systems of languages.',
+            cah_l3_name: 'linguistics',
+            note: nil
           },
           '100974' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'livestock',
+            hecos_definition:
+             'The study of the most efficient way to keep animals for agricultural use rather than as pets.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '100976' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'aquaculture',
+            hecos_definition:
+             'The study of the cultivation of water resources, both plant and animal, for human consumption or use.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '100977' => {
-            cah_l3_id: 'CAH06-01-04'
+            cah_l3_id: 'CAH06-01-04',
+            hecos_subject: 'rural estate management',
+            hecos_definition:
+             'The study of the administration of large landed properties as or on behalf of their owner.',
+            cah_l3_name: 'rural estate management',
+            note:
+             'Includes elements of business studies, personnel management, buildings management.'
           },
           '100978' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'farm management',
+            hecos_definition:
+             'The study of the most efficient way to keep livestock and grow and harvest crops and fruit. Includes home farm management.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '100979' => {
-            cah_l3_id: 'CAH06-01-04'
+            cah_l3_id: 'CAH06-01-04',
+            hecos_subject: 'game keeping management',
+            hecos_definition:
+             'The study of the habitat and management of land set aside for hunting purposes.',
+            cah_l3_name: 'rural estate management',
+            note: nil
           },
           '100985' => {
-            cah_l3_id: 'CAH04-01-04'
+            cah_l3_id: 'CAH04-01-04',
+            hecos_subject: 'health psychology',
+            hecos_definition:
+             'The study of the psychological factors in maintaining and recovering physical and mental well-being.',
+            cah_l3_name: 'psychology and health',
+            note: nil
           },
           '100986' => {
-            cah_l3_id: 'CAH26-01-04'
+            cah_l3_id: 'CAH26-01-04',
+            hecos_subject: 'water resource management',
+            hecos_definition:
+             'The study of fresh and salt water, its use commercially, domestically and recreationally.',
+            cah_l3_name: 'environmental sciences',
+            note:
+             'Includes the conservation of water. Also includes the study of drought, flood and the water cycle.'
           },
           '100989' => {
-            cah_l3_id: 'CAH11-01-05'
+            cah_l3_id: 'CAH11-01-05',
+            hecos_subject: 'cognitive modelling',
+            hecos_definition:
+             'The study and development of the processes involved in acquiring knowledge.',
+            cah_l3_name: 'artificial intelligence',
+            note: nil
           },
           '100990' => {
-            cah_l3_id: 'CAH06-01-04'
+            cah_l3_id: 'CAH06-01-04',
+            hecos_subject: 'land management for recreation',
+            hecos_definition: 'The study of land used for informal recreation.',
+            cah_l3_name: 'rural estate management',
+            note:
+             'Includes study of erosion and damage to habitat from over or inappropriate use, and the techniques to prevent, cure and minimise such damage.'
           },
           '100992' => {
-            cah_l3_id: 'CAH11-01-05'
+            cah_l3_id: 'CAH11-01-05',
+            hecos_subject: 'machine learning',
+            hecos_definition:
+             'The study and development of techniques whereby machines may gain knowledge through experience, deduction or reasoning.',
+            cah_l3_name: 'artificial intelligence',
+            note: nil
           },
           '100993' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'cognitive psychology',
+            hecos_definition:
+             'The study of the processes associated with perception, learning, language, memory, thought and the emotions.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '100994' => {
-            cah_l3_id: 'CAH11-01-03'
+            cah_l3_id: 'CAH11-01-03',
+            hecos_subject: 'health informatics',
+            hecos_definition:
+             'The study and design of systems for information capture, processing and use in healthcare.',
+            cah_l3_name: 'information systems',
+            note: nil
           },
           '100998' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'sustainable agriculture and landscape development',
+            hecos_definition:
+             'The study of agricultural and other related landscape uses with particular emphasis on sustainable and environmentally sensitive practices.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '101001' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'international agriculture',
+            hecos_definition:
+             'The study of the science or occupation of cultivating land and rearing crops in various parts of the world.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '101003' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'psychology of religion',
+            hecos_definition:
+             'The study of the application of psychological methods and interpretive frameworks to religious traditions, as well as to both religious and irreligious individuals.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '101004' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'organic farming',
+            hecos_definition:
+             'The study of agricultural processes conducted without the use of artificial chemicals in the form of fertilisers or pesticides.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '101006' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'agricultural technology',
+            hecos_definition:
+             'The study of practical or mechanical sciences connected with agriculture as they apply to increased efficiency, economy and crop production.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '101010' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'agricultural machinery',
+            hecos_definition:
+             'The study of the use and maintenance of agricultural machinery.',
+            cah_l3_name: 'agriculture',
+            note: 'Includes the study of tractors, hedge clippers, milking machines etc.'
           },
           '101013' => {
-            cah_l3_id: 'CAH10-01-10'
+            cah_l3_id: 'CAH10-01-10',
+            hecos_subject: 'timber engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to the analysis, design and assessment of timber structural systems and assemblies.',
+            cah_l3_name: 'others in engineering',
+            note: 'May include the suitability of certain trees for certain uses.'
           },
           '101014' => {
-            cah_l3_id: 'CAH06-01-05'
+            cah_l3_id: 'CAH06-01-05',
+            hecos_subject: 'community forestry',
+            hecos_definition:
+             'The study of forestry used for recreation. Includes study of formal and informal recreational uses, erosion and damage to habitat from over or inappropriate use, and the techniques to prevent, cure and minimise such damage.',
+            cah_l3_name: 'forestry and arboriculture',
+            note: nil
           },
           '101016' => {
-            cah_l3_id: 'CAH19-01-07'
+            cah_l3_id: 'CAH19-01-07',
+            hecos_subject: 'sociolinguistics',
+            hecos_definition:
+             'The study of socially-conditioned factors in language and language use.',
+            cah_l3_name: 'linguistics',
+            note: nil
           },
           '101017' => {
-            cah_l3_id: 'CAH06-01-06'
+            cah_l3_id: 'CAH06-01-06',
+            hecos_subject: 'food and beverage studies',
+            hecos_definition:
+             'The study of the properties and behaviour of food from the point of origin on the farm (or elsewhere), through different stages of storage, transportation, preservation or other transformations, including domestic or restaurant food preparation procedures, to its use by the consumer.',
+            cah_l3_name: 'food and beverage studies (non-specific)',
+            note: nil
           },
           '101018' => {
-            cah_l3_id: 'CAH06-01-08'
+            cah_l3_id: 'CAH06-01-08',
+            hecos_subject: 'food safety',
+            hecos_definition:
+             'The study of the maintenance and promotion of health through the clean and sanitary handling of food.',
+            cah_l3_name: 'food and beverage production',
+            note: nil
           },
           '101019' => {
-            cah_l3_id: 'CAH11-01-06'
+            cah_l3_id: 'CAH11-01-06',
+            hecos_subject: 'computer games graphics',
+            hecos_definition:
+             'The study of art, visual design and graphics in the design and production of video, computer and other electronic games.',
+            cah_l3_name: 'computer games and animation',
+            note: nil
           },
           '101020' => {
-            cah_l3_id: 'CAH11-01-06'
+            cah_l3_id: 'CAH11-01-06',
+            hecos_subject: 'computer games programming',
+            hecos_definition:
+             'The study of the architectures, coding techniques and software development methods used in the creation of video, computer and other electronic games.',
+            cah_l3_name: 'computer games and animation',
+            note: nil
           },
           '101021' => {
-            cah_l3_id: 'CAH06-01-08'
+            cah_l3_id: 'CAH06-01-08',
+            hecos_subject: 'baking technology management',
+            hecos_definition:
+             'The study of the commercial production of cooked foodstuffs, including the application of physical, chemical and biological sciences to food preparation.',
+            cah_l3_name: 'food and beverage production',
+            note: nil
           },
           '101022' => {
-            cah_l3_id: 'CAH06-01-08'
+            cah_l3_id: 'CAH06-01-08',
+            hecos_subject: 'brewing',
+            hecos_definition:
+             'The study of the production of fermented liquid beverages. Includes the application of physical, chemical and biological sciences to drink preparation.',
+            cah_l3_name: 'food and beverage production',
+            note: nil
           },
           '101024' => {
-            cah_l3_id: 'CAH06-01-02'
+            cah_l3_id: 'CAH06-01-02',
+            hecos_subject: 'agricultural chemistry',
+            hecos_definition:
+             'The study of how atoms and molecules react together naturally and/or synthetically to affect agricultural processes.',
+            cah_l3_name: 'agricultural sciences',
+            note: nil
           },
           '101025' => {
-            cah_l3_id: 'CAH06-01-02'
+            cah_l3_id: 'CAH06-01-02',
+            hecos_subject: 'agricultural botany',
+            hecos_definition: 'The study of plants cultivated as a crop.',
+            cah_l3_name: 'agricultural sciences',
+            note:
+             'Includes their classification, structure, physiology, ecology and economic importance.'
           },
           '101027' => {
-            cah_l3_id: 'CAH09-01-01'
+            cah_l3_id: 'CAH09-01-01',
+            hecos_subject: 'numerical analysis',
+            hecos_definition:
+             'The study of the mathematical methods used to obtain approximate (numerical) results to a problem on a digital computer.',
+            cah_l3_name: 'mathematics',
+            note: nil
           },
           '101028' => {
-            cah_l3_id: 'CAH09-01-01'
+            cah_l3_id: 'CAH09-01-01',
+            hecos_subject: 'engineering and industrial mathematics',
+            hecos_definition:
+             'The study of the branch of mathematics concerned with the application of mathematical principles in the areas of engineering and industrial systems and processes.',
+            cah_l3_name: 'mathematics',
+            note: nil
           },
           '101029' => {
-            cah_l3_id: 'CAH09-01-01'
+            cah_l3_id: 'CAH09-01-01',
+            hecos_subject: 'computational mathematics',
+            hecos_definition:
+             'The study of advanced mathematical topics used in computational processes across a range of applications.',
+            cah_l3_name: 'mathematics',
+            note: nil
           },
           '101030' => {
-            cah_l3_id: 'CAH09-01-03'
+            cah_l3_id: 'CAH09-01-03',
+            hecos_subject: 'applied statistics',
+            hecos_definition:
+             'The study of the application of statistical techniques to functional areas.',
+            cah_l3_name: 'statistics',
+            note: nil
           },
           '101031' => {
-            cah_l3_id: 'CAH09-01-03'
+            cah_l3_id: 'CAH09-01-03',
+            hecos_subject: 'medical statistics',
+            hecos_definition:
+             'The application of statistical techniques to the collection and analysis of numerical data relating to medicine.',
+            cah_l3_name: 'statistics',
+            note: nil
           },
           '101032' => {
-            cah_l3_id: 'CAH09-01-03'
+            cah_l3_id: 'CAH09-01-03',
+            hecos_subject: 'probability',
+            hecos_definition: 'The mathematical study of chance.',
+            cah_l3_name: 'statistics',
+            note: nil
           },
           '101033' => {
-            cah_l3_id: 'CAH09-01-03'
+            cah_l3_id: 'CAH09-01-03',
+            hecos_subject: 'stochastic processes',
+            hecos_definition:
+             'The mathematical study of systems and processes involving variables subject to random variations.',
+            cah_l3_name: 'statistics',
+            note: nil
           },
           '101034' => {
-            cah_l3_id: 'CAH09-01-03'
+            cah_l3_id: 'CAH09-01-03',
+            hecos_subject: 'statistical modelling',
+            hecos_definition:
+             'The use of statistical techniques in the modelling and simulation of \'real-world\' systems or processes.',
+            cah_l3_name: 'statistics',
+            note: nil
           },
           '101035' => {
-            cah_l3_id: 'CAH19-01-07'
+            cah_l3_id: 'CAH19-01-07',
+            hecos_subject: 'psycholinguistics',
+            hecos_definition:
+             'The study of the psychological and neurobiological factors that enable humans to acquire, use, comprehend and produce language.',
+            cah_l3_name: 'linguistics',
+            note: nil
           },
           '101037' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'comparative literary studies',
+            hecos_definition:
+             'The study of the writers, literatures and literary history of various countries and languages using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101038' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'applied chemistry',
+            hecos_definition:
+             'The study of topics in chemistry of commercial or social importance.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101040' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'risk management',
+            hecos_definition:
+             'The study of the systematic process of understanding, evaluating and addressing risks to maximise the chances of objectives being achieved and ensuring organisations, individuals and communities are sustainable.',
+            cah_l3_name: 'management studies',
+            note: nil
           },
           '101041' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'industrial chemistry',
+            hecos_definition:
+             'The study of chemical processes of industrial significance.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101042' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'colour chemistry',
+            hecos_definition: 'The study of the chemical science of dyes and pigments.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101043' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'inorganic chemistry',
+            hecos_definition:
+             'The study of inorganic elements, compounds and reaction mechanisms.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101044' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'crystallography',
+            hecos_definition:
+             'The study and application of techniques for determining crystal structure.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101045' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'environmental chemistry',
+            hecos_definition:
+             'The study of environmental issues related to the chemical sciences.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101046' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'marine chemistry',
+            hecos_definition:
+             'The study of topics in the chemical sciences concerned with understanding the marine environment.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101048' => {
-            cah_l3_id: 'CAH10-01-07'
+            cah_l3_id: 'CAH10-01-07',
+            hecos_subject: 'environmental risk',
+            hecos_definition:
+             'The study of actual or potential threats of adverse effects on the environment, and associated risk management.',
+            cah_l3_name: 'civil engineering',
+            note: nil
           },
           '101049' => {
-            cah_l3_id: 'CAH17-01-05'
+            cah_l3_id: 'CAH17-01-05',
+            hecos_subject: 'health risk',
+            hecos_definition:
+             'The study of risk in health and safety situations, includes safety risks, health care risks such as cancer risk and also public policy planning with respect to health and safety risks.',
+            cah_l3_name: 'human resource management',
+            note: nil
           },
           '101050' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'physical chemistry',
+            hecos_definition:
+             'The study of atomic and molecular structure, chemical bonding, energetics and dynamics.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101053' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'polymer chemistry',
+            hecos_definition:
+             'The study of the properties of macromolecular compounds and their synthesis.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101054' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'oil and gas chemistry',
+            hecos_definition:
+             'The study of the chemical science of petroleum and petroleum compounds.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101056' => {
-            cah_l3_id: 'CAH26-01-05'
+            cah_l3_id: 'CAH26-01-05',
+            hecos_subject: 'remote sensing',
+            hecos_definition:
+             'The study of topographic and geomatic data surveying carried out over a distance.',
+            cah_l3_name: 'others in geographical studies',
+            note: nil
           },
           '101058' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'mapping science',
+            hecos_definition:
+             'The study of the preparation and production of maps and/or charts.',
+            cah_l3_name: 'physical geographical sciences',
+            note: nil
           },
           '101060' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'applied physics',
+            hecos_definition:
+             'The study of topics in physics of commercial or social importance.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '101061' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'engineering physics',
+            hecos_definition:
+             'The study of physical principles and techniques applied to engineering and technology.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '101064' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'geomorphology',
+            hecos_definition:
+             'The study of the processes determining the topography of the Earth\'s crust.',
+            cah_l3_name: 'physical geographical sciences',
+            note: nil
           },
           '101065' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'maritime geography',
+            hecos_definition: 'The geographical study of coastal and marine regions.',
+            cah_l3_name: 'physical geographical sciences',
+            note: nil
           },
           '101067' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'soil science',
+            hecos_definition:
+             'The study of the properties of soils and the processes involved in their formation and distribution.',
+            cah_l3_name: 'physical geographical sciences',
+            note: nil
           },
           '101068' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'atmospheric physics',
+            hecos_definition:
+             'The study of the Earth\'s stratosphere, troposphere and upper atmosphere including atmospheric kinetics and water in the atmosphere.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '101070' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'climate change',
+            hecos_definition:
+             'The study of the modelling and analysis of current and past climate variability and causes of change on all timescales. Includes the understanding and modelling of future climate change, the detection and attribution of past change and the prediction of impacts of climate change on the environment',
+            cah_l3_name: 'physical geographical sciences',
+            note: nil
           },
           '101071' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'computational physics',
+            hecos_definition:
+             'The study of numerical and quantitative methods in physics.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '101072' => {
-            cah_l3_id: 'CAH26-01-04'
+            cah_l3_id: 'CAH26-01-04',
+            hecos_subject: 'pollution control',
+            hecos_definition:
+             'The study of monitoring with the intention to reduce the emission and distribution of noxious substances in the environment.',
+            cah_l3_name: 'environmental sciences',
+            note: nil
           },
           '101073' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'hydrography',
+            hecos_definition:
+             'The study of the collection and application of data about the sea, including surveying and the study of tides and currents.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '101074' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'radiation physics',
+            hecos_definition:
+             'Monitoring and evaluation of emissions from sources of radiation.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '101075' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'photonics and optical physics',
+            hecos_definition:
+             'The study of optics as a natural phenomenon and optical instrumentation.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '101076' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'laser physics',
+            hecos_definition: 'The study of lasers as optical instrumentation.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '101077' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'nuclear and particle physics',
+            hecos_definition:
+             'The study of matter at atomic and sub-atomic level, and of the structure and behaviour of nuclei.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '101078' => {
-            cah_l3_id: 'CAH26-01-04'
+            cah_l3_id: 'CAH26-01-04',
+            hecos_subject: 'applied environmental sciences',
+            hecos_definition:
+             'The study of topics in environmental sciences of commercial or social importance.',
+            cah_l3_name: 'environmental sciences',
+            note: nil
           },
           '101079' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'hydrology',
+            hecos_definition:
+             'The study of bodies of water, their distribution and sources.',
+            cah_l3_name: 'physical geographical sciences',
+            note: nil
           },
           '101081' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'volcanology',
+            hecos_definition:
+             'The study of the origin of ancient and modern volcanoes and vulcanicity.',
+            cah_l3_name: 'earth sciences',
+            note:
+             'Includes the location, history and structure of volcanoes, their emissions and deposits. Also includes the reconstruction of these characteristics and of earth history from studies of volcanic materials and their impacts in the geological record.'
           },
           '101082' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'geological hazards',
+            hecos_definition:
+             'The study of the prediction, monitoring, environmental effects, risks and mitigation of long-term, extreme and catastrophic natural geological events including landslips, earthquakes and volcanic eruptions.',
+            cah_l3_name: 'earth sciences',
+            note:
+             'Includes the assessment of the frequency and magnitude of triggers and events.'
           },
           '101083' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'geochemistry',
+            hecos_definition:
+             'The study of the chemical processes taking place at or near the earth\'s surface.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '101084' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'exploration geophysics',
+            hecos_definition:
+             'The study of geophysical techniques concerned with the discovery of geological deposits.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '101085' => {
-            cah_l3_id: 'CAH22-01-02'
+            cah_l3_id: 'CAH22-01-02',
+            hecos_subject: 'specialist teaching',
+            hecos_definition:
+             'The training of others to use non-standard methods to impart, explain and disseminate knowledge, skills and learning to people with particular learning requirements.',
+            cah_l3_name: 'teacher training',
+            note: nil
           },
           '101086' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'geological oceanography',
+            hecos_definition:
+             'The study of the sedimentary processes including deposition and dynamics in the oceans.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '101087' => {
-            cah_l3_id: 'CAH22-01-02'
+            cah_l3_id: 'CAH22-01-02',
+            hecos_subject: 'special needs teaching',
+            hecos_definition:
+             'The training of others to use non-standard methods to impart, explain and disseminate knowledge, skills and learning to people with special needs.',
+            cah_l3_name: 'teacher training',
+            note: nil
           },
           '101088' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'research and study skills in education',
+            hecos_definition:
+             'The study of investigative method and the collection of information with the aim of improving individual learning ability and efficiency.',
+            cah_l3_name: 'education',
+            note: nil
           },
           '101089' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'hydrogeology',
+            hecos_definition:
+             'The study of the physical, chemical and biological processes which occur at the interface between rock and water at or below the Earth\'s surface at all scales.',
+            cah_l3_name: 'earth sciences',
+            note:
+             'Includes water-related geological processes beneath oceans, aquifers, groundwater resources and the response of aquifers to environmental change.'
           },
           '101090' => {
-            cah_l3_id: 'CAH23-01-02'
+            cah_l3_id: 'CAH23-01-02',
+            hecos_subject: 'study skills',
+            hecos_definition:
+             'The study of individual learning ability and techniques with the aim of improving their efficacy and efficiency.',
+            cah_l3_name: 'personal development',
+            note: nil
           },
           '101091' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'quaternary studies',
+            hecos_definition:
+             'The study of the rock systems of the most recent geological period.',
+            cah_l3_name: 'physical geographical sciences',
+            note: nil
           },
           '101093' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'exploration geology',
+            hecos_definition:
+             'The study of the geological aspects of mineral resource exploration',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '101094' => {
-            cah_l3_id: 'CAH19-01-03'
+            cah_l3_id: 'CAH19-01-03',
+            hecos_subject: 'English literature 1200 - 1700',
+            hecos_definition:
+             'The study of texts originally written in English between 1200 and 1700.',
+            cah_l3_name: 'literature in English',
+            note:
+             'Includes the use of techniques of literary analysis and interpretation. May be used for "Medieval", "Renaissance" and "Early Modern" English literature. Where temporal coverage extends beyond the 1200 - 1700 time span, use "English literature".'
           },
           '101095' => {
-            cah_l3_id: 'CAH19-01-03'
+            cah_l3_id: 'CAH19-01-03',
+            hecos_subject: 'English literature 1700 - 1900',
+            hecos_definition:
+             'The study of texts originally written in English between 1700 and 1900.',
+            cah_l3_name: 'literature in English',
+            note:
+             'Includes the use of techniques of literary analysis and interpretation. May be used for "18th Century", "Romantic" and "Victorian" English literature. Where temporal coverage extends beyond the 1700 - 1900 time span, use "English literature". Minor variations in the defining years (e.g. 1688 or 1914) are still in scope, provided that the bulk of the timespan covered is between 1700 and 1900.'
           },
           '101102' => {
-            cah_l3_id: 'CAH07-01-02'
+            cah_l3_id: 'CAH07-01-02',
+            hecos_subject: 'space science',
+            hecos_definition:
+             'The physical science study of space beyond the solar system.',
+            cah_l3_name: 'astronomy',
+            note: nil
           },
           '101103' => {
-            cah_l3_id: 'CAH07-01-02'
+            cah_l3_id: 'CAH07-01-02',
+            hecos_subject: 'planetary science',
+            hecos_definition:
+             'The study of the physical science of planets, including the measurement of the Earth and its gravitational field.',
+            cah_l3_name: 'astronomy',
+            note: nil
           },
           '101104' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'applied geology',
+            hecos_definition:
+             'The study of topics in geology of commercial or social importance.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '101105' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'petroleum geology',
+            hecos_definition:
+             'The study of origin, occurrence, movement, accumulation, and exploration of hydrocarbon fuels.',
+            cah_l3_name: 'earth sciences',
+            note:
+             'Petroleum geology refers to the specific set of geological disciplines that are applied to the search for hydrocarbons (oil exploration).'
           },
           '101106' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'engineering geology',
+            hecos_definition:
+             'The study of geological structures and processes in an engineering context.',
+            cah_l3_name: 'earth sciences',
+            note: nil
           },
           '101107' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Shakespeare studies',
+            hecos_definition:
+             'The study of the works of William Shakespeare (1564 - 1616).',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101108' => {
-            cah_l3_id: 'CAH19-01-03'
+            cah_l3_id: 'CAH19-01-03',
+            hecos_subject: 'colonial and post-colonial literature',
+            hecos_definition:
+             'The study of Anglophone literatures from South Asia, South America, Africa and the Caribbean, and forms of colonial and neo-colonial experience represented in these literary traditions. This may include the writings of the diasporas associated with those areas. Includes the use of techniques of literary analysis and interpretation.',
+            cah_l3_name: 'literature in English',
+            note: nil
           },
           '101109' => {
-            cah_l3_id: 'CAH19-01-02'
+            cah_l3_id: 'CAH19-01-02',
+            hecos_subject: 'English as a second language',
+            hecos_definition:
+             'The study of the structure and acquisition of English from the point of view of a non-native speaker. Includes pronunciation and articulation.',
+            cah_l3_name: 'English language',
+            note: nil
           },
           '101111' => {
-            cah_l3_id: 'CAH19-01-03'
+            cah_l3_id: 'CAH19-01-03',
+            hecos_subject: 'Scottish literature',
+            hecos_definition:
+             'The study of literature originally written by Scottish authors. Includes the use of techniques of literary analysis and interpretation.',
+            cah_l3_name: 'literature in English',
+            note:
+             'Includes literature written by Scottish authors in both English and Scots, and may also cover Gaelic literature in translation.'
           },
           '101112' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'ancient Middle Eastern languages',
+            hecos_definition:
+             'The study of ancient languages, their structure and semantics. May involve investigation into their linguistic, social and/or religious significance and their position as the basis for modern languages.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101113' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'ancient Egyptian studies',
+            hecos_definition:
+             'The study of ancient Egyptian societies, cultures, languages and hieroglyphics.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101114' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'classical Arabic',
+            hecos_definition:
+             'The study of the structure, semantics and cultural significance of classical or Qur\'anic Arabic.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101115' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'Sanskrit studies',
+            hecos_definition:
+             'The study of the structure, semantics and cultural significance of the oldest recorded branch of the Indic branch of the Indo-European ancient language of India.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101117' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'ancient Hebrew language',
+            hecos_definition:
+             'The study of the structure, semantics and cultural significance of the ancient language of the Jews.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101118' => {
-            cah_l3_id: 'CAH19-02-01'
+            cah_l3_id: 'CAH19-02-01',
+            hecos_subject: 'Celtic studies',
+            hecos_definition:
+             'The study of Celtic culture and its literature using the techniques of literary analysis and interpretation. Involves language study and/or comparison between languages.',
+            cah_l3_name: 'Celtic studies (non-specific)',
+            note: nil
           },
           '101120' => {
-            cah_l3_id: 'CAH19-02-02'
+            cah_l3_id: 'CAH19-02-02',
+            hecos_subject: 'Gaelic language',
+            hecos_definition:
+             'The study of the history, grammar and use of Gaelic. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Gaelic studies',
+            note: 'For the Celtic language native to Ireland, use "Irish language".'
           },
           '101121' => {
-            cah_l3_id: 'CAH19-02-04'
+            cah_l3_id: 'CAH19-02-04',
+            hecos_subject: 'Irish language',
+            hecos_definition:
+             'The study of the history, grammar and use of Irish Gaelic. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'others in Celtic studies',
+            note: nil
           },
           '101124' => {
-            cah_l3_id: 'CAH20-01-05'
+            cah_l3_id: 'CAH20-01-05',
+            hecos_subject: 'Latin studies',
+            hecos_definition:
+             'The study of Latin, its structure, history, grammar and use.',
+            cah_l3_name: 'classics',
+            note:
+             'May involve investigation into its relationship with modern day speech and language. May also involve the study of literature texts using the techniques of literary analysis and interpretation.'
           },
           '101125' => {
-            cah_l3_id: 'CAH20-01-05'
+            cah_l3_id: 'CAH20-01-05',
+            hecos_subject: 'Latin literature',
+            hecos_definition: 'The study of literature originally written in Latin.',
+            cah_l3_name: 'classics',
+            note:
+             'Includes the use of techniques of literary analysis and interpretation.'
           },
           '101126' => {
-            cah_l3_id: 'CAH20-01-05'
+            cah_l3_id: 'CAH20-01-05',
+            hecos_subject: 'classical Greek studies',
+            hecos_definition:
+             'The study of Classical Greek, its structure, history, grammar and use. May involve investigation into its relationship with modern day speech and language. May also involve the study of language texts using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'classics',
+            note: nil
           },
           '101129' => {
-            cah_l3_id: 'CAH20-01-05'
+            cah_l3_id: 'CAH20-01-05',
+            hecos_subject: 'classical reception',
+            hecos_definition:
+             'The study of the impact of Greek and Roman literary and visual culture on subsequent cultures.',
+            cah_l3_name: 'classics',
+            note: nil
           },
           '101130' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'translation studies',
+            hecos_definition:
+             'The study, analysis and interpretation of the processes and techniques of translation from one language into another.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101132' => {
-            cah_l3_id: 'CAH19-04-01'
+            cah_l3_id: 'CAH19-04-01',
+            hecos_subject: 'French literature',
+            hecos_definition:
+             'The study of French literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'French studies',
+            note: nil
           },
           '101133' => {
-            cah_l3_id: 'CAH19-04-01'
+            cah_l3_id: 'CAH19-04-01',
+            hecos_subject: 'French society and culture',
+            hecos_definition: 'The study of French society and culture.',
+            cah_l3_name: 'French studies',
+            note: nil
           },
           '101134' => {
-            cah_l3_id: 'CAH19-04-02'
+            cah_l3_id: 'CAH19-04-02',
+            hecos_subject: 'German literature',
+            hecos_definition:
+             'The study of literature originally written in the German language using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'German and Scandinavian studies',
+            note: nil
           },
           '101135' => {
-            cah_l3_id: 'CAH19-04-02'
+            cah_l3_id: 'CAH19-04-02',
+            hecos_subject: 'German society and culture',
+            hecos_definition: 'The study of German society and culture.',
+            cah_l3_name: 'German and Scandinavian studies',
+            note: nil
           },
           '101136' => {
-            cah_l3_id: 'CAH19-04-03'
+            cah_l3_id: 'CAH19-04-03',
+            hecos_subject: 'Italian society and culture',
+            hecos_definition: 'The study of Italian society and culture.',
+            cah_l3_name: 'Italian studies',
+            note: nil
           },
           '101137' => {
-            cah_l3_id: 'CAH19-04-03'
+            cah_l3_id: 'CAH19-04-03',
+            hecos_subject: 'Italian literature',
+            hecos_definition:
+             'The study of Italian literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'Italian studies',
+            note: nil
           },
           '101138' => {
-            cah_l3_id: 'CAH19-04-04'
+            cah_l3_id: 'CAH19-04-04',
+            hecos_subject: 'Spanish society and culture',
+            hecos_definition: 'The study of Spanish society and culture.',
+            cah_l3_name: 'Iberian studies',
+            note: nil
           },
           '101139' => {
-            cah_l3_id: 'CAH19-04-04'
+            cah_l3_id: 'CAH19-04-04',
+            hecos_subject: 'Spanish literature',
+            hecos_definition:
+             'The study of Spanish literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'Iberian studies',
+            note: nil
           },
           '101141' => {
-            cah_l3_id: 'CAH19-04-04'
+            cah_l3_id: 'CAH19-04-04',
+            hecos_subject: 'Portuguese studies',
+            hecos_definition:
+             'The study of the Portuguese language, its structure, history, grammar and use.',
+            cah_l3_name: 'Iberian studies',
+            note:
+             'May include study of_Portuguese and Brazilian literature using the techniques of literary analysis and interpretation, or the study of_Portuguese and Brazilian culture and society.'
           },
           '101142' => {
-            cah_l3_id: 'CAH19-04-04'
+            cah_l3_id: 'CAH19-04-04',
+            hecos_subject: 'Portuguese language',
+            hecos_definition:
+             'The study of the Portuguese language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Iberian studies',
+            note: nil
           },
           '101143' => {
-            cah_l3_id: 'CAH19-04-04'
+            cah_l3_id: 'CAH19-04-04',
+            hecos_subject: 'Brazilian studies',
+            hecos_definition:
+             'The study of Brazilian society, culture, and literature and the use of the Portuguese language, specific to its structure, history, grammar and use in Brazil.',
+            cah_l3_name: 'Iberian studies',
+            note: nil
           },
           '101144' => {
-            cah_l3_id: 'CAH19-04-04'
+            cah_l3_id: 'CAH19-04-04',
+            hecos_subject: 'Portuguese society and culture',
+            hecos_definition: 'The study of Portuguese society and culture.',
+            cah_l3_name: 'Iberian studies',
+            note: nil
           },
           '101145' => {
-            cah_l3_id: 'CAH19-04-02'
+            cah_l3_id: 'CAH19-04-02',
+            hecos_subject: 'Scandinavian studies',
+            hecos_definition:
+             'The study of Scandinavian societies, cultures, languages and literatures.',
+            cah_l3_name: 'German and Scandinavian studies',
+            note: nil
           },
           '101148' => {
-            cah_l3_id: 'CAH19-04-02'
+            cah_l3_id: 'CAH19-04-02',
+            hecos_subject: 'Swedish language',
+            hecos_definition:
+             'The study of the Swedish language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'German and Scandinavian studies',
+            note: nil
           },
           '101149' => {
-            cah_l3_id: 'CAH19-04-02'
+            cah_l3_id: 'CAH19-04-02',
+            hecos_subject: 'Norwegian language',
+            hecos_definition:
+             'The study of the Norwegian language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'German and Scandinavian studies',
+            note: nil
           },
           '101150' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'Finnish language',
+            hecos_definition:
+             'The study of the Finnish language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101151' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Russian studies',
+            hecos_definition:
+             'The study of Russian society, cultures, languages and literatures.',
+            cah_l3_name: 'Slavic studies',
+            note:
+             'For studies focused only on Russian language, use the modern Russian languages term.'
           },
           '101152' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Polish studies',
+            hecos_definition:
+             'The study of Polish society, culture, language and literature._',
+            cah_l3_name: 'Slavic studies',
+            note:
+             'For studies focused only on Polish language, use the Polish language term.'
           },
           '101153' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Polish language',
+            hecos_definition:
+             'The study of the Polish language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Slavic studies',
+            note: nil
           },
           '101155' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Czech language',
+            hecos_definition:
+             'The study of the Czech language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Slavic studies',
+            note: nil
           },
           '101157' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Russian literature',
+            hecos_definition:
+             'The study of Russian literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'Slavic studies',
+            note: nil
           },
           '101158' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Russian and East European society and culture',
+            hecos_definition:
+             'The study of Russian and East European society and culture.',
+            cah_l3_name: 'Slavic studies',
+            note: nil
           },
           '101159' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'European studies',
+            hecos_definition:
+             'The study of European societies, cultures, languages and literatures._',
+            cah_l3_name: 'others in language and area studies',
+            note:
+             'Can take a broadly comparative approach or can be focused on either individual countries or the European Union. Usually involves the study of at least one modern language, and one or more of history, politics, international relations, economics, geography, sociology and law. In some universities, courses in cultural studies are also included.'
           },
           '101161' => {
-            cah_l3_id: 'CAH19-04-02'
+            cah_l3_id: 'CAH19-04-02',
+            hecos_subject: 'Dutch studies',
+            hecos_definition:
+             'The study of Dutch society, culture, language and literature.',
+            cah_l3_name: 'German and Scandinavian studies',
+            note: nil
           },
           '101163' => {
-            cah_l3_id: 'CAH19-02-03'
+            cah_l3_id: 'CAH19-02-03',
+            hecos_subject: 'Welsh literature',
+            hecos_definition:
+             'The study of literature originally written in Welsh. Includes the use of techniques of literary analysis and interpretation.',
+            cah_l3_name: 'Welsh studies',
+            note: nil
           },
           '101164' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Chinese studies',
+            hecos_definition:
+             'The study of Chinese societies, cultures, languages and literatures._',
+            cah_l3_name: 'Asian studies',
+            note:
+             'For studies focused only on Chinese languages, use the Chinese language term.'
           },
           '101165' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Chinese languages',
+            hecos_definition:
+             'The study of Chinese languages, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101166' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Chinese literature',
+            hecos_definition:
+             'The study of Chinese literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101167' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Chinese society and culture studies',
+            hecos_definition: 'The study of Chinese society and culture.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101168' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Japanese studies',
+            hecos_definition:
+             'The study of Japanese society, culture, language and literature._',
+            cah_l3_name: 'Asian studies',
+            note:
+             'For studies focused only on Japanese language, use the Japanese languages term.'
           },
           '101169' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Japanese languages',
+            hecos_definition:
+             'The study of Japanese languages, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101170' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Japanese literature',
+            hecos_definition:
+             'The study of Japanese literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101171' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Japanese society and culture studies',
+            hecos_definition: 'The study of Japanese society and culture.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101172' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'South Asian studies',
+            hecos_definition:
+             'The study of South Asian societies, cultures, languages and literatures.',
+            cah_l3_name: 'Asian studies',
+            note:
+             'Includes the study of languages spoken in Pakistan, Bangladesh, India, Sri Lanka, Nepal, Bhutan and the Maldives. For Hindi, use "Hindi language", for Urdu, use "Urdu language", for Bengali, use "Bengali language", for Nepali, use "Nepali language".'
           },
           '101174' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Hindi language',
+            hecos_definition:
+             'The study of Hindi language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101175' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Urdu language',
+            hecos_definition:
+             'The study of Urdu language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101177' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Bengali language',
+            hecos_definition:
+             'The study of Bengali language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101179' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Indian society and culture studies',
+            hecos_definition: 'The study of the societies and cultures of India.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101180' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Asian studies',
+            hecos_definition:
+             'The study of Asian societies, cultures, languages and literatures.',
+            cah_l3_name: 'Asian studies',
+            note:
+             'Includes the study of languages spoken in central Asia, i.e.: Afghanistan, Kazakhstan, Kyrgyzstan, Tajikistan, Turkmenistan, and Uzbekistan. For all other Asian languages, see South Asian studies, South East Asian studies, East Asian studies, modern Middle Eastern languages and specific languages: Arabic languages, Hindi language, Urdu language, Bengali language, Nepali language, Thai language, Indonesian language, Vietnamese language, Chinese language, Korean studies, and Japanese language.'
           },
           '101184' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'African studies',
+            hecos_definition:
+             'The study of African societies, cultures, languages, histories and literatures.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note:
+             'For studies focused only on African languages, use the African languages term.'
           },
           '101185' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'African languages',
+            hecos_definition:
+             'The study of African languages, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note:
+             'Use for languages spoken on the African continent. For Arabic use "Arabic languages", for Hausa use "Hausa language", for Swahili and other Bantu languages use "Swahili and other Bantu languages"'
           },
           '101188' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'African literature',
+            hecos_definition:
+             'The study of African literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101189' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'African society and culture studies',
+            hecos_definition: 'The study of African societies and cultures.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101190' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'modern Middle Eastern studies',
+            hecos_definition:
+             'The study of Middle Eastern societies, cultures, languages and literatures.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note:
+             'For studies focused only on Middle Eastern languages, use the modern Middle Eastern languages term.'
           },
           '101191' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'modern Middle Eastern languages',
+            hecos_definition:
+             'The study of modern Middle Eastern languages, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note:
+             'Includes the languages spoken in: Bahrain, Egypt, Iran, Iraq, Israel, Jordan, Kuwait, Lebanon, Oman, Palestine, Qatar, Saudi Arabia, Syria, Turkey, United Arab Emirates and Yemen. For modern Arabic, use "Arabic languages", for modern Hebrew, use "modern Hebrew language", for Farsi/Persian use "Persian languages", for Turkish, use "Turkish studies"'
           },
           '101192' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Arabic languages',
+            hecos_definition:
+             'The study of Arabic languages, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101193' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Persian languages',
+            hecos_definition:
+             'The study of Persian languages, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: 'This includes the study of Persian, Farsi, Pashto, and Balochi.'
           },
           '101194' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Israeli studies',
+            hecos_definition:
+             'The study of Israeli society and culture, languages and literatures.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101195' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Turkish studies',
+            hecos_definition:
+             'The study of Turkish societies, cultures, languages and literatures.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101196' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'modern Middle Eastern literature',
+            hecos_definition:
+             'The study of modern Middle Eastern literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101197' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'modern Middle Eastern society and culture studies',
+            hecos_definition:
+             'The study of modern Middle Eastern societies and cultures.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101198' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Arab society and culture studies',
+            hecos_definition:
+             'The study of the societies and cultures of Arabic-speaking people.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101199' => {
-            cah_l3_id: 'CAH19-04-08'
+            cah_l3_id: 'CAH19-04-08',
+            hecos_subject: 'Latin American studies',
+            hecos_definition:
+             'The study of Latin American societies, cultures, languages and literatures.',
+            cah_l3_name: 'American and Australasian studies',
+            note:
+             'Includes the languages spoken in Central and South America. For the varieties of Spanish used in Latin America, use "Spanish language", for the use of Portuguese in Brazil, use "Brazilian studies".'
           },
           '101201' => {
-            cah_l3_id: 'CAH19-04-08'
+            cah_l3_id: 'CAH19-04-08',
+            hecos_subject: 'Latin American literature',
+            hecos_definition:
+             'The study of Latin American literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'American and Australasian studies',
+            note: nil
           },
           '101202' => {
-            cah_l3_id: 'CAH19-04-08'
+            cah_l3_id: 'CAH19-04-08',
+            hecos_subject: 'Latin American society and culture studies',
+            hecos_definition: 'The study of Latin American societies and cultures.',
+            cah_l3_name: 'American and Australasian studies',
+            note: nil
           },
           '101203' => {
-            cah_l3_id: 'CAH19-04-08'
+            cah_l3_id: 'CAH19-04-08',
+            hecos_subject: 'North American literature studies',
+            hecos_definition:
+             'The study of Northern American literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'American and Australasian studies',
+            note:
+             'Includes the literatures of the United States of America and Canada. Excludes the literature of central America.'
           },
           '101204' => {
-            cah_l3_id: 'CAH19-04-08'
+            cah_l3_id: 'CAH19-04-08',
+            hecos_subject: 'North American society and culture studies',
+            hecos_definition: 'The study of Northern American societies and cultures.',
+            cah_l3_name: 'American and Australasian studies',
+            note:
+             'Includes the societies and cultures of the United States of America and Canada.'
           },
           '101205' => {
-            cah_l3_id: 'CAH19-04-08'
+            cah_l3_id: 'CAH19-04-08',
+            hecos_subject: 'Canadian studies',
+            hecos_definition:
+             'The study of Canadian societies, cultures, languages and literatures._',
+            cah_l3_name: 'American and Australasian studies',
+            note: nil
           },
           '101206' => {
-            cah_l3_id: 'CAH19-04-08'
+            cah_l3_id: 'CAH19-04-08',
+            hecos_subject: 'Australasian studies',
+            hecos_definition:
+             'The study of Australasian and South West Pacific societies, cultures, languages and literatures.',
+            cah_l3_name: 'American and Australasian studies',
+            note:
+             'Includes the languages spoken in Australia, New Zealand, New Guinea and neighbouring islands in the Pacific (Polynesia and Micronesia). For English, use "English language".'
           },
           '101207' => {
-            cah_l3_id: 'CAH19-04-08'
+            cah_l3_id: 'CAH19-04-08',
+            hecos_subject: 'Caribbean studies',
+            hecos_definition:
+             'The study of Caribbean societies, cultures, languages and literatures.',
+            cah_l3_name: 'American and Australasian studies',
+            note: nil
           },
           '101210' => {
-            cah_l3_id: 'CAH10-01-06'
+            cah_l3_id: 'CAH10-01-06',
+            hecos_subject: 'biomaterials',
+            hecos_definition:
+             'The study of the development, processing, behaviour and application of natural and_synthetic materials found in natural organisms and/or used in medicine.',
+            cah_l3_name: 'bioengineering, medical and biomedical engineering',
+            note: nil
           },
           '101212' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Korean studies',
+            hecos_definition:
+             'The study of Korean societies, cultures, language and literatures._',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101214' => {
-            cah_l3_id: 'CAH25-01-04'
+            cah_l3_id: 'CAH25-01-04',
+            hecos_subject: 'cinematics',
+            hecos_definition:
+             'The study of the creation of moving images for film, tv and video.',
+            cah_l3_name: 'cinematics and photography',
+            note:
+             'For technical aspects, such as those involved with the Director of Photography, Camera Operator, Focus-puller, Gaffer, Camera Assistant, Spark and Grip, use cinematography. For production, use film production. For directing, use film directing.'
           },
           '101215' => {
-            cah_l3_id: 'CAH17-01-03'
+            cah_l3_id: 'CAH17-01-03',
+            hecos_subject: 'food marketing',
+            hecos_definition:
+             'The study of food products and their preparation to attract consumers.',
+            cah_l3_name: 'marketing',
+            note: nil
           },
           '101216' => {
-            cah_l3_id: 'CAH10-01-06'
+            cah_l3_id: 'CAH10-01-06',
+            hecos_subject: 'bioelectronics',
+            hecos_definition:
+             'The study of the application of biological materials and processes in electronics and the use of electronic devices in living systems.',
+            cah_l3_name: 'bioengineering, medical and biomedical engineering',
+            note: nil
           },
           '101217' => {
-            cah_l3_id: 'CAH10-03-02'
+            cah_l3_id: 'CAH10-03-02',
+            hecos_subject: 'composite materials',
+            hecos_definition:
+             'The study of the development, processing, enhancement, modification and application of composite materials.',
+            cah_l3_name: 'materials technology',
+            note: nil
           },
           '101218' => {
-            cah_l3_id: 'CAH15-01-04'
+            cah_l3_id: 'CAH15-01-04',
+            hecos_subject: 'forensic anthropology',
+            hecos_definition:
+             'The study of the analysis of human remains for the medicolegal purposes of establishing identity.',
+            cah_l3_name: 'anthropology',
+            note:
+             'A specialised area of science that requires detailed anatomical and osteological training.'
           },
           '101219' => {
-            cah_l3_id: 'CAH07-04-02'
+            cah_l3_id: 'CAH07-04-02',
+            hecos_subject: 'forensic archaeology',
+            hecos_definition:
+             'The study of the use of archaeological principles and techniques for the location, recovery, and interpretation of evidence for past events within the constraints of the criminal justice system.',
+            cah_l3_name: 'forensic and archaeological sciences',
+            note:
+             'It utilises both field and laboratory skills in the investigation of serious crime, missing persons, human rights and mass disasters.'
           },
           '101220' => {
-            cah_l3_id: 'CAH05-01-02'
+            cah_l3_id: 'CAH05-01-02',
+            hecos_subject: 'veterinary epidemiology',
+            hecos_definition:
+             'The study of the distribution and determinants of health-related states or events (including disease), and the application of this study to the control of diseases and other health problems in animals.',
+            cah_l3_name: 'others in veterinary sciences',
+            note: nil
           },
           '101221' => {
-            cah_l3_id: 'CAH23-01-02'
+            cah_l3_id: 'CAH23-01-02',
+            hecos_subject: 'enterprise and entrepreneurship',
+            hecos_definition:
+             'The study of the application of creative ideas and innovations to practical situations, including, but not exclusively, creating and growing organisations in order to identify and build on opportunities.',
+            cah_l3_name: 'personal development',
+            note: nil
           },
           '101222' => {
-            cah_l3_id: 'CAH07-04-02'
+            cah_l3_id: 'CAH07-04-02',
+            hecos_subject: 'crime scene investigation',
+            hecos_definition:
+             'The study of how to manage and investigate a crime scene using safe and ethical practices.',
+            cah_l3_name: 'forensic and archaeological sciences',
+            note: nil
           },
           '101223' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'condensed matter physics',
+            hecos_definition:
+             'The study of the structure of matter in a condensed state, including solids, liquids and nuclear condensed matter, and the explanation of its properties.',
+            cah_l3_name: 'physics',
+            note:
+             'Includes soft condensed matter such as polymers, gels, colloids etc. Includes solid state physics. Involves extensive use of mathematical techniques and modelling'
           },
           '101233' => {
-            cah_l3_id: 'CAH15-01-06'
+            cah_l3_id: 'CAH15-01-06',
+            hecos_subject: 'cultural studies',
+            hecos_definition:
+             'The interdisciplinary study of systems of meaning, practices and institutions in societies, how they are distributed along axes of social division, such as disability, class, ethnicity, gender, nationality, and sexuality, and how different social groups may make use of cultural texts and products in the construction of social and cultural realities, cultural maps and frames of reference.',
+            cah_l3_name: 'cultural studies',
+            note: nil
           },
           '101234' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'nanotechnology',
+            hecos_definition:
+             'The study of the manipulation of matter at the atomic and molecular scale (for example about 1 to 100 nanometers).',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '101241' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'music therapy',
+            hecos_definition:
+             'The study of the psychological approach that aims to facilitate positive changes in emotional wellbeing and communication through the engagement in live musical interaction between client and therapist.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '101243' => {
-            cah_l3_id: 'CAH10-01-06'
+            cah_l3_id: 'CAH10-01-06',
+            hecos_subject: 'bioengineering',
+            hecos_definition:
+             'The study of the application of engineering principles to biological problems. May include medical or biomedical engineering as part of the subject.',
+            cah_l3_name: 'bioengineering, medical and biomedical engineering',
+            note:
+             'For specifically medical or biomedical issues, use biomedical engineering.'
           },
           '101246' => {
-            cah_l3_id: 'CAH22-01-02'
+            cah_l3_id: 'CAH22-01-02',
+            hecos_subject: 'professional practice in education',
+            hecos_definition:
+             'Education studies specifically aimed at the development of members of the teaching profession.',
+            cah_l3_name: 'teacher training',
+            note:
+             'Covers CPD for teachers and other professional education courses aimed at teachers. Excludes initial teacher training.'
           },
           '101248' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'French history',
+            hecos_definition: 'Historical studies of France.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '101258' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Thai language',
+            hecos_definition:
+             'The study of Thai language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101261' => {
-            cah_l3_id: 'CAH20-01-03'
+            cah_l3_id: 'CAH20-01-03',
+            hecos_subject: 'maritime archaeology',
+            hecos_definition:
+             'The study of human activity in the past through analysis of the material culture and environmental data left behind by past human populations in coastal and marine regions, including oceans, seas, rivers, lakes and intertidal environments.',
+            cah_l3_name: 'archaeology',
+            note: nil
           },
           '101267' => {
-            cah_l3_id: 'CAH11-01-06'
+            cah_l3_id: 'CAH11-01-06',
+            hecos_subject: 'computer games',
+            hecos_definition:
+             'The study of the methods and techniques used to create video, computer and other electronic games.',
+            cah_l3_name: 'computer games and animation',
+            note:
+             'Includes art, visual design and graphics, also architectures, coding techniques and software development._'
           },
           '101268' => {
-            cah_l3_id: 'CAH11-01-06'
+            cah_l3_id: 'CAH11-01-06',
+            hecos_subject: 'computer games design',
+            hecos_definition:
+             'The study of the use of artistic and visual communication techniques in the design and production of computer games.',
+            cah_l3_name: 'computer games and animation',
+            note: nil
           },
           '101269' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'modern Hebrew language',
+            hecos_definition:
+             'The study of Modern Hebrew, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101271' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'East Asian studies',
+            hecos_definition:
+             'The study of East Asian societies, cultures, languages and literatures.',
+            cah_l3_name: 'Asian studies',
+            note:
+             'Includes the study of languages spoken in China, Hong Kong, Macau, Taiwan, Japan, North and South Korea and Mongolia. For Chinese, use "Chinese languages", for Japanese, use "Japanese languages", for Korean, use "Korean studies"'
           },
           '101273' => {
-            cah_l3_id: 'CAH23-01-01'
+            cah_l3_id: 'CAH23-01-01',
+            hecos_subject: 'combined studies',
+            hecos_definition:
+             'For use with combined studies subjects, when the particular subjects are not known at the point of classification.__May involve subjects from across diverse areas of the curriculum.',
+            cah_l3_name: 'combined, general or negotiated studies',
+            note:
+             'Where an integrated, rather than combined studies, approach is taken, consider using \'general studies unspecified\'.'
           },
           '101274' => {
-            cah_l3_id: 'CAH23-01-01'
+            cah_l3_id: 'CAH23-01-01',
+            hecos_subject: 'general studies',
+            hecos_definition:
+             'For use with broad general studies, when the particular subjects are not known at the point of classification.',
+            cah_l3_name: 'combined, general or negotiated studies',
+            note: nil
           },
           '101275' => {
-            cah_l3_id: 'CAH23-01-01'
+            cah_l3_id: 'CAH23-01-01',
+            hecos_subject: 'negotiated studies',
+            hecos_definition:
+             'For use where the subject of study is not yet known and is determined by a discussion process. May be a very narrow subject of study drawn from a wide range of possibilities.',
+            cah_l3_name: 'combined, general or negotiated studies',
+            note: nil
           },
           '101276' => {
-            cah_l3_id: 'CAH23-01-02'
+            cah_l3_id: 'CAH23-01-02',
+            hecos_subject: 'work placement experience (personal learning)',
+            hecos_definition:
+             'For use where a subject of study term may be required, but the entity relates to employment experience rather than a subject of study.',
+            cah_l3_name: 'personal development',
+            note: nil
           },
           '101277' => {
-            cah_l3_id: 'CAH23-01-02'
+            cah_l3_id: 'CAH23-01-02',
+            hecos_subject: 'work-based learning',
+            hecos_definition:
+             'The study and experience of how to learn while carrying out work-based activities.',
+            cah_l3_name: 'personal development',
+            note: nil
           },
           '101278' => {
-            cah_l3_id: 'CAH23-01-02'
+            cah_l3_id: 'CAH23-01-02',
+            hecos_subject: 'employability skills (personal learning)',
+            hecos_definition:
+             'For use where the student is developing competencies relevant to becoming a more useful employee.',
+            cah_l3_name: 'personal development',
+            note: nil
           },
           '101279' => {
-            cah_l3_id: 'CAH23-01-02'
+            cah_l3_id: 'CAH23-01-02',
+            hecos_subject: 'advice and guidance (personal learning)',
+            hecos_definition:
+             'For use when a student is being given advice and guidance.',
+            cah_l3_name: 'personal development',
+            note:
+             'For learning how to deliver careers advice and guidance, use careers guidance.'
           },
           '101288' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'international studies',
+            hecos_definition:
+             'The study of the relationships between nations, cultures and individuals across the regions of the globe, including political, economic, developmental, environmental, cultural and security issues.',
+            cah_l3_name: 'politics',
+            note:
+             'This term covers general international studies courses; for course with a particular focus on international politics, international development, international relations, use one of those terms in preference.'
           },
           '101289' => {
-            cah_l3_id: 'CAH02-06-01'
+            cah_l3_id: 'CAH02-06-01',
+            hecos_subject: 'rehabilitation studies',
+            hecos_definition:
+             'The study of the policy making, research, planning and execution of treatment programmes to remedy physical or mental dysfunction which may have been lost as a result of illness or injury.',
+            cah_l3_name: 'health sciences (non-specific)',
+            note:
+             'Rehabilitation studies can cover a very wide range of areas: policy, research, clinical, engineering, social, service delivery, psychological._ When coding for a narrower field, please choose the more specific related term.'
           },
           '101290' => {
-            cah_l3_id: 'CAH02-06-05'
+            cah_l3_id: 'CAH02-06-05',
+            hecos_subject: 'neurological rehabilitation',
+            hecos_definition:
+             'The study of how to produce a programme of treatment to help patients recover after diseases, trauma, or other disorders of the nervous system.',
+            cah_l3_name: 'physiotherapy',
+            note: 'For wider rehabilitation subjects, use rehabilitation studies.'
           },
           '101291' => {
-            cah_l3_id: 'CAH02-06-01'
+            cah_l3_id: 'CAH02-06-01',
+            hecos_subject: 'cardiovascular rehabilitation',
+            hecos_definition:
+             'The study of how to produce a programme of exercise and information sessions to help patients recover after a heart attack, heart surgery or similar procedure.',
+            cah_l3_name: 'health sciences (non-specific)',
+            note: 'For wider rehabilitation subjects, use rehabilitation studies.'
           },
           '101294' => {
-            cah_l3_id: 'CAH04-01-02'
+            cah_l3_id: 'CAH04-01-02',
+            hecos_subject: 'coaching psychology',
+            hecos_definition:
+             'The study of psychological approaches to emotional management, self-esteem, self-motivation and focus on achieving goals, in the context of their application to the life, business or performance of clients.',
+            cah_l3_name: 'applied psychology',
+            note: nil
           },
           '101300' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'quantum theory and applications',
+            hecos_definition:
+             'The study of the properties of matter and energy at nano scale in theory and application',
+            cah_l3_name: 'physics',
+            note:
+             '"nano scale" typically means molecular, atomic or subatomic in size and the energies associated with particles of this size. The theory may be taught as an application of mathematics.'
           },
           '101307' => {
-            cah_l3_id: 'CAH15-01-01'
+            cah_l3_id: 'CAH15-01-01',
+            hecos_subject: 'applied social science',
+            hecos_definition:
+             'The study of the application of approaches and techniques from the range of social science disciplines to real world problems.',
+            cah_l3_name: 'social sciences (non-specific)',
+            note: nil
           },
           '101308' => {
-            cah_l3_id: 'CAH17-01-04'
+            cah_l3_id: 'CAH17-01-04',
+            hecos_subject: 'facilities management',
+            hecos_definition:
+             'An interdisciplinary field devoted to the coordination of space, infrastructure, people and organization, often associated with the administration of office blocks, arenas, schools, sporting complexes, convention centres, shopping complexes, hospitals, hotels, and so on.',
+            cah_l3_name: 'management studies',
+            note:
+             'Facilities management is particularly associated with the function and use of the buildings and the resources within them rather than the people.'
           },
           '101309' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'obstetrics and gynaecology',
+            hecos_definition:
+             'The study of the care of the pregnant woman, her unborn child and the management of diseases specific to women.',
+            cah_l3_name: 'medicine by specialism',
+            note:
+             'The specialty offers a wide range of sub-specialties, which include materno-fetal medicine, gynaecologic oncology, gynaecological urology, reproductive medicine and community gynaecology.'
           },
           '101311' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'Hungarian studies',
+            hecos_definition:
+             'The study of Hungarian society, culture, language and literature._',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101312' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Czech studies',
+            hecos_definition:
+             'The study of Czech society, culture, language and literature.',
+            cah_l3_name: 'Slavic studies',
+            note:
+             'For studies focused only on Czech language, use the Czech language term.'
           },
           '101315' => {
-            cah_l3_id: 'CAH19-02-04'
+            cah_l3_id: 'CAH19-02-04',
+            hecos_subject: 'Irish studies',
+            hecos_definition:
+             'The study of Irish society, culture, languages and literatures.',
+            cah_l3_name: 'others in Celtic studies',
+            note:
+             'For studies focused only on the Irish language, use the Irish language term.'
           },
           '101316' => {
-            cah_l3_id: 'CAH25-01-03'
+            cah_l3_id: 'CAH25-01-03',
+            hecos_subject: 'interior design and architecture',
+            hecos_definition:
+             'The study of residential, commercial and public interior spaces; design, implementation and materials and the use of artistic techniques in planning, designing, equipping and furnishing.',
+            cah_l3_name: 'design studies',
+            note: nil
           },
           '101317' => {
-            cah_l3_id: 'CAH02-06-04'
+            cah_l3_id: 'CAH02-06-04',
+            hecos_subject: 'environmental and public health',
+            hecos_definition:
+             'The study of planning, managing, and evaluating public health care services, including epidemiology, biostatistics, public health principles, preventive medicine, health policy and regulations, health care services and related administrative functions, public health law enforcement, health economics and budgeting, public communications, and professional standards and ethics.',
+            cah_l3_name: 'environmental and public health',
+            note: nil
           },
           '101318' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'biodiversity conservation',
+            hecos_definition:
+             'The study of the science underpinning the assessment, restoration and conservation of species, their communities and natural habitats.',
+            cah_l3_name: 'ecology and environmental biology',
+            note: nil
           },
           '101319' => {
-            cah_l3_id: 'CAH03-02-01'
+            cah_l3_id: 'CAH03-02-01',
+            hecos_subject: 'exercise for health',
+            hecos_definition:
+             'The study of the psychology and physiology of physical activity for fitness and health and its role through the human lifespan.',
+            cah_l3_name: 'sport and exercise sciences',
+            note: nil
           },
           '101320' => {
-            cah_l3_id: 'CAH02-06-07'
+            cah_l3_id: 'CAH02-06-07',
+            hecos_subject: 'art psychotherapy',
+            hecos_definition:
+             'The study of techniques drawn from the visual arts and applied psychology to effect change by facilitating the intra-personal and interpersonal communication of experiences that the client may find difficulty in discussing verbally.',
+            cah_l3_name: 'counselling, psychotherapy and occupational therapy',
+            note: nil
           },
           '101322' => {
-            cah_l3_id: 'CAH22-01-01'
+            cah_l3_id: 'CAH22-01-01',
+            hecos_subject: 'mentorship',
+            hecos_definition:
+             'The study of/training in effective and reflective coaching and mentoring practice, including critical self-evaluation, providing feedback, use of appropriate communications techniques and continuous improvement strategies.',
+            cah_l3_name: 'education',
+            note: nil
           },
           '101323' => {
-            cah_l3_id: 'CAH16-01-01'
+            cah_l3_id: 'CAH16-01-01',
+            hecos_subject: 'dispute resolution',
+            hecos_definition:
+             'The study of mediation, investigative and adjudicative approaches, and complaint handling with a focus on disputes between individuals and powerful organisations.',
+            cah_l3_name: 'law',
+            note: nil
           },
           '101324' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'orthopaedics',
+            hecos_definition:
+             'The study of the surgical and other medical techniques associated with the prevention or correction of injuries or other functional impairments to the skeletal system.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '101325' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'paediatrics',
+            hecos_definition:
+             'The multidisciplinary study of the diagnosis, therapy and prevention of childhood diseases.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '101326' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'gerontology',
+            hecos_definition:
+             'The interdisciplinary study of the social, psychological, health and biological aspects of ageing.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '101327' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'oncology',
+            hecos_definition:
+             'The study of cancer, its management and the relief of symptoms associated with its progression and treatment.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '101329' => {
-            cah_l3_id: 'CAH02-06-01'
+            cah_l3_id: 'CAH02-06-01',
+            hecos_subject: 'dementia studies',
+            hecos_definition:
+             'The study of good practice in the approaches and interventions used when caring for a person with a set of symptoms that may include memory loss and difficulties with thinking, problem-solving or language. It may include study of the neurobiological basis of dementia, pharmacological approaches to the treatment of symptoms, and strategy and service development.',
+            cah_l3_name: 'health sciences (non-specific)',
+            note: nil
           },
           '101330' => {
-            cah_l3_id: 'CAH02-05-01'
+            cah_l3_id: 'CAH02-05-01',
+            hecos_subject: 'ultrasound',
+            hecos_definition:
+             'The study of the use of high frequency sound waves to provide medical diagnostic information',
+            cah_l3_name: 'medical technology',
+            note: nil
           },
           '101331' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'gastroenterology',
+            hecos_definition:
+             'The study of the diagnosis and management of patients with diseases of the intestines, liver and biliary tree, and pancreas.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '101332' => {
-            cah_l3_id: 'CAH02-06-04'
+            cah_l3_id: 'CAH02-06-04',
+            hecos_subject: 'drug and alcohol studies',
+            hecos_definition:
+             'The interdisciplinary study of the misuse of drugs and alcohol, its impact on individuals, groups and wider society, including intervention strategies and the relationship between policy and practice.',
+            cah_l3_name: 'environmental and public health',
+            note: nil
           },
           '101333' => {
-            cah_l3_id: 'CAH02-04-09'
+            cah_l3_id: 'CAH02-04-09',
+            hecos_subject: 'epilepsy care',
+            hecos_definition:
+             'The study of principles and techniques for assessing, managing, treating and monitoring the provision of care for people with epilepsy.',
+            cah_l3_name: 'others in nursing',
+            note: nil
           },
           '101334' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'allergy',
+            hecos_definition:
+             'The study of the mechanisms, diagnosis, treatment and management of allergic diseases.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '101335' => {
-            cah_l3_id: 'CAH02-06-04'
+            cah_l3_id: 'CAH02-06-04',
+            hecos_subject: 'epidemiology',
+            hecos_definition:
+             'The study of the distribution and determinants of health-related events (including disease), and its application to the control of diseases and other health problems.',
+            cah_l3_name: 'environmental and public health',
+            note: nil
           },
           '101336' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'anaesthesia',
+            hecos_definition:
+             'The study of the anatomy, pharmacology and neurophysiology of pain medicine, together with anaesthetic practice and patient care.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '101337' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'endocrinology',
+            hecos_definition:
+             'The study of hormones, their systems, functions and associated diseases.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '101338' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'diabetes',
+            hecos_definition:
+             'The multidisciplinary study of diabetes, its biology, diagnosis, complications, prevention and management.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '101339' => {
-            cah_l3_id: 'CAH01-01-03'
+            cah_l3_id: 'CAH01-01-03',
+            hecos_subject: 'dermatology',
+            hecos_definition:
+             'The study of the branch of medicine dealing with the skin, hair, nails, and associated diseases.',
+            cah_l3_name: 'medicine by specialism',
+            note: nil
           },
           '101340' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'hypnotherapy',
+            hecos_definition: 'The study of the treatment of conditions by hypnosis.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '101341' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'psychology of communication',
+            hecos_definition:
+             'The study of psychological processes in verbal and non-verbal communication.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '101342' => {
-            cah_l3_id: 'CAH04-01-03'
+            cah_l3_id: 'CAH04-01-03',
+            hecos_subject: 'psychology of memory and learning',
+            hecos_definition: 'The study of the processes of learning and recalling.',
+            cah_l3_name: 'developmental psychology',
+            note:
+             'For psychology of learning in an educational context, use educational psychology.'
           },
           '101343' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'transpersonal psychology',
+            hecos_definition:
+             'The study of psychological aspects of spiritual and mystic experience.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '101344' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'psychobiology',
+            hecos_definition:
+             'The study of biological explanations of psychological processes.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '101345' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'evolutionary psychology',
+            hecos_definition: 'The study of evolutionary explanations of psychology.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '101347' => {
-            cah_l3_id: 'CAH05-01-01'
+            cah_l3_id: 'CAH05-01-01',
+            hecos_subject: 'veterinary dentistry',
+            hecos_definition:
+             'The observation, diagnosis and treatment of illness, disease or damage to the teeth and gums of non-human patients.',
+            cah_l3_name: 'veterinary medicine and dentistry',
+            note: nil
           },
           '101348' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'exotic plants and crops',
+            hecos_definition:
+             'The study of the most efficient way to plant, sow and harvest non-native crops.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '101351' => {
-            cah_l3_id: 'CAH26-01-06'
+            cah_l3_id: 'CAH26-01-06',
+            hecos_subject: 'atmosphere-ocean interactions',
+            hecos_definition:
+             'The study of the quantification and modelling of the fluxes and transformations of material and energy between the marine and atmospheric environments.',
+            cah_l3_name: 'earth sciences',
+            note:
+             'Includes feedback mechanisms, coupled ocean/atmosphere models and the variability of these interactions in time and space.'
           },
           '101352' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'biogeography',
+            hecos_definition:
+             'The study of the geographical distribution of flora and fauna.',
+            cah_l3_name: 'physical geographical sciences',
+            note: nil
           },
           '101353' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'electrical power generation',
+            hecos_definition:
+             'The study and development of techniques for producing electricity.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note:
+             'For more the more general subject, use \'electrical power\'. For distribution specifically, use \'electrical power distribution\'.'
           },
           '101354' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'electrical power distribution',
+            hecos_definition:
+             'The study and development of electromotive forces and techniques for distributing electricity.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note:
+             'For more the more general subject, use \'electrical power\'. For generation specifically, use \'electrical power generation\'.'
           },
           '101355' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'cybernetics',
+            hecos_definition:
+             'The study of control systems in electronic and mechanical devices and the extent to which comparisons can be made between man-made and biological systems.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '101356' => {
-            cah_l3_id: 'CAH10-03-06'
+            cah_l3_id: 'CAH10-03-06',
+            hecos_subject: 'paper technology',
+            hecos_definition:
+             'The study of the processing, storage and production of paper and paper-based materials.',
+            cah_l3_name: 'others in technology',
+            note: nil
           },
           '101357' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'nationalism',
+            hecos_definition:
+             'Political doctrine that promotes the self-determination of the nation.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '101358' => {
-            cah_l3_id: 'CAH15-01-05'
+            cah_l3_id: 'CAH15-01-05',
+            hecos_subject: 'development in Africa',
+            hecos_definition:
+             'Focuses on the systematic study of the economic development process and its application to the problems of specific countries and regions in Africa.',
+            cah_l3_name: 'development studies',
+            note: nil
           },
           '101359' => {
-            cah_l3_id: 'CAH15-01-05'
+            cah_l3_id: 'CAH15-01-05',
+            hecos_subject: 'development in the Americas',
+            hecos_definition:
+             'Focuses on the systematic study of the economic development process and its application to the problems of specific countries and regions in the Americas.',
+            cah_l3_name: 'development studies',
+            note: nil
           },
           '101360' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'African history',
+            hecos_definition: 'Study of the history of Africa.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '101361' => {
-            cah_l3_id: 'CAH25-01-01'
+            cah_l3_id: 'CAH25-01-01',
+            hecos_subject: 'creative arts and design',
+            hecos_definition:
+             'The study and performance of creative and applied arts in a wide variety of media.',
+            cah_l3_name: 'creative arts and design (non-specific)',
+            note: nil
           },
           '101362' => {
-            cah_l3_id: 'CAH25-01-02'
+            cah_l3_id: 'CAH25-01-02',
+            hecos_subject: 'calligraphy',
+            hecos_definition:
+             'The study of/training in the artistic construction of hand-written text.',
+            cah_l3_name: 'art',
+            note: nil
           },
           '101363' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'psychology of music',
+            hecos_definition:
+             'The study of psychological theory and methods to interpret and understand musical behaviours, sounds and ideas.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '101366' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Swahili and other Bantu languages',
+            hecos_definition:
+             'The study of the Swahili language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note:
+             'Includes the study of related Bantu languages, including, but not limited to, Shona, Zulu, Kinyarwanda and Kirundi.'
           },
           '101367' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Hausa language',
+            hecos_definition:
+             'The study of the Hausa language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101368' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Indonesian language',
+            hecos_definition:
+             'The study of standard Indonesian, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Asian studies',
+            note:
+             'Use this term for standard Indonesian (Bahasa Indonesia) only. For other varieties of Malay, and for other Indonesian languages such as Javanese, Sundanese and Madurese, use "Asian studies".'
           },
           '101369' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Vietnamese language',
+            hecos_definition:
+             'The study of Vietnamese, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101371' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Nepali language',
+            hecos_definition:
+             'The study of Nepali, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101372' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'South East Asian studies',
+            hecos_definition:
+             'The study of South East Asian societies, cultures, languages and literatures.',
+            cah_l3_name: 'Asian studies',
+            note:
+             'Includes the study of languages spoken in Indonesia, Malaysia, Singapore, the Philippines, East Timor, Brunei, Cambodia, Laos, Myanmar (Burma), Thailand, and Vietnam. For Indonesian, use "Indonesian language", for Vietnamese, use "Vietnamese language"'
           },
           '101373' => {
-            cah_l3_id: 'CAH03-01-09'
+            cah_l3_id: 'CAH03-01-09',
+            hecos_subject: 'hair and beauty sciences',
+            hecos_definition:
+             'The study of services and treatments carried out in the hair, beauty and nail sectors and the sciences related to them.',
+            cah_l3_name: 'hair and beauty sciences',
+            note: nil
           },
           '101374' => {
-            cah_l3_id: 'CAH25-01-05'
+            cah_l3_id: 'CAH25-01-05',
+            hecos_subject: 'hair services',
+            hecos_definition:
+             'The study of hairdressing services, skills and knowledge required to meet clients\' needs including hair and scalp disease and disorders.',
+            cah_l3_name: 'others in creative arts and design',
+            note: nil
           },
           '101375' => {
-            cah_l3_id: 'CAH02-06-06'
+            cah_l3_id: 'CAH02-06-06',
+            hecos_subject: 'spa and water-based therapies',
+            hecos_definition:
+             'The study of water-based therapies, treatments and services to enhance the face, body, health and well-being.',
+            cah_l3_name: 'complementary and alternative medicine',
+            note: nil
           },
           '101376' => {
-            cah_l3_id: 'CAH03-01-05'
+            cah_l3_id: 'CAH03-01-05',
+            hecos_subject: 'applied botany',
+            hecos_definition:
+             'The study of topics in botany that are of commercial or social importance.',
+            cah_l3_name: 'plant sciences',
+            note: nil
           },
           '101377' => {
-            cah_l3_id: 'CAH03-01-07'
+            cah_l3_id: 'CAH03-01-07',
+            hecos_subject: 'transcriptomics',
+            hecos_definition:
+             'The study of transcriptomics; the branch of chemistry which deals with the study of messenger RNA molecules produced in one or a population of cell types.',
+            cah_l3_name: 'genetics',
+            note: nil
           },
           '101378' => {
-            cah_l3_id: 'CAH03-01-07'
+            cah_l3_id: 'CAH03-01-07',
+            hecos_subject: 'genetic engineering',
+            hecos_definition:
+             'The study of methods to manipulate the DNA (genetic material) of cells to change hereditary traits or produce biological products.',
+            cah_l3_name: 'genetics',
+            note: nil
           },
           '101379' => {
-            cah_l3_id: 'CAH03-02-01'
+            cah_l3_id: 'CAH03-02-01',
+            hecos_subject: 'sport technology',
+            hecos_definition:
+             'The study of the impact of technology and ergonomics to advance sport performance through the study of biomechanics, physiology, psychology and materials technology.',
+            cah_l3_name: 'sport and exercise sciences',
+            note: nil
           },
           '101380' => {
-            cah_l3_id: 'CAH03-01-08'
+            cah_l3_id: 'CAH03-01-08',
+            hecos_subject: 'metabolic biochemistry',
+            hecos_definition:
+             'The study of the biochemical aspects of metabolic processes.',
+            cah_l3_name: 'molecular biology, biophysics and biochemistry',
+            note: nil
           },
           '101381' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'cognitive neuroscience',
+            hecos_definition:
+             'The study of neural mechanisms underlying cognitive processes.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '101382' => {
-            cah_l3_id: 'CAH02-05-03'
+            cah_l3_id: 'CAH02-05-03',
+            hecos_subject: 'affective neuroscience',
+            hecos_definition:
+             'The study of neural mechanisms underlying emotional behaviour.',
+            cah_l3_name: 'biomedical sciences (non-specific)',
+            note: nil
           },
           '101383' => {
-            cah_l3_id: 'CAH04-01-02'
+            cah_l3_id: 'CAH04-01-02',
+            hecos_subject: 'psychometrics',
+            hecos_definition:
+             'The study of the psychological testing of personality and individual differences.',
+            cah_l3_name: 'applied psychology',
+            note: nil
           },
           '101384' => {
-            cah_l3_id: 'CAH05-01-01'
+            cah_l3_id: 'CAH05-01-01',
+            hecos_subject: 'pre-clinical veterinary medicine',
+            hecos_definition:
+             'The vocational study of the science of preventing, diagnosing, alleviating or curing disease in animals without direct involvement with patients.',
+            cah_l3_name: 'veterinary medicine and dentistry',
+            note: nil
           },
           '101385' => {
-            cah_l3_id: 'CAH06-01-03'
+            cah_l3_id: 'CAH06-01-03',
+            hecos_subject: 'agricultural irrigation and drainage',
+            hecos_definition:
+             'The study of the control of water by means of artificial canals and ditches, mechanical pumps, weather stations and other techniques.',
+            cah_l3_name: 'agriculture',
+            note: nil
           },
           '101387' => {
-            cah_l3_id: 'CAH06-01-07'
+            cah_l3_id: 'CAH06-01-07',
+            hecos_subject: 'meat science',
+            hecos_definition:
+             'The study of the properties of meat. Includes the application of food sciences to meat-inclusive food systems.',
+            cah_l3_name: 'food sciences',
+            note: nil
           },
           '101388' => {
-            cah_l3_id: 'CAH06-01-07'
+            cah_l3_id: 'CAH06-01-07',
+            hecos_subject: 'cereal science',
+            hecos_definition:
+             'The study of the properties of cereal and grains. Includes the application of food sciences to cereal-inclusive food systems.',
+            cah_l3_name: 'food sciences',
+            note: nil
           },
           '101389' => {
-            cah_l3_id: 'CAH07-02-01'
+            cah_l3_id: 'CAH07-02-01',
+            hecos_subject: 'organometallic chemistry',
+            hecos_definition:
+             'The study of reactions between organic compounds and metals.',
+            cah_l3_name: 'chemistry',
+            note: nil
           },
           '101390' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'marine physics',
+            hecos_definition:
+             'The study of the physical properties of the marine environment.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '101391' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'electromagnetism',
+            hecos_definition:
+             'The study of the interaction of charges in electromagnetic fields.',
+            cah_l3_name: 'physics',
+            note: nil
           },
           '101394' => {
-            cah_l3_id: 'CAH26-01-02'
+            cah_l3_id: 'CAH26-01-02',
+            hecos_subject: 'glaciology and cryospheric systems',
+            hecos_definition:
+             'The study of the origins, processes of formation, characteristics and impacts of glacial, ice cap, shelf ice and sea ice features.',
+            cah_l3_name: 'physical geographical sciences',
+            note:
+             'Includes physical, chemical and biological processes in the cryosphere. Also includes glacial tectonics and ice deformation, periglacial processes, determination of glacial events from the geological record and the interactions between the cryosphere and the atmosphere and terrestrial and aquatic environments.'
           },
           '101396' => {
-            cah_l3_id: 'CAH07-01-01'
+            cah_l3_id: 'CAH07-01-01',
+            hecos_subject: 'solid mechanics',
+            hecos_definition:
+             'The study of the mechanical and static properties of solids.',
+            cah_l3_name: 'physics',
+            note: 'Involves the study and application of specialist mathematics.'
           },
           '101397' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'turbine technology',
+            hecos_definition:
+             'The study of the conversion of the kinetic energy of a moving fluid via a rotating blade into mechanical energy.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: 'Involves the study and application of specialist mathematics.'
           },
           '101398' => {
-            cah_l3_id: 'CAH10-01-03'
+            cah_l3_id: 'CAH10-01-03',
+            hecos_subject: 'rail vehicle engineering',
+            hecos_definition:
+             'The study of mechanical self propulsion in rail vehicles.',
+            cah_l3_name: 'production and manufacturing engineering',
+            note: nil
           },
           '101399' => {
-            cah_l3_id: 'CAH10-01-08'
+            cah_l3_id: 'CAH10-01-08',
+            hecos_subject: 'analogue circuit engineering',
+            hecos_definition:
+             'The study of the principles of engineering as they apply to voltages or currents used to measure or represent quantities.',
+            cah_l3_name: 'electrical and electronic engineering',
+            note: nil
           },
           '101400' => {
-            cah_l3_id: 'CAH11-01-01'
+            cah_l3_id: 'CAH11-01-01',
+            hecos_subject: 'parallel computing',
+            hecos_definition:
+             'The study of simultaneous calculations for complex computations.',
+            cah_l3_name: 'computer science',
+            note: nil
           },
           '101401' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'microeconomics',
+            hecos_definition:
+             'The study of the branch of economics concerned with particular commodities, firms or individuals and the economic relationships between them.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '101402' => {
-            cah_l3_id: 'CAH15-02-01'
+            cah_l3_id: 'CAH15-02-01',
+            hecos_subject: 'macroeconomics',
+            hecos_definition:
+             'The study of the economic environment within which firms and individuals may operate.',
+            cah_l3_name: 'economics',
+            note: nil
           },
           '101403' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'feminism',
+            hecos_definition:
+             'The study of the political doctrine that highlights and attempts to reverse any inequalities in society based on gender differences.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '101404' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'anarchism',
+            hecos_definition:
+             'The study of the political doctrine that advocates the abolition of central authority in order to allow a natural social order to develop.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '101405' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'victimology',
+            hecos_definition:
+             'The study of the conceptualisation and role of the victim within the criminal justice system.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '101406' => {
-            cah_l3_id: 'CAH15-01-03'
+            cah_l3_id: 'CAH15-01-03',
+            hecos_subject: 'transport policy',
+            hecos_definition:
+             'The study of policies implemented by local and central governments to provide for the transportation needs of society.',
+            cah_l3_name: 'social policy',
+            note: nil
           },
           '101407' => {
-            cah_l3_id: 'CAH26-01-03'
+            cah_l3_id: 'CAH26-01-03',
+            hecos_subject: 'agricultural geography',
+            hecos_definition:
+             'The study of agricultural influences on populations and the environment.',
+            cah_l3_name: 'human geography',
+            note: nil
           },
           '101408' => {
-            cah_l3_id: 'CAH26-01-03'
+            cah_l3_id: 'CAH26-01-03',
+            hecos_subject: 'human demography',
+            hecos_definition:
+             'The statistical study of any kind of human population that changes over time or space.',
+            cah_l3_name: 'human geography',
+            note:
+             'Includes the study of the size, structure and distribution of human populations and spatial and/or temporal changes in them in response to birth, migration, aging and death.'
           },
           '101409' => {
-            cah_l3_id: 'CAH17-01-09'
+            cah_l3_id: 'CAH17-01-09',
+            hecos_subject: 'shorthand and shorthand transcription',
+            hecos_definition:
+             'Study of shorthand writing and its transcription back into standard orthography.',
+            cah_l3_name: 'others in business and management',
+            note: nil
           },
           '101410' => {
-            cah_l3_id: 'CAH19-01-07'
+            cah_l3_id: 'CAH19-01-07',
+            hecos_subject: 'historical linguistics',
+            hecos_definition:
+             'The study of the structure and development of languages from the earliest to modern varieties.',
+            cah_l3_name: 'linguistics',
+            note: nil
           },
           '101412' => {
-            cah_l3_id: 'CAH19-01-06'
+            cah_l3_id: 'CAH19-01-06',
+            hecos_subject: 'Scots language',
+            hecos_definition:
+             'The study of the history, grammar and use of Scots. Includes pronunciation and articulation.',
+            cah_l3_name: 'others in English studies',
+            note: 'For the Celtic language native to Scotland, use \'Gaelic\'.'
           },
           '101413' => {
-            cah_l3_id: 'CAH19-02-04'
+            cah_l3_id: 'CAH19-02-04',
+            hecos_subject: 'Irish language literature',
+            hecos_definition:
+             'The study of literature originally written in Irish. Includes the use of techniques of literary analysis and interpretation.',
+            cah_l3_name: 'others in Celtic studies',
+            note:
+             'For literature written by Irish authors in English, use "English literature".'
           },
           '101414' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'Coptic language',
+            hecos_definition:
+             'The study of the structure, semantics and cultural significance of the Afro-Asiatic language descended from ancient Egyptian and surviving in the Coptic church.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101415' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'Akkadian language',
+            hecos_definition:
+             'The study of the structure, semantics and cultural significance of the East Semitic branch of the Afro-Asiatic language used in central Mesopotamia.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101416' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'Sumerian language',
+            hecos_definition:
+             'The study of the structure, semantics and cultural significance of the language of the Sumer civilisation.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101417' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'Aramaic language',
+            hecos_definition:
+             'The study of the structure, semantics and cultural significance of the family of language varieties of the Middle-East descended from proto-Aramaic.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101419' => {
-            cah_l3_id: 'CAH19-02-04'
+            cah_l3_id: 'CAH19-02-04',
+            hecos_subject: 'Breton language',
+            hecos_definition:
+             'The study of the history, grammar and use of the language of Brittany. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'others in Celtic studies',
+            note: nil
           },
           '101420' => {
-            cah_l3_id: 'CAH20-01-05'
+            cah_l3_id: 'CAH20-01-05',
+            hecos_subject: 'Latin language',
+            hecos_definition:
+             'The study of the history, grammar and use of Latin. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'classics',
+            note: nil
           },
           '101421' => {
-            cah_l3_id: 'CAH20-01-05'
+            cah_l3_id: 'CAH20-01-05',
+            hecos_subject: 'medieval Latin language',
+            hecos_definition:
+             'The study of the history and grammar of vernacular Latin used in legal documents and how it differs from standard Latin.',
+            cah_l3_name: 'classics',
+            note: 'Includes acquisition and individual written forms.'
           },
           '101422' => {
-            cah_l3_id: 'CAH20-01-05'
+            cah_l3_id: 'CAH20-01-05',
+            hecos_subject: 'classical church Greek',
+            hecos_definition:
+             'The study of the history, grammar and use of ecclesiastical Classical Greek and how it differs from standard Classical Greek. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'classics',
+            note: nil
           },
           '101423' => {
-            cah_l3_id: 'CAH20-01-05'
+            cah_l3_id: 'CAH20-01-05',
+            hecos_subject: 'classical Greek literature',
+            hecos_definition:
+             'The study of literature originally written in Classical Greek. Includes the use of techniques of literary analysis and interpretation.',
+            cah_l3_name: 'classics',
+            note: nil
           },
           '101424' => {
-            cah_l3_id: 'CAH19-04-02'
+            cah_l3_id: 'CAH19-04-02',
+            hecos_subject: 'Danish language',
+            hecos_definition:
+             'The study of the Danish language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'German and Scandinavian studies',
+            note: nil
           },
           '101425' => {
-            cah_l3_id: 'CAH19-04-02'
+            cah_l3_id: 'CAH19-04-02',
+            hecos_subject: 'Scandinavian literature',
+            hecos_definition:
+             'The study of Scandinavian literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'German and Scandinavian studies',
+            note: nil
           },
           '101426' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'Estonian language',
+            hecos_definition:
+             'The study of varieties of the Estonian language, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101427' => {
-            cah_l3_id: 'CAH19-04-09'
+            cah_l3_id: 'CAH19-04-09',
+            hecos_subject: 'Hungarian language',
+            hecos_definition:
+             'The study of varieties of the Hungarian language, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'others in language and area studies',
+            note: nil
           },
           '101428' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'south Slavonic languages',
+            hecos_definition:
+             'The study of South Slavonic language varieties, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Slavic studies',
+            note: 'Includes the study of Serbian, Croatian, and Slovene.'
           },
           '101429' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Ukrainian language',
+            hecos_definition:
+             'The study of varieties of the Ukranian language, their structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'Slavic studies',
+            note: 'For varieties of Russian, use "Russian language".'
           },
           '101430' => {
-            cah_l3_id: 'CAH19-04-06'
+            cah_l3_id: 'CAH19-04-06',
+            hecos_subject: 'Indian literature studies',
+            hecos_definition:
+             'The study of Indian literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'Asian studies',
+            note: nil
           },
           '101431' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Turkish languages',
+            hecos_definition:
+             'The study of varieties of the Turkish language, its structure, history, grammar and use. Includes acquisition, pronunciation and articulation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note:
+             'For other Turkic and Altaic languages as well as Kurdish, use "Asian language studies".'
           },
           '101432' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Arabic literature',
+            hecos_definition:
+             'The study of Arabic literature, both classical and modern, using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101433' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Persian literature studies',
+            hecos_definition:
+             'The study of Persian literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: '2015-10-04: Definition adopted from JACS3 T623'
           },
           '101434' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Turkish literature',
+            hecos_definition:
+             'The study of Turkish literature using the techniques of literary analysis and interpretation.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101435' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'oral history',
+            hecos_definition: 'The study of spoken records as historical evidence.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '101436' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'crime history',
+            hecos_definition:
+             'Historical studies of the development of criminal justice theories and social responses to crime.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '101437' => {
-            cah_l3_id: 'CAH20-01-03'
+            cah_l3_id: 'CAH20-01-03',
+            hecos_subject: 'Stone Age',
+            hecos_definition:
+             'The study of the period of human culture characterised by the making and use of stone implements and artefacts.',
+            cah_l3_name: 'archaeology',
+            note: nil
           },
           '101438' => {
-            cah_l3_id: 'CAH20-01-03'
+            cah_l3_id: 'CAH20-01-03',
+            hecos_subject: 'Bronze Age',
+            hecos_definition:
+             'The study of the period of human culture characterised by the making and use of bronze implements and artefacts, c.4500BC-500 BC.',
+            cah_l3_name: 'archaeology',
+            note: nil
           },
           '101439' => {
-            cah_l3_id: 'CAH20-01-03'
+            cah_l3_id: 'CAH20-01-03',
+            hecos_subject: 'Iron Age',
+            hecos_definition:
+             'The study of the period of human culture characterised by the making and use of iron implements and artefacts, c.1100 BC-c.1st AD.',
+            cah_l3_name: 'archaeology',
+            note: nil
           },
           '101440' => {
-            cah_l3_id: 'CAH20-01-03'
+            cah_l3_id: 'CAH20-01-03',
+            hecos_subject: 'classical art and archaeology',
+            hecos_definition:
+             'The study of the material culture of classical civilisations.',
+            cah_l3_name: 'archaeology',
+            note: nil
           },
           '101441' => {
-            cah_l3_id: 'CAH20-02-01'
+            cah_l3_id: 'CAH20-02-01',
+            hecos_subject: 'metaphysics',
+            hecos_definition:
+             'The study of theories of being and the nature of thought.',
+            cah_l3_name: 'philosophy',
+            note: nil
           },
           '101442' => {
-            cah_l3_id: 'CAH20-02-01'
+            cah_l3_id: 'CAH20-02-01',
+            hecos_subject: 'epistemology',
+            hecos_definition: 'The study of the theory of knowledge.',
+            cah_l3_name: 'philosophy',
+            note: nil
           },
           '101443' => {
-            cah_l3_id: 'CAH20-02-01'
+            cah_l3_id: 'CAH20-02-01',
+            hecos_subject: 'scholastic philosophy',
+            hecos_definition:
+             'The study of philosophical thought of the medieval period.',
+            cah_l3_name: 'philosophy',
+            note: nil
           },
           '101444' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'hinduism',
+            hecos_definition:
+             'The study of the theory and practice of the Hindu religious tradition.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '101445' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'the Qur\'an and Islamic texts',
+            hecos_definition:
+             'The study of the Qur\'an (Koran) and interpretation of Sharia.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '101446' => {
-            cah_l3_id: 'CAH20-02-02'
+            cah_l3_id: 'CAH20-02-02',
+            hecos_subject: 'the Torah and Judaic texts',
+            hecos_definition: 'The study of the Torah and Talmudic interpretation.',
+            cah_l3_name: 'theology and religious studies',
+            note: nil
           },
           '101447' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'folk music',
+            hecos_definition:
+             'The study of music classified as in the style of folk music exploring its traditional and revived forms.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '101448' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'opera',
+            hecos_definition:
+             'The study of music classified as opera, including the theatrical, musical and literary techniques used by composers when creating new works.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '101449' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'music theory and analysis',
+            hecos_definition:
+             'The study of conceptual structures typical of music theory and method and techniques used to analyse music.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '101450' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'applied music and musicianship',
+            hecos_definition:
+             'The study of traditional music theory and performance, with additional aspects of technology, community music, education, musicology and development of original creative ability.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '101451' => {
-            cah_l3_id: 'CAH25-02-02'
+            cah_l3_id: 'CAH25-02-02',
+            hecos_subject: 'popular music composition',
+            hecos_definition:
+             'The study of the expertise of contemporary song-writing, studying musical concepts in popular music cultures and music industry practices of popular music.',
+            cah_l3_name: 'music',
+            note: nil
           },
           '101452' => {
-            cah_l3_id: 'CAH25-02-04'
+            cah_l3_id: 'CAH25-02-04',
+            hecos_subject: 'body awareness',
+            hecos_definition:
+             'The study of the human body in relation to its capabilities in generating artistic forms in dance.',
+            cah_l3_name: 'dance',
+            note: nil
           },
           '101453' => {
-            cah_l3_id: 'CAH25-02-04'
+            cah_l3_id: 'CAH25-02-04',
+            hecos_subject: 'dance and culture',
+            hecos_definition:
+             'The study of dance through the performance of one or more of the dance disciplines, including but not limited to ballet, modern, jazz and folk dance, with focus on the study and analysis of dance as a cultural phenomenon.',
+            cah_l3_name: 'dance',
+            note: nil
           },
           '101454' => {
-            cah_l3_id: 'CAH25-02-04'
+            cah_l3_id: 'CAH25-02-04',
+            hecos_subject: 'community dance',
+            hecos_definition:
+             'The study of expressing ideas and feelings through the performance of one or more of the dance disciplines to support, develop and initiate dance activities within communities.',
+            cah_l3_name: 'dance',
+            note: nil
           },
           '101455' => {
-            cah_l3_id: 'CAH25-01-05'
+            cah_l3_id: 'CAH25-01-05',
+            hecos_subject: 'stone crafts',
+            hecos_definition:
+             'The craft of creating decorative and functional items from stone.',
+            cah_l3_name: 'others in creative arts and design',
+            note: 'May include dry-stone walling.'
           },
           '101457' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'community ecology',
+            hecos_definition:
+             'The study of the structure, composition and dynamics of ecological assemblages. Includes the relationship between species assemblages and their environments, trophic structure, succession, stability, biodiversity, coexistence and competitive exclusion, spatial structure and relative abundance of component species.',
+            cah_l3_name: 'ecology and environmental biology',
+            note: nil
           },
           '101458' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'population ecology',
+            hecos_definition:
+             'The study of the understanding of population dynamics, including trophic interactions, demography of populations, extinction processes, spatial processes and metapopulation dynamics.',
+            cah_l3_name: 'ecology and environmental biology',
+            note: nil
           },
           '101459' => {
-            cah_l3_id: 'CAH03-01-03'
+            cah_l3_id: 'CAH03-01-03',
+            hecos_subject: 'ecotoxicology',
+            hecos_definition:
+             'The study of the branch of toxicology concerned with toxic effects caused by natural or synthetic pollutants, to the constituents of ecosystems, (animal (including human), vegetable and microbial) in an integral context.',
+            cah_l3_name: 'ecology and environmental biology',
+            note:
+             'Includes diagnostics, tolerance and adaptation in relation to natural and anthropogenic toxic substances.'
           },
           '101460' => {
-            cah_l3_id: 'CAH03-01-05'
+            cah_l3_id: 'CAH03-01-05',
+            hecos_subject: 'plant physiology',
+            hecos_definition:
+             'The study of the area of botany concerned with the function or physiology of plants.',
+            cah_l3_name: 'plant sciences',
+            note:
+             'Includes processes such as photosynthesis, respiration, plant nutrition, plant hormone functions, tropisms, nastic movements, photoperiodism, photomorphogenesis, circadian rhythms, environmental stress physiology, seed germination, dormancy and stomata function and transpiration.'
           },
           '101461' => {
-            cah_l3_id: 'CAH05-01-02'
+            cah_l3_id: 'CAH05-01-02',
+            hecos_subject: 'veterinary biochemistry',
+            hecos_definition:
+             'The study of the biochemical aspects of metabolic processes in animals.',
+            cah_l3_name: 'others in veterinary sciences',
+            note: nil
           },
           '101462' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'quantitative psychology',
+            hecos_definition:
+             'The study of the use of measurement, quantitative and statistical techniques in psychological testing.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '101463' => {
-            cah_l3_id: 'CAH04-01-05'
+            cah_l3_id: 'CAH04-01-05',
+            hecos_subject: 'qualitative psychology',
+            hecos_definition:
+             'The study of the use of qualitative techniques in psychology.',
+            cah_l3_name: 'others in psychology',
+            note: nil
           },
           '101464' => {
-            cah_l3_id: 'CAH04-01-04'
+            cah_l3_id: 'CAH04-01-04',
+            hecos_subject: 'psychopharmacology',
+            hecos_definition:
+             'The study of the behavioural and psychological effects of drugs.',
+            cah_l3_name: 'psychology and health',
+            note: nil
           },
           '101465' => {
-            cah_l3_id: 'CAH15-01-02'
+            cah_l3_id: 'CAH15-01-02',
+            hecos_subject: 'sociology of law',
+            hecos_definition:
+             'The study of legal phenomena from a social and inter-disciplinary perspective bridging the divide between law, sociology, social policy and economics.',
+            cah_l3_name: 'sociology',
+            note: nil
           },
           '101467' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Ruskin studies',
+            hecos_definition:
+             'The study of the literary works of John Ruskin (1819 __ 1900)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101468' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'John Donne studies',
+            hecos_definition:
+             'The study of the literary works of John Donne (22 January 1572 __ 31 March 1631)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101469' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'T.S. Eliot studies',
+            hecos_definition:
+             'The study of the literary works of T.S. Eliot (26 September 1888 __ 4 January 1965)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101470' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Thomas Hardy studies',
+            hecos_definition:
+             'The study of the literary works of Thomas Hardy (2 June 1840 __ 11 January 1928)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101471' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Oscar Wilde studies',
+            hecos_definition:
+             'The study of the literary works of Oscar Fingal O\'Flahertie Wills Wilde (16 October 1854 __ 30 November 1900)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101472' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Chaucer studies',
+            hecos_definition:
+             'The study of the literary works of Geoffrey Chaucer (c. 1343 __ 25 October 1400)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101473' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Brontës studies',
+            hecos_definition:
+             'The study of the literary works of Charlotte (1816 __ 1855), Emily (1818 __ 1848), and Anne (1820 __ 1849) Brontë',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101474' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Thomas Pynchon studies',
+            hecos_definition:
+             'The study of the literary works of Thomas Ruggles Pynchon, Jr. (May 8, 1937)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101475' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Philip Larkin studies',
+            hecos_definition:
+             'The study of the literary works of Philip Arthur Larkin (9 August 1922 __ 2 December 1985)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101476' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'D.H. Lawrence studies',
+            hecos_definition:
+             'The study of the literary works of David Herbert Richards Lawrence (11 September 1885 __ 2 March 1930)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101477' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Charles Dickens studies',
+            hecos_definition:
+             'The study of the literary works of Charles John Huffam Dickens (7 February 1812 __ 9 June 1870)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101478' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Jane Austen studies',
+            hecos_definition:
+             'The study of the literary works of Jane Austen (16 December 1775 __ 18 July 1817)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101479' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'James Joyce studies',
+            hecos_definition:
+             'The study of the literary works of James Augustine Aloysius Joyce (2 February 1882 __ 13 January 1941)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101480' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Margaret Atwood studies',
+            hecos_definition:
+             'The study of the literary works of Margaret Eleanor Atwood (November 18, 1939)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101481' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Samuel Beckett studies',
+            hecos_definition:
+             'The study of the literary works of Samuel Barclay Beckett (13 April 1906 __ 22 December 1989)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101482' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Wilkie Collins studies',
+            hecos_definition:
+             'The study of the literary works of William Wilkie Collins (8 January 1824 __ 23 September 1889)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101483' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Byron studies',
+            hecos_definition:
+             'The study of the literary works of George Gordon Byron, 6th Baron Byron ("Lord Byron" 22 January 1788 __ 19 April 1824)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101484' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Shelley studies',
+            hecos_definition:
+             'The study of the literary works of Percy Bysshe Shelley (1792 __ 1822)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101485' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Milton studies',
+            hecos_definition:
+             'The study of the literary works of John Milton (1608__1674)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101486' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'J. M. Coetzee studies',
+            hecos_definition:
+             'The study of the literary works of John Maxwell "J. M." Coetzee (9 February 1940)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101487' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Christopher Marlowe studies',
+            hecos_definition:
+             'The study of the literary works of Christopher Marlowe (26 February 1564 __ 30 May 1593)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101488' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Walter Scott studies',
+            hecos_definition:
+             'The study of the literary works of Sir Walter Scott, 1st Baronet (15 August 1771 __ 21 September 1832)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101489' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Robert Louis Stevenson studies',
+            hecos_definition:
+             'The study of the literary works of Robert Louis Balfour Stevenson (13 November 1850 __ 3 December 1894)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101490' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Robert Burns studies',
+            hecos_definition:
+             'The study of the literary works of Robert Burns (25 January 1759 __ 21 July 1796)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101491' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Virginia Woolf studies',
+            hecos_definition:
+             'The study of the literary works of Adeline Virginia Woolf (n_e Stephen; 25 January 1882 __ 28 March 1941)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101492' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Bob Dylan studies',
+            hecos_definition:
+             'The study of the literary works of Bob Dylan (born Robert Allen Zimmerman, May 24, 1941)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101493' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Dylan Thomas studies',
+            hecos_definition:
+             'The study of the literary works of Dylan Marlais Thomas (27 October 1914 __ 9 November 1953)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101494' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'W. B. Yeats studies',
+            hecos_definition:
+             'The study of the literary works of William Butler Yeats (13 June 1865 __ 28 January 1939)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101495' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Joseph Conrad studies',
+            hecos_definition:
+             'The study of the literary works of Joseph Conrad (born J_zef Teodor Konrad Korzeniowski; 3 December 1857 __ 3 August 1924)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101496' => {
-            cah_l3_id: 'CAH19-01-04'
+            cah_l3_id: 'CAH19-01-04',
+            hecos_subject: 'Salman Rushdie studies',
+            hecos_definition:
+             'The study of the literary works of Sir Salman Rushdie (19 June 1947)',
+            cah_l3_name: 'studies of specific authors',
+            note: nil
           },
           '101497' => {
-            cah_l3_id: 'CAH19-02-02'
+            cah_l3_id: 'CAH19-02-02',
+            hecos_subject: 'Gaelic literature',
+            hecos_definition: 'The study of literature originally written in Gaelic.',
+            cah_l3_name: 'Gaelic studies',
+            note:
+             'Includes the use of techniques of literary analysis and interpretation. For literature written in the Celtic language native to Ireland, use "Irish language literature".'
           },
           '101498' => {
-            cah_l3_id: 'CAH20-01-01'
+            cah_l3_id: 'CAH20-01-01',
+            hecos_subject: 'Scandinavian history',
+            hecos_definition: 'Historical studies of Scandinavia.',
+            cah_l3_name: 'history',
+            note: nil
           },
           '101499' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Russian society and culture',
+            hecos_definition: 'The study of Russian society and culture.',
+            cah_l3_name: 'Slavic studies',
+            note: nil
           },
           '101500' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Polish society and culture',
+            hecos_definition: 'The study of Polish society and culture.',
+            cah_l3_name: 'Slavic studies',
+            note: nil
           },
           '101501' => {
-            cah_l3_id: 'CAH19-04-05'
+            cah_l3_id: 'CAH19-04-05',
+            hecos_subject: 'Czech society and culture',
+            hecos_definition: 'The study of Czech society and culture.',
+            cah_l3_name: 'Slavic studies',
+            note: nil
           },
           '101503' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Persian society and culture studies',
+            hecos_definition:
+             'The study of the societies and cultures of Persian-speaking people.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101504' => {
-            cah_l3_id: 'CAH19-04-07'
+            cah_l3_id: 'CAH19-04-07',
+            hecos_subject: 'Turkish society and culture studies',
+            hecos_definition:
+             'The study of the societies and cultures of Turkish-speaking people.',
+            cah_l3_name: 'African and modern Middle Eastern studies',
+            note: nil
           },
           '101505' => {
-            cah_l3_id: 'CAH25-01-05'
+            cah_l3_id: 'CAH25-01-05',
+            hecos_subject: 'carpentry and joinery',
+            hecos_definition:
+             'The study of laying-out, fabricating, erecting, installing and repairing wooden structures and fixtures.',
+            cah_l3_name: 'others in creative arts and design',
+            note: nil
           },
           '101506' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'liberalism',
+            hecos_definition:
+             'Study of the political doctrine that emphasises the freedom of the individual and individual rights while minimising the need for external constraints.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '101507' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'conservatism',
+            hecos_definition:
+             'The study of the political doctrine that emphasises the need for ordered control of society through the organisation of the state and the upholding of existing traditions and values.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '101508' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'socialism',
+            hecos_definition:
+             'The study of the political doctrine that espouses social organisation of society based on co-operation, collectivism, egalitarianism and the communal ownership of the means of production.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '101509' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'fascism',
+            hecos_definition:
+             'Study of the political doctrine that emphasises the dominance and the hierarchical authoritarian organisation of the state.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '101510' => {
-            cah_l3_id: 'CAH15-03-01'
+            cah_l3_id: 'CAH15-03-01',
+            hecos_subject: 'environmentalism',
+            hecos_definition:
+             'The study of the political doctrine that believes that human life can only be understood in the context of the natural world and that progress lies in the preservation of the natural environment.',
+            cah_l3_name: 'politics',
+            note: nil
           },
           '101511' => {
-            cah_l3_id: 'CAH02-06-03'
+            cah_l3_id: 'CAH02-06-03',
+            hecos_subject: 'ophthalmic dispensing',
+            hecos_definition:
+             'The study of the eye, disruption to sight, and diseases of the eye, focusing on the treatment of eye disorders.',
+            cah_l3_name: 'ophthalmics',
+            note: nil
           }
         },
         schema: {
           id: :string,
-          cah_l3_id: :string
+          cah_l3_id: :string,
+          hecos_subject: :string,
+          hecos_definition: :string,
+          cah_l3_name: :string,
+          note: { kind: :optional, schema: :string }
         },
         list_description: 'CAH level 3 codes for HECoS subjects',
         list_docs_url: 'FIXME',
         field_descriptions: {
           id: 'A HECoS subject code',
-          cah_l3_id: 'The CAH level 3 ID corresponding to this HECoS subject'
+          cah_l3_id: 'The CAH level 3 ID corresponding to this HECoS subject',
+          hecos_subject: 'The name of the HECoS subject',
+          hecos_definition: 'The definition of the HECoS subject',
+          cah_l3_name: 'The name of the CAH level 3 category',
+          note: 'An additional note about mapping'
         }
       )
     end
