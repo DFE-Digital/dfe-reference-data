@@ -1,0 +1,19 @@
+id,country,country_code,qualification_name,qualification_group,current_grade,historical_grade,enic_band,rqf_level,enic_notes,equivalence_type,equivalence_gcse
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,good,,band 6,level 3,university entry,a_level,met
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,top tier,,band 6,level 3,university entry,a_level,met
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,borderline,,band 6,level 3,university entry,a_level,not_met
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,high,,band 6,level 3,university entry,a_level,met
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,pass,,band 6,level 3,university entry,a_level,met
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,fail,,band 6,level 3,university entry,a_level,not_met
+10139d58-e2ab-418a-bfcc-f5057612cfa4,china,cn,benke (bachelor's degree),degree,pass,,band 10,level 6,,degree,not_applicable
+10139d58-e2ab-418a-bfcc-f5057612cfa4,china,cn,benke (bachelor's degree),degree,youxiu (excellent),,band 10,level 6,,degree,not_applicable
+10139d58-e2ab-418a-bfcc-f5057612cfa4,china,cn,benke (bachelor's degree),degree,good,,band 10,level 6,,degree,not_applicable
+62b04aee-3e00-413c-af14-f57c6a72ef02,china,cn,boshi (doctorate),degree,awarded,,band 15,level 8,,degree,not_applicable
+7c2505aa-c22b-4988-8e38-6242d860bb94,china,cn,secondary vocational school diploma,vocational_diploma,pass,,band 6–7,level 3–4,programme-dependent,,not_applicable
+7c2505aa-c22b-4988-8e38-6242d860bb94,china,cn,secondary vocational school diploma,vocational_diploma,excellent,,band 6–7,level 3–4,programme-dependent,,not_applicable
+7c2505aa-c22b-4988-8e38-6242d860bb94,china,cn,secondary vocational school diploma,vocational_diploma,good,,band 6–7,level 3–4,programme-dependent,,not_applicable
+88d78350-cadf-45d4-85f4-9f228d1b77dc,france,fr,baccalauréat (général/technologique/professionnel),baccalaureat,passable,,band 6,level 3,baccalauréat,a_level,met
+88d78350-cadf-45d4-85f4-9f228d1b77dc,france,fr,baccalauréat (général/technologique/professionnel),baccalaureat,bien,,band 6,level 3,baccalauréat,a_level,met
+88d78350-cadf-45d4-85f4-9f228d1b77dc,france,fr,baccalauréat (général/technologique/professionnel),baccalaureat,ajourné,,band 6,level 3,baccalauréat,a_level,not_met
+88d78350-cadf-45d4-85f4-9f228d1b77dc,france,fr,baccalauréat (général/technologique/professionnel),baccalaureat,très bien,,band 6,level 3,baccalauréat,a_level,met
+88d78350-cadf-45d4-85f4-9f228d1b77dc,france,fr,baccalauréat (général/technologique/professionnel),baccalaureat,assez bien,,band 6,level 3,baccalauréat,a_level,met

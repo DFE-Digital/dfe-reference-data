@@ -1,0 +1,401 @@
+id,country,country_code,qualification_name,qualification_group,current_grade,historical_grade,enic_band,rqf_level,enic_notes,equivalence_type,equivalence_gcse
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,good,,band 6,level 3,university entry,a_level,met
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,top tier,,band 6,level 3,university entry,a_level,met
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,borderline,,band 6,level 3,university entry,a_level,not_met
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,high,,band 6,level 3,university entry,a_level,met
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,pass,,band 6,level 3,university entry,a_level,met
+9450f8ea-cc70-4af1-92df-f848f03aa4ff,china,cn,gaokao (national college entrance exam),gaokao,fail,,band 6,level 3,university entry,a_level,not_met
+10139d58-e2ab-418a-bfcc-f5057612cfa4,china,cn,benke (bachelor's degree),degree,pass,,band 10,level 6,,degree,not_applicable
+10139d58-e2ab-418a-bfcc-f5057612cfa4,china,cn,benke (bachelor's degree),degree,youxiu (excellent),,band 10,level 6,,degree,not_applicable
+10139d58-e2ab-418a-bfcc-f5057612cfa4,china,cn,benke (bachelor's degree),degree,good,,band 10,level 6,,degree,not_applicable
+62b04aee-3e00-413c-af14-f57c6a72ef02,china,cn,boshi (doctorate),degree,awarded,,band 15,level 8,,degree,not_applicable
+7c2505aa-c22b-4988-8e38-6242d860bb94,china,cn,secondary vocational school diploma,vocational_diploma,pass,,band 6–7,level 3–4,programme-dependent,,not_applicable
+7c2505aa-c22b-4988-8e38-6242d860bb94,china,cn,secondary vocational school diploma,vocational_diploma,excellent,,band 6–7,level 3–4,programme-dependent,,not_applicable
+7c2505aa-c22b-4988-8e38-6242d860bb94,china,cn,secondary vocational school diploma,vocational_diploma,good,,band 6–7,level 3–4,programme-dependent,,not_applicable
+b20d1ddd-0eed-4232-b00d-4ec612454526,china,cn,senior secondary school graduation,high_school_diploma,e,,,,huikao is the exam,gcse,not_met
+b20d1ddd-0eed-4232-b00d-4ec612454526,china,cn,senior secondary school graduation,high_school_diploma,90,,,,huikao is the exam,gcse,met
+b20d1ddd-0eed-4232-b00d-4ec612454526,china,cn,senior secondary school graduation,high_school_diploma,70,,,,huikao is the exam,gcse,met
+b20d1ddd-0eed-4232-b00d-4ec612454526,china,cn,senior secondary school graduation,high_school_diploma,f,,,,huikao is the exam,gcse,not_met
+b20d1ddd-0eed-4232-b00d-4ec612454526,china,cn,senior secondary school graduation,high_school_diploma,60,,,,huikao is the exam,gcse,met
+b20d1ddd-0eed-4232-b00d-4ec612454526,china,cn,senior secondary school graduation,high_school_diploma,d,,,,huikao is the exam,gcse,not_met
+b20d1ddd-0eed-4232-b00d-4ec612454526,china,cn,senior secondary school graduation,high_school_diploma,80,,,,huikao is the exam,gcse,met
+b20d1ddd-0eed-4232-b00d-4ec612454526,china,cn,senior secondary school graduation,high_school_diploma,a,,,,huikao is the exam,gcse,met
+b20d1ddd-0eed-4232-b00d-4ec612454526,china,cn,senior secondary school graduation,high_school_diploma,b,,,,huikao is the exam,gcse,met
+b20d1ddd-0eed-4232-b00d-4ec612454526,china,cn,senior secondary school graduation,high_school_diploma,c,,,,huikao is the exam,gcse,met
+7d3bb4b2-8a3e-4afa-9b86-296b5b102fce,china,cn,shuoshi (master's degree),degree,good,,band 11,level 7,,degree,not_applicable
+7d3bb4b2-8a3e-4afa-9b86-296b5b102fce,china,cn,shuoshi (master's degree),degree,awarded,,band 11,level 7,,degree,not_applicable
+7d3bb4b2-8a3e-4afa-9b86-296b5b102fce,china,cn,shuoshi (master's degree),degree,pass,,band 11,level 7,,degree,not_applicable
+7d3bb4b2-8a3e-4afa-9b86-296b5b102fce,china,cn,shuoshi (master's degree),degree,youxiu,,band 11,level 7,,degree,not_applicable
+1b0e533a-f9de-4659-8166-fe43b3f9b891,china,cn,zhongkao (senior high entrance exam),zhongkao,fail,,band 2,level 1–2,entrance to senior high,less_than_gcse,not_applicable
+1b0e533a-f9de-4659-8166-fe43b3f9b891,china,cn,zhongkao (senior high entrance exam),zhongkao,good,,band 2,level 1–2,entrance to senior high,less_than_gcse,not_applicable
+1b0e533a-f9de-4659-8166-fe43b3f9b891,china,cn,zhongkao (senior high entrance exam),zhongkao,pass,,band 2,level 1–2,entrance to senior high,less_than_gcse,not_applicable
+1b0e533a-f9de-4659-8166-fe43b3f9b891,china,cn,zhongkao (senior high entrance exam),zhongkao,excellent,,band 2,level 1–2,entrance to senior high,less_than_gcse,not_applicable
+88d78350-cadf-45d4-85f4-9f228d1b77dc,france,fr,baccalauréat (général/technologique/professionnel),baccalaureat,passable,,band 6,level 3,baccalauréat,a_level,met
+88d78350-cadf-45d4-85f4-9f228d1b77dc,france,fr,baccalauréat (général/technologique/professionnel),baccalaureat,bien,,band 6,level 3,baccalauréat,a_level,met
+88d78350-cadf-45d4-85f4-9f228d1b77dc,france,fr,baccalauréat (général/technologique/professionnel),baccalaureat,ajourné,,band 6,level 3,baccalauréat,a_level,not_met
+88d78350-cadf-45d4-85f4-9f228d1b77dc,france,fr,baccalauréat (général/technologique/professionnel),baccalaureat,très bien,,band 6,level 3,baccalauréat,a_level,met
+88d78350-cadf-45d4-85f4-9f228d1b77dc,france,fr,baccalauréat (général/technologique/professionnel),baccalaureat,assez bien,,band 6,level 3,baccalauréat,a_level,met
+10db21f2-626e-4f36-b051-171de804f917,france,fr,brevet d'études professionnelles (bep),bep,très bien,,band 3,level 2,historical award,vocational_level_2,not_applicable
+10db21f2-626e-4f36-b051-171de804f917,france,fr,brevet d'études professionnelles (bep),bep,passable,,band 3,level 2,historical award,vocational_level_2,not_applicable
+10db21f2-626e-4f36-b051-171de804f917,france,fr,brevet d'études professionnelles (bep),bep,assez bien,,band 3,level 2,historical award,vocational_level_2,not_applicable
+10db21f2-626e-4f36-b051-171de804f917,france,fr,brevet d'études professionnelles (bep),bep,bien,,band 3,level 2,historical award,vocational_level_2,not_applicable
+7b82dbdd-ec28-4b24-a422-9145393350cc,france,fr,brevet de technicien supérieur (bts),bts,passable,,band 8,level 5,two-year post-bac,vocational_level_5,not_applicable
+7b82dbdd-ec28-4b24-a422-9145393350cc,france,fr,brevet de technicien supérieur (bts),bts,bien,,band 8,level 5,two-year post-bac,vocational_level_5,not_applicable
+7b82dbdd-ec28-4b24-a422-9145393350cc,france,fr,brevet de technicien supérieur (bts),bts,assez bien,,band 8,level 5,two-year post-bac,vocational_level_5,not_applicable
+02e40bb9-8e50-4fea-a09e-9a4695370d99,france,fr,certificat d'aptitude professionnelle (cap),cap,très bien,,band 3,level 2,initial vocational,vocational_level_2,not_applicable
+02e40bb9-8e50-4fea-a09e-9a4695370d99,france,fr,certificat d'aptitude professionnelle (cap),cap,assez bien,,band 3,level 2,initial vocational,vocational_level_2,not_applicable
+02e40bb9-8e50-4fea-a09e-9a4695370d99,france,fr,certificat d'aptitude professionnelle (cap),cap,passable,,band 3,level 2,initial vocational,vocational_level_2,not_applicable
+02e40bb9-8e50-4fea-a09e-9a4695370d99,france,fr,certificat d'aptitude professionnelle (cap),cap,bien,,band 3,level 2,initial vocational,vocational_level_2,not_applicable
+8408637f-31d5-402c-9ebd-4d57463a3a53,france,fr,diplôme national du brevet (dnb),dnb,insuffisant,,band 2,level 1–2,brevet des collèges,gcse,not_met
+8408637f-31d5-402c-9ebd-4d57463a3a53,france,fr,diplôme national du brevet (dnb),dnb,très bien,,band 2,level 1–2,brevet des collèges,gcse,met
+8408637f-31d5-402c-9ebd-4d57463a3a53,france,fr,diplôme national du brevet (dnb),dnb,passable,,band 2,level 1–2,brevet des collèges,gcse,met
+8408637f-31d5-402c-9ebd-4d57463a3a53,france,fr,diplôme national du brevet (dnb),dnb,assez bien,,band 2,level 1–2,brevet des collèges,gcse,met
+8408637f-31d5-402c-9ebd-4d57463a3a53,france,fr,diplôme national du brevet (dnb),dnb,bien,,band 2,level 1–2,brevet des collèges,gcse,met
+a636d5cb-0057-4781-b7f0-7aca744949d5,france,fr,doctorat,degree,awarded,,band 15,level 8,,degree,not_applicable
+211f8a2f-102e-4a0d-9f2b-dd2be8435c86,france,fr,licence (bachelor's degree),degree,bien,,band 10,level 6,,degree,not_applicable
+211f8a2f-102e-4a0d-9f2b-dd2be8435c86,france,fr,licence (bachelor's degree),degree,passable,,band 10,level 6,,degree,not_applicable
+211f8a2f-102e-4a0d-9f2b-dd2be8435c86,france,fr,licence (bachelor's degree),degree,très bien,,band 10,level 6,,degree,not_applicable
+211f8a2f-102e-4a0d-9f2b-dd2be8435c86,france,fr,licence (bachelor's degree),degree,assez bien,,band 10,level 6,,degree,not_applicable
+1e9da793-4d57-4283-bef8-54ac5e2d44e9,france,fr,master,degree,passable,,band 11,level 7,,degree,not_applicable
+1e9da793-4d57-4283-bef8-54ac5e2d44e9,france,fr,master,degree,très bien,,band 11,level 7,,degree,not_applicable
+1e9da793-4d57-4283-bef8-54ac5e2d44e9,france,fr,master,degree,bien,,band 11,level 7,,degree,not_applicable
+1e9da793-4d57-4283-bef8-54ac5e2d44e9,france,fr,master,degree,awarded,,band 11,level 7,,degree,not_applicable
+f90797a4-190d-47de-8baa-105cc6d9a99f,ghana,gh,bachelor's degree,degree,pass,,,,,degree,not_applicable
+f90797a4-190d-47de-8baa-105cc6d9a99f,ghana,gh,bachelor's degree,degree,second class upper,,,,,degree,not_applicable
+f90797a4-190d-47de-8baa-105cc6d9a99f,ghana,gh,bachelor's degree,degree,second class lower,,,,,degree,not_applicable
+f90797a4-190d-47de-8baa-105cc6d9a99f,ghana,gh,bachelor's degree,degree,third class,,,,,degree,not_applicable
+f90797a4-190d-47de-8baa-105cc6d9a99f,ghana,gh,bachelor's degree,degree,first class,,,,,degree,not_applicable
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 6,,,,,less_that_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 1,,,,,less_that_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 3,,,,,less_that_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 9,,,,,less_that_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 2,,,,,less_that_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 8,,,,,less_that_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 7,,,,,less_that_gcse,not_met
+2733d738-b644-472b-9ba0-929a17a1c85b,ghana,gh,doctorate,degree,awarded,,,,,degree,not_applicable
+64dc5679-d02d-4e14-a7f6-4e8bb70c0cd8,ghana,gh,higher national diploma (hnd),diploma,lower credit,,band 8,level 5,,diploma,not_applicable
+64dc5679-d02d-4e14-a7f6-4e8bb70c0cd8,ghana,gh,higher national diploma (hnd),diploma,upper credit,,band 8,level 5,,diploma,not_applicable
+64dc5679-d02d-4e14-a7f6-4e8bb70c0cd8,ghana,gh,higher national diploma (hnd),diploma,distinction,,band 8,level 5,,diploma,not_applicable
+94a4f518-0f73-4fb7-a3d9-e8e8b406411b,ghana,gh,master's degree,degree,pass,,,,,degree,not_applicable
+94a4f518-0f73-4fb7-a3d9-e8e8b406411b,ghana,gh,master's degree,degree,awarded,,,,,degree,not_applicable
+94a4f518-0f73-4fb7-a3d9-e8e8b406411b,ghana,gh,master's degree,degree,distinction,,,,,degree,not_applicable
+94a4f518-0f73-4fb7-a3d9-e8e8b406411b,ghana,gh,master's degree,degree,merit,,,,,degree,not_applicable
+00dd1e0b-8508-4ceb-b93f-a8810aa30178,ghana,gh,west african senior school certificate examination (wassce),wassce,c4,,band 3,level 2,ghana (wassce): a1–b3 = strong pass; c4–c6 = standard pass; ,gcse,met
+00dd1e0b-8508-4ceb-b93f-a8810aa30178,ghana,gh,west african senior school certificate examination (wassce),wassce,b3,,band 3,level 2,ghana (wassce): a1–b3 = strong pass; c4–c6 = standard pass; ,gcse,met
+00dd1e0b-8508-4ceb-b93f-a8810aa30178,ghana,gh,west african senior school certificate examination (wassce),wassce,a1,,band 3,level 2,ghana (wassce): a1–b3 = strong pass; c4–c6 = standard pass; ,gcse,met
+00dd1e0b-8508-4ceb-b93f-a8810aa30178,ghana,gh,west african senior school certificate examination (wassce),wassce,b2,,band 3,level 2,ghana (wassce): a1–b3 = strong pass; c4–c6 = standard pass; ,gcse,met
+00dd1e0b-8508-4ceb-b93f-a8810aa30178,ghana,gh,west african senior school certificate examination (wassce),wassce,c5,,band 3,level 2,ghana (wassce): a1–b3 = strong pass; c4–c6 = standard pass; ,gcse,met
+00dd1e0b-8508-4ceb-b93f-a8810aa30178,ghana,gh,west african senior school certificate examination (wassce),wassce,c6,,band 3,level 2,ghana (wassce): a1–b3 = strong pass; c4–c6 = standard pass; ,gcse,met
+00dd1e0b-8508-4ceb-b93f-a8810aa30178,ghana,gh,west african senior school certificate examination (wassce),wassce,d7,,band 3,level 2,ghana (wassce): a1–b3 = strong pass; c4–c6 = standard pass; ,gcse,not_met
+00dd1e0b-8508-4ceb-b93f-a8810aa30178,ghana,gh,west african senior school certificate examination (wassce),wassce,e8,,band 3,level 2,ghana (wassce): a1–b3 = strong pass; c4–c6 = standard pass; ,gcse,not_met
+275c136a-b100-482c-af3a-3088150c876e,india,in,bachelor's degree,degree,third class / pass,,,,,degree,not_applicable
+275c136a-b100-482c-af3a-3088150c876e,india,in,bachelor's degree,degree,high second class,,,,,degree,not_applicable
+275c136a-b100-482c-af3a-3088150c876e,india,in,bachelor's degree,degree,first class with distinction/first class,,,,,degree,not_applicable
+275c136a-b100-482c-af3a-3088150c876e,india,in,bachelor's degree,degree,second class,,,,,degree,not_applicable
+275c136a-b100-482c-af3a-3088150c876e,india,in,bachelor's degree,degree,pass,,,,,degree,not_applicable
+b4ecbc32-af83-43bc-a546-aaeee6c5d24a,india,in,central board of secondary education (cbse),cbse,c1,c1,band 3,level 2,,gcse,met
+b4ecbc32-af83-43bc-a546-aaeee6c5d24a,india,in,central board of secondary education (cbse),cbse,e,e,band 3,level 2,,gcse,not_met
+b4ecbc32-af83-43bc-a546-aaeee6c5d24a,india,in,central board of secondary education (cbse),cbse,a1,a1,band 3,level 2,,gcse,met
+b4ecbc32-af83-43bc-a546-aaeee6c5d24a,india,in,central board of secondary education (cbse),cbse,a2,a2,band 3,level 2,,gcse,met
+b4ecbc32-af83-43bc-a546-aaeee6c5d24a,india,in,central board of secondary education (cbse),cbse,c2,c2,band 3,level 2,,gcse,met
+b4ecbc32-af83-43bc-a546-aaeee6c5d24a,india,in,central board of secondary education (cbse),cbse,d,d,band 3,level 2,,gcse,not_met
+b4ecbc32-af83-43bc-a546-aaeee6c5d24a,india,in,central board of secondary education (cbse),cbse,b1,b1,band 3,level 2,,gcse,met
+b4ecbc32-af83-43bc-a546-aaeee6c5d24a,india,in,central board of secondary education (cbse),cbse,b2,b2,band 3,level 2,,gcse,met
+bf1ddf0b-ea54-4a3e-9990-9e2c250803f8,india,in,doctorate,degree,awarded,,,,,degree,not_applicable
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,a2,a2,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,41,c2,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,c1,c1,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,c2,c2,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,81,a2,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,a1,a1,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,71,b1,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,b1,b1,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,51,c1,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,0,e,band 6,level 3,,a_levels,not_met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,61,b2,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,e,e,band 6,level 3,,a_levels,not_met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,d,d,band 6,level 3,,a_levels,not_met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,91,a1,band 6,level 3,,a_levels,met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,33,d,band 6,level 3,,a_levels,not_met
+3793c253-3508-48f5-8134-9f76ab207e5b,india,in,higher secondary certificate (hsc),hsc,b2,b2,band 6,level 3,,a_levels,met
+dc3030fc-67ed-42c3-8f5f-72c9eb9d83cf,india,in,indian certificate of secondary education (icse),icse,e,e,band 3,level 2,,gcse,not_met
+dc3030fc-67ed-42c3-8f5f-72c9eb9d83cf,india,in,indian certificate of secondary education (icse),icse,b1,b1,band 3,level 2,,gcse,met
+dc3030fc-67ed-42c3-8f5f-72c9eb9d83cf,india,in,indian certificate of secondary education (icse),icse,c1,c1,band 3,level 2,,gcse,met
+dc3030fc-67ed-42c3-8f5f-72c9eb9d83cf,india,in,indian certificate of secondary education (icse),icse,c2,c2,band 3,level 2,,gcse,met
+dc3030fc-67ed-42c3-8f5f-72c9eb9d83cf,india,in,indian certificate of secondary education (icse),icse,a2,a2,band 3,level 2,,gcse,met
+dc3030fc-67ed-42c3-8f5f-72c9eb9d83cf,india,in,indian certificate of secondary education (icse),icse,d,d,band 3,level 2,,gcse,not_met
+dc3030fc-67ed-42c3-8f5f-72c9eb9d83cf,india,in,indian certificate of secondary education (icse),icse,b2,b2,band 3,level 2,,gcse,met
+dc3030fc-67ed-42c3-8f5f-72c9eb9d83cf,india,in,indian certificate of secondary education (icse),icse,a1,a1,band 3,level 2,,gcse,met
+dc5d441a-d76a-49d6-a141-fd03653d040d,india,in,industrial training institute (iti) certificate,iti_certificate,first class,,,,,iti_certificate,not_applicable
+dc5d441a-d76a-49d6-a141-fd03653d040d,india,in,industrial training institute (iti) certificate,iti_certificate,first class with distinction,,,,,iti_certificate,not_applicable
+dc5d441a-d76a-49d6-a141-fd03653d040d,india,in,industrial training institute (iti) certificate,iti_certificate,pass,,,,,iti_certificate,not_applicable
+dc5d441a-d76a-49d6-a141-fd03653d040d,india,in,industrial training institute (iti) certificate,iti_certificate,second class,,,,,iti_certificate,not_applicable
+36a01ee1-f4df-4c1b-92bb-d3f5bd03ff34,india,in,master's degree,degree,merit,,,,,degree,not_applicable
+36a01ee1-f4df-4c1b-92bb-d3f5bd03ff34,india,in,master's degree,degree,pass,,,,,degree,not_applicable
+36a01ee1-f4df-4c1b-92bb-d3f5bd03ff34,india,in,master's degree,degree,awarded,,,,,degree,not_applicable
+36a01ee1-f4df-4c1b-92bb-d3f5bd03ff34,india,in,master's degree,degree,distinction,,,,,degree,not_applicable
+2ccb3491-49ca-4a3b-a12c-97a4ea6f69b9,india,in,polytechnic diploma,polytechnic_diploma,second class,,band 7,level 4,,polytechnic_diploma,not_applicable
+2ccb3491-49ca-4a3b-a12c-97a4ea6f69b9,india,in,polytechnic diploma,polytechnic_diploma,pass,,band 7,level 4,,polytechnic_diploma,not_applicable
+2ccb3491-49ca-4a3b-a12c-97a4ea6f69b9,india,in,polytechnic diploma,polytechnic_diploma,first class with distinction,,band 7,level 4,,polytechnic_diploma,not_applicable
+2ccb3491-49ca-4a3b-a12c-97a4ea6f69b9,india,in,polytechnic diploma,polytechnic_diploma,first class,,band 7,level 4,,polytechnic_diploma,not_applicable
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,d,d,band 3,level 2,,gcse,not_met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,a2,a2,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,e,e,band 3,level 2,,gcse,not_met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,b1,b1,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,41,c2,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,c1,c1,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,b2,b2,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,a1,a1,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,71,b1,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,c2,c2,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,51,c1,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,81,a2,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,61,b2,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,91,a1,band 3,level 2,,gcse,met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,33,d,band 3,level 2,,gcse,not_met
+2c2a13a9-b70d-4ec7-ae41-dce052e6c97b,india,in,secondary school certificate (ssc),ssc,0,e,band 3,level 2,,gcse,not_met
+6eb7fd5e-d44b-44d9-b62f-59ad177d03c7,ireland,ie,doctorate (phd/edd),degree,awarded,awarded,band 15,level 8,,degree,not_applicable
+c804b369-1391-40f2-a7f1-6f27b2063d52,ireland,ie,honours bachelor's degree,degree,second class honours grade 1,second class honours grade 1,,,,degree,not_applicable
+c804b369-1391-40f2-a7f1-6f27b2063d52,ireland,ie,honours bachelor's degree,degree,first class honours,first class honours,,,,degree,not_applicable
+c804b369-1391-40f2-a7f1-6f27b2063d52,ireland,ie,honours bachelor's degree,degree,third class honours / pass,third class honours / pass,,,,degree,not_applicable
+c804b369-1391-40f2-a7f1-6f27b2063d52,ireland,ie,honours bachelor's degree,degree,second class honours grade 2,second class honours grade 2,,,,degree,not_applicable
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,achieved,junior cert: c,,,,less_that_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,not graded / fail,junior cert: e,,,,less_that_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,higher merit,junior cert: a,,,,less_that_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,partially achieved,junior cert: d,,,,less_that_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,merit,junior cert: b,,,,less_that_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,distinction,,,,,less_that_gcse,not_met
+45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h1,,,,,a_level,met
+45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h3,,,,,a_level,met
+45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h7,,,,,a_level,not_met
+45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h2,,,,,a_level,met
+45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h6,,,,,a_level,not_met
+45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h5,,,,,a_level,met
+45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h4,,,,,a_level,met
+45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h8,,,,,a_level,not_met
+28bdd6b8-8eb9-40d4-a7d4-13e0da5bf75b,ireland,ie,leaving certificate (lc) ordinary level,leaving_certificate,o2,,,,,gcse,met
+28bdd6b8-8eb9-40d4-a7d4-13e0da5bf75b,ireland,ie,leaving certificate (lc) ordinary level,leaving_certificate,o4,,,,,gcse,met
+28bdd6b8-8eb9-40d4-a7d4-13e0da5bf75b,ireland,ie,leaving certificate (lc) ordinary level,leaving_certificate,o6,,,,,gcse,not_met
+28bdd6b8-8eb9-40d4-a7d4-13e0da5bf75b,ireland,ie,leaving certificate (lc) ordinary level,leaving_certificate,o5,,,,,gcse,not_met
+28bdd6b8-8eb9-40d4-a7d4-13e0da5bf75b,ireland,ie,leaving certificate (lc) ordinary level,leaving_certificate,o3,,,,,gcse,met
+28bdd6b8-8eb9-40d4-a7d4-13e0da5bf75b,ireland,ie,leaving certificate (lc) ordinary level,leaving_certificate,o7,,,,,gcse,not_met
+28bdd6b8-8eb9-40d4-a7d4-13e0da5bf75b,ireland,ie,leaving certificate (lc) ordinary level,leaving_certificate,o1,,,,,gcse,met
+a650546a-2b2e-43ba-aba2-27b5124840f5,ireland,ie,master's degree (research/mphil),degree,awarded,awarded,,,,degree,not_applicable
+423da05e-d6be-423b-800f-c1f125048d03,ireland,ie,master's degree (taught),degree,distinction,distinction,band 11,level 7,,degree,not_applicable
+423da05e-d6be-423b-800f-c1f125048d03,ireland,ie,master's degree (taught),degree,pass,pass,band 11,level 7,,degree,not_applicable
+423da05e-d6be-423b-800f-c1f125048d03,ireland,ie,master's degree (taught),degree,merit,merit,band 11,level 7,,degree,not_applicable
+fbf368ae-537f-45cd-9570-902ee2d0fdc1,ireland,ie,ordinary bachelor's degree,degree,pass,pass,,,,degree,not_applicable
+03816798-a833-4fff-a729-e73ecb1e8ec0,ireland,ie,quality and qualifications ireland level 5 (qqi),quality_qualifications_ireland,distinction,distinction,band 6,level 3,,a_level,met
+03816798-a833-4fff-a729-e73ecb1e8ec0,ireland,ie,quality and qualifications ireland level 5 (qqi),quality_qualifications_ireland,distinction,,band 6,level 3,,a_level,met
+03816798-a833-4fff-a729-e73ecb1e8ec0,ireland,ie,quality and qualifications ireland level 5 (qqi),quality_qualifications_ireland,merit,,band 6,level 3,,a_level,met
+03816798-a833-4fff-a729-e73ecb1e8ec0,ireland,ie,quality and qualifications ireland level 5 (qqi),quality_qualifications_ireland,merit,merit,band 6,level 3,,a_level,met
+03816798-a833-4fff-a729-e73ecb1e8ec0,ireland,ie,quality and qualifications ireland level 5 (qqi),quality_qualifications_ireland,pass,,band 6,level 3,,a_level,met
+03816798-a833-4fff-a729-e73ecb1e8ec0,ireland,ie,quality and qualifications ireland level 5 (qqi),quality_qualifications_ireland,pass,pass,band 6,level 3,,a_level,met
+076a248e-a254-4c16-8e83-a3c1b0c62173,ireland,ie,quality and qualifications ireland level 6 (qqi),quality_qualifications_ireland,merit,,band 7,level 4,,a_level,met
+076a248e-a254-4c16-8e83-a3c1b0c62173,ireland,ie,quality and qualifications ireland level 6 (qqi),quality_qualifications_ireland,distinction,,band 7,level 4,,a_level,met
+076a248e-a254-4c16-8e83-a3c1b0c62173,ireland,ie,quality and qualifications ireland level 6 (qqi),quality_qualifications_ireland,pass,,band 7,level 4,,a_level,met
+076a248e-a254-4c16-8e83-a3c1b0c62173,ireland,ie,quality and qualifications ireland level 6 (qqi),quality_qualifications_ireland,pass,pass,band 7,level 4,,a_level,met
+076a248e-a254-4c16-8e83-a3c1b0c62173,ireland,ie,quality and qualifications ireland level 6 (qqi),quality_qualifications_ireland,distinction,distinction,band 7,level 4,,a_level,met
+076a248e-a254-4c16-8e83-a3c1b0c62173,ireland,ie,quality and qualifications ireland level 6 (qqi),quality_qualifications_ireland,merit,merit,band 7,level 4,,a_level,met
+b1cb8013-ad7b-406d-9546-2294b502bd14,italy,it,diploma di maturità (liceo/it/ips),diploma_di_maturita,sufficiente,,band 6,level 3,,a_level,met
+b1cb8013-ad7b-406d-9546-2294b502bd14,italy,it,diploma di maturità (liceo/it/ips),diploma_di_maturita,ottimo,,band 6,level 3,,a_level,met
+b1cb8013-ad7b-406d-9546-2294b502bd14,italy,it,diploma di maturità (liceo/it/ips),diploma_di_maturita,honours (with distinction),,band 6,level 3,,a_level,met
+b1cb8013-ad7b-406d-9546-2294b502bd14,italy,it,diploma di maturità (liceo/it/ips),diploma_di_maturita,distinto,,band 6,level 3,,a_level,met
+b1cb8013-ad7b-406d-9546-2294b502bd14,italy,it,diploma di maturità (liceo/it/ips),diploma_di_maturita,buono,,band 6,level 3,,a_level,met
+70b7502a-1de8-4a70-a53f-3088702c86b4,italy,it,dottorato di ricerca (doctorate),degree,awarded,,band 15,level 8,,degree,not_applicable
+6f4ba059-3bee-4057-a2ba-3eaed3d60f07,italy,it,istituto professionale (ips) diploma,ips_diploma,sufficiente,,band 6,level 3,istituto professionale diploma,vocational_level_3,not_applicable
+6f4ba059-3bee-4057-a2ba-3eaed3d60f07,italy,it,istituto professionale (ips) diploma,ips_diploma,ottimo,,band 6,level 3,istituto professionale diploma,vocational_level_3,not_applicable
+6f4ba059-3bee-4057-a2ba-3eaed3d60f07,italy,it,istituto professionale (ips) diploma,ips_diploma,distinto,,band 6,level 3,istituto professionale diploma,vocational_level_3,not_applicable
+6f4ba059-3bee-4057-a2ba-3eaed3d60f07,italy,it,istituto professionale (ips) diploma,ips_diploma,buono,,band 6,level 3,istituto professionale diploma,vocational_level_3,not_applicable
+5b9ba2fc-5eeb-4117-8e95-b1bed2e3a067,italy,it,istituto tecnico (it) diploma,it_diploma,ottimo,,band 6,level 3,istituto tecnico diploma,vocational_level_3,not_applicable
+5b9ba2fc-5eeb-4117-8e95-b1bed2e3a067,italy,it,istituto tecnico (it) diploma,it_diploma,distinto,,band 6,level 3,istituto tecnico diploma,vocational_level_3,not_applicable
+5b9ba2fc-5eeb-4117-8e95-b1bed2e3a067,italy,it,istituto tecnico (it) diploma,it_diploma,buono,,band 6,level 3,istituto tecnico diploma,vocational_level_3,not_applicable
+5b9ba2fc-5eeb-4117-8e95-b1bed2e3a067,italy,it,istituto tecnico (it) diploma,it_diploma,sufficiente,,band 6,level 3,istituto tecnico diploma,vocational_level_3,not_applicable
+5f4ee000-66b3-4544-845e-94ba435e74a9,italy,it,istituto tecnico superiore (its) – diploma di tecnico superiore,its_diploma,ottimo,,band 7–8,level 4–5,its diplomas typically eqf 5,vocational_level_5,not_applicable
+5f4ee000-66b3-4544-845e-94ba435e74a9,italy,it,istituto tecnico superiore (its) – diploma di tecnico superiore,its_diploma,buono,,band 7–8,level 4–5,its diplomas typically eqf 5,vocational_level_5,not_applicable
+5f4ee000-66b3-4544-845e-94ba435e74a9,italy,it,istituto tecnico superiore (its) – diploma di tecnico superiore,its_diploma,sufficiente,,band 7–8,level 4–5,its diplomas typically eqf 5,vocational_level_5,not_applicable
+fa804425-c8bf-4dd0-8d07-b6aac7438983,italy,it,laurea (bachelor's degree),degree,109/110,,band 10,level 6,,degree,not_applicable
+fa804425-c8bf-4dd0-8d07-b6aac7438983,italy,it,laurea (bachelor's degree),degree,91/110,,band 10,level 6,,degree,not_applicable
+fa804425-c8bf-4dd0-8d07-b6aac7438983,italy,it,laurea (bachelor's degree),degree,66/110 (pass),,band 10,level 6,,degree,not_applicable
+fa804425-c8bf-4dd0-8d07-b6aac7438983,italy,it,laurea (bachelor's degree),degree,92/110,,band 10,level 6,,degree,not_applicable
+fa804425-c8bf-4dd0-8d07-b6aac7438983,italy,it,laurea (bachelor's degree),degree,99/110,,band 10,level 6,,degree,not_applicable
+fa804425-c8bf-4dd0-8d07-b6aac7438983,italy,it,laurea (bachelor's degree),degree,110/110 e lode,,band 10,level 6,,degree,not_applicable
+fa804425-c8bf-4dd0-8d07-b6aac7438983,italy,it,laurea (bachelor's degree),degree,66/110,,band 10,level 6,,degree,not_applicable
+fa804425-c8bf-4dd0-8d07-b6aac7438983,italy,it,laurea (bachelor's degree),degree,100/110,,band 10,level 6,,degree,not_applicable
+dd23da24-5dd4-4c7c-b7ee-56a69740a575,italy,it,laurea magistrale (master's degree),degree,99/110,,band 11,level 7,,degree,not_applicable
+dd23da24-5dd4-4c7c-b7ee-56a69740a575,italy,it,laurea magistrale (master's degree),degree,awarded,,band 11,level 7,,degree,not_applicable
+dd23da24-5dd4-4c7c-b7ee-56a69740a575,italy,it,laurea magistrale (master's degree),degree,100/110,,band 11,level 7,,degree,not_applicable
+dd23da24-5dd4-4c7c-b7ee-56a69740a575,italy,it,laurea magistrale (master's degree),degree,109/110,,band 11,level 7,,degree,not_applicable
+dd23da24-5dd4-4c7c-b7ee-56a69740a575,italy,it,laurea magistrale (master's degree),degree,110/110 e lode,,band 11,level 7,,degree,not_applicable
+dd23da24-5dd4-4c7c-b7ee-56a69740a575,italy,it,laurea magistrale (master's degree),degree,66/110,,band 11,level 7,,degree,not_applicable
+512f8f8c-d666-468f-86c2-c3923c2a947c,italy,it,licenza media / esame di terza media,licenza_media,sufficiente,,band 2,level 1–2,lower secondary completion,gcse,met
+512f8f8c-d666-468f-86c2-c3923c2a947c,italy,it,licenza media / esame di terza media,licenza_media,non sufficiente,,band 2,level 1–2,lower secondary completion,gcse,not_met
+512f8f8c-d666-468f-86c2-c3923c2a947c,italy,it,licenza media / esame di terza media,licenza_media,distinto,,band 2,level 1–2,lower secondary completion,gcse,met
+512f8f8c-d666-468f-86c2-c3923c2a947c,italy,it,licenza media / esame di terza media,licenza_media,ottimo,,band 2,level 1–2,lower secondary completion,gcse,met
+512f8f8c-d666-468f-86c2-c3923c2a947c,italy,it,licenza media / esame di terza media,licenza_media,buono,,band 2,level 1–2,lower secondary completion,gcse,met
+f7b86bd2-7c75-46d6-b0ae-6e8b30e6e286,kenya,ke,bachelor's degree,degree,third class,,,,,degree,not_applicable
+f7b86bd2-7c75-46d6-b0ae-6e8b30e6e286,kenya,ke,bachelor's degree,degree,first class,,,,,degree,not_applicable
+f7b86bd2-7c75-46d6-b0ae-6e8b30e6e286,kenya,ke,bachelor's degree,degree,second class upper,,,,,degree,not_applicable
+f7b86bd2-7c75-46d6-b0ae-6e8b30e6e286,kenya,ke,bachelor's degree,degree,second class lower,,,,,degree,not_applicable
+f7b86bd2-7c75-46d6-b0ae-6e8b30e6e286,kenya,ke,bachelor's degree,degree,pass,,,,,degree,not_applicable
+11837aff-9c34-4b0a-995d-3dd445a81c69,kenya,ke,doctorate,degree,awarded,,,,,degree,not_applicable
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,c-,,band 3,level 2,,gcse,met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,b-,,band 3,level 2,,gcse,met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,e,,band 3,level 2,,gcse,not_met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,a,,band 3,level 2,,gcse,met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,b,,band 3,level 2,,gcse,met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,a-,,band 3,level 2,,gcse,met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,d+,,band 3,level 2,,gcse,not_met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,c+,,band 3,level 2,,gcse,met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,c,,band 3,level 2,,gcse,met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,d,,band 3,level 2,,gcse,not_met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,d-,,band 3,level 2,,gcse,not_met
+48a62ee4-41eb-4e2b-8066-45dd89c051a1,kenya,ke,kenya certificate of secondary education (kcse),kcse,b+,,band 3,level 2,,gcse,met
+642970f4-9ac5-486d-9beb-bd8c47ead259,kenya,ke,master's degree,degree,awarded,,,,,degree,not_applicable
+642970f4-9ac5-486d-9beb-bd8c47ead259,kenya,ke,master's degree,degree,merit,,,,,degree,not_applicable
+642970f4-9ac5-486d-9beb-bd8c47ead259,kenya,ke,master's degree,degree,pass,,,,,degree,not_applicable
+642970f4-9ac5-486d-9beb-bd8c47ead259,kenya,ke,master's degree,degree,distinction,,,,,degree,not_applicable
+209ec88d-d300-4496-bde7-49b3c4df42b3,kenya,ke,technical and vocational education and training (tvet) diploma,tvet,pass,,band 6–7,level 3–4,institution-dependent,a_level,met
+209ec88d-d300-4496-bde7-49b3c4df42b3,kenya,ke,technical and vocational education and training (tvet) diploma,tvet,credit,,band 6–7,level 3–4,institution-dependent,a_level,met
+209ec88d-d300-4496-bde7-49b3c4df42b3,kenya,ke,technical and vocational education and training (tvet) diploma,tvet,distinction,,band 6–7,level 3–4,institution-dependent,a_level,met
+4a6635b2-6185-4df2-bfcb-cc144f8a3129,n/a,n/a,international baccalaureate,international_baccalaureate,good,,band 6,level 3,,a_level,met
+4a6635b2-6185-4df2-bfcb-cc144f8a3129,n/a,n/a,international baccalaureate,international_baccalaureate,satisfactory,,band 6,level 3,,a_level,met
+4a6635b2-6185-4df2-bfcb-cc144f8a3129,n/a,n/a,international baccalaureate,international_baccalaureate,mediocre,,band 6,level 3,,a_level,not_met
+4a6635b2-6185-4df2-bfcb-cc144f8a3129,n/a,n/a,international baccalaureate,international_baccalaureate,very_good,,band 6,level 3,,a_level,met
+4a6635b2-6185-4df2-bfcb-cc144f8a3129,n/a,n/a,international baccalaureate,international_baccalaureate,poor,,band 6,level 3,,a_level,not_met
+4a6635b2-6185-4df2-bfcb-cc144f8a3129,n/a,n/a,international baccalaureate,international_baccalaureate,very_poor,,band 6,level 3,,a_level,not_met
+4a6635b2-6185-4df2-bfcb-cc144f8a3129,n/a,n/a,international baccalaureate,international_baccalaureate,excellent,,band 6,level 3,,a_level,met
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,gpa 2.40,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,1.99,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,gpa 1.50,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,gpa 2.00,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,3.49,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,3.59,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,gpa 3.60,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,4.49,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,5,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,gpa 3.50,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,gpa 4.50,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,gpa 3.00,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,gpa 1.00,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,4,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,2.99,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,1.49,,,,,degree,not_applicable
+923656ce-4f23-4af3-8700-5fcb04c789a4,nigeria,ng,bachelor degree ,degree,2.39,,,,,degree,not_applicable
+fc80c00b-c707-48c7-a0d8-b40ae1c1d986,nigeria,ng,bachelor's degree,degree,third class,,,,,degree,not_applicable
+fc80c00b-c707-48c7-a0d8-b40ae1c1d986,nigeria,ng,bachelor's degree,degree,second class upper,,,,,degree,not_applicable
+fc80c00b-c707-48c7-a0d8-b40ae1c1d986,nigeria,ng,bachelor's degree,degree,second class lower,,,,,degree,not_applicable
+fc80c00b-c707-48c7-a0d8-b40ae1c1d986,nigeria,ng,bachelor's degree,degree,pass,,,,,degree,not_applicable
+fc80c00b-c707-48c7-a0d8-b40ae1c1d986,nigeria,ng,bachelor's degree,degree,first class,,,,,degree,not_applicable
+362488df-f505-4dce-aa3e-54dcde89dbc3,nigeria,ng,doctorate,,awarded,,,,,degree,not_applicable
+b5af6cdb-0873-4a49-8d54-171861ba9138,nigeria,ng,higher national diploma (hnd),diploma,distinction,,band 8,level 5,,diploma,not_applicable
+b5af6cdb-0873-4a49-8d54-171861ba9138,nigeria,ng,higher national diploma (hnd),diploma,lower credit,,band 8,level 5,,diploma,not_applicable
+b5af6cdb-0873-4a49-8d54-171861ba9138,nigeria,ng,higher national diploma (hnd),diploma,upper credit,,band 8,level 5,,diploma,not_applicable
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,a1,,,,,less_that_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,e8,,,,,less_that_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,c6,,,,,less_that_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,b2,,,,,less_that_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,d7,,,,,less_that_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,b3,,,,,less_that_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,f9,,,,,less_that_gcse,not_met
+5d138851-6947-4f2e-8ede-3c7841aa1cf4,nigeria,ng,master's degree,degree,pass,,,,,degree,not_applicable
+5d138851-6947-4f2e-8ede-3c7841aa1cf4,nigeria,ng,master's degree,degree,distinction,,,,,degree,not_applicable
+5d138851-6947-4f2e-8ede-3c7841aa1cf4,nigeria,ng,master's degree,degree,awarded,,,,,degree,not_applicable
+5d138851-6947-4f2e-8ede-3c7841aa1cf4,nigeria,ng,master's degree,degree,merit,,,,,degree,not_applicable
+e8c5e267-33fc-49fa-ab74-1c2c82cdd2ff,nigeria,ng,national diploma (nd),diploma,lower credit,,band 7,level 4,,diploma,not_applicable
+e8c5e267-33fc-49fa-ab74-1c2c82cdd2ff,nigeria,ng,national diploma (nd),diploma,distinction,,band 7,level 4,,diploma,not_applicable
+e8c5e267-33fc-49fa-ab74-1c2c82cdd2ff,nigeria,ng,national diploma (nd),diploma,upper credit,,band 7,level 4,,diploma,not_applicable
+86dc46d7-3a82-4c9c-a709-e6826c491ef8,nigeria,ng,west african senior school certificate examination (wassce),wassce,c5,,band 3,level 2,subject-by-subject passes.,gcse,met
+86dc46d7-3a82-4c9c-a709-e6826c491ef8,nigeria,ng,west african senior school certificate examination (wassce),wassce,a1,,band 3,level 2,subject-by-subject passes.,gcse,met
+86dc46d7-3a82-4c9c-a709-e6826c491ef8,nigeria,ng,west african senior school certificate examination (wassce),wassce,b3,,band 3,level 2,subject-by-subject passes.,gcse,met
+86dc46d7-3a82-4c9c-a709-e6826c491ef8,nigeria,ng,west african senior school certificate examination (wassce),wassce,c4,,band 3,level 2,subject-by-subject passes.,gcse,met
+86dc46d7-3a82-4c9c-a709-e6826c491ef8,nigeria,ng,west african senior school certificate examination (wassce),wassce,d7,,band 3,level 2,subject-by-subject passes.,gcse,not_met
+86dc46d7-3a82-4c9c-a709-e6826c491ef8,nigeria,ng,west african senior school certificate examination (wassce),wassce,b2,,band 3,level 2,subject-by-subject passes.,gcse,met
+86dc46d7-3a82-4c9c-a709-e6826c491ef8,nigeria,ng,west african senior school certificate examination (wassce),wassce,e8,,band 3,level 2,subject-by-subject passes.,gcse,not_met
+86dc46d7-3a82-4c9c-a709-e6826c491ef8,nigeria,ng,west african senior school certificate examination (wassce),wassce,c6,,band 3,level 2,subject-by-subject passes.,gcse,met
+aebcad45-cecb-4fbe-aab0-108e9e98ffd7,pakistan,pk,bachelor's degree,degree,second class lower,,,,,degree,not_applicable
+aebcad45-cecb-4fbe-aab0-108e9e98ffd7,pakistan,pk,bachelor's degree,degree,second class upper,,,,,degree,not_applicable
+aebcad45-cecb-4fbe-aab0-108e9e98ffd7,pakistan,pk,bachelor's degree,degree,third class,,,,,degree,not_applicable
+aebcad45-cecb-4fbe-aab0-108e9e98ffd7,pakistan,pk,bachelor's degree,degree,pass,,,,,degree,not_applicable
+aebcad45-cecb-4fbe-aab0-108e9e98ffd7,pakistan,pk,bachelor's degree,degree,first class,,,,,degree,not_applicable
+92560123-23af-4d6c-b1d8-67e0623f43b6,pakistan,pk,doctorate,degree,awarded,,,,,degree,not_applicable
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,70,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,50,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,90,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,80,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,75,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,a+,90,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,b+,75,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,d,40,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,not_met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,40,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,not_met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,c+,60,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,a1,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,a,85,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,60,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,b,70,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,b++,80,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,a++,95,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,c,50,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,e,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,not_met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,95,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+5a457135-be8e-40e1-a6b4-5d5eb8d64e58,pakistan,pk,higher secondary school certificate (hssc),hssc,85,,band 5 (from 2026) / band 3 (pre-2026),level 3 (as) / level 2,,a_level,met
+e14039c5-64e9-4b39-a2eb-6bc9726edfa9,pakistan,pk,master's degree,degree,merit,,,,,degree,not_applicable
+e14039c5-64e9-4b39-a2eb-6bc9726edfa9,pakistan,pk,master's degree,degree,awarded,,,,,degree,not_applicable
+e14039c5-64e9-4b39-a2eb-6bc9726edfa9,pakistan,pk,master's degree,degree,distinction,,,,,degree,not_applicable
+e14039c5-64e9-4b39-a2eb-6bc9726edfa9,pakistan,pk,master's degree,degree,pass,,,,,degree,not_applicable
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,b,70,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,70,,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,d,40,band 3,level 2,,gcse,not_met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,b+,75,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,40,,band 3,level 2,,gcse,not_met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,a,85,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,a1,,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,b++,80,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,60,,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,50,,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,c+,60,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,a+,90,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,e,,band 3,level 2,,gcse,not_met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,85,,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,95,,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,f,,band 3,level 2,,gcse,not_met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,75,,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,80,,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,c,50,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,a++,95,band 3,level 2,,gcse,met
+5cb7c46f-523b-46b5-a243-0c12debcbba7,pakistan,pk,secondary school certificate (ssc),ssc,90,,band 3,level 2,,gcse,met
+4717e442-8bae-4928-add7-234209d10988,pakistan,pk,technical board diploma,technical_diploma,a1,,,,,a_level,met
+4717e442-8bae-4928-add7-234209d10988,pakistan,pk,technical board diploma,technical_diploma,a,,,,,a_level,met
+4717e442-8bae-4928-add7-234209d10988,pakistan,pk,technical board diploma,technical_diploma,b,,,,,a_level,met
+4717e442-8bae-4928-add7-234209d10988,pakistan,pk,technical board diploma,technical_diploma,c,,,,,a_level,met
+f2392423-450b-4fe7-93c7-535064f10809,spain,es,bachillerato,bachillerato,notable,7,band 6,level 3,university entry,a_level,met
+f2392423-450b-4fe7-93c7-535064f10809,spain,es,bachillerato,bachillerato,sobresaliente,9,band 6,level 3,university entry,a_level,met
+f2392423-450b-4fe7-93c7-535064f10809,spain,es,bachillerato,bachillerato,suspenso,0-4,band 6,level 3,university entry,a_level,not_met
+f2392423-450b-4fe7-93c7-535064f10809,spain,es,bachillerato,bachillerato,insuficiente,0-4,band 6,level 3,university entry,a_level,not_met
+f2392423-450b-4fe7-93c7-535064f10809,spain,es,bachillerato,bachillerato,bien,6,band 6,level 3,university entry,a_level,met
+f2392423-450b-4fe7-93c7-535064f10809,spain,es,bachillerato,bachillerato,suficiente,5,band 6,level 3,university entry,a_level,not_met
+f2392423-450b-4fe7-93c7-535064f10809,spain,es,bachillerato,bachillerato,aprobado,5,band 6,level 3,university entry,a_level,not_met
+b7573892-4e74-474e-8165-98251362976b,spain,es,doctorado,degree,apto,,band 15,level 8,,degree,not_applicable
+e06b380b-18bc-4cfb-8299-993226fc537f,spain,es,educación secundaria obligatoria (eso),eso,sobresaliente,9,band 2,level 1–2,compulsory secondary,gcse,met
+e06b380b-18bc-4cfb-8299-993226fc537f,spain,es,educación secundaria obligatoria (eso),eso,suspenso,0-4,band 2,level 1–2,compulsory secondary,gcse,not_met
+e06b380b-18bc-4cfb-8299-993226fc537f,spain,es,educación secundaria obligatoria (eso),eso,notable,7,band 2,level 1–2,compulsory secondary,gcse,met
+e06b380b-18bc-4cfb-8299-993226fc537f,spain,es,educación secundaria obligatoria (eso),eso,insuficiente,0-4,band 2,level 1–2,compulsory secondary,gcse,not_met
+e06b380b-18bc-4cfb-8299-993226fc537f,spain,es,educación secundaria obligatoria (eso),eso,aprobado,5,band 2,level 1–2,compulsory secondary,gcse,not_met
+e06b380b-18bc-4cfb-8299-993226fc537f,spain,es,educación secundaria obligatoria (eso),eso,bien,6,band 2,level 1–2,compulsory secondary,gcse,met
+e06b380b-18bc-4cfb-8299-993226fc537f,spain,es,educación secundaria obligatoria (eso),eso,suficiente,5,band 2,level 1–2,compulsory secondary,gcse,not_met
+f265f486-5b77-4ba2-9bb0-e6acb752d14f,spain,es,formación profesional básica (fp básica),vocational_basic,aprobado,,band 2,level 1–2,,btec,not_applicable
+f265f486-5b77-4ba2-9bb0-e6acb752d14f,spain,es,formación profesional básica (fp básica),vocational_basic,notable,,band 2,level 1–2,,btec,not_applicable
+f265f486-5b77-4ba2-9bb0-e6acb752d14f,spain,es,formación profesional básica (fp básica),vocational_basic,sobresaliente,,band 2,level 1–2,,btec,not_applicable
+e150f812-6e29-482a-b049-fbfe37663bdb,spain,es,formación profesional de grado medio,vocational_medium,aprobado,,band 6,level 3,,btec,not_applicable
+e150f812-6e29-482a-b049-fbfe37663bdb,spain,es,formación profesional de grado medio,vocational_medium,notable,,band 6,level 3,,btec,not_applicable
+e150f812-6e29-482a-b049-fbfe37663bdb,spain,es,formación profesional de grado medio,vocational_medium,sobresaliente,,band 6,level 3,,btec,not_applicable
+1777ce42-e4ba-44b0-a776-665e56c4c021,spain,es,formación profesional de grado superior,vocational_top,notable,,band 7,level 4,,btec,not_applicable
+1777ce42-e4ba-44b0-a776-665e56c4c021,spain,es,formación profesional de grado superior,vocational_top,sobresaliente,,band 7,level 4,,btec,not_applicable
+1777ce42-e4ba-44b0-a776-665e56c4c021,spain,es,formación profesional de grado superior,vocational_top,aprobado,,band 7,level 4,,btec,not_applicable
+6e5c67b9-8b16-4f31-b1d3-2272572eea92,spain,es,grado universitario,degree,notable,,band 10,level 6,,degree,not_applicable
+6e5c67b9-8b16-4f31-b1d3-2272572eea92,spain,es,grado universitario,degree,sobresaliente,,band 10,level 6,,degree,not_applicable
+6e5c67b9-8b16-4f31-b1d3-2272572eea92,spain,es,grado universitario,degree,aprobado,,band 10,level 6,,degree,not_applicable
+b94f937e-75ec-4632-a81b-d45035f56a08,spain,es,máster universitario,degree,notable,,band 11,level 7,,degree,not_applicable
+b94f937e-75ec-4632-a81b-d45035f56a08,spain,es,máster universitario,degree,apto,,band 11,level 7,,degree,not_applicable
+b94f937e-75ec-4632-a81b-d45035f56a08,spain,es,máster universitario,degree,sobresaliente,,band 11,level 7,,degree,not_applicable
+b94f937e-75ec-4632-a81b-d45035f56a08,spain,es,máster universitario,degree,aprobado,,band 11,level 7,,degree,not_applicable
