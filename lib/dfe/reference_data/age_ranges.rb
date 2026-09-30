@@ -94,6 +94,8 @@ module DfE
           FOURTEEN_TO_NINETEEN
         ]
       }.freeze
+
+      DATASETS = [AGE_RANGES].freeze
     end
   end
 end

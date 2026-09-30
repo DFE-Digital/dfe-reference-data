@@ -10,8 +10,31 @@ require_relative 'reference_data/equality_and_diversity'
 require_relative 'reference_data/cah'
 require_relative 'reference_data/bank_holidays'
 require_relative 'reference_data/age_ranges'
+require_relative 'reference_data/countries_and_territories'
+require_relative 'reference_data/v2/countries_and_territories'
+require_relative 'reference_data/subject_specialisms'
+require_relative 'reference_data/hesa/domiciles'
 require_relative 'reference_data/dqt/degree_types'
 require_relative 'reference_data/generators/bank_holidays'
 require_relative 'reference_data/helpers'
 require_relative 'reference_data/helpers/constant_hash_rewriter'
 require_relative 'reference_data/helpers/ruby_hash_literal'
+
+module DfE
+  module ReferenceData
+    # All modules that expose a DATASETS constant listing their reference lists.
+    MODULES = [
+      Degrees,
+      Qualifications,
+      ITT,
+      EqualityAndDiversity,
+      CommonAggregationHierarchy,
+      BankHolidays,
+      AgeRanges,
+      CountriesAndTerritories,
+      V2::CountriesAndTerritories,
+      SubjectSpecialisms,
+      HESA::Domiciles
+    ].freeze
+  end
+end

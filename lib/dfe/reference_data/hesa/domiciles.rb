@@ -58,6 +58,8 @@ module DfE
             code: :string
           }
         )
+
+        DATASETS = [COUNTRIES_AND_TERRITORIES, SPECIAL_ISO_CODES, CODES_FOR_UK_AND_CI].freeze
       end
     end
   end

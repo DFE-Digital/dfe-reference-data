@@ -431,6 +431,8 @@ module DfE
           degree: 'If the qualification type is a degree, the level of degree - `foundation`, `bachelor`, `master` or `doctor`'
         }
       )
+
+      DATASETS = [QUALIFICATIONS].freeze
     end
   end
 end

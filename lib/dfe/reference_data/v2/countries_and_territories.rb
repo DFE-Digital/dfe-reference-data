@@ -340,6 +340,8 @@ module DfE
             name: 'The human-readable name of the territory'
           }
         )
+
+        DATASETS = [COUNTRIES, UK_AND_CI_POSTCODE_PREFIX_COUNTRIES, TERRITORIES].freeze
       end
     end
   end
