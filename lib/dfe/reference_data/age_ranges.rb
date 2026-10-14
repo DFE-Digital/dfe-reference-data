@@ -44,6 +44,11 @@ module DfE
             kind: :array,
             element_schema: :symbol
           }
+        },
+        field_descriptions: {
+          id: 'The age range, as a two-element array of `[lower_bound, upper_bound]` ages in years',
+          option: 'Whether this age range appears as a `main` or `additional` option when selecting an age range',
+          levels: 'The school level(s) (`primary` and/or `secondary`) that this age range is relevant to'
         }
       )
 
