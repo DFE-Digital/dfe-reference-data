@@ -11,7 +11,6 @@ module DfE
         GENERIC_TYPES,
         UNKNOWN_TYPES,
         TYPES_INCLUDING_GENERICS,
-        ALL_TYPES,
         GRADES,
         INSTITUTIONS,
         GENERIC_INSTITUTIONS,
