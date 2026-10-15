@@ -21,7 +21,8 @@ module DfE
             'PR' => { name: 'Puerto Rico', official_name: 'Puerto Rico', citizen_names: nil },
             'TW' => { name: 'Taiwan', official_name: 'Taiwan', citizen_names: nil },
             'ZZ' => nil
-          }
+          },
+          list_description: "HESA Specific Domiciles List",
         )
 
         # https://github.com/DFE-Digital/apply-for-teacher-training/blob/78c9421d8582f63cfdec564b5c0677bfd787552c/app/lib/domicile_resolver.rb#L3-L12
