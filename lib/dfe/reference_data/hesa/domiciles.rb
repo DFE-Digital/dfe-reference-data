@@ -22,7 +22,8 @@ module DfE
             'TW' => { name: 'Taiwan', official_name: 'Taiwan', citizen_names: nil },
             'ZZ' => nil
           },
-          list_description: "HESA Specific Domiciles List",
+          list_description: 'HESA-specific overrides for the countries and territories list.',
+          list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_hesa_domiciles.md#dfereferencedatahesadomicilescountries_and_territories'
         )
 
         # https://github.com/DFE-Digital/apply-for-teacher-training/blob/78c9421d8582f63cfdec564b5c0677bfd787552c/app/lib/domicile_resolver.rb#L3-L12
@@ -39,6 +40,12 @@ module DfE
           schema: {
             id: { schema: :string, kind: :optional },
             code: :string
+          },
+          list_description: 'HESA-specific overrides for ISO country/territory codes.',
+          list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_hesa_domiciles.md#dfereferencedatahesadomicilesspecial_iso_codes',
+          field_descriptions: {
+            id: 'The normal ISO code',
+            code: 'The special HESA ISO code'
           }
         )
 
@@ -57,6 +64,12 @@ module DfE
           schema: {
             id: { schema: :string, kind: :optional },
             code: :string
+          },
+          list_description: 'HESA codes for UK and Channel Islands countries/territories.',
+          list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_hesa_domiciles.md#dfereferencedatahesadomicilescodes_for_uk_and_ci',
+          field_descriptions: {
+            id: 'Human-readable country/territory name',
+            code: 'HESA code'
           }
         )
 
