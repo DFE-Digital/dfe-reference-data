@@ -649,6 +649,15 @@ module DfE
             hesa_itt_code: '218',
             comment: 'This is a qualificatoin distinct from Master of Science. MSci are typically four year courses
             including three years of undergraduate study.' },
+          '63a0f59c-2bda-4dd6-bd24-0f5b868d22b0' =>
+            { name: 'Master of Computing',
+              abbreviation: 'MComp',
+              suggestion_synonyms: [],
+              match_synonyms: ['masters in computing'],
+              qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
+              dttp_id: nil,
+              hesa_itt_code: '401',
+              comment: 'MComp are typically four year courses including three years of undergraduate study.' },
           '456a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
             name: 'Master of Science',
