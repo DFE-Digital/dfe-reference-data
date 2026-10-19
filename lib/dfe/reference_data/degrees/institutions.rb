@@ -5138,8 +5138,7 @@ module DfE
               hesa_itt_code: nil,
               ukprn: '10022685',
               comment: nil,
-              institution_groups: [] }
-      },
+              institution_groups: [] } },
         schema: INSTITUTIONS_SCHEMA,
         list_description: 'Degree-awarding (or otherwise) institutions',
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_degrees.md#dfereferencedatadegreesinstitutions',
