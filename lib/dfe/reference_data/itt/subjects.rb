@@ -1410,6 +1410,21 @@ module DfE
 
                     cah_direct_mappings_allow: ['CAH20-02'],
                     cah_direct_mappings_block: [] },
+          '21' => { name: 'Citizenship',
+                    publish_category: '09',
+                    stem: false,
+                    ebacc: false,
+
+                    register_name: 'Citizenship',
+                    type: :secondary,
+                    phase: :secondary,
+                    other_id: '',
+
+                    cah_associated_mappings_allow: ['CAH15'],
+                    cah_associated_mappings_block: [],
+
+                    cah_direct_mappings_allow: ['CAH15-03-01'],
+                    cah_direct_mappings_block: [] },
 
           '13' => { name: 'Modern Foreign Languages',
                     publish_category: '24',
