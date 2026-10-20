@@ -38,6 +38,7 @@ This gem includes the following reference lists:
 * [Degrees](docs/lists_degrees.md)
 * [Equality and Diversity](docs/lists_equality_and_diversity.md)
 * [Initial Teacher Training](docs/lists_itt.md)
+* [International Qualifications](docs/lists_international_qualifications.md)
 * [Qualifications](docs/lists_qualifications.md)
 
 And for documentation purposes:
