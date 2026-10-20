@@ -1,11 +1,22 @@
 # Changelog
 
-## [v3.10.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.10.0) (2026-08-05)
+## [v3.10.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.10.1) (2026-10-19)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.10.0...v3.10.1)
+
+**Merged pull requests:**
+
+- New data for rtt [\#175](https://github.com/DFE-Digital/dfe-reference-data/pull/175) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
+- Add more data to subject mappings [\#173](https://github.com/DFE-Digital/dfe-reference-data/pull/173) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
+- Add some match synonyms to degree subjects [\#172](https://github.com/DFE-Digital/dfe-reference-data/pull/172) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
+
+## [v3.10.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.10.0) (2026-08-06)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.9.0...v3.10.0)
 
 **Merged pull requests:**
 
+- Release v3.10.0 [\#170](https://github.com/DFE-Digital/dfe-reference-data/pull/170) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
 - Add new version of countries data. [\#166](https://github.com/DFE-Digital/dfe-reference-data/pull/166) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
 
 ## [v3.9.0](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.9.0) (2026-07-01)
