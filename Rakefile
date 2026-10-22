@@ -128,3 +128,12 @@ namespace :v2 do
     DfE::ReferenceData::Helpers::V2::CountryListCompiler.new.generate_territories_hash
   end
 end
+
+namespace :json do
+  desc 'Generate json from all the data, one file per dataset, under json/ (or OUTPUT_DIR)'
+  task :generate do
+    output_dir = ENV['OUTPUT_DIR'] || File.join(__dir__, 'json')
+    DfE::ReferenceData::Generators::JsonExporter.generate(output_dir)
+    puts "JSON files written to #{output_dir}"
+  end
+end

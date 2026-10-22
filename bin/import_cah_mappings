@@ -147,6 +147,8 @@ File.open('lib/dfe/reference_data/cah.rb', 'w') do |file|
                 id: 'A HECoS subject code',
                 cah_l3_id: 'The CAH level 3 ID corresponding to this HECoS subject'
               })
+
+  file.write("\n      DATASETS = [CAH_CATEGORIES_L1, CAH_CATEGORIES_L2, CAH_CATEGORIES_L3, HECOS_CAH_SUBJECT_MAPPINGS].freeze\n")
   file.write("    end\n")
   file.write("  end\n")
   file.write("end\n")

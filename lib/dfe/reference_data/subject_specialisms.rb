@@ -1814,6 +1814,8 @@ module DfE
           end_date: 'The end date for when this data is valid'
         }
       )
+
+      DATASETS = [SUBJECT_SPECIALISMS].freeze
     end
   end
 end

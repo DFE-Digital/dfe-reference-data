@@ -10221,6 +10221,8 @@ module DfE
           note: 'An additional note about mapping'
         }
       )
+
+      DATASETS = [CAH_CATEGORIES_L1, CAH_CATEGORIES_L2, CAH_CATEGORIES_L3, HECOS_CAH_SUBJECT_MAPPINGS].freeze
     end
   end
 end

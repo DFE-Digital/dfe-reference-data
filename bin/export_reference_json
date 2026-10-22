@@ -2,9 +2,6 @@
 
 require 'dfe/reference_data'
 
-require 'dfe/reference_data/demo'
-require 'dfe/reference_data/degrees/types'
-require 'dfe/reference_data/degrees/types2'
 require 'dfe/reference_data/degrees/subjects'
 require 'dfe/reference_data/degrees/institutions'
 

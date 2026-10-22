@@ -20,6 +20,12 @@ Access to the data is provided via native Ruby, or generating static mappings in
 JSON format that can be included directly into frontend code. A command line
 tool is provided to enable the latter to be done as part of a build process.
 
+The generated JSON files are also the data source for the [.NET port of this
+gem](https://github.com/DFE-Digital/dfe-reference-data-dotnet), rather than
+duplicating the reference data by hand - see [Static JSON
+generation](docs/json.md) for how the files are generated and what they
+contain.
+
 In future, bindings to other languages or static file formats can easily be
 added.
 
@@ -108,9 +114,9 @@ It does not need to be:
 
 Currently, the "master" data is in Ruby source code, with a Ruby API surrounding it.
 
-There is a command line tool to generate JSON, and another to upload the lists into BigQuery tables. Github automation runs that on every new release.
+There is a command line tool to generate JSON, and another to upload the lists into BigQuery tables. Github automation runs the BigQuery upload and a SQLite export on every new release.
 
-However, this is easily extended. We can support other language APIs in a similar manner to the JSON generator, by writing a tool to take the master data and spitting out (for instance) C# source code literals, creating a new representation of the data that can be wrapped in a C# API library to provide an equivalent interface to the Ruby API. The release process can then be extended to produce appropriately versioned and distributed packages for other languages (please use the exact same version identifier as the Ruby gem and the tags in this repo, so the versions all "line up" trivially).
+This JSON generator is how the [dotnet port of this gem](https://github.com/DFE-Digital/dfe-reference-data-dotnet) works: rather than re-implementing the master data in C#, it takes the generated JSON and wraps it in a C# API that provides an equivalent interface to the Ruby API. The same approach could be used to add bindings for other languages too; please use the exact same version identifier as the Ruby gem and the tags in this repo, so the versions all "line up" trivially.
 
 If the master data being in Ruby becomes a bottleneck (eg, because non-Ruby-confident people want to edit it), then the source data should be rewritten into a suitable format (perhaps the JSON version can become the master data), and then the Ruby and other language versions can be generated from that master data format. Users of the APIs or static products need never know that anything has changed.
 

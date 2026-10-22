@@ -70,6 +70,8 @@ module DfE
           kind: 'If present, indicates that this is a special kind of option. Valid values are :generic (a generic "other" option, and, if selected, the user should be prompted for free text to specify any further detail), :prefer_not_to_say (user opted out of answering the question) and :none (user has no disabilities or health conditions).'
         }
       )
+
+      DATASETS = [DISABILITIES_AND_HEALTH_CONDITIONS].freeze
     end
   end
 end
