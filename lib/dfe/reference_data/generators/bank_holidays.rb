@@ -13,7 +13,7 @@ module DfE
         ENGLAND_AND_WALES_DIVISION = 'england-and-wales'.freeze
 
         def self.generate_bank_holidays_data_from_raw_data(file_path = RAW_DATA_PATH, rb_path = BANK_HOLIDAYS_RB_PATH)
-          records = ::JSON.parse(File.read(file_path))
+          records = JSON.parse(File.read(file_path))
           data = records.each_with_object({}) do |record, hash|
             entry = { title: record['title'], date: DateTime.parse(record['date']) }
             entry[:notes] = record['notes'] if record['notes']
@@ -25,11 +25,11 @@ module DfE
 
         def self.download_latest_file(file_path = RAW_DATA_PATH)
           url = ENV.fetch('GOV_UK_BANK_HOLIDAYS_URL')
-          gov_uk_data = ::JSON.parse(Net::HTTP.get(URI(url)))
+          gov_uk_data = JSON.parse(Net::HTTP.get(URI(url)))
 
           england_events = gov_uk_data.dig(ENGLAND_AND_WALES_DIVISION, 'events') || []
 
-          existing = ::JSON.parse(File.read(file_path))
+          existing = JSON.parse(File.read(file_path))
           existing_dates = existing.to_set { |r| r['date'] }
 
           new_events = england_events.reject { |e| existing_dates.include?(e['date']) }
@@ -42,7 +42,7 @@ module DfE
           end
 
           updated = (existing + new_records).sort_by { |r| r['date'] }
-          File.write(file_path, ::JSON.pretty_generate(updated))
+          File.write(file_path, JSON.pretty_generate(updated))
 
           new_records
         end

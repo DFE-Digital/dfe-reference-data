@@ -1,6 +1,6 @@
 require 'tmpdir'
 
-RSpec.describe DfE::ReferenceData::Generators::JSON do
+RSpec.describe DfE::ReferenceData::Generators::JsonExporter do
   let(:widgets) do
     DfE::ReferenceData::HardcodedReferenceList.new(
       { 'a' => { name: 'Widget A' }, 'b' => { name: 'Widget B' } },

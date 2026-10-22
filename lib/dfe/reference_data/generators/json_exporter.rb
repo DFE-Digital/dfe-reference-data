@@ -15,7 +15,7 @@ module DfE
       # <tt>{output_dir}/degrees/types.json</tt>, and
       # +DfE::ReferenceData::V2::CountriesAndTerritories::COUNTRIES+ is written
       # to <tt>{output_dir}/v2/countries_and_territories/countries.json</tt>.
-      class JSON
+      class JsonExporter
         def self.generate(output_dir)
           new(output_dir).generate
         end
@@ -48,7 +48,7 @@ module DfE
           FileUtils.mkdir_p(dir)
 
           file_path = File.join(dir, "#{constant_name.to_s.underscore}.json")
-          File.write(file_path, ::JSON.pretty_generate(serialize(dataset)))
+          File.write(file_path, JSON.pretty_generate(serialize(dataset)))
         end
 
         def serialize(dataset)
