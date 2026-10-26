@@ -656,7 +656,7 @@ module DfE
               match_synonyms: ['masters in computing'],
               qualification: '4b7f4349-a981-4441-8f4d-ad2d0e57c8e9',
               dttp_id: nil,
-              hesa_itt_code: '401',
+              hesa_itt_code: '219',
               comment: 'MComp are typically four year courses including three years of undergraduate study.' },
           '456a5652-c197-e711-80d8-005056ac45bb' =>
           { priority: 1,
