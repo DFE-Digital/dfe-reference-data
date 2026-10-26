@@ -74,7 +74,7 @@ module DfE
             if record[:id].nil?
               record[:id] = id
             elsif record[:id] != id
-              warn "id mismatch for #{key.inspect}: #{record[:id]} vs #{id}"
+              raise "id mismatch for #{key.inspect}: #{record[:id]} vs #{id}"
             end
           end
 
@@ -92,7 +92,7 @@ module DfE
             if record[field].nil?
               record[field] = value
             elsif record[field] != value
-              warn "multiple #{column} values for #{key.inspect}: " \
+              raise "multiple #{column} values for #{key.inspect}: " \
                    "#{record[field].inspect} vs #{value.inspect} (keeping first)"
             end
           end
