@@ -366,6 +366,8 @@ module DfE
         list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_bankholidays.md#dfereferencedatabankholidaysbank_holidays',
         field_descriptions: BANK_HOLIDAYS_FIELD_DEFINITIONS
       )
+
+      DATASETS = [BANK_HOLIDAYS].freeze
     end
   end
 end

@@ -264,6 +264,8 @@ module DfE
           prefixes: 'A list of postcode prefixes (letters only)'
         }
       )
+
+      DATASETS = [COUNTRIES_AND_TERRITORIES, UK_AND_CI_POSTCODE_PREFIX_COUNTRIES].freeze
     end
   end
 end

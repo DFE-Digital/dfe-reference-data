@@ -897,6 +897,8 @@ module DfE
           valence: :integer
         }
       )
+
+      DATASETS = [HELLO_WORLD, FICTIONAL_GREETINGS, ELEMENTS].freeze
     end
   end
 end
