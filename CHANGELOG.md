@@ -1,11 +1,26 @@
 # Changelog
 
-## [v3.10.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.10.1) (2026-10-19)
+## [v3.10.2](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.10.2) (2026-10-27)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/fetch...v3.10.2)
+
+**Merged pull requests:**
+
+- \[9936\] Amended mcomp to be 219 as otherwise its hides the generic version [\#178](https://github.com/DFE-Digital/dfe-reference-data/pull/178) ([defong](https://github.com/defong))
+- Add citizenship to itt\_tad\_categories [\#177](https://github.com/DFE-Digital/dfe-reference-data/pull/177) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
+- Tidyup for dotnet [\#174](https://github.com/DFE-Digital/dfe-reference-data/pull/174) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
+
+## [fetch](https://github.com/DFE-Digital/dfe-reference-data/tree/fetch) (2026-10-20)
+
+[Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.10.1...fetch)
+
+## [v3.10.1](https://github.com/DFE-Digital/dfe-reference-data/tree/v3.10.1) (2026-10-20)
 
 [Full Changelog](https://github.com/DFE-Digital/dfe-reference-data/compare/v3.10.0...v3.10.1)
 
 **Merged pull requests:**
 
+- v3.10.1 [\#176](https://github.com/DFE-Digital/dfe-reference-data/pull/176) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
 - New data for rtt [\#175](https://github.com/DFE-Digital/dfe-reference-data/pull/175) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
 - Add more data to subject mappings [\#173](https://github.com/DFE-Digital/dfe-reference-data/pull/173) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
 - Add some match synonyms to degree subjects [\#172](https://github.com/DFE-Digital/dfe-reference-data/pull/172) ([mysteryGarlicPress](https://github.com/mysteryGarlicPress))
