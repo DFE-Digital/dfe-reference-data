@@ -241,7 +241,7 @@ module DfE
               qualification_group: :hsc,
               enic_band: 'band 6',
               rqf_level: 'level_3',
-              equivalence_type: 'a_levels',
+              equivalence_type: 'a_level',
               grades: ['a2', '41', 'c1', 'c2', '81', 'a1', '71', 'b1', '51', '0', '61', 'e', 'd', '91', '33', 'b2'],
               gcse_equivalent_grades: ['a2', '41', 'c1', 'c2', '81', 'a1', '71', 'b1', '51', '61', '91', 'b2'] },
           'dc3030fc-67ed-42c3-8f5f-72c9eb9d83cf' =>
@@ -517,7 +517,7 @@ module DfE
             { country: 'nigeria',
               country_code: 'ng',
               qualification_name: 'doctorate',
-              qualification_group: :"",
+              qualification_group: :degree,
               equivalence_type: 'degree',
               grades: ['awarded'] },
           'b5af6cdb-0873-4a49-8d54-171861ba9138' =>
@@ -687,8 +687,7 @@ module DfE
               enic_band: 'band 11',
               rqf_level: 'level_7',
               equivalence_type: 'degree',
-              grades: ['notable', 'apto', 'sobresaliente', 'aprobado'] }
-        }.freeze
+              grades: ['notable', 'apto', 'sobresaliente', 'aprobado'] } }.freeze
 
       INTERNATIONAL_QUALIFICATIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         LIST,
