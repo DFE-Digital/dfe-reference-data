@@ -93,7 +93,7 @@ module DfE
               record[field] = value
             elsif record[field] != value
               raise "multiple #{column} values for #{key.inspect}: " \
-                   "#{record[field].inspect} vs #{value.inspect} (keeping first)"
+                    "#{record[field].inspect} vs #{value.inspect} (keeping first)"
             end
           end
 
