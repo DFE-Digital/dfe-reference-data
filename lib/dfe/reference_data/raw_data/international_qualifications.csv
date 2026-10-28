@@ -65,13 +65,13 @@ f90797a4-190d-47de-8baa-105cc6d9a99f,ghana,gh,bachelor's degree,degree,second cl
 f90797a4-190d-47de-8baa-105cc6d9a99f,ghana,gh,bachelor's degree,degree,second class lower,,,,,degree,not_applicable
 f90797a4-190d-47de-8baa-105cc6d9a99f,ghana,gh,bachelor's degree,degree,third class,,,,,degree,not_applicable
 f90797a4-190d-47de-8baa-105cc6d9a99f,ghana,gh,bachelor's degree,degree,first class,,,,,degree,not_applicable
-25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 6,,,,,less_that_gcse,not_met
-25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 1,,,,,less_that_gcse,not_met
-25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 3,,,,,less_that_gcse,not_met
-25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 9,,,,,less_that_gcse,not_met
-25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 2,,,,,less_that_gcse,not_met
-25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 8,,,,,less_that_gcse,not_met
-25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 7,,,,,less_that_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 6,,,,,less_than_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 1,,,,,less_than_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 3,,,,,less_than_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 9,,,,,less_than_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 2,,,,,less_than_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 8,,,,,less_than_gcse,not_met
+25f4a17a-20ed-43ce-bab4-0d2472f4a460,ghana,gh,basic education certificate examination (bece),bece,grade 7,,,,,less_than_gcse,not_met
 2733d738-b644-472b-9ba0-929a17a1c85b,ghana,gh,doctorate,degree,awarded,,,,,degree,not_applicable
 64dc5679-d02d-4e14-a7f6-4e8bb70c0cd8,ghana,gh,higher national diploma (hnd),diploma,lower credit,,band 8,level 5,,diploma,not_applicable
 64dc5679-d02d-4e14-a7f6-4e8bb70c0cd8,ghana,gh,higher national diploma (hnd),diploma,upper credit,,band 8,level 5,,diploma,not_applicable
@@ -159,12 +159,12 @@ c804b369-1391-40f2-a7f1-6f27b2063d52,ireland,ie,honours bachelor's degree,degree
 c804b369-1391-40f2-a7f1-6f27b2063d52,ireland,ie,honours bachelor's degree,degree,first class honours,first class honours,,,,degree,not_applicable
 c804b369-1391-40f2-a7f1-6f27b2063d52,ireland,ie,honours bachelor's degree,degree,third class honours / pass,third class honours / pass,,,,degree,not_applicable
 c804b369-1391-40f2-a7f1-6f27b2063d52,ireland,ie,honours bachelor's degree,degree,second class honours grade 2,second class honours grade 2,,,,degree,not_applicable
-1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,achieved,junior cert: c,,,,less_that_gcse,not_met
-1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,not graded / fail,junior cert: e,,,,less_that_gcse,not_met
-1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,higher merit,junior cert: a,,,,less_that_gcse,not_met
-1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,partially achieved,junior cert: d,,,,less_that_gcse,not_met
-1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,merit,junior cert: b,,,,less_that_gcse,not_met
-1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,distinction,,,,,less_that_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,achieved,junior cert: c,,,,less_than_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,not graded / fail,junior cert: e,,,,less_than_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,higher merit,junior cert: a,,,,less_than_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,partially achieved,junior cert: d,,,,less_than_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,merit,junior cert: b,,,,less_than_gcse,not_met
+1fd9ca0a-d17c-4d0e-ae2d-4ce6cbb4b348,ireland,ie,junior cycle (jc),junior_certificate,distinction,,,,,less_than_gcse,not_met
 45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h1,,,,,a_level,met
 45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h3,,,,,a_level,met
 45382cb3-2641-4d2b-a366-9fdf0035a5ef,ireland,ie,leaving certificate (lc) higher level,leaving_certificate,h7,,,,,a_level,not_met
@@ -291,13 +291,13 @@ fc80c00b-c707-48c7-a0d8-b40ae1c1d986,nigeria,ng,bachelor's degree,degree,first c
 b5af6cdb-0873-4a49-8d54-171861ba9138,nigeria,ng,higher national diploma (hnd),diploma,distinction,,band 8,level 5,,diploma,not_applicable
 b5af6cdb-0873-4a49-8d54-171861ba9138,nigeria,ng,higher national diploma (hnd),diploma,lower credit,,band 8,level 5,,diploma,not_applicable
 b5af6cdb-0873-4a49-8d54-171861ba9138,nigeria,ng,higher national diploma (hnd),diploma,upper credit,,band 8,level 5,,diploma,not_applicable
-e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,a1,,,,,less_that_gcse,not_met
-e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,e8,,,,,less_that_gcse,not_met
-e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,c6,,,,,less_that_gcse,not_met
-e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,b2,,,,,less_that_gcse,not_met
-e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,d7,,,,,less_that_gcse,not_met
-e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,b3,,,,,less_that_gcse,not_met
-e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,f9,,,,,less_that_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,a1,,,,,less_than_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,e8,,,,,less_than_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,c6,,,,,less_than_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,b2,,,,,less_than_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,d7,,,,,less_than_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,b3,,,,,less_than_gcse,not_met
+e96d8dbb-9287-457a-bdaa-243363a087a9,nigeria,ng,junior secondary school certificate (jssc),jssc,f9,,,,,less_than_gcse,not_met
 5d138851-6947-4f2e-8ede-3c7841aa1cf4,nigeria,ng,master's degree,degree,pass,,,,,degree,not_applicable
 5d138851-6947-4f2e-8ede-3c7841aa1cf4,nigeria,ng,master's degree,degree,distinction,,,,,degree,not_applicable
 5d138851-6947-4f2e-8ede-3c7841aa1cf4,nigeria,ng,master's degree,degree,awarded,,,,,degree,not_applicable

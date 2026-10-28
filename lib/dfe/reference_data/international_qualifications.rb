@@ -174,7 +174,7 @@ module DfE
               country_code: 'gh',
               qualification_name: 'basic education certificate examination (bece)',
               qualification_group: :bece,
-              equivalence_type: 'less_that_gcse',
+              equivalence_type: 'less_than_gcse',
               grades: ['grade 6', 'grade 1', 'grade 3', 'grade 9', 'grade 2', 'grade 8', 'grade 7'] },
           '2733d738-b644-472b-9ba0-929a17a1c85b' =>
             { country: 'ghana',
@@ -308,7 +308,7 @@ module DfE
               country_code: 'ie',
               qualification_name: 'junior cycle (jc)',
               qualification_group: :junior_certificate,
-              equivalence_type: 'less_that_gcse',
+              equivalence_type: 'less_than_gcse',
               grades: ['achieved', 'not graded / fail', 'higher merit', 'partially achieved', 'merit', 'distinction'] },
           '45382cb3-2641-4d2b-a366-9fdf0035a5ef' =>
             { country: 'ireland',
@@ -534,7 +534,7 @@ module DfE
               country_code: 'ng',
               qualification_name: 'junior secondary school certificate (jssc)',
               qualification_group: :jssc,
-              equivalence_type: 'less_that_gcse',
+              equivalence_type: 'less_than_gcse',
               grades: ['a1', 'e8', 'c6', 'b2', 'd7', 'b3', 'f9'] },
           '5d138851-6947-4f2e-8ede-3c7841aa1cf4' =>
             { country: 'nigeria',
@@ -687,7 +687,8 @@ module DfE
               enic_band: 'band 11',
               rqf_level: 'level_7',
               equivalence_type: 'degree',
-              grades: ['notable', 'apto', 'sobresaliente', 'aprobado'] } }.freeze
+              grades: ['notable', 'apto', 'sobresaliente', 'aprobado'] }
+        }.freeze
 
       INTERNATIONAL_QUALIFICATIONS = DfE::ReferenceData::HardcodedReferenceList.new(
         LIST,
