@@ -14,7 +14,7 @@ RSpec.describe DfE::ReferenceData::Generators::CampusData do
     end
 
     it 'produces one record per CSV row' do
-      expect(dataset.size).to eq(5)
+      expect(dataset.size).to eq(6)
     end
 
     it 'assigns a different id to each row' do
@@ -36,6 +36,11 @@ RSpec.describe DfE::ReferenceData::Generators::CampusData do
     it 'omits blank country/postcode and "NULL" coordinates from a campus' do
       derby = dataset.values.find { |record| record[:ukprn] == '10007851' }
       expect(derby).to eq(provider_name: 'University of Derby', ukprn: '10007851', instid: '0057', name: 'Overseas')
+    end
+
+    it 'keeps a blank CampusName as an empty string rather than dropping the field' do
+      nmite = dataset.values.find { |record| record[:ukprn] == '10067406' }
+      expect(nmite).to include(name: '')
     end
 
     context 'with no argument' do

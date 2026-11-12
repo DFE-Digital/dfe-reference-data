@@ -33,16 +33,23 @@ module DfE
           end
 
           def campus(row)
-            provider(row).merge(location(row)).compact.reject { |_, value| value == '' }
+            required(row).merge(optional(row).compact.reject { |_, value| value == '' })
           end
 
-          def provider(row)
-            { provider_name: clean(row['ProviderName']), ukprn: clean(row['UKPRN']), instid: clean(row['INSTID']) }
-          end
-
-          def location(row)
+          # Always present, even when blank in the source data (eg a handful
+          # of rows have no CampusName).
+          def required(row)
             {
-              name: clean(row['CampusName']),
+              provider_name: clean(row['ProviderName']),
+              ukprn: clean(row['UKPRN']),
+              instid: clean(row['INSTID']),
+              name: clean(row['CampusName'])
+            }
+          end
+
+          # Omitted entirely when blank/unknown in the source data.
+          def optional(row)
+            {
               country: clean(row['CampusCountry']),
               postcode: clean(row['CampusPostcode']),
               latitude: coordinate(row['CampusLatitude']),
