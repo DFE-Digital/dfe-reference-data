@@ -40,6 +40,11 @@ task :generate_international_qualifications do
   puts DfE::ReferenceData::Generators::InternationalQualifications.generate_ruby_literal
 end
 
+desc 'Print the campus data hash generated from raw_data/campusdata.csv (redirect to a file to capture it)'
+task :generate_campus_data do
+  puts DfE::ReferenceData::Generators::CampusData.generate_ruby_literal
+end
+
 desc 'Prepare a new version for release, version can be major, minor, patch or x.y.z (as per gem-release gem)'
 task :prepare_release, %i[version] do |_, args|
   bump_version = args.fetch(:version)
