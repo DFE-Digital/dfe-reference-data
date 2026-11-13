@@ -5,12 +5,12 @@ module DfE
   module ReferenceData
     module Generators
       # Builds a per-campus hash from the raw CSV export in
-      # lib/dfe/reference_data/raw_data/campusdata.csv.
+      # lib/dfe/reference_data/raw_data/hesa_provider_campus.csv.
       #
       # Each CSV row is one campus of one HE provider. The source data has no
       # id column, so each row is assigned a freshly generated UUID.
-      class CampusData
-        RAW_DATA_PATH = File.expand_path('../raw_data/campusdata.csv', __dir__)
+      class HesaProviderCampus
+        RAW_DATA_PATH = File.expand_path('../raw_data/hesa_provider_campus.csv', __dir__)
 
         class << self
           # Returns the dataset as a Hash keyed by a generated UUID:

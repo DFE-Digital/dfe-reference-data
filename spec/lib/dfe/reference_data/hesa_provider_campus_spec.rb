@@ -1,6 +1,6 @@
-require 'dfe/reference_data/campus_data'
+require 'dfe/reference_data/hesa_provider_campus'
 
-RSpec.describe DfE::ReferenceData::CampusData::CAMPUSES do
+RSpec.describe DfE::ReferenceData::HesaProviderCampus::HESA_PROVIDER_CAMPUSES do
   it_should_behave_like 'a list of valid records'
 
   it 'contains one record per campus' do

@@ -40,9 +40,9 @@ task :generate_international_qualifications do
   puts DfE::ReferenceData::Generators::InternationalQualifications.generate_ruby_literal
 end
 
-desc 'Print the campus data hash generated from raw_data/campusdata.csv (redirect to a file to capture it)'
-task :generate_campus_data do
-  puts DfE::ReferenceData::Generators::CampusData.generate_ruby_literal
+desc 'Print the HESA provider campus hash generated from raw_data/hesa_provider_campus.csv (redirect to a file to capture it)'
+task :generate_hesa_provider_campus do
+  puts DfE::ReferenceData::Generators::HesaProviderCampus.generate_ruby_literal
 end
 
 desc 'Prepare a new version for release, version can be major, minor, patch or x.y.z (as per gem-release gem)'
@@ -100,7 +100,7 @@ BIGQUERY_TABLES = [
   ['hecos_cah_subject_mappings', DfE::ReferenceData::CommonAggregationHierarchy::HECOS_CAH_SUBJECT_MAPPINGS],
   ['bank_holidays', DfE::ReferenceData::BankHolidays::BANK_HOLIDAYS],
   ['international_qualifications', DfE::ReferenceData::InternationalQualifications::INTERNATIONAL_QUALIFICATIONS],
-  ['campuses', DfE::ReferenceData::CampusData::CAMPUSES]
+  ['hesa_provider_campuses', DfE::ReferenceData::HesaProviderCampus::HESA_PROVIDER_CAMPUSES]
 ].freeze
 
 desc 'Insert records into BigQuery tables from the reference data lists'

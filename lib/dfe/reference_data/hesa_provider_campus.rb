@@ -1,6 +1,6 @@
 module DfE
   module ReferenceData
-    module CampusData
+    module HesaProviderCampus
       SCHEMA = {
         id: :string,
         provider_name: :string,
@@ -10898,16 +10898,16 @@ module DfE
         }
       }.freeze
 
-      CAMPUSES = DfE::ReferenceData::HardcodedReferenceList.new(
+      HESA_PROVIDER_CAMPUSES = DfE::ReferenceData::HardcodedReferenceList.new(
         DATA,
         schema: SCHEMA,
         list_description: 'Campuses of UK higher-education providers',
         list_usage_guidance: 'To find the campuses operated by a higher-education provider, and their locations',
-        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_campus_data.md#dfereferencedatacampusdatacampuses',
+        list_docs_url: 'https://github.com/DFE-Digital/dfe-reference-data/blob/main/docs/lists_hesa_provider_campus.md#dfereferencedatahesaprovidercampushesa_provider_campuses',
         field_descriptions: FIELD_DESCRIPTIONS
       )
 
-      DATASETS = [CAMPUSES].freeze
+      DATASETS = [HESA_PROVIDER_CAMPUSES].freeze
     end
   end
 end

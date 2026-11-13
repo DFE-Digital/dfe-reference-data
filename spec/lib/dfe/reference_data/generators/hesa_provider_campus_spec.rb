@@ -1,9 +1,9 @@
 require 'bundler'
 
-RSpec.describe DfE::ReferenceData::Generators::CampusData do
-  # A trimmed copy of the real CSV, see spec/fixtures/campus_data/campusdata.csv
+RSpec.describe DfE::ReferenceData::Generators::HesaProviderCampus do
+  # A trimmed copy of the real CSV, see spec/fixtures/hesa_provider_campus/hesa_provider_campus.csv
   let(:fixture_csv) do
-    Bundler.root.join('spec/fixtures/campus_data/campusdata.csv').to_s
+    Bundler.root.join('spec/fixtures/hesa_provider_campus/hesa_provider_campus.csv').to_s
   end
 
   describe '.generate' do
