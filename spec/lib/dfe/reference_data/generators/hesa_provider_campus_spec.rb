@@ -9,23 +9,28 @@ RSpec.describe DfE::ReferenceData::Generators::HesaProviderCampus do
   describe '.generate' do
     subject(:dataset) { described_class.generate(fixture_csv) }
 
-    it 'is keyed by a generated UUID' do
+    it 'is keyed by a UUID-shaped id' do
       expect(dataset.keys).to all(match(/\A[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\z/))
     end
 
-    it 'produces one record per CSV row' do
-      expect(dataset.size).to eq(6)
+    it 'produces one record per distinct campus, collapsing exact duplicate rows' do
+      expect(dataset.size).to eq(8)
     end
 
-    it 'assigns a different id to each row' do
-      expect(dataset.keys.uniq.size).to eq(dataset.size)
+    it 'generates the same ids every time, for the same input' do
+      expect(described_class.generate(fixture_csv).keys).to eq(dataset.keys)
     end
 
-    it 'stores each campus as a flat hash of its own columns' do
+    it 'stores each campus as a flat hash of its own columns, without coordinates' do
       expect(dataset.values).to include(
         { provider_name: 'AA School of Architecture', ukprn: '10008071', instid: '0323',
-          name: 'Hooke Park', country: 'England', postcode: 'DT8 3PH', latitude: 50.790481, longitude: -2.673988 }
+          name: 'Hooke Park', country: 'England', postcode: 'DT8 3PH' }
       )
+    end
+
+    it 'assigns distinct ids to campuses that share a name under the same provider but have different postcodes' do
+      midlands_ids = dataset.select { |_, record| record[:name] == 'Midlands' }.keys
+      expect(midlands_ids.uniq.size).to eq(2)
     end
 
     it 'keeps distinct records for a UKPRN with several INSTIDs' do
@@ -33,7 +38,7 @@ RSpec.describe DfE::ReferenceData::Generators::HesaProviderCampus do
       expect(names).to contain_exactly('The Open University in England', 'The Open University in Scotland')
     end
 
-    it 'omits blank country/postcode and "NULL" coordinates from a campus' do
+    it 'omits blank country/postcode from a campus' do
       derby = dataset.values.find { |record| record[:ukprn] == '10007851' }
       expect(derby).to eq(provider_name: 'University of Derby', ukprn: '10007851', instid: '0057', name: 'Overseas')
     end

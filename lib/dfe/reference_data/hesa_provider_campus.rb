@@ -8,9 +8,7 @@ module DfE
         instid: { kind: :code, pattern: /^[0-9]+$/ },
         name: :string,
         country: { kind: :optional, schema: :string },
-        postcode: { kind: :optional, schema: :string },
-        latitude: { kind: :optional, schema: :real },
-        longitude: { kind: :optional, schema: :real }
+        postcode: { kind: :optional, schema: :string }
       }.freeze
 
       FIELD_DESCRIPTIONS = {
@@ -20,1695 +18,1355 @@ module DfE
         instid: "The provider's HESA institution id. A UKPRN usually has a single instid, but a small number of providers (for example the Open University) have several, one per national variant",
         name: 'The name of the campus',
         country: 'The country in which the campus is located. Absent for a small number of overseas/unspecified campuses',
-        postcode: 'The postcode of the campus. Absent for a small number of overseas/unspecified campuses',
-        latitude: 'The latitude of the campus, in decimal degrees. Absent where the source data has no coordinate',
-        longitude: 'The longitude of the campus, in decimal degrees. Absent where the source data has no coordinate'
+        postcode: 'The postcode of the campus. Absent for a small number of overseas/unspecified campuses'
       }.freeze
 
       DATA = {
-        "0f33ab29-6065-4aa9-94ff-25a9864cf24a" => {
+        "6b01d685-84e6-564a-8d5d-981cb26927dd" => {
           provider_name: "AA School of Architecture",
           ukprn: "10008071",
           instid: "0323",
           name: "Hooke Park",
           country: "England",
-          postcode: "DT8 3PH",
-          latitude: 50.790481,
-          longitude: -2.673988
+          postcode: "DT8 3PH"
         },
-        "f5ce42d4-951c-4bd0-ba60-a5fd530b4678" => {
+        "e8d054ae-ab48-5123-a143-531c9e4e7179" => {
           provider_name: "AA School of Architecture",
           ukprn: "10008071",
           instid: "0323",
           name: "Main campus",
           country: "England",
-          postcode: "WC1B 3ES",
-          latitude: 51.518218,
-          longitude: -0.130697
+          postcode: "WC1B 3ES"
         },
-        "cada2cc3-ed5e-44bd-8773-de27ee330e46" => {
+        "e69dbf0a-a94b-5946-9d3e-adfeceea57dd" => {
           provider_name: "Abertay University",
           ukprn: "10007849",
           instid: "0095",
           name: "Entire HEP",
           country: "Scotland",
-          postcode: "DD1 1HG",
-          latitude: 56.463117,
-          longitude: -2.974299
+          postcode: "DD1 1HG"
         },
-        "3650d82a-a28e-4322-b6b0-1c4f55b7b944" => {
+        "8fad33e1-9e54-5489-8ec7-9995e48649f5" => {
           provider_name: "Aberystwyth University",
           ukprn: "10007856",
           instid: "0177",
           name: "Canolfan Iaith Ceredigion",
           country: "Wales",
-          postcode: "SA48 8AF",
-          latitude: 52.195879,
-          longitude: -4.170098
+          postcode: "SA48 8AF"
         },
-        "67df50bf-8ccf-4b3f-8319-e48bad0dae2d" => {
+        "e5a78196-12ac-5d37-bf8b-e621534139db" => {
           provider_name: "Aberystwyth University",
           ukprn: "10007856",
           instid: "0177",
           name: "Canolfan Iaith Clwyd",
           country: "Wales",
-          postcode: "SA44 6AE",
-          latitude: 52.16253,
-          longitude: -4.447756
+          postcode: "SA44 6AE"
         },
-        "86da8c17-f17f-4ed9-b37c-ec82c73f6d3e" => {
+        "49d273aa-943e-55a7-9064-ef11f3f1c145" => {
           provider_name: "Aberystwyth University",
           ukprn: "10007856",
           instid: "0177",
           name: "Coleg Harlech",
           country: "Wales",
-          postcode: "LL46 2PU",
-          latitude: 52.855901,
-          longitude: -4.112967
+          postcode: "LL46 2PU"
         },
-        "628227d0-7382-4048-8870-112fd5dee092" => {
+        "f3e76f05-eefd-5ee2-84c9-d71d91e04fcc" => {
           provider_name: "Aberystwyth University",
           ukprn: "10007856",
           instid: "0177",
           name: "Coleg Meirion Dwyfor",
           country: "Wales",
-          postcode: "LL40 2SW",
-          latitude: 52.744734,
-          longitude: -3.897765
+          postcode: "LL40 2SW"
         },
-        "5534f8d0-2e27-4ccd-942b-3e18c8fd4cad" => {
+        "78c1b9ef-9f79-5ed0-a6ff-b7a3524ea9b0" => {
           provider_name: "Aberystwyth University",
           ukprn: "10007856",
           instid: "0177",
           name: "Entire HEP",
           country: "Wales",
-          postcode: "SY23 3BY",
-          latitude: 52.417956,
-          longitude: -4.064916
+          postcode: "SY23 3BY"
         },
-        "834008cd-4f75-47e6-940e-c1580f1e5eeb" => {
+        "2ddf7931-38ca-5118-a3d5-6cbed50dfc3d" => {
           provider_name: "ABI College Limited",
           ukprn: "10019746",
           instid: "0231",
           name: "Main campus",
           country: "England",
-          postcode: "RG1 4SJ",
-          latitude: 51.451368,
-          longitude: -0.967864
+          postcode: "RG1 4SJ"
         },
-        "01499b0f-ee89-44e6-b97e-b5be2c82646e" => {
+        "6c9cd3fc-b1a0-5b33-b117-e5e47f710374" => {
           provider_name: "Abingdon and Witney College",
           ukprn: "10000055",
           instid: "1183",
           name: "Main campus",
           country: "England",
-          postcode: "OX14 1GG",
-          latitude: 51.680624,
-          longitude: -1.28696
+          postcode: "OX14 1GG"
         },
-        "94f78bba-42d5-4bcd-955c-09c3e25cb27e" => {
+        "e949a840-a13c-5249-9b12-2dea9ee0325f" => {
           provider_name: "Academy of Live and Recorded Arts",
           ukprn: "10000248",
           instid: "0269",
           name: "ALRA North",
           country: "England",
-          postcode: "WN3 4BF",
-          latitude: 53.542304,
-          longitude: -2.637992
+          postcode: "WN3 4BF"
         },
-        "74b6890b-a51d-483a-b08f-e46c76e9daf1" => {
+        "84bc540d-17ac-5384-8931-601725fff75d" => {
           provider_name: "Academy of Live and Recorded Arts",
           ukprn: "10000248",
           instid: "0269",
           name: "ALRA South",
           country: "England",
-          postcode: "SW18 3SX",
-          latitude: 51.4533,
-          longitude: -0.174557
+          postcode: "SW18 3SX"
         },
-        "2b551752-06d0-493f-ae5d-d65f4cfa7aec" => {
+        "498f65a5-8f2a-5ce1-8b5f-c2bd4ab3d62f" => {
           provider_name: "Academy of Live and Recorded Arts",
           ukprn: "10000248",
           instid: "0269",
           name: "Main campus",
           country: "England",
-          postcode: "SW18 3SX",
-          latitude: 51.4533,
-          longitude: -0.174557
+          postcode: "SW18 3SX"
         },
-        "f4c44db8-251d-49bf-83f4-49dd065267ce" => {
+        "89379370-3dbd-58c2-9a6d-a80cb4a5d529" => {
           provider_name: "Academy of Live Technology Ltd",
           ukprn: "10036456",
           instid: "0426",
           name: "Entire HEP",
           country: "England",
-          postcode: "WF9 3AP",
-          latitude: 53.589945,
-          longitude: -1.309879
+          postcode: "WF9 3AP"
         },
-        "7e3b486f-5187-42a2-a66a-78368c1c0046" => {
+        "4efbc997-19c4-56cc-9130-1cfeb7f5bed9" => {
           provider_name: "Access to Music Limited",
           ukprn: "10000080",
           instid: "0268",
           name: "Main campus",
           country: "England",
-          postcode: "B9 4AR",
-          latitude: 52.476431,
-          longitude: -1.88286
+          postcode: "B9 4AR"
         },
-        "40cad355-471d-48bc-87bb-5c7865f0a734" => {
+        "f96971dc-941d-5a3f-97e1-58467ae39a59" => {
           provider_name: "Accrington and Rossendale College",
           ukprn: "10000093",
           instid: "1182",
           name: "Main campus",
           country: "England",
-          postcode: "BB5 2AW",
-          latitude: 53.748697,
-          longitude: -2.35286
+          postcode: "BB5 2AW"
         },
-        "a05efaf0-5476-4654-9964-ef3fde19d55a" => {
+        "63c053da-893b-56b5-b838-2e6ab62ec9d7" => {
           provider_name: "ACM Guildford Limited",
           ukprn: "10067853",
           instid: "0357",
           name: "Birmingham Campus",
           country: "England",
-          postcode: "B3 1AG",
-          latitude: 52.484594,
-          longitude: -1.902924
+          postcode: "B3 1AG"
         },
-        "e5af494b-fa80-4f15-882e-3f9b54c87617" => {
+        "090fff78-9524-5059-94ed-72af37a094f3" => {
           provider_name: "ACM Guildford Limited",
           ukprn: "10067853",
           instid: "0357",
           name: "London Campus",
           country: "England",
-          postcode: "SW4 0BG",
-          latitude: 51.462486,
-          longitude: -0.138834
+          postcode: "SW4 0BG"
         },
-        "6eb07767-aadc-42da-8c7e-dc9c05d7a5f0" => {
+        "53c5890c-055b-5b0c-a5d8-1fd9b794bc48" => {
           provider_name: "ACM Guildford Limited",
           ukprn: "10067853",
           instid: "0357",
           name: "Main campus",
           country: "England",
-          postcode: "GU1 4SB",
-          latitude: 51.236455,
-          longitude: -0.578092
+          postcode: "GU1 4SB"
         },
-        "0b8d22cc-d99b-4713-b65a-ea1db74b898c" => {
+        "6b9d2cc3-66b1-539f-b291-25dfd8819240" => {
           provider_name: "ACMET London College",
           ukprn: "10092025",
           instid: "0465",
           name: "Main campus",
           country: "England",
-          postcode: "TW8 9DN",
-          latitude: 51.484738,
-          longitude: -0.319534
+          postcode: "TW8 9DN"
         },
-        "47320266-c74f-4e46-9f2a-10fb631e398f" => {
+        "58f1b393-3259-5089-baae-1c0a12ab2bc9" => {
           provider_name: "Activate Learning",
           ukprn: "10004927",
           instid: "1181",
           name: "Main campus",
           country: "England",
-          postcode: "OX1 1SA",
-          latitude: 51.749548,
-          longitude: -1.264524
+          postcode: "OX1 1SA"
         },
-        "438eb3f3-2293-4840-b321-127a7fc1ddb1" => {
+        "2ac35094-903b-56b3-9f71-f291ea7679f8" => {
           provider_name: "All Nations Christian College Limited",
           ukprn: "10000216",
           instid: "0285",
           name: "Entire HEP",
           country: "England",
-          postcode: "SG12 8LX",
-          latitude: 51.80252,
-          longitude: 0.000933
+          postcode: "SG12 8LX"
         },
-        "a0348a58-f5da-471b-a9cb-0432028615fa" => {
+        "c59b0491-0e7d-5727-af7b-e34465ae62ca" => {
           provider_name: "Amity University [IN] London",
           ukprn: "10032036",
           instid: "0353",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1E 7HX",
-          latitude: 51.521891,
-          longitude: -0.130359
+          postcode: "WC1E 7HX"
         },
-        "00577497-5166-4b8b-859b-124721252606" => {
+        "2f23c35b-8b18-5e4a-bd25-c902b71eddb8" => {
           provider_name: "Anglia Ruskin University",
           ukprn: "10000291",
           instid: "0047",
           name: "Cambridge",
           country: "England",
-          postcode: "CB1 1PT",
-          latitude: 52.203402,
-          longitude: 0.13461
+          postcode: "CB1 1PT"
         },
-        "a156d9c2-3bfc-4001-ad20-4fbe6d830dba" => {
+        "83c7c63b-a4ce-5835-9f95-2cd900aa4527" => {
           provider_name: "Anglia Ruskin University",
           ukprn: "10000291",
           instid: "0047",
           name: "Cambridge campus",
           country: "England",
-          postcode: "CB1 1PT",
-          latitude: 52.203402,
-          longitude: 0.13461
+          postcode: "CB1 1PT"
         },
-        "48833046-bd36-45bf-a182-83e516d9fdb7" => {
+        "0bc9bc7e-5e74-59d9-98cc-a9da739dc028" => {
           provider_name: "Anglia Ruskin University",
           ukprn: "10000291",
           instid: "0047",
           name: "Harlow",
           country: "England",
-          postcode: "CM20 3LH",
-          latitude: 51.770467,
-          longitude: 0.099149
+          postcode: "CM20 3LH"
         },
-        "8b21d0f6-5c8f-4596-951d-f8199af6033f" => {
+        "e4f98d89-44f5-5916-85de-1076dcdc854c" => {
           provider_name: "Anglia Ruskin University",
           ukprn: "10000291",
           instid: "0047",
           name: "London",
           country: "England",
-          postcode: "EC1N 6SA",
-          latitude: 51.518542,
-          longitude: -0.105909
+          postcode: "EC1N 6SA"
         },
-        "4f1b434b-4dd5-4030-ad61-02890b443946" => {
+        "1216d7f8-39df-586f-b8b7-363661332ee2" => {
           provider_name: "Anglia Ruskin University",
           ukprn: "10000291",
           instid: "0047",
           name: "Main campus",
           country: "England",
-          postcode: "CM1 1SQ",
-          latitude: 51.741381,
-          longitude: 0.474495
+          postcode: "CM1 1SQ"
         },
-        "f9809e33-1618-47c8-ae0e-d09ccb0f8ac7" => {
+        "cdd77865-3e99-588e-8ff5-de19454b67dc" => {
           provider_name: "Anglia Ruskin University",
           ukprn: "10000291",
           instid: "0047",
           name: "Peterborough",
           country: "England",
-          postcode: "PE1 4DZ",
-          latitude: 52.586783,
-          longitude: -0.230191
+          postcode: "PE1 4DZ"
         },
-        "34cb73ee-80d4-4ff1-ad65-7cba1ae2a6ff" => {
+        "68d3b6de-f5e3-5d34-befc-3a021daee158" => {
           provider_name: "Anglia Ruskin University",
           ukprn: "10000291",
           instid: "0047",
           name: "Peterborough Guild House",
           country: "England",
-          postcode: "PE2 9PW",
-          latitude: 52.565311,
-          longitude: -0.252362
+          postcode: "PE2 9PW"
         },
-        "b976960e-5fe9-40cb-9048-15ae814d74ab" => {
+        "906e4715-d88b-5610-843e-cc56edd3cb72" => {
           provider_name: "Anglia Ruskin University",
           ukprn: "10000291",
           instid: "0047",
           name: "West Anglia",
           country: "England",
-          postcode: "PE30 2QW",
-          latitude: 52.756352,
-          longitude: 0.410694
+          postcode: "PE30 2QW"
         },
-        "daaa87ed-ffd4-4e7a-bc49-6b77348fcb24" => {
+        "97beec2d-db3f-51e4-9be3-1a9170cb2b85" => {
           provider_name: "Anglo Skills College",
           ukprn: "10030497",
           instid: "0456",
           name: "Main campus",
           country: "England",
-          postcode: "NG1 6DG",
-          latitude: 52.952374,
-          longitude: -1.15202
+          postcode: "NG1 6DG"
         },
-        "939c9862-bdf6-40c0-a249-b463f10ddb09" => {
+        "03f3002f-3367-565e-8879-57eb95809f6a" => {
           provider_name: "Apex College",
           ukprn: "10041898",
           instid: "0329",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE17 1JE",
-          latitude: 51.48871,
-          longitude: -0.096354
+          postcode: "SE17 1JE"
         },
-        "cf76cdc8-7665-4627-a9c2-e9c9e8c08ef6" => {
+        "cc17ba0c-56e0-5872-892d-c806340b871d" => {
           provider_name: "Applied Business Academy Limited",
           ukprn: "10062759",
           instid: "0432",
           name: "Entire HEP",
           country: "England",
-          postcode: "E14 9RH",
-          latitude: 51.49744,
-          longitude: -0.014275
+          postcode: "E14 9RH"
         },
-        "82eacd04-c76e-4ff1-be88-9c4f98454e98" => {
+        "3ff61c3a-639d-5a8b-88cb-35312b970480" => {
           provider_name: "Arden University",
           ukprn: "10005451",
           instid: "0333",
           name: "Berlin",
-          country: "Germany",
-          latitude: 52.373008,
-          longitude: -1.466384
+          country: "Germany"
         },
-        "2efd96c4-0ce7-40d2-9703-73bacd360da6" => {
+        "688d2a2f-cc4a-5da8-8bea-b58f90c901c8" => {
           provider_name: "Arden University",
           ukprn: "10005451",
           instid: "0333",
           name: "Birmingham",
           country: "England",
-          postcode: "B5 4UA",
-          latitude: 52.476224,
-          longitude: -1.898516
+          postcode: "B5 4UA"
         },
-        "275085e6-ea83-44d4-923f-8ff9dfbb8fbe" => {
+        "30ace3f8-fc07-5e9d-956f-d41e93c7c064" => {
           provider_name: "Arden University",
           ukprn: "10005451",
           instid: "0333",
           name: "Ealing",
           country: "England",
-          postcode: "W5 5SA",
-          latitude: 51.512203,
-          longitude: -0.309004
+          postcode: "W5 5SA"
         },
-        "431f879f-31cb-4190-8322-e41bf6ffa4cd" => {
+        "94a74f64-85a3-5818-9874-e86f803b34d1" => {
           provider_name: "Arden University",
           ukprn: "10005451",
           instid: "0333",
           name: "Holborn",
           country: "England",
-          postcode: "EC1N 2LX",
-          latitude: 51.517609,
-          longitude: -0.109519
+          postcode: "EC1N 2LX"
         },
-        "45bcd262-ebd7-4019-886a-1392c76eb523" => {
+        "2e7f7b35-814c-550c-a66f-ce2bf8354090" => {
           provider_name: "Arden University",
           ukprn: "10005451",
           instid: "0333",
           name: "Islamabad",
-          country: "Pakistan",
-          latitude: 52.373008,
-          longitude: -1.466384
+          country: "Pakistan"
         },
-        "e2bac3b8-7784-48bc-8ef1-8b4e632e5060" => {
+        "227a87ca-6f5e-5566-8528-40608fc8bc3d" => {
           provider_name: "Arden University",
           ukprn: "10005451",
           instid: "0333",
           name: "Lahore",
-          country: "Pakistan",
-          latitude: 52.373008,
-          longitude: -1.466384
+          country: "Pakistan"
         },
-        "9637d9bd-65c2-4075-995d-1023accb6da2" => {
+        "eccfe75f-0887-5563-8464-611f342dc912" => {
           provider_name: "Arden University",
           ukprn: "10005451",
           instid: "0333",
           name: "Leeds",
           country: "England",
-          postcode: "LS1 5HD",
-          latitude: 53.797928,
-          longitude: -1.54673
+          postcode: "LS1 5HD"
         },
-        "fa4ad9d2-2adb-43ca-b183-44cd010b85f4" => {
+        "cb0a165c-1aef-5d0a-8b39-95e8c933bc7a" => {
           provider_name: "Arden University",
           ukprn: "10005451",
           instid: "0333",
           name: "Main campus",
           country: "England",
-          postcode: "CV3 4FJ",
-          latitude: 52.373008,
-          longitude: -1.466384
+          postcode: "CV3 4FJ"
         },
-        "b3da5c0c-c953-4bf1-b5dc-0b960a155b2c" => {
+        "d1bc8687-0483-5d5c-aeb9-a83f100997da" => {
           provider_name: "Arden University",
           ukprn: "10005451",
           instid: "0333",
           name: "Manchester",
           country: "England",
-          postcode: "M1 4LF",
-          latitude: 53.476179,
-          longitude: -2.240634
+          postcode: "M1 4LF"
         },
-        "dd3aed21-f76e-4049-b6a0-695c1cc87f23" => {
+        "7d42055b-2e3e-5b45-a89e-882963c8bb5b" => {
           provider_name: "Arden University",
           ukprn: "10005451",
           instid: "0333",
           name: "Tower Hill",
           country: "England",
-          postcode: "EC3N 4DX",
-          latitude: 51.509939,
-          longitude: -0.073608
+          postcode: "EC3N 4DX"
         },
-        "67e2843e-b27b-4958-8bf8-500a531a2e9f" => {
+        "6553451a-206e-5870-b1b9-81f3cb8e1376" => {
           provider_name: "Arts Educational Schools",
           ukprn: "10000381",
           instid: "0244",
           name: "Entire HEP",
           country: "England",
-          postcode: "W4 1LY",
-          latitude: 51.49596,
-          longitude: -0.252435
+          postcode: "W4 1LY"
         },
-        "8568a0da-8e68-4694-a14d-82a430b51c0f" => {
+        "acedb52b-a4aa-52f9-a69f-92e64aff23ec" => {
           provider_name: "Arts University Plymouth",
           ukprn: "10005127",
           instid: "0230",
           name: "Entire HEP",
           country: "England",
-          postcode: "PL4 8AT",
-          latitude: 50.37341,
-          longitude: -4.137411
+          postcode: "PL4 8AT"
         },
-        "adbf8a65-4027-48ba-97b6-789f7490851e" => {
+        "cfa85c29-5986-524e-893f-cc6ed821d785" => {
           provider_name: "Ashton Sixth Form College",
           ukprn: "10000409",
           instid: "1180",
           name: "Main campus",
           country: "England",
-          postcode: "OL6 9RL",
-          latitude: 53.492067,
-          longitude: -2.075504
+          postcode: "OL6 9RL"
         },
-        "b310d187-947b-44f5-878b-cfc3282cd785" => {
+        "9f13cc08-3909-55d5-9daa-8e116c7730db" => {
           provider_name: "Askham Bryan College",
           ukprn: "10000415",
           instid: "1179",
           name: "Main campus",
           country: "England",
-          postcode: "YO23 3FR",
-          latitude: 53.920657,
-          longitude: -1.161491
+          postcode: "YO23 3FR"
         },
-        "06fab8b8-c56b-4926-8f01-242a757c5651" => {
+        "5d636691-e0a3-550f-b701-cbc0dcfb80f9" => {
           provider_name: "Aston University",
           ukprn: "10007759",
           instid: "0108",
           name: "Entire HEP",
           country: "England",
-          postcode: "B4 7ET",
-          latitude: 52.486637,
-          longitude: -1.890952
+          postcode: "B4 7ET"
         },
-        "f0148b4b-f106-4708-9ef4-c4e83b47a9c3" => {
+        "31c52299-8886-5dfc-85de-d8f11f340b9c" => {
           provider_name: "Aylesbury College",
           ukprn: "10000473",
           instid: "1178",
           name: "Main campus",
           country: "England",
-          postcode: "HP21 8PD",
-          latitude: 51.813857,
-          longitude: -0.822655
+          postcode: "HP21 8PD"
         },
-        "68c61a57-46b8-4f80-a9e9-bbe623df9478" => {
+        "b10f6c28-3dee-5734-9f4e-14bc25339c16" => {
           provider_name: "Ballet West",
           ukprn: "10042364",
           instid: "0324",
           name: "Main campus",
           country: "Scotland",
-          postcode: "PA35 1HP",
-          latitude: 56.426118,
-          longitude: -5.226522
+          postcode: "PA35 1HP"
         },
-        "f476185c-239b-415f-86a5-de3e9da6ab99" => {
+        "4eae076b-f8a5-5941-ab27-c1a5bccea0ec" => {
           provider_name: "Bangor University",
           ukprn: "10007857",
           instid: "0178",
           name: "CSUFT",
-          country: "China",
-          latitude: 53.229193,
-          longitude: -4.129437
+          country: "China"
         },
-        "3c7be73c-49b1-483a-a584-0a21a74e914f" => {
+        "ceabb117-ac40-5d81-894e-c19936dd8943" => {
           provider_name: "Bangor University",
           ukprn: "10007857",
           instid: "0178",
           name: "London Centre",
           country: "England",
-          postcode: "EC2A 2EW",
-          latitude: 51.52106,
-          longitude: -0.080057
+          postcode: "EC2A 2EW"
         },
-        "5695eb63-0f6c-4448-a7f7-4c6995510f79" => {
+        "e1c7fb12-8ee2-586c-9878-b05b1f1556c5" => {
           provider_name: "Bangor University",
           ukprn: "10007857",
           instid: "0178",
           name: "Main campus",
           country: "Wales",
-          postcode: "LL57 2DG",
-          latitude: 53.229193,
-          longitude: -4.129437
+          postcode: "LL57 2DG"
         },
-        "d0841864-959c-413d-ba15-25daa1b66d46" => {
+        "5177acd7-a202-5754-a2d2-e32e5390d1b4" => {
           provider_name: "Bangor University",
           ukprn: "10007857",
           instid: "0178",
           name: "Wrexham",
           country: "Wales",
-          postcode: "LL13 7YP",
-          latitude: 53.048988,
-          longitude: -3.01411
+          postcode: "LL13 7YP"
         },
-        "b19cb3f7-676c-4d5a-9021-c1e7d1543157" => {
+        "519712a7-a8c7-5071-ad71-59628f0990c5" => {
           provider_name: "Barking and Dagenham College",
           ukprn: "10000528",
           instid: "1177",
           name: "Main campus",
           country: "England",
-          postcode: "RM7 0XU",
-          latitude: 51.56033,
-          longitude: 0.174564
+          postcode: "RM7 0XU"
         },
-        "84679cd1-71e5-4015-b60b-0a162fc405b2" => {
+        "461b19f8-639c-50de-b53d-957c2d9b15c5" => {
           provider_name: "Barnet & Southgate College",
           ukprn: "10000533",
           instid: "1174",
           name: "Main campus",
           country: "England",
-          postcode: "EN5 4AZ",
-          latitude: 51.652379,
-          longitude: -0.2003
+          postcode: "EN5 4AZ"
         },
-        "6122562b-1b98-4a8a-98a1-567720b4ea54" => {
+        "9a7cf463-e5ef-57ab-ba56-c199dc008376" => {
           provider_name: "Barnfield College",
           ukprn: "10000534",
           instid: "1176",
           name: "Main campus",
           country: "England",
-          postcode: "LU2 7BF",
-          latitude: 51.90603,
-          longitude: -0.421883
+          postcode: "LU2 7BF"
         },
-        "5dee1bde-07b6-4872-b368-5e21edbc8402" => {
+        "dfeff19f-6639-5b24-b887-572ca1fe9894" => {
           provider_name: "Barnsley College",
           ukprn: "10000536",
           instid: "1175",
           name: "Main campus",
           country: "England",
-          postcode: "S70 2AX",
-          latitude: 53.556624,
-          longitude: -1.482572
+          postcode: "S70 2AX"
         },
-        "c6432784-5f75-41f4-a7d4-013dbd4c473f" => {
+        "480739db-657e-54e5-9201-8ff1c68412af" => {
           provider_name: "Basingstoke College of Technology",
           ukprn: "10000560",
           instid: "1173",
           name: "Main campus",
           country: "England",
-          postcode: "RG21 8TN",
-          latitude: 51.26336,
-          longitude: -1.095958
+          postcode: "RG21 8TN"
         },
-        "7b072311-0310-4385-831c-39b556074aea" => {
+        "6b7c07e4-6483-524a-baa6-1510a1b52a67" => {
           provider_name: "Bath College",
           ukprn: "10001465",
           instid: "1172",
           name: "Main campus",
           country: "England",
-          postcode: "BA1 1UP",
-          latitude: 51.379717,
-          longitude: -2.362652
+          postcode: "BA1 1UP"
         },
-        "9fcb0c8f-c728-4293-a57d-4fcbf5cb1e06" => {
+        "94e1b017-3df8-5e29-9055-74d26393f29e" => {
           provider_name: "Bath Spa University",
           ukprn: "10000571",
           instid: "0048",
           name: "BSULONDON",
           country: "England",
-          postcode: "N1 6HQ",
-          latitude: 51.530733,
-          longitude: -0.079304
+          postcode: "N1 6HQ"
         },
-        "821ed15d-4235-4937-b276-b632ffb16db2" => {
+        "4c18d95c-7a9d-58d6-be17-bdbec2893984" => {
           provider_name: "Bath Spa University",
           ukprn: "10000571",
           instid: "0048",
           name: "Main campus",
           country: "England",
-          postcode: "BA2 9BN",
-          latitude: 51.373209,
-          longitude: -2.440912
+          postcode: "BA2 9BN"
         },
-        "7535318c-3463-43c8-9a53-62ba5480e9fc" => {
+        "92da3667-64ea-55f4-aa34-0b004d26180b" => {
           provider_name: "BCNO Limited",
           ukprn: "10000911",
           instid: "0400",
           name: "European School of Osteopathy",
           country: "England",
-          postcode: "ME14 3DZ",
-          latitude: 51.305512,
-          longitude: 0.544507
+          postcode: "ME14 3DZ"
         },
-        "e7f0330a-fe8e-48bd-8fb4-9077d76213ca" => {
+        "38d40621-a9af-5e51-bdd5-12aab37ba476" => {
           provider_name: "BCNO Limited",
           ukprn: "10000911",
           instid: "0400",
           name: "Main campus",
           country: "England",
-          postcode: "NW3 5RR",
-          latitude: 51.547841,
-          longitude: -0.179372
+          postcode: "NW3 5RR"
         },
-        "9ae3fbaa-dfd6-4ea8-bf86-8cec0d6fed1b" => {
+        "c7053728-fb9e-5bd9-aa0f-75c913530405" => {
           provider_name: "Bedford College",
           ukprn: "10000610",
           instid: "1171",
           name: "Main campus",
           country: "England",
-          postcode: "MK42 9AH",
-          latitude: 52.133347,
-          longitude: -0.468552
+          postcode: "MK42 9AH"
         },
-        "66147f77-39fc-45c8-851f-fac400eecfb7" => {
+        "623e4395-84ee-51be-a1ca-7b66882e2c7e" => {
           provider_name: "Belfast Metropolitan College",
           ukprn: "10020680",
           instid: "0345",
           name: "Main campus",
           country: "Northern Ireland",
-          postcode: "BT3 9FQ",
-          latitude: 54.604763,
-          longitude: -5.911865
+          postcode: "BT3 9FQ"
         },
-        "4a502bae-c683-4e91-8c29-45695a68163a" => {
+        "66439252-1a48-5d5b-bcee-95630550f7b5" => {
           provider_name: "Bell College",
           ukprn: "10007809",
           instid: "0198",
           name: "Crichton Campus, Dumfries",
           country: "Scotland",
-          postcode: "DG1 4ZN",
-          latitude: 55.049484,
-          longitude: -3.589292
+          postcode: "DG1 4ZN"
         },
-        "9a831396-7b78-47c7-a6d8-8dbc87fd9a10" => {
+        "91fb7a9b-70ac-5476-bed4-3df67a38d721" => {
           provider_name: "Bell College",
           ukprn: "10007809",
           instid: "0198",
           name: "Main campus",
           country: "Scotland",
-          postcode: "ML3 0JB",
-          latitude: 55.780129,
-          longitude: -4.047587
+          postcode: "ML3 0JB"
         },
-        "26da9c92-668e-4af3-84b2-03f1a4c69d7f" => {
+        "2d3095e2-7372-5159-9272-ba11c4422b57" => {
           provider_name: "Bexhill College",
           ukprn: "10000670",
           instid: "1188",
           name: "Main campus",
           country: "England",
-          postcode: "TN40 2JG",
-          latitude: 50.847112,
-          longitude: 0.490934
+          postcode: "TN40 2JG"
         },
-        "2618434c-4a20-434b-9f73-2f8cb2de10f3" => {
+        "03a4704d-9773-5517-a9a2-bfaa562a686d" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "BIMM Berlin",
-          country: "Germany",
-          latitude: 50.820995,
-          longitude: -0.139682
+          country: "Germany"
         },
-        "51ff885a-5a15-4992-91e3-8742fd701cc9" => {
+        "b0eeaf08-e9ee-5c63-8768-7a89d2339a32" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "BIMM Birmingham",
           country: "England",
-          postcode: "B5 5SR",
-          latitude: 52.476504,
-          longitude: -1.883993
+          postcode: "B5 5SR"
         },
-        "103b866f-34c8-46a0-b88f-1ded086db4ad" => {
+        "41f07e52-a64b-5522-a8aa-f9c53b7ea0b9" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "BIMM Brighton",
           country: "England",
-          postcode: "BN3 1EL",
-          latitude: 50.824512,
-          longitude: -0.160357
+          postcode: "BN3 1EL"
         },
-        "e35c377f-164f-4630-99af-9742704e87ce" => {
+        "7fdaf412-f12f-5c21-8b3d-3b994a0e6605" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "BIMM Bristol",
           country: "England",
-          postcode: "BS2 8JN",
-          latitude: 51.461371,
-          longitude: -2.59175
+          postcode: "BS2 8JN"
         },
-        "2b092e97-e623-4671-9ae9-717aa0256c1a" => {
+        "5a4f1da7-3f66-57c0-9cbd-d24c6b021df9" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "BIMM Dublin",
-          country: "Ireland",
-          latitude: 50.820995,
-          longitude: -0.139682
+          country: "Ireland"
         },
-        "a75de7f2-f0fb-4cb1-8154-35d6f87bff86" => {
+        "408ad01f-2331-5d55-8fa9-b5588ae6e232" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "BIMM Hamburg",
-          country: "Germany",
-          latitude: 50.820995,
-          longitude: -0.139682
+          country: "Germany"
         },
-        "ca017591-696e-4e12-8bf9-db232b1bc214" => {
+        "b5eb00f2-8e75-5e30-ab7b-4430c4c36d26" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "BIMM London",
           country: "England",
-          postcode: "SW6 1EN",
-          latitude: 51.479423,
-          longitude: -0.1966
+          postcode: "SW6 1EN"
         },
-        "0fcca434-b280-4191-b7b7-2d42ee2d6b8a" => {
+        "46d62883-f2e8-52b4-9dde-4181c86e7ff7" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "BIMM Manchester",
           country: "England",
-          postcode: "M1 5NN",
-          latitude: 53.472988,
-          longitude: -2.241944
+          postcode: "M1 5NN"
         },
-        "a24c45e0-8118-43b2-908f-d3f8345aa9a8" => {
+        "3c90f130-27b6-52b6-ad5f-2d6e939090e4" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "ICT Brighton",
           country: "England",
-          postcode: "BN1 4GW",
-          latitude: 50.833404,
-          longitude: -0.140339
+          postcode: "BN1 4GW"
         },
-        "25db23c8-a174-4215-a6d0-8f7099edcf5e" => {
+        "1dcd40ed-5054-5bc7-b914-52525cf17e31" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "ICT Manchester",
           country: "England",
-          postcode: "M1 5QA",
-          latitude: 53.472893,
-          longitude: -2.23997
+          postcode: "M1 5QA"
         },
-        "ba710801-c3f4-455d-b892-9351c9f01271" => {
+        "75cb118e-c179-5d2e-9365-fa40827513c2" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "Main campus",
           country: "England",
-          postcode: "BN3 1EL",
-          latitude: 50.824512,
-          longitude: -0.160357
+          postcode: "BN3 1EL"
         },
-        "2aa1f238-48c1-4f16-a364-0d8a623d5cbe" => {
+        "c055aaca-a2e5-5790-9e15-af2b06a5b2df" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "Performers College Birmingham",
           country: "England",
-          postcode: "B5 5SR",
-          latitude: 52.476504,
-          longitude: -1.883993
+          postcode: "B5 5SR"
         },
-        "df59dc71-85b9-4ea3-936e-db2a99952b1d" => {
+        "1bc985c5-7ce3-5dc8-9877-3de576f390c5" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "Performers College Essex",
           country: "England",
-          postcode: "SS17 8JS",
-          latitude: 51.53502,
-          longitude: 0.453436
+          postcode: "SS17 8JS"
         },
-        "9bd87dec-784c-4aca-a118-b25f43ba0a2d" => {
+        "e8062ffe-88ac-57fa-b05e-249a6ea61538" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "Performers College Rayleigh",
           country: "England",
-          postcode: "SS6 7UY",
-          latitude: 51.577803,
-          longitude: 0.605258
+          postcode: "SS6 7UY"
         },
-        "c3ccbc59-4cc0-4397-8d71-5f0b4d0aaedb" => {
+        "7262343f-a34f-5cf7-b8a8-59ac6d601b9c" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "SFS Birmingham",
           country: "England",
-          postcode: "B5 5SS",
-          latitude: 52.47622,
-          longitude: -1.883822
+          postcode: "B5 5SS"
         },
-        "0c838f65-c995-44b1-8d39-0bf17a4ca394" => {
+        "b031a272-dfb0-5775-b73d-6cec4d903c1e" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "SFS Brighton",
           country: "England",
-          postcode: "BN1 1NH",
-          latitude: 50.820259,
-          longitude: -0.138121
+          postcode: "BN1 1NH"
         },
-        "ddb8e965-868d-4db4-8c57-3c2cef62bfbd" => {
+        "8779f764-83fe-5f34-9271-f8e5f485183a" => {
           provider_name: "BIMM University",
           ukprn: "10037544",
           instid: "0232",
           name: "SFS Manchester",
           country: "England",
-          postcode: "M3 3AN",
-          latitude: 53.480628,
-          longitude: -2.254871
+          postcode: "M3 3AN"
         },
-        "1d48e6f5-0d7f-4443-83c9-08788793da11" => {
+        "fb5a5391-e605-5d53-b1e5-1e79530c081f" => {
           provider_name: "Bird College",
           ukprn: "10002011",
           instid: "0453",
           name: "Main campus",
           country: "England",
-          postcode: "DA14 4ED",
-          latitude: 51.431935,
-          longitude: 0.105806
+          postcode: "DA14 4ED"
         },
-        "aa9c9ce9-60a7-46df-80ec-70f0af7b9847" => {
+        "eafba8b3-afab-5b66-8b83-bdf2e94c2a40" => {
           provider_name: "Birkbeck College",
           ukprn: "10007760",
           instid: "0127",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1E 7HX",
-          latitude: 51.521891,
-          longitude: -0.130359
+          postcode: "WC1E 7HX"
         },
-        "1c9d7b8f-44b5-4fc9-8993-c0bebaff8d24" => {
+        "d5b85c2b-382f-5bb7-9a2d-bc0e7a3a60f6" => {
           provider_name: "Birmingham Christian College",
           ukprn: "10007810",
           instid: "0455",
           name: "Main campus",
           country: "England",
-          postcode: "B29 6AJ",
-          latitude: 52.434756,
-          longitude: -1.949601
+          postcode: "B29 6AJ"
         },
-        "a2272760-2537-4082-9dda-f28b6df02124" => {
+        "54bbe54c-7f5a-57c0-9ea4-21ae24f8be1b" => {
           provider_name: "Birmingham City University",
           ukprn: "10007140",
           instid: "0052",
           name: "Birmingham City University UAE Ras Al Khaimah Camp",
-          country: "United Arab Emirates",
-          latitude: 52.481921,
-          longitude: -1.888824
+          country: "United Arab Emirates"
         },
-        "ccf5917d-60f4-49e4-a883-0a31b3bf1340" => {
+        "24d34dea-19df-5452-b8ee-c9db9f19e706" => {
           provider_name: "Birmingham City University",
           ukprn: "10007140",
           instid: "0052",
           name: "City South Campus",
           country: "England",
-          postcode: "B15 3TN",
-          latitude: 52.468243,
-          longitude: -1.926046
+          postcode: "B15 3TN"
         },
-        "e9f5cbd0-20ea-4e2e-841d-ecc7ab6097d0" => {
+        "e50360c7-ec1f-5846-ba0e-20703cfb0119" => {
           provider_name: "Birmingham City University",
           ukprn: "10007140",
           instid: "0052",
           name: "Main campus",
           country: "England",
-          postcode: "B4 7AP",
-          latitude: 52.482793,
-          longitude: -1.885955
+          postcode: "B4 7AP"
         },
-        "b989c8bd-7af3-487f-9344-4330e57b3c8b" => {
+        "4c8e510f-0e17-51e1-984b-8c69113ba49a" => {
           provider_name: "Birmingham City University",
           ukprn: "10007140",
           instid: "0052",
           name: "School of Art",
           country: "England",
-          postcode: "B3 3BX",
-          latitude: 52.481092,
-          longitude: -1.903261
+          postcode: "B3 3BX"
         },
-        "89063e36-ba42-493e-95b3-e2cba7c0af04" => {
+        "c9914062-5109-5bb1-ab3f-d4947e84ca63" => {
           provider_name: "Birmingham City University",
           ukprn: "10007140",
           instid: "0052",
           name: "School of Jewellery",
           country: "England",
-          postcode: "B1 3PA",
-          latitude: 52.486429,
-          longitude: -1.91151
+          postcode: "B1 3PA"
         },
-        "5f0b7e19-c894-4a8a-b8c9-50331cbc1603" => {
+        "b4e410ac-6ddc-5fbf-98df-dce03d7716f8" => {
           provider_name: "Birmingham Metropolitan College",
           ukprn: "10006442",
           instid: "1169",
           name: "Main campus",
           country: "England",
-          postcode: "B4 7PS",
-          latitude: 52.48321,
-          longitude: -1.889341
+          postcode: "B4 7PS"
         },
-        "bd3c557b-5a97-4992-ac2f-e8388589771a" => {
+        "7f2c1762-c276-54b3-b245-c3b836bbb56a" => {
           provider_name: "Birmingham Newman University",
           ukprn: "10007832",
           instid: "0028",
           name: "Entire HEP",
           country: "England",
-          postcode: "B32 3NT",
-          latitude: 52.434122,
-          longitude: -1.995028
+          postcode: "B32 3NT"
         },
-        "a1778a57-a12b-4ad4-9b3a-3038bfe19d34" => {
+        "9b10734f-4e47-5245-ba0a-95f5681c3a1e" => {
           provider_name: "Bishop Auckland College",
           ukprn: "10000720",
           instid: "1168",
           name: "Main campus",
           country: "England",
-          postcode: "DL14 6JZ",
-          latitude: 54.65052,
-          longitude: -1.69652
+          postcode: "DL14 6JZ"
         },
-        "1f289439-7761-45d9-af9f-6c3ad7d0ee13" => {
+        "92c44d13-f382-51e3-8a07-17da93f92932" => {
           provider_name: "Bishop Burton College",
           ukprn: "10000721",
           instid: "1167",
           name: "Main campus",
           country: "England",
-          postcode: "HU17 8QG",
-          latitude: 53.848058,
-          longitude: -0.503445
+          postcode: "HU17 8QG"
         },
-        "c59a23e7-e552-4e6a-a914-716c33ae4e4e" => {
+        "df42f0bf-c960-5653-a111-f39d9a302bb2" => {
           provider_name: "Blackburn College",
           ukprn: "10000747",
           instid: "1166",
           name: "Main campus",
           country: "England",
-          postcode: "BB2 1LH",
-          latitude: 53.748575,
-          longitude: -2.489745
+          postcode: "BB2 1LH"
         },
-        "7dad2c4b-2408-4e05-a76f-03da1f153805" => {
+        "5ae271f1-7d57-55a4-b4b5-aaff86510013" => {
           provider_name: "Blackpool and the Fylde College",
           ukprn: "10000754",
           instid: "1165",
           name: "Main campus",
           country: "England",
-          postcode: "FY2 0HB",
-          latitude: 53.859387,
-          longitude: -3.026295
+          postcode: "FY2 0HB"
         },
-        "ccfd5a3c-9a83-4365-93c6-b7abfc8e9eac" => {
+        "943431a5-3b76-507f-a628-0db5a7b09ce3" => {
           provider_name: "Bloomsbury Institute",
           ukprn: "10004061",
           instid: "0238",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1B 3RA",
-          latitude: 51.51948,
-          longitude: -0.129063
+          postcode: "WC1B 3RA"
         },
-        "31f88bf0-3d2c-47bc-a2a4-831062b79919" => {
+        "b4a36f79-2472-53d1-a430-240aa6978c14" => {
           provider_name: "BMC (Brooksby Melton College)",
           ukprn: "10000952",
           instid: "1154",
           name: "Main campus",
           country: "England",
-          postcode: "LE13 0HJ",
-          latitude: 52.766397,
-          longitude: -0.891705
+          postcode: "LE13 0HJ"
         },
-        "afe946a0-fc33-47d4-9fde-0616e0191761" => {
+        "603d7453-3f0c-57b7-98e6-ceb7250e66ca" => {
           provider_name: "Bolton College",
           ukprn: "10000794",
           instid: "1164",
           name: "Main campus",
           country: "England",
-          postcode: "BL3 5BG",
-          latitude: 53.574721,
-          longitude: -2.437096
+          postcode: "BL3 5BG"
         },
-        "893e5801-d3e5-4318-a4b1-e2756086f23e" => {
+        "7094e777-6ccb-5033-9722-22bae792938a" => {
           provider_name: "Boston College",
           ukprn: "10000812",
           instid: "1163",
           name: "Main campus",
           country: "England",
-          postcode: "PE21 6JF",
-          latitude: 52.973254,
-          longitude: -0.014959
+          postcode: "PE21 6JF"
         },
-        "30261338-807b-47fd-92e9-00da2d7e0fec" => {
+        "7245261e-b91a-5979-9df7-06a7fd583110" => {
           provider_name: "Bournemouth University",
           ukprn: "10000824",
           instid: "0050",
           name: "Entire HEP",
           country: "England",
-          postcode: "BH12 5BB",
-          latitude: 50.742979,
-          longitude: -1.897168
+          postcode: "BH12 5BB"
         },
-        "1fe05421-96b8-4bcc-a05a-7b962365589c" => {
+        "1d00a739-6087-5854-9779-301b6d8a53d1" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Abingdon",
           country: "England",
-          postcode: "OX14 1BZ",
-          latitude: 51.670421,
-          longitude: -1.305384
+          postcode: "OX14 1BZ"
         },
-        "34d1f5e5-7ffc-484e-9864-dbf02b54785b" => {
+        "e5c482ac-1392-50ea-9fb1-2ce38efd10e4" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Basingstoke and North Hampshire Hospital",
           country: "England",
-          postcode: "RG24 9NA",
-          latitude: 51.280633,
-          longitude: -1.109918
+          postcode: "RG24 9NA"
         },
-        "a6f56c2c-0a63-4dac-943f-e7203431afbd" => {
+        "49741f02-468e-562c-af1c-a8da48764bb3" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Birmingham",
           country: "England",
-          postcode: "B4 6BN",
-          latitude: 52.483014,
-          longitude: -1.895521
+          postcode: "B4 6BN"
         },
-        "bc3aa15f-0da1-4298-b12c-0c6728793e32" => {
+        "6f9422cb-1c62-56ec-839e-3a5f3e32b748" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "BPP University - London Waterloo",
           country: "England",
-          postcode: "SE1 9NN",
-          latitude: 51.505838,
-          longitude: -0.110641
+          postcode: "SE1 9NN"
         },
-        "b43f190f-b8d1-4aae-8b67-07634f7e334c" => {
+        "b6c6d5ac-647e-5606-9845-8861eb78b43d" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Bristol",
           country: "England",
-          postcode: "BS1 4QY",
-          latitude: 51.449584,
-          longitude: -2.595051
+          postcode: "BS1 4QY"
         },
-        "b7017b37-823b-4b1a-b090-ce9abe62fade" => {
+        "461e4741-93c0-5a11-bcae-aa8144854e9a" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Cambridge",
           country: "England",
-          postcode: "CB2 3NA",
-          latitude: 52.204785,
-          longitude: 0.120979
+          postcode: "CB2 3NA"
         },
-        "e581fa3e-e0c8-4969-9b50-1eb24111c098" => {
+        "615d2066-91fe-5a1f-a729-ce0b7ac0336c" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Fitzwilliam House",
           country: "England",
-          postcode: "EC3A 8BF",
-          latitude: 51.514484,
-          longitude: -0.080463
+          postcode: "EC3A 8BF"
         },
-        "a8f16f5c-07ce-4b52-8a2b-223307258d06" => {
+        "95e04ed9-23f6-5682-82f5-72b4c4f6de29" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Kettering General Hospital NHS Foundation Trust",
           country: "England",
-          postcode: "NN16 8UZ",
-          latitude: 52.402783,
-          longitude: -0.741293
+          postcode: "NN16 8UZ"
         },
-        "462b20e4-3b02-4a46-be34-af6db5b38018" => {
+        "91f0f0f0-7853-501c-9b7e-d01cc6472452" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Leeds",
           country: "England",
-          postcode: "LS1 4HR",
-          latitude: 53.795568,
-          longitude: -1.552064
+          postcode: "LS1 4HR"
         },
-        "f6d61455-2942-4e30-8be9-3afbf2341853" => {
+        "b07e2036-15f3-5fa6-8a3f-24aa5945c508" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "London King's Cross",
           country: "England",
-          postcode: "N1 9JY",
-          latitude: 51.531164,
-          longitude: -0.120207
+          postcode: "N1 9JY"
         },
-        "eec07358-a1bb-42fe-bb0a-a8ceb285f8fd" => {
+        "4fb79ec7-0753-588e-a40c-7cb5858603ee" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "London Portsoken Street",
           country: "England",
-          postcode: "E1 8BT",
-          latitude: 51.511646,
-          longitude: -0.073521
+          postcode: "E1 8BT"
         },
-        "f4fda27d-4875-4264-b1d8-e3556cabb0e8" => {
+        "bf94b4a5-84c4-5cf6-af6d-553e67175b69" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Main campus",
           country: "England",
-          postcode: "EC2M 5PD",
-          latitude: 51.516956,
-          longitude: -0.085865
+          postcode: "EC2M 5PD"
         },
-        "dd69cb06-50f6-4694-acd8-781e269cb350" => {
+        "bedb5bf4-8d5b-5c24-88cd-dbb2652b549d" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Manchester St James",
           country: "England",
-          postcode: "M1 6FQ",
-          latitude: 53.475586,
-          longitude: -2.241402
+          postcode: "M1 6FQ"
         },
-        "b9168d50-a76e-4c92-9dba-5c1e0e734ebb" => {
+        "468dd5f6-ca10-509a-ab09-2101358ddeac" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Red Lion Street",
           country: "England",
-          postcode: "WC1R 4NY",
-          latitude: 51.518652,
-          longitude: -0.117317
+          postcode: "WC1R 4NY"
         },
-        "45ba0d8b-10f0-48cf-bac5-f625b90c132d" => {
+        "1a11189c-ea83-577e-b26f-a447d19b9f1f" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Rotherham Doncaster and South Humber NHS Foundatio",
           country: "England",
-          postcode: "DN4 8QN",
-          latitude: 53.494823,
-          longitude: -1.145978
+          postcode: "DN4 8QN"
         },
-        "c7e08e03-458d-4bdf-88d5-5b0c46e52d9f" => {
+        "09102591-00fd-5913-b74b-83cbcc99e2a2" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Shepherd's Bush",
           country: "England",
-          postcode: "W12 8AW",
-          latitude: 51.505317,
-          longitude: -0.22284
+          postcode: "W12 8AW"
         },
-        "39960289-865a-4ddf-9591-e91a745ccedf" => {
+        "3014d3ea-b424-5d83-9f8c-b69edc0b3767" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Southampton",
           country: "England",
-          postcode: "SO14 0TB",
-          latitude: 50.910466,
-          longitude: -1.400648
+          postcode: "SO14 0TB"
         },
-        "b465b87c-aa21-47fb-9b0b-edbb627e17fd" => {
+        "80adc964-13ae-5306-988c-f785dde2de28" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "University Hospital Southampton NHS Foundation Tru",
           country: "England",
-          postcode: "SO16 6YD",
-          latitude: 50.933019,
-          longitude: -1.435104
+          postcode: "SO16 6YD"
         },
-        "9ed8ea8c-25d6-44ca-ae6a-3c0825ba4453" => {
+        "f58832a4-7036-54eb-8621-c2311a5f5823" => {
           provider_name: "BPP University",
           ukprn: "10031982",
           instid: "0214",
           name: "Waterloo",
           country: "England",
-          postcode: "SE1 9NN",
-          latitude: 51.505838,
-          longitude: -0.110641
+          postcode: "SE1 9NN"
         },
-        "287d4a11-eee9-4ab0-9205-d7533ac20123" => {
+        "9d053773-9b5b-5e3d-8d4c-aabb8af9ce75" => {
           provider_name: "Bracknell and Wokingham College",
           ukprn: "10000833",
           instid: "1192",
           name: "Bracknell and Wokingham College",
           country: "England",
-          postcode: "RG12 1DJ",
-          latitude: 51.416324,
-          longitude: -0.744655
+          postcode: "RG12 1DJ"
         },
-        "6f13c55d-a663-4d61-a284-80afb17ade11" => {
+        "cc951e2d-8c46-52d7-821a-4b2ad42d02ab" => {
           provider_name: "Bradford College",
           ukprn: "10000840",
           instid: "1161",
           name: "Main campus",
           country: "England",
-          postcode: "BD7 1AY",
-          latitude: 53.791677,
-          longitude: -1.768111
+          postcode: "BD7 1AY"
         },
-        "75d9cb3b-83b7-43d8-b8b3-7c9fd3707332" => {
+        "049ae4e6-6573-5fb2-b099-0f6ef4ca54cf" => {
           provider_name: "Bridgwater and Taunton College",
           ukprn: "10000878",
           instid: "1158",
           name: "Main campus",
           country: "England",
-          postcode: "TA1 5AX",
-          latitude: 51.016061,
-          longitude: -3.118879
+          postcode: "TA1 5AX"
         },
-        "c985eb93-f539-48ce-92c2-90f6db9b5129" => {
+        "baf2ccbb-19a7-5f86-827c-b9da6e9435b6" => {
           provider_name: "Brighton and Sussex Medical School",
           ukprn: "99999999",
           instid: "7006",
           name: "Main campus",
           country: "England",
-          postcode: "BN1 9PX",
-          latitude: 50.864249,
-          longitude: -0.085693
+          postcode: "BN1 9PX"
         },
-        "d6c178c5-9e9a-4226-a004-ad207cbc44da" => {
+        "bcb01bdc-efc8-5bf2-b5f7-fd66994f731c" => {
           provider_name: "Bristol Baptist College",
           ukprn: "10000894",
           instid: "0287",
           name: "Entire HEP",
           country: "England",
-          postcode: "BS8 3NJ",
-          latitude: 51.460494,
-          longitude: -2.625879
+          postcode: "BS8 3NJ"
         },
-        "a425ca42-da52-4b8d-b809-f23f44cac2d5" => {
+        "2a47e1e7-ad21-5222-9a5a-58f5fb4dd526" => {
           provider_name: "Brit College",
           ukprn: "10028216",
           instid: "0280",
           name: "Entire HEP",
           country: "England",
-          postcode: "E14 7HS",
-          latitude: 51.512369,
-          longitude: -0.035142
+          postcode: "E14 7HS"
         },
-        "07d8016d-386d-4f86-a352-3dd8a9803b4d" => {
+        "93586c92-f164-5c79-871d-9a3cff5a6d7f" => {
           provider_name: "British Academy of Jewellery Limited",
           ukprn: "10038772",
           instid: "0427",
           name: "Leicester",
           country: "England",
-          postcode: "LE1 1WB",
-          latitude: 52.636431,
-          longitude: -1.127621
+          postcode: "LE1 1WB"
         },
-        "7660a800-03d7-454a-b94f-fef648c08cfd" => {
+        "60988815-dcfd-52fe-ba6a-0132f0ebf8c0" => {
           provider_name: "British Academy of Jewellery Limited",
           ukprn: "10038772",
           instid: "0427",
           name: "Main campus",
           country: "England",
-          postcode: "EC1A 2AT",
-          latitude: 51.516738,
-          longitude: -0.104006
+          postcode: "EC1A 2AT"
         },
-        "ccb63833-7155-47b6-97ce-ae4a404e2da5" => {
+        "4f7d95a5-48db-54a9-b6c9-5e30d715d59e" => {
           provider_name: "Brockenhurst College",
           ukprn: "10000944",
           instid: "1157",
           name: "Main campus",
           country: "England",
-          postcode: "SO42 7ZE",
-          latitude: 50.821457,
-          longitude: -1.569931
+          postcode: "SO42 7ZE"
         },
-        "af8235bc-01a7-4609-8b0c-cc9241446ec6" => {
+        "0cb47d60-7191-5680-adb2-be77e899836b" => {
           provider_name: "Bromley College of Further and Higher Education",
           ukprn: "10000948",
           instid: "1155",
           name: "Main campus",
           country: "England",
-          postcode: "BR2 8HE",
-          latitude: 51.38666,
-          longitude: 0.034796
+          postcode: "BR2 8HE"
         },
-        "51481094-fbd0-44be-b716-d9a9b3f40bc0" => {
+        "e5624b13-d54b-5d38-9775-968e0696daf6" => {
           provider_name: "Brooklands College",
           ukprn: "10000950",
           instid: "1156",
           name: "Main campus",
           country: "England",
-          postcode: "KT13 8TT",
-          latitude: 51.362672,
-          longitude: -0.465522
+          postcode: "KT13 8TT"
         },
-        "1bbce75c-4f54-4ed1-98c8-014a678ea6e4" => {
+        "f1210144-b761-5d63-9e49-a44893962b64" => {
           provider_name: "Brunel University London",
           ukprn: "10000961",
           instid: "0113",
           name: "Entire HEP",
           country: "England",
-          postcode: "UB8 3PH",
-          latitude: 51.532838,
-          longitude: -0.472856
+          postcode: "UB8 3PH"
         },
-        "57a8f917-472f-47de-9975-09adfc02616a" => {
+        "6725f919-3fcc-5697-b409-aad51b5e1b47" => {
           provider_name: "Buckinghamshire New University",
           ukprn: "10000975",
           instid: "0009",
           name: "Main campus",
           country: "England",
-          postcode: "HP11 2JZ",
-          latitude: 51.627509,
-          longitude: -0.752036
+          postcode: "HP11 2JZ"
         },
-        "f5e187b7-5015-4633-87c7-4cdeef15e0a2" => {
+        "097e31b6-599b-5761-b5d8-29f82b99e584" => {
           provider_name: "Buckinghamshire New University",
           ukprn: "10000975",
           instid: "0009",
           name: "Uxbridge campus",
           country: "England",
-          postcode: "UB8 1NA",
-          latitude: 51.549977,
-          longitude: -0.483229
+          postcode: "UB8 1NA"
         },
-        "6b71c966-6832-4d90-b2ea-6bf327758188" => {
+        "937b2cfe-9ed5-53de-a2a7-ee2518ca4607" => {
           provider_name: "Burnley College",
           ukprn: "10001000",
           instid: "1152",
           name: "Main campus",
           country: "England",
-          postcode: "BB12 0AN",
-          latitude: 53.793909,
-          longitude: -2.24807
+          postcode: "BB12 0AN"
         },
-        "7a3b51c8-4177-4008-9160-4a2effe35191" => {
+        "26fc1bf6-55e7-5aed-ade9-986704f2d262" => {
           provider_name: "Burton and South Derbyshire College",
           ukprn: "10001004",
           instid: "1153",
           name: "Main campus",
           country: "England",
-          postcode: "DE14 3RL",
-          latitude: 52.799693,
-          longitude: -1.631174
+          postcode: "DE14 3RL"
         },
-        "1274cf76-6c0e-4dca-af73-93ad28d374d7" => {
+        "95cafa62-7427-50d7-9a77-9a74d6b3de41" => {
           provider_name: "Bury College",
           ukprn: "10001005",
           instid: "1151",
           name: "Main campus",
           country: "England",
-          postcode: "BL9 0BG",
-          latitude: 53.587602,
-          longitude: -2.296091
+          postcode: "BL9 0BG"
         },
-        "e32386e8-d88a-41cc-a3c9-f5878409fbbc" => {
+        "5dbc989f-0834-5827-853a-6dfe47c97b02" => {
           provider_name: "Calderdale College",
           ukprn: "10001093",
           instid: "1150",
           name: "Main campus",
           country: "England",
-          postcode: "HX1 3UZ",
-          latitude: 53.719527,
-          longitude: -1.874416
+          postcode: "HX1 3UZ"
         },
-        "bfaca731-ee2b-4855-b476-e0684b5f1ec2" => {
+        "6d1e7c0c-0134-533c-bf4a-77ac848d7994" => {
           provider_name: "Cambridge Arts and Sciences Limited",
           ukprn: "10010308",
           instid: "0332",
           name: "Entire HEP",
           country: "England",
-          postcode: "CB5 8AD",
-          latitude: 52.208783,
-          longitude: 0.1189
+          postcode: "CB5 8AD"
         },
-        "be5cb66d-1f46-41d7-b3dd-968da433b931" => {
+        "1ecef4dd-b996-5daa-a355-da9762feb041" => {
           provider_name: "Cambridge Regional College",
           ukprn: "10001116",
           instid: "1149",
           name: "Main campus",
           country: "England",
-          postcode: "CB4 2QT",
-          latitude: 52.235278,
-          longitude: 0.13434
+          postcode: "CB4 2QT"
         },
-        "ab7907ec-450b-4494-9433-25287650a2d2" => {
+        "f224da85-fe58-599a-8fc9-a7a144b070f8" => {
           provider_name: "Canterbury Christ Church University",
           ukprn: "10001143",
           instid: "0012",
           name: "Broadstairs campus",
           country: "England",
-          postcode: "CT10 2WA",
-          latitude: 51.359903,
-          longitude: 1.40698
+          postcode: "CT10 2WA"
         },
-        "75005339-35bb-4371-afad-7549d6e2220b" => {
+        "81ea42f3-a5d8-593f-b121-7654b97ec986" => {
           provider_name: "Canterbury Christ Church University",
           ukprn: "10001143",
           instid: "0012",
           name: "Folkestone campus",
           country: "England",
-          postcode: "CT20 1JG",
-          latitude: 51.081539,
-          longitude: 1.1823
+          postcode: "CT20 1JG"
         },
-        "f0514df2-e285-4e08-883c-7c3a2027ce6a" => {
+        "3574a6d6-dc15-5901-898c-d7c0cb3100fa" => {
           provider_name: "Canterbury Christ Church University",
           ukprn: "10001143",
           instid: "0012",
           name: "Main campus",
           country: "England",
-          postcode: "CT1 1QU",
-          latitude: 51.279643,
-          longitude: 1.089364
+          postcode: "CT1 1QU"
         },
-        "67cd7f51-15b3-46aa-93f6-61376cb1a7d0" => {
+        "a973fbf9-4a21-5f1d-9128-a4bc8f7bb51a" => {
           provider_name: "Canterbury Christ Church University",
           ukprn: "10001143",
           instid: "0012",
           name: "Medway campus",
           country: "England",
-          postcode: "ME4 4AW",
-          latitude: 51.397199,
-          longitude: 0.540105
+          postcode: "ME4 4AW"
         },
-        "66da637a-4de7-4637-b3ed-de0ef78b0cf4" => {
+        "e190182d-d458-5a49-b03d-c139e42fdf02" => {
           provider_name: "Canterbury Christ Church University",
           ukprn: "10001143",
           instid: "0012",
           name: "Salomons campus",
           country: "England",
-          postcode: "TN3 0TG",
-          latitude: 51.152357,
-          longitude: 0.241168
+          postcode: "TN3 0TG"
         },
-        "18408cce-9f4c-4685-91f9-fdfdda8741cb" => {
+        "7e2274a7-47b1-5bb8-bc40-aae2083f1e2f" => {
           provider_name: "Canterbury College",
           ukprn: "10001144",
           instid: "1148",
           name: "Main campus",
           country: "England",
-          postcode: "CT1 3AJ",
-          latitude: 51.276098,
-          longitude: 1.090619
+          postcode: "CT1 3AJ"
         },
-        "bb590933-36c1-4698-b844-f898de1423a2" => {
+        "e2bcf0f0-537b-570f-8f71-cc01137ea9b7" => {
           provider_name: "Cardiff and Vale College",
           ukprn: "10034450",
           instid: "1199",
           name: "Main campus",
           country: "Wales",
-          postcode: "CF10 5FE",
-          latitude: 51.469695,
-          longitude: -3.172884
+          postcode: "CF10 5FE"
         },
-        "a24b91e0-f2d0-441c-ac3c-65fb80d76da7" => {
+        "abc35416-a5c5-5280-9a16-8196d0e3badc" => {
           provider_name: "Cardiff Metropolitan University",
           ukprn: "10007854",
           instid: "0089",
           name: "Entire HEP",
           country: "Wales",
-          postcode: "CF5 2YB",
-          latitude: 51.495831,
-          longitude: -3.21211
+          postcode: "CF5 2YB"
         },
-        "a2424186-5945-448d-9324-3dc7d8d48164" => {
+        "0cbc64b6-8ac7-59cb-b99a-2cf2445ae985" => {
           provider_name: "Cardiff University",
           ukprn: "10007814",
           instid: "0179",
           name: "Main campus",
           country: "Wales",
-          postcode: "CF10 3AT",
-          latitude: 51.489014,
-          longitude: -3.179717
+          postcode: "CF10 3AT"
         },
-        "0ba8cf45-de9a-4309-aa32-19fe42d30c90" => {
+        "23b0a989-465e-5fbc-b498-ef2450d22f1f" => {
           provider_name: "Cardiff University",
           ukprn: "10007814",
           instid: "0179",
           name: "National Software Academy",
           country: "Wales",
-          postcode: "NP20 4AX",
-          latitude: 51.589588,
-          longitude: -2.998604
+          postcode: "NP20 4AX"
         },
-        "2ba1cbf5-a15b-4f4c-9abc-03d64428304b" => {
+        "68c53fa0-3f28-5157-9b33-a07b731532b5" => {
           provider_name: "Cardinal Newman Catholic Sixth Form College",
           ukprn: "10001165",
           instid: "1147",
           name: "Main campus",
           country: "England",
-          postcode: "PR1 4HD",
-          latitude: 53.757096,
-          longitude: -2.688869
+          postcode: "PR1 4HD"
         },
-        "6baf13ee-5b3e-4784-af43-c5273137e9fe" => {
+        "b7ca4b05-d44f-58da-b059-03809b646139" => {
           provider_name: "Caspian School of Academics",
           ukprn: "10086359",
           instid: "0454",
           name: "Main campus",
           country: "England",
-          postcode: "IG1 1BA",
-          latitude: 51.557886,
-          longitude: 0.07167
+          postcode: "IG1 1BA"
         },
-        "31ee96b6-3789-4167-a6a7-e9c285a4b522" => {
+        "e6f0b5a3-ca24-5695-8728-e54e714ed0df" => {
           provider_name: "CEG UFP Limited",
           ukprn: "10057213",
           instid: "0431",
           name: "Aston",
           country: "England",
-          postcode: "B4 7ET",
-          latitude: 52.486637,
-          longitude: -1.890952
+          postcode: "B4 7ET"
         },
-        "86832e88-d43c-4d0d-811c-10d1fad292b9" => {
+        "78d31c92-91af-52d3-ab33-851cca4f981a" => {
           provider_name: "CEG UFP Limited",
           ukprn: "10057213",
           instid: "0431",
           name: "Birkbeck",
           country: "England",
-          postcode: "WC1E 7HX",
-          latitude: 51.521891,
-          longitude: -0.130359
+          postcode: "WC1E 7HX"
         },
-        "971e4eb9-05a3-44d2-9f85-b5c3b2fb427f" => {
+        "480ddefe-669c-5b8f-a13a-25b803a95b48" => {
           provider_name: "CEG UFP Limited",
           ukprn: "10057213",
           instid: "0431",
           name: "Coventry",
           country: "England",
-          postcode: "CV1 5FB",
-          latitude: 52.194361,
-          longitude: 0.135318
+          postcode: "CV1 5FB"
         },
-        "3e843e43-f3a3-46c3-9576-a02861067ab6" => {
+        "23ff7c47-fee9-5a92-980e-e9487d5382e7" => {
           provider_name: "CEG UFP Limited",
           ukprn: "10057213",
           instid: "0431",
           name: "Hull",
           country: "England",
-          postcode: "HU6 7RX",
-          latitude: 53.771778,
-          longitude: -0.366384
+          postcode: "HU6 7RX"
         },
-        "19d98132-06b1-429b-9ce6-66b7285634f6" => {
+        "3cbc5ccd-a0eb-5a3e-894a-dbc7cca1ee9d" => {
           provider_name: "CEG UFP Limited",
           ukprn: "10057213",
           instid: "0431",
           name: "LSBU",
           country: "England",
-          postcode: "SE1 6FE",
-          latitude: 51.49855,
-          longitude: -0.104257
+          postcode: "SE1 6FE"
         },
-        "b7a5da90-a375-4ed5-98e7-115d9b6a62af" => {
+        "d31e1e6f-7646-550d-bdea-d8f0414d0b94" => {
           provider_name: "CEG UFP Limited",
           ukprn: "10057213",
           instid: "0431",
           name: "Reading",
           country: "England",
-          postcode: "RG1 5AQ",
-          latitude: 51.450965,
-          longitude: -0.962051
+          postcode: "RG1 5AQ"
         },
-        "f7a0b0b0-0d8c-402a-b882-3f5fce3a2008" => {
+        "3e8fa8ab-6f07-5805-b68b-9c95a1eb9008" => {
           provider_name: "CEG UFP Limited",
           ukprn: "10057213",
           instid: "0431",
           name: "Southampton",
           country: "England",
-          postcode: "SO15 2AT",
-          latitude: 50.911534,
-          longitude: -1.402014
+          postcode: "SO15 2AT"
         },
-        "b0eafe7e-deef-494a-a1af-b2cf2ff834f0" => {
+        "b6ced920-d23d-5bda-8cdb-6f5094b5ccf6" => {
           provider_name: "CEG UFP Limited",
           ukprn: "10057213",
           instid: "0431",
           name: "Sunderland",
           country: "England",
-          postcode: "SR6 0DD",
-          latitude: 54.912338,
-          longitude: -1.373431
+          postcode: "SR6 0DD"
         },
-        "72296194-e44b-49ca-8dc8-6218ca7ee9c1" => {
+        "05168394-2363-50b5-ad5a-cbbf7fafa491" => {
           provider_name: "CEG UFP Limited",
           ukprn: "10057213",
           instid: "0431",
           name: "UK North",
           country: "England",
-          postcode: "PR1 2XQ",
-          latitude: 53.764063,
-          longitude: -2.70993
+          postcode: "PR1 2XQ"
         },
-        "7b92d5a0-a3d4-4bd9-841e-9268cc3178e8" => {
+        "cacd2052-468c-54af-a00a-9d17ef680c15" => {
           provider_name: "Central Bedfordshire College",
           ukprn: "10002061",
           instid: "1146",
           name: "Main campus",
           country: "England",
-          postcode: "LU5 4HG",
-          latitude: 51.890763,
-          longitude: -0.518838
+          postcode: "LU5 4HG"
         },
-        "96cddcb0-c189-4840-ac3f-5652973e7c77" => {
+        "1b641380-cd6b-5efd-8abd-365a29bca081" => {
           provider_name: "Central Film School",
           ukprn: "10024024",
           instid: "0409",
           name: "Central Film School",
           country: "England",
-          postcode: "SW9 9PH",
-          latitude: 51.465704,
-          longitude: -0.125789
+          postcode: "SW9 9PH"
         },
-        "ab0e1de7-4644-400e-babd-9ea441f9c3bd" => {
+        "e4329c5a-2e36-51cb-9715-9a5f66be8c74" => {
           provider_name: "Central School of Ballet",
           ukprn: "10001264",
           instid: "0446",
           name: "Main campus",
           country: "England",
-          postcode: "SE1 8DJ",
-          latitude: 51.506389,
-          longitude: -0.106788
+          postcode: "SE1 8DJ"
         },
-        "8136b78c-c18b-4e88-94d5-fab0cad07e4d" => {
+        "fa373220-1f27-5ed2-a978-41eb1b45844d" => {
           provider_name: "Centre for Alternative Technology",
           ukprn: "10021550",
           instid: "1196",
@@ -1716,187 +1374,151 @@ module DfE
           country: "Wales",
           postcode: "SY20 9AZ"
         },
-        "40899d45-9828-4add-8b5e-c59c9de72336" => {
+        "6433774e-15bf-5337-b45e-1acd45edc325" => {
           provider_name: "Cheshire College South and West",
           ukprn: "10005972",
           instid: "1142",
           name: "Main campus",
           country: "England",
-          postcode: "CW2 8AB",
-          latitude: 53.089011,
-          longitude: -2.454971
+          postcode: "CW2 8AB"
         },
-        "1800ebb0-4acb-4085-bdda-c7383e7e7cc9" => {
+        "ec572bb6-0b14-5c84-9dce-39d61e76d069" => {
           provider_name: "Chesterfield College",
           ukprn: "10001378",
           instid: "1144",
           name: "Main campus",
           country: "England",
-          postcode: "S41 7NG",
-          latitude: 53.240256,
-          longitude: -1.425048
+          postcode: "S41 7NG"
         },
-        "abaa1b24-6351-45c5-9b00-0e4809c0f774" => {
+        "6a874d62-8582-534b-b814-69da5af6fa48" => {
           provider_name: "Chichester College Group",
           ukprn: "10007817",
           instid: "1143",
           name: "Main campus",
           country: "England",
-          postcode: "PO19 1SB",
-          latitude: 50.83492,
-          longitude: -0.787766
+          postcode: "PO19 1SB"
         },
-        "a219e5e8-11c6-4239-8cba-6735d8e937e3" => {
+        "115c4d92-3946-5878-a756-2c483a8a1c9b" => {
           provider_name: "Chicken Shed Theatre Company",
           ukprn: "10001386",
           instid: "0284",
           name: "Entire HEP",
           country: "England",
-          postcode: "N14 4PE",
-          latitude: 51.644436,
-          longitude: -0.145242
+          postcode: "N14 4PE"
         },
-        "12f683bd-29a8-41f2-a35b-349c9a5c5483" => {
+        "b89b62fd-9230-596e-b2e2-3aba3069ba6a" => {
           provider_name: "Christ the Redeemer College",
           ukprn: "10026921",
           instid: "0342",
           name: "Entire HEP",
           country: "England",
-          postcode: "HA2 7LX",
-          latitude: 51.577239,
-          longitude: -0.370208
+          postcode: "HA2 7LX"
         },
-        "0a4fba2c-7cc0-463e-bd5a-cdb6e2a30a2c" => {
+        "6f477222-e186-5ebb-a0b8-e2bbb01041cf" => {
           provider_name: "Christie's Education Limited",
           ukprn: "10001419",
           instid: "0291",
           name: "Entire HEP",
           country: "England",
-          postcode: "W1B 1NB",
-          latitude: 51.520167,
-          longitude: -0.144559
+          postcode: "W1B 1NB"
         },
-        "7a77550e-9b3f-40b9-9fd2-67880cd9497a" => {
+        "79bb7ff2-a0ea-5c11-83eb-42e55a9f6209" => {
           provider_name: "Cirencester College",
           ukprn: "10001446",
           instid: "1141",
           name: "Main campus",
           country: "England",
-          postcode: "GL7 1XA",
-          latitude: 51.71269,
-          longitude: -1.986058
+          postcode: "GL7 1XA"
         },
-        "3162c11e-ed42-4afd-b861-18a0aaf3642f" => {
+        "a73be3a7-96d4-5d87-b98b-07abb8d95488" => {
           provider_name: "City and Guilds of London Art School",
           ukprn: "10039082",
           instid: "0292",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE11 4DJ",
-          latitude: 51.486707,
-          longitude: -0.10805
+          postcode: "SE11 4DJ"
         },
-        "dfff2a1d-a825-40f3-8f34-4a18d5b59639" => {
+        "429ad2a1-b484-5541-acc7-b02770ec25f3" => {
           provider_name: "City College Norwich",
           ukprn: "10004772",
           instid: "1072",
           name: "Main campus",
           country: "England",
-          postcode: "NR2 2LJ",
-          latitude: 52.618144,
-          longitude: 1.286325
+          postcode: "NR2 2LJ"
         },
-        "c23baadb-39f8-4d67-9b49-ea53befaf0e6" => {
+        "cc72493f-7199-58c4-86eb-b6443bd0c617" => {
           provider_name: "City College Plymouth",
           ukprn: "10005128",
           instid: "1063",
           name: "Main campus",
           country: "England",
-          postcode: "PL1 5QG",
-          latitude: 50.373877,
-          longitude: -4.167558
+          postcode: "PL1 5QG"
         },
-        "7881557e-baec-44f9-a609-1e8ca9b9e308" => {
+        "42df20a6-49ce-551c-8ad2-a2fd11326b7f" => {
           provider_name: "City of Bristol College",
           ukprn: "10001467",
           instid: "1159",
           name: "Main campus",
           country: "England",
-          postcode: "BS1 5UA",
-          latitude: 51.450934,
-          longitude: -2.60573
+          postcode: "BS1 5UA"
         },
-        "162417c2-ac1d-4b21-b2f4-5d8dfef9bfe8" => {
+        "d32d7358-f0dd-5288-a0f9-89d922f02121" => {
           provider_name: "City of London College",
           ukprn: "10018361",
           instid: "0234",
           name: "Main campus",
           country: "England",
-          postcode: "E1 7PL",
-          latitude: 51.515863,
-          longitude: -0.069697
+          postcode: "E1 7PL"
         },
-        "b8d59ff8-2b3f-4d5c-a6fd-1dfd09ed1b2a" => {
+        "bfeeee58-131f-5c37-8494-9b0709dc327a" => {
           provider_name: "City of Portsmouth College",
           ukprn: "10007945",
           instid: "1103",
           name: "Main campus",
           country: "England",
-          postcode: "PO6 2SA",
-          latitude: 50.837367,
-          longitude: -1.062222
+          postcode: "PO6 2SA"
         },
-        "876faef8-ecfb-4c49-beaf-25f4c5514bf0" => {
+        "a085e71f-ccef-5d73-a0a7-fd3434b09752" => {
           provider_name: "City of Sunderland College",
           ukprn: "10001475",
           instid: "1029",
           name: "Main campus",
           country: "England",
-          postcode: "SR3 4AH",
-          latitude: 54.892128,
-          longitude: -1.409322
+          postcode: "SR3 4AH"
         },
-        "c3a6f19b-31d6-47bb-91ca-70cdf0fc75cf" => {
+        "15a38abd-288c-57a4-834f-4deb6e06fb74" => {
           provider_name: "City of Wolverhampton College",
           ukprn: "10007578",
           instid: "1005",
           name: "Main campus",
           country: "England",
-          postcode: "WV6 0DU",
-          latitude: 52.589175,
-          longitude: -2.156804
+          postcode: "WV6 0DU"
         },
-        "1ef5c302-42ea-4b46-8598-157305623d82" => {
+        "1b0df6a6-d39c-52af-a1d4-b0b0531e02d0" => {
           provider_name: "City St George's, University of London",
           ukprn: "10001478",
           instid: "0115",
           name: "Entire HEP",
           country: "England",
-          postcode: "EC1V 0HB",
-          latitude: 51.527903,
-          longitude: -0.103099
+          postcode: "EC1V 0HB"
         },
-        "f94ac7f1-bfa9-4d61-9eb9-310069dfe7af" => {
+        "63af334e-a953-5318-8b88-3f14408ed41b" => {
           provider_name: "Cliff College",
           ukprn: "10007912",
           instid: "0293",
           name: "Entire HEP",
           country: "England",
-          postcode: "S32 3XG",
-          latitude: 53.262636,
-          longitude: -1.62853
+          postcode: "S32 3XG"
         },
-        "fbc14953-80d1-4157-9f26-33cf99175ad3" => {
+        "0e2ff8ea-3e26-5ae9-877a-cc3f62f724e0" => {
           provider_name: "Colchester Institute",
           ukprn: "10001535",
           instid: "1140",
           name: "Main campus",
           country: "England",
-          postcode: "CO3 3LL",
-          latitude: 51.893517,
-          longitude: 0.888574
+          postcode: "CO3 3LL"
         },
-        "ee9c7810-9e59-4ab2-a9c3-af66a4333a97" => {
+        "541ae611-00a1-5f4b-8075-45788c125f57" => {
           provider_name: "Coleg Cambria",
           ukprn: "10041295",
           instid: "1201",
@@ -1904,7 +1526,7 @@ module DfE
           country: "Wales",
           postcode: "LL12 7AB"
         },
-        "7c684466-1d0c-4c7c-b4e8-b1475d782975" => {
+        "82ad3d1f-01bc-59c5-bada-392c88b8b9c7" => {
           provider_name: "Coleg Gwent",
           ukprn: "10008912",
           instid: "1200",
@@ -1912,1553 +1534,1235 @@ module DfE
           country: "Wales",
           postcode: "NP15 1XJ"
         },
-        "f605bd47-82a8-4478-b02f-cda7cd5f2c1d" => {
+        "28e33dab-1ff4-5337-ac50-4d618fcfe458" => {
           provider_name: "Collective Acting Studio",
           ukprn: "10091065",
           instid: "0462",
           name: "Main campus",
           country: "England",
-          postcode: "N7 7EE",
-          latitude: 51.561335,
-          longitude: -0.115959
+          postcode: "N7 7EE"
         },
-        "bc2dbfe0-ccca-43ec-a5ee-1cd950b1b75e" => {
+        "394f74e1-4ec5-5a58-a399-a524af08bd2f" => {
           provider_name: "College of Legal Practice Limited",
           ukprn: "10082828",
           instid: "0436",
           name: "Entire HEP",
           country: "England",
-          postcode: "LS1 5AB",
-          latitude: 53.797194,
-          longitude: -1.54687
+          postcode: "LS1 5AB"
         },
-        "fba84557-8e75-48ea-ab66-020b7c99018d" => {
+        "62e53918-604e-5252-93ef-0412174a3f26" => {
           provider_name: "College of Medicine and Dentistry",
           ukprn: "10083397",
           instid: "0460",
           name: "Main campus",
           country: "England",
-          postcode: "B4 6BN",
-          latitude: 52.483167,
-          longitude: -1.895476
+          postcode: "B4 6BN"
         },
-        "c6293a95-ac26-4408-84a5-126e51f6676e" => {
+        "78eb2cd7-ccc2-5422-8580-8632b45c001b" => {
           provider_name: "Commonwealth College of Excellence",
           ukprn: "10020038",
           instid: "0451",
           name: "Main campus",
           country: "England",
-          postcode: "EC1V 2NX",
-          latitude: 51.527304,
-          longitude: -0.088894
+          postcode: "EC1V 2NX"
         },
-        "a065a82f-e09b-47d7-9bb2-c7bbaced4358" => {
+        "05e7e251-a27e-5e01-99b6-07d8623605d3" => {
           provider_name: "Conservatoire for Dance and Drama",
           ukprn: "10001653",
           instid: "0199",
           name: "Bristol Old Vic Theatre School",
           country: "England",
-          postcode: "BS8 2XF",
-          latitude: 51.465925,
-          longitude: -2.619173
+          postcode: "BS8 2XF"
         },
-        "d358f179-6823-4152-999e-ce96f4a83c05" => {
+        "f7b456f4-0642-50cd-ac45-a55383c3fe35" => {
           provider_name: "Conservatoire for Dance and Drama",
           ukprn: "10001653",
           instid: "0199",
           name: "Central School of Ballet",
           country: "England",
-          postcode: "SE1 8DJ",
-          latitude: 51.506389,
-          longitude: -0.106788
+          postcode: "SE1 8DJ"
         },
-        "c17ca3b6-ba26-465c-ab42-df1e85d16b04" => {
+        "928993c5-36f4-5443-8467-63c31d0094c7" => {
           provider_name: "Conservatoire for Dance and Drama",
           ukprn: "10001653",
           instid: "0199",
           name: "Conservatoire Central Office",
           country: "England",
-          postcode: "W1F 8FL",
-          latitude: 51.51508,
-          longitude: -0.134097
+          postcode: "W1F 8FL"
         },
-        "78594234-65df-41ee-888b-92a6fb82a960" => {
+        "ba261e78-be2d-5ed2-b7ba-c49ea5c085f2" => {
           provider_name: "Conservatoire for Dance and Drama",
           ukprn: "10001653",
           instid: "0199",
           name: "LCDS",
           country: "England",
-          postcode: "WC1H 9PY",
-          latitude: 51.5273,
-          longitude: -0.128984
+          postcode: "WC1H 9PY"
         },
-        "780e3f98-d848-41d1-8a6b-4612ce6399bd" => {
+        "a670b15c-1d5b-52cc-afaf-d831d7f5f0b1" => {
           provider_name: "Conservatoire for Dance and Drama",
           ukprn: "10001653",
           instid: "0199",
           name: "London Academy of Music and Dramatic Art",
           country: "England",
-          postcode: "W14 9DA",
-          latitude: 51.490551,
-          longitude: -0.21395
+          postcode: "W14 9DA"
         },
-        "a30e21b1-ed7e-4149-94c7-387fcfa87b06" => {
+        "3c7d0fd1-82d2-5b6d-8411-c28881c777f5" => {
           provider_name: "Conservatoire for Dance and Drama",
           ukprn: "10001653",
           instid: "0199",
           name: "London Contemporary Dance School",
           country: "England",
-          postcode: "WC1H 9AT",
-          latitude: 51.52727,
-          longitude: -0.128599
+          postcode: "WC1H 9AT"
         },
-        "53a22653-a066-43fa-87a4-b4e66e42160b" => {
+        "60e082bc-0157-59c4-84bf-4fcc880739b3" => {
           provider_name: "Conservatoire for Dance and Drama",
           ukprn: "10001653",
           instid: "0199",
           name: "National Centre for Circus Arts",
           country: "England",
-          postcode: "N1 6HD",
-          latitude: 51.527295,
-          longitude: -0.082419
+          postcode: "N1 6HD"
         },
-        "f68277ea-2ef0-45ee-94c5-17cffb3aaef6" => {
+        "34f40be9-e886-5516-881e-efe1146146c2" => {
           provider_name: "Conservatoire for Dance and Drama",
           ukprn: "10001653",
           instid: "0199",
           name: "Northern School of Contemporary Dance",
           country: "England",
-          postcode: "LS7 4BH",
-          latitude: 53.813069,
-          longitude: -1.533471
+          postcode: "LS7 4BH"
         },
-        "44e9174d-e72c-44ca-97bc-8e14d4837a4b" => {
+        "940ac68b-c25b-50b8-a85a-72c68a2e09fb" => {
           provider_name: "Conservatoire for Dance and Drama",
           ukprn: "10001653",
           instid: "0199",
           name: "Rambert School of Ballet and Contemporary Dance",
           country: "England",
-          postcode: "TW1 1QN",
-          latitude: 51.461274,
-          longitude: -0.321879
+          postcode: "TW1 1QN"
         },
-        "a94b8cf7-c7e0-483b-adcf-bc65ebb987b3" => {
+        "142fa512-1e60-59d2-84de-4a6c6a993f01" => {
           provider_name: "Conservatoire for Dance and Drama",
           ukprn: "10001653",
           instid: "0199",
           name: "Royal Academy of Dramatic Art",
           country: "England",
-          postcode: "WC1E 6ED",
-          latitude: 51.521704,
-          longitude: -0.131577
+          postcode: "WC1E 6ED"
         },
-        "a2b729bf-c828-4184-b9b8-92d445aa2ed8" => {
+        "3cd7a87c-abb6-5243-b3ee-f5ac20339b82" => {
           provider_name: "Corndel College London",
           ukprn: "10089288",
           instid: "0463",
           name: "Main campus",
           country: "England",
-          postcode: "EC1V 9AZ",
-          latitude: 51.524259,
-          longitude: -0.094644
+          postcode: "EC1V 9AZ"
         },
-        "0aa3f0a3-15eb-4abb-bb33-6cfb47941ac3" => {
+        "34397cc4-6cef-5787-9c7b-06c3e2aa5001" => {
           provider_name: "Cornwall College",
           ukprn: "10001696",
           instid: "1136",
           name: "Main campus",
           country: "England",
-          postcode: "PL25 4DJ",
-          latitude: 50.346492,
-          longitude: -4.785002
+          postcode: "PL25 4DJ"
         },
-        "63f4143b-f1d9-472a-9e7b-992561811e79" => {
+        "e8f9afbd-4e9a-50e4-a52a-dbb4411c56ae" => {
           provider_name: "Court Theatre Training Company Ltd",
           ukprn: "10034324",
           instid: "0326",
           name: "Main campus",
           country: "England",
-          postcode: "N1 6EU",
-          latitude: 51.527878,
-          longitude: -0.083404
+          postcode: "N1 6EU"
         },
-        "5beb9ce3-5cba-414d-a310-beb4df10df58" => {
+        "5fc91252-30f7-5359-806a-bd999a8d14f0" => {
           provider_name: "Court Theatre Training Company Ltd",
           ukprn: "10034324",
           instid: "0326",
           name: "Pitfield Street",
           country: "England",
-          postcode: "N1 6EU",
-          latitude: 51.527878,
-          longitude: -0.083404
+          postcode: "N1 6EU"
         },
-        "e3726016-a797-4958-95b2-0be8d732020b" => {
+        "4cbe8ca9-4d27-5980-a12c-120025b05bb2" => {
           provider_name: "Courtauld Institute of Art",
           ukprn: "10007761",
           instid: "0201",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC2R 0RN",
-          latitude: 51.510732,
-          longitude: -0.116938
+          postcode: "WC2R 0RN"
         },
-        "268f1ee1-f9a9-49e8-aacb-3d8187491e6c" => {
+        "adb1c68f-6cd5-5df5-ae00-1a5e157afe23" => {
           provider_name: "Coventry College",
           ukprn: "10003010",
           instid: "1138",
           name: "Main campus",
           country: "England",
-          postcode: "CV2 1ED",
-          latitude: 52.432257,
-          longitude: -1.468915
+          postcode: "CV2 1ED"
         },
-        "9fe9d774-d772-46e6-85e0-1f5abbbb1b86" => {
+        "70397275-f6ff-550d-b15f-21f4bdab86b7" => {
           provider_name: "Coventry University",
           ukprn: "10001726",
           instid: "0056",
           name: "Coventry University London Campus",
           country: "England",
-          postcode: "E1 7JF",
-          latitude: 51.517946,
-          longitude: -0.078805
+          postcode: "E1 7JF"
         },
-        "86a4ad2c-d862-474e-8d86-d6de8a2df29a" => {
+        "daaffc04-3f47-54f4-9c02-cce987aa424c" => {
           provider_name: "Coventry University",
           ukprn: "10001726",
           instid: "0056",
           name: "Coventry University Wroclaw",
-          country: "Poland",
-          latitude: 52.405314,
-          longitude: -1.500063
+          country: "Poland"
         },
-        "13f7d203-de18-45b0-8b99-60ab380e7f20" => {
+        "05cfcfa1-9484-552a-8732-a07de1ded7b1" => {
           provider_name: "Coventry University",
           ukprn: "10001726",
           instid: "0056",
           name: "CU London (Dagenham)",
           country: "England",
-          postcode: "RM10 7BN",
-          latitude: 51.560878,
-          longitude: 0.155589
+          postcode: "RM10 7BN"
         },
-        "aa71f29a-98c8-499d-9c78-3caa2a07325c" => {
+        "bd64f87f-3abc-5e03-a94b-2a8ef546d1f4" => {
           provider_name: "Coventry University",
           ukprn: "10001726",
           instid: "0056",
           name: "CU London (Greenwich)",
           country: "England",
-          postcode: "SE10 0ER",
-          latitude: 51.500721,
-          longitude: 0.00689
+          postcode: "SE10 0ER"
         },
-        "4748f141-56ce-4aa8-840c-4a837c7ba6d4" => {
+        "6d53bfe2-87b5-5df4-a284-99eb139c6534" => {
           provider_name: "Coventry University",
           ukprn: "10001726",
           instid: "0056",
           name: "CU Scarborough",
           country: "England",
-          postcode: "YO11 2JW",
-          latitude: 54.270706,
-          longitude: -0.413503
+          postcode: "YO11 2JW"
         },
-        "ddfb88e7-4760-484f-94d6-deb6eb596785" => {
+        "609a8569-bb81-5b96-99af-5c8bbb173061" => {
           provider_name: "Coventry University",
           ukprn: "10001726",
           instid: "0056",
           name: "Main campus",
           country: "England",
-          postcode: "CV1 5FB",
-          latitude: 52.405314,
-          longitude: -1.500063
+          postcode: "CV1 5FB"
         },
-        "15849c7a-36b3-4c9c-9fd1-bd4764cbe4eb" => {
+        "4abe09e9-11e1-56d7-a298-9f1f207a5663" => {
           provider_name: "Cranfield University",
           ukprn: "10007822",
           instid: "0002",
           name: "India",
-          country: "India",
-          latitude: -3.0,
-          longitude: -3.0
+          country: "India"
         },
-        "720691f5-3cad-4d67-a15d-cc8f57ab3dab" => {
+        "69b19c84-a9eb-542e-845f-bd1f8ab95552" => {
           provider_name: "Cranfield University",
           ukprn: "10007822",
           instid: "0002",
           name: "Main campus",
           country: "England",
-          postcode: "MK43 0AL",
-          latitude: 52.069817,
-          longitude: -0.630801
+          postcode: "MK43 0AL"
         },
-        "ed374b7b-196f-46a7-b50b-a3fed8e71ada" => {
+        "ca715226-2777-5bd4-8793-91afc8d7ec3a" => {
           provider_name: "Cranfield University",
           ukprn: "10007822",
           instid: "0002",
           name: "Milton Keynes",
           country: "England",
-          postcode: "MK9 1LT",
-          latitude: 52.038197,
-          longitude: -0.769572
+          postcode: "MK9 1LT"
         },
-        "e9f57785-7fbd-409c-b730-1b9e45341e7c" => {
+        "ed975314-8abb-5e36-9da6-8451f3ca68d2" => {
           provider_name: "Cranfield University",
           ukprn: "10007822",
           instid: "0002",
           name: "Shrivenham",
           country: "England",
-          postcode: "SN6 8LA",
-          latitude: 51.6051,
-          longitude: -1.636715
+          postcode: "SN6 8LA"
         },
-        "b67357d3-39aa-4e6a-a04c-0bccf2521d94" => {
-          provider_name: "Cranfield University",
-          ukprn: "10007822",
-          instid: "0002",
-          name: "Shrivenham",
-          country: "England",
-          postcode: "SN6 8LA",
-          latitude: 51.60539,
-          longitude: -1.637896
-        },
-        "e3a690ea-d182-4c82-a11f-08542adf8e54" => {
+        "4ac2e7ba-9fbc-5fd1-b931-d441e25f72e3" => {
           provider_name: "Cranfield University",
           ukprn: "10007822",
           instid: "0002",
           name: "Silsoe",
           country: "England",
-          postcode: "MK45 4DT",
-          latitude: 52.005309,
-          longitude: -0.426858
+          postcode: "MK45 4DT"
         },
-        "d91a3bae-df32-493a-b5b3-8bc1bac99a0c" => {
+        "67bcdbd6-46cd-569a-9e8c-9c5ee8f7f765" => {
           provider_name: "Craven College",
           ukprn: "10001743",
           instid: "1137",
           name: "Main campus",
           country: "England",
-          postcode: "BD23 1US",
-          latitude: 53.963392,
-          longitude: -2.036742
+          postcode: "BD23 1US"
         },
-        "2d2c45db-a7e3-482e-b254-cf143b0c2139" => {
+        "9660e3af-7143-5a82-b220-2b47d8ea3400" => {
           provider_name: "Croydon College",
           ukprn: "10001778",
           instid: "1135",
           name: "Main campus",
           country: "England",
-          postcode: "CR9 1DX",
-          latitude: 51.373414,
-          longitude: -0.095181
+          postcode: "CR9 1DX"
         },
-        "fc4cb371-5804-4b76-bc91-3649693f0a6e" => {
+        "4d50f7b7-085f-52e7-a66e-c6faa0f248ff" => {
           provider_name: "Cumbria Institute of the Arts",
           ukprn: "10001802",
           instid: "0192",
           name: "Entire institution",
           country: "England",
-          postcode: "CA3 9AY",
-          latitude: 54.906107,
-          longitude: -2.932036
+          postcode: "CA3 9AY"
         },
-        "1a5fe34d-1715-4fcd-a844-451f8cfb27ff" => {
+        "adfe9bb5-1552-5ab3-b451-2df73e487980" => {
           provider_name: "Dartington College of Arts",
           ukprn: "10001856",
           instid: "0015",
           name: "Entire institution",
           country: "England",
-          postcode: "TQ9 6EJ",
-          latitude: 50.453089,
-          longitude: -3.692208
+          postcode: "TQ9 6EJ"
         },
-        "8d39d424-dadf-4928-a8bb-bf3014cddaad" => {
+        "4d4a2a39-6da8-5011-bdf9-9123fff8211d" => {
           provider_name: "Dartington Hall Trust (The)",
           ukprn: "10026767",
           instid: "0420",
           name: "Dartington Arts School",
           country: "England",
-          postcode: "TQ9 6EL",
-          latitude: 50.451829,
-          longitude: -3.694149
+          postcode: "TQ9 6EL"
         },
-        "8748a6dd-399f-48e7-bd97-32a5d22cfc1b" => {
+        "dc1f9990-c004-5cc3-991f-5bec8b7c6164" => {
           provider_name: "Dartington Hall Trust (The)",
           ukprn: "10026767",
           instid: "0420",
           name: "Schumacher College",
           country: "England",
-          postcode: "TQ9 6EA",
-          latitude: 50.451309,
-          longitude: -3.70911
+          postcode: "TQ9 6EA"
         },
-        "76c47b4b-dc4f-4a3c-9766-f157b4f5c5b4" => {
+        "535ea106-f646-5e12-982d-c4cd39c45377" => {
           provider_name: "David Game College Ltd",
           ukprn: "10015688",
           instid: "0419",
           name: "Entire HEP",
           country: "England",
-          postcode: "EC3N 2ET",
-          latitude: 51.513081,
-          longitude: -0.076475
+          postcode: "EC3N 2ET"
         },
-        "d914a006-af40-46cd-acdf-6385720f4f19" => {
+        "2ab52f38-a66d-5b09-80e5-7eb876906637" => {
           provider_name: "DCG",
           ukprn: "10001919",
           instid: "1134",
           name: "Main campus",
           country: "England",
-          postcode: "DE24 8JE",
-          latitude: 52.916014,
-          longitude: -1.459
+          postcode: "DE24 8JE"
         },
-        "d7d80ff2-38d5-4459-8ad3-f2eb445cc613" => {
+        "8d5325d1-cd78-5a81-99cf-3512d458e4af" => {
           provider_name: "De Montfort University",
           ukprn: "10001883",
           instid: "0068",
           name: "Bedford campus",
           country: "England",
-          postcode: "MK40 2BZ",
-          latitude: 52.141944,
-          longitude: -0.478369
+          postcode: "MK40 2BZ"
         },
-        "4bb0ebf6-9689-426c-a7d4-4defbbf7940a" => {
+        "9e3afd7c-5190-5e7d-a712-e1fe927dfa90" => {
           provider_name: "De Montfort University",
           ukprn: "10001883",
           instid: "0068",
           name: "Entire HEP",
           country: "England",
-          postcode: "LE1 9BH",
-          latitude: 52.629906,
-          longitude: -1.137724
+          postcode: "LE1 9BH"
         },
-        "5b779b2a-a693-4224-b3aa-1b4c1adce4cd" => {
+        "3606c4f8-354e-5ec5-8a87-8b60e32794d9" => {
           provider_name: "DN Colleges Group",
           ukprn: "10004695",
           instid: "1133",
           name: "Main campus",
           country: "England",
-          postcode: "DN1 2RF",
-          latitude: 53.529021,
-          longitude: -1.135603
+          postcode: "DN1 2RF"
         },
-        "cf4931fb-72b8-4da7-b042-4309dc42cdfd" => {
+        "9d70c3ff-c7ec-5b72-914a-b60541402906" => {
           provider_name: "Dudley College of Technology",
           ukprn: "10007924",
           instid: "1132",
           name: "Main campus",
           country: "England",
-          postcode: "DY1 4AS",
-          latitude: 52.514257,
-          longitude: -2.082623
+          postcode: "DY1 4AS"
         },
-        "fb772417-14ee-4444-830b-768b8afcb565" => {
+        "8ee7c80b-cc6f-514d-bf8f-8b47229d2e9e" => {
           provider_name: "Dyson Technical Training Limited",
           ukprn: "10067355",
           instid: "0415",
           name: "Entire HEP",
           country: "England",
-          postcode: "SN16 0RP",
-          latitude: 51.594842,
-          longitude: -2.103762
+          postcode: "SN16 0RP"
         },
-        "cb4a1dc1-abf9-4d63-8d29-abff56957fce" => {
+        "4c4638e0-7cc7-55a5-b4a5-2c7a6ed0ef5a" => {
           provider_name: "Ealing, Hammersmith & West London College",
           ukprn: "10002094",
           instid: "1115",
           name: "Main campus",
           country: "England",
-          postcode: "W14 9BL",
-          latitude: 51.491865,
-          longitude: -0.214029
+          postcode: "W14 9BL"
         },
-        "28f63b06-d174-4b94-aa56-9f1627acb26a" => {
+        "f51cf209-0069-587e-9d9b-921eaabb1840" => {
           provider_name: "East End Computing and Business College Limited",
           ukprn: "10002113",
           instid: "0253",
           name: "Main campus",
           country: "England",
-          postcode: "E1 1PX",
-          latitude: 51.514954,
-          longitude: -0.062529
+          postcode: "E1 1PX"
         },
-        "1df409dc-231b-4c47-9709-e36144e55639" => {
+        "823babe2-acf4-5fd5-9ce8-aecbefd3f11c" => {
           provider_name: "East Riding College",
           ukprn: "10002126",
           instid: "1129",
           name: "Main campus",
           country: "England",
-          postcode: "HU17 0GH",
-          latitude: 53.840733,
-          longitude: -0.421457
+          postcode: "HU17 0GH"
         },
-        "324eb8b1-1c3d-4911-ad21-915fa706358e" => {
+        "d8d09160-0321-55b2-8747-581883eab1ff" => {
           provider_name: "East Surrey College",
           ukprn: "10002130",
           instid: "1128",
           name: "Main campus",
           country: "England",
-          postcode: "RH1 2JX",
-          latitude: 51.253587,
-          longitude: -0.162874
+          postcode: "RH1 2JX"
         },
-        "6507e94a-01d9-4b95-ac5c-2d6f0ec654c5" => {
+        "272b71b4-80b5-5d53-87b0-2a0847c8a965" => {
           provider_name: "East Sussex College Group",
           ukprn: "10002923",
           instid: "1127",
           name: "Main campus",
           country: "England",
-          postcode: "BN21 2UF",
-          latitude: 50.788909,
-          longitude: 0.272124
+          postcode: "BN21 2UF"
         },
-        "6c289542-b939-4ec2-ad38-354eba3a6923" => {
+        "7843637a-0c54-5620-a10c-7549932e6633" => {
           provider_name: "Eastleigh College",
           ukprn: "10002143",
           instid: "1130",
           name: "Main campus",
           country: "England",
-          postcode: "SO50 5FS",
-          latitude: 50.961591,
-          longitude: -1.358838
+          postcode: "SO50 5FS"
         },
-        "98b28ad1-1c67-47da-9324-da53dfb8c5a1" => {
+        "f04da92c-1fa3-5c7f-aaec-d5601afc3935" => {
           provider_name: "Easton and Otley College",
           ukprn: "10037344",
           instid: "1194",
           name: "Main campus",
           country: "England",
-          postcode: "NR9 5DX",
-          latitude: 52.57164,
-          longitude: 1.110615
+          postcode: "NR9 5DX"
         },
-        "054f48cf-f65c-4ccf-b9c9-8b17c208b85b" => {
+        "6b7812dd-9a3f-5298-adb9-28d17e3e489c" => {
           provider_name: "Edge Hill University",
           ukprn: "10007823",
           instid: "0016",
           name: "Entire HEP",
           country: "England",
-          postcode: "L39 4QP",
-          latitude: 53.559608,
-          longitude: -2.873836
+          postcode: "L39 4QP"
         },
-        "79a8031b-8422-402b-ba23-3c5a4db4beab" => {
+        "3cc93209-0349-5329-a796-c160c3ffa4d9" => {
           provider_name: "Edinburgh College of Art",
           ukprn: "10007824",
           instid: "0096",
           name: "Entire institution",
           country: "Scotland",
-          postcode: "EH3 9DF",
-          latitude: 55.945839,
-          longitude: -3.199604
+          postcode: "EH3 9DF"
         },
-        "c529d445-e8af-49cf-a3a3-233ffb4444ac" => {
+        "64ec6492-75fc-59c3-9134-a2f853349f63" => {
           provider_name: "Edinburgh Napier University",
           ukprn: "10007772",
           instid: "0107",
           name: "Entire HEP",
           country: "Scotland",
-          postcode: "EH14 1DJ",
-          latitude: 55.917998,
-          longitude: -3.239866
+          postcode: "EH14 1DJ"
         },
-        "48fea6ba-4946-4e03-b5ee-b6848e5b9acc" => {
+        "b2a03b48-cef0-568c-90ce-ae742a6abccb" => {
           provider_name: "EKC GROUP",
           ukprn: "10006570",
           instid: "1187",
           name: "Main campus",
           country: "England",
-          postcode: "CT10 1PN",
-          latitude: 51.354162,
-          longitude: 1.435027
+          postcode: "CT10 1PN"
         },
-        "c6db5c93-0e83-4d83-b482-6db5660879ae" => {
+        "df8d68db-5b3d-5672-8228-7e69701dfbad" => {
           provider_name: "EM Normandie UK Ltd",
           ukprn: "10082026",
           instid: "0468",
           name: "Main campus",
           country: "England",
-          postcode: "OX1 1SA",
-          latitude: 51.749553,
-          longitude: -1.264506
+          postcode: "OX1 1SA"
         },
-        "4cd19acb-f65d-489b-bcb6-bfff67e0d389" => {
+        "cb04b6f6-3be2-51b2-9e49-6560e002975a" => {
           provider_name: "Emmanuel Theological College",
           ukprn: "10032295",
           instid: "0473",
           name: "Main campus",
           country: "England",
-          postcode: "WA4 4GE",
-          latitude: 53.332053,
-          longitude: -2.642147
+          postcode: "WA4 4GE"
         },
-        "69f8a1e7-f812-437e-a693-c11691c3af5f" => {
+        "4864fc43-3668-5af7-b524-10780e4d0d94" => {
           provider_name: "Empire College London Limited",
           ukprn: "10022047",
           instid: "0252",
           name: "Entire HEP",
           country: "England",
-          postcode: "IG1 1BA",
-          latitude: 51.557886,
-          longitude: 0.07167
+          postcode: "IG1 1BA"
         },
-        "35001e6e-75dc-49d4-a2b6-679dc04f9d69" => {
+        "d60b757b-1f9a-57f5-9403-d58cce287edf" => {
           provider_name: "Engineering College of Technology Limited",
           ukprn: "10089771",
           instid: "0461",
           name: "Main campus",
           country: "England",
-          postcode: "KT4 7AT",
-          latitude: 51.379252,
-          longitude: -0.243883
+          postcode: "KT4 7AT"
         },
-        "f130db2b-497f-46f6-9570-dd13b330dfe5" => {
+        "ac2819d5-9971-5f55-9513-4136ebeed9fe" => {
           provider_name: "Escape Studios",
           ukprn: "10042570",
           instid: "0262",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1V 7BH",
-          latitude: 51.516764,
-          longitude: -0.122973
+          postcode: "WC1V 7BH"
         },
-        "8a6d8aec-cb74-435c-98cc-185f6cdc632b" => {
+        "23185b79-fde1-54c3-8bb9-c4db87d9f123" => {
           provider_name: "ESCP Europe Business School",
           ukprn: "10002313",
           instid: "0410",
           name: "Entire HEP",
           country: "England",
-          postcode: "NW3 7BG",
-          latitude: 51.555586,
-          longitude: -0.193924
+          postcode: "NW3 7BG"
         },
-        "2d50499f-99a4-43bf-a6d6-1663dbec0068" => {
+        "95853ea4-c027-5fec-86f7-db43ab7cd9b4" => {
           provider_name: "EThames Graduate School Limited",
           ukprn: "10008229",
           instid: "0235",
           name: "Main campus",
           country: "England",
-          postcode: "IG2 6NQ",
-          latitude: 51.576272,
-          longitude: 0.064279
+          postcode: "IG2 6NQ"
         },
-        "e49c1635-58a5-46f0-bddc-25da8db65f0a" => {
+        "c7728004-d195-5afc-a3f2-1c53b91018b0" => {
           provider_name: "European School of Osteopathy",
           ukprn: "10002344",
           instid: "7009",
           name: "Entire HEP",
           country: "England",
-          postcode: "ME14 3DZ",
-          latitude: 51.305512,
-          longitude: 0.544507
+          postcode: "ME14 3DZ"
         },
-        "65730ec3-794d-4aaf-a1df-544d758614a7" => {
+        "5e1af80d-5602-5355-8bf1-4f517f2c5f1c" => {
           provider_name: "Exeter College",
           ukprn: "10002370",
           instid: "1126",
           name: "Main campus",
           country: "England",
-          postcode: "EX4 4JS",
-          latitude: 50.728223,
-          longitude: -3.538392
+          postcode: "EX4 4JS"
         },
-        "fb303c3c-54f0-4521-a066-9beaaf8dea87" => {
+        "e7b7e6f6-14da-5544-b1a6-6636c949f5fd" => {
           provider_name: "Fairfield School of Business Ltd",
           ukprn: "10033187",
           instid: "0254",
           name: "Main campus",
           country: "England",
-          postcode: "CR0 1NX",
-          latitude: 51.372569,
-          longitude: -0.099081
+          postcode: "CR0 1NX"
         },
-        "343bae15-6e47-40ec-9bb1-6c9844cbb6e4" => {
+        "f636df24-3ffb-5d94-8940-224daeed8074" => {
           provider_name: "Falmouth University",
           ukprn: "10008640",
           instid: "0017",
           name: "Dartington Campus",
           country: "England",
-          postcode: "TQ9 6EJ",
-          latitude: 50.453089,
-          longitude: -3.692208
+          postcode: "TQ9 6EJ"
         },
-        "6bef1d24-8a01-4a35-8733-694d7a05e690" => {
+        "b9c231e4-2050-557f-b1c7-7f18cc0aad71" => {
           provider_name: "Falmouth University",
           ukprn: "10008640",
           instid: "0017",
           name: "Main campus",
           country: "England",
-          postcode: "TR11 4RH",
-          latitude: 50.149625,
-          longitude: -5.071079
+          postcode: "TR11 4RH"
         },
-        "05b08a44-d9f3-42d9-a2e3-67f4af10046b" => {
+        "4b1149d0-a486-5241-b3b3-dcf53a821e75" => {
           provider_name: "Falmouth University",
           ukprn: "10008640",
           instid: "0017",
           name: "Penryn",
           country: "England",
-          postcode: "TR10 9FE",
-          latitude: 50.17055,
-          longitude: -5.125645
+          postcode: "TR10 9FE"
         },
-        "34163390-9fca-426d-8840-a41edaa1054f" => {
+        "01fd3040-abf1-5796-8632-07464ee26475" => {
           provider_name: "Farnborough College of Technology",
           ukprn: "10002412",
           instid: "1124",
           name: "Main campus",
           country: "England",
-          postcode: "GU14 6SB",
-          latitude: 51.285554,
-          longitude: -0.751747
+          postcode: "GU14 6SB"
         },
-        "1ff1b36e-3fc3-489a-bf6f-b7d1292380ac" => {
+        "de6a7f81-c21f-55b3-afe7-65e1afdf09a2" => {
           provider_name: "ForMission Ltd",
           ukprn: "10038763",
           instid: "0248",
           name: "Main campus",
           country: "England",
-          postcode: "B30 1HH",
-          latitude: 52.422398,
-          longitude: -1.938939
+          postcode: "B30 1HH"
         },
-        "682a0c87-de1d-4388-a270-fd2d5d59c759" => {
+        "fc70b563-e159-5cc8-a518-16653a2ba901" => {
           provider_name: "Furness College",
           ukprn: "10002599",
           instid: "1123",
           name: "Main campus",
           country: "England",
-          postcode: "LA14 2PJ",
-          latitude: 54.116534,
-          longitude: -3.242096
+          postcode: "LA14 2PJ"
         },
-        "97d883d4-338f-460f-bb87-c3ce2a35d301" => {
+        "56c4ca85-5375-5977-a31d-cc9d2ffb0038" => {
           provider_name: "Futureworks",
           ukprn: "10022087",
           instid: "0281",
           name: "Entire HEP",
           country: "England",
-          postcode: "M3 5FS",
-          latitude: 53.48266,
-          longitude: -2.253721
+          postcode: "M3 5FS"
         },
-        "64a7c544-87e0-40f9-98f5-6f9d465a5032" => {
+        "ab6b22d6-818f-5dae-8b0b-b8f2e548040a" => {
           provider_name: "Gateshead College",
           ukprn: "10002638",
           instid: "1122",
           name: "Main campus",
           country: "England",
-          postcode: "NE8 3BE",
-          latitude: 54.966557,
-          longitude: -1.598114
+          postcode: "NE8 3BE"
         },
-        "08fbbd79-4876-494e-a681-ae02b2884920" => {
+        "77c8f963-6f4f-59a7-85e7-12abcea0db4c" => {
           provider_name: "Glasgow Caledonian University",
           ukprn: "10007762",
           instid: "0106",
           name: "London Campus",
           country: "England",
-          postcode: "E1 6PX",
-          latitude: 51.518546,
-          longitude: -0.072581
+          postcode: "E1 6PX"
         },
-        "363a6cdf-f49e-414d-9789-39028423efff" => {
+        "d32837aa-c4d8-5ca1-857f-90b708daf038" => {
           provider_name: "Glasgow Caledonian University",
           ukprn: "10007762",
           instid: "0106",
           name: "Main campus",
           country: "Scotland",
-          postcode: "G4 0BA",
-          latitude: 55.86729,
-          longitude: -4.250057
+          postcode: "G4 0BA"
         },
-        "2c1afb3f-8fd8-4d6c-816f-aeaaf0bc73ac" => {
+        "2ed01728-84be-5726-b95a-d64ad987a764" => {
           provider_name: "Glasgow School of Art",
           ukprn: "10002681",
           instid: "0097",
           name: "FORRES",
           country: "Scotland",
-          postcode: "IV36 2SH",
-          latitude: 57.573965,
-          longitude: -3.615153
+          postcode: "IV36 2SH"
         },
-        "fa738f13-7a8c-450c-a932-f523501a3172" => {
+        "f2fd854a-36b4-5eb1-b358-94584ae2f0ee" => {
           provider_name: "Glasgow School of Art",
           ukprn: "10002681",
           instid: "0097",
           name: "Main campus",
           country: "Scotland",
-          postcode: "G3 6RQ",
-          latitude: 55.865948,
-          longitude: -4.263662
+          postcode: "G3 6RQ"
         },
-        "a8e9dd7a-5abc-4b44-9a1c-61d7929b1c25" => {
+        "fce87b5c-0540-5abc-9910-0696c3c7397c" => {
           provider_name: "Global Banking School Limited",
           ukprn: "10042500",
           instid: "0363",
           name: "Birmingham - Fazeley St",
           country: "England",
-          postcode: "B5 5SE",
-          latitude: 52.478249,
-          longitude: -1.881918
+          postcode: "B5 5SE"
         },
-        "2a8fb55d-b934-4172-8ce6-20b78f345bc4" => {
+        "f8e83012-07ef-5351-9252-4c330644cd5b" => {
           provider_name: "Global Banking School Limited",
           ukprn: "10042500",
           instid: "0363",
           name: "Global Education House",
           country: "England",
-          postcode: "E15 2JA",
-          latitude: 51.537165,
-          longitude: -0.003474
+          postcode: "E15 2JA"
         },
-        "ae936b05-8b2f-4dc4-9f99-678e131b1338" => {
+        "882f28e7-8133-5acb-b2ad-7dc89f8171fe" => {
           provider_name: "Global Banking School Limited",
           ukprn: "10042500",
           instid: "0363",
           name: "Leeds",
           country: "England",
-          postcode: "LS1 3DL",
-          latitude: 53.801741,
-          longitude: -1.553821
+          postcode: "LS1 3DL"
         },
-        "a2d2d2bf-a052-440d-b593-513afd677c72" => {
+        "2ad81c54-60a6-5bc2-83d7-d4e74fca51e1" => {
           provider_name: "Global Banking School Limited",
           ukprn: "10042500",
           instid: "0363",
           name: "London - Greenford Road",
           country: "England",
-          postcode: "UB6 0HE",
-          latitude: 51.548314,
-          longitude: -0.341603
+          postcode: "UB6 0HE"
         },
-        "85f827f8-3678-4423-b892-94416207bcbc" => {
+        "bd8d1fc7-0e80-5dae-94de-e07e99e789d9" => {
           provider_name: "Global Banking School Limited",
           ukprn: "10042500",
           instid: "0363",
           name: "London - Republic",
           country: "England",
-          postcode: "E14 2BE",
-          latitude: 51.510185,
-          longitude: -0.0049
+          postcode: "E14 2BE"
         },
-        "8d6bdf3c-a08f-46fd-be85-487bb9784aed" => {
+        "8399819e-7b31-5a86-ba5c-68957c495df2" => {
           provider_name: "Global Banking School Limited",
           ukprn: "10042500",
           instid: "0363",
           name: "Main campus",
           country: "England",
-          postcode: "E3 2SE",
-          latitude: 51.528558,
-          longitude: -0.019897
+          postcode: "E3 2SE"
         },
-        "e040c764-8396-400a-aa96-b0c54cece13e" => {
+        "d1496243-fc6a-58ea-8b2f-8c27da283689" => {
           provider_name: "Global Banking School Limited",
           ukprn: "10042500",
           instid: "0363",
           name: "Manchester",
           country: "England",
-          postcode: "M12 6JH",
-          latitude: 53.470746,
-          longitude: -2.214271
+          postcode: "M12 6JH"
         },
-        "e3d8132d-b0b1-4f8c-afb8-4f2521f12a5d" => {
+        "057670cc-d9ab-5ccd-8dfa-f5dc3acc902b" => {
           provider_name: "Global Banking School Limited",
           ukprn: "10042500",
           instid: "0363",
           name: "Stratford - Cam Road",
           country: "England",
-          postcode: "E15 2SN",
-          latitude: 51.536986,
-          longitude: -0.00142
+          postcode: "E15 2SN"
         },
-        "b3fdd638-16f5-4769-a9cf-b734e0b21833" => {
+        "529e6362-0fec-50a7-9bb7-8f3d3f675df2" => {
           provider_name: "Gloucestershire College",
           ukprn: "10002696",
           instid: "1121",
           name: "Main campus",
           country: "England",
-          postcode: "GL51 7SJ",
-          latitude: 51.901613,
-          longitude: -2.11819
+          postcode: "GL51 7SJ"
         },
-        "0e99f0b0-26be-4c02-91ff-f86bbc9cf947" => {
+        "fca2dfbf-f81c-5d9f-9376-a89327c66d5a" => {
           provider_name: "Goldsmiths College",
           ukprn: "10002718",
           instid: "0131",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE14 6NW",
-          latitude: 51.474144,
-          longitude: -0.035401
+          postcode: "SE14 6NW"
         },
-        "579b3080-f8a6-435f-bfd4-4c4d7d92252a" => {
+        "9b6338ea-c133-535c-9843-0a8fe617fc29" => {
           provider_name: "Gower College Swansea",
           ukprn: "10030408",
           instid: "0336",
           name: "Entire HEP",
           country: "Wales",
-          postcode: "SA2 9EB",
-          latitude: 51.622379,
-          longitude: -3.983757
+          postcode: "SA2 9EB"
         },
-        "4e29a6aa-94ea-4735-98cb-f2fc01e599ee" => {
+        "28c65f16-71ae-5bb6-a38d-fb4f28169980" => {
           provider_name: "Grafton College",
           ukprn: "10002735",
           instid: "0245",
           name: "Main campus",
           country: "England",
-          postcode: "W1D 2HY",
-          latitude: 51.515727,
-          longitude: -0.136304
+          postcode: "W1D 2HY"
         },
-        "6269e7b2-232b-4a87-8f3e-36334df82865" => {
+        "30769f36-c531-559b-adee-316285d3f5fc" => {
           provider_name: "Grantham College",
           ukprn: "10002743",
           instid: "1120",
           name: "Main campus",
           country: "England",
-          postcode: "NG31 9AP",
-          latitude: 52.912718,
-          longitude: -0.63534
+          postcode: "NG31 9AP"
         },
-        "0206f209-5ad5-42d7-8817-b5c7ccf8580e" => {
+        "742f84c0-67fc-5841-971e-5870713eb93e" => {
           provider_name: "Greater Brighton Metropolitan College",
           ukprn: "10004736",
           instid: "1160",
           name: "Main campus",
           country: "England",
-          postcode: "BN1 4FA",
-          latitude: 50.828269,
-          longitude: -0.136979
+          postcode: "BN1 4FA"
         },
-        "24de00a1-f400-4e77-be79-947c0b027ec9" => {
+        "d84c8204-234c-5f6d-8a4d-480101b315f7" => {
           provider_name: "Grŵp Llandrillo Menai",
           ukprn: "10007820",
           instid: "0334",
           name: "Abergele",
           country: "Wales",
-          postcode: "LL22 7HT",
-          latitude: 53.286219,
-          longitude: -3.57654
+          postcode: "LL22 7HT"
         },
-        "3cc2eab1-2f49-4d3a-ae20-93091541d4e2" => {
+        "ad5bd059-54c0-5c5b-98a1-e8ea258a778a" => {
           provider_name: "Grŵp Llandrillo Menai",
           ukprn: "10007820",
           instid: "0334",
           name: "Bangor",
           country: "Wales",
-          postcode: "LL57 2TP",
-          latitude: 53.223007,
-          longitude: -4.141519
+          postcode: "LL57 2TP"
         },
-        "98ac51fc-3168-4b30-9701-9bd540041215" => {
+        "02acd7c2-ce4a-5dcc-8085-8ca4a3851d7c" => {
           provider_name: "Grŵp Llandrillo Menai",
           ukprn: "10007820",
           instid: "0334",
           name: "Denbigh",
           country: "Wales",
-          postcode: "LL16 3SY",
-          latitude: 53.184343,
-          longitude: -3.419654
+          postcode: "LL16 3SY"
         },
-        "7182ee0e-c036-4e34-85c9-6d92ae679ea7" => {
+        "3a7efee6-4562-5412-ae2e-bdb1aea38443" => {
           provider_name: "Grŵp Llandrillo Menai",
           ukprn: "10007820",
           instid: "0334",
           name: "Dolgellau",
           country: "Wales",
-          postcode: "LL40 2SW",
-          latitude: 52.744734,
-          longitude: -3.897765
+          postcode: "LL40 2SW"
         },
-        "c8659b3f-b2a4-495f-9c65-b00069b61548" => {
+        "3660d159-4b49-548a-a96c-957b252e856f" => {
           provider_name: "Grŵp Llandrillo Menai",
           ukprn: "10007820",
           instid: "0334",
           name: "Glynllifon",
           country: "Wales",
-          postcode: "LL54 5DU",
-          latitude: 53.073078,
-          longitude: -4.306898
+          postcode: "LL54 5DU"
         },
-        "38245de9-5aa7-4872-8c11-54011bdf0fe7" => {
+        "4f501ae2-9cb1-558d-bdaa-0d4271640c35" => {
           provider_name: "Grŵp Llandrillo Menai",
           ukprn: "10007820",
           instid: "0334",
           name: "Llangefni",
           country: "Wales",
-          postcode: "LL77 7HY",
-          latitude: 53.256796,
-          longitude: -4.296372
+          postcode: "LL77 7HY"
         },
-        "7f5d22b3-e08d-420e-8628-94de4bfbcf1e" => {
+        "0cb35685-b280-58d5-9ef5-4a2d731a12ce" => {
           provider_name: "Grŵp Llandrillo Menai",
           ukprn: "10007820",
           instid: "0334",
           name: "Main campus",
           country: "Wales",
-          postcode: "LL28 4HZ",
-          latitude: 53.311403,
-          longitude: -3.758251
+          postcode: "LL28 4HZ"
         },
-        "1209e97a-8316-4af0-a877-2423764fb8e5" => {
+        "48ca7557-57a4-5cab-b5bf-5cb8d6ffe1cd" => {
           provider_name: "Grŵp Llandrillo Menai",
           ukprn: "10007820",
           instid: "0334",
           name: "Parc Menai",
           country: "Wales",
-          postcode: "LL57 4BN",
-          latitude: 53.204945,
-          longitude: -4.178628
+          postcode: "LL57 4BN"
         },
-        "939d9c64-e239-4f21-a9fe-9d663d717e6d" => {
+        "c45e64a8-0c0e-581d-8c2d-b312c3101a57" => {
           provider_name: "Grŵp Llandrillo Menai",
           ukprn: "10007820",
           instid: "0334",
           name: "Pwllheli",
           country: "Wales",
-          postcode: "LL53 5EB",
-          latitude: 52.891833,
-          longitude: -4.418496
+          postcode: "LL53 5EB"
         },
-        "f21aa4dd-2483-4f3a-ba3a-e6ba7201e929" => {
+        "6baa31d6-9265-5147-a3f0-caed7e0f34ed" => {
           provider_name: "Grŵp Llandrillo Menai",
           ukprn: "10007820",
           instid: "0334",
           name: "Rhyl",
           country: "Wales",
-          postcode: "LL18 2HG",
-          latitude: 53.312715,
-          longitude: -3.48454
+          postcode: "LL18 2HG"
         },
-        "60dd14da-c97f-4fd7-a646-6d73c9272720" => {
+        "62327e71-c75e-5fbc-9d8c-136c289cd1f1" => {
           provider_name: "Grŵp NPTC Group",
           ukprn: "10009614",
           instid: "0335",
           name: "Afan Campus",
           country: "Wales",
-          postcode: "SA13 2AL",
-          latitude: 51.571547,
-          longitude: -3.749645
+          postcode: "SA13 2AL"
         },
-        "8a80ca64-2e4c-4406-a2a2-c568dfa86349" => {
+        "61f5d9ae-02eb-5c50-9133-ea2c88997dd0" => {
           provider_name: "Grŵp NPTC Group",
           ukprn: "10009614",
           instid: "0335",
           name: "Brecon Beacons Campus",
           country: "Wales",
-          postcode: "LD3 9SR",
-          latitude: 51.951876,
-          longitude: -3.382322
+          postcode: "LD3 9SR"
         },
-        "d636174a-afef-4a7b-ab26-58a4a1a41dd2" => {
+        "9dee1101-2479-5754-94c3-045c9e04a59c" => {
           provider_name: "Grŵp NPTC Group",
           ukprn: "10009614",
           instid: "0335",
           name: "Llandarcy",
           country: "Wales",
-          postcode: "SA10 6JD",
-          latitude: 51.639898,
-          longitude: -3.858368
+          postcode: "SA10 6JD"
         },
-        "82e2dd89-224c-4e49-b2ff-40067b7e10d7" => {
+        "b21f4319-b259-565d-9045-63ac78186d90" => {
           provider_name: "Grŵp NPTC Group",
           ukprn: "10009614",
           instid: "0335",
           name: "Main campus",
           country: "Wales",
-          postcode: "SA10 7RF",
-          latitude: 51.666461,
-          longitude: -3.81415
+          postcode: "SA10 7RF"
         },
-        "e93b7a94-33d9-4982-b84b-43cb804fc785" => {
+        "c47b60c8-b30a-5e42-8fc4-de143facf469" => {
           provider_name: "Grŵp NPTC Group",
           ukprn: "10009614",
           instid: "0335",
           name: "Newtown Campus",
           country: "Wales",
-          postcode: "SY16 4HU",
-          latitude: 52.505257,
-          longitude: -3.339249
+          postcode: "SY16 4HU"
         },
-        "31f79c51-c191-4cbf-9f37-549b97cfc65a" => {
+        "abc631bf-555c-54ca-8ac2-98135bec2f27" => {
           provider_name: "GSM London",
           ukprn: "10007937",
           instid: "0215",
           name: "Greenford Campus",
           country: "England",
-          postcode: "UB6 0HE",
-          latitude: 51.550191,
-          longitude: -0.340287
+          postcode: "UB6 0HE"
         },
-        "05d18c24-23b5-4817-be87-7b4df666b4cc" => {
+        "71b5e0f5-cbe8-5d5c-8b22-4c9bedde07e9" => {
           provider_name: "GSM London",
           ukprn: "10007937",
           instid: "0215",
           name: "Main campus",
           country: "England",
-          postcode: "SE1 4LG",
-          latitude: 51.499761,
-          longitude: -0.091341
+          postcode: "SE1 4LG"
         },
-        "39ebc228-0acb-43a2-9462-27120beea330" => {
+        "04131b4f-279c-5291-b606-b338710ee870" => {
           provider_name: "Guildford College of Further and Higher Education",
           ukprn: "10002815",
           instid: "1118",
           name: "Main campus",
           country: "England",
-          postcode: "GU1 1EZ",
-          latitude: 51.246075,
-          longitude: -0.569872
+          postcode: "GU1 1EZ"
         },
-        "e3ad9a5b-ac16-4591-8c97-1f3b80ea9653" => {
+        "b7cd28ed-d923-5d3e-bb40-105f73f8887f" => {
           provider_name: "Guildhall School of Music and Drama",
           ukprn: "10007825",
           instid: "0208",
           name: "Entire HEP",
           country: "England",
-          postcode: "EC2Y 8DT",
-          latitude: 51.519517,
-          longitude: -0.092374
+          postcode: "EC2Y 8DT"
         },
-        "9a91ddd8-a1aa-43d5-a889-4d12b0502932" => {
+        "52ccf4ac-f254-5d16-9361-cecb21715f24" => {
           provider_name: "Hadlow College",
           ukprn: "10002843",
           instid: "1117",
           name: "Main campus",
           country: "England",
-          postcode: "TN11 0AL",
-          latitude: 51.225228,
-          longitude: 0.328911
+          postcode: "TN11 0AL"
         },
-        "42d44b62-e6ca-4097-925f-b71e80841bf9" => {
+        "d54e7b71-72a1-50fe-b91a-e4767b5648a8" => {
           provider_name: "Halesowen College",
           ukprn: "10002852",
           instid: "1116",
           name: "Main campus",
           country: "England",
-          postcode: "B63 3NA",
-          latitude: 52.457161,
-          longitude: -2.051979
+          postcode: "B63 3NA"
         },
-        "a66bcb50-afea-4449-a84c-82c735b7a694" => {
+        "eee24115-a2ad-52a0-8002-0511712e3494" => {
           provider_name: "Harlow College",
           ukprn: "10002899",
           instid: "1114",
           name: "Main campus",
           country: "England",
-          postcode: "CM20 3EZ",
-          latitude: 51.76932,
-          longitude: 0.098238
+          postcode: "CM20 3EZ"
         },
-        "2d5ca19d-10c6-4580-849a-f27482d758ad" => {
+        "4361c5fd-6547-5ba2-9346-a50e7e568495" => {
           provider_name: "Harper Adams University",
           ukprn: "10040812",
           instid: "0018",
           name: "Entire HEP",
           country: "England",
-          postcode: "TF10 8NB",
-          latitude: 52.77991,
-          longitude: -2.425557
+          postcode: "TF10 8NB"
         },
-        "2b2dd1d1-7515-4c66-8501-4dd02ad817fd" => {
+        "cd735671-18c0-53cd-82b6-15df5a7da2fd" => {
           provider_name: "Harper and Keele Veterinary School",
           ukprn: "90000451",
           instid: "0411",
           name: "Main campus",
           country: "England",
-          postcode: "TF10 8NB",
-          latitude: 52.77991,
-          longitude: -2.425557
+          postcode: "TF10 8NB"
         },
-        "a74f6a6d-123f-4fa7-9d63-80f735f7e7aa" => {
+        "d40ab41a-f7ce-5ad8-9b30-5885af61b8f3" => {
           provider_name: "Harrow, Richmond & Uxbridge College (HRUC)",
           ukprn: "10007193",
           instid: "1110",
           name: "Main campus",
           country: "England",
-          postcode: "UB8 1NQ",
-          latitude: 51.549947,
-          longitude: -0.469124
+          postcode: "UB8 1NQ"
         },
-        "42b78019-c54d-478c-96f5-a0797aa9e39a" => {
+        "3379586a-85e3-56ef-95ff-3e65cc5d454b" => {
           provider_name: "Hartpury College",
           ukprn: "10002919",
           instid: "1113",
           name: "Main campus",
           country: "England",
-          postcode: "GL19 3BE",
-          latitude: 51.904913,
-          longitude: -2.310281
+          postcode: "GL19 3BE"
         },
-        "6636587c-7c5f-4289-8f95-870d4b7c1988" => {
+        "57bd366c-a1b0-5330-be56-7a0cba42bf67" => {
           provider_name: "Hartpury College of Further Education",
           ukprn: "10080810",
           instid: "1184",
           name: "Main campus",
           country: "England",
-          postcode: "GL19 3BE",
-          latitude: 51.904913,
-          longitude: -2.310281
+          postcode: "GL19 3BE"
         },
-        "50742a88-aa28-4f7e-a56b-2880ed8e687c" => {
+        "6589b62f-5871-521b-9ca0-b42216874af1" => {
           provider_name: "Hartpury University",
           ukprn: "10080811",
           instid: "0352",
           name: "Entire HEP",
           country: "England",
-          postcode: "GL19 3BE",
-          latitude: 51.904913,
-          longitude: -2.310281
+          postcode: "GL19 3BE"
         },
-        "50151379-4aea-4cc2-aaaa-2090d140186c" => {
+        "2509afae-eeed-5064-98d8-25895326989f" => {
           provider_name: "Havant and South Downs College",
           ukprn: "10005979",
           instid: "1112",
           name: "Main campus",
           country: "England",
-          postcode: "PO7 8AA",
-          latitude: 50.861598,
-          longitude: -1.021127
+          postcode: "PO7 8AA"
         },
-        "57471fae-dc67-4c44-898b-59abef1d5ef0" => {
+        "ee452d5b-f1e7-5d49-871c-00d059b6f939" => {
           provider_name: "Havering College of Further and Higher Education",
           ukprn: "10002935",
           instid: "1111",
           name: "Main campus",
           country: "England",
-          postcode: "RM11 2LL",
-          latitude: 51.581596,
-          longitude: 0.22125
+          postcode: "RM11 2LL"
         },
-        "73bb1f6a-c139-438c-8ef7-2bc7cf117201" => {
+        "6a975762-340e-5d25-9693-ae36ab18ea26" => {
           provider_name: "Health Sciences University",
           ukprn: "10000163",
           instid: "0213",
           name: "Entire HEP",
           country: "England",
-          postcode: "BH5 2DF",
-          latitude: 50.727261,
-          longitude: -1.828772
+          postcode: "BH5 2DF"
         },
-        "57d3746a-42f6-40bf-9753-6a01bdd21140" => {
+        "c1781205-d419-53e9-8b59-100059289791" => {
           provider_name: "Heart of Worcestershire College",
           ukprn: "10007977",
           instid: "1004",
           name: "Main campus",
           country: "England",
-          postcode: "WR1 2JF",
-          latitude: 52.191537,
-          longitude: -2.223534
+          postcode: "WR1 2JF"
         },
-        "7c11754a-1ead-48b8-9c7a-4566ba749942" => {
+        "7db923fc-be31-5201-815f-d35c21352dac" => {
           provider_name: "Heart of Yorkshire Education Group",
           ukprn: "10007289",
           instid: "1019",
           name: "Main campus",
           country: "England",
-          postcode: "WF1 2DH",
-          latitude: 53.685588,
-          longitude: -1.503855
+          postcode: "WF1 2DH"
         },
-        "278a7f64-9940-480c-89f8-f7100d079fbd" => {
+        "265af842-7aa7-50f4-a0c3-20a8d05b5121" => {
           provider_name: "Hereford College of Arts",
           ukprn: "10003022",
           instid: "1108",
           name: "Main campus",
           country: "England",
-          postcode: "HR1 1LT",
-          latitude: 52.060873,
-          longitude: -2.697601
+          postcode: "HR1 1LT"
         },
-        "5fb27653-8d1e-4b87-8436-5fe32480881f" => {
+        "49aaa44e-6442-5dca-84d2-599d7eefce16" => {
           provider_name: "Herefordshire, Ludlow and North Shropshire College",
           ukprn: "10003023",
           instid: "1109",
           name: "Main campus",
           country: "England",
-          postcode: "HR1 1LS",
-          latitude: 52.061747,
-          longitude: -2.697295
+          postcode: "HR1 1LS"
         },
-        "2e3bff33-e7ca-4c21-820f-10b837b9bdc4" => {
+        "c90bd781-c5af-5449-8f99-cde2624fb441" => {
           provider_name: "Heriot-Watt University",
           ukprn: "10007764",
           instid: "0171",
           name: "Dubai campus",
-          country: "United Arab Emirates",
-          latitude: 55.909385,
-          longitude: -3.320682
+          country: "United Arab Emirates"
         },
-        "9d3996e8-9ed1-4968-a099-e04ea12e806d" => {
+        "ed89facc-f88d-57d9-b21c-e31a2042b86d" => {
           provider_name: "Heriot-Watt University",
           ukprn: "10007764",
           instid: "0171",
           name: "Main campus",
           country: "Scotland",
-          postcode: "EH14 4AS",
-          latitude: 55.909385,
-          longitude: -3.320682
+          postcode: "EH14 4AS"
         },
-        "81fb2657-5c16-4fc3-9e34-9c952ad0ed7f" => {
+        "b6a3f546-585d-5284-9b97-6b6653513b48" => {
           provider_name: "Heriot-Watt University",
           ukprn: "10007764",
           instid: "0171",
           name: "Malaysia campus",
-          country: "Malaysia",
-          latitude: 55.909385,
-          longitude: -3.320682
+          country: "Malaysia"
         },
-        "40e7037d-5744-42e2-a073-c0ed437ee7a3" => {
+        "af8d9c66-2085-5ea7-b907-60a67fd281c7" => {
           provider_name: "Heriot-Watt University",
           ukprn: "10007764",
           instid: "0171",
           name: "Orkney campus",
           country: "Scotland",
-          postcode: "KW16 3AN",
-          latitude: 58.963829,
-          longitude: -3.299353
+          postcode: "KW16 3AN"
         },
-        "c7ed159b-874b-4d7c-b100-6a112a61ca31" => {
+        "62e4eb3d-09df-56e1-9453-5ea0105d244a" => {
           provider_name: "Heriot-Watt University",
           ukprn: "10007764",
           instid: "0171",
           name: "Scottish Borders campus",
           country: "Scotland",
-          postcode: "TD1 3HE",
-          latitude: 55.607703,
-          longitude: -2.783205
+          postcode: "TD1 3HE"
         },
-        "7b41a9b0-fdce-46a5-b9e4-2dec6c3b17c8" => {
+        "50772f60-0c22-5e44-ad3f-dd4d7d506ddc" => {
           provider_name: "Hertford Regional College",
           ukprn: "10003035",
           instid: "1107",
           name: "Main campus",
           country: "England",
-          postcode: "SG12 9JF",
-          latitude: 51.80769,
-          longitude: -0.031549
+          postcode: "SG12 9JF"
         },
-        "0b3dc270-7e92-4427-b3e0-c044218d3d82" => {
+        "b90fe1d4-a4aa-555a-8fab-cffce838e283" => {
           provider_name: "Heythrop College",
           ukprn: "10007765",
           instid: "0205",
           name: "Entire HEP",
           country: "England",
-          postcode: "W8 5HN",
-          latitude: 51.499883,
-          longitude: -0.190908
+          postcode: "W8 5HN"
         },
-        "6a4ab22f-aabc-427a-b14e-e9617acc9ffb" => {
+        "e57973f8-5fc9-5b32-8b79-a488017cf5aa" => {
           provider_name: "Higher Rhythm Limited",
           ukprn: "10020118",
           instid: "0457",
           name: "Main campus",
           country: "England",
-          postcode: "DN1 2PG",
-          latitude: 53.525589,
-          longitude: -1.12943
+          postcode: "DN1 2PG"
         },
-        "86209dbb-a60f-4f2d-9a50-ec4f1b5fbef3" => {
+        "911d1d94-c7b7-5cce-8ca5-a8f55eca2259" => {
           provider_name: "Holborn College Limited",
           ukprn: "10042194",
           instid: "0273",
           name: "Main campus",
           country: "England",
-          postcode: "SE1 1HR",
-          latitude: 51.502853,
-          longitude: -0.091788
+          postcode: "SE1 1HR"
         },
-        "b376ab04-9b30-4ed1-9beb-03c6b291612d" => {
+        "13263f64-5522-5ab0-ad65-60207b48e8ab" => {
           provider_name: "Holy Cross College",
           ukprn: "10003128",
           instid: "1105",
           name: "Main campus",
           country: "England",
-          postcode: "BL9 9BB",
-          latitude: 53.584917,
-          longitude: -2.298896
+          postcode: "BL9 9BB"
         },
-        "de8de0f0-4a2c-4361-a78d-c1918b308ac3" => {
+        "6713b2e8-8050-5625-ac43-598517a18fbf" => {
           provider_name: "Homerton College",
           ukprn: "10003138",
           instid: "0019",
           name: "Main campus",
           country: "England",
-          postcode: "CB2 2PH",
-          latitude: 0.13599,
-          longitude: 52.186062
+          postcode: "CB2 2PH"
         },
-        "39be3dc9-fd48-466d-88e7-08bddc052053" => {
+        "df365650-8860-58a7-b144-add5e3c1df7f" => {
           provider_name: "Hopwood Hall College",
           ukprn: "10003146",
           instid: "1104",
           name: "Main campus",
           country: "England",
-          postcode: "M24 6XH",
-          latitude: 53.569124,
-          longitude: -2.188708
+          postcode: "M24 6XH"
         },
-        "f05d0ff9-b562-4d6b-bc04-55645b9a0fd9" => {
+        "1c197245-2759-5e85-b95d-4ef5cc41e104" => {
           provider_name: "Hugh Baird College",
           ukprn: "10003193",
           instid: "1102",
           name: "Main campus",
           country: "England",
-          postcode: "L20 7EW",
-          latitude: 53.445072,
-          longitude: -2.989404
+          postcode: "L20 7EW"
         },
-        "5cd56cfb-2b75-4a10-bc42-054af5f92810" => {
+        "3483d8ab-fd50-547b-ada4-188171b69f5f" => {
           provider_name: "Hull College",
           ukprn: "10003200",
           instid: "1101",
           name: "Main campus",
           country: "England",
-          postcode: "HU1 3DG",
-          latitude: 53.746393,
-          longitude: -0.331867
+          postcode: "HU1 3DG"
         },
-        "eea1f6f0-09fc-4876-953e-5df9f7ee0efc" => {
+        "2bda78dd-2e31-5d70-860c-f477c60d058b" => {
           provider_name: "Hull York Medical School",
           ukprn: "99999998",
           instid: "7005",
           name: "Main campus",
           country: "England",
-          postcode: "YO10 5DD",
-          latitude: 53.948419,
-          longitude: -1.053544
+          postcode: "YO10 5DD"
         },
-        "afe07cb7-a7d3-469b-8385-f15a3c376cf6" => {
+        "8840757d-0c5a-5098-b64b-9d5279f23469" => {
           provider_name: "Hult International Business School Ltd",
           ukprn: "10003212",
           instid: "0406",
           name: "London PG",
           country: "England",
-          postcode: "WC1N 2AT",
-          latitude: 51.521688,
-          longitude: -0.115405
+          postcode: "WC1N 2AT"
         },
-        "bf3a3e78-d069-466e-b939-5d44063ab68d" => {
+        "30bb684f-d859-54b5-a10d-4e686a7ba251" => {
           provider_name: "Hult International Business School Ltd",
           ukprn: "10003212",
           instid: "0406",
           name: "Main campus",
           country: "England",
-          postcode: "E1 1LD",
-          latitude: 51.515125,
-          longitude: -0.068433
+          postcode: "E1 1LD"
         },
-        "c63c9891-7a7c-480c-888e-e862e2493e01" => {
+        "816a2871-e83e-5731-999c-c181468a5ec0" => {
           provider_name: "ICOM",
           ukprn: "10023445",
           instid: "0297",
           name: "Main campus",
           country: "England",
-          postcode: "RH19 1DZ",
-          latitude: 51.130613,
-          longitude: -0.016171
+          postcode: "RH19 1DZ"
         },
-        "b687a14e-c314-4bb5-bdb2-5fb86d6553de" => {
+        "fe37c6e1-f35a-5426-a1c8-f24cbe75ea0d" => {
           provider_name: "ICON College of Technology and Management",
           ukprn: "10003239",
           instid: "0236",
           name: "Entire HEP",
           country: "England",
-          postcode: "E1 1EG",
-          latitude: 51.515495,
-          longitude: -0.06755
+          postcode: "E1 1EG"
         },
-        "f83b2a42-a71a-46ec-9aec-9d5339362d58" => {
+        "e03d81e8-7da2-500f-a799-ea123b029e25" => {
           provider_name: "IFS University College",
           ukprn: "10008289",
           instid: "0217",
           name: "Lovat Lane",
           country: "England",
-          postcode: "EC3R 8EB",
-          latitude: 51.509875,
-          longitude: -0.083986
+          postcode: "EC3R 8EB"
         },
-        "809ace50-c8b8-45a3-8db3-9e07240663eb" => {
+        "efc988b5-df88-5abb-bc67-4b74a859efd6" => {
           provider_name: "IFS University College",
           ukprn: "10008289",
           instid: "0217",
           name: "Peninsular House",
           country: "England",
-          postcode: "EC3R 8LJ",
-          latitude: 51.509679,
-          longitude: -0.085219
+          postcode: "EC3R 8LJ"
         },
-        "dd6fa094-ab2c-4e06-8b0d-b86d3c8f6b9f" => {
+        "63d20805-52a1-53cd-a94b-9bae1644bbb3" => {
           provider_name: "Imperial College of Science, Technology and Medicine",
           ukprn: "10003270",
           instid: "0132",
           name: "Entire HEP",
           country: "England",
-          postcode: "SW7 2AZ",
-          latitude: 51.498317,
-          longitude: -0.176923
+          postcode: "SW7 2AZ"
         },
-        "78efc1e8-e747-47be-82fa-0f791c087941" => {
+        "dc7dfea6-8a50-58a7-9a58-71b7d7eba8e9" => {
           provider_name: "Imperial College of Science, Technology and Medicine",
           ukprn: "10003270",
           instid: "0132",
           name: "Wye campus",
           country: "England",
-          postcode: "TN25 5AH",
-          latitude: 51.185533,
-          longitude: 0.940715
+          postcode: "TN25 5AH"
         },
-        "e163c942-4974-472e-abd8-00c88daa7aa3" => {
+        "cdf41bd3-47e4-597c-833e-ad7c1658e59b" => {
           provider_name: "Inchbald School of Design Limited",
           ukprn: "10003284",
           instid: "0439",
           name: "Entire HEP",
           country: "England",
-          postcode: "SW1W 9BA",
-          latitude: 51.494119,
-          longitude: -0.155082
+          postcode: "SW1W 9BA"
         },
-        "7e35d45d-4a01-4ecf-8f15-64eebe294923" => {
+        "b6834273-297c-565f-be98-d195a9f1f3a7" => {
           provider_name: "Inspire Education Group",
           ukprn: "10005077",
           instid: "1061",
           name: "Main campus",
           country: "England",
-          postcode: "PE1 4DZ",
-          latitude: 52.586783,
-          longitude: -0.230191
+          postcode: "PE1 4DZ"
         },
-        "61959098-9bb7-4d82-ae0c-b864bb4d4b58" => {
+        "88410070-32cd-5899-9e25-6084c22b55f8" => {
           provider_name: "Institute of Art - London Limited",
           ukprn: "10013220",
           instid: "0405",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1B 3EE",
-          latitude: 51.518668,
-          longitude: -0.13124
+          postcode: "WC1B 3EE"
         },
-        "c99abf71-c6df-41aa-bb13-0f4d671173b2" => {
+        "dd2b891d-5051-5b8b-83e4-466cdd6d8d3b" => {
           provider_name: "Institute of Contemporary Music Performance",
           ukprn: "10035638",
           instid: "0220",
           name: "Entire HEP",
           country: "England",
-          postcode: "NW6 7XG",
-          latitude: 51.543792,
-          longitude: -0.204155
+          postcode: "NW6 7XG"
         },
-        "3693c9ed-4d7e-4ff9-b7b4-ddb66cd8865a" => {
+        "c43cf88f-97c6-5c1d-a20a-cbf850782a1d" => {
           provider_name: "Institute of Education",
           ukprn: "10007766",
           instid: "0133",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1H 0AL",
-          latitude: 51.522977,
-          longitude: -0.127965
+          postcode: "WC1H 0AL"
         },
-        "fb195833-c1cb-44f5-8c04-64e6a892ee31" => {
+        "79d4c8be-162e-5c22-a800-b0cc90278099" => {
           provider_name: "International Business College Manchester Limited",
           ukprn: "10042679",
           instid: "0341",
@@ -3466,2080 +2770,1662 @@ module DfE
           country: "England",
           postcode: "M1 3UH"
         },
-        "b1403a10-7277-41fc-af6f-51d41af51893" => {
+        "dfe37997-97f6-5516-b185-7b4b7093b8f0" => {
           provider_name: "International College of Musical Theatre",
           ukprn: "10027603",
           instid: "0450",
           name: "Main campus",
           country: "England",
-          postcode: "E9 5LH",
-          latitude: 51.543773,
-          longitude: -0.025583
+          postcode: "E9 5LH"
         },
-        "03e0e586-c2bb-4f09-9ba8-94c272d7a9ea" => {
+        "1ee86ddc-24d6-5e1a-9012-5eab75f26274" => {
           provider_name: "INTO University Partnerships Limited",
           ukprn: "10082728",
           instid: "0423",
           name: "INTO London",
           country: "England",
-          postcode: "E1 7EZ",
-          latitude: 51.516755,
-          longitude: -0.076753
+          postcode: "E1 7EZ"
         },
-        "8b49b095-1b59-428e-b31c-498ea5074784" => {
+        "f965455c-83a2-5622-9625-a606c606fb70" => {
           provider_name: "INTO University Partnerships Limited",
           ukprn: "10082728",
           instid: "0423",
           name: "Main campus",
           country: "England",
-          postcode: "M1 6LT",
-          latitude: 53.475201,
-          longitude: -2.240162
+          postcode: "M1 6LT"
         },
-        "35870d65-22da-443b-a0e0-8b0c7cd1fd8e" => {
+        "a95689af-f5db-53b0-922f-5b28e00daadd" => {
           provider_name: "Istituto Marangoni Limited",
           ukprn: "10009527",
           instid: "0299",
           name: "Entire HEP",
           country: "England",
-          postcode: "E1 6PX",
-          latitude: 51.518546,
-          longitude: -0.072581
+          postcode: "E1 6PX"
         },
-        "16767701-9692-4c5d-9d26-673edf5dac31" => {
+        "2090c7ca-150b-5f00-82eb-7f0281b7ec05" => {
           provider_name: "Itchen College",
           ukprn: "10003427",
           instid: "1195",
           name: "Main campus",
           country: "England",
-          postcode: "SO19 7TB",
-          latitude: 50.908661,
-          longitude: -1.357172
+          postcode: "SO19 7TB"
         },
-        "8659f508-cd62-4d34-8a82-110b89f9bac9" => {
+        "f6e4597f-5d9f-56e8-9d66-c14d453059a1" => {
           provider_name: "Joseph Chamberlain Sixth Form College",
           ukprn: "10003511",
           instid: "1186",
           name: "Main campus",
           country: "England",
-          postcode: "B12 9FF",
-          latitude: 52.462221,
-          longitude: -1.885885
+          postcode: "B12 9FF"
         },
-        "df7bdef2-b3af-454f-a6d5-e17677907c5b" => {
+        "385a3408-cef0-5197-b94f-b1f9f173a9b3" => {
           provider_name: "JSA Education Group Ltd.",
           ukprn: "10067601",
           instid: "0417",
           name: "Main Campus",
           country: "England",
-          postcode: "W1S 3AS",
-          latitude: 51.510249,
-          longitude: -0.14075
+          postcode: "W1S 3AS"
         },
-        "fe18e8ec-a68c-4f91-bfaa-eda3449ea098" => {
+        "393a2cc6-ed1e-5ad5-910e-2556fc3b28bd" => {
           provider_name: "JSA Education Group Ltd.",
           ukprn: "10067601",
           instid: "0417",
           name: "Mayfair campus",
           country: "England",
-          postcode: "EC4A 4AS",
-          latitude: 51.514551,
-          longitude: -0.105005
+          postcode: "EC4A 4AS"
         },
-        "2522934d-ad7f-47ec-976c-f9a949191588" => {
+        "be0a2a98-7f7d-59a5-a880-1223466a14d7" => {
           provider_name: "Kaplan International Colleges U.K. Limited",
           ukprn: "10082570",
           instid: "0422",
           name: "Bournemouth University International College",
           country: "England",
-          postcode: "BH8 8GN",
-          latitude: 50.723925,
-          longitude: -1.864943
+          postcode: "BH8 8GN"
         },
-        "f815d418-a81a-4882-848f-051ba5684591" => {
+        "8d544f30-a505-58e1-a777-6892c2218bec" => {
           provider_name: "Kaplan International Colleges U.K. Limited",
           ukprn: "10082570",
           instid: "0422",
           name: "Kaplan International College London",
           country: "England",
-          postcode: "SE1 9DE",
-          latitude: 51.50626,
-          longitude: -0.090481
+          postcode: "SE1 9DE"
         },
-        "a0526c42-8d8c-4baa-a52a-402e87621fa8" => {
+        "5786cb2b-2178-574c-97e6-779998110861" => {
           provider_name: "Kaplan International Colleges U.K. Limited",
           ukprn: "10082570",
           instid: "0422",
           name: "Nottingham Trent International College",
           country: "England",
-          postcode: "NG1 5LT",
-          latitude: 52.958227,
-          longitude: -1.155955
+          postcode: "NG1 5LT"
         },
-        "51f48e2a-0c45-4d68-aab7-fbe2deb1f49e" => {
+        "97f56f32-1b1f-5570-820b-0e709d590489" => {
           provider_name: "Kaplan International Colleges U.K. Limited",
           ukprn: "10082570",
           instid: "0422",
           name: "University of Brighton International College",
           country: "England",
-          postcode: "BN2 4GJ",
-          latitude: 50.844419,
-          longitude: -0.11946
+          postcode: "BN2 4GJ"
         },
-        "64cc584a-0531-464c-ab4f-4177704a5fe9" => {
+        "2aa4da1a-fbc6-5beb-813e-7d7305d9f841" => {
           provider_name: "Kaplan International Colleges U.K. Limited",
           ukprn: "10082570",
           instid: "0422",
           name: "University of Essex International College",
           country: "England",
-          postcode: "CO4 3SQ",
-          latitude: 51.87681,
-          longitude: 0.946585
+          postcode: "CO4 3SQ"
         },
-        "f42c570c-9a8a-4489-b65f-f66a250f9afa" => {
+        "12480d75-2724-55d7-9227-5f6786ee6ccb" => {
           provider_name: "Kaplan International Colleges U.K. Limited",
           ukprn: "10082570",
           instid: "0422",
           name: "University of Liverpool International College",
           country: "England",
-          postcode: "L7 3FA",
-          latitude: 53.406937,
-          longitude: -2.959951
+          postcode: "L7 3FA"
         },
-        "fbdca00a-56d9-4e34-a4ce-5a340955f53c" => {
+        "eba6c884-4e20-5427-aa65-4027a209092d" => {
           provider_name: "Kaplan International Colleges U.K. Limited",
           ukprn: "10082570",
           instid: "0422",
           name: "University of Nottingham International College",
           country: "England",
-          postcode: "NG7 2RU",
-          latitude: 52.936614,
-          longitude: -1.18682
+          postcode: "NG7 2RU"
         },
-        "632a990a-8c6b-443b-8f1e-32ee262754f0" => {
+        "a36e97d5-3820-515b-a9ba-01594b98a3ba" => {
           provider_name: "Kaplan International Colleges U.K. Limited",
           ukprn: "10082570",
           instid: "0422",
           name: "University of West England, Bristol's Internationa",
           country: "England",
-          postcode: "BS16 1QY",
-          latitude: 51.501079,
-          longitude: -2.547458
+          postcode: "BS16 1QY"
         },
-        "47d1e510-752c-4ef9-a7a2-b661cb13062b" => {
+        "0a5e21bc-f2bc-54bb-af40-9bb249c5c628" => {
           provider_name: "Kaplan Open Learning (Essex) Limited",
           ukprn: "10021682",
           instid: "0300",
           name: "Entire HEP",
           country: "England",
-          postcode: "LS1 5AT",
-          latitude: 53.796527,
-          longitude: -1.544559
+          postcode: "LS1 5AT"
         },
-        "b3622347-6f09-4ea8-bae5-a5b52614dedf" => {
+        "c23ccc59-2c65-5124-a13b-9c3241c7ecf1" => {
           provider_name: "Keele University",
           ukprn: "10007767",
           instid: "0121",
           name: "Entire HEP",
           country: "England",
-          postcode: "ST5 5BG",
-          latitude: 53.003262,
-          longitude: -2.273581
+          postcode: "ST5 5BG"
         },
-        "b88f2518-61bb-4b65-b93a-01511edf0d4b" => {
+        "31ab8ddb-5435-540a-8890-b4d85be9077c" => {
           provider_name: "Kendal College",
           ukprn: "10003558",
           instid: "1100",
           name: "Main campus",
           country: "England",
-          postcode: "LA9 5AY",
-          latitude: 54.318001,
-          longitude: -2.747034
+          postcode: "LA9 5AY"
         },
-        "4d8753a1-8d0f-4550-9cae-7022646b632b" => {
+        "8621adf1-449c-5c49-80a9-b1608106e486" => {
           provider_name: "Kensington and Chelsea College",
           ukprn: "10003564",
           instid: "1145",
           name: "Main campus",
           country: "England",
-          postcode: "SW10 0QS",
-          latitude: 51.482012,
-          longitude: -0.185989
+          postcode: "SW10 0QS"
         },
-        "72f94036-73d2-4ef1-bab1-b987fb631381" => {
+        "daa34692-cddd-5573-9383-701bf1308606" => {
           provider_name: "Kensington College of Business",
           ukprn: "10003566",
           instid: "0237",
           name: "Main campus",
           country: "England",
-          postcode: "W1G 9DJ",
-          latitude: 51.517372,
-          longitude: -0.144222
+          postcode: "W1G 9DJ"
         },
-        "0102a0ee-dd3c-4a01-aa3c-c94f5b2d7b72" => {
+        "e7375f99-ebe2-5524-a7a5-036f3d04bdcf" => {
           provider_name: "Kent Institute of Art and Design",
           ukprn: "10003574",
           instid: "0020",
           name: "Main campus",
           country: "England",
-          postcode: "ME16 8AG",
-          latitude: 0.49798,
-          longitude: 51.271232
+          postcode: "ME16 8AG"
         },
-        "0514a5e7-c140-43d0-9f16-f4ff7fb96272" => {
+        "e42af72f-a28b-5f3f-9104-d051a0768c8f" => {
           provider_name: "King Edward VI College Nuneaton",
           ukprn: "10003624",
           instid: "1131",
           name: "Main campus",
           country: "England",
-          postcode: "CV11 4BE",
-          latitude: 52.52217,
-          longitude: -1.461657
+          postcode: "CV11 4BE"
         },
-        "6f7fb6ba-a24b-4d8f-9350-f0c4d801cdba" => {
+        "b1040f3a-202a-5512-826c-26b538878377" => {
           provider_name: "King's College London",
           ukprn: "10003645",
           instid: "0134",
           name: "Main campus",
           country: "England",
-          postcode: "WC2R 2LS",
-          latitude: 51.511612,
-          longitude: -0.116253
+          postcode: "WC2R 2LS"
         },
-        "3c137f3a-d34e-441d-9f54-ae4300b052e0" => {
+        "c21b3f02-7fcc-5eee-ac36-cc7411dbddcb" => {
           provider_name: "King's College London",
           ukprn: "10003645",
           instid: "0134",
           name: "Shrivenham",
           country: "England",
-          postcode: "SN6 8LA",
-          latitude: 51.6051,
-          longitude: -1.636715
+          postcode: "SN6 8LA"
         },
-        "b6a313b7-001b-489a-9f6c-5b0e68bcb243" => {
+        "d8a24ed4-ffc3-50c9-875d-724bc4504957" => {
           provider_name: "Kingston Maurward College",
           ukprn: "10003676",
           instid: "1099",
           name: "Main campus",
           country: "England",
-          postcode: "DT2 8PY",
-          latitude: 50.71831,
-          longitude: -2.404574
+          postcode: "DT2 8PY"
         },
-        "d968e19a-9511-4a99-a47a-bfe9c21d0171" => {
+        "88bf010d-b3a2-5d91-af5a-0256aa02c277" => {
           provider_name: "Kingston University",
           ukprn: "10003678",
           instid: "0063",
           name: "Entire HEP",
           country: "England",
-          postcode: "KT1 2EE",
-          latitude: 51.403273,
-          longitude: -0.303163
+          postcode: "KT1 2EE"
         },
-        "0a0ed6ad-6760-49d9-8de7-30081b6efedd" => {
+        "c3c26e43-122a-54b5-a296-7bcf720a3c8a" => {
           provider_name: "Kirklees College",
           ukprn: "10003189",
           instid: "1098",
           name: "Main campus",
           country: "England",
-          postcode: "HD1 3LD",
-          latitude: 53.641502,
-          longitude: -1.786329
+          postcode: "HD1 3LD"
         },
-        "555bf674-d304-434b-95a9-1d73598f110c" => {
+        "3e815f36-0bff-529d-8767-a127fd98984a" => {
           provider_name: "KLC School of Design",
           ukprn: "10008325",
           instid: "0301",
           name: "Entire HEP",
           country: "England",
-          postcode: "SW10 0XF",
-          latitude: 51.476339,
-          longitude: -0.182695
+          postcode: "SW10 0XF"
         },
-        "8bd26199-7058-4a31-b3b7-aefc65ebcf31" => {
+        "4972f2ca-b2a8-534e-b8c6-f27b01d8020b" => {
           provider_name: "Kogan Academy of Dramatic Arts",
           ukprn: "10009285",
           instid: "0302",
           name: "Main campus",
           country: "England",
-          postcode: "N19 5SS",
-          latitude: 51.564153,
-          longitude: -0.131338
+          postcode: "N19 5SS"
         },
-        "e612bb6e-ed21-4e4f-8b73-9d1665e23ddc" => {
+        "4b351b15-924d-5e7e-a07e-d37123d1aea3" => {
           provider_name: "Laine Theatre Arts",
           ukprn: "10003746",
           instid: "0471",
           name: "Main campus",
           country: "England",
-          postcode: "KT17 1HH",
-          latitude: 51.334774,
-          longitude: -0.263728
+          postcode: "KT17 1HH"
         },
-        "ce3b5906-12f8-45b6-b179-ce3a0f1f5f64" => {
+        "c721bd7c-fc18-59e7-aae3-150cfff6a0ca" => {
           provider_name: "Lakes College West Cumbria",
           ukprn: "10003753",
           instid: "1097",
           name: "Main campus",
           country: "England",
-          postcode: "CA14 4JN",
-          latitude: 54.606042,
-          longitude: -3.531755
+          postcode: "CA14 4JN"
         },
-        "5ba0859b-9e30-4a07-bf29-ada11bc4b9f7" => {
+        "7f637f25-bc86-506d-ae47-0677131136c5" => {
           provider_name: "LAMDA Limited",
           ukprn: "10003758",
           instid: "0401",
           name: "Entire HEP",
           country: "England",
-          postcode: "W14 9DA",
-          latitude: 51.490551,
-          longitude: -0.21395
+          postcode: "W14 9DA"
         },
-        "45091516-9a68-4789-aa22-a670a474778f" => {
+        "cbaaea6f-13cb-5526-beb4-e63aafd362c0" => {
           provider_name: "Lancaster and Morecambe College",
           ukprn: "10003768",
           instid: "1086",
           name: "Main campus",
           country: "England",
-          postcode: "LA1 2TY",
-          latitude: 54.06264,
-          longitude: -2.826276
+          postcode: "LA1 2TY"
         },
-        "d9237491-921d-42c6-9dd0-324ef7c4abc2" => {
+        "a814794c-65ca-5d72-85f3-8d7aac095578" => {
           provider_name: "LCCM AU UK Limited",
           ukprn: "10066551",
           instid: "0356",
           name: "Main campus",
           country: "England",
-          postcode: "RH10 1JA",
-          latitude: 51.112273,
-          longitude: -0.185029
+          postcode: "RH10 1JA"
         },
-        "556c3dfc-8778-4e72-bb70-20e6089d6c93" => {
+        "7238f44a-1880-5b46-834d-afd56ffbe8a2" => {
           provider_name: "Le Cordon Bleu Limited",
           ukprn: "10003798",
           instid: "0362",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1A 2LS",
-          latitude: 51.518829,
-          longitude: -0.123854
+          postcode: "WC1A 2LS"
         },
-        "daf5f441-4caa-47c1-89f5-e34db16069ed" => {
+        "851396fb-bfb3-5325-bd58-fe736a5cfa10" => {
           provider_name: "Leeds Arts University",
           ukprn: "10003854",
           instid: "0211",
           name: "Entire HEP",
           country: "England",
-          postcode: "LS2 9AQ",
-          latitude: 53.808429,
-          longitude: -1.551775
+          postcode: "LS2 9AQ"
         },
-        "83a116fb-834d-44f4-b895-e6668a3dab50" => {
+        "4c0b0f37-fc79-5d60-9901-f08cdec1e660" => {
           provider_name: "Leeds Beckett University",
           ukprn: "10003861",
           instid: "0064",
           name: "Entire HEP",
           country: "England",
-          postcode: "LS1 3HE",
-          latitude: 53.80402,
-          longitude: -1.548578
+          postcode: "LS1 3HE"
         },
-        "0960e8a6-f9a6-4d57-a54d-287ddc237663" => {
+        "56e7b1e2-99cb-58cd-afe3-3473d5b0c656" => {
           provider_name: "Leeds Beckett University",
           ukprn: "10003861",
           instid: "0064",
           name: "Harrogate College",
           country: "England",
-          postcode: "HG2 8QT",
-          latitude: 53.977472,
-          longitude: -1.521854
+          postcode: "HG2 8QT"
         },
-        "b2393954-7bed-4c63-951c-5a1210b96a7a" => {
+        "700e8f2b-515f-5543-bea3-5f41e0434804" => {
           provider_name: "Leeds City College",
           ukprn: "10024962",
           instid: "1096",
           name: "Main campus",
           country: "England",
-          postcode: "LS3 1AA",
-          latitude: 53.800447,
-          longitude: -1.559012
+          postcode: "LS3 1AA"
         },
-        "d9592909-19a4-48f4-8e58-49d9535cbf3c" => {
+        "5cbcaf8a-fa12-518d-941c-bf3eac0e89c1" => {
           provider_name: "Leeds College of Building",
           ukprn: "10003855",
           instid: "1095",
           name: "Main campus",
           country: "England",
-          postcode: "LS2 7QT",
-          latitude: 53.802946,
-          longitude: -1.535223
+          postcode: "LS2 7QT"
         },
-        "78d2de3f-f25c-48ff-a6ea-89311aec1478" => {
+        "d6466e53-6f76-5c0e-a64a-19e2ac33606f" => {
           provider_name: "Leeds College of Music",
           ukprn: "10003856",
           instid: "0207",
           name: "Entire institution",
           country: "England",
-          postcode: "LS2 7PD",
-          latitude: 53.79823,
-          longitude: -1.531252
+          postcode: "LS2 7PD"
         },
-        "e09dcb02-2c90-42f9-ae80-9035cf88e654" => {
+        "36ed85ea-819e-50b2-bbcb-cfbc96cb6a95" => {
           provider_name: "Leeds Conservatoire",
           ukprn: "10034449",
           instid: "0351",
           name: "Entire HEP",
           country: "England",
-          postcode: "LS2 7PD",
-          latitude: 53.79823,
-          longitude: -1.531252
+          postcode: "LS2 7PD"
         },
-        "f1c2ed77-65db-4731-9727-3b30f8c2a2d7" => {
+        "aa50c311-08b2-5eef-adf9-f4dbd1482bda" => {
           provider_name: "Leeds Trinity University",
           ukprn: "10003863",
           instid: "0040",
           name: "Entire HEP",
           country: "England",
-          postcode: "LS18 5HD",
-          latitude: 53.84878,
-          longitude: -1.64735
+          postcode: "LS18 5HD"
         },
-        "c404ffc9-0d5e-44bd-9dc8-3e9f8ceb3793" => {
+        "1c473b25-7ade-52d3-9dbb-2e16f79a4ec0" => {
           provider_name: "Leicester College",
           ukprn: "10003867",
           instid: "1094",
           name: "Main campus",
           country: "England",
-          postcode: "LE2 7LW",
-          latitude: 52.622482,
-          longitude: -1.133165
+          postcode: "LE2 7LW"
         },
-        "6fae3773-bad3-4f4e-a95c-5049cf8327e2" => {
+        "e00f21cc-849e-57da-839b-974dae6a7508" => {
           provider_name: "Lincoln Bishop University",
           ukprn: "10007811",
           instid: "0007",
           name: "Entire HEP",
           country: "England",
-          postcode: "LN1 3DY",
-          latitude: 53.243563,
-          longitude: -0.537139
+          postcode: "LN1 3DY"
         },
-        "16d3b4c4-a602-4d59-b45b-f0f8adc46d55" => {
+        "142d2ce3-8bc7-51e4-b932-2c9c7aa482fd" => {
           provider_name: "Lincoln College",
           ukprn: "10003928",
           instid: "1092",
           name: "Main campus",
           country: "England",
-          postcode: "LN2 5HQ",
-          latitude: 53.231358,
-          longitude: -0.532657
+          postcode: "LN2 5HQ"
         },
-        "e6de2644-af3a-487c-84b3-0d7024406a74" => {
+        "5a38c208-8463-5dd9-bd76-57d16c7b918c" => {
           provider_name: "Liverpool Hope University",
           ukprn: "10003956",
           instid: "0023",
           name: "Entire HEP",
           country: "England",
-          postcode: "L16 9JD",
-          latitude: 53.391527,
-          longitude: -2.891907
+          postcode: "L16 9JD"
         },
-        "d444aaf6-5e85-4f5b-9358-36383369f275" => {
+        "cd324204-3c4c-5acc-968d-0370c2f56d19" => {
           provider_name: "Liverpool Hope University",
           ukprn: "10003956",
           instid: "0023",
           name: "Everton",
           country: "England",
-          postcode: "L3 8QB",
-          latitude: 53.413428,
-          longitude: -2.9689
+          postcode: "L3 8QB"
         },
-        "36e8e073-626c-4f49-a03a-ccbd4c359191" => {
+        "f3ba4c08-74f3-5ec9-bba9-fcaf065a3a72" => {
           provider_name: "Liverpool John Moores University",
           ukprn: "10003957",
           instid: "0065",
           name: "Entire HEP",
           country: "England",
-          postcode: "L3 5AH",
-          latitude: 53.406561,
-          longitude: -2.975332
+          postcode: "L3 5AH"
         },
-        "8a816113-f1d2-409a-be6d-e9a1f1b8f9f4" => {
+        "e557cf73-1a97-549b-b9e7-401024180cad" => {
           provider_name: "Liverpool School of Tropical Medicine",
           ukprn: "10003958",
           instid: "0228",
           name: "DRC",
-          country: "Congo (Democratic Republic) [Congo (The Democratic Republic of the)]",
-          latitude: 53.408563,
-          longitude: -2.969135
+          country: "Congo (Democratic Republic) [Congo (The Democratic Republic of the)]"
         },
-        "5db7b7e8-1d59-417c-9ae4-8f1e98cb6099" => {
+        "2ef53b55-7aac-54fd-897f-5b8a03abdf7f" => {
           provider_name: "Liverpool School of Tropical Medicine",
           ukprn: "10003958",
           instid: "0228",
           name: "LSTM Kenya",
-          country: "Kenya",
-          latitude: 53.408563,
-          longitude: -2.969135
+          country: "Kenya"
         },
-        "f252c0dc-b90a-49e5-9c53-3401048f3c26" => {
+        "0e2ffc36-fa45-5df9-9616-1d7f72521e74" => {
           provider_name: "Liverpool School of Tropical Medicine",
           ukprn: "10003958",
           instid: "0228",
           name: "LSTM Malawi",
-          country: "Malawi",
-          latitude: 53.408563,
-          longitude: -2.969135
+          country: "Malawi"
         },
-        "62d20b45-fc3d-459c-8102-c69d0af30a74" => {
+        "d7947216-9cde-52c8-abb5-bc0154dda180" => {
           provider_name: "Liverpool School of Tropical Medicine",
           ukprn: "10003958",
           instid: "0228",
           name: "LSTM MLW Lilongwe",
-          country: "Malawi",
-          latitude: 53.408563,
-          longitude: -2.969135
+          country: "Malawi"
         },
-        "aa4d4356-babf-49ff-8786-798b619cf0d7" => {
+        "fb8b4063-f676-5338-a569-417ba6e15bc0" => {
           provider_name: "Liverpool School of Tropical Medicine",
           ukprn: "10003958",
           instid: "0228",
           name: "LSTM Nigeria",
-          country: "Nigeria",
-          latitude: 53.408563,
-          longitude: -2.969135
+          country: "Nigeria"
         },
-        "f8a361a7-8c0d-4b76-ada7-4b7caa99516b" => {
+        "701c7ba3-80b4-5fdf-87b7-38ff9b6e0723" => {
           provider_name: "Liverpool School of Tropical Medicine",
           ukprn: "10003958",
           instid: "0228",
           name: "LSTM Sierra Leone",
-          country: "Sierra Leone",
-          latitude: 53.408563,
-          longitude: -2.969135
+          country: "Sierra Leone"
         },
-        "95873a51-16c0-40e7-856a-8e7e66b4f684" => {
+        "0f1fbf26-e1a6-5a30-94f3-b71bc3d0fa47" => {
           provider_name: "Liverpool School of Tropical Medicine",
           ukprn: "10003958",
           instid: "0228",
           name: "Main campus",
           country: "England",
-          postcode: "L3 5QA",
-          latitude: 53.408563,
-          longitude: -2.969135
+          postcode: "L3 5QA"
         },
-        "ca8421b8-a0dd-4eb8-86ee-1cd672421294" => {
+        "5a8db6a4-3839-5d23-8220-0d71f874215a" => {
           provider_name: "Liverpool School of Tropical Medicine",
           ukprn: "10003958",
           instid: "0228",
           name: "Uganda",
-          country: "Uganda",
-          latitude: 53.408563,
-          longitude: -2.969135
+          country: "Uganda"
         },
-        "bca33fc3-8ec0-4239-b978-6500df6bba61" => {
+        "52e013f3-4326-59fe-ae81-f953f1df241e" => {
           provider_name: "LMA",
           ukprn: "10031239",
           instid: "0458",
           name: "Main campus",
           country: "England",
-          postcode: "L1 6DA",
-          latitude: 53.406773,
-          longitude: -2.985747
+          postcode: "L1 6DA"
         },
-        "5357d260-00a4-42b7-a4f0-8f6725b37850" => {
+        "a2f51677-3be5-530a-a40b-64be20f04fe5" => {
           provider_name: "London Bridge Business Academy",
           ukprn: "10013109",
           instid: "0282",
           name: "Entire HEP",
           country: "England",
-          postcode: "EC1M 3JB",
-          latitude: 51.520419,
-          longitude: -0.106307
+          postcode: "EC1M 3JB"
         },
-        "cae81cba-e6b0-4234-9529-f5a8be1919d0" => {
+        "2fc8a0fc-e571-5acf-9dc2-70cb4d886dc6" => {
           provider_name: "London Brookes College",
           ukprn: "10065543",
           instid: "1202",
           name: "Main campus",
           country: "England",
-          postcode: "NW4 4AP",
-          latitude: 51.586511,
-          longitude: -0.229868
+          postcode: "NW4 4AP"
         },
-        "ef8c216c-059d-4d64-8468-20575e8310a9" => {
+        "841963e9-e962-5db7-a25b-2e2132621b7e" => {
           provider_name: "London Business School",
           ukprn: "10007769",
           instid: "0135",
           name: "Dubai campus",
-          country: "United Arab Emirates",
-          latitude: 51.526581,
-          longitude: -0.161378
+          country: "United Arab Emirates"
         },
-        "e1df9b64-14d3-4814-8a40-d111c27189a9" => {
+        "682da777-a5bd-555e-8ceb-ea6da9369b0b" => {
           provider_name: "London Business School",
           ukprn: "10007769",
           instid: "0135",
           name: "Main campus",
           country: "England",
-          postcode: "NW1 4SA",
-          latitude: 51.526581,
-          longitude: -0.161378
+          postcode: "NW1 4SA"
         },
-        "b6321367-3272-453b-aac5-a2dea244d192" => {
+        "f84dbb72-df86-578d-a23e-efe470e1a339" => {
           provider_name: "London Centre of Contemporary Music",
           ukprn: "10004006",
           instid: "0277",
           name: "Main campus",
           country: "England",
-          postcode: "SE1 1TD",
-          latitude: 51.504046,
-          longitude: -0.09436
+          postcode: "SE1 1TD"
         },
-        "dcae18b7-b583-475d-95e0-633844ae1d87" => {
+        "98562f71-1af8-5396-b460-73662fd8d81f" => {
           provider_name: "London Churchill College Ltd",
           ukprn: "10030391",
           instid: "0250",
           name: "Barclay hall",
           country: "England",
-          postcode: "E7 8JQ",
-          latitude: 51.542945,
-          longitude: 0.032242
+          postcode: "E7 8JQ"
         },
-        "aa63aebe-dcfc-43ef-8446-28f3ff1215ba" => {
+        "5eb16d1f-e60d-581a-bacc-ad3b3188fea8" => {
           provider_name: "London Churchill College Ltd",
           ukprn: "10030391",
           instid: "0250",
           name: "Main campus",
           country: "England",
-          postcode: "E7 8JQ",
-          latitude: 51.542945,
-          longitude: 0.032242
+          postcode: "E7 8JQ"
         },
-        "f1e84f3b-1e6a-49b9-929b-8d209cc7123a" => {
+        "24f83838-e673-5652-bf19-6366ab96a78f" => {
           provider_name: "London College of Business Sciences",
           ukprn: "10041974",
           instid: "0338",
           name: "Main campus",
           country: "England",
-          postcode: "E16 1AH",
-          latitude: 51.505982,
-          longitude: 0.015769
+          postcode: "E16 1AH"
         },
-        "c00e2d87-f507-40cd-be65-7ee7742f25dd" => {
+        "785ed405-dab1-5e35-ab05-2c44f3befa4e" => {
           provider_name: "London College of Business Studies",
           ukprn: "10019368",
           instid: "0255",
           name: "Main campus",
           country: "England",
-          postcode: "IG1 4TG",
-          latitude: 51.564185,
-          longitude: 0.066259
+          postcode: "IG1 4TG"
         },
-        "f4cfc100-fd93-4dda-892b-942f129ae950" => {
+        "75ab82c7-33c0-51f9-9ecc-a8fcba803c57" => {
           provider_name: "London College of Creative Media Limited",
           ukprn: "10057951",
           instid: "0340",
           name: "Main campus",
           country: "England",
-          postcode: "SE1 1TD",
-          latitude: 51.504046,
-          longitude: -0.09436
+          postcode: "SE1 1TD"
         },
-        "4e811b4f-de94-43f0-84ec-77875f637518" => {
+        "274e5cb8-578c-57af-b9ef-782f5f005e94" => {
           provider_name: "London College of International Business Studies Ltd",
           ukprn: "10004023",
           instid: "0355",
           name: "Main campus",
           country: "England",
-          postcode: "SE16 2XU",
-          latitude: 51.49677,
-          longitude: -0.051054
+          postcode: "SE16 2XU"
         },
-        "79b41478-d21b-40ad-a211-9da0d447c377" => {
+        "9273d41c-e1a6-5b2e-aa21-1a1b039567fc" => {
           provider_name: "London Film School Limited",
           ukprn: "10004036",
           instid: "0304",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC2H 9UB",
-          latitude: 51.513549,
-          longitude: -0.125454
+          postcode: "WC2H 9UB"
         },
-        "a9fa0408-2790-4442-836d-08d05f6ff22d" => {
+        "691f481a-3a75-5af7-8cae-8b464eff5095" => {
           provider_name: "London Metropolitan University",
           ukprn: "10004048",
           instid: "0202",
           name: "Entire HEP",
           country: "England",
-          postcode: "N7 8DB",
-          latitude: 51.551471,
-          longitude: -0.110381
+          postcode: "N7 8DB"
         },
-        "cc682f37-76f7-439e-b861-2ea9b892984a" => {
+        "f2a80a89-2468-5779-a291-d0cd91740fe7" => {
           provider_name: "London Metropolitan University",
           ukprn: "10004048",
           instid: "0202",
           name: "London City campus",
           country: "England",
-          postcode: "EC3N 2EY",
-          latitude: 51.51307,
-          longitude: -0.076444
+          postcode: "EC3N 2EY"
         },
-        "bad5d98e-3623-4f1e-a939-04cb8fcf52b3" => {
+        "fb87722b-3d07-5d2e-af18-80225376f05d" => {
           provider_name: "London Metropolitan University",
           ukprn: "10004048",
           instid: "0202",
           name: "London North campus",
           country: "England",
-          postcode: "N7 8DB",
-          latitude: 51.551471,
-          longitude: -0.110381
+          postcode: "N7 8DB"
         },
-        "572f45a2-f908-40e7-88b7-fb8f92e93308" => {
+        "a5e2df8a-7b20-5fd2-aaf8-d6a3a2e55915" => {
           provider_name: "London School of Academics Ltd",
           ukprn: "10032594",
           instid: "0276",
           name: "Entire HEP",
           country: "England",
-          postcode: "RM13 8EU",
-          latitude: 51.517691,
-          longitude: 0.171971
+          postcode: "RM13 8EU"
         },
-        "88472870-6f7c-4e13-88dd-3e1fb6d214bd" => {
+        "79692928-2c9d-5c00-bf93-9800cb0387ec" => {
           provider_name: "London School of Business and Finance (UK) Limited",
           ukprn: "10004060",
           instid: "0279",
           name: "Main campus",
           country: "England",
-          postcode: "EC1N 2LL",
-          latitude: 51.517955,
-          longitude: -0.11086
+          postcode: "EC1N 2LL"
         },
-        "108f7bc2-9a27-4869-b5b6-00356bf547b5" => {
+        "e6d0de81-adb0-5485-810c-3083cab8502f" => {
           provider_name: "London School of Commerce & IT Limited",
           ukprn: "10023434",
           instid: "0328",
           name: "Entire HEP",
           country: "England",
-          postcode: "E1 1EJ",
-          latitude: 51.516058,
-          longitude: -0.065569
+          postcode: "E1 1EJ"
         },
-        "dcc19299-a9e8-41c6-b861-17fcedb77851" => {
+        "a794f4e7-354a-5841-b37d-0f38552965cf" => {
           provider_name: "London School of Commerce & IT Limited",
           ukprn: "10023434",
           instid: "0328",
           name: "London School of Commerce & IT Limited",
           country: "England",
-          postcode: "E1 1EJ",
-          latitude: 51.516058,
-          longitude: -0.065569
+          postcode: "E1 1EJ"
         },
-        "dc3f4bb0-7441-47af-872a-6d2a8c91efb0" => {
+        "83cafe02-a9c0-5a8c-ba73-5853f5b874a1" => {
           provider_name: "London School of Economics and Political Science",
           ukprn: "10004063",
           instid: "0137",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC2A 2AE",
-          latitude: 51.514114,
-          longitude: -0.116971
+          postcode: "WC2A 2AE"
         },
-        "802855ad-0608-42ed-a387-420c2b27d92b" => {
+        "989fa9b9-999b-5a73-afa7-178316fdee97" => {
           provider_name: "London School of Hygiene and Tropical Medicine",
           ukprn: "10007771",
           instid: "0138",
           name: "Gambia",
-          country: "Gambia, The",
-          latitude: 51.520925,
-          longitude: -0.130687
+          country: "Gambia, The"
         },
-        "cf807543-5d79-4310-b050-89487f12a9d7" => {
+        "905a3535-56ce-5b1a-bf7f-c417a3c288d4" => {
           provider_name: "London School of Hygiene and Tropical Medicine",
           ukprn: "10007771",
           instid: "0138",
           name: "Main campus",
           country: "England",
-          postcode: "WC1E 7HT",
-          latitude: 51.520925,
-          longitude: -0.130687
+          postcode: "WC1E 7HT"
         },
-        "66315625-700c-4468-9c51-5a1ee06d4cbd" => {
+        "ead9c2fe-ef35-5953-ae59-e85dc389fca8" => {
           provider_name: "London School of Hygiene and Tropical Medicine",
           ukprn: "10007771",
           instid: "0138",
           name: "Uganda",
-          country: "Uganda",
-          latitude: 51.520925,
-          longitude: -0.130687
+          country: "Uganda"
         },
-        "a322aa2d-1e0d-4fdf-b69a-ff4d99c64298" => {
+        "7a91975f-3d89-51b8-95d8-5eafc5230c8e" => {
           provider_name: "London School of Innovation Ltd",
           ukprn: "10091282",
           instid: "0472",
           name: "Main campus",
           country: "England",
-          postcode: "SM1 2GD",
-          latitude: 51.360512,
-          longitude: -0.194771
+          postcode: "SM1 2GD"
         },
-        "bbaa13ed-e773-40da-b452-a53024752222" => {
+        "8cc2a587-f712-5445-8131-7faf433c980a" => {
           provider_name: "London School of Jewish Studies",
           ukprn: "10029147",
           instid: "0464",
           name: "Main campus",
           country: "England",
-          postcode: "NW4 2SJ",
-          latitude: 51.588217,
-          longitude: -0.213706
+          postcode: "NW4 2SJ"
         },
-        "593eadbe-0dac-4abd-80c8-013ee8ba6392" => {
+        "de3785df-a86f-5e22-bb41-fae0dd623825" => {
           provider_name: "London School of Management Education",
           ukprn: "10022285",
           instid: "0256",
           name: "Entire HEP",
           country: "England",
-          postcode: "IG2 6EY",
-          latitude: 51.574883,
-          longitude: 0.066035
+          postcode: "IG2 6EY"
         },
-        "f75ed0e8-4ee3-4578-b6ac-c2ca425f8bcb" => {
+        "9988ddd3-44d2-5397-ac67-561f138e74d9" => {
           provider_name: "London School of Science and Technology Limited",
           ukprn: "10008362",
           instid: "0227",
           name: "Main campus",
           country: "England",
-          postcode: "HA0 1EH",
-          latitude: 51.539828,
-          longitude: -0.301673
+          postcode: "HA0 1EH"
         },
-        "5fe848d9-eea1-4dcb-a80c-39d3620c991c" => {
+        "74f227ad-9e03-522c-8b28-d1dca82ebc9b" => {
           provider_name: "London School of Theology",
           ukprn: "10004075",
           instid: "0257",
           name: "Entire HEP",
           country: "England",
-          postcode: "HA6 2UW",
-          latitude: 51.612946,
-          longitude: -0.43175
+          postcode: "HA6 2UW"
         },
-        "92595db1-9599-42f7-a9b8-48b70f23f12d" => {
+        "afb79604-45e2-5c08-aa8c-a4ae8500ae6d" => {
           provider_name: "London South Bank University",
           ukprn: "10004078",
           instid: "0076",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE1 0AA",
-          latitude: 51.498708,
-          longitude: -0.101772
+          postcode: "SE1 0AA"
         },
-        "6e206496-0e8c-48c0-8dd9-ad834f620cb8" => {
+        "ee7ffc30-b601-5b54-9cbb-83d7bd07421c" => {
           provider_name: "London Studio Centre",
           ukprn: "10004079",
           instid: "0274",
           name: "Entire HEP",
           country: "England",
-          postcode: "N12 0GA",
-          latitude: 51.612964,
-          longitude: -0.176294
+          postcode: "N12 0GA"
         },
-        "c3bef48c-0938-4ff2-a7d9-ddaeceed0a25" => {
+        "002491d5-ed83-5e1c-a9b7-3da86ce8eb0b" => {
           provider_name: "Loughborough College",
           ukprn: "10004112",
           instid: "1091",
           name: "Main campus",
           country: "England",
-          postcode: "LE11 3BT",
-          latitude: 52.767512,
-          longitude: -1.220321
+          postcode: "LE11 3BT"
         },
-        "d4ad1e73-6a0e-417a-89f6-f09c60e3bb96" => {
+        "6cf8b968-8a61-553a-bc2e-5b9de0cbcaff" => {
           provider_name: "Loughborough University",
           ukprn: "10004113",
           instid: "0152",
           name: "London Campus",
           country: "England",
-          postcode: "E15 2GZ",
-          latitude: 51.548246,
-          longitude: -0.024755
+          postcode: "E15 2GZ"
         },
-        "ef1d3313-a6cf-432b-84c9-1d6b9d4f1c8c" => {
+        "e35b8f1c-5655-5063-9126-727ff05518a8" => {
           provider_name: "Loughborough University",
           ukprn: "10004113",
           instid: "0152",
           name: "Main campus",
           country: "England",
-          postcode: "LE11 3TU",
-          latitude: 52.764828,
-          longitude: -1.22952
+          postcode: "LE11 3TU"
         },
-        "b593c0b8-dbe5-487d-a817-15efe4185fba" => {
+        "5408b479-d1f2-5b0d-aeeb-af167efeadbb" => {
           provider_name: "Loughborough University",
           ukprn: "10004113",
           instid: "0152",
           name: "Singapore campus",
-          country: "Singapore",
-          latitude: 52.764828,
-          longitude: -1.22952
+          country: "Singapore"
         },
-        "f7666ca9-6737-43d2-a3bd-d4f6f2b96df4" => {
+        "f1237dd2-1132-531e-8f0e-72c318e951c5" => {
           provider_name: "LTE Group",
           ukprn: "10023139",
           instid: "1090",
           name: "Main campus",
           country: "England",
-          postcode: "M11 2WH",
-          latitude: 53.471845,
-          longitude: -2.187628
+          postcode: "M11 2WH"
         },
-        "2fac4ad6-fe44-4a69-b762-617692065218" => {
+        "d10feb8b-0fd9-54a8-ab5d-259a429889af" => {
           provider_name: "Luther King House Educational Trust",
           ukprn: "10009612",
           instid: "0306",
           name: "Entire HEP",
           country: "England",
-          postcode: "M14 5JP",
-          latitude: 53.449904,
-          longitude: -2.219182
+          postcode: "M14 5JP"
         },
-        "1001db57-bc2c-47ee-b6d0-55fa4e78b4fc" => {
+        "7c052994-dca3-5304-8b3c-30f18ed32e3e" => {
           provider_name: "Macclesfield College",
           ukprn: "10004144",
           instid: "1089",
           name: "Main campus",
           country: "England",
-          postcode: "SK11 8LF",
-          latitude: 53.251493,
-          longitude: -2.138236
+          postcode: "SK11 8LF"
         },
-        "6ee37f2e-7e47-4a86-9de3-ef6483217321" => {
+        "f3ed2724-7b7d-50b2-bf91-8ed103fedee6" => {
           provider_name: "Matrix College of Counselling and Psychotherapy Ltd",
           ukprn: "10023453",
           instid: "0320",
           name: "Entire HEP",
           country: "England",
-          postcode: "NR18 0GU",
-          latitude: 52.570444,
-          longitude: 1.110958
+          postcode: "NR18 0GU"
         },
-        "1a7aaa4b-5678-405c-8fd8-90a684044aec" => {
+        "f324965a-f8c4-50f4-8e68-cc2d0a076854" => {
           provider_name: "Medway School of Pharmacy",
           ukprn: "99999997",
           instid: "7004",
           name: "Main campus",
           country: "England",
-          postcode: "ME4 4TB",
-          latitude: 51.397233,
-          longitude: 0.539388
+          postcode: "ME4 4TB"
         },
-        "9a5b6924-6fb0-4e90-b463-ed660a3dd5df" => {
+        "cf21d22e-37dd-585b-9d47-fddf1234c6bd" => {
           provider_name: "Met Film School Limited",
           ukprn: "10045476",
           instid: "0272",
           name: "Berlin",
-          country: "Germany",
-          latitude: 51.50881,
-          longitude: -0.307005
+          country: "Germany"
         },
-        "34191ef8-f02b-495b-9797-360e8c71ae7e" => {
+        "790e67cc-0e47-5221-be26-fb7cc8580c01" => {
           provider_name: "Met Film School Limited",
           ukprn: "10045476",
           instid: "0272",
           name: "Main campus",
           country: "England",
-          postcode: "W5 5EP",
-          latitude: 51.50881,
-          longitude: -0.307005
+          postcode: "W5 5EP"
         },
-        "99ccdaaf-3647-43c5-91b9-2d7dc9571afd" => {
+        "ffe36a2c-0ce0-56e1-91c7-844778adc296" => {
           provider_name: "Middlesbrough College",
           ukprn: "10004344",
           instid: "1185",
           name: "Main campus",
           country: "England",
-          postcode: "TS2 1AD",
-          latitude: 54.579944,
-          longitude: -1.226811
+          postcode: "TS2 1AD"
         },
-        "84283609-7514-4eca-b904-b457aff47339" => {
+        "0dd3abe5-82e7-5d72-9720-e76c3273bf00" => {
           provider_name: "Middlesex University",
           ukprn: "10004351",
           instid: "0067",
           name: "Dubai",
-          country: "United Arab Emirates",
-          latitude: 51.589833,
-          longitude: -0.228945
+          country: "United Arab Emirates"
         },
-        "299062d8-362e-475c-b87d-25f54f015074" => {
+        "f8d7e421-17fa-5d4c-849a-6582ff5b87c6" => {
           provider_name: "Middlesex University",
           ukprn: "10004351",
           instid: "0067",
           name: "Main campus",
           country: "England",
-          postcode: "NW4 4BT",
-          latitude: 51.589833,
-          longitude: -0.228945
+          postcode: "NW4 4BT"
         },
-        "188e9e57-2ab9-49b5-97d3-f93c5fa343b7" => {
+        "f616b744-fb8a-5043-8e42-eefd1ee46686" => {
           provider_name: "Middlesex University",
           ukprn: "10004351",
           instid: "0067",
           name: "Malta",
-          country: "Malta",
-          latitude: 51.589833,
-          longitude: -0.228945
+          country: "Malta"
         },
-        "93f384e2-fb6c-4988-9a79-48fcc1da6c72" => {
+        "c1abe1e7-25de-50ad-af1c-610bc7290cc9" => {
           provider_name: "Middlesex University",
           ukprn: "10004351",
           instid: "0067",
           name: "Mauritius",
-          country: "Mauritius",
-          latitude: 51.589833,
-          longitude: -0.228945
+          country: "Mauritius"
         },
-        "a080949f-7678-452f-844a-2b561fee4188" => {
+        "5bfe6d84-db08-56b2-8353-1434f82c20ce" => {
           provider_name: "Mid-Kent College",
           ukprn: "10004340",
           instid: "1087",
           name: "Main campus",
           country: "England",
-          postcode: "ME7 1FN",
-          latitude: 51.393598,
-          longitude: 0.541529
+          postcode: "ME7 1FN"
         },
-        "bed0608a-36dc-477a-af7f-81db9596c433" => {
+        "d97dec27-4a70-5265-a058-bde6aae6eae4" => {
           provider_name: "Millennium Performing Arts Ltd",
           ukprn: "10004365",
           instid: "0339",
           name: "Main campus",
           country: "England",
-          postcode: "SE18 6HU",
-          latitude: 51.490547,
-          longitude: 0.066039
+          postcode: "SE18 6HU"
         },
-        "82aa449e-da4f-4d83-a6e6-71cd15433436" => {
+        "8e42edca-dd3d-5e55-88de-25db671d1957" => {
           provider_name: "Milton Keynes College",
           ukprn: "10004375",
           instid: "1088",
           name: "Main campus",
           country: "England",
-          postcode: "MK6 5LP",
-          latitude: 52.027987,
-          longitude: -0.752148
+          postcode: "MK6 5LP"
         },
-        "89ec5763-e631-4439-8dc8-1db87814899f" => {
+        "72c81bf8-bb58-5062-83f2-00e5583cbbb2" => {
           provider_name: "Missio Dei",
           ukprn: "10020416",
           instid: "0225",
           name: "Entire HEP",
           country: "England",
-          postcode: "M3 7BE",
-          latitude: 53.484297,
-          longitude: -2.253974
+          postcode: "M3 7BE"
         },
-        "653214c3-5c97-41f3-9b88-947abf30e792" => {
+        "afa52587-00de-5cf8-94c7-69a0c0447160" => {
           provider_name: "MLA College",
           ukprn: "10049370",
           instid: "0440",
           name: "MLA College Ltd",
           country: "England",
-          postcode: "PL1 2AX",
-          latitude: 50.368792,
-          longitude: -4.139102
+          postcode: "PL1 2AX"
         },
-        "1fe800b8-7bd8-4c77-a234-b0ad5f4ae813" => {
+        "42f6ceaf-e359-5388-ae98-b6439311b2ea" => {
           provider_name: "Mont Rose College of Management and Sciences Limited",
           ukprn: "10023777",
           instid: "0246",
           name: "Entire HEP",
           country: "England",
-          postcode: "IG2 6NQ",
-          latitude: 51.576272,
-          longitude: 0.064279
+          postcode: "IG2 6NQ"
         },
-        "a5f6a45b-7bd3-4c08-984b-45eb5b306daa" => {
+        "4f860fa3-e1c4-5ac9-a883-b597ff947603" => {
           provider_name: "Moorlands College",
           ukprn: "10023454",
           instid: "0221",
           name: "Main campus",
           country: "England",
-          postcode: "BH23 7AT",
-          latitude: 50.770543,
-          longitude: -1.777002
+          postcode: "BH23 7AT"
         },
-        "7d3599a3-879d-420f-950b-87a84e21e2df" => {
+        "9cb64d69-3d6b-5129-b16d-3c23d392060b" => {
           provider_name: "Moorlands College",
           ukprn: "10023454",
           instid: "0221",
           name: "Midlands",
           country: "England",
-          postcode: "B29 6QX",
-          latitude: 52.43599,
-          longitude: -1.948591
+          postcode: "B29 6QX"
         },
-        "93b67d75-5958-4d15-b0fd-a3dbd5306202" => {
+        "2f41bae9-2d7d-5f6a-8ec6-f36673ddcb3d" => {
           provider_name: "Moorlands College",
           ukprn: "10023454",
           instid: "0221",
           name: "Midlands",
           country: "England",
-          postcode: "B61 0RA",
-          latitude: 52.394642,
-          longitude: -2.048252
+          postcode: "B61 0RA"
         },
-        "b7ced9d4-4123-4f4b-a41e-7af90f057511" => {
+        "261a0ee1-37b3-5c57-b8a3-13e840955326" => {
           provider_name: "Moorlands College",
           ukprn: "10023454",
           instid: "0221",
           name: "Northern Ireland",
           country: "Northern Ireland",
-          postcode: "BT12 7DY",
-          latitude: 54.597514,
-          longitude: -5.974878
+          postcode: "BT12 7DY"
         },
-        "81c05569-82e9-47c1-904c-466a932e4b07" => {
+        "53b1f376-513b-5efe-95ae-7dec50c4413c" => {
           provider_name: "Moorlands College",
           ukprn: "10023454",
           instid: "0221",
           name: "South West",
           country: "England",
-          postcode: "EX35 6JJ",
-          latitude: 51.227829,
-          longitude: -3.866307
+          postcode: "EX35 6JJ"
         },
-        "4d4f200b-8ed6-439b-b338-34aa180e529e" => {
+        "83a6f2d7-a132-5caa-a3a6-c914a32a8d3e" => {
           provider_name: "Moorlands College",
           ukprn: "10023454",
           instid: "0221",
           name: "South West",
           country: "England",
-          postcode: "TQ1 4SF",
-          latitude: 50.501507,
-          longitude: -3.525357
+          postcode: "TQ1 4SF"
         },
-        "cdd0bfde-b7ee-4cbd-8c2d-79219a59c182" => {
+        "77343fc0-0666-5fd9-92ff-c9b4c547e2ba" => {
           provider_name: "Morley College Limited",
           ukprn: "10004432",
           instid: "1189",
           name: "Main campus",
           country: "England",
-          postcode: "SE1 7HT",
-          latitude: 51.497878,
-          longitude: -0.109976
+          postcode: "SE1 7HT"
         },
-        "a6f8e1cf-e16f-40ed-a7e3-1704d1c53bd7" => {
+        "3b0c5e79-34f0-5efc-adf8-528d6e89509b" => {
           provider_name: "Moulton College",
           ukprn: "10004442",
           instid: "1085",
           name: "Main campus",
           country: "England",
-          postcode: "NN3 7RR",
-          latitude: 52.289955,
-          longitude: -0.857756
+          postcode: "NN3 7RR"
         },
-        "172d38c2-b04f-4e38-ae4e-8e20bd0101c9" => {
+        "2eb628b1-cef5-59a7-81fd-77f8237f9743" => {
           provider_name: "Mountview Academy of Theatre Arts",
           ukprn: "10004450",
           instid: "0239",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE15 5JT",
-          latitude: 51.475175,
-          longitude: -0.069312
+          postcode: "SE15 5JT"
         },
-        "06fd35b9-be59-4a2f-a010-1bc1e4396d96" => {
+        "f38b41ee-fb1b-5a8a-9dcc-d5de72d99862" => {
           provider_name: "Multiverse",
           ukprn: "10055902",
           instid: "0447",
           name: "Main campus",
           country: "England",
-          postcode: "W1U 6RL",
-          latitude: 51.520362,
-          longitude: -0.156948
+          postcode: "W1U 6RL"
         },
-        "af641463-95df-4122-a460-e4fe4b9c8047" => {
+        "6ac379a7-9300-5bf3-a565-f7e5916c21fa" => {
           provider_name: "Myerscough College",
           ukprn: "10004478",
           instid: "1084",
           name: "Main campus",
           country: "England",
-          postcode: "PR3 0RY",
-          latitude: 53.853081,
-          longitude: -2.763081
+          postcode: "PR3 0RY"
         },
-        "36607307-791e-4f22-9d38-7ae043efd1ac" => {
+        "9a76785f-16c8-5c58-8542-f172efcab72e" => {
           provider_name: "National Centre for Circus Arts",
           ukprn: "10001444",
           instid: "0445",
           name: "Main campus",
           country: "England",
-          postcode: "N1 6HD",
-          latitude: 51.527295,
-          longitude: -0.082419
+          postcode: "N1 6HD"
         },
-        "4f5ecc1d-1568-491b-92ea-b43ef793813b" => {
+        "ad748a86-4e9b-562e-9cd0-108e6d6f86b6" => {
           provider_name: "National Institute of Teaching",
           ukprn: "10090839",
           instid: "0470",
           name: "Main campus",
           country: "England",
-          postcode: "WF1 2PF",
-          latitude: 53.707715,
-          longitude: -1.512461
+          postcode: "WF1 2PF"
         },
-        "304adc78-85f6-43c8-82c5-dac092301e4b" => {
+        "8725149d-2223-5df8-8b17-1a834ee5ae25" => {
           provider_name: "Navitas UK Holdings Limited",
           ukprn: "10053304",
           instid: "0413",
           name: "BCUIC",
           country: "England",
-          postcode: "B5 5JU",
-          latitude: 52.481921,
-          longitude: -1.888824
+          postcode: "B5 5JU"
         },
-        "0e90ea05-ce4d-4ecb-9808-207519de7005" => {
+        "06beef7e-92aa-59f1-a396-1658858aa651" => {
           provider_name: "Navitas UK Holdings Limited",
           ukprn: "10053304",
           instid: "0413",
           name: "CRIC",
           country: "England",
-          postcode: "CM1 1SQ",
-          latitude: 51.741381,
-          longitude: 0.474495
+          postcode: "CM1 1SQ"
         },
-        "89393f6b-5262-44a2-9c17-285ba2f48b08" => {
+        "a03b9831-76d5-52e5-8883-52dd2e8252e8" => {
           provider_name: "Navitas UK Holdings Limited",
           ukprn: "10053304",
           instid: "0413",
           name: "HIC",
           country: "England",
-          postcode: "AL10 9AB",
-          latitude: 51.752882,
-          longitude: -0.242179
+          postcode: "AL10 9AB"
         },
-        "abe15532-2f88-45fa-9311-9bcdcd39314a" => {
+        "8136f76a-fb8e-5d52-bafd-985f3e6fbd7a" => {
           provider_name: "Navitas UK Holdings Limited",
           ukprn: "10053304",
           instid: "0413",
           name: "ICP",
           country: "England",
-          postcode: "PO1 2PR",
-          latitude: 50.795721,
-          longitude: -1.095364
+          postcode: "PO1 2PR"
         },
-        "bf5c4223-57da-4f30-8925-f0dafb563894" => {
+        "682ee67c-6f30-5769-831f-538801eacdd8" => {
           provider_name: "Navitas UK Holdings Limited",
           ukprn: "10053304",
           instid: "0413",
           name: "ICRGU",
           country: "Scotland",
-          postcode: "AB10 7QE",
-          latitude: 57.118925,
-          longitude: -2.13878
+          postcode: "AB10 7QE"
         },
-        "13fa3372-8e36-4e52-85b6-66beeb83433f" => {
+        "865c7eae-1137-53fb-a6a7-78100cc3c2a5" => {
           provider_name: "Navitas UK Holdings Limited",
           ukprn: "10053304",
           instid: "0413",
           name: "LGSC",
           country: "England",
-          postcode: "LE1 1SW",
-          latitude: 52.632453,
-          longitude: -1.125861
+          postcode: "LE1 1SW"
         },
-        "6a735b03-73ef-450c-b6f8-5bd2f36e0eba" => {
+        "7e912d22-00e5-5ca6-af4f-128db4fd68dd" => {
           provider_name: "Navitas UK Holdings Limited",
           ukprn: "10053304",
           instid: "0413",
           name: "Main campus",
           country: "England",
-          postcode: "UB8 3PH",
-          latitude: 51.532838,
-          longitude: -0.472856
+          postcode: "UB8 3PH"
         },
-        "fe87fbf4-2bce-42ae-afc0-6f0cb74dbdf3" => {
+        "67067b44-da19-5960-959c-3662bf8d2d59" => {
           provider_name: "Navitas UK Holdings Limited",
           ukprn: "10053304",
           instid: "0413",
           name: "TCSU",
           country: "Wales",
-          postcode: "SA1 8EN",
-          latitude: 51.6188,
-          longitude: -3.879405
+          postcode: "SA1 8EN"
         },
-        "e2934614-ebe7-4cdc-b205-a13c9b60983d" => {
+        "8b16d83e-edce-5f5b-b8d0-a9b3b90db4b8" => {
           provider_name: "Navitas UK Holdings Limited",
           ukprn: "10053304",
           instid: "0413",
           name: "UNIC",
           country: "England",
-          postcode: "NN2 6JD",
-          latitude: 52.252077,
-          longitude: -0.890693
+          postcode: "NN2 6JD"
         },
-        "5d87e29f-7cae-4e9f-8ba7-18f40676fd31" => {
+        "200b4126-801a-56f6-83e9-7056e146a71c" => {
           provider_name: "Navitas UK Holdings Limited",
           ukprn: "10053304",
           instid: "0413",
           name: "UPIC",
           country: "England",
-          postcode: "PL4 6DX",
-          latitude: 50.376003,
-          longitude: -4.141199
+          postcode: "PL4 6DX"
         },
-        "47f8202e-61b6-4c61-933f-66e0d5a6be82" => {
+        "1b7af7cc-5a11-53c6-868f-3f03e2fdad1f" => {
           provider_name: "Nazarene Theological College",
           ukprn: "10004538",
           instid: "0240",
           name: "Entire HEP",
           country: "England",
-          postcode: "M20 2GU",
-          latitude: 53.416415,
-          longitude: -2.239922
+          postcode: "M20 2GU"
         },
-        "a72ab1f4-2cd7-4286-a6c4-43336103e512" => {
+        "d97e6c68-476c-5f0b-880c-c13556108c5b" => {
           provider_name: "NCG",
           ukprn: "10004599",
           instid: "1078",
           name: "Main campus",
           country: "England",
-          postcode: "NE4 7SA",
-          latitude: 54.966418,
-          longitude: -1.627186
+          postcode: "NE4 7SA"
         },
-        "d89eb90c-c76d-4455-9956-143c6bdd1d7e" => {
+        "fdc7db4c-cf90-5339-81ce-b4e87136519c" => {
           provider_name: "Nelson and Colne College",
           ukprn: "10004552",
           instid: "1083",
           name: "Main campus",
           country: "England",
-          postcode: "BB9 7YT",
-          latitude: 53.84442,
-          longitude: -2.221148
+          postcode: "BB9 7YT"
         },
-        "dac98f41-9aa6-4c20-8c79-c30669bc1c2c" => {
+        "88c32491-0037-547e-8566-32947a6fd012" => {
           provider_name: "Nelson College London Ltd",
           ukprn: "10030129",
           instid: "0260",
           name: "Gants Hill Campus",
           country: "England",
-          postcode: "IG2 6NQ",
-          latitude: 51.576272,
-          longitude: 0.064279
+          postcode: "IG2 6NQ"
         },
-        "fac9ced7-1ad2-4f68-aa4a-4e59785a0d72" => {
+        "dddc7ef5-878c-589d-8ced-c2681ba3df43" => {
           provider_name: "Nelson College London Ltd",
           ukprn: "10030129",
           instid: "0260",
           name: "Main campus",
           country: "England",
-          postcode: "IG1 1BA",
-          latitude: 51.557886,
-          longitude: 0.07167
+          postcode: "IG1 1BA"
         },
-        "b3d06557-98a6-41c6-88fa-664f0c344f72" => {
+        "bd1619a1-30aa-5abf-aded-f05bb8d0a22c" => {
           provider_name: "New City College",
           ukprn: "10006963",
           instid: "1081",
           name: "Main campus",
           country: "England",
-          postcode: "E14 0AF",
-          latitude: 51.508545,
-          longitude: -0.016975
+          postcode: "E14 0AF"
         },
-        "df201342-3edb-4352-8c36-029a6b20ee73" => {
+        "084d117c-9789-5f81-8f9f-432cfbb14dbd" => {
           provider_name: "New College Durham",
           ukprn: "10004576",
           instid: "1082",
           name: "Main campus",
           country: "England",
-          postcode: "DH1 5ES",
-          latitude: 54.795913,
-          longitude: -1.594398
+          postcode: "DH1 5ES"
         },
-        "92cd59ad-5b22-4014-94cf-6b18770a6ac5" => {
+        "0b057305-de7f-5ede-a840-a824ef822035" => {
           provider_name: "New College Pontefract",
           ukprn: "10004578",
           instid: "1070",
           name: "Main campus",
           country: "England",
-          postcode: "WF8 4QR",
-          latitude: 53.694241,
-          longitude: -1.324789
+          postcode: "WF8 4QR"
         },
-        "3f387f39-980d-42a5-8018-49747b2c89d2" => {
+        "39baa6ad-c85b-5c23-a126-feeb7865b380" => {
           provider_name: "New College Stamford",
           ukprn: "10006303",
           instid: "1037",
           name: "Main campus",
           country: "England",
-          postcode: "PE9 1XA",
-          latitude: 52.658967,
-          longitude: -0.471523
+          postcode: "PE9 1XA"
         },
-        "19c9a820-d526-467c-a313-0988b7239f85" => {
+        "aa5b36a2-123b-5b50-8bd2-5297198bc7e2" => {
           provider_name: "New College Swindon",
           ukprn: "10004579",
           instid: "1069",
           name: "Main campus",
           country: "England",
-          postcode: "SN3 1AH",
-          latitude: 51.557469,
-          longitude: -1.758301
+          postcode: "SN3 1AH"
         },
-        "63248a0d-7657-4895-b414-cd5080f1c954" => {
+        "bb72cd08-b87b-5fb0-aa4b-f89f4dae82d6" => {
           provider_name: "New Model Institute for Technology and Engineering (NMITE)",
           ukprn: "10067406",
           instid: "0421",
           name: "",
           country: "England",
-          postcode: "HR4 9HS",
-          latitude: 52.059531,
-          longitude: -2.716004
+          postcode: "HR4 9HS"
         },
-        "96864bbd-0efb-4ae1-83a5-0bb25f60c9c0" => {
+        "527ac0cf-5f26-5ffd-8fae-d7287d559db5" => {
           provider_name: "New Model Institute for Technology and Engineering (NMITE)",
           ukprn: "10067406",
           instid: "0421",
           name: "Entire HEP",
           country: "England",
-          postcode: "HR4 9HS",
-          latitude: 52.059565,
-          longitude: -2.716296
+          postcode: "HR4 9HS"
         },
-        "2c2971b2-657a-488c-adbb-6e619222f1ae" => {
+        "9725d42c-7f13-5339-bd13-56277fde975f" => {
           provider_name: "Newbold College",
           ukprn: "10023456",
           instid: "0361",
           name: "Entire HEP",
           country: "England",
-          postcode: "RG42 4AN",
-          latitude: 51.424788,
-          longitude: -0.785862
+          postcode: "RG42 4AN"
         },
-        "cc64342f-8083-4c15-bf3f-a420a11d136f" => {
+        "a76a1afe-f7b9-56b5-967e-618db06e9e9e" => {
           provider_name: "Newbury College",
           ukprn: "10004596",
           instid: "1079",
           name: "Main campus",
           country: "England",
-          postcode: "RG14 7TD",
-          latitude: 51.382452,
-          longitude: -1.322942
+          postcode: "RG14 7TD"
         },
-        "bc116f7e-3d1f-4a17-8c0b-986ff08eaaf3" => {
+        "aaf42846-a469-5bac-9f03-f008f6ddeda4" => {
           provider_name: "Newcastle and Stafford Colleges Group",
           ukprn: "10004603",
           instid: "1038",
           name: "Main campus",
           country: "England",
-          postcode: "ST5 2GB",
-          latitude: 53.015303,
-          longitude: -2.237988
+          postcode: "ST5 2GB"
         },
-        "6220ff7e-670a-42f3-9fd9-6f5855408f69" => {
+        "a09011f8-7d18-5426-9ee9-9bf4888f9b6a" => {
           provider_name: "Newcastle University",
           ukprn: "10007799",
           instid: "0154",
           name: "Main campus",
           country: "England",
-          postcode: "NE1 7RU",
-          latitude: 54.98032,
-          longitude: -1.615713
+          postcode: "NE1 7RU"
         },
-        "235d2f94-5d1f-428a-bf2a-7276b3646302" => {
+        "2917e881-7174-5e43-a913-09a7b391723e" => {
           provider_name: "Newcastle University",
           ukprn: "10007799",
           instid: "0154",
           name: "Newcastle University London",
           country: "England",
-          postcode: "E1 7EZ",
-          latitude: 51.516755,
-          longitude: -0.076753
+          postcode: "E1 7EZ"
         },
-        "b6907b70-c78e-4d67-9d20-711f8fea5953" => {
+        "a79e4d11-26a9-5d35-a15a-0a2e4e125a5a" => {
           provider_name: "Newcastle University",
           ukprn: "10007799",
           instid: "0154",
           name: "Newcastle University Medicine Malaysia (NUMED)",
-          country: "Malaysia",
-          latitude: 54.98032,
-          longitude: -1.615713
+          country: "Malaysia"
         },
-        "3cab241b-8059-40cd-abcc-0f379405b9b1" => {
+        "0bf5ccc4-8574-53d2-afcb-aa2ebd41c214" => {
           provider_name: "Newham College of Further Education",
           ukprn: "10004607",
           instid: "1077",
           name: "Main campus",
           country: "England",
-          postcode: "E6 6ER",
-          latitude: 51.531751,
-          longitude: 0.054842
+          postcode: "E6 6ER"
         },
-        "37e1a2f4-03b5-49b0-b668-b137cb01171d" => {
+        "ad63d23c-bc4d-50b6-9452-ffb0e77278e9" => {
           provider_name: "Norland College",
           ukprn: "10008397",
           instid: "0247",
           name: "Main campus",
           country: "England",
-          postcode: "BA2 3LB",
-          latitude: 51.376612,
-          longitude: -2.374063
+          postcode: "BA2 3LB"
         },
-        "c9a96334-bdf1-4cc2-bd60-f02aaedb548f" => {
+        "34f66d7e-0c79-5033-8a44-4786afea7229" => {
           provider_name: "Norland College",
           ukprn: "10008397",
           instid: "0247",
           name: "Second Campus YP",
           country: "England",
-          postcode: "BA1 6AE",
-          latitude: 51.39157,
-          longitude: -2.352224
+          postcode: "BA1 6AE"
         },
-        "fc03d8b2-d9ed-4fb7-ac60-ab88fcfdf164" => {
+        "c877d534-8974-5b95-96c6-71fdeaa34655" => {
           provider_name: "North East Surrey College of Technology (NESCOT)",
           ukprn: "10004686",
           instid: "1080",
           name: "Main campus",
           country: "England",
-          postcode: "KT17 3DS",
-          latitude: 51.342566,
-          longitude: -0.244678
+          postcode: "KT17 3DS"
         },
-        "021f7807-e0c7-49e1-90a6-6cbbb0df7443" => {
+        "d7bb41ff-c415-5735-bee0-661b3b5e3b19" => {
           provider_name: "North Hertfordshire College",
           ukprn: "10004690",
           instid: "1076",
           name: "Main campus",
           country: "England",
-          postcode: "SG1 1LA",
-          latitude: 51.896806,
-          longitude: -0.199659
+          postcode: "SG1 1LA"
         },
-        "9e417e65-f909-4438-a879-09029853057b" => {
+        "edc12a7e-861b-5b6d-973a-2c80e9aba0e7" => {
           provider_name: "North Kent College",
           ukprn: "10004721",
           instid: "1075",
           name: "Main campus",
           country: "England",
-          postcode: "DA1 2JT",
-          latitude: 51.431954,
-          longitude: 0.204027
+          postcode: "DA1 2JT"
         },
-        "bb04e9b8-b189-44f0-997b-cba92c3f9d3f" => {
+        "5e322836-bfe1-5231-9f00-975c60f58fcb" => {
           provider_name: "North Shropshire College",
           ukprn: "10007299",
           instid: "1191",
           name: "Main campus",
           country: "England",
-          postcode: "SY11 4QB",
-          latitude: 52.853995,
-          longitude: -3.038071
+          postcode: "SY11 4QB"
         },
-        "4646d7d1-a2b3-4182-9844-5df600241f1c" => {
+        "06a3d6f8-9a58-5a04-a2f4-6700155e7dec" => {
           provider_name: "North Warwickshire and South Leicestershire College",
           ukprn: "10004718",
           instid: "1018",
           name: "Main campus",
           country: "England",
-          postcode: "CV11 6BH",
-          latitude: 52.530296,
-          longitude: -1.449838
+          postcode: "CV11 6BH"
         },
-        "fc592f86-7b56-4356-94b5-535d5ae7f4a9" => {
+        "e2927002-aa68-5fd6-b49f-5cbb7c820374" => {
           provider_name: "North West Regional College",
           ukprn: "10020634",
           instid: "0349",
           name: "Main campus",
           country: "Northern Ireland",
-          postcode: "BT48 7AL",
-          latitude: 55.002893,
-          longitude: -7.324363
+          postcode: "BT48 7AL"
         },
-        "af1a6eae-9649-46a0-b74a-de821e71d6c8" => {
+        "82efd6a7-05d4-5898-9dfb-bf79aaee1c45" => {
           provider_name: "Northampton College",
           ukprn: "10007011",
           instid: "1074",
           name: "Main campus",
           country: "England",
-          postcode: "NN3 3RF",
-          latitude: 52.263024,
-          longitude: -0.849348
+          postcode: "NN3 3RF"
         },
-        "db65e6e7-6550-493f-b3d6-970bac14d94e" => {
+        "a80dfa4a-abe5-5b56-beca-57da6680cbc1" => {
           provider_name: "Northeastern University London",
           ukprn: "10048199",
           instid: "0330",
           name: "Entire HEP",
           country: "England",
-          postcode: "E1W 1LP",
-          latitude: 51.506075,
-          longitude: -0.070543
+          postcode: "E1W 1LP"
         },
-        "3a82c711-1a5f-4b26-9ee8-cabe5faccf27" => {
+        "509030fd-bdca-5288-862d-92edbe3de423" => {
           provider_name: "Northern College of Acupuncture",
           ukprn: "10004740",
           instid: "0261",
           name: "Entire HEP",
           country: "England",
-          postcode: "YO1 6LJ",
-          latitude: 53.957108,
-          longitude: -1.088156
+          postcode: "YO1 6LJ"
         },
-        "43074e98-f550-4072-96d7-6a7e7bb57f01" => {
+        "665da949-f3f5-5ff5-85a8-77cc0d101e0e" => {
           provider_name: "Northern Regional College",
           ukprn: "10020372",
           instid: "0346",
           name: "Main campus",
           country: "Northern Ireland",
-          postcode: "BT43 7DF",
-          latitude: 54.868177,
-          longitude: -6.267912
+          postcode: "BT43 7DF"
         },
-        "a5ab610f-563a-49de-8cdf-e18fa28e5c8e" => {
+        "19385f3a-6989-5ff7-ac7c-6c2dd67dff2b" => {
           provider_name: "Northern School of Contemporary Dance",
           ukprn: "10008816",
           instid: "0191",
           name: "Main campus",
           country: "England",
-          postcode: "LS7 4BH",
-          latitude: -1.533471,
-          longitude: 53.813069
+          postcode: "LS7 4BH"
         },
-        "a465965f-cd47-42c4-9886-715f733ea68e" => {
+        "7807cb87-5ed5-555f-abda-266f4bfb9b39" => {
           provider_name: "Northumberland College",
           ukprn: "10004760",
           instid: "1024",
           name: "Main campus",
           country: "England",
-          postcode: "NE63 9RG",
-          latitude: 55.173252,
-          longitude: -1.557403
+          postcode: "NE63 9RG"
         },
-        "7f97da12-aa50-4759-bfc8-0a4125334b8b" => {
+        "a0968eeb-d40b-55a1-917e-87e83308b5ec" => {
           provider_name: "Norwich University of the Arts",
           ukprn: "10004775",
           instid: "0190",
           name: "Entire HEP",
           country: "England",
-          postcode: "NR2 4SN",
-          latitude: 52.630494,
-          longitude: 1.297272
+          postcode: "NR2 4SN"
         },
-        "84f8b80e-b21d-4c66-a55a-6ef4dcab68b5" => {
+        "289bcb7a-c14a-543b-983d-4dde9b0295ce" => {
           provider_name: "Nottingham College",
           ukprn: "10004577",
           instid: "1071",
           name: "Main campus",
           country: "England",
-          postcode: "NG7 2RU",
-          latitude: 52.936614,
-          longitude: -1.18682
+          postcode: "NG7 2RU"
         },
-        "101584ef-c0e4-4041-a513-369dc6e854be" => {
+        "fa85e912-dbcc-5016-944b-bcc7f95de35b" => {
           provider_name: "Nova College of Accounting and Business Ltd",
           ukprn: "10023130",
           instid: "0319",
           name: "Main campus",
           country: "England",
-          postcode: "HA0 1EH",
-          latitude: 51.539828,
-          longitude: -0.301673
+          postcode: "HA0 1EH"
         },
-        "48ef9451-c673-4f58-bf80-08b84072a7c8" => {
+        "578e05e4-84ea-576b-a100-0e80309fd469" => {
           provider_name: "Oak Hill College",
           ukprn: "10010227",
           instid: "0313",
           name: "Entire HEP",
           country: "England",
-          postcode: "N14 4PS",
-          latitude: 51.64054,
-          longitude: -0.14641
+          postcode: "N14 4PS"
         },
-        "0f239fce-b1b9-4fbc-bb75-cee98635576d" => {
+        "d8d7af47-2c11-5e4b-aa9b-e4ece45669be" => {
           provider_name: "Oaklands College",
           ukprn: "10004835",
           instid: "1068",
           name: "Main campus",
           country: "England",
-          postcode: "AL4 0JA",
-          latitude: 51.755525,
-          longitude: -0.288188
+          postcode: "AL4 0JA"
         },
-        "80d9f8f0-95ac-4138-9587-45cbbfeb0b2c" => {
+        "19118f83-ecec-54e5-a4a6-2682b15423cb" => {
           provider_name: "Open College of the Arts",
           ukprn: "10004879",
           instid: "0307",
           name: "Main campus",
           country: "England",
-          postcode: "S75 1JN",
-          latitude: 53.567767,
-          longitude: -1.505446
+          postcode: "S75 1JN"
         },
-        "4e69e9f5-a461-4886-a2ac-828b674a45c5" => {
+        "85f820bf-5319-5d99-a0b1-e9cb9c465fed" => {
           provider_name: "Oxford Brookes University",
           ukprn: "10004930",
           instid: "0072",
           name: "Main campus",
           country: "England",
-          postcode: "OX3 0BP",
-          latitude: 51.75438,
-          longitude: -1.2232
+          postcode: "OX3 0BP"
         },
-        "2e3c0226-1cfd-4516-be65-e15a89fa58e2" => {
+        "f9fbbb6f-7ad9-5bba-95db-b5d2938cae97" => {
           provider_name: "Oxford Brookes University",
           ukprn: "10004930",
           instid: "0072",
           name: "Swindon Campus",
           country: "England",
-          postcode: "SN5 7XQ",
-          latitude: 51.560588,
-          longitude: -1.817428
+          postcode: "SN5 7XQ"
         },
-        "9e02100c-fecf-4e88-9029-02505ed84049" => {
+        "5a3b1e05-24ba-52bf-a342-b42902a179ab" => {
           provider_name: "Oxford Business College",
           ukprn: "10020439",
           instid: "0308",
           name: "Main campus",
           country: "England",
-          postcode: "OX1 2BQ",
-          latitude: 51.753319,
-          longitude: -1.26288
+          postcode: "OX1 2BQ"
         },
-        "126a6ea9-1ae1-4c11-9a44-43484133bbc3" => {
+        "330ab0d9-2300-55d2-a078-8535ff78be64" => {
           provider_name: "Oxford International Education Group",
           ukprn: "10064423",
           instid: "0466",
           name: "Main campus",
           country: "England",
-          postcode: "SE10 8NB",
-          latitude: 51.478937,
-          longitude: -0.011378
+          postcode: "SE10 8NB"
         },
-        "93e9437a-697e-4af6-818a-309fc2a755b9" => {
+        "f202b472-9a00-54db-af9c-f74e274d5418" => {
           provider_name: "Paris Dauphine International",
           ukprn: "10066143",
           instid: "0441",
           name: "Entire HEP",
           country: "England",
-          postcode: "N1 9HF",
-          latitude: 51.532182,
-          longitude: -0.108166
+          postcode: "N1 9HF"
         },
-        "3db13972-91a7-48c0-b38d-6af6502a8155" => {
+        "9afb869c-9d88-5304-a879-2348c4754dd2" => {
           provider_name: "Peking University HSBC Business School UK Campus",
           ukprn: "10083464",
           instid: "0449",
           name: "Main campus",
           country: "England",
-          postcode: "OX1 5HR",
-          latitude: 51.715267,
-          longitude: -1.291395
+          postcode: "OX1 5HR"
         },
-        "b4d8e8e6-e51b-446e-93ef-f26d9b6c11fa" => {
+        "5cbb10cc-a137-5fa1-8b42-6a383b89a41a" => {
           provider_name: "Peter Symonds College",
           ukprn: "10005072",
           instid: "1065",
           name: "Main campus",
           country: "England",
-          postcode: "SO22 6RX",
-          latitude: 51.070701,
-          longitude: -1.321775
+          postcode: "SO22 6RX"
         },
-        "c2ad7cba-155f-41f5-b4b3-578dda440cd1" => {
+        "a502ae9b-bec0-552a-82e8-bebacfd21ea9" => {
           provider_name: "Petroc",
           ukprn: "10004676",
           instid: "1060",
           name: "Main campus",
           country: "England",
-          postcode: "EX31 2BQ",
-          latitude: 51.072452,
-          longitude: -4.069473
+          postcode: "EX31 2BQ"
         },
-        "adc350e2-8f2c-49a4-af86-d367de114493" => {
+        "dcea24e5-7833-577e-befd-d9ac03e3cd9e" => {
           provider_name: "Plumpton College",
           ukprn: "10005124",
           instid: "1064",
           name: "Main campus",
           country: "England",
-          postcode: "BN7 3AE",
-          latitude: 50.904998,
-          longitude: -0.069286
+          postcode: "BN7 3AE"
         },
-        "981c3e1b-280e-4c7d-ab0f-f739c7b02239" => {
+        "26eddd53-6cc4-5e11-97d3-fdca475bdcfa" => {
           provider_name: "Point Blank Music School",
           ukprn: "10019178",
           instid: "0309",
           name: "Entire HEP",
           country: "England",
-          postcode: "N1 5DL",
-          latitude: 51.535935,
-          longitude: -0.085055
+          postcode: "N1 5DL"
         },
-        "a3ddf4c1-dbbe-4789-a054-e7bfd252b14f" => {
+        "0f27f2c8-d6cb-586e-8bc3-573ff701f561" => {
           provider_name: "Preston College",
           ukprn: "10005200",
           instid: "1062",
           name: "Main campus",
           country: "England",
-          postcode: "PR2 8UR",
-          latitude: 53.783867,
-          longitude: -2.700493
+          postcode: "PR2 8UR"
         },
-        "b801abfd-9245-47e4-be9f-f7e9be08a4ab" => {
+        "d8a36b8d-2bac-5460-9c95-f0a49935032c" => {
           provider_name: "Prospects College of Advanced Technology",
           ukprn: "10046354",
           instid: "1193",
           name: "Main campus",
           country: "England",
-          postcode: "SS14 3AY",
-          latitude: 51.581497,
-          longitude: 0.449399
+          postcode: "SS14 3AY"
         },
-        "8e02f90e-4f09-40ce-b95c-8555c4592113" => {
+        "3c5c6799-1443-5562-8dac-5ca11f5961ef" => {
           provider_name: "Queen Margaret University, Edinburgh",
           ukprn: "10005337",
           instid: "0100",
           name: "Craighall",
           country: "Scotland",
-          postcode: "EH21 6UU",
-          latitude: 55.931281,
-          longitude: -3.073057
+          postcode: "EH21 6UU"
         },
-        "1f9d9e64-bfb1-4e6d-a56c-ec1aaf4c1b49" => {
+        "e5e05bed-1751-5ee0-8019-8eb5b65a61e8" => {
           provider_name: "Queen Margaret University, Edinburgh",
           ukprn: "10005337",
           instid: "0100",
           name: "Entire HEP",
           country: "Scotland",
-          postcode: "EH21 6UU",
-          latitude: 55.931281,
-          longitude: -3.073057
+          postcode: "EH21 6UU"
         },
-        "2fda7acd-f44d-4a35-81b3-3b7a2cea081d" => {
+        "6fa3668d-24d6-54d4-a0e7-1f4027b96f07" => {
           provider_name: "Queen Margaret University, Edinburgh",
           ukprn: "10005337",
           instid: "0100",
           name: "Gateway",
           country: "Scotland",
-          postcode: "EH7 4AH",
-          latitude: 55.959798,
-          longitude: -3.18232
+          postcode: "EH7 4AH"
         },
-        "36c50561-0f28-432b-a3d2-232f68ceba39" => {
+        "d4e7754f-9158-59e1-820c-2343ed3ca10d" => {
           provider_name: "Queen Margaret University, Edinburgh",
           ukprn: "10005337",
           instid: "0100",
           name: "Halmyre Street",
           country: "Scotland",
-          postcode: "EH6 6QD",
-          latitude: 55.976175,
-          longitude: -3.16766
+          postcode: "EH6 6QD"
         },
-        "66db7de5-5f7b-4079-9d17-c2641b561d58" => {
+        "ff4fd7cf-2b54-5e89-b3dd-09ffd8a973d7" => {
           provider_name: "Queen Margaret University, Edinburgh",
           ukprn: "10005337",
           instid: "0100",
           name: "Leith",
           country: "Scotland",
-          postcode: "EH6 8HF",
-          latitude: 55.969429,
-          longitude: -3.167376
+          postcode: "EH6 8HF"
         },
-        "3365fcd9-cb21-42e0-98ca-07c9b0ca0c9f" => {
+        "ca253207-48a2-5330-8a4b-7e3346f41504" => {
           provider_name: "Queen Mary University of London",
           ukprn: "10007775",
           instid: "0139",
           name: "Charterhouse Square",
           country: "England",
-          postcode: "EC1M 6BQ",
-          latitude: 51.521313,
-          longitude: -0.098872
+          postcode: "EC1M 6BQ"
         },
-        "2a7eff08-8378-4b08-afb3-901c90c10884" => {
+        "581fecdf-e47b-5470-acf8-d0bed298f353" => {
           provider_name: "Queen Mary University of London",
           ukprn: "10007775",
           instid: "0139",
           name: "Lincolns Inn Fields",
           country: "England",
-          postcode: "WC2A 3JB",
-          latitude: 51.516663,
-          longitude: -0.118898
+          postcode: "WC2A 3JB"
         },
-        "46b1be03-8e0c-4f8e-9191-96f1404445bb" => {
+        "7bf42365-c045-590f-aa88-493365160a51" => {
           provider_name: "Queen Mary University of London",
           ukprn: "10007775",
           instid: "0139",
           name: "Main campus",
           country: "England",
-          postcode: "E1 4NS",
-          latitude: 51.524636,
-          longitude: -0.04071
+          postcode: "E1 4NS"
         },
-        "497d6616-217f-4a0d-9902-a552cb046596" => {
+        "a8e902db-8264-53e9-9be1-e78e4284b4b5" => {
           provider_name: "Queen Mary University of London",
           ukprn: "10007775",
           instid: "0139",
           name: "West Smithfield",
           country: "England",
-          postcode: "EC1A 7BE",
-          latitude: 51.51775,
-          longitude: -0.100404
+          postcode: "EC1A 7BE"
         },
-        "d1ba7d3a-569b-45df-9c3a-d560b7349cd9" => {
+        "a4b0597d-4edf-587e-926c-f79c65b4df86" => {
           provider_name: "Queen Mary University of London",
           ukprn: "10007775",
           instid: "0139",
           name: "Whitechapel",
           country: "England",
-          postcode: "E1 2AD",
-          latitude: 51.517774,
-          longitude: -0.060694
+          postcode: "E1 2AD"
         },
-        "09dd63df-3330-4439-a23e-56eaa957f716" => {
+        "97c4d365-9340-5ee0-a827-5ba4c34b4aad" => {
           provider_name: "Queen's University Belfast",
           ukprn: "10005343",
           instid: "0184",
           name: "China Queen's College",
-          country: "China",
-          latitude: 54.584772,
-          longitude: -5.934438
+          country: "China"
         },
-        "c140e8d6-255a-4fe8-959a-b4b09a0c4d53" => {
+        "736dbd72-9ee7-5dee-b528-c8fd8a8bb030" => {
           provider_name: "Queen's University Belfast",
           ukprn: "10005343",
           instid: "0184",
           name: "Main campus",
           country: "Northern Ireland",
-          postcode: "BT7 1NN",
-          latitude: 54.584772,
-          longitude: -5.934438
+          postcode: "BT7 1NN"
         },
-        "f138de8f-b97c-4a8e-9e3f-f9ea0ff34815" => {
+        "7d0a3991-5a6d-5908-9994-7b6324cbad0b" => {
           provider_name: "Raindance Educational Services Limited",
           ukprn: "10062833",
           instid: "0429",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC2N 5PE",
-          latitude: 51.507631,
-          longitude: -0.125395
+          postcode: "WC2N 5PE"
         },
-        "64c56e5a-2ea0-4647-ab69-ae576f897507" => {
+        "212c303c-36d9-5d17-81ea-1446b02fb3a6" => {
           provider_name: "Rambert School",
           ukprn: "10005378",
           instid: "0443",
           name: "Main campus",
           country: "England",
-          postcode: "TW1 1QN",
-          latitude: 51.461274,
-          longitude: -0.321879
+          postcode: "TW1 1QN"
         },
-        "c606cc36-f368-404a-a9ce-c10184dd2404" => {
+        "bf3e7cfc-dc1a-5b74-8055-b6fbc016d9b2" => {
           provider_name: "Ravensbourne University London",
           ukprn: "10005389",
           instid: "0030",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE10 0EW",
-          latitude: 51.501677,
-          longitude: 0.005678
+          postcode: "SE10 0EW"
         },
-        "fe679e5a-7879-4ebf-ac44-ee43db19266d" => {
+        "ad28a369-6bee-5469-956d-53728046e3b5" => {
           provider_name: "Ravensbourne University London",
           ukprn: "10005389",
           instid: "0030",
           name: "Institute for Creativity and Technology",
           country: "England",
-          postcode: "SE10 0SQ",
-          latitude: 51.501677,
-          longitude: 0.005678
+          postcode: "SE10 0SQ"
         },
-        "a51f227a-c1da-458e-9968-e9d34804e506" => {
+        "035e50bb-6b2d-5ae3-9204-985e68067a0f" => {
           provider_name: "Reaseheath College",
           ukprn: "10005404",
           instid: "1059",
           name: "Main campus",
           country: "England",
-          postcode: "CW5 6DF",
-          latitude: 53.083688,
-          longitude: -2.526845
+          postcode: "CW5 6DF"
         },
-        "d537e7b3-f7bf-4613-9352-8f6d8af30605" => {
+        "af73ef8d-db81-5cf8-8b6e-3f9eb1065f4b" => {
           provider_name: "Redcliffe College",
           ukprn: "10005415",
           instid: "0223",
           name: "Entire HEP",
           country: "England",
-          postcode: "GL1 2LX",
-          latitude: 51.86746,
-          longitude: -2.248446
+          postcode: "GL1 2LX"
         },
-        "ab120610-97d6-459b-b88c-26e92420109a" => {
+        "ce54afb8-e4bb-51f5-8ecf-e1e2e705a7f7" => {
           provider_name: "Regent College London",
           ukprn: "10008455",
           instid: "0278",
           name: "HARROW CAMPUS",
           country: "England",
-          postcode: "HA2 7HG",
-          latitude: 51.576897,
-          longitude: -0.369679
+          postcode: "HA2 7HG"
         },
-        "c2b49a45-817f-4e77-9775-aa5e5822beb6" => {
+        "e189d7ce-36f5-5abc-95a7-ab5fd56de455" => {
           provider_name: "Regent College London",
           ukprn: "10008455",
           instid: "0278",
           name: "KINGSBURY CAMPUS",
           country: "England",
-          postcode: "NW9 9NG",
-          latitude: 51.58551,
-          longitude: -0.273396
+          postcode: "NW9 9NG"
         },
-        "1651dd2c-4752-4fbe-8ee6-ca5db406f1b9" => {
+        "e4917f84-6542-5caa-a742-0135efc66c18" => {
           provider_name: "Regent College London",
           ukprn: "10008455",
           instid: "0278",
           name: "Main campus",
           country: "England",
-          postcode: "W1W 5BD",
-          latitude: 51.521821,
-          longitude: -0.142369
+          postcode: "W1W 5BD"
         },
-        "2cde7b92-2528-491e-ad1a-cbdb880fb367" => {
+        "a2eb1026-8ffa-5ff4-8bf9-dbd9d73899fe" => {
           provider_name: "Regent College London",
           ukprn: "10008455",
           instid: "0278",
           name: "Regent House Campus",
           country: "England",
-          postcode: "WC1R 4BH",
-          latitude: 51.519955,
-          longitude: -0.11673
+          postcode: "WC1R 4BH"
         },
-        "40cb3458-7155-4c56-8642-477010caa201" => {
+        "08f5be3a-60b0-5f84-b6ff-cb6a04f767ef" => {
           provider_name: "Regent College London",
           ukprn: "10008455",
           instid: "0278",
           name: "SOUTHALL CAMPUS",
           country: "England",
-          postcode: "UB1 3HF",
-          latitude: 51.51099,
-          longitude: -0.372617
+          postcode: "UB1 3HF"
         },
-        "eb9252e0-4a86-4598-86ca-b03fbfe4f64e" => {
+        "8673107e-e0f2-53fc-a8c1-2d31c5006b51" => {
           provider_name: "Regent College London",
           ukprn: "10008455",
           instid: "0278",
           name: "WEMBLEY CAMPUS",
           country: "England",
-          postcode: "HA9 7EX",
-          latitude: 51.551922,
-          longitude: -0.294665
+          postcode: "HA9 7EX"
         },
-        "15b535c1-09e8-4014-adb8-f877cded0443" => {
+        "605d7418-fd6c-5993-ac29-fb235fba2494" => {
           provider_name: "Regents Theological College",
           ukprn: "10008457",
           instid: "0264",
@@ -5547,956 +4433,766 @@ module DfE
           country: "England",
           postcode: "NULL"
         },
-        "4d0f7c81-eb70-4049-ad84-d38d8cb8eb46" => {
+        "257f314d-23f9-58b1-aa99-757be828208c" => {
           provider_name: "Regents Theological College",
           ukprn: "10021100",
           instid: "0327",
           name: "Entire HEP",
           country: "England",
-          postcode: "WR14 4AY",
-          latitude: 52.117084,
-          longitude: -2.346061
+          postcode: "WR14 4AY"
         },
-        "8f4d496c-39ac-4a5f-9332-9806d337a1b1" => {
+        "67daf04a-bd90-5dd6-ae7b-be7726a1b3c9" => {
           provider_name: "Regent's University London",
           ukprn: "10003331",
           instid: "0216",
           name: "Entire HEP",
           country: "England",
-          postcode: "NW1 4NS",
-          latitude: 51.525745,
-          longitude: -0.15566
+          postcode: "NW1 4NS"
         },
-        "3c23a633-ba30-49a1-a79c-8afff2d75a83" => {
+        "5b5f88f0-066f-5e74-978d-a78767dbb339" => {
           provider_name: "Regent's University London Limited",
           ukprn: "10086591",
           instid: "0425",
           name: "Entire HEP",
           country: "England",
-          postcode: "NW1 4NS",
-          latitude: 51.525745,
-          longitude: -0.15566
+          postcode: "NW1 4NS"
         },
-        "cf811877-c333-47da-9567-1dd93e48b6c8" => {
+        "77b385d4-6be5-5beb-8bb3-c13eae8e88f1" => {
           provider_name: "Results Consortium Limited",
           ukprn: "10023871",
           instid: "0416",
           name: "Main campus",
           country: "England",
-          postcode: "RM10 7FN",
-          latitude: 51.545907,
-          longitude: 0.165728
+          postcode: "RM10 7FN"
         },
-        "e36cef47-788f-4728-bbf7-8c4bd24e81fa" => {
+        "e8e47555-ee47-5862-8b70-9972cb4ab5d4" => {
           provider_name: "Results Consortium Limited",
           ukprn: "10023871",
           instid: "0416",
           name: "Northampton",
           country: "England",
-          postcode: "NN1 2BN",
-          latitude: 52.238692,
-          longitude: -0.889973
+          postcode: "NN1 2BN"
         },
-        "a5dc56b7-82d6-48f6-93c2-0fef7aff222d" => {
+        "395bb786-258f-5224-9ed8-da0a8964c41e" => {
           provider_name: "Richard Huish College",
           ukprn: "10005465",
           instid: "1057",
           name: "Main campus",
           country: "England",
-          postcode: "TA1 3DZ",
-          latitude: 51.007985,
-          longitude: -3.092401
+          postcode: "TA1 3DZ"
         },
-        "cb1eed59-2d9d-489f-948f-4401a578cd9b" => {
+        "17a75cfd-dc5e-5cdb-b752-d9b9017787ac" => {
           provider_name: "Richmond and Hillcroft Adult and Community College",
           ukprn: "10003088",
           instid: "1106",
           name: "Main campus",
           country: "England",
-          postcode: "TW9 2RE",
-          latitude: 51.464375,
-          longitude: -0.303021
+          postcode: "TW9 2RE"
         },
-        "d00d3adf-a63c-4a1d-b6ec-3ff33dc659d3" => {
+        "5ae49000-eba4-50ad-81ee-fda2beb255b3" => {
           provider_name: "Richmond upon Thames College",
           ukprn: "10005469",
           instid: "1058",
           name: "Main campus",
           country: "England",
-          postcode: "TW2 7SJ",
-          latitude: 51.451431,
-          longitude: -0.342367
+          postcode: "TW2 7SJ"
         },
-        "2a4811dd-f4d4-44e8-acf2-49e358368693" => {
+        "f9f81cb1-5581-5fc8-a198-d1b8c71fd482" => {
           provider_name: "Richmond, The American International University in London",
           ukprn: "10005470",
           instid: "0219",
           name: "Kensington",
           country: "England",
-          postcode: "W8 5ED",
-          latitude: 51.502066,
-          longitude: -0.189515
+          postcode: "W8 5ED"
         },
-        "6a8dd321-06b1-4625-9586-a97ea5fd00e1" => {
+        "a297572e-6630-5e8d-bad3-c2871941b947" => {
           provider_name: "Richmond, The American International University in London",
           ukprn: "10005470",
           instid: "0219",
           name: "Leeds",
           country: "England",
-          postcode: "LS6 3QB",
-          latitude: 53.82468,
-          longitude: -1.587074
+          postcode: "LS6 3QB"
         },
-        "66403ea7-aa2e-4ca6-9491-eaa9bc0f36e4" => {
+        "8b9e54be-7ae2-528b-b398-c6dc1f50c303" => {
           provider_name: "Richmond, The American International University in London",
           ukprn: "10005470",
           instid: "0219",
           name: "Main campus",
           country: "England",
-          postcode: "W4 5AN",
-          latitude: 51.493215,
-          longitude: -0.274068
+          postcode: "W4 5AN"
         },
-        "cac1b3e1-e466-41ba-816b-5a8d5c6dc1b3" => {
+        "85791d5c-c384-5816-829b-a0db70f497d6" => {
           provider_name: "Riverside College Halton",
           ukprn: "10002863",
           instid: "1056",
           name: "Main campus",
           country: "England",
-          postcode: "WA8 7QQ",
-          latitude: 53.363962,
-          longitude: -2.734745
+          postcode: "WA8 7QQ"
         },
-        "774a4960-a0cb-4b7c-96ba-f6af54a19a16" => {
+        "01530c96-d982-5a62-8012-89f8c8673439" => {
           provider_name: "RNN Group",
           ukprn: "10005534",
           instid: "1055",
           name: "Main campus",
           country: "England",
-          postcode: "S65 1EG",
-          latitude: 53.431593,
-          longitude: -1.353222
+          postcode: "S65 1EG"
         },
-        "7665d5ac-9e2d-4888-9708-e19af6f69772" => {
+        "ac8799b6-716e-52fb-9d3f-7ed29284013f" => {
           provider_name: "Robert Gordon University",
           ukprn: "10005500",
           instid: "0104",
           name: "City Centre campus - Schoolhill",
           country: "Scotland",
-          postcode: "AB10 1FR",
-          latitude: 57.148372,
-          longitude: -2.10116
+          postcode: "AB10 1FR"
         },
-        "e3419c94-ddbb-4616-91f4-83d57fcd51d2" => {
+        "ec1684c0-c254-522b-8b9d-c59c7da817fe" => {
           provider_name: "Robert Gordon University",
           ukprn: "10005500",
           instid: "0104",
           name: "Entire HEP",
           country: "Scotland",
-          postcode: "AB10 7QB",
-          latitude: 57.118346,
-          longitude: -2.145044
+          postcode: "AB10 7QB"
         },
-        "e01011f4-3c01-47ac-a403-d8dc2ee64234" => {
+        "d03d8315-4299-57a0-a4f5-75aa6d99df9e" => {
           provider_name: "Robert Gordon University",
           ukprn: "10005500",
           instid: "0104",
           name: "Garthdee campus",
           country: "Scotland",
-          postcode: "AB10 7QB",
-          latitude: 57.118346,
-          longitude: -2.145044
+          postcode: "AB10 7QB"
         },
-        "8db782f4-a004-4540-bec6-be99c8916b08" => {
+        "82e1b592-c336-5c12-ba42-20001e0f1168" => {
           provider_name: "Roehampton University",
           ukprn: "10007776",
           instid: "0031",
           name: "Birmingham QA",
           country: "England",
-          postcode: "B5 4UA",
-          latitude: 52.476224,
-          longitude: -1.898516
+          postcode: "B5 4UA"
         },
-        "230fbc2b-97d4-4dc9-9bb0-9cb261aef1a6" => {
+        "583513c6-fe58-52d6-8f6b-32d407349458" => {
           provider_name: "Roehampton University",
           ukprn: "10007776",
           instid: "0031",
           name: "Croydon",
           country: "England",
-          postcode: "CR9 1DX",
-          latitude: 51.373414,
-          longitude: -0.095181
+          postcode: "CR9 1DX"
         },
-        "eac223d1-7eb8-4ae7-a61a-2051393ac14f" => {
+        "3c98950e-92fd-5252-b715-d06e2f58a260" => {
           provider_name: "Roehampton University",
           ukprn: "10007776",
           instid: "0031",
           name: "IRIE",
           country: "England",
-          postcode: "SE14 6LU",
-          latitude: 51.478106,
-          longitude: -0.036775
+          postcode: "SE14 6LU"
         },
-        "d20d1690-b8ca-4232-a459-1b6956e39a6e" => {
+        "42c7b6dc-344a-54db-b865-f3d07f8a5cf9" => {
           provider_name: "Roehampton University",
           ukprn: "10007776",
           instid: "0031",
           name: "Main campus",
           country: "England",
-          postcode: "SW15 5PJ",
-          latitude: 51.456694,
-          longitude: -0.24311
+          postcode: "SW15 5PJ"
         },
-        "ff82f5f8-a13a-4756-ba76-0cf6dbce174e" => {
+        "a947df17-c06b-59a8-a598-d9cf3b15aafe" => {
           provider_name: "Roehampton University",
           ukprn: "10007776",
           instid: "0031",
           name: "Manchester QA",
           country: "England",
-          postcode: "M1 6FQ",
-          latitude: 53.475586,
-          longitude: -2.241402
+          postcode: "M1 6FQ"
         },
-        "eae17f31-4d41-4900-829b-b9458eb78bc2" => {
+        "bb76e737-0e16-5f49-8814-e0186bc6b64f" => {
           provider_name: "Roehampton University",
           ukprn: "10007776",
           instid: "0031",
           name: "Rosebery Ave London QA",
           country: "England",
-          postcode: "EC1R 5HP",
-          latitude: 51.524115,
-          longitude: -0.110893
+          postcode: "EC1R 5HP"
         },
-        "1598f401-83eb-40e3-be64-39d06045d16a" => {
+        "4170369b-c003-512b-a13f-1d19aa6b71f0" => {
           provider_name: "Rose Bruford College of Theatre and Performance",
           ukprn: "10005523",
           instid: "0032",
           name: "London ALRA",
           country: "England",
-          postcode: "SW18 3SX",
-          latitude: 51.4533,
-          longitude: -0.174557
+          postcode: "SW18 3SX"
         },
-        "ce5ee4e9-6534-48f6-8ccd-90dcc72b9313" => {
+        "45784181-7674-5e42-8788-10c15ebff575" => {
           provider_name: "Rose Bruford College of Theatre and Performance",
           ukprn: "10005523",
           instid: "0032",
           name: "Main campus",
           country: "England",
-          postcode: "DA15 9DF",
-          latitude: 51.439376,
-          longitude: 0.107096
+          postcode: "DA15 9DF"
         },
-        "67384dbf-1c86-4085-9ddf-7c2f870372a0" => {
+        "cfe814ab-5f9c-512f-85fe-e90239961c68" => {
           provider_name: "Rose Bruford College of Theatre and Performance",
           ukprn: "10005523",
           instid: "0032",
           name: "Notting Hill Academy of Music",
           country: "England",
-          postcode: "W11 3JQ",
-          latitude: 51.509176,
-          longitude: -0.194536
+          postcode: "W11 3JQ"
         },
-        "14bbfc7a-3fc2-419f-98a3-902eeb710fc9" => {
+        "59912e67-cf45-5bfb-9318-eee7e452fb4d" => {
           provider_name: "Rose Bruford College of Theatre and Performance",
           ukprn: "10005523",
           instid: "0032",
           name: "Wigan ALRA",
           country: "England",
-          postcode: "WN3 4EF",
-          latitude: 53.541119,
-          longitude: -2.637748
+          postcode: "WN3 4EF"
         },
-        "3d044fd8-13a9-4fe4-95e3-ee0028efafda" => {
+        "d4479688-3e13-59f0-b0ef-d7f38d3d7a34" => {
           provider_name: "Royal Academy of Dance",
           ukprn: "10005544",
           instid: "0263",
           name: "Entire HEP",
           country: "England",
-          postcode: "SW11 3JZ",
-          latitude: 51.466481,
-          longitude: -0.17955
+          postcode: "SW11 3JZ"
         },
-        "3f3c737b-7ab2-4dd4-a8a7-152f12550b69" => {
+        "3cf480b8-251f-570b-8dec-fd9ce4baa2e9" => {
           provider_name: "Royal Academy of Dramatic Art",
           ukprn: "10009292",
           instid: "0402",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1E 6ED",
-          latitude: 51.521704,
-          longitude: -0.131577
+          postcode: "WC1E 6ED"
         },
-        "00680f9e-c207-4934-9414-4668500f6045" => {
+        "84f25f0b-51dd-5ed3-9473-a49f7f1e0f2a" => {
           provider_name: "Royal Academy of Music",
           ukprn: "10007835",
           instid: "0033",
           name: "Entire HEP",
           country: "England",
-          postcode: "NW1 5HT",
-          latitude: 51.523497,
-          longitude: -0.1517
+          postcode: "NW1 5HT"
         },
-        "03f397f3-6ef7-4ccd-992c-a1b1b0662614" => {
+        "d2bebb07-796f-5390-bda4-d9535ba916da" => {
           provider_name: "Royal Agricultural University",
           ukprn: "10005545",
           instid: "0195",
           name: "Entire HEP",
           country: "England",
-          postcode: "GL7 6JS",
-          latitude: 51.709508,
-          longitude: -1.994916
+          postcode: "GL7 6JS"
         },
-        "d4299ee1-879e-499a-81b3-a65d69b855a4" => {
+        "779fb14d-ce8f-50ab-9ca2-c90ca4252809" => {
           provider_name: "Royal College of Art",
           ukprn: "10007777",
           instid: "0003",
           name: "Battersea",
           country: "England",
-          postcode: "SW11 4AN",
-          latitude: 51.479629,
-          longitude: -0.169863
+          postcode: "SW11 4AN"
         },
-        "1ebf4b7a-1737-491a-9f73-40cef05644e8" => {
+        "5e512ee3-9845-51ff-865c-63d68dd4e73e" => {
           provider_name: "Royal College of Art",
           ukprn: "10007777",
           instid: "0003",
           name: "Main campus",
           country: "England",
-          postcode: "SW7 2EU",
-          latitude: 51.501354,
-          longitude: -0.178473
+          postcode: "SW7 2EU"
         },
-        "16f709d3-7905-45b7-9197-7fe6f7b6bfa6" => {
+        "bf65aac1-a11b-54e9-b28a-0b064f1c85ec" => {
           provider_name: "Royal College of Art",
           ukprn: "10007777",
           instid: "0003",
           name: "White City",
           country: "England",
-          postcode: "W12 7FN",
-          latitude: 51.513166,
-          longitude: -0.228593
+          postcode: "W12 7FN"
         },
-        "0cb34bdb-3061-40e0-a2d2-3f4f1934d773" => {
+        "09996a20-0939-5a10-a489-b82ad547e4b0" => {
           provider_name: "Royal College of Music",
           ukprn: "10007778",
           instid: "0034",
           name: "Entire HEP",
           country: "England",
-          postcode: "SW7 2BS",
-          latitude: 51.499279,
-          longitude: -0.176913
+          postcode: "SW7 2BS"
         },
-        "e035af5a-b4ac-4fdb-a4c2-c6bab3b4830e" => {
+        "a9d50ea9-8c7b-5bbd-bcab-681b1ae819cd" => {
           provider_name: "Royal Conservatoire of Scotland",
           ukprn: "10005561",
           instid: "0101",
           name: "Entire HEP",
           country: "Scotland",
-          postcode: "G2 3DB",
-          latitude: 55.865813,
-          longitude: -4.257595
+          postcode: "G2 3DB"
         },
-        "87fdc17c-8092-4e73-b538-a9d7e44409a9" => {
+        "c16df9c7-0cb5-583f-8709-2e9471f1e3c1" => {
           provider_name: "Royal Holloway and Bedford New College",
           ukprn: "10005553",
           instid: "0141",
           name: "Bedford Square",
           country: "England",
-          postcode: "WC1B 3RF",
-          latitude: 51.51989,
-          longitude: -0.129475
+          postcode: "WC1B 3RF"
         },
-        "41f36db6-6c10-438b-a9de-96cd78016663" => {
+        "7143afa8-a7cf-51c0-9c0d-2ce96c9c7f0d" => {
           provider_name: "Royal Holloway and Bedford New College",
           ukprn: "10005553",
           instid: "0141",
           name: "Main campus",
           country: "England",
-          postcode: "TW20 0EX",
-          latitude: 51.424814,
-          longitude: -0.566745
+          postcode: "TW20 0EX"
         },
-        "a391c44f-be43-40a9-87f1-d90103af5d06" => {
+        "39c2aacf-a9b4-5423-b774-3590fa75e7e3" => {
           provider_name: "Royal Northern College of Music",
           ukprn: "10007837",
           instid: "0035",
           name: "Entire HEP",
           country: "England",
-          postcode: "M13 9RD",
-          latitude: 53.468557,
-          longitude: -2.236963
+          postcode: "M13 9RD"
         },
-        "83cfe5b8-2db0-4e34-95ee-f6743be4bd37" => {
+        "e2892f7e-c111-511b-bb08-0b3d3c306dec" => {
           provider_name: "Royal School of Needlework (The)",
           ukprn: "10020436",
           instid: "0404",
           name: "Entire HEP",
           country: "England",
-          postcode: "KT8 9AU",
-          latitude: 51.403813,
-          longitude: -0.33767
+          postcode: "KT8 9AU"
         },
-        "8e1b3c9e-7b6d-4ba4-b521-035ee6a27b13" => {
+        "d6ea3f2c-0827-58f3-b4f0-4febf3f2a557" => {
           provider_name: "Royal Welsh College of Music and Drama",
           ukprn: "10007838",
           instid: "0182",
           name: "Entire institution",
           country: "Wales",
-          postcode: "CF10 3ER",
-          latitude: 51.485644,
-          longitude: -3.183856
+          postcode: "CF10 3ER"
         },
-        "6e1394b6-81d4-45d3-b1ad-4e8045974507" => {
+        "aa0b1bfc-d1df-581d-86c0-5ec1bf072dc9" => {
           provider_name: "Runshaw College",
           ukprn: "10005575",
           instid: "1054",
           name: "Main campus",
           country: "England",
-          postcode: "PR25 3DQ",
-          latitude: 53.680997,
-          longitude: -2.689595
+          postcode: "PR25 3DQ"
         },
-        "851814f1-871a-4668-8375-bf92499beba7" => {
+        "aa2d9a1e-a395-5f58-a983-621f7221f496" => {
           provider_name: "Ruskin College",
           ukprn: "10005583",
           instid: "1053",
           name: "Main campus",
           country: "England",
-          postcode: "OX3 9BZ",
-          latitude: 51.766077,
-          longitude: -1.214914
+          postcode: "OX3 9BZ"
         },
-        "68b78070-75d4-4aab-8876-2e5e40d36498" => {
+        "1593c587-6723-5869-a12c-5e1f40e24504" => {
           provider_name: "S P Jain London School of Management Limited",
           ukprn: "10088214",
           instid: "0448",
           name: "Main campus",
           country: "England",
-          postcode: "WC2B 5AH",
-          latitude: 51.515942,
-          longitude: -0.120892
+          postcode: "WC2B 5AH"
         },
-        "cdae7ccc-430b-4b66-bedd-7a549bcc45e9" => {
+        "19a182a1-d9ac-5379-abf6-8786893c83cf" => {
           provider_name: "SAE Education Limited",
           ukprn: "10007839",
           instid: "0265",
           name: "GLASGOW",
           country: "Scotland",
-          postcode: "G41 1EJ",
-          latitude: 55.851552,
-          longitude: -4.282013
+          postcode: "G41 1EJ"
         },
-        "89f10646-0e48-4dd7-8344-b7a0cb011c10" => {
+        "1702fac2-4373-59d9-a30a-1d1e16a66a47" => {
           provider_name: "SAE Education Limited",
           ukprn: "10007839",
           instid: "0265",
           name: "LIVERPOOL",
           country: "England",
-          postcode: "L3 6AL",
-          latitude: 53.41025,
-          longitude: -2.990264
+          postcode: "L3 6AL"
         },
-        "52fc0128-2481-45b5-ad85-15a95af96b13" => {
+        "b4eacd62-4803-51b1-80f7-e37c8ce418e4" => {
           provider_name: "SAE Education Limited",
           ukprn: "10007839",
           instid: "0265",
           name: "Main campus",
           country: "England",
-          postcode: "E8 4DD",
-          latitude: 51.537074,
-          longitude: -0.077064
+          postcode: "E8 4DD"
         },
-        "6cc2daa8-e2ca-4042-b33a-3a29c1175c6c" => {
+        "0fd0993e-e485-5b9c-a736-07631a0c5bf7" => {
           provider_name: "SAE Education Limited",
           ukprn: "10007839",
           instid: "0265",
           name: "OXFORD",
           country: "England",
-          postcode: "OX4 4FY",
-          latitude: 51.717148,
-          longitude: -1.224606
+          postcode: "OX4 4FY"
         },
-        "e06b6cf0-20c4-4fcf-a7fa-bd24ebee792d" => {
+        "be884831-9837-5779-9a8e-0dcb27194396" => {
           provider_name: "Salford City College",
           ukprn: "10005032",
           instid: "1052",
           name: "Main campus",
           country: "England",
-          postcode: "M50 3SR",
-          latitude: 53.468842,
-          longitude: -2.283558
+          postcode: "M50 3SR"
         },
-        "839e8165-12e2-4bfe-b347-b042c38acf61" => {
+        "6b7cdf42-9def-5395-891e-289f99218a19" => {
           provider_name: "Sandwell College",
           ukprn: "10005669",
           instid: "1051",
           name: "Main campus",
           country: "England",
-          postcode: "B70 6AW",
-          latitude: 52.515086,
-          longitude: -1.992087
+          postcode: "B70 6AW"
         },
-        "e9d623ab-ec76-4833-a0cc-52839dcda0a5" => {
+        "320af6ac-9f57-53f0-8f86-f67d3f4f8cc9" => {
           provider_name: "Selby College",
           ukprn: "10005741",
           instid: "1047",
           name: "Main campus",
           country: "England",
-          postcode: "YO8 8AT",
-          latitude: 53.775065,
-          longitude: -1.051545
+          postcode: "YO8 8AT"
         },
-        "c4c3c45d-95ae-4d4e-ad1a-90274be8ef5c" => {
+        "1306377b-17fb-5fc3-b461-cfe827a60ca7" => {
           provider_name: "Sheffield Hallam University",
           ukprn: "10005790",
           instid: "0075",
           name: "Entire HEP",
           country: "England",
-          postcode: "S1 1WB",
-          latitude: 53.379194,
-          longitude: -1.465255
+          postcode: "S1 1WB"
         },
-        "b16df4c4-1b7c-4079-95c8-b3654baf0616" => {
+        "29b459b7-0f07-55b2-a397-998086af67d3" => {
           provider_name: "Shrewsbury Colleges Group",
           ukprn: "10005822",
           instid: "1042",
           name: "Main campus",
           country: "England",
-          postcode: "SY2 6PR",
-          latitude: 52.697225,
-          longitude: -2.721409
+          postcode: "SY2 6PR"
         },
-        "fe3ca82f-2933-4167-81be-979c9d016254" => {
+        "738382a6-abc0-5203-a8f4-3c7400b2ace9" => {
           provider_name: "Slough Borough Council",
           ukprn: "10005916",
           instid: "0266",
           name: "Main campus",
           country: "England",
-          postcode: "SL2 5AY",
-          latitude: 51.518757,
-          longitude: -0.589032
+          postcode: "SL2 5AY"
         },
-        "baef7241-419f-4176-9676-14beae1fb6fc" => {
+        "d42dbd01-1888-52ad-a991-b456aa828440" => {
           provider_name: "SOAS University of London",
           ukprn: "10007780",
           instid: "0146",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1H 0XG",
-          latitude: 51.52235,
-          longitude: -0.129259
+          postcode: "WC1H 0XG"
         },
-        "83efe39f-512c-4d96-91e6-a2bdaf0d775d" => {
+        "4191651e-103c-557c-bba4-1b8fffe3ef01" => {
           provider_name: "Solihull College and University Centre",
           ukprn: "10005946",
           instid: "1041",
           name: "Main campus",
           country: "England",
-          postcode: "B91 1SB",
-          latitude: 52.409568,
-          longitude: -1.792148
+          postcode: "B91 1SB"
         },
-        "37d0cc11-3455-41e2-af88-6978aaaa9b0a" => {
+        "bba05719-d943-54bf-8f4b-98c00a04d041" => {
           provider_name: "South & City College Birmingham",
           ukprn: "10005967",
           instid: "1050",
           name: "Main campus",
           country: "England",
-          postcode: "B5 5SU",
-          latitude: 52.475457,
-          longitude: -1.885753
+          postcode: "B5 5SU"
         },
-        "d4157013-47d1-4336-9259-589b697d8d07" => {
+        "6864f3f9-f647-59af-b17d-264f8bb69dc4" => {
           provider_name: "South Devon College",
           ukprn: "10005977",
           instid: "1049",
           name: "Main campus",
           country: "England",
-          postcode: "TQ4 7EJ",
-          latitude: 50.414646,
-          longitude: -3.587847
+          postcode: "TQ4 7EJ"
         },
-        "91750d30-c6d1-4437-a62b-1de1406cb8c0" => {
+        "2a2fa33c-e1cb-5bdd-b815-382915fc5a65" => {
           provider_name: "South Eastern Regional College",
           ukprn: "10020699",
           instid: "0348",
           name: "Main campus",
           country: "Northern Ireland",
-          postcode: "BT27 4SU",
-          latitude: 54.512585,
-          longitude: -6.040698
+          postcode: "BT27 4SU"
         },
-        "5433920a-17d8-4683-9b9f-423742cf3cef" => {
+        "816ddc7e-3f1c-522c-b2f9-7867af1dccfd" => {
           provider_name: "South Essex College of Further and Higher Education",
           ukprn: "10005981",
           instid: "1046",
           name: "Main campus",
           country: "England",
-          postcode: "SS1 1ND",
-          latitude: 51.537958,
-          longitude: 0.71191
+          postcode: "SS1 1ND"
         },
-        "56d35d1c-4dec-400f-87e6-6a7af50a1e96" => {
+        "35daa29e-5ca5-5b76-9056-d7420e58b222" => {
           provider_name: "South Gloucestershire and Stroud College",
           ukprn: "10036143",
           instid: "1045",
           name: "Main campus",
           country: "England",
-          postcode: "GL5 4AH",
-          latitude: 51.74908,
-          longitude: -2.228689
+          postcode: "GL5 4AH"
         },
-        "9a67b4f0-aec2-4c09-b9fb-5ce9bc2b1e19" => {
+        "2715e2cb-92c0-57fc-82ef-380baa585333" => {
           provider_name: "South Hampshire College Group",
           ukprn: "10007928",
           instid: "1125",
           name: "Main campus",
           country: "England",
-          postcode: "PO14 1NH",
-          latitude: 50.851085,
-          longitude: -1.199216
+          postcode: "PO14 1NH"
         },
-        "7afceb46-1b0d-4eb8-9688-23574780056e" => {
+        "74713c68-0645-5e99-9e48-96976f87efc6" => {
           provider_name: "South Thames Colleges Group",
           ukprn: "10003674",
           instid: "1035",
           name: "Main campus",
           country: "England",
-          postcode: "KT1 2AQ",
-          latitude: 51.406938,
-          longitude: -0.305378
+          postcode: "KT1 2AQ"
         },
-        "b31844d4-c382-4e22-9a83-58831bf7de03" => {
+        "b59c50c8-b81e-5df4-b694-6c87d691da03" => {
           provider_name: "South West College",
           ukprn: "10020685",
           instid: "0350",
           name: "Main campus",
           country: "Northern Ireland",
-          postcode: "BT71 6BQ",
-          latitude: 54.508561,
-          longitude: -6.763163
+          postcode: "BT71 6BQ"
         },
-        "161021be-cd40-4efd-a0e1-70616860c752" => {
+        "56f0fd04-07c9-5943-9e6b-0236d631a235" => {
           provider_name: "Southampton City College",
           ukprn: "10006020",
           instid: "1044",
           name: "Main campus",
           country: "England",
-          postcode: "SO14 1AR",
-          latitude: 50.903441,
-          longitude: -1.39513
+          postcode: "SO14 1AR"
         },
-        "f91fe12c-a556-409e-977c-3194c3b5ce2e" => {
+        "4ff2a451-f556-50a0-91b6-f5a7e3dee15c" => {
           provider_name: "Southampton Solent University",
           ukprn: "10006022",
           instid: "0037",
           name: "Main campus",
           country: "England",
-          postcode: "SO14 0YN",
-          latitude: 50.90759,
-          longitude: -1.401021
+          postcode: "SO14 0YN"
         },
-        "0421de6f-2850-47d2-aeaa-bf533716af60" => {
+        "254f9ae9-6673-57ac-9bac-6f17cf8c9fba" => {
           provider_name: "Southern Regional College",
           ukprn: "10020633",
           instid: "0347",
           name: "Main campus",
           country: "Northern Ireland",
-          postcode: "BT32 4AY",
-          latitude: 54.350092,
-          longitude: -6.262465
+          postcode: "BT32 4AY"
         },
-        "c8c96e71-f284-4722-8fc7-443053cdef60" => {
+        "99dc0982-af3e-5534-b8f6-792745512b7f" => {
           provider_name: "Southport Education Group",
           ukprn: "10006038",
           instid: "1039",
           name: "Main campus",
           country: "England",
-          postcode: "PR9 0TT",
-          latitude: 53.647816,
-          longitude: -2.997609
+          postcode: "PR9 0TT"
         },
-        "109a6247-bd3a-4d30-b5fa-990bf0f4ccd2" => {
+        "6d04b751-7c9c-5f31-95a7-5152445a1686" => {
           provider_name: "Sparsholt College",
           ukprn: "10006050",
           instid: "1040",
           name: "Main campus",
           country: "England",
-          postcode: "SO21 2NF",
-          latitude: 51.08468,
-          longitude: -1.394883
+          postcode: "SO21 2NF"
         },
-        "5e1d7967-5e75-4f5c-af1e-f244abe01ce6" => {
+        "9bd29a5f-67d9-5a47-8c23-de2aba434a80" => {
           provider_name: "Spurgeon's College",
           ukprn: "10006093",
           instid: "0310",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE25 6DJ",
-          latitude: 51.406433,
-          longitude: -0.086228
+          postcode: "SE25 6DJ"
         },
-        "4775810e-80c2-431f-840a-6e3ac7783745" => {
+        "27b3ca95-ad1d-531b-9633-5d60bb83913f" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Aberdeen",
           country: "Scotland",
-          postcode: "AB21 9TR",
-          latitude: 57.188564,
-          longitude: -2.210537
+          postcode: "AB21 9TR"
         },
-        "587456f3-ab96-4834-aeb7-f9077264af44" => {
+        "6e8ea443-2b97-5ff6-bb50-7d3720f65f17" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Auchincruive",
           country: "Scotland",
-          postcode: "KA6 5HW",
-          latitude: 55.479684,
-          longitude: -4.566706
+          postcode: "KA6 5HW"
         },
-        "9a4116f9-0e39-4298-a9db-7a2874153113" => {
+        "f2036829-1bdb-59c0-ae0f-a37c0aec66ad" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Barony",
           country: "Scotland",
-          postcode: "DG1 3NE",
-          latitude: 55.16751,
-          longitude: -3.530496
+          postcode: "DG1 3NE"
         },
-        "90081e8e-087e-4254-81dd-7ad1d07e15a9" => {
+        "82315093-5dfe-5156-869b-67ce3ab2597a" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Bush and Edinburgh Farms",
           country: "Scotland",
-          postcode: "EH26 0PE",
-          latitude: 55.864496,
-          longitude: -3.213473
+          postcode: "EH26 0PE"
         },
-        "0c4667e6-7c05-484d-a3c8-318478b359d8" => {
+        "5b1b643f-1758-5510-a440-11a0aa87026d" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "China",
-          country: "China",
-          latitude: 55.921623,
-          longitude: -3.176228
+          country: "China"
         },
-        "905b7547-b921-4f8c-9e4f-98957e60cdd5" => {
+        "e341fdc7-cf51-52b5-80f0-95e9360baaea" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Crichton Royal Farm",
           country: "Scotland",
-          postcode: "DG1 4ZZ",
-          latitude: 55.049454,
-          longitude: -3.593311
+          postcode: "DG1 4ZZ"
         },
-        "9c9070da-fc45-4f81-920a-56b9e9e5f734" => {
+        "e345aa93-6830-5b23-a5a9-70883c49259b" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Edinburgh",
           country: "Scotland",
-          postcode: "EH9 3JG",
-          latitude: 55.921623,
-          longitude: -3.176228
+          postcode: "EH9 3JG"
         },
-        "6b1aeffa-a9ad-4617-949f-4352090c268b" => {
+        "0c34f274-19d0-50fe-8461-4c99154905c5" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Elmwood",
           country: "Scotland",
-          postcode: "KY15 4JB",
-          latitude: 56.319294,
-          longitude: -3.031792
+          postcode: "KY15 4JB"
         },
-        "1d978302-eaab-4b6d-a105-77d9072325cf" => {
+        "9aed010c-6a56-583c-b768-b2970a34a182" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Glasgow Queenspark",
           country: "Scotland",
-          postcode: "G42 8QR",
-          latitude: 55.833627,
-          longitude: -4.269399
+          postcode: "G42 8QR"
         },
-        "15630963-f384-4279-b9a3-18261915a420" => {
+        "2e4cf7fb-f975-528d-9294-7388ea40a785" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Kirkton and Auchtertyre",
           country: "Scotland",
-          postcode: "FK20 8RU",
-          latitude: 56.410215,
-          longitude: -4.655473
+          postcode: "FK20 8RU"
         },
-        "20229f44-3e3e-498d-b4c2-013dbdd85f09" => {
+        "fcee7113-5379-507a-ace9-764d9c5cf24b" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Oatridge",
           country: "Scotland",
-          postcode: "EH52 6NH",
-          latitude: 55.946462,
-          longitude: -3.516069
+          postcode: "EH52 6NH"
         },
-        "1a3222b6-7ba6-4cfe-8297-93b895630ab6" => {
+        "dc3a1d68-01ae-5d63-a12e-5bf65ccd3d56" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "RIB Easter Bush",
           country: "Scotland",
-          postcode: "EH25 9RE",
-          latitude: 55.867927,
-          longitude: -3.19565
+          postcode: "EH25 9RE"
         },
-        "46e1e9ba-bf18-4822-93bf-cc78a1dbcfad" => {
+        "6adf0205-f242-5c07-a8e3-3249670859ad" => {
           provider_name: "SRUC",
           ukprn: "10005700",
           instid: "0175",
           name: "Riverside Campus",
           country: "Scotland",
-          postcode: "KA8 0SX",
-          latitude: 55.458036,
-          longitude: -4.615296
+          postcode: "KA8 0SX"
         },
-        "a247ad34-f1e8-410b-8e5e-08198bcd0a53" => {
+        "f5a898fa-0b18-558a-a1a8-39b82a96cacf" => {
           provider_name: "St George's, University of London",
           ukprn: "10007782",
           instid: "0145",
           name: "Entire HEP",
           country: "England",
-          postcode: "SW17 0RE",
-          latitude: 51.427798,
-          longitude: -0.175228
+          postcode: "SW17 0RE"
         },
-        "e929af2a-b00e-45a5-a194-631f4952d30b" => {
+        "dbde0c54-fda5-554e-8d24-6b3a0c9d554f" => {
           provider_name: "St Helens College",
           ukprn: "10006174",
           instid: "1034",
           name: "Main campus",
           country: "England",
-          postcode: "WA10 1PP",
-          latitude: 53.452648,
-          longitude: -2.74147
+          postcode: "WA10 1PP"
         },
-        "c1be71c4-7626-4dd8-a927-6377ae4796b3" => {
+        "0edfa0d8-b561-5ce5-919c-2b7f2100eeea" => {
           provider_name: "St Hild College",
           ukprn: "10004747",
           instid: "0467",
           name: "Main campus",
           country: "England",
-          postcode: "WF14 0BW",
-          latitude: 53.682081,
-          longitude: -1.71306
+          postcode: "WF14 0BW"
         },
-        "6cdbebce-f2a6-467f-9560-551f5068b972" => {
+        "76f654a7-b397-575b-aa16-088276625425" => {
           provider_name: "St Mary's College",
           ukprn: "10006226",
           instid: "1033",
           name: "Main campus",
           country: "England",
-          postcode: "BB1 8DX",
-          latitude: 53.760106,
-          longitude: -2.486935
+          postcode: "BB1 8DX"
         },
-        "ba1ed66d-bd44-4f46-99a9-ee2e0cfa6a02" => {
+        "9535cb4b-0f12-5282-a857-54c4e062ea7b" => {
           provider_name: "St Mary's University College",
           ukprn: "10008026",
           instid: "0194",
           name: "Entire HEP",
           country: "Northern Ireland",
-          postcode: "BT12 6FE",
-          latitude: 54.593162,
-          longitude: -5.961323
+          postcode: "BT12 6FE"
         },
-        "c177bc29-d2e7-480e-904b-22666c66cdad" => {
+        "ef44cc30-a7fd-5107-bed3-55f12f1e2537" => {
           provider_name: "St Mary's University, Twickenham",
           ukprn: "10007843",
           instid: "0039",
           name: "Entire HEP",
           country: "England",
-          postcode: "TW1 4SX",
-          latitude: 51.436152,
-          longitude: -0.335907
+          postcode: "TW1 4SX"
         },
-        "381470f8-f191-4c0c-9ae4-5c4460a6a566" => {
+        "b8718951-7b49-59b6-a307-51234884709b" => {
           provider_name: "St Mellitus College",
           ukprn: "10030776",
           instid: "0258",
           name: "Chelmsford",
           country: "England",
-          postcode: "CM1 1TY",
-          latitude: 51.735578,
-          longitude: 0.473787
+          postcode: "CM1 1TY"
         },
-        "7f34e0f8-33a6-4666-91cc-232bf582d6cc" => {
+        "62b1a200-cf50-5967-b341-83507fa0e477" => {
           provider_name: "St Mellitus College",
           ukprn: "10030776",
           instid: "0258",
           name: "East Midlands (Leicester)",
           country: "England",
-          postcode: "LE1 5PZ",
-          latitude: 52.634421,
-          longitude: -1.138019
+          postcode: "LE1 5PZ"
         },
-        "96d152f5-b35f-459a-9bac-1a91a97e3c2e" => {
+        "1e0e1f4d-0934-5d6d-a72b-ef75a72f2d8e" => {
           provider_name: "St Mellitus College",
           ukprn: "10030776",
           instid: "0258",
           name: "LIverpool",
           country: "England",
-          postcode: "L1 7AZ",
-          latitude: 53.397447,
-          longitude: -2.973214
+          postcode: "L1 7AZ"
         },
-        "03110355-925a-443c-bbed-2a27bb70bc9f" => {
+        "e8ec7876-afaf-5fe7-a7a0-267f9bc1b662" => {
           provider_name: "St Mellitus College",
           ukprn: "10030776",
           instid: "0258",
           name: "Main campus",
           country: "England",
-          postcode: "SW5 0LX",
-          latitude: 51.493625,
-          longitude: -0.188044
+          postcode: "SW5 0LX"
         },
-        "cd21c653-9a99-43d0-b0d8-224b7cebd640" => {
+        "35b30a84-82ee-5a67-982d-e6352216f6dd" => {
           provider_name: "St Mellitus College",
           ukprn: "10030776",
           instid: "0258",
           name: "Nottingham",
           country: "England",
-          postcode: "NG1 3HX",
-          latitude: 52.964264,
-          longitude: -1.151924
+          postcode: "NG1 3HX"
         },
-        "b25ae7c5-7a9e-4038-9626-46801c570572" => {
+        "3efe4bb6-bd75-55d9-9f42-e41aca5d74a5" => {
           provider_name: "St Mellitus College",
           ukprn: "10030776",
           instid: "0258",
           name: "Plymouth",
           country: "England",
-          postcode: "PL4 8HF",
-          latitude: 50.377815,
-          longitude: -4.135346
+          postcode: "PL4 8HF"
         },
-        "9577fe35-32ff-41b8-9678-15eb1233c2f3" => {
+        "47423245-31d2-5bd3-8def-767d7521eb4e" => {
           provider_name: "St Nicholas Montessori Training Limited",
           ukprn: "10045289",
           instid: "0311",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1A 2RP",
-          latitude: 51.534439,
-          longitude: -0.181478
+          postcode: "WC1A 2RP"
         },
-        "388804be-31e2-432d-94e4-69b6bf0679a0" => {
+        "ad20b12a-c549-54a1-ac9c-cc90d41036db" => {
           provider_name: "St Padarn's Institute",
           ukprn: "10090767",
           instid: "1197",
@@ -6504,2731 +5200,2175 @@ module DfE
           country: "Wales",
           postcode: "CF10 5BT"
         },
-        "d0bb5de2-a94b-40ab-a4b3-d435d560989f" => {
+        "8156d18c-06d5-59c6-94a2-8642568a9166" => {
           provider_name: "St Patrick's International College",
           ukprn: "10006243",
           instid: "0283",
           name: "Main campus",
           country: "England",
-          postcode: "E15 2JB",
-          latitude: 51.537851,
-          longitude: -0.003141
+          postcode: "E15 2JB"
         },
-        "5269f4ef-5ff4-4448-9c9b-8676e69452c6" => {
+        "ee0f3f78-ff4c-5c20-94f0-199052741926" => {
           provider_name: "Stephenson College",
           ukprn: "10006322",
           instid: "1032",
           name: "Main campus",
           country: "England",
-          postcode: "LE67 3TN",
-          latitude: 52.737048,
-          longitude: -1.372555
+          postcode: "LE67 3TN"
         },
-        "a42a8d23-bc8e-4f15-a2a5-7b215b9a0719" => {
+        "5629a11d-8545-5373-b388-6e78fa2a1bc0" => {
           provider_name: "Stockport College",
           ukprn: "10006331",
           instid: "1036",
           name: "Main campus",
           country: "England",
-          postcode: "SK1 3UQ",
-          latitude: 53.404275,
-          longitude: -2.158962
+          postcode: "SK1 3UQ"
         },
-        "b64bf731-84af-4ef4-b2af-58d7c48721d2" => {
+        "73841a1f-e57e-5fd3-b8b5-3497cb72d0f2" => {
           provider_name: "Stranmillis University College",
           ukprn: "10008010",
           instid: "0193",
           name: "Entire HEP",
           country: "Northern Ireland",
-          postcode: "BT9 5DY",
-          latitude: 54.572355,
-          longitude: -5.939164
+          postcode: "BT9 5DY"
         },
-        "ee07aede-e0f7-4f52-9cb3-37188dc45ddc" => {
+        "f8fcaf43-17c0-5e36-98b1-2fcc9506578c" => {
           provider_name: "Stratford College London (SCL)",
           ukprn: "10022944",
           instid: "0241",
           name: "Main campus",
           country: "England",
-          postcode: "E15 4PH",
-          latitude: 51.539455,
-          longitude: 0.004181
+          postcode: "E15 4PH"
         },
-        "e3480eec-f6d2-4eff-b7eb-87c574ca4f27" => {
+        "07495be2-fd4b-5ffd-9bcc-47f56afcf902" => {
           provider_name: "Stratford-upon-Avon College",
           ukprn: "10006002",
           instid: "1030",
           name: "Main campus",
           country: "England",
-          postcode: "CV37 9QR",
-          latitude: 52.192858,
-          longitude: -1.718214
+          postcode: "CV37 9QR"
         },
-        "79e3502b-e3bb-4540-a8e9-92ccb7f3c11a" => {
+        "f83cef38-84e2-5b14-a254-00cc471f5c68" => {
           provider_name: "Strode College",
           ukprn: "10006378",
           instid: "1031",
           name: "Main campus",
           country: "England",
-          postcode: "BA16 0AB",
-          latitude: 51.130495,
-          longitude: -2.734039
+          postcode: "BA16 0AB"
         },
-        "1adc764d-9117-429a-b20f-902f10b3d9bd" => {
+        "6f0e5962-3260-5817-b6c8-eb427d82543a" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Bellerbys College - Brighton",
           country: "England",
-          postcode: "BN1 4LF",
-          latitude: 50.832036,
-          longitude: -0.140833
+          postcode: "BN1 4LF"
         },
-        "b5f86cc1-f291-4041-bbd6-9a47e0c1f724" => {
+        "d3f4c5d2-6251-58a5-b0ba-2be46ec517a0" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Bellerbys College - London",
           country: "England",
-          postcode: "SE8 3DE",
-          latitude: 51.481545,
-          longitude: -0.02198
+          postcode: "SE8 3DE"
         },
-        "ab190a5d-b627-4fc5-b140-ffde4576e53b" => {
+        "1f78b6df-e399-5f1a-b8fd-1dcd65f01cb9" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Cardiff University International Study Centre",
           country: "Wales",
-          postcode: "CF10 3QN",
-          latitude: 51.488406,
-          longitude: -3.177461
+          postcode: "CF10 3QN"
         },
-        "a065db60-6820-4d31-a44a-b65d835efb86" => {
+        "b0e5b0ec-ba59-520a-916d-dedf9f92e291" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Durham University International Study Centre",
           country: "England",
-          postcode: "TS17 6BH",
-          latitude: 54.563169,
-          longitude: -1.296768
+          postcode: "TS17 6BH"
         },
-        "6e5c3fec-a3d6-490b-80bd-ce2a9852ed13" => {
+        "211dfb4b-251b-57e4-b418-d423f319439c" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Holland International Study Centre",
-          country: "Netherlands",
-          latitude: 50.832036,
-          longitude: -0.140833
+          country: "Netherlands"
         },
-        "393b679a-9df0-42cb-a00e-14963faf93fe" => {
+        "c8305ce6-e140-588c-a69b-0e9009f625f2" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Kingston University International Study Centre",
           country: "England",
-          postcode: "KT2 7LB",
-          latitude: 51.429011,
-          longitude: -0.265195
+          postcode: "KT2 7LB"
         },
-        "baca6bc5-0f3f-49cb-881e-5f6952e54ea7" => {
+        "4890cfe2-0637-5b54-bbbc-93e1906322f5" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Lancaster University International Study Centre",
           country: "England",
-          postcode: "LA1 4YX",
-          latitude: 54.007637,
-          longitude: -2.786948
+          postcode: "LA1 4YX"
         },
-        "93908626-c5af-4428-b835-e3ef7b24e8bf" => {
+        "8c4f7f78-9fbf-540c-8105-100d0f3c2098" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Leeds International Study Centre",
           country: "England",
-          postcode: "LS6 3BR",
-          latitude: 53.816081,
-          longitude: -1.580617
+          postcode: "LS6 3BR"
         },
-        "1c092a1b-9d56-4931-94ea-b1e00d1933b5" => {
+        "38243988-4192-5a58-b65e-9ab9f51c8374" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Liverpool John Moores University International Stu",
           country: "England",
-          postcode: "L3 5UX",
-          latitude: 53.403685,
-          longitude: -2.973176
+          postcode: "L3 5UX"
         },
-        "4be2910e-cfec-42ae-88fd-5f23d610bbbe" => {
+        "bd1946a5-60f3-565c-be34-c6406a574957" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Main campus",
           country: "England",
-          postcode: "TS1 3BX",
-          latitude: 54.570387,
-          longitude: -1.236999
+          postcode: "TS1 3BX"
         },
-        "504b6237-1054-4db3-bddf-753a107e0d16" => {
+        "5333581f-5793-55b6-9f1d-14e588daae1b" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "Royal Holloway International Study Centre",
           country: "England",
-          postcode: "TW20 0EX",
-          latitude: 51.424814,
-          longitude: -0.566745
+          postcode: "TW20 0EX"
         },
-        "52331c20-dfec-4c8c-9efb-9fa57885c2cc" => {
+        "18a7d2ef-f00a-5f42-8c19-0bedfbbccec4" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "University College Dublin International Study Cent",
-          country: "Ireland",
-          latitude: 50.832036,
-          longitude: -0.140833
+          country: "Ireland"
         },
-        "fa33285c-2ccf-4e26-9708-6adb94f2d729" => {
+        "420d6fcd-fee4-5bb6-be3e-b0d1983fe434" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "University of Aberdeen International Study Centre",
           country: "Scotland",
-          postcode: "AB24 3FX",
-          latitude: 57.164841,
-          longitude: -2.100236
+          postcode: "AB24 3FX"
         },
-        "8892cda2-84bc-45c7-a77d-40c369428040" => {
+        "cc986cd4-58f8-50c9-accf-3dc1abbc3bef" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "University of Huddersfield International Study Cen",
           country: "England",
-          postcode: "HD1 3DH",
-          latitude: 53.643678,
-          longitude: -1.778726
+          postcode: "HD1 3DH"
         },
-        "806ec1a5-c8dc-49c3-87bb-fe7e02c15c66" => {
+        "f7441000-988c-5316-90de-c819f64337dd" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "University of Sheffield International College",
           country: "England",
-          postcode: "S1 4DE",
-          latitude: 53.384374,
-          longitude: -1.473985
+          postcode: "S1 4DE"
         },
-        "196c55d6-d1f9-4455-9257-4b6f9df8b9d6" => {
+        "19e149ef-460e-59c8-91ad-e8681ab5c1e6" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "University of Strathclyde International Study Cent",
           country: "Scotland",
-          postcode: "G1 1QE",
-          latitude: 55.860777,
-          longitude: -4.241546
+          postcode: "G1 1QE"
         },
-        "45aa8cd9-9933-4bb0-b84a-f35313626e97" => {
+        "ff4faf42-8c3a-51d7-8636-89ceeb8f05d9" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "University of Surrey International Study Centre",
           country: "England",
-          postcode: "GU2 7XH",
-          latitude: 51.242685,
-          longitude: -0.587936
+          postcode: "GU2 7XH"
         },
-        "7ce0b8e3-df6f-4647-8669-9977c069605b" => {
+        "8e3aa5c5-27ed-5e6e-a047-59fd6b5f2324" => {
           provider_name: "Study Group",
           ukprn: "10008098",
           instid: "0403",
           name: "University of Sussex International Study Centre",
           country: "England",
-          postcode: "BN1 9SP",
-          latitude: 50.866498,
-          longitude: -0.08516
+          postcode: "BN1 9SP"
         },
-        "f719fd29-e4d9-46ee-ac11-b572c01264ab" => {
+        "9f473b37-4146-5a0e-af20-f05b36447a45" => {
           provider_name: "Sussex Downs College",
           ukprn: "10006432",
           instid: "1028",
           name: "Main campus",
           country: "England",
-          postcode: "BN21 2UF",
-          latitude: 50.788909,
-          longitude: 0.272124
+          postcode: "BN21 2UF"
         },
-        "331c78b7-de61-4fd4-9890-dc62d18db4cc" => {
+        "09855098-a8c4-5d68-b50b-ceae61eb1f16" => {
           provider_name: "Swansea Metropolitan University",
           ukprn: "10007846",
           instid: "0091",
           name: "Entire institution",
           country: "Wales",
-          postcode: "SA1 6ED",
-          latitude: 51.624654,
-          longitude: -3.949428
+          postcode: "SA1 6ED"
         },
-        "a81b7118-bbfd-41fb-a3ff-41c1dc6afe3b" => {
+        "ce14e017-1cba-5af2-b4fb-5ef42dc30e04" => {
           provider_name: "Swansea University",
           ukprn: "10007855",
           instid: "0180",
           name: "Entire HEP",
           country: "Wales",
-          postcode: "SA2 8PP",
-          latitude: 51.609627,
-          longitude: -3.980616
+          postcode: "SA2 8PP"
         },
-        "5a1f09cf-a703-4547-bccf-78185ccfe540" => {
+        "64f3dee4-a8c8-507d-ac1c-e65541cf3c2e" => {
           provider_name: "Swindon College",
           ukprn: "10006463",
           instid: "1027",
           name: "Main campus",
           country: "England",
-          postcode: "SN2 1DY",
-          latitude: 51.568405,
-          longitude: -1.787517
+          postcode: "SN2 1DY"
         },
-        "7f093e57-afe6-4eb6-ab00-81cd5d31c8bf" => {
+        "e5c17593-8291-58c8-94a2-ae7cce6374d7" => {
           provider_name: "Sysco Business Skills Academy Limited",
           ukprn: "10013122",
           instid: "0469",
           name: "Main campus",
           country: "England",
-          postcode: "L3 2BA",
-          latitude: 53.409927,
-          longitude: -2.984706
+          postcode: "L3 2BA"
         },
-        "58281093-33dc-4be0-9e47-0af1b99a2ad8" => {
+        "952b3ab0-69fd-53fe-96b3-85725b54fbbe" => {
           provider_name: "Tameside College",
           ukprn: "10006494",
           instid: "1026",
           name: "Main campus",
           country: "England",
-          postcode: "OL6 6NX",
-          latitude: 53.487938,
-          longitude: -2.080771
+          postcode: "OL6 6NX"
         },
-        "11f62820-4bbe-45f9-92a4-916b0fa6eb1e" => {
+        "6d80982a-b51f-5439-8323-30b9c1ccfaa2" => {
           provider_name: "Tavistock and Portman NHS Foundation Trust",
           ukprn: "10020381",
           instid: "0433",
           name: "Belfast campus",
           country: "Northern Ireland",
-          postcode: "BT15 2GB",
-          latitude: 54.612422,
-          longitude: -5.929368
+          postcode: "BT15 2GB"
         },
-        "8de59bbe-9881-4d6d-8878-296b02a17267" => {
+        "9f187ba2-01df-5c04-879c-37eb0c44a23f" => {
           provider_name: "Tavistock and Portman NHS Foundation Trust",
           ukprn: "10020381",
           instid: "0433",
           name: "Birmingham campus",
           country: "England",
-          postcode: "B9 4AA",
-          latitude: 52.475429,
-          longitude: -1.884163
+          postcode: "B9 4AA"
         },
-        "1a0fb4ec-06db-4c1f-aa20-feeb0b8e8e78" => {
+        "da4e487f-2930-53dc-af33-64aca1089d28" => {
           provider_name: "Tavistock and Portman NHS Foundation Trust",
           ukprn: "10020381",
           instid: "0433",
           name: "Bristol campus",
           country: "England",
-          postcode: "BS5 0AX",
-          latitude: 51.45626,
-          longitude: -2.563674
+          postcode: "BS5 0AX"
         },
-        "31f4a8d4-55cf-4bdb-abd9-7b94444e7484" => {
+        "c481a3e0-86d6-517a-80d2-1c4a5b18b6c5" => {
           provider_name: "Tavistock and Portman NHS Foundation Trust",
           ukprn: "10020381",
           instid: "0433",
           name: "Leeds campus",
           country: "England",
-          postcode: "LS12 1AW",
-          latitude: 53.791187,
-          longitude: -1.561314
+          postcode: "LS12 1AW"
         },
-        "db4ccc88-d5ea-4519-b80a-43b3447dd09d" => {
+        "011d74ea-5c5e-50a4-ab20-d75fc56309a8" => {
           provider_name: "Tavistock and Portman NHS Foundation Trust",
           ukprn: "10020381",
           instid: "0433",
           name: "Main campus",
           country: "England",
-          postcode: "NW3 5BA",
-          latitude: 51.546898,
-          longitude: -0.175443
+          postcode: "NW3 5BA"
         },
-        "f35ae629-78b3-4bfe-9d64-5b116d96f96c" => {
+        "0d0c938c-cf0e-52a5-bbb0-896970851ddc" => {
           provider_name: "TEC Partnership",
           ukprn: "10007938",
           instid: "1119",
           name: "Main campus",
           country: "England",
-          postcode: "DN34 5BQ",
-          latitude: 53.553451,
-          longitude: -0.093352
+          postcode: "DN34 5BQ"
         },
-        "23652552-8437-4864-a0e4-a2d3efeb9998" => {
+        "05e4a62a-4d4e-5768-909a-683f74f36f32" => {
           provider_name: "Tech Music Schools",
           ukprn: "10032299",
           instid: "0242",
           name: "Main campus",
           country: "England",
-          postcode: "W3 7SZ",
-          latitude: 51.504817,
-          longitude: -0.25654
+          postcode: "W3 7SZ"
         },
-        "5ff396e0-8775-48d9-a405-fa62cce2fdf7" => {
+        "2274eff1-9f3a-5402-a39f-fef4170deccc" => {
           provider_name: "Teesside University",
           ukprn: "10007161",
           instid: "0079",
           name: "Main campus",
           country: "England",
-          postcode: "TS1 3BX",
-          latitude: 54.570387,
-          longitude: -1.236999
+          postcode: "TS1 3BX"
         },
-        "572bee79-90e9-441c-96a6-42b82b638b67" => {
+        "1057403a-7458-5b2d-90f7-aecfdd1bcde5" => {
           provider_name: "Teesside University",
           ukprn: "10007161",
           instid: "0079",
           name: "Teesside University Darlington",
           country: "England",
-          postcode: "DL1 1JW",
-          latitude: 54.527866,
-          longitude: -1.543342
+          postcode: "DL1 1JW"
         },
-        "efdbea92-b3d6-4f4f-9562-b39285293898" => {
+        "9c0bbd1a-c95d-5a0a-bb85-a4d0ecbc29a6" => {
           provider_name: "Telford College",
           ukprn: "10006549",
           instid: "1025",
           name: "Main campus",
           country: "England",
-          postcode: "TF1 2NP",
-          latitude: 52.697329,
-          longitude: -2.498607
+          postcode: "TF1 2NP"
         },
-        "f72f77bb-5af5-4f0d-a6bf-455e289ceace" => {
+        "6b245377-7460-5522-9251-db6400cea6b0" => {
           provider_name: "The Academy of Contemporary Music",
           ukprn: "10013357",
           instid: "0251",
           name: "Main campus",
           country: "England",
-          postcode: "GU1 4SB",
-          latitude: 51.236455,
-          longitude: -0.578092
+          postcode: "GU1 4SB"
         },
-        "6296cf0b-987b-40fc-a594-8bd7e5a11b84" => {
+        "190c6871-1aea-5627-b828-4bed725f4af2" => {
           provider_name: "The Arts University Bournemouth",
           ukprn: "10000385",
           instid: "0197",
           name: "Drama Cente at Bournemouth Pavilion",
           country: "England",
-          postcode: "BH1 2BU",
-          latitude: 50.717535,
-          longitude: -1.875155
+          postcode: "BH1 2BU"
         },
-        "e0e11c75-bc1c-4725-9f64-7c4957cfad00" => {
+        "cc146fed-cb89-5d1e-9996-915182fbd53a" => {
           provider_name: "The Arts University Bournemouth",
           ukprn: "10000385",
           instid: "0197",
           name: "Entire HEP",
           country: "England",
-          postcode: "BH12 5HH",
-          latitude: 50.741808,
-          longitude: -1.897728
+          postcode: "BH12 5HH"
         },
-        "1fcb6941-8836-40c7-8c6c-d9466f176bcd" => {
+        "6d55cf99-9b0b-5273-9657-f66c5196cd53" => {
           provider_name: "The Arts University Bournemouth",
           ukprn: "10000385",
           instid: "0197",
           name: "Film Studio - Elliott Road",
           country: "England",
-          postcode: "BH11 8JZ",
-          latitude: 50.757037,
-          longitude: -1.923762
+          postcode: "BH11 8JZ"
         },
-        "46904127-4cca-4a19-b05a-0d03a5d8b06a" => {
+        "49a7e174-7206-5e36-85b5-bb6a35584cc8" => {
           provider_name: "The Ashridge (Bonar Law Memorial) Trust",
           ukprn: "10008899",
           instid: "0438",
           name: "Entire HEP",
           country: "England",
-          postcode: "HP4 1NS",
-          latitude: 51.799461,
-          longitude: -0.560016
+          postcode: "HP4 1NS"
         },
-        "73aacc42-ada3-434c-80f4-00b22646db47" => {
+        "98cb10f0-6d6c-5107-a352-8636ae9f8fb1" => {
           provider_name: "The Berkshire College of Agriculture (BCA)",
           ukprn: "10000654",
           instid: "1170",
           name: "Main campus",
           country: "England",
-          postcode: "SL6 6QR",
-          latitude: 51.529697,
-          longitude: -0.799839
+          postcode: "SL6 6QR"
         },
-        "8e562f06-d8b1-4bfc-beb3-3edbedec7d28" => {
+        "22cba9c7-e0cf-5c02-92ab-03e61892097d" => {
           provider_name: "The Bournemouth and Poole College",
           ukprn: "10000820",
           instid: "1162",
           name: "Main campus",
           country: "England",
-          postcode: "BH14 0LS",
-          latitude: 50.724709,
-          longitude: -1.961881
+          postcode: "BH14 0LS"
         },
-        "a1dd413b-cb63-4614-94c3-2cd52d5ffaf6" => {
+        "c1180795-9842-5b3c-a1bd-20ab5f57dc65" => {
           provider_name: "The Cambridge Theological Federation",
           ukprn: "10032072",
           instid: "0288",
           name: "Main campus",
           country: "England",
-          postcode: "CB3 0BJ",
-          latitude: 52.211302,
-          longitude: 0.111335
+          postcode: "CB3 0BJ"
         },
-        "5e38f79c-1891-4c3e-96aa-fa7f12e9a5c4" => {
+        "b65e0180-4916-52aa-ba4e-e265f118afb4" => {
           provider_name: "The Cambridge Theological Federation",
           ukprn: "10032072",
           instid: "0288",
           name: "Ridley Hall",
           country: "England",
-          postcode: "CB3 9HG",
-          latitude: 52.19994,
-          longitude: 0.111339
+          postcode: "CB3 9HG"
         },
-        "81eea351-2ee2-48a5-8c0e-f829df0e65be" => {
+        "6370c6d1-e1e7-5bb7-82d4-88c8dea29d88" => {
           provider_name: "The Cambridge Theological Federation",
           ukprn: "10032072",
           instid: "0288",
           name: "St Andrew's Church Enfield",
           country: "England",
-          postcode: "EN1 3EG",
-          latitude: 51.652893,
-          longitude: -0.081344
+          postcode: "EN1 3EG"
         },
-        "958e32b9-36fe-4201-bae1-d38ef2a73268" => {
+        "ea77b53b-e5ac-5419-a303-0b12d3b7f500" => {
           provider_name: "The Cambridge Theological Federation",
           ukprn: "10032072",
           instid: "0288",
           name: "Westcott House",
           country: "England",
-          postcode: "CB5 8BP",
-          latitude: 52.208396,
-          longitude: 0.122688
+          postcode: "CB5 8BP"
         },
-        "9df002a6-63d9-4eab-ba0c-fb823ae27ba5" => {
+        "f05faeb7-8133-550f-b298-a10e6919f812" => {
           provider_name: "The Cambridge Theological Federation",
           ukprn: "10032072",
           instid: "0288",
           name: "Westminster College",
           country: "England",
-          postcode: "CB3 0AA",
-          latitude: 52.210537,
-          longitude: 0.112119
+          postcode: "CB3 0AA"
         },
-        "4ec75489-a17d-4bcc-8c8c-9ab26ce00e78" => {
+        "b2a606ed-6d6c-5071-be19-678402446ebb" => {
           provider_name: "The City College",
           ukprn: "10010213",
           instid: "0271",
           name: "Entire HEP",
           country: "England",
-          postcode: "N1 6AH",
-          latitude: 51.528636,
-          longitude: -0.087843
+          postcode: "N1 6AH"
         },
-        "cd13da62-c69d-453a-b1d8-0a35988b9161" => {
+        "13ddc3ec-ec7c-54d0-b898-1ed607ca268f" => {
           provider_name: "The City of Liverpool College",
           ukprn: "10003955",
           instid: "1139",
           name: "Main campus",
           country: "England",
-          postcode: "L3 5TP",
-          latitude: 53.404377,
-          longitude: -2.973191
+          postcode: "L3 5TP"
         },
-        "dac37c31-cbbb-4f7d-8800-f29f7836875d" => {
+        "4558ba4c-fb58-5146-b9a8-eda147fa7abc" => {
           provider_name: "The College of Health Ltd",
           ukprn: "10066502",
           instid: "0430",
           name: "Main campus",
           country: "England",
-          postcode: "OX14 1BZ",
-          latitude: 51.670421,
-          longitude: -1.305384
+          postcode: "OX14 1BZ"
         },
-        "699988e3-d0c0-44b8-869f-06c3464ec1b5" => {
+        "945993c5-95b8-500f-9951-2be59863c609" => {
           provider_name: "The College of Health Ltd",
           ukprn: "10066502",
           instid: "0430",
           name: "Manchester",
           country: "England",
-          postcode: "M1 6FQ",
-          latitude: 53.475586,
-          longitude: -2.241402
+          postcode: "M1 6FQ"
         },
-        "d6b0af31-bebb-48c0-b895-63f2ca608bdd" => {
+        "508eae74-8545-50f1-b827-7dbd1a8899f3" => {
           provider_name: "The College of Integrated Chinese Medicine",
           ukprn: "10001546",
           instid: "0270",
           name: "Entire HEP",
           country: "England",
-          postcode: "RG1 7SB",
-          latitude: 51.453395,
-          longitude: -0.974575
+          postcode: "RG1 7SB"
         },
-        "e9f0e507-a07a-4f77-ab4a-443efd053a1d" => {
+        "d753df47-ce64-5aa8-af13-1b3b2d59c19d" => {
           provider_name: "The College of Osteopaths",
           ukprn: "10023442",
           instid: "0424",
           name: "Main campus",
           country: "England",
-          postcode: "WD6 2DG",
-          latitude: 51.654768,
-          longitude: -0.275839
+          postcode: "WD6 2DG"
         },
-        "8b0a1eb7-e408-4db4-80b3-5434eecd68d3" => {
+        "aa98d9e6-1321-508d-bc11-05c97bbb359b" => {
           provider_name: "The College of Osteopaths",
           ukprn: "10023442",
           instid: "0424",
           name: "Stoke-on-Trent",
           country: "England",
-          postcode: "ST4 7NY",
-          latitude: 53.008345,
-          longitude: -2.204149
+          postcode: "ST4 7NY"
         },
-        "d44baf24-cc8f-4eb8-967a-662ad38ae3d3" => {
+        "13526a98-b555-5b93-8d14-1ccba5808bd4" => {
           provider_name: "The Council of the Inns of Court",
           ukprn: "10081618",
           instid: "0412",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1R 5JD",
-          latitude: 51.520051,
-          longitude: -0.112604
+          postcode: "WC1R 5JD"
         },
-        "8118366d-719f-4924-a712-2fc60b3f3a97" => {
+        "ca3edf2b-bfaf-5dec-8f53-9361b74a07af" => {
           provider_name: "The Engineering and Design Institute London",
           ukprn: "10083403",
           instid: "0435",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE16 7LG",
-          latitude: 51.496915,
-          longitude: -0.041859
+          postcode: "SE16 7LG"
         },
-        "165fdc64-646f-4555-a623-6f8d774675d3" => {
+        "40d9f435-24f8-5f88-b4b2-e1b1d51941fc" => {
           provider_name: "The Film Education Training Trust Limited",
           ukprn: "10004035",
           instid: "0359",
           name: "Entire HEP",
           country: "England",
-          postcode: "SW6 1QR",
-          latitude: 51.482111,
-          longitude: -0.197732
+          postcode: "SW6 1QR"
         },
-        "68c3371c-a7b8-4924-a712-c3265e4baf2b" => {
+        "bf8b2be9-4e6d-5ec1-9844-71799c660b5c" => {
           provider_name: "The Institute of Cancer Research",
           ukprn: "10003324",
           instid: "0188",
           name: "Entire HEP",
           country: "England",
-          postcode: "SW7 3RP",
-          latitude: 51.490783,
-          longitude: -0.181646
+          postcode: "SW7 3RP"
         },
-        "1c3a9549-6efe-4360-9099-11ffe0faae24" => {
+        "45b652ef-0ba1-50da-b185-6759877dbe9d" => {
           provider_name: "The Institute of Ismaili Studies",
           ukprn: "10067388",
           instid: "0360",
           name: "Entire HEP",
           country: "England",
-          postcode: "N1C 4DN",
-          latitude: 51.537412,
-          longitude: -0.123972
+          postcode: "N1C 4DN"
         },
-        "efd00288-169b-4800-a77c-aa3952d0bbd9" => {
+        "89ab146a-a63f-5197-8f27-e5c1b9ce7141" => {
           provider_name: "The Islamic College",
           ukprn: "10029682",
           instid: "0298",
           name: "Entire HEP",
           country: "England",
-          postcode: "NW10 2SW",
-          latitude: 51.546408,
-          longitude: -0.230917
+          postcode: "NW10 2SW"
         },
-        "6938c497-034d-42a4-9465-0ae71501f377" => {
+        "75bb7596-6378-5652-a2f0-bcb7f905265b" => {
           provider_name: "The King's Foundation",
           ukprn: "10083476",
           instid: "0414",
           name: "Entire HEP",
           country: "England",
-          postcode: "EC2A 3SG",
-          latitude: 51.525785,
-          longitude: -0.081401
+          postcode: "EC2A 3SG"
         },
-        "acf66a20-8912-4257-acf1-eabb0e74c508" => {
+        "193909a3-9843-5fe8-a8e8-71ceeb91eb9d" => {
           provider_name: "The Liverpool Institute for Performing Arts",
           ukprn: "10003945",
           instid: "0209",
           name: "Entire HEP",
           country: "England",
-          postcode: "L1 9HF",
-          latitude: 53.399657,
-          longitude: -2.972271
+          postcode: "L1 9HF"
         },
-        "7dc5797e-d2b0-4a22-a76e-43c9a3d1926c" => {
+        "24080fb1-fb21-5b83-957b-d78f2deac6d5" => {
           provider_name: "The London College",
           ukprn: "10015506",
           instid: "0243",
           name: "Entire HEP",
           country: "England",
-          postcode: "TW5 9QX",
-          latitude: 51.478444,
-          longitude: -0.409208
+          postcode: "TW5 9QX"
         },
-        "2ded570d-ab09-43bb-8d51-a59573058d6a" => {
+        "5fe2b83f-9f7a-5246-b64a-0858740c3e77" => {
           provider_name: "The London Institute of Banking & Finance",
           ukprn: "10008289",
           instid: "0217",
           name: "Entire HEP",
           country: "England",
-          postcode: "EC3R 8EB",
-          latitude: 51.509976,
-          longitude: -0.083999
+          postcode: "EC3R 8EB"
         },
-        "f937bec2-41eb-40aa-99c0-9026c7b39db5" => {
+        "fdff9f28-4fe3-5dde-8465-4085826f654e" => {
           provider_name: "The London Interdisciplinary School Ltd",
           ukprn: "10067623",
           instid: "0428",
           name: "Entire HEP",
           country: "England",
-          postcode: "E1 1EW",
-          latitude: 51.516738,
-          longitude: -0.067671
+          postcode: "E1 1EW"
         },
-        "e93b6af8-9807-4031-8638-e5d9a176568b" => {
+        "d505191d-d2ca-52a1-a28c-e3f729eae746" => {
           provider_name: "The London School of Architecture",
           ukprn: "10062810",
           instid: "0354",
           name: "Entire HEP",
           country: "England",
-          postcode: "N1 5RA",
-          latitude: 51.536147,
-          longitude: -0.078788
+          postcode: "N1 5RA"
         },
-        "0faf2df4-b3e0-4111-bb50-e5c57ab0ce1f" => {
+        "7d5654be-b53c-5ab8-a9a8-3d17029d43c0" => {
           provider_name: "The Manchester Metropolitan University",
           ukprn: "10004180",
           instid: "0066",
           name: "Crewe campus",
           country: "England",
-          postcode: "CW1 5DU",
-          latitude: 53.092752,
-          longitude: -2.422279
+          postcode: "CW1 5DU"
         },
-        "79e307c2-35a7-465e-ad62-e2ee72d28bfd" => {
+        "09517d4a-b0a9-5a31-a0d3-5380cf4a7451" => {
           provider_name: "The Manchester Metropolitan University",
           ukprn: "10004180",
           instid: "0066",
           name: "Entire HEP",
           country: "England",
-          postcode: "M15 6BH",
-          latitude: 53.470917,
-          longitude: -2.239115
+          postcode: "M15 6BH"
         },
-        "4a4a6979-d142-4048-aa0c-c9dc21585280" => {
+        "41f7df02-34e1-5b1c-bf99-d3a62ba18e0e" => {
           provider_name: "The Markfield Institute of Higher Education",
           ukprn: "10023452",
           instid: "0331",
           name: "Main campus",
           country: "England",
-          postcode: "LE67 9SY",
-          latitude: 52.676482,
-          longitude: -1.271644
+          postcode: "LE67 9SY"
         },
-        "289287f5-310a-4ab4-99c8-eddbf76dc9cd" => {
+        "0932ef0c-cb6a-599b-bfa1-5c8f3f8a4c06" => {
           provider_name: "The Markfield Institute of Higher Education",
           ukprn: "10023452",
           instid: "0331",
           name: "MIHE-Birmingham",
           country: "England",
-          postcode: "B6 4UX",
-          latitude: 52.498461,
-          longitude: -1.894075
+          postcode: "B6 4UX"
         },
-        "d3371131-1fa4-4bc4-bfe3-a541b65fe10f" => {
+        "5dc0c5a2-fcf9-5ddf-81a9-0debfbea3cf5" => {
           provider_name: "The Markfield Institute of Higher Education",
           ukprn: "10023452",
           instid: "0331",
           name: "MIHE-LONDON",
           country: "England",
-          postcode: "E1 1JQ",
-          latitude: 51.517468,
-          longitude: -0.065579
+          postcode: "E1 1JQ"
         },
-        "98359900-6326-4dfb-a3bc-4d6bcad1a621" => {
+        "5677af38-897a-55bc-9985-b43d34877116" => {
           provider_name: "The Metanoia Institute",
           ukprn: "10004320",
           instid: "0314",
           name: "Engineer's House",
           country: "England",
-          postcode: "BS8 3NB",
-          latitude: 51.458721,
-          longitude: -2.625829
+          postcode: "BS8 3NB"
         },
-        "e579e17f-c268-4f1a-a8d7-c9631e796298" => {
+        "e226c112-2b17-5c97-b1f9-cfb2097761af" => {
           provider_name: "The Metanoia Institute",
           ukprn: "10004320",
           instid: "0314",
           name: "Gunnersbury Avenue",
           country: "England",
-          postcode: "W5 3XD",
-          latitude: 51.506276,
-          longitude: -0.291032
+          postcode: "W5 3XD"
         },
-        "f1ea8f41-cbe1-4727-8970-f0bc1adbe033" => {
+        "942628d0-4379-5ad2-9d99-aa868bf95b3f" => {
           provider_name: "The Metanoia Institute",
           ukprn: "10004320",
           instid: "0314",
           name: "Main campus",
           country: "England",
-          postcode: "W5 2QB",
-          latitude: 51.512626,
-          longitude: -0.293576
+          postcode: "W5 2QB"
         },
-        "877e1463-36a7-4a2f-b4bd-1c5da7fda171" => {
+        "aa066fbc-b37c-57f9-90a2-29f7bfef7b20" => {
           provider_name: "The Metanoia Institute",
           ukprn: "10004320",
           instid: "0314",
           name: "The Barn",
           country: "England",
-          postcode: "SK9 4LD",
-          latitude: 53.355998,
-          longitude: -2.243744
+          postcode: "SK9 4LD"
         },
-        "1a9d835d-eb49-4e06-bac8-61c613ad598b" => {
+        "8d32eec7-6c24-5727-8de2-6b39387507f7" => {
           provider_name: "The Minster Centre",
           ukprn: "10032277",
           instid: "0321",
           name: "Entire HEP",
           country: "England",
-          postcode: "NW6 6RD",
-          latitude: 51.537394,
-          longitude: -0.203311
+          postcode: "NW6 6RD"
         },
-        "de7e5950-c9d7-430a-bfd9-9f432c5a38b5" => {
+        "c6b58a38-267a-5c44-8526-9541e4ecd98d" => {
           provider_name: "The National Film and Television School",
           ukprn: "10004511",
           instid: "0229",
           name: "Entire HEP",
           country: "England",
-          postcode: "HP9 1LG",
-          latitude: 51.60481,
-          longitude: -0.638465
+          postcode: "HP9 1LG"
         },
-        "8d0dd24a-93d9-4543-9002-8c6a244fd81c" => {
+        "4f08f66c-9f64-564b-a0e5-27bfde960eea" => {
           provider_name: "The Northern School of Art",
           ukprn: "10001503",
           instid: "1073",
           name: "Main campus",
           country: "England",
-          postcode: "TS24 7DJ",
-          latitude: 54.686544,
-          longitude: -1.205256
+          postcode: "TS24 7DJ"
         },
-        "a6a4f133-71f8-40dc-8d94-3180ec66d695" => {
+        "9ac9c23d-ee61-59df-8761-f7c5e12933ed" => {
           provider_name: "The Nottingham Trent University",
           ukprn: "10004797",
           instid: "0071",
           name: "Confetti Institute of Creative Technologies",
           country: "England",
-          postcode: "NG1 3LL",
-          latitude: 52.955621,
-          longitude: -1.143472
+          postcode: "NG1 3LL"
         },
-        "2b10f6a1-710a-4127-8d9a-58e20cbc029e" => {
+        "d0088b32-c334-5e90-9f12-dbb67d189696" => {
           provider_name: "The Nottingham Trent University",
           ukprn: "10004797",
           instid: "0071",
           name: "Main campus",
           country: "England",
-          postcode: "NG1 4BU",
-          latitude: 52.956436,
-          longitude: -1.152077
+          postcode: "NG1 4BU"
         },
-        "b8555072-1953-4c84-aed9-cfd0e272e74a" => {
+        "90780295-c480-52a9-b38f-0df929cc82a7" => {
           provider_name: "The Oldham College",
           ukprn: "10006770",
           instid: "1067",
           name: "Main campus",
           country: "England",
-          postcode: "OL1 1BB",
-          latitude: 53.538441,
-          longitude: -2.114091
+          postcode: "OL1 1BB"
         },
-        "a4c4175d-fd02-4034-b747-f5879c628802" => {
+        "5626e996-e079-5faf-b7eb-9dead6570626" => {
           provider_name: "The Open University in England",
           ukprn: "10007773",
           instid: "0001",
           name: "Main campus",
           country: "England",
-          postcode: "MK7 6AA",
-          latitude: 52.024914,
-          longitude: -0.709747
+          postcode: "MK7 6AA"
         },
-        "0cc62fec-219b-4292-9d3e-f47381123c85" => {
+        "cc675b9a-5317-5e6c-987d-3c27cf685b66" => {
           provider_name: "The Open University in England",
           ukprn: "10007773",
           instid: "0364",
           name: "Main campus",
           country: "England",
-          postcode: "MK7 6AA",
-          latitude: 52.024914,
-          longitude: -0.709747
+          postcode: "MK7 6AA"
         },
-        "33b78040-1d03-4285-87f0-06fbd40855be" => {
+        "048f9502-827c-585e-99af-7c7e65d75af9" => {
           provider_name: "The Open University in Northern Ireland",
           ukprn: "10007773",
           instid: "0001",
           name: "Northern Ireland (excl. PGRs)",
           country: "Northern Ireland",
-          postcode: "BT1 3GN",
-          latitude: 54.596824,
-          longitude: -5.923568
+          postcode: "BT1 3GN"
         },
-        "e37f66ea-cd33-44ee-86d0-1b9b75c0c6a1" => {
+        "9cb4e225-1566-500d-8dd7-808ccc9827f4" => {
           provider_name: "The Open University in Northern Ireland",
           ukprn: "10007773",
           instid: "0365",
           name: "Northern Ireland (excl. PGRs)",
           country: "Northern Ireland",
-          postcode: "BT1 3GN",
-          latitude: 54.596824,
-          longitude: -5.923568
+          postcode: "BT1 3GN"
         },
-        "0839e718-ea49-4382-b084-130fd09d6032" => {
+        "90a6a9fd-984e-5c0d-9b81-b58dc1a03e40" => {
           provider_name: "The Open University in Scotland",
           ukprn: "10007773",
           instid: "0001",
           name: "Scotland (excl. PGRs)",
           country: "Scotland",
-          postcode: "EH3 7QJ",
-          latitude: 55.950635,
-          longitude: -3.214038
+          postcode: "EH3 7QJ"
         },
-        "2dbb0309-e217-4824-84ea-cc5c1966c5d4" => {
+        "70d870df-765e-5dd8-b807-77d020aba278" => {
           provider_name: "The Open University in Scotland",
           ukprn: "10007773",
           instid: "0366",
           name: "Scotland (excl. PGRs)",
           country: "Scotland",
-          postcode: "EH3 7QJ",
-          latitude: 55.950635,
-          longitude: -3.214038
+          postcode: "EH3 7QJ"
         },
-        "0b4ec931-44e7-4b9e-8436-36c083f0060c" => {
+        "4b898dd5-f25f-5579-b490-3682c36a2164" => {
           provider_name: "The Open University in Wales",
           ukprn: "10007773",
           instid: "0001",
           name: "Wales (excl. PGRs)",
           country: "Wales",
-          postcode: "CF10 1AP",
-          latitude: 51.476507,
-          longitude: -3.175104
+          postcode: "CF10 1AP"
         },
-        "59813173-a91b-4197-b10b-c6eb96307a0e" => {
+        "5d13cf81-c867-51b8-a629-b22a5f50434c" => {
           provider_name: "The Open University in Wales",
           ukprn: "10007773",
           instid: "0367",
           name: "Wales (excl. PGRs)",
           country: "Wales",
-          postcode: "CF10 1AP",
-          latitude: 51.476507,
-          longitude: -3.175104
+          postcode: "CF10 1AP"
         },
-        "f572061c-3edf-4be9-ad59-89e87544ea9f" => {
+        "51b91dab-e45b-5c62-8e7a-6c58dde92d76" => {
           provider_name: "The Place, London Contemporary Dance School (LCDS)",
           ukprn: "10004028",
           instid: "0444",
           name: "Main campus",
           country: "England",
-          postcode: "WC1H 9PY",
-          latitude: 51.5273,
-          longitude: -0.128984
+          postcode: "WC1H 9PY"
         },
-        "7ee26788-6684-4827-997d-d8163d7ba592" => {
+        "a5f9f753-b4ab-58e0-b688-b52941af068b" => {
           provider_name: "The Queen's Foundation for Ecumenical Theological Education",
           ukprn: "10032282",
           instid: "0315",
           name: "Entire HEP",
           country: "England",
-          postcode: "B15 2QH",
-          latitude: 52.457494,
-          longitude: -1.930979
+          postcode: "B15 2QH"
         },
-        "e98ed63f-6ab2-4d95-a2d0-80fea42ccf8b" => {
+        "a7bcd34b-d328-5c6c-915e-903bfb44317e" => {
           provider_name: "The Royal Central School of Speech and Drama",
           ukprn: "10007816",
           instid: "0010",
           name: "Entire HEP",
           country: "England",
-          postcode: "NW3 3HY",
-          latitude: 51.544325,
-          longitude: -0.174205
+          postcode: "NW3 3HY"
         },
-        "fed1a582-d5e4-45a7-a907-ae6ba25632e8" => {
+        "1ae53e7e-aecb-549d-aaad-92673b9e2120" => {
           provider_name: "The Royal College of Nursing",
           ukprn: "10007836",
           instid: "0006",
           name: "Entire institution",
           country: "England",
-          postcode: "W1G 0RN",
-          latitude: 51.516014,
-          longitude: -0.145921
+          postcode: "W1G 0RN"
         },
-        "6a512307-77f7-4577-9f58-990192a827d7" => {
+        "ff7027f1-4e04-5e8a-9150-ff0ef5d14179" => {
           provider_name: "The Royal Veterinary College",
           ukprn: "10007779",
           instid: "0143",
           name: "Hawkshead campus",
           country: "England",
-          postcode: "AL9 7TA",
-          latitude: 51.713575,
-          longitude: -0.210795
+          postcode: "AL9 7TA"
         },
-        "aa57ff3f-a6c8-4be5-91be-0c4f0582b3fc" => {
+        "0f35e44e-24ed-5cd3-a73e-56902b7eaa83" => {
           provider_name: "The Royal Veterinary College",
           ukprn: "10007779",
           instid: "0143",
           name: "Main campus",
           country: "England",
-          postcode: "NW1 0TU",
-          latitude: 51.536851,
-          longitude: -0.133524
+          postcode: "NW1 0TU"
         },
-        "1ba87bd0-c6d2-4d4c-9d06-1aa53756a566" => {
+        "115c576e-b75e-5dd7-af64-e71972ffc8f5" => {
           provider_name: "The School of Information Risk Management",
           ukprn: "10057622",
           instid: "0459",
           name: "Main campus",
           country: "England",
-          postcode: "IG1 2DR",
-          latitude: 51.557835,
-          longitude: 0.070415
+          postcode: "IG1 2DR"
         },
-        "ee4d48a4-dd8d-4745-ac3b-e3d57135d33c" => {
+        "d199bf4e-167b-5f21-84b3-4cedcb8e6e93" => {
           provider_name: "The School of Pharmacy",
           ukprn: "10007781",
           instid: "0147",
           name: "Entire institution",
           country: "England",
-          postcode: "WC1N 1AX",
-          latitude: 51.525083,
-          longitude: -0.122458
+          postcode: "WC1N 1AX"
         },
-        "45dded18-8fed-4044-a7bf-f21b5b8f7304" => {
+        "5800442c-5684-5bcd-9e10-a3e6411f07a9" => {
           provider_name: "The Sheffield College",
           ukprn: "10005788",
           instid: "1043",
           name: "Main campus",
           country: "England",
-          postcode: "S2 2RL",
-          latitude: 53.3726,
-          longitude: -1.460137
+          postcode: "S2 2RL"
         },
-        "a8b57207-ec99-4281-b6ea-aa5fc98f25e1" => {
+        "eed61702-ed2c-544e-87a2-e076eefbdab6" => {
           provider_name: "The Sherwood Institute",
           ukprn: "10053279",
           instid: "0322",
           name: "Main campus",
           country: "England",
-          postcode: "NG1 6FW",
-          latitude: 52.951727,
-          longitude: -1.154563
+          postcode: "NG1 6FW"
         },
-        "cfb02b9e-a3cd-4f67-95ee-1337f7de8ea6" => {
+        "5c4923e1-53c2-5411-bf1e-0dfe026ccc72" => {
           provider_name: "The Sherwood Psychotherapy Training Institute Limited",
           ukprn: "10023458",
           instid: "0407",
           name: "Entire HEP",
           country: "England",
-          postcode: "NG7 1FW",
-          latitude: 52.947393,
-          longitude: -1.158175
+          postcode: "NG7 1FW"
         },
-        "70ba5a33-ff74-408f-8d82-cca31b41c32a" => {
+        "d8d8e256-8099-5cc7-ae34-96c8589e2275" => {
           provider_name: "The Trafford College Group",
           ukprn: "10005998",
           instid: "1023",
           name: "Main campus",
           country: "England",
-          postcode: "WA14 5PQ",
-          latitude: 53.405469,
-          longitude: -2.349545
+          postcode: "WA14 5PQ"
         },
-        "7390af38-6be6-4a27-80aa-cdf60a22701f" => {
+        "9a2a268f-fc20-5181-b030-ec8e6d952b5d" => {
           provider_name: "The University College of Osteopathy",
           ukprn: "10000936",
           instid: "0337",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE1 1JE",
-          latitude: 51.50008,
-          longitude: -0.094339
+          postcode: "SE1 1JE"
         },
-        "09f9603a-5025-4dd1-8085-9f50a6739fea" => {
+        "b70558cb-1b53-59eb-85bb-27c4d4fd761a" => {
           provider_name: "The University of Aberdeen",
           ukprn: "10007783",
           instid: "0170",
           name: "Doha Campus",
-          country: "Qatar",
-          latitude: 57.164841,
-          longitude: -2.100236
+          country: "Qatar"
         },
-        "11fe6cf7-0e04-45ea-a9a8-4b8cf2377249" => {
+        "3af2e6aa-4367-538e-97d8-c5136fe2e307" => {
           provider_name: "The University of Aberdeen",
           ukprn: "10007783",
           instid: "0170",
           name: "Main campus",
           country: "Scotland",
-          postcode: "AB24 3FX",
-          latitude: 57.164841,
-          longitude: -2.100236
+          postcode: "AB24 3FX"
         },
-        "e9ab949c-600c-429a-9c0a-31a47c48a2af" => {
+        "ddecc521-99fb-515f-a193-b0d80465b18c" => {
           provider_name: "The University of Bath",
           ukprn: "10007850",
           instid: "0109",
           name: "Entire HEP",
           country: "England",
-          postcode: "BA2 7AY",
-          latitude: 51.379324,
-          longitude: -2.327157
+          postcode: "BA2 7AY"
         },
-        "44be2cec-1385-47c4-a5fc-91c94a6f06db" => {
+        "64103496-6797-5d80-8e31-ce4f2514ae6c" => {
           provider_name: "The University of Bath",
           ukprn: "10007850",
           instid: "0109",
           name: "Univ. of Bath in Swindon",
           country: "England",
-          postcode: "SN3 3JR",
-          latitude: 51.563796,
-          longitude: -1.752151
+          postcode: "SN3 3JR"
         },
-        "2bb81038-f100-422b-8c26-9176a0bf6a94" => {
+        "0885fac9-bcdc-53ab-8672-c10c5fea6342" => {
           provider_name: "The University of Birmingham",
           ukprn: "10006840",
           instid: "0110",
           name: "Dubai",
-          country: "United Arab Emirates",
-          latitude: 52.453282,
-          longitude: -1.92789
+          country: "United Arab Emirates"
         },
-        "38ed1de1-1f02-4f86-9c9d-45542af9d153" => {
+        "1b231c6e-5d5f-566c-8b34-8019e1200342" => {
           provider_name: "The University of Birmingham",
           ukprn: "10006840",
           instid: "0110",
           name: "Main campus",
           country: "England",
-          postcode: "B15 2TT",
-          latitude: 52.453282,
-          longitude: -1.92789
+          postcode: "B15 2TT"
         },
-        "9efb7435-708f-43ac-bbee-74161eb03540" => {
+        "b0232b0b-3a2e-5e7d-a816-3c80e7e4a2ae" => {
           provider_name: "The University of Bradford",
           ukprn: "10007785",
           instid: "0111",
           name: "Entire HEP",
           country: "England",
-          postcode: "BD7 1DP",
-          latitude: 53.791584,
-          longitude: -1.763774
+          postcode: "BD7 1DP"
         },
-        "492264d2-52f9-48bd-976a-fa052c398f44" => {
+        "5cf98ac0-fb28-578b-a53d-79a96db8c747" => {
           provider_name: "The University of Brighton",
           ukprn: "10000886",
           instid: "0051",
           name: "Eastbourne",
           country: "England",
-          postcode: "BN20 7UR",
-          latitude: 50.755482,
-          longitude: 0.265471
+          postcode: "BN20 7UR"
         },
-        "6f52ffe2-7485-46fd-a071-c77684232eec" => {
+        "d1c5773a-eae5-5111-a7cd-6d0758dd59b7" => {
           provider_name: "The University of Brighton",
           ukprn: "10000886",
           instid: "0051",
           name: "Main campus",
           country: "England",
-          postcode: "BN2 4GJ",
-          latitude: 50.844419,
-          longitude: -0.11946
+          postcode: "BN2 4GJ"
         },
-        "0288bdcf-9e93-4c73-95fc-2df228da0f96" => {
+        "cd083203-9ee9-51cb-b5cb-ff0ec78e2512" => {
           provider_name: "The University of Bristol",
           ukprn: "10007786",
           instid: "0112",
           name: "Entire HEP",
           country: "England",
-          postcode: "BS8 1TH",
-          latitude: 51.459066,
-          longitude: -2.603291
+          postcode: "BS8 1TH"
         },
-        "01ca3bb5-a287-49ef-a688-db85034ffff7" => {
+        "3fa4f0d1-e53f-5978-948e-063c01d270af" => {
           provider_name: "The University of Buckingham",
           ukprn: "10007787",
           instid: "0203",
           name: "Crewe",
           country: "England",
-          postcode: "CW1 5DU",
-          latitude: 53.092752,
-          longitude: -2.422279
+          postcode: "CW1 5DU"
         },
-        "7bc839ea-10c9-46c4-93f2-5e663d734dc3" => {
+        "81bbc6d1-afb6-5862-a446-ff0f8a6df35c" => {
           provider_name: "The University of Buckingham",
           ukprn: "10007787",
           instid: "0203",
           name: "Ealing Hospital",
           country: "England",
-          postcode: "UB1 3HW",
-          latitude: 51.507606,
-          longitude: -0.345495
+          postcode: "UB1 3HW"
         },
-        "8c730381-94d7-4e17-b95c-9f77e428d76d" => {
+        "e88b3eec-bcbb-5901-895d-1609b0483d32" => {
           provider_name: "The University of Buckingham",
           ukprn: "10007787",
           instid: "0203",
           name: "London",
           country: "England",
-          postcode: "WC1E 6HJ",
-          latitude: 51.521778,
-          longitude: -0.132183
+          postcode: "WC1E 6HJ"
         },
-        "b2b6747e-c388-46a7-8148-7964779e61e7" => {
+        "88baeff9-048d-5e77-be7b-e83d50fb77e6" => {
           provider_name: "The University of Buckingham",
           ukprn: "10007787",
           instid: "0203",
           name: "Main campus",
           country: "England",
-          postcode: "MK18 1EG",
-          latitude: 51.995998,
-          longitude: -0.991839
+          postcode: "MK18 1EG"
         },
-        "bb7f4cb4-0934-4b65-8963-7e14d52f224b" => {
+        "8eb96301-042a-5ecf-9e33-585c3f0ab036" => {
           provider_name: "The University of Cambridge",
           ukprn: "10007788",
           instid: "0114",
           name: "Entire HEP",
           country: "England",
-          postcode: "CB2 1TN",
-          latitude: 52.205105,
-          longitude: 0.116179
+          postcode: "CB2 1TN"
         },
-        "9d87a03f-b7c5-41f8-881b-e0bfec85cd9e" => {
+        "ae6c41e1-ae81-5d55-9df5-3d40e5148ce4" => {
           provider_name: "The University of Chichester",
           ukprn: "10007137",
           instid: "0082",
           name: "Entire HEP",
           country: "England",
-          postcode: "PO19 6PE",
-          latitude: 50.84431,
-          longitude: -0.77501
+          postcode: "PO19 6PE"
         },
-        "3e666902-b4c4-4577-84a3-ae4b2cc34977" => {
+        "1b641b85-73c1-5459-bbde-6f2d62fe725c" => {
           provider_name: "The University of Chichester",
           ukprn: "10007137",
           instid: "0082",
           name: "Isle of Wight campus",
           country: "England",
-          postcode: "PO30 5TA",
-          latitude: 50.706435,
-          longitude: -1.296665
+          postcode: "PO30 5TA"
         },
-        "d7d797a3-ab44-47aa-b0ca-bada1490c744" => {
+        "ece76d3d-ffbd-5bde-85a6-707f78bf4713" => {
           provider_name: "The University of Dundee",
           ukprn: "10007852",
           instid: "0172",
           name: "Kirkcaldy",
           country: "Scotland",
-          postcode: "KY2 5YS",
-          latitude: 56.111331,
-          longitude: -3.168743
+          postcode: "KY2 5YS"
         },
-        "749d0817-fa3c-42fb-a313-915f7effb67c" => {
+        "5d365257-f49a-5f9a-ae24-29571193cfef" => {
           provider_name: "The University of Dundee",
           ukprn: "10007852",
           instid: "0172",
           name: "Main campus",
           country: "Scotland",
-          postcode: "DD1 4HN",
-          latitude: 56.457345,
-          longitude: -2.978269
+          postcode: "DD1 4HN"
         },
-        "8b8dcb14-23c4-4e89-b657-5150b317cfb3" => {
+        "a79ee230-3e19-5e8e-b78a-4f629a6c249d" => {
           provider_name: "The University of Dundee",
           ukprn: "10007852",
           instid: "0172",
           name: "Ninewells",
           country: "Scotland",
-          postcode: "DD1 9SY",
-          latitude: 56.461679,
-          longitude: -2.991415
+          postcode: "DD1 9SY"
         },
-        "448672d4-9ff5-4cf5-91c7-d7a3be8b2cfe" => {
+        "d8e17905-9f82-5dbc-bd93-749b99b6f50a" => {
           provider_name: "The University of East Anglia",
           ukprn: "10007789",
           instid: "0117",
           name: "Entire HEP",
           country: "England",
-          postcode: "NR4 7TJ",
-          latitude: 52.622369,
-          longitude: 1.241391
+          postcode: "NR4 7TJ"
         },
-        "63459412-2c39-4338-8f50-c4c74058b0df" => {
+        "2cca9412-c23a-5a34-9582-b4f6911e1f29" => {
           provider_name: "The University of East Anglia",
           ukprn: "10007789",
           instid: "0117",
           name: "UEA LONDON",
           country: "England",
-          postcode: "E1 7EZ",
-          latitude: 51.516877,
-          longitude: -0.076644
+          postcode: "E1 7EZ"
         },
-        "5bd14b55-0651-4a01-bdcf-c4096a294683" => {
+        "3adcf0d2-a279-5863-b323-28c2c5fc2982" => {
           provider_name: "The University of East London",
           ukprn: "10007144",
           instid: "0058",
           name: "Entire HEP",
           country: "England",
-          postcode: "E16 2RD",
-          latitude: 51.507567,
-          longitude: 0.063234
+          postcode: "E16 2RD"
         },
-        "a06fb9b2-c00e-4187-b647-ef6de3887594" => {
+        "7c4401ff-769f-5d7a-b326-afb223fc7e57" => {
           provider_name: "The University of Edinburgh",
           ukprn: "10007790",
           instid: "0167",
           name: "Entire HEP",
           country: "Scotland",
-          postcode: "EH8 9YL",
-          latitude: 55.947691,
-          longitude: -3.187347
+          postcode: "EH8 9YL"
         },
-        "0833f692-7664-4718-b9f5-4fe56089596e" => {
+        "9a27b307-5031-5260-8f24-d00181bee98b" => {
           provider_name: "The University of Essex",
           ukprn: "10007791",
           instid: "0118",
           name: "Chimera",
           country: "England",
-          postcode: "IP5 3RE",
-          latitude: 52.058954,
-          longitude: 1.279001
+          postcode: "IP5 3RE"
         },
-        "4d4ebe78-3009-4a01-9611-eb067edae756" => {
+        "12a81e65-75ac-59b3-b4b6-a52a2fa2b269" => {
           provider_name: "The University of Essex",
           ukprn: "10007791",
           instid: "0118",
           name: "Colchester Institute",
           country: "England",
-          postcode: "CO3 3LL",
-          latitude: 51.893517,
-          longitude: 0.888574
+          postcode: "CO3 3LL"
         },
-        "b44287e2-63b8-4747-a1e8-fdd6b9d863b1" => {
+        "3c0b7047-cf36-5f81-b93c-f87d768771d8" => {
           provider_name: "The University of Essex",
           ukprn: "10007791",
           instid: "0118",
           name: "East 15 (Loughton) campus",
           country: "England",
-          postcode: "IG10 3RY",
-          latitude: 51.649954,
-          longitude: 0.076776
+          postcode: "IG10 3RY"
         },
-        "a69f170b-9b64-4d5f-a0b5-bfd35de9775c" => {
+        "ba8c9ba7-06da-5014-b3c6-a08e16b79e94" => {
           provider_name: "The University of Essex",
           ukprn: "10007791",
           instid: "0118",
           name: "Kaplan Open Learning",
           country: "England",
-          postcode: "LS1 2RP",
-          latitude: 53.798946,
-          longitude: -1.553987
+          postcode: "LS1 2RP"
         },
-        "9e05bb9e-1182-4f05-aec9-0a69d83c9ba6" => {
+        "14fa4edd-46c0-5992-bca2-e5eb7f1a0f67" => {
           provider_name: "The University of Essex",
           ukprn: "10007791",
           instid: "0118",
           name: "Main campus",
           country: "England",
-          postcode: "CO4 3SQ",
-          latitude: 51.87681,
-          longitude: 0.946585
+          postcode: "CO4 3SQ"
         },
-        "7cb1623d-1698-4922-997e-ff03cf2a44f4" => {
+        "125af452-810c-5e22-965c-d0f8a09add5f" => {
           provider_name: "The University of Essex",
           ukprn: "10007791",
           instid: "0118",
           name: "South East Essex College, Southend",
           country: "England",
-          postcode: "SS1 1ND",
-          latitude: 51.537958,
-          longitude: 0.71191
+          postcode: "SS1 1ND"
         },
-        "f4032402-77a5-490a-9f9f-05c8f2ae5e72" => {
+        "e7136c0a-4d09-5ac1-b74c-072a4f5673ec" => {
           provider_name: "The University of Essex",
           ukprn: "10007791",
           instid: "0118",
           name: "Southend campus",
           country: "England",
-          postcode: "SS1 1JE",
-          latitude: 51.534837,
-          longitude: 0.713873
+          postcode: "SS1 1JE"
         },
-        "2355cfee-ffe2-4f2b-bcd7-510d84cd2ad9" => {
+        "02f268ae-c902-5829-8c19-91260a6c2674" => {
           provider_name: "The University of Essex",
           ukprn: "10007791",
           instid: "0118",
           name: "Tavistock and Portman NHS Trust",
           country: "England",
-          postcode: "NW3 5BA",
-          latitude: 51.546898,
-          longitude: -0.175443
+          postcode: "NW3 5BA"
         },
-        "0073325c-7889-4b42-a2c2-da0e85a0c6a2" => {
+        "59ea3c4f-c07e-5e55-b31e-4d83c6e90ca6" => {
           provider_name: "The University of Essex",
           ukprn: "10007791",
           instid: "0118",
           name: "University campus Suffolk",
           country: "England",
-          postcode: "IP4 1LZ",
-          latitude: 52.05555,
-          longitude: 1.16342
+          postcode: "IP4 1LZ"
         },
-        "7ee770cb-dd3c-4470-a527-d6c9267cc54b" => {
+        "368fcef0-ef30-563c-b291-dd4c16e21b52" => {
           provider_name: "The University of Essex",
           ukprn: "10007791",
           instid: "0118",
           name: "Writtle campus",
           country: "England",
-          postcode: "CM1 3RR",
-          latitude: 51.737196,
-          longitude: 0.428133
+          postcode: "CM1 3RR"
         },
-        "2d99de17-4a53-4ae3-9fff-54750ac63896" => {
+        "55c68c24-0a95-544e-8e8c-a23264928947" => {
           provider_name: "The University of Exeter",
           ukprn: "10007792",
           instid: "0119",
           name: "Cornwall campus",
           country: "England",
-          postcode: "TR10 9EZ",
-          latitude: 50.168627,
-          longitude: -5.125898
+          postcode: "TR10 9EZ"
         },
-        "15343b87-b62d-4e06-8139-a58707c24f1d" => {
+        "d7a36f73-1449-5679-bee4-dea504519e3b" => {
           provider_name: "The University of Exeter",
           ukprn: "10007792",
           instid: "0119",
           name: "Main campus",
           country: "England",
-          postcode: "EX4 4SB",
-          latitude: 50.733253,
-          longitude: -3.534064
+          postcode: "EX4 4SB"
         },
-        "ad2e44bd-d61f-4d6a-a1b5-ad060f629fdc" => {
+        "8795e4a2-34e9-5b64-950c-a91ec70533d9" => {
           provider_name: "The University of Glasgow",
           ukprn: "10007794",
           instid: "0168",
           name: "Dumfries",
           country: "Scotland",
-          postcode: "DG1 4ZL",
-          latitude: 55.048093,
-          longitude: -3.589128
+          postcode: "DG1 4ZL"
         },
-        "b224feb2-b22d-44fd-a5be-77dd890fb134" => {
+        "f32ab6ab-1fb9-521f-8b94-f780f6ada2ae" => {
           provider_name: "The University of Glasgow",
           ukprn: "10007794",
           instid: "0168",
           name: "Garscube",
           country: "Scotland",
-          postcode: "G20 0TH",
-          latitude: 55.901983,
-          longitude: -4.313033
+          postcode: "G20 0TH"
         },
-        "7e79e3ce-0f19-4d10-81d1-78afc88eac84" => {
+        "614f25b8-7c81-532b-a704-eeb3d0e2c3c7" => {
           provider_name: "The University of Glasgow",
           ukprn: "10007794",
           instid: "0168",
           name: "Main campus",
           country: "Scotland",
-          postcode: "G12 8QQ",
-          latitude: 55.871751,
-          longitude: -4.28836
+          postcode: "G12 8QQ"
         },
-        "2e904b22-6c1a-4a46-8013-3756ef2d560d" => {
+        "0a5d9c96-6664-5dc6-a139-a36ae95f4c8a" => {
           provider_name: "The University of Glasgow",
           ukprn: "10007794",
           instid: "0168",
           name: "Singapore Institute of Technology",
-          country: "Singapore",
-          latitude: 55.871751,
-          longitude: -4.28836
+          country: "Singapore"
         },
-        "e8eaf7dd-3862-40f4-8532-0ed838648e38" => {
+        "f0cbe186-83ea-50ad-a523-a4d72c86c395" => {
           provider_name: "The University of Greenwich",
           ukprn: "10007146",
           instid: "0059",
           name: "Main campus",
           country: "England",
-          postcode: "SE10 9LS",
-          latitude: 51.484468,
-          longitude: -0.004005
+          postcode: "SE10 9LS"
         },
-        "10e77c12-366a-499d-8a51-015d584d3824" => {
+        "f69dd0ec-2171-51e3-b46d-5deb3881defe" => {
           provider_name: "The University of Greenwich",
           ukprn: "10007146",
           instid: "0059",
           name: "Medway campus",
           country: "England",
-          postcode: "ME4 4AW",
-          latitude: 51.397199,
-          longitude: 0.540105
+          postcode: "ME4 4AW"
         },
-        "a3bf867e-9a96-4fe2-859e-933d56f399d3" => {
+        "9a030ae6-732f-5fe5-91b6-50796cbf5c87" => {
           provider_name: "The University of Huddersfield",
           ukprn: "10007148",
           instid: "0061",
           name: "Entire HEP",
           country: "England",
-          postcode: "HD1 3DH",
-          latitude: 53.643678,
-          longitude: -1.778726
+          postcode: "HD1 3DH"
         },
-        "460436da-badc-45b8-843b-8b617738653f" => {
+        "c85b760e-fdad-5998-b111-20f7a396c888" => {
           provider_name: "The University of Huddersfield",
           ukprn: "10007148",
           instid: "0061",
           name: "University Campus Barnsley",
           country: "England",
-          postcode: "S70 2AN",
-          latitude: 53.55485,
-          longitude: -1.481928
+          postcode: "S70 2AN"
         },
-        "18750111-5699-460e-a499-1b16cb3df031" => {
+        "578d556b-7d4f-501c-bdda-dcc3be7f1a8c" => {
           provider_name: "The University of Huddersfield",
           ukprn: "10007148",
           instid: "0061",
           name: "University Campus Oldham",
           country: "England",
-          postcode: "OL1 1BB",
-          latitude: 53.53847,
-          longitude: -2.114138
+          postcode: "OL1 1BB"
         },
-        "79139df3-db28-4030-96a4-645dcd0957e2" => {
+        "851cad0b-fcef-57ca-babd-d958467344aa" => {
           provider_name: "The University of Hull",
           ukprn: "10007149",
           instid: "0120",
           name: "Entire HEP",
           country: "England",
-          postcode: "HU6 7RX",
-          latitude: 53.771778,
-          longitude: -0.366384
+          postcode: "HU6 7RX"
         },
-        "7cf8d692-ab19-403c-9203-82877d795313" => {
+        "3d7cc989-2160-5e15-96b9-e18093b6071b" => {
           provider_name: "The University of Hull",
           ukprn: "10007149",
           instid: "0120",
           name: "Scarborough campus",
           country: "England",
-          postcode: "YO11 3AZ",
-          latitude: 54.262655,
-          longitude: -0.394603
+          postcode: "YO11 3AZ"
         },
-        "a6960dd9-0696-4822-8722-66f3ae291600" => {
+        "a28982f1-3abe-51a8-9fa0-107b9f4dc0bc" => {
           provider_name: "The University of Kent",
           ukprn: "10007150",
           instid: "0122",
           name: "Brussels",
-          country: "Belgium",
-          latitude: 51.298503,
-          longitude: 1.070975
+          country: "Belgium"
         },
-        "53a8a21b-29d7-4865-82a0-4d6bd99b9209" => {
+        "a955b7da-e43e-5d4b-a4df-81b748f8399c" => {
           provider_name: "The University of Kent",
           ukprn: "10007150",
           instid: "0122",
           name: "Main campus",
           country: "England",
-          postcode: "CT2 7NZ",
-          latitude: 51.298503,
-          longitude: 1.070975
+          postcode: "CT2 7NZ"
         },
-        "1af43ded-21af-4bd5-b748-a51b26e4bb05" => {
+        "90d0530c-234f-5fe5-9cb8-64183934b71c" => {
           provider_name: "The University of Kent",
           ukprn: "10007150",
           instid: "0122",
           name: "Medway",
           country: "England",
-          postcode: "ME4 4AW",
-          latitude: 51.397199,
-          longitude: 0.540105
+          postcode: "ME4 4AW"
         },
-        "6f72c951-922f-48f8-8b16-42effc90d1d0" => {
+        "a02cba57-daf5-56ed-aa76-86e3e866e21a" => {
           provider_name: "The University of Kent",
           ukprn: "10007150",
           instid: "0122",
           name: "Paris",
-          country: "France",
-          latitude: 51.298503,
-          longitude: 1.070975
+          country: "France"
         },
-        "cac9981c-7a40-4f77-9163-7e70c262b5c2" => {
+        "c85ae3c9-8bdd-5684-990f-06f38658e38d" => {
           provider_name: "The University of Lancaster",
           ukprn: "10007768",
           instid: "0123",
           name: "Entire HEP",
           country: "England",
-          postcode: "LA1 4YW",
-          latitude: 54.010418,
-          longitude: -2.786451
+          postcode: "LA1 4YW"
         },
-        "5d01d985-2fd5-4a99-98b9-7db336178770" => {
+        "10499162-f134-5d9b-8c45-c37c0c2a09a3" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Berlin (GISMA)",
-          country: "Germany",
-          latitude: 51.521704,
-          longitude: -0.089633
+          country: "Germany"
         },
-        "c6254da6-02d4-43c7-bde5-cd998f8e6d3a" => {
+        "3a2606ae-be81-5d2b-b685-268d32b209bd" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Birmingham",
           country: "England",
-          postcode: "B18 6AQ",
-          latitude: 52.489093,
-          longitude: -1.907406
+          postcode: "B18 6AQ"
         },
-        "a4fca1aa-7dce-467c-89c7-e77d98e2b36d" => {
+        "9b80520c-aac0-537d-86d8-e6a2588b9d65" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Bristol",
           country: "England",
-          postcode: "BS1 6HG",
-          latitude: 51.450822,
-          longitude: -2.585193
+          postcode: "BS1 6HG"
         },
-        "eec9d6c6-21e3-4712-b691-4e5d6e9c8313" => {
+        "28a4c567-f7d4-579e-ba2c-6f514541cc81" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Chester",
           country: "England",
-          postcode: "CH3 7AB",
-          latitude: 53.185898,
-          longitude: -2.842289
+          postcode: "CH3 7AB"
         },
-        "428d228f-00a5-41d4-979f-2d3984051052" => {
+        "c2bea7da-30bf-5dde-8bd1-2b48dc834e01" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Exeter",
           country: "England",
-          postcode: "EX4 4RJ",
-          latitude: 50.736517,
-          longitude: -3.531407
+          postcode: "EX4 4RJ"
         },
-        "ce77b231-2d15-48ba-8055-d452592b98cf" => {
+        "a6ee81de-1912-5a6c-a04e-4ad8191ea499" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Guildford",
           country: "England",
-          postcode: "GU3 1HA",
-          latitude: 51.224159,
-          longitude: -0.583024
+          postcode: "GU3 1HA"
         },
-        "caca5905-3a80-420d-a027-a110e8a8c80b" => {
+        "631e31d0-8d0b-5206-b65f-9ae107fbc537" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Hong Kong",
-          country: "Hong Kong (Special Administrative Region of China) [Hong Kong]",
-          latitude: 51.521704,
-          longitude: -0.089633
+          country: "Hong Kong (Special Administrative Region of China) [Hong Kong]"
         },
-        "7931be95-b8d7-41e1-a6aa-2398ba5e7ac0" => {
+        "db7db453-309c-59c6-b865-8b38619d7b3b" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "IE University",
-          country: "Spain",
-          latitude: 51.521704,
-          longitude: -0.089633
+          country: "Spain"
         },
-        "124fd22a-17c0-4fb7-b98c-885e1fb3dabb" => {
+        "4f24d833-ab47-5fab-8548-5c3c8f32b5a3" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Leeds",
           country: "England",
-          postcode: "LS1 5HD",
-          latitude: 53.797928,
-          longitude: -1.54673
+          postcode: "LS1 5HD"
         },
-        "f69de733-5d5b-47df-a2d7-c09636adf12a" => {
+        "223756e0-d339-5330-92f2-6b06b5d912b5" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Liverpool",
           country: "England",
-          postcode: "L69 7ZR",
-          latitude: 53.401661,
-          longitude: -2.964526
+          postcode: "L69 7ZR"
         },
-        "62c0c03b-64fb-4f78-b1a6-39a5cbc3d2f9" => {
+        "18d53c54-0673-50c9-8ddc-a95180648cbc" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "London Bloomsbury",
           country: "England",
-          postcode: "WC1E 7DE",
-          latitude: 51.520022,
-          longitude: -0.131589
+          postcode: "WC1E 7DE"
         },
-        "743c069f-8206-4705-9e67-9a87957567cc" => {
+        "bbe7a231-16e0-52a8-8cee-8835d6c639fb" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "London Moorgate",
           country: "England",
-          postcode: "EC1Y 8HQ",
-          latitude: 51.521704,
-          longitude: -0.089633
+          postcode: "EC1Y 8HQ"
         },
-        "493ee3a5-503b-4f00-8cb1-b68ab50b34ae" => {
+        "bdb9bfd6-fd31-5eea-b3af-84f98738d8dc" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Manchester",
           country: "England",
-          postcode: "M1 4HJ",
-          latitude: 53.480282,
-          longitude: -2.239319
+          postcode: "M1 4HJ"
         },
-        "7cb49a4e-7bf9-4e9d-a112-5110f6b1356b" => {
+        "17ca2092-2734-583a-bde7-fc0185e6f8dd" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Newcastle",
           country: "England",
-          postcode: "NE2 4HE",
-          latitude: 54.982164,
-          longitude: -1.610696
+          postcode: "NE2 4HE"
         },
-        "d05495b6-900d-458b-82d1-ff5c934afb52" => {
+        "e5ae98ee-53e0-524d-8099-cee59a310016" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Norwich",
           country: "England",
-          postcode: "NR4 7TJ",
-          latitude: 52.622369,
-          longitude: 1.241391
+          postcode: "NR4 7TJ"
         },
-        "ad479074-f227-430c-8c53-90cf3142ea74" => {
+        "9c4cf913-e7eb-5465-83a1-e1fc430131d8" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Nottingham",
           country: "England",
-          postcode: "NG1 6FS",
-          latitude: 52.95183,
-          longitude: -1.155397
+          postcode: "NG1 6FS"
         },
-        "13215b39-8fb3-4131-908c-b9a396589f44" => {
+        "12ab9b6c-01f8-543f-973c-2b860b80794d" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Reading",
           country: "England",
-          postcode: "RG1 5EX",
-          latitude: 51.448594,
-          longitude: -0.959221
+          postcode: "RG1 5EX"
         },
-        "1aa02773-2af5-4d0a-9de1-e33190764089" => {
+        "f6272ad6-ad28-563e-93f8-fb1b99f2186f" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "Sheffield",
           country: "England",
-          postcode: "S10 2TN",
-          latitude: 53.381363,
-          longitude: -1.48853
+          postcode: "S10 2TN"
         },
-        "ac27aa28-a953-43fa-b8d0-e4886353db9e" => {
+        "81f17980-123e-567d-aef4-ea6dc1063585" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "University of Chester",
           country: "England",
-          postcode: "CH4 7AD",
-          latitude: 53.185703,
-          longitude: -2.882751
+          postcode: "CH4 7AD"
         },
-        "86dcf7e6-43eb-4d8e-9159-f460723dc68f" => {
+        "570280fe-cbde-5270-8134-1ebac5c4e1d5" => {
           provider_name: "The University of Law",
           ukprn: "10039956",
           instid: "0218",
           name: "York",
           country: "England",
-          postcode: "YO23 2GA",
-          latitude: 53.933334,
-          longitude: -1.090457
+          postcode: "YO23 2GA"
         },
-        "37effee5-3980-41f9-bd7a-99706ef71674" => {
+        "252b7744-0c89-5ff8-89f5-96ef035168ab" => {
           provider_name: "The University of Leeds",
           ukprn: "10007795",
           instid: "0124",
           name: "Bretton Hall",
           country: "England",
-          postcode: "WF4 4LG",
-          latitude: 53.607297,
-          longitude: -1.563159
+          postcode: "WF4 4LG"
         },
-        "b29a2e55-a759-491f-9380-ccfb3cfe5474" => {
+        "c26735d5-ec90-59a7-9374-7d5bc81302c0" => {
           provider_name: "The University of Leeds",
           ukprn: "10007795",
           instid: "0124",
           name: "Entire HEP",
           country: "England",
-          postcode: "LS2 9JT",
-          latitude: 53.807958,
-          longitude: -1.553329
+          postcode: "LS2 9JT"
         },
-        "938d178f-979d-4dff-a21a-f7b86b6f4812" => {
+        "336ffb2d-0c34-568f-aeb3-7614bb06678d" => {
           provider_name: "The University of Leeds",
           ukprn: "10007795",
           instid: "0124",
           name: "Wakefield",
           country: "England",
-          postcode: "WF1 2DH",
-          latitude: 53.685588,
-          longitude: -1.503855
+          postcode: "WF1 2DH"
         },
-        "d0132876-1c22-4aa0-8459-27ce9880942e" => {
+        "a1fe11d5-7e96-511d-8970-41f1abbf810b" => {
           provider_name: "The University of Leicester",
           ukprn: "10007796",
           instid: "0125",
           name: "Entire HEP",
           country: "England",
-          postcode: "LE1 7RH",
-          latitude: 52.620665,
-          longitude: -1.125526
+          postcode: "LE1 7RH"
         },
-        "a45e56f4-93c4-4d97-8227-a081b0ddab10" => {
+        "fbb1f208-bed3-572e-bc3b-21e60066b37c" => {
           provider_name: "The University of Lincoln",
           ukprn: "10007151",
           instid: "0062",
           name: "Holbeach",
           country: "England",
-          postcode: "PE12 7PT",
-          latitude: 52.809968,
-          longitude: 0.01694
+          postcode: "PE12 7PT"
         },
-        "fa4b2e5c-c41a-4724-8bcb-7f15cc60024f" => {
+        "e4f367d7-ab37-5e91-ad99-251f0251face" => {
           provider_name: "The University of Lincoln",
           ukprn: "10007151",
           instid: "0062",
           name: "Hull campus",
           country: "England",
-          postcode: "HU1 3BW",
-          latitude: 53.746811,
-          longitude: -0.3354
+          postcode: "HU1 3BW"
         },
-        "5c1f0635-accf-490e-bd8d-9ccc82796b83" => {
+        "b7bae37f-04f8-5371-9fc8-f95aa4ead030" => {
           provider_name: "The University of Lincoln",
           ukprn: "10007151",
           instid: "0062",
           name: "Main campus",
           country: "England",
-          postcode: "LN6 7TS",
-          latitude: 53.228487,
-          longitude: -0.547796
+          postcode: "LN6 7TS"
         },
-        "e874de95-009d-4f54-a33c-e4fd8fcb9760" => {
+        "eb2d5bf8-ccdc-50ac-8711-a40060c459b1" => {
           provider_name: "The University of Lincoln",
           ukprn: "10007151",
           instid: "0062",
           name: "Riseholme",
           country: "England",
-          postcode: "LN2 2LG",
-          latitude: 53.268445,
-          longitude: -0.529737
+          postcode: "LN2 2LG"
         },
-        "f0c93b84-8469-4323-bd66-e2af43bd57db" => {
+        "01094896-c6da-5053-8a83-71810c793e44" => {
           provider_name: "The University of Lincoln",
           ukprn: "10007151",
           instid: "0062",
           name: "Selborne",
           country: "England",
-          postcode: "TQ6 0HJ",
-          latitude: 50.357601,
-          longitude: -3.583032
+          postcode: "TQ6 0HJ"
         },
-        "0349a21f-5d6d-448f-8892-29fe3b34f2c1" => {
+        "12772737-afd4-51c0-9c41-83fb6721a204" => {
           provider_name: "The University of Liverpool",
           ukprn: "10006842",
           instid: "0126",
           name: "Entire HEP",
           country: "England",
-          postcode: "L69 7ZX",
-          latitude: 53.405779,
-          longitude: -2.96662
+          postcode: "L69 7ZX"
         },
-        "3009102b-adfe-4521-bb3b-6341390b820c" => {
+        "ae89be55-50fb-576c-b83d-3c4a84e02853" => {
           provider_name: "The University of Liverpool",
           ukprn: "10006842",
           instid: "0126",
           name: "London Campus",
           country: "England",
-          postcode: "EC2A 1AG",
-          latitude: 51.520916,
-          longitude: -0.085428
+          postcode: "EC2A 1AG"
         },
-        "a68735ef-4b88-4dcb-9c10-150fe3c97981" => {
+        "e3333a6b-8d43-58ae-8a24-b4fc41c95352" => {
           provider_name: "The University of Manchester",
           ukprn: "10007798",
           instid: "0204",
           name: "Jodrell Bank Observatory",
           country: "England",
-          postcode: "SK11 9DL",
-          latitude: 53.236104,
-          longitude: -2.306586
+          postcode: "SK11 9DL"
         },
-        "0e50a415-e2de-4355-b480-b730a1c8b2bf" => {
+        "6a0f67bd-a66f-5b96-95a2-40c6b707f9d3" => {
           provider_name: "The University of Manchester",
           ukprn: "10007798",
           instid: "0204",
           name: "Main campus",
           country: "England",
-          postcode: "M13 9PL",
-          latitude: 53.466926,
-          longitude: -2.233578
+          postcode: "M13 9PL"
         },
-        "18187f4f-d1eb-4ac2-9363-47a33f102cb4" => {
+        "572e0e7f-7b97-5d49-85a8-6fcada73867c" => {
           provider_name: "The University of Northampton",
           ukprn: "10007138",
           instid: "0027",
           name: "Entire HEP",
           country: "England",
-          postcode: "NN1 5PH",
-          latitude: 52.231606,
-          longitude: -0.890179
+          postcode: "NN1 5PH"
         },
-        "5cf391ed-4452-478e-920b-d6b7eac51ad8" => {
+        "d4ffeb12-00af-59d0-a7e3-5bf193b5cd32" => {
           provider_name: "The University of Oxford",
           ukprn: "10007774",
           instid: "0156",
           name: "Kenya",
-          country: "Kenya",
-          latitude: 51.758038,
-          longitude: -1.26201
+          country: "Kenya"
         },
-        "0bfe47a6-ba62-444c-8896-3d7ef6c6d8de" => {
+        "13471129-d4c1-5d96-a008-09d9edac3957" => {
           provider_name: "The University of Oxford",
           ukprn: "10007774",
           instid: "0156",
           name: "Main campus",
           country: "England",
-          postcode: "OX1 2JD",
-          latitude: 51.758038,
-          longitude: -1.26201
+          postcode: "OX1 2JD"
         },
-        "cb9edbfe-3a28-4cc2-905c-e3d929d44fd8" => {
+        "81bfbe9d-9c42-5ede-ac23-1f49c7031921" => {
           provider_name: "The University of Oxford",
           ukprn: "10007774",
           instid: "0156",
           name: "Thailand",
-          country: "Thailand",
-          latitude: 51.758038,
-          longitude: -1.26201
+          country: "Thailand"
         },
-        "3a781bcb-23f6-4694-97ec-f2f8848334df" => {
+        "32f5675f-5069-539f-a236-61d36a85ec8c" => {
           provider_name: "The University of Oxford",
           ukprn: "10007774",
           instid: "0156",
           name: "Vietnam",
-          country: "Vietnam [Viet Nam]",
-          latitude: 51.758038,
-          longitude: -1.26201
+          country: "Vietnam [Viet Nam]"
         },
-        "0e232be0-888f-47cb-8acd-5eb2a0aec4f7" => {
+        "77ccf12d-4e1f-5725-b014-0fcb69b2adb1" => {
           provider_name: "The University of Portsmouth",
           ukprn: "10007155",
           instid: "0074",
           name: "Entire HEP",
           country: "England",
-          postcode: "PO1 2UP",
-          latitude: 50.795187,
-          longitude: -1.093628
+          postcode: "PO1 2UP"
         },
-        "aac26615-1fa6-4021-a004-7ec1bd9b19d5" => {
+        "486ee9b3-9747-57f7-b648-73f188a4086c" => {
           provider_name: "The University of Reading",
           ukprn: "10007802",
           instid: "0157",
           name: "Greenlands Campus",
           country: "England",
-          postcode: "RG9 3AU",
-          latitude: 51.562956,
-          longitude: -0.882567
+          postcode: "RG9 3AU"
         },
-        "03873001-7ebb-49e6-9fb6-66b5857a807f" => {
+        "114f730c-e977-5200-96b0-53e8e516e87b" => {
           provider_name: "The University of Reading",
           ukprn: "10007802",
           instid: "0157",
           name: "Main campus",
           country: "England",
-          postcode: "RG6 6AH",
-          latitude: 51.457625,
-          longitude: -0.945636
+          postcode: "RG6 6AH"
         },
-        "89b67ccc-d4bf-42d9-8e2f-7c69d8c9c9df" => {
+        "2795d8f8-13f9-5110-ad45-80f870a2e998" => {
           provider_name: "The University of Reading",
           ukprn: "10007802",
           instid: "0157",
           name: "University of Reading Malaysia",
-          country: "Malaysia",
-          latitude: 51.457625,
-          longitude: -0.945636
+          country: "Malaysia"
         },
-        "06779957-20f5-4422-9c5e-29c41289fb57" => {
+        "f8f1c12d-9bab-51ae-95a6-5f219a170739" => {
           provider_name: "The University of Salford",
           ukprn: "10007156",
           instid: "0158",
           name: "Entire HEP",
           country: "England",
-          postcode: "M5 4WT",
-          latitude: 53.483487,
-          longitude: -2.270651
+          postcode: "M5 4WT"
         },
-        "c59b7098-d1cc-403f-8df3-7c31b247553a" => {
+        "f66eeb4d-d27f-5ab9-9d4e-0c51d011bd8c" => {
           provider_name: "The University of Sheffield",
           ukprn: "10007157",
           instid: "0159",
           name: "AMRC Cymru",
           country: "Wales",
-          postcode: "CH4 0DH",
-          latitude: 53.17338,
-          longitude: -2.963467
+          postcode: "CH4 0DH"
         },
-        "5cd0fb02-f17e-4f93-93c9-515417a17eaf" => {
+        "92f2e523-9db9-58fd-8c2d-5d1947d11913" => {
           provider_name: "The University of Sheffield",
           ukprn: "10007157",
           instid: "0159",
           name: "AMRC North West",
           country: "England",
-          postcode: "PR1 2UX",
-          latitude: 53.760469,
-          longitude: -2.706608
+          postcode: "PR1 2UX"
         },
-        "3aa8770b-2560-44ce-b07e-74748aaffd04" => {
+        "39d41fe3-d87c-5be8-bbdd-064bb89fdf4e" => {
           provider_name: "The University of Sheffield",
           ukprn: "10007157",
           instid: "0159",
           name: "Main campus",
           country: "England",
-          postcode: "S10 2TN",
-          latitude: 53.381363,
-          longitude: -1.48853
+          postcode: "S10 2TN"
         },
-        "67d847ba-b3b8-49ff-8912-fa57067ccf4a" => {
+        "a944e5ba-d04d-576f-8600-b8ee532a8a84" => {
           provider_name: "The University of Sheffield",
           ukprn: "10007157",
           instid: "0159",
           name: "NAMRC Birkenhead",
           country: "England",
-          postcode: "CH41 9BP",
-          latitude: 53.383516,
-          longitude: -3.0117
+          postcode: "CH41 9BP"
         },
-        "2029008c-53bd-483a-84df-420ca487ed3f" => {
+        "f2fea530-82c1-559c-a95d-1cc6dd34f64e" => {
           provider_name: "The University of Sheffield",
           ukprn: "10007157",
           instid: "0159",
           name: "NAMRC Midlands",
           country: "England",
-          postcode: "DE24 9FU",
-          latitude: 52.876851,
-          longitude: -1.467867
+          postcode: "DE24 9FU"
         },
-        "6d349875-75fe-4d27-a1d1-7665d7a30252" => {
+        "2e7d4052-5ee4-5b91-bef6-c3bfb5a19145" => {
           provider_name: "The University of Southampton",
           ukprn: "10007158",
           instid: "0160",
           name: "Main campus",
           country: "England",
-          postcode: "SO17 1BJ",
-          latitude: 50.934099,
-          longitude: -1.395714
+          postcode: "SO17 1BJ"
         },
-        "3b80a062-189c-4be2-9c47-3cecc8a0db17" => {
+        "27524b74-16b6-57e8-b56c-874282364b37" => {
           provider_name: "The University of Southampton",
           ukprn: "10007158",
           instid: "0160",
           name: "USMC",
-          country: "Malaysia",
-          latitude: 50.934099,
-          longitude: -1.395714
+          country: "Malaysia"
         },
-        "d25c0fa2-11f3-4ccc-9c97-266fa6be14c3" => {
+        "72d98b50-dc2c-5490-a047-d2a510be130f" => {
           provider_name: "The University of Southampton",
           ukprn: "10007158",
           instid: "0160",
           name: "Winchester",
           country: "England",
-          postcode: "SO23 8DL",
-          latitude: 51.065897,
-          longitude: -1.309144
+          postcode: "SO23 8DL"
         },
-        "abbdf519-ba71-4a1a-b356-7252c54d983b" => {
+        "4ac1e97b-b653-5ca2-a78e-1a6cfe68c0f5" => {
           provider_name: "The University of St. Andrews",
           ukprn: "10007803",
           instid: "0173",
           name: "Entire HEP",
           country: "Scotland",
-          postcode: "KY16 9AJ",
-          latitude: 56.341239,
-          longitude: -2.793287
+          postcode: "KY16 9AJ"
         },
-        "d7013f44-7ca2-463a-be58-db8c5cbcbbee" => {
+        "61d7dc42-5826-5d8f-b70c-00143163bc8d" => {
           provider_name: "The University of Stirling",
           ukprn: "10007804",
           instid: "0174",
           name: "Entire HEP",
           country: "Scotland",
-          postcode: "FK9 4LA",
-          latitude: 56.145463,
-          longitude: -3.920023
+          postcode: "FK9 4LA"
         },
-        "951b5465-c365-419a-82d8-9d7408aa1145" => {
+        "6cdaa55f-9bc4-57a1-b696-18f9f8e1e3a5" => {
           provider_name: "The University of Stirling",
           ukprn: "10007804",
           instid: "0174",
           name: "Inverness",
           country: "Scotland",
-          postcode: "IV2 3JH",
-          latitude: 57.476244,
-          longitude: -4.191332
+          postcode: "IV2 3JH"
         },
-        "8df80dd8-36ef-4efc-8c4e-da3880afb464" => {
+        "6db475e8-8e5f-54db-b61e-518913c6670f" => {
           provider_name: "The University of Stirling",
           ukprn: "10007804",
           instid: "0174",
           name: "London",
           country: "England",
-          postcode: "E1 4PB",
-          latitude: 51.523329,
-          longitude: -0.037264
+          postcode: "E1 4PB"
         },
-        "88323ee6-e895-4cab-8f5f-c70f2aef86c0" => {
+        "b5461731-12de-5405-a476-c38b937d0b6b" => {
           provider_name: "The University of Stirling",
           ukprn: "10007804",
           instid: "0174",
           name: "Stornoway",
           country: "Scotland",
-          postcode: "HS1 2AF",
-          latitude: 58.221088,
-          longitude: -6.384411
+          postcode: "HS1 2AF"
         },
-        "3162c486-bd9b-4900-9a85-bd6b1f4f3b4e" => {
+        "9922f974-431c-5ff9-8995-94ca7de93ce2" => {
           provider_name: "The University of Strathclyde",
           ukprn: "10007805",
           instid: "0169",
           name: "Entire HEP",
           country: "Scotland",
-          postcode: "G1 1XQ",
-          latitude: 55.86125,
-          longitude: -4.244706
+          postcode: "G1 1XQ"
         },
-        "423b76f2-ef7a-4c2d-bef8-f6b61445f7db" => {
+        "7f1e0d64-4d74-581e-92f4-075fdd3c0412" => {
           provider_name: "The University of Sunderland",
           ukprn: "10007159",
           instid: "0078",
           name: "Main campus",
           country: "England",
-          postcode: "SR1 3SD",
-          latitude: 54.904456,
-          longitude: -1.390973
+          postcode: "SR1 3SD"
         },
-        "565e1633-8b00-4a6e-b535-dcda0eeac647" => {
+        "c4f9df5c-0e56-5d72-81be-54188a35d367" => {
           provider_name: "The University of Sunderland",
           ukprn: "10007159",
           instid: "0078",
           name: "University of Sunderland in Hong Kong",
-          country: "Hong Kong (Special Administrative Region of China) [Hong Kong]",
-          latitude: 54.904456,
-          longitude: -1.390973
+          country: "Hong Kong (Special Administrative Region of China) [Hong Kong]"
         },
-        "85964e69-b521-466b-bb3a-07b5043d5e87" => {
+        "b7979027-4fcd-57d2-9985-3c1914b22463" => {
           provider_name: "The University of Sunderland",
           ukprn: "10007159",
           instid: "0078",
           name: "University of Sunderland in London",
           country: "England",
-          postcode: "E14 9SG",
-          latitude: 51.500703,
-          longitude: -0.014822
+          postcode: "E14 9SG"
         },
-        "34dc52ae-52bc-494f-87e3-d219e4547de7" => {
+        "6d2485ae-a0d6-5b27-96c4-6f5b4c75d5fb" => {
           provider_name: "The University of Surrey",
           ukprn: "10007160",
           instid: "0161",
           name: "Entire HEP",
           country: "England",
-          postcode: "GU2 7XH",
-          latitude: 51.242685,
-          longitude: -0.587936
+          postcode: "GU2 7XH"
         },
-        "ceb47a51-79fe-42fb-90e7-36ee8ca356dc" => {
+        "3a55c594-ee59-5611-8931-a7ec2dfd3382" => {
           provider_name: "The University of Sussex",
           ukprn: "10007806",
           instid: "0162",
           name: "Entire HEP",
           country: "England",
-          postcode: "BN1 9RH",
-          latitude: 50.86447,
-          longitude: -0.087076
+          postcode: "BN1 9RH"
         },
-        "1ce506c6-3bd3-4646-8d4c-dbc6a4946c9d" => {
+        "020f6a11-b7c2-5b84-afe8-df63a3576230" => {
           provider_name: "The University of the West of Scotland",
           ukprn: "10007800",
           instid: "0105",
           name: "Ayr Campus",
           country: "Scotland",
-          postcode: "KA8 0SX",
-          latitude: 55.458036,
-          longitude: -4.615296
+          postcode: "KA8 0SX"
         },
-        "5c72692f-26f7-4b3d-8a24-0a4118705170" => {
+        "67e3f087-c2a5-5c85-af1f-7bd39a748651" => {
           provider_name: "The University of the West of Scotland",
           ukprn: "10007800",
           instid: "0105",
           name: "Dumfries Campus",
           country: "Scotland",
-          postcode: "DG1 4ZN",
-          latitude: 55.049484,
-          longitude: -3.589292
+          postcode: "DG1 4ZN"
         },
-        "812e565f-1d02-4973-a63c-9a9d0ca46218" => {
+        "a025959d-82bd-56c7-8abf-f2e51e95efc1" => {
           provider_name: "The University of the West of Scotland",
           ukprn: "10007800",
           instid: "0105",
           name: "Hamilton Campus",
           country: "Scotland",
-          postcode: "ML3 0JB",
-          latitude: 55.780129,
-          longitude: -4.047587
+          postcode: "ML3 0JB"
         },
-        "b847ba82-8f52-4ecd-a519-22600b30b376" => {
+        "5e971ecc-743a-5b33-bbc8-418f5c80a454" => {
           provider_name: "The University of the West of Scotland",
           ukprn: "10007800",
           instid: "0105",
           name: "Lanarkshire Campus",
           country: "Scotland",
-          postcode: "G72 0LH",
-          latitude: 55.779379,
-          longitude: -4.106649
+          postcode: "G72 0LH"
         },
-        "d3877dad-079c-4a7c-8dd9-bf58b4db53ce" => {
+        "128bb17f-2288-5f5f-88b0-e37f47a03ed5" => {
           provider_name: "The University of the West of Scotland",
           ukprn: "10007800",
           instid: "0105",
           name: "London Campus",
           country: "England",
-          postcode: "SE1 6NP",
-          latitude: 51.498513,
-          longitude: -0.099778
+          postcode: "SE1 6NP"
         },
-        "5737906b-9cda-4869-8300-bdac05064f65" => {
+        "cea61b9c-e433-579b-bc20-65d30a0fd436" => {
           provider_name: "The University of the West of Scotland",
           ukprn: "10007800",
           instid: "0105",
           name: "London Republic Campus",
           country: "England",
-          postcode: "E14 2BE",
-          latitude: 51.510185,
-          longitude: -0.0049
+          postcode: "E14 2BE"
         },
-        "030b57fa-1aa3-4ac5-b879-f7ff2a63655e" => {
+        "4a5f8055-91a3-59ed-af44-7b7cfaa0b144" => {
           provider_name: "The University of the West of Scotland",
           ukprn: "10007800",
           instid: "0105",
           name: "Main campus",
           country: "Scotland",
-          postcode: "PA1 2BE",
-          latitude: 55.843478,
-          longitude: -4.429969
+          postcode: "PA1 2BE"
         },
-        "be1f1ea3-753f-421e-829b-cc3ed867860a" => {
+        "e6d1928e-11ac-5ae8-9d0f-da79155c6819" => {
           provider_name: "The University of Wales (central functions)",
           ukprn: "10008574",
           instid: "0186",
           name: "Centre for Advanced Welsh and Celtic Studies",
           country: "Wales",
-          postcode: "SY23 3HH",
-          latitude: 52.414476,
-          longitude: -4.068488
+          postcode: "SY23 3HH"
         },
-        "c5576aa5-7b83-48c5-9290-59dc9742a8c0" => {
+        "75af0fbc-b85a-5240-beb6-192c7c47f4c0" => {
           provider_name: "The University of Wales (central functions)",
           ukprn: "10008574",
           instid: "0186",
           name: "Entire HEP",
           country: "Wales",
-          postcode: "CF10 3NS",
-          latitude: 51.485538,
-          longitude: -3.181031
+          postcode: "CF10 3NS"
         },
-        "81914947-718e-437b-b88e-944bfa6bae8b" => {
+        "87dd9b46-9be1-59d7-8e92-ebf3555b20ee" => {
           provider_name: "The University of Wales (central functions)",
           ukprn: "10008574",
           instid: "0186",
           name: "Gregynog",
           country: "Wales",
-          postcode: "SY16 3PW",
-          latitude: 52.567459,
-          longitude: -3.352254
+          postcode: "SY16 3PW"
         },
-        "9a946117-0c14-4952-830e-7f8a64b95331" => {
+        "a8a613be-6689-5582-8db6-89c133cd5fed" => {
           provider_name: "The University of Wales (central functions)",
           ukprn: "10008574",
           instid: "0186",
           name: "Welsh Centre for Advanced Batch Manufacture",
           country: "Wales",
-          postcode: "SA1 8AS",
-          latitude: 51.620446,
-          longitude: -3.933053
+          postcode: "SA1 8AS"
         },
-        "b7737e51-1ddb-4ddc-a8b9-d3293080cef6" => {
-          provider_name: "The University of Wales (central functions)",
-          ukprn: "10008574",
-          instid: "0186",
-          name: "Welsh Centre for Advanced Batch Manufacture",
-          country: "Wales",
-          postcode: "SA1 8AS",
-          latitude: 51.620446,
-          longitude: -3.933053
-        },
-        "207a4891-d491-41df-9f72-bfea64a1fc55" => {
+        "83af64a2-af8b-5528-88f2-a95c2848af45" => {
           provider_name: "The University of Wales (central functions)",
           ukprn: "10008574",
           instid: "0186",
           name: "Y Galeri, Caernarfon",
           country: "Wales",
-          postcode: "LL55 1SQ",
-          latitude: 53.143461,
-          longitude: -4.275081
+          postcode: "LL55 1SQ"
         },
-        "6d117d23-0e6d-4ba4-b1d7-56b11e138dec" => {
+        "9cf49b81-dcee-5c88-a806-0f87bfd89cfc" => {
           provider_name: "The University of Wales, Newport",
           ukprn: "10007853",
           instid: "0086",
           name: "Entire institution",
           country: "Wales",
-          postcode: "NP18 3QT",
-          latitude: 51.616517,
-          longitude: -2.961925
+          postcode: "NP18 3QT"
         },
-        "34afec87-2a63-461d-9007-1260e5b268ea" => {
+        "96dc6ec3-1c8c-504e-b932-76d4585718af" => {
           provider_name: "The University of Warwick",
           ukprn: "10007163",
           instid: "0163",
           name: "Main campus",
           country: "England",
-          postcode: "CV4 7AL",
-          latitude: 52.38581,
-          longitude: -1.564814
+          postcode: "CV4 7AL"
         },
-        "67fdf802-2eb7-44c3-8a5e-8b18a35ff5fd" => {
+        "746c8255-31c0-5793-b994-af0710cfc5b5" => {
           provider_name: "The University of Warwick",
           ukprn: "10007163",
           instid: "0163",
           name: "Warwick Business School - London Base",
           country: "England",
-          postcode: "SE1 9SG",
-          latitude: 51.504962,
-          longitude: -0.087651
+          postcode: "SE1 9SG"
         },
-        "2b7eba95-38db-4db6-9cdc-8ab7481b0c6d" => {
+        "bd4e910b-7ef8-591c-9b5a-75e13558342d" => {
           provider_name: "The University of West London",
           ukprn: "10006566",
           instid: "0080",
           name: "Brentford campis",
           country: "England",
-          postcode: "TW8 9GA",
-          latitude: 51.489441,
-          longitude: -0.313902
+          postcode: "TW8 9GA"
         },
-        "299f0b0b-de6c-4b61-a656-c82db2e3780a" => {
+        "fe216639-b26a-52cd-80eb-4ff85f198739" => {
           provider_name: "The University of West London",
           ukprn: "10006566",
           instid: "0080",
           name: "Main campus",
           country: "England",
-          postcode: "W5 5RF",
-          latitude: 51.507259,
-          longitude: -0.303013
+          postcode: "W5 5RF"
         },
-        "0ae091c8-9ad0-4ebe-acda-fed9b5a60c35" => {
+        "72d67c77-059b-554a-96ee-3180a822a5f6" => {
           provider_name: "The University of West London",
           ukprn: "10006566",
           instid: "0080",
           name: "Reading Campus",
           country: "England",
-          postcode: "RG1 7QF",
-          latitude: 51.454545,
-          longitude: -0.97732
+          postcode: "RG1 7QF"
         },
-        "68765681-e769-4aa8-a12f-e820cfe435da" => {
+        "b31b5285-bddb-51eb-b202-e806e74289e7" => {
           provider_name: "The University of West London",
           ukprn: "10006566",
           instid: "0080",
           name: "Ruskin Campus",
           country: "England",
-          postcode: "OX3 9BZ",
-          latitude: 51.766077,
-          longitude: -1.214914
+          postcode: "OX3 9BZ"
         },
-        "65ffabf9-db2c-4481-bfbe-c09586e6b18d" => {
+        "ae8d5a42-9516-5f24-9954-49ad77022837" => {
           provider_name: "The University of West London",
           ukprn: "10006566",
           instid: "0080",
           name: "Slough campus",
           country: "England",
-          postcode: "SL1 4UT",
-          latitude: 51.519717,
-          longitude: -0.614647
+          postcode: "SL1 4UT"
         },
-        "c2e6ba42-8933-4c9a-8f12-d36aedcebc9e" => {
+        "0656cb0c-e1d7-58dc-ace4-a6776bef79c4" => {
           provider_name: "The University of Westminster",
           ukprn: "10007165",
           instid: "0083",
           name: "Cavendish Campus",
           country: "England",
-          postcode: "W1W 6UW",
-          latitude: 51.520832,
-          longitude: -0.140132
+          postcode: "W1W 6UW"
         },
-        "9536040d-7b11-413c-a646-5c07617c0cbd" => {
+        "86fcc45d-03cf-56fe-87b5-60100d97e043" => {
           provider_name: "The University of Westminster",
           ukprn: "10007165",
           instid: "0083",
           name: "Harrow Campus",
           country: "England",
-          postcode: "HA1 3TP",
-          latitude: 51.57732,
-          longitude: -0.324377
+          postcode: "HA1 3TP"
         },
-        "12e1cc99-e1e0-4e02-877d-d2c8d75c5c71" => {
+        "933ae1a4-172b-5020-9888-f4fb07f871a1" => {
           provider_name: "The University of Westminster",
           ukprn: "10007165",
           instid: "0083",
           name: "Main campus",
           country: "England",
-          postcode: "W1B 2HW",
-          latitude: 51.516978,
-          longitude: -0.14306
+          postcode: "W1B 2HW"
         },
-        "1b0fb0c4-1359-4f6f-b857-1de4b912d16b" => {
+        "0cf4702f-673a-5d6f-a53f-8549bac02dd6" => {
           provider_name: "The University of Westminster",
           ukprn: "10007165",
           instid: "0083",
           name: "Marylebone Campus",
           country: "England",
-          postcode: "NW1 5LS",
-          latitude: 51.522023,
-          longitude: -0.154599
+          postcode: "NW1 5LS"
         },
-        "befd6381-8ff9-4372-8230-01425ba066c9" => {
+        "4e5f7f80-8409-5b3a-a5dd-e811595e072e" => {
           provider_name: "The University of Westminster",
           ukprn: "10007165",
           instid: "0083",
           name: "Regent Campus",
           country: "England",
-          postcode: "W1B 2HW",
-          latitude: 51.516978,
-          longitude: -0.14306
+          postcode: "W1B 2HW"
         },
-        "52c5d61a-bd44-4e49-b11f-7b5af5fecb9d" => {
+        "34508f5a-7124-51a9-b77f-d0ec15f06f83" => {
           provider_name: "The University of Winchester",
           ukprn: "10003614",
           instid: "0021",
           name: "Chute House",
           country: "England",
-          postcode: "RG21 7QT",
-          latitude: 51.265868,
-          longitude: -1.088904
+          postcode: "RG21 7QT"
         },
-        "bcd0137b-f5f3-44fc-ac5f-8501a2570d9e" => {
+        "a0a422cf-2e99-5c3a-aacc-1e30e23b6f9d" => {
           provider_name: "The University of Winchester",
           ukprn: "10003614",
           instid: "0021",
           name: "Entire HEP",
           country: "England",
-          postcode: "SO22 4NR",
-          latitude: 51.060002,
-          longitude: -1.32674
+          postcode: "SO22 4NR"
         },
-        "1dc13d7d-0576-40a9-a1b1-5bc96deb9b99" => {
+        "f0f01b36-7a23-51d5-a75d-ae701495b400" => {
           provider_name: "The University of Wolverhampton",
           ukprn: "10007166",
           instid: "0085",
           name: "Burton campus",
           country: "England",
-          postcode: "DE13 0RB",
-          latitude: 52.817775,
-          longitude: -1.656384
+          postcode: "DE13 0RB"
         },
-        "50278f45-8c68-4057-8fcc-afe1f9f2a148" => {
+        "b0128af1-ee40-55fb-a70d-92e1617a488d" => {
           provider_name: "The University of Wolverhampton",
           ukprn: "10007166",
           instid: "0085",
           name: "Main campus",
           country: "England",
-          postcode: "WV1 1LY",
-          latitude: 52.588182,
-          longitude: -2.12807
+          postcode: "WV1 1LY"
         },
-        "e2d61a9a-495d-47cf-895b-a9ef3d4b7266" => {
+        "b7e5334a-ad99-5648-9605-87b8fccc34a1" => {
           provider_name: "The University of Wolverhampton",
           ukprn: "10007166",
           instid: "0085",
           name: "Southwater Campus",
           country: "England",
-          postcode: "TF3 4HZ",
-          latitude: 52.675653,
-          longitude: -2.451787
+          postcode: "TF3 4HZ"
         },
-        "e8e94fc8-13ff-4def-a270-4261ec59a3a1" => {
+        "2c4f8d22-3c3f-5144-8728-d28005a9de5d" => {
           provider_name: "The University of Wolverhampton",
           ukprn: "10007166",
           instid: "0085",
           name: "Telford campus",
           country: "England",
-          postcode: "TF2 9NT",
-          latitude: 52.683309,
-          longitude: -2.425994
+          postcode: "TF2 9NT"
         },
-        "c7cde45f-7270-409f-ad1d-367afd03c078" => {
+        "ba59dce4-508b-560b-898e-0b7f87fc821f" => {
           provider_name: "The University of Wolverhampton",
           ukprn: "10007166",
           instid: "0085",
           name: "Walsall campus",
           country: "England",
-          postcode: "WS1 3BD",
-          latitude: 52.571979,
-          longitude: -1.970329
+          postcode: "WS1 3BD"
         },
-        "5b8434a6-f03e-428a-b021-da227963d232" => {
+        "8d765276-6883-5eea-bc58-c2b0f111c7ae" => {
           provider_name: "The University of York",
           ukprn: "10007167",
           instid: "0164",
           name: "Entire HEP",
           country: "England",
-          postcode: "YO10 5DD",
-          latitude: 53.948419,
-          longitude: -1.053544
+          postcode: "YO10 5DD"
         },
-        "fa375364-6c9a-4ec6-b2a5-18188c2d714e" => {
+        "a8c421c5-18fd-5d91-a111-f379edf68084" => {
           provider_name: "The Windsor Forest Colleges Group",
           ukprn: "10002107",
           instid: "1010",
           name: "Main campus",
           country: "England",
-          postcode: "SL3 8BY",
-          latitude: 51.505512,
-          longitude: -0.545036
+          postcode: "SL3 8BY"
         },
-        "9f25e5e8-b2f4-4846-9b55-1020d7f45ebb" => {
+        "d83c0d29-02e2-5556-aa6e-80c7d832008d" => {
           provider_name: "The WKCIC Group",
           ukprn: "10007455",
           instid: "1008",
           name: "Main campus",
           country: "England",
-          postcode: "NW1 3HB",
-          latitude: 51.526244,
-          longitude: -0.141122
+          postcode: "NW1 3HB"
         },
-        "29397814-d93f-44a7-8ed8-50aeb76b99a6" => {
+        "3850b6de-fc4d-5d17-9711-10a545d0c47b" => {
           provider_name: "ThinkSpace Education Limited",
           ukprn: "10082743",
           instid: "0437",
           name: "Entire HEP",
           country: "England",
-          postcode: "PO20 7LB",
-          latitude: 50.77421,
-          longitude: -0.832107
+          postcode: "PO20 7LB"
         },
-        "0149cff7-4b2a-47cb-90e6-b566c6a78426" => {
+        "9d7f77dd-3714-530b-a212-0d0a22a2e525" => {
           provider_name: "Tottenham Hotspur Foundation",
           ukprn: "10037822",
           instid: "0267",
           name: "Main campus",
           country: "England",
-          postcode: "N17 0AP",
-          latitude: 51.603307,
-          longitude: -0.065778
+          postcode: "N17 0AP"
         },
-        "1680aecc-b891-4dc7-b72d-bd57f1b88cdd" => {
+        "8a14f099-94fc-5c27-9dbc-82bf6ce0f08c" => {
           provider_name: "Trinity College Bristol",
           ukprn: "10023464",
           instid: "0317",
           name: "Entire HEP",
           country: "England",
-          postcode: "BS9 1JP",
-          latitude: 51.476822,
-          longitude: -2.629429
+          postcode: "BS9 1JP"
         },
-        "a581b3b5-a32a-46c3-8751-cfc46b1b1a74" => {
+        "59ec3ea0-562f-590b-996d-e987a8d0a482" => {
           provider_name: "Trinity Laban Conservatoire of Music and Dance",
           ukprn: "10008017",
           instid: "0041",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE10 9LS",
-          latitude: 51.484468,
-          longitude: -0.004005
+          postcode: "SE10 9LS"
         },
-        "0514a018-160b-41c2-9618-cc5dbf4cf2d2" => {
+        "5e838c27-9e41-5cac-9ef1-7ed5531bfeeb" => {
           provider_name: "Trinity University College",
           ukprn: "10007048",
           instid: "0092",
           name: "Entire institution",
           country: "Wales",
-          postcode: "SA31 3EP",
-          latitude: 51.858361,
-          longitude: -4.328713
+          postcode: "SA31 3EP"
         },
-        "fb0a21d6-b6f8-4fe6-855c-a2c6c3b9594b" => {
+        "4df5c81b-1241-568d-ad6c-f95ce038dc26" => {
           provider_name: "Truro and Penwith College",
           ukprn: "10007063",
           instid: "1066",
           name: "Main campus",
           country: "England",
-          postcode: "TR1 3XX",
-          latitude: 50.262794,
-          longitude: -5.100783
+          postcode: "TR1 3XX"
         },
-        "31dc9f65-4ddb-4b62-a760-e08225d3d01c" => {
+        "47b8a29d-0616-50e5-8fb5-c32ab69d8c7a" => {
           provider_name: "Tyne Coast College",
           ukprn: "10005999",
           instid: "1022",
           name: "Main campus",
           country: "England",
-          postcode: "NE34 6ET",
-          latitude: 54.986229,
-          longitude: -1.419756
+          postcode: "NE34 6ET"
         },
-        "a2414ce8-4afb-49d2-9e60-b7f9b517dd23" => {
+        "1b94910a-543f-5cc9-9f28-962d2d909967" => {
           provider_name: "UK Business College Ltd",
           ukprn: "10042737",
           instid: "0358",
           name: "Main campus",
           country: "England",
-          postcode: "LU1 3HG",
-          latitude: 51.875664,
-          longitude: -0.408448
+          postcode: "LU1 3HG"
         },
-        "52ac1bd3-d11c-49af-9bd0-6221771e2c8b" => {
+        "f5ac6a92-fdf6-566b-8631-88cd02e0a7b0" => {
           provider_name: "UK College of Business and Computing",
           ukprn: "10022021",
           instid: "0249",
           name: "Main campus",
           country: "England",
-          postcode: "IG2 6NW",
-          latitude: 51.576329,
-          longitude: 0.061441
+          postcode: "IG2 6NW"
         },
-        "19a2870c-4eb2-4bcc-879b-ef48f92fad3f" => {
+        "c84f3264-8194-54e3-bead-d22401144788" => {
           provider_name: "Ulster University",
           ukprn: "10007807",
           instid: "0185",
           name: "Belfast",
           country: "Northern Ireland",
-          postcode: "BT15 1ED",
-          latitude: 54.603927,
-          longitude: -5.929119
+          postcode: "BT15 1ED"
         },
-        "4cc38c68-9752-4907-9fd2-5f4483510975" => {
+        "61436398-9761-52a3-a37e-1699f4036abf" => {
           provider_name: "Ulster University",
           ukprn: "10007807",
           instid: "0185",
           name: "Birmingham",
           country: "England",
-          postcode: "B5 4UA",
-          latitude: 52.476224,
-          longitude: -1.898516
+          postcode: "B5 4UA"
         },
-        "9ace7171-2e81-470d-a065-4ae1a5920845" => {
+        "c313e8fe-9269-528b-a7e9-d5a077c484cd" => {
           provider_name: "Ulster University",
           ukprn: "10007807",
           instid: "0185",
           name: "Coleraine",
           country: "Northern Ireland",
-          postcode: "BT52 1SA",
-          latitude: 55.149335,
-          longitude: -6.676089
+          postcode: "BT52 1SA"
         },
-        "1a74b9d1-7032-4a7b-874e-54d5b843a5bc" => {
+        "8e31e433-1e73-52dc-a574-a0f4fd72339a" => {
           provider_name: "Ulster University",
           ukprn: "10007807",
           instid: "0185",
           name: "Jordanstown",
           country: "Northern Ireland",
-          postcode: "BT37 0QB",
-          latitude: 54.685388,
-          longitude: -5.883037
+          postcode: "BT37 0QB"
         },
-        "3ae2acbc-f827-4ef6-8734-555e6445b88c" => {
+        "d2105ad4-639c-5b69-8627-99a88d8682ba" => {
           provider_name: "Ulster University",
           ukprn: "10007807",
           instid: "0185",
           name: "London",
           country: "England",
-          postcode: "EC1R 4TF",
-          latitude: 51.522532,
-          longitude: -0.111449
+          postcode: "EC1R 4TF"
         },
-        "3233bca3-3be5-4a71-95bd-5ee85717982a" => {
+        "85e63189-586f-514c-bd84-70a29db91979" => {
           provider_name: "Ulster University",
           ukprn: "10007807",
           instid: "0185",
           name: "Magee",
           country: "Northern Ireland",
-          postcode: "BT48 7JL",
-          latitude: 55.005997,
-          longitude: -7.323686
+          postcode: "BT48 7JL"
         },
-        "1e3ba3b3-1fab-4674-9f01-be47181d7e68" => {
+        "1c644349-7660-56c5-b0e7-b2ab1642195a" => {
           provider_name: "Unified Seevic Palmer's College",
           ukprn: "10005736",
           instid: "1048",
           name: "Main campus",
           country: "England",
-          postcode: "SS7 1TW",
-          latitude: 51.56276,
-          longitude: 0.583347
+          postcode: "SS7 1TW"
         },
-        "f7d28742-0012-4027-9c03-d85fea677b27" => {
+        "5e754e66-aef3-558a-b191-e2ca2207d83b" => {
           provider_name: "Union Foundation",
           ukprn: "10024766",
           instid: "1198",
@@ -9236,574 +7376,458 @@ module DfE
           country: "Wales",
           postcode: "CF31 4DX"
         },
-        "110d3c05-44ad-4bdd-8c48-5db3c1fe6c20" => {
+        "ee05b918-7531-532a-8ac4-8ea621d8b19b" => {
           provider_name: "United Colleges Group",
           ukprn: "10001476",
           instid: "1021",
           name: "Main campus",
           country: "England",
-          postcode: "W2 1NB",
-          latitude: 51.521032,
-          longitude: -0.174603
+          postcode: "W2 1NB"
         },
-        "a090c7ea-9d47-494b-978d-d37f8709a49c" => {
+        "3498a772-b6d8-5450-9a33-920115618c73" => {
           provider_name: "University Academy 92 Limited",
           ukprn: "10067648",
           instid: "0434",
           name: "Entire HEP",
           country: "England",
-          postcode: "M16 0PU",
-          latitude: 53.458178,
-          longitude: -2.285023
+          postcode: "M16 0PU"
         },
-        "a4095b96-dd22-4568-a9d6-dc4b02125895" => {
+        "928e429b-1446-5e55-a2fb-680c43643c17" => {
           provider_name: "University Centre Peterborough",
           ukprn: "10068157",
           instid: "0408",
           name: "Addict Dance Academy",
           country: "England",
-          postcode: "LE1 4LF",
-          latitude: 52.633886,
-          longitude: -1.139833
+          postcode: "LE1 4LF"
         },
-        "3d1fc1f0-3591-4a0e-b9b0-052883dbe124" => {
+        "e6f8ef8f-773d-55bd-9e9d-1fff33a9ea3f" => {
           provider_name: "University Centre Peterborough",
           ukprn: "10068157",
           instid: "0408",
           name: "Main campus",
           country: "England",
-          postcode: "PE1 4DZ",
-          latitude: 52.586783,
-          longitude: -0.230191
+          postcode: "PE1 4DZ"
         },
-        "6971dbc2-ac19-4c9b-b9a1-5b6da8b48a3b" => {
+        "7bfb6ff6-276a-5d34-a964-e7fd53a47b09" => {
           provider_name: "University Centre Peterborough",
           ukprn: "10068157",
           instid: "0408",
           name: "Stamford",
           country: "England",
-          postcode: "PE9 1XA",
-          latitude: 52.658967,
-          longitude: -0.471523
+          postcode: "PE9 1XA"
         },
-        "7a11dae3-f147-4810-93a4-5318d30bc1a4" => {
+        "c67a2672-a5c5-50a5-9969-abab436099df" => {
           provider_name: "University Centre Quayside Limited",
           ukprn: "10025197",
           instid: "0418",
           name: "Entire HEP",
           country: "England",
-          postcode: "NE6 1LL",
-          latitude: 54.972121,
-          longitude: -1.587142
+          postcode: "NE6 1LL"
         },
-        "f7ec9a1c-ce78-4064-890e-1acfe9d0d300" => {
+        "6f6702bf-26fc-52f5-8faf-2717c2551baa" => {
           provider_name: "University College Birmingham",
           ukprn: "10000712",
           instid: "0200",
           name: "Aston Institute",
-          country: "Hong Kong (Special Administrative Region of China) [Hong Kong]",
-          latitude: 52.48184,
-          longitude: -1.905939
+          country: "Hong Kong (Special Administrative Region of China) [Hong Kong]"
         },
-        "188aabf5-ef99-4536-9238-5bb9d01c2c6b" => {
+        "6977f4bd-32d9-5ce1-bc6c-681deb93ff42" => {
           provider_name: "University College Birmingham",
           ukprn: "10000712",
           instid: "0200",
           name: "Birmingham City Football Club Community Trust",
           country: "England",
-          postcode: "B9 4NH",
-          latitude: 52.476284,
-          longitude: -1.867907
+          postcode: "B9 4NH"
         },
-        "713670a9-c00d-42c7-af0e-8dd3c08dac6b" => {
+        "f1c8d580-df52-5fb0-b464-6eac0c13aa71" => {
           provider_name: "University College Birmingham",
           ukprn: "10000712",
           instid: "0200",
           name: "Brown Town Community College",
-          country: "Jamaica",
-          latitude: -3.0,
-          longitude: -3.0
+          country: "Jamaica"
         },
-        "766fca75-2c9e-41d0-8e34-85014a423ebf" => {
+        "a84551ab-4c90-5966-b776-addb66b6245a" => {
           provider_name: "University College Birmingham",
           ukprn: "10000712",
           instid: "0200",
           name: "Caritas",
-          country: "Hong Kong (Special Administrative Region of China) [Hong Kong]",
-          latitude: -3.0,
-          longitude: -3.0
+          country: "Hong Kong (Special Administrative Region of China) [Hong Kong]"
         },
-        "f094ce2a-d4db-4b4d-b821-b656f79b67b8" => {
+        "f80d9261-3cad-5d97-88bc-869a49dde805" => {
           provider_name: "University College Birmingham",
           ukprn: "10000712",
           instid: "0200",
           name: "Caritas (Macau)",
-          country: "Macao (Special Administrative Region of China) [Macao]",
-          latitude: -3.0,
-          longitude: -3.0
+          country: "Macao (Special Administrative Region of China) [Macao]"
         },
-        "a049a85c-883e-41dd-9e68-9c92193ae32d" => {
+        "044b68f6-330b-5bc4-8d9e-f20672cbad99" => {
           provider_name: "University College Birmingham",
           ukprn: "10000712",
           instid: "0200",
           name: "Institute of Technology",
-          country: "Ireland",
-          latitude: 52.48184,
-          longitude: -1.905939
+          country: "Ireland"
         },
-        "143b405d-b1c0-4037-b94c-bf11cca0f19a" => {
+        "e9a8cd11-5ee0-5e41-b06b-0900bb0fd958" => {
           provider_name: "University College Birmingham",
           ukprn: "10000712",
           instid: "0200",
           name: "Main campus",
           country: "England",
-          postcode: "B3 1JB",
-          latitude: 52.48184,
-          longitude: -1.905939
+          postcode: "B3 1JB"
         },
-        "2c53076d-f93e-474c-913b-074764a8866b" => {
+        "b23aeb91-ecd9-506d-8052-d5ec45a85374" => {
           provider_name: "University College Birmingham",
           ukprn: "10000712",
           instid: "0200",
           name: "Maldives College of HE",
-          country: "Maldives",
-          latitude: -3.0,
-          longitude: -3.0
+          country: "Maldives"
         },
-        "ab6d4168-2252-4ba1-9db9-78fea54a75f2" => {
+        "8680a318-da70-5ce8-b0a6-f92935a0387a" => {
           provider_name: "University College Birmingham",
           ukprn: "10000712",
           instid: "0200",
           name: "Rushmore Business School",
-          country: "Mauritius",
-          latitude: -3.0,
-          longitude: -3.0
+          country: "Mauritius"
         },
-        "d963a5aa-b3dc-4028-8184-4c63297daa0e" => {
+        "e3bbd363-9cdc-5b2f-9a79-735a3fbb306f" => {
           provider_name: "University College Birmingham",
           ukprn: "10000712",
           instid: "0200",
           name: "TUV",
-          country: "Germany",
-          latitude: -3.0,
-          longitude: -3.0
+          country: "Germany"
         },
-        "e5639a7c-9fd1-48e0-9be6-aaa30c4913bb" => {
+        "e43358e0-10af-58c9-a8fa-058c5295fc96" => {
           provider_name: "University College London",
           ukprn: "10007784",
           instid: "0149",
           name: "BCA Academy of the Built Environment, Singapore",
-          country: "Singapore",
-          latitude: 51.523569,
-          longitude: -0.132424
+          country: "Singapore"
         },
-        "147ac694-bab1-4974-961f-09286ce35fb7" => {
+        "751fc513-8c03-5283-9f97-1c88e4762e2c" => {
           provider_name: "University College London",
           ukprn: "10007784",
           instid: "0149",
           name: "Main campus",
           country: "England",
-          postcode: "WC1E 6BT",
-          latitude: 51.523569,
-          longitude: -0.132424
+          postcode: "WC1E 6BT"
         },
-        "c4b53723-c5bc-4afa-8ee1-ad02de2899f6" => {
+        "957aac68-7c7f-5507-95f5-95bd4a4d5536" => {
           provider_name: "University College London",
           ukprn: "10007784",
           instid: "0149",
           name: "UCL at Here East",
           country: "England",
-          postcode: "E20 3BS",
-          latitude: 51.547521,
-          longitude: -0.022262
+          postcode: "E20 3BS"
         },
-        "3df7721b-6bb7-48bb-ab63-df0ab9043e8e" => {
+        "465a9945-85bc-5f4b-8ab8-001e1e97cb1a" => {
           provider_name: "University College London",
           ukprn: "10007784",
           instid: "0149",
           name: "UCL East",
           country: "England",
-          postcode: "E20 2AE",
-          latitude: 51.536238,
-          longitude: -0.013941
+          postcode: "E20 2AE"
         },
-        "708481ea-4a5a-49ba-beee-81295127ec69" => {
+        "fac6a90b-51c5-5dbb-a25a-efd2ea68b645" => {
           provider_name: "University College London",
           ukprn: "10007784",
           instid: "0149",
           name: "UCL Qatar",
-          country: "Qatar",
-          latitude: 51.523569,
-          longitude: -0.132424
+          country: "Qatar"
         },
-        "0a8a53b3-0dfa-4388-952c-6529a7593e61" => {
+        "b4b6c898-e832-57d1-a5dd-af721a78e372" => {
           provider_name: "University for the Creative Arts",
           ukprn: "10006427",
           instid: "0206",
           name: "Canterbury",
           country: "England",
-          postcode: "CT1 3AN",
-          latitude: 51.274926,
-          longitude: 1.09084
+          postcode: "CT1 3AN"
         },
-        "ebdc4522-37a6-4a26-8a2e-1ab78675be88" => {
+        "bb60e3ca-c536-5aa0-9011-7d0c7a5ecc10" => {
           provider_name: "University for the Creative Arts",
           ukprn: "10006427",
           instid: "0206",
           name: "Epsom",
           country: "England",
-          postcode: "KT18 5BE",
-          latitude: 51.329839,
-          longitude: -0.265045
+          postcode: "KT18 5BE"
         },
-        "22dac24e-42ca-480b-8558-5728f1b0efb2" => {
+        "bd483790-f153-5505-a090-82ba2442526c" => {
           provider_name: "University for the Creative Arts",
           ukprn: "10006427",
           instid: "0206",
           name: "ICI",
-          country: "China",
-          latitude: 51.215682,
-          longitude: -0.805956
+          country: "China"
         },
-        "84df46a0-66bd-499c-8483-17f87aa2a47c" => {
+        "c7a85398-094f-5bf4-8b81-82e5f286b3d9" => {
           provider_name: "University for the Creative Arts",
           ukprn: "10006427",
           instid: "0206",
           name: "LCCA",
           country: "England",
-          postcode: "EC3N 4DX",
-          latitude: 51.509939,
-          longitude: -0.073608
+          postcode: "EC3N 4DX"
         },
-        "0c6416d7-66d3-4493-91a2-2522fb7c11f4" => {
+        "415a5d45-2342-595b-bbd8-2a212a60b398" => {
           provider_name: "University for the Creative Arts",
           ukprn: "10006427",
           instid: "0206",
           name: "LCCM",
           country: "England",
-          postcode: "SE1 0LR",
-          latitude: 51.503421,
-          longitude: -0.102271
+          postcode: "SE1 0LR"
         },
-        "12f80843-6e8e-45fa-b97e-a4f57f8e6081" => {
+        "d7794e64-93a9-58e2-8d39-7ac793991ab1" => {
           provider_name: "University for the Creative Arts",
           ukprn: "10006427",
           instid: "0206",
           name: "Main campus",
           country: "England",
-          postcode: "GU9 7DS",
-          latitude: 51.215682,
-          longitude: -0.805956
+          postcode: "GU9 7DS"
         },
-        "7fbe4cbb-97ec-4101-9680-0b0c2fe37609" => {
+        "9e22a5b0-affe-583d-aadd-4cdf7222bd90" => {
           provider_name: "University for the Creative Arts",
           ukprn: "10006427",
           instid: "0206",
           name: "OCA",
           country: "England",
-          postcode: "S75 1JN",
-          latitude: 53.567767,
-          longitude: -1.505446
+          postcode: "S75 1JN"
         },
-        "45d93ff5-1084-43dc-b642-6c51dd0f8ff7" => {
+        "f1570967-b714-53b1-937c-8d35cb548ce7" => {
           provider_name: "University for the Creative Arts",
           ukprn: "10006427",
           instid: "0206",
           name: "Rochester",
           country: "England",
-          postcode: "ME1 1DZ",
-          latitude: 51.381523,
-          longitude: 0.514272
+          postcode: "ME1 1DZ"
         },
-        "960b2500-f7ae-4e76-b1b4-0e9236a18f69" => {
+        "e4feb20c-70e5-55c8-8c39-436c8b19fcd5" => {
           provider_name: "University of Bedfordshire",
           ukprn: "10007152",
           instid: "0026",
           name: "Aylesbury Campus",
           country: "England",
-          postcode: "HP21 8AL",
-          latitude: 51.797983,
-          longitude: -0.801989
+          postcode: "HP21 8AL"
         },
-        "8bf5cdf5-98c6-4248-9463-6883998cfb20" => {
+        "da4f39ea-b80a-5039-9f43-ed19e5186a33" => {
           provider_name: "University of Bedfordshire",
           ukprn: "10007152",
           instid: "0026",
           name: "Bedford campus",
           country: "England",
-          postcode: "MK41 9EA",
-          latitude: 52.141357,
-          longitude: -0.442323
+          postcode: "MK41 9EA"
         },
-        "27f20461-bc53-4f57-aa38-1b6bd8d17a46" => {
+        "76790c73-08d9-5247-a485-009089f54e07" => {
           provider_name: "University of Bedfordshire",
           ukprn: "10007152",
           instid: "0026",
           name: "Birmingham Study Centre",
           country: "England",
-          postcode: "B4 7LR",
-          latitude: 52.48199,
-          longitude: -1.892318
+          postcode: "B4 7LR"
         },
-        "220449ec-c58f-4668-ad11-819dd7bff37d" => {
+        "8c73ad8b-4afe-5bd1-bb4a-7f02320ca43e" => {
           provider_name: "University of Bedfordshire",
           ukprn: "10007152",
           instid: "0026",
           name: "London Study Centre",
           country: "England",
-          postcode: "SE1 1NX",
-          latitude: 51.504573,
-          longitude: -0.08963
+          postcode: "SE1 1NX"
         },
-        "0d76c7cf-38bf-4ad0-928c-4dcd7052302e" => {
+        "54441cf6-f4f2-5b50-989a-8a0809783975" => {
           provider_name: "University of Bedfordshire",
           ukprn: "10007152",
           instid: "0026",
           name: "Main campus",
           country: "England",
-          postcode: "LU1 3JU",
-          latitude: 51.87825,
-          longitude: -0.411539
+          postcode: "LU1 3JU"
         },
-        "a85197a1-374d-4ea6-b34b-effaf0b910ec" => {
+        "ff88737e-f95c-5e45-9e4f-b9d1a2e2a388" => {
           provider_name: "University of Bedfordshire",
           ukprn: "10007152",
           instid: "0026",
           name: "Milton Keynes",
           country: "England",
-          postcode: "MK9 3HS",
-          latitude: 52.03895,
-          longitude: -0.755881
+          postcode: "MK9 3HS"
         },
-        "a640680e-53ab-400b-beba-dd1568378954" => {
+        "15a8f469-8e7b-565a-8dc7-a4b99a0db522" => {
           provider_name: "University of Chester",
           ukprn: "10007848",
           instid: "0011",
           name: "Main campus",
           country: "England",
-          postcode: "CH1 4BJ",
-          latitude: 53.198604,
-          longitude: -2.898165
+          postcode: "CH1 4BJ"
         },
-        "945b2617-268a-44f1-a05c-bbcb0b88e009" => {
+        "8795f05d-f8f1-5b88-911d-6675610229b1" => {
           provider_name: "University of Chester",
           ukprn: "10007848",
           instid: "0011",
           name: "Shrewsbury",
           country: "England",
-          postcode: "SY3 8HQ",
-          latitude: 52.71139,
-          longitude: -2.756354
+          postcode: "SY3 8HQ"
         },
-        "ff9d014d-e807-4276-a92a-f1e9ff6d6fa3" => {
+        "515046e7-4f4b-5b68-9604-beb32e1b8126" => {
           provider_name: "University of Chester",
           ukprn: "10007848",
           instid: "0011",
           name: "Warrington",
           country: "England",
-          postcode: "WA2 0DB",
-          latitude: 53.415991,
-          longitude: -2.546743
+          postcode: "WA2 0DB"
         },
-        "1796a583-7667-46ac-af61-d5ab50cebf94" => {
+        "b1c61fed-08ed-593c-9f58-8068a75483b3" => {
           provider_name: "University of Cumbria",
           ukprn: "10007842",
           instid: "0038",
           name: "Ambleside campus",
           country: "England",
-          postcode: "LA22 9BB",
-          latitude: 54.435442,
-          longitude: -2.964565
+          postcode: "LA22 9BB"
         },
-        "1e9bf9a0-8258-4218-9128-0d1f8f15bb7a" => {
+        "77e7a3c0-a3e3-506f-b99f-06b53deeca46" => {
           provider_name: "University of Cumbria",
           ukprn: "10007842",
           instid: "0038",
           name: "Carlisle Business School Paternoster Row",
           country: "England",
-          postcode: "CA3 8TB",
-          latitude: 54.895264,
-          longitude: -2.939769
+          postcode: "CA3 8TB"
         },
-        "09371547-f5df-4581-b28c-f7a7f8498fc0" => {
+        "b7728319-d292-57d4-bbd2-990535468385" => {
           provider_name: "University of Cumbria",
           ukprn: "10007842",
           instid: "0038",
           name: "Cumbria Brampton Road",
           country: "England",
-          postcode: "CA3 9AY",
-          latitude: 54.906107,
-          longitude: -2.932036
+          postcode: "CA3 9AY"
         },
-        "d4bfa78d-9ae2-49f1-822d-c78fd991f0eb" => {
+        "f48903c5-7e3a-5304-a8b3-a011f08f03bf" => {
           provider_name: "University of Cumbria",
           ukprn: "10007842",
           instid: "0038",
           name: "East India Dock Road",
           country: "England",
-          postcode: "E14 6JE",
-          latitude: 51.511078,
-          longitude: -0.024663
+          postcode: "E14 6JE"
         },
-        "2e5bd127-6746-4ed9-aae1-ff13205eff34" => {
+        "2c7350ca-d48d-5f7f-976a-fd6376a15bf8" => {
           provider_name: "University of Cumbria",
           ukprn: "10007842",
           instid: "0038",
           name: "Lancaster",
           country: "England",
-          postcode: "LA1 3JD",
-          latitude: 54.040797,
-          longitude: -2.787727
+          postcode: "LA1 3JD"
         },
-        "a08f9a56-425a-46f5-a82e-e86636d43e9b" => {
+        "c0edbe86-d841-5414-a059-4ce342630d5a" => {
           provider_name: "University of Cumbria",
           ukprn: "10007842",
           instid: "0038",
           name: "Main campus",
           country: "England",
-          postcode: "CA1 2HH",
-          latitude: 54.891163,
-          longitude: -2.921417
+          postcode: "CA1 2HH"
         },
-        "c014703b-e510-4ff1-b2cf-d0a79ba15d51" => {
+        "ac40f74f-c47f-59d4-a622-d14a541b9d48" => {
           provider_name: "University of Cumbria",
           ukprn: "10007842",
           instid: "0038",
           name: "Penrith Newton Rigg",
           country: "England",
-          postcode: "CA11 0AH",
-          latitude: 54.671033,
-          longitude: -2.788514
+          postcode: "CA11 0AH"
         },
-        "ed818806-cd0a-436b-8882-a4b8ff7d2aa7" => {
+        "225a3806-2629-5c58-862e-f707e7111da0" => {
           provider_name: "University of Derby",
           ukprn: "10007851",
           instid: "0057",
           name: "Buxton campus",
           country: "England",
-          postcode: "SK17 6RY",
-          latitude: 53.260938,
-          longitude: -1.91712
+          postcode: "SK17 6RY"
         },
-        "10b46b69-9b6a-46cc-b0fc-6d568bfacf47" => {
+        "cc9f322a-525e-5085-b970-9a6f41ff676f" => {
           provider_name: "University of Derby",
           ukprn: "10007851",
           instid: "0057",
           name: "Chesterfield campus",
           country: "England",
-          postcode: "S41 7LL",
-          latitude: 53.239674,
-          longitude: -1.427438
+          postcode: "S41 7LL"
         },
-        "01bfac2a-4636-4e22-adf1-b85a4af03958" => {
+        "b4ea2d84-8a41-5d28-a193-f83d71d66f81" => {
           provider_name: "University of Derby",
           ukprn: "10007851",
           instid: "0057",
           name: "Leek Campus",
           country: "England",
-          postcode: "ST13 6DP",
-          latitude: 53.107542,
-          longitude: -2.023486
+          postcode: "ST13 6DP"
         },
-        "02b32352-6e75-41c9-8f62-5292025c203c" => {
+        "0828573d-1492-53d9-9acd-1095592fa750" => {
           provider_name: "University of Derby",
           ukprn: "10007851",
           instid: "0057",
           name: "Main campus",
           country: "England",
-          postcode: "DE22 1GB",
-          latitude: 52.938473,
-          longitude: -1.496678
+          postcode: "DE22 1GB"
         },
-        "2e98d642-6d7a-42e8-975c-26037a6fbb73" => {
+        "ce76b192-bf04-5c97-856f-89c5e62a4b60" => {
           provider_name: "University of Derby",
           ukprn: "10007851",
           instid: "0057",
-          name: "Overseas",
-          latitude: -3.0,
-          longitude: -3.0
+          name: "Overseas"
         },
-        "4303753a-beac-4c60-9efa-07d8ce113c47" => {
+        "ed8eb915-4d97-5a72-93b0-482d7f91154f" => {
           provider_name: "University of Durham",
           ukprn: "10007143",
           instid: "0116",
           name: "Entire HEP",
           country: "England",
-          postcode: "DH1 3LE",
-          latitude: 54.768112,
-          longitude: -1.571874
+          postcode: "DH1 3LE"
         },
-        "1d2a4686-e1ec-49c5-98e3-af4b4eaf379e" => {
+        "bce4a462-4910-5965-ae69-e84aa3a3ccdd" => {
           provider_name: "University of Durham",
           ukprn: "10007143",
           instid: "0116",
           name: "Queen's Campus, Stockton",
           country: "England",
-          postcode: "TS17 6BH",
-          latitude: 54.563169,
-          longitude: -1.296768
+          postcode: "TS17 6BH"
         },
-        "dbf4de30-46e8-4c79-b7cb-53d20fa6fa70" => {
+        "08ae771f-d36f-5510-b118-272dd46ebd29" => {
           provider_name: "University of Gloucestershire",
           ukprn: "10007145",
           instid: "0054",
           name: "Francis Close Hall Campus, Cheltenham",
           country: "England",
-          postcode: "GL50 4AZ",
-          latitude: 51.905503,
-          longitude: -2.079317
+          postcode: "GL50 4AZ"
         },
-        "f190f1d7-5147-415c-bd8d-d9547e92671b" => {
+        "c30a34ae-9b11-52ad-9a87-134d9051322a" => {
           provider_name: "University of Gloucestershire",
           ukprn: "10007145",
           instid: "0054",
           name: "London Campus",
           country: "England",
-          postcode: "E14 6JE",
-          latitude: 51.51117,
-          longitude: -0.024931
+          postcode: "E14 6JE"
         },
-        "e0eb8fb5-dd56-4834-baf8-9fddcb266c66" => {
+        "4fd6a3ff-547d-5690-b36d-9813e16f9791" => {
           provider_name: "University of Gloucestershire",
           ukprn: "10007145",
           instid: "0054",
           name: "Main campus",
           country: "England",
-          postcode: "GL50 2RH",
-          latitude: 51.887603,
-          longitude: -2.087706
+          postcode: "GL50 2RH"
         },
-        "9dbabc78-ebed-40da-97c9-d0484c5da921" => {
+        "2d4ac525-e37b-5afc-bd01-d3e84e579550" => {
           provider_name: "University of Gloucestershire",
           ukprn: "10007145",
           instid: "0054",
           name: "Oxstalls Campus, Gloucester",
           country: "England",
-          postcode: "GL2 9HW",
-          latitude: 51.872481,
-          longitude: -2.224464
+          postcode: "GL2 9HW"
         },
-        "dc99ff0a-3187-4074-a2bf-a1fa73768c19" => {
+        "cbb9f13a-5f0d-5df7-8287-718db0d5b3ed" => {
           provider_name: "University of Greater Manchester",
           ukprn: "10006841",
           instid: "0049",
           name: "Main campus",
           country: "England",
-          postcode: "BL3 5AB",
-          latitude: 53.573511,
-          longitude: -2.436238
+          postcode: "BL3 5AB"
         },
-        "d3b4e0d3-d431-4bd6-948e-f9384817be04" => {
+        "87321b1a-dbf5-556a-9d72-e25931c02436" => {
           provider_name: "University of Hertfordshire",
           ukprn: "10007147",
           instid: "0060",
           name: "Entire HEP",
           country: "England",
-          postcode: "AL10 9AB",
-          latitude: 51.752882,
-          longitude: -0.242179
+          postcode: "AL10 9AB"
         },
-        "cc131263-2c21-48c9-826f-89249bfee0c2" => {
+        "88f5c1ee-0cc5-55fa-a9df-6098d5798ce0" => {
           provider_name: "University of Hertfordshire",
           ukprn: "10007147",
           instid: "0060",
@@ -9811,1090 +7835,864 @@ module DfE
           country: "England",
           postcode: "AL10 9AB"
         },
-        "4a62a36a-d49e-4faf-b67d-6b1d08cbb81c" => {
+        "b7dc63b2-ae2f-51d9-a506-34f35451079d" => {
           provider_name: "University of Hertfordshire",
           ukprn: "10007147",
           instid: "0060",
           name: "St Albans campus",
           country: "England",
-          postcode: "AL1 3RR",
-          latitude: 51.75431,
-          longitude: -0.3338
+          postcode: "AL1 3RR"
         },
-        "d0ac9f97-bf83-49d2-8559-ff2bad105b10" => {
+        "0c54df05-f8fd-57d9-b4eb-9a055a6f3a5c" => {
           provider_name: "University of Lancashire",
           ukprn: "10007141",
           instid: "0053",
           name: "Main campus",
           country: "England",
-          postcode: "PR1 2HE",
-          latitude: 53.761338,
-          longitude: -2.707384
+          postcode: "PR1 2HE"
         },
-        "417d4603-3a79-47e5-8710-817cfbb5171a" => {
+        "3cf36540-216b-5011-b918-0e72401114cc" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "Institute of Advanced Legal Studies",
           country: "England",
-          postcode: "WC1B 5DR",
-          latitude: 51.522483,
-          longitude: -0.127452
+          postcode: "WC1B 5DR"
         },
-        "187eb347-bca5-484e-a677-d88a14e2e9c7" => {
+        "546ad4d5-8ef3-549b-b0cd-dddc034fd9a5" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "Institute of Classical Studies",
           country: "England",
-          postcode: "WC1E 7HU",
-          latitude: 51.520642,
-          longitude: -0.128724
+          postcode: "WC1E 7HU"
         },
-        "dff12100-84ff-4226-9675-d7af48e50914" => {
+        "7bb4f905-ab57-552b-a8a3-288a2468c90e" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "Institute of Commonwealth Studies",
           country: "England",
-          postcode: "WC1E 7HU",
-          latitude: 51.520642,
-          longitude: -0.128724
+          postcode: "WC1E 7HU"
         },
-        "0119c2a6-9c7e-4eef-bfac-08fb74ceb93d" => {
+        "8dbccd1c-b9b4-586f-a643-d88d00ba959d" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "Institute of English Studies",
           country: "England",
-          postcode: "WC1E 7HU",
-          latitude: 51.520642,
-          longitude: -0.128724
+          postcode: "WC1E 7HU"
         },
-        "dfe87bc3-9089-4c30-b5a4-2acb811e2329" => {
+        "08362a28-49be-5ace-8f98-22d2488efd11" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "Institute of Historical Research",
           country: "England",
-          postcode: "WC1E 7HU",
-          latitude: 51.520642,
-          longitude: -0.128724
+          postcode: "WC1E 7HU"
         },
-        "a79647ca-d4c6-44fa-9372-4469851606fc" => {
+        "b236f36c-33ba-51b3-a570-fd809b2fea84" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "Institute of Latin American Studies",
           country: "England",
-          postcode: "WC1E 7HU",
-          latitude: 51.520642,
-          longitude: -0.128724
+          postcode: "WC1E 7HU"
         },
-        "98da98e2-5c86-4881-a122-87b324ef083a" => {
+        "fb904331-8f1e-5d0f-b22e-8edf612c5fbb" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "Institute of Modern Languages Research",
           country: "England",
-          postcode: "WC1E 7HU",
-          latitude: 51.520642,
-          longitude: -0.128724
+          postcode: "WC1E 7HU"
         },
-        "96fb2916-5069-4b9e-84ad-00e9a55a3419" => {
+        "34831910-e4f8-5572-874f-6711bfb17692" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "Main campus",
           country: "England",
-          postcode: "WC1E 7HU",
-          latitude: 51.520642,
-          longitude: -0.128724
+          postcode: "WC1E 7HU"
         },
-        "6b8af64e-4d61-4b94-8fa4-cd6ea0b9bfbc" => {
+        "31761c5a-5c2d-5c3f-b7f9-c3613ae4d3a4" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "School of Advanced Study Central",
           country: "England",
-          postcode: "WC1E 7HU",
-          latitude: 51.520642,
-          longitude: -0.128724
+          postcode: "WC1E 7HU"
         },
-        "d3307440-2f8e-463d-b3ff-6fbffec6deb3" => {
+        "f87c7975-ba84-5d10-92aa-33cef69bae2f" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "University Marine Biological Station",
           country: "Scotland",
-          postcode: "KA28 0EG",
-          latitude: 55.749424,
-          longitude: -4.908452
+          postcode: "KA28 0EG"
         },
-        "52c9c00f-5c21-4578-86a5-4a4570118a92" => {
+        "c1d207f7-7000-5e52-8a7c-5c9382497315" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "University of London Institute in Paris",
-          country: "France",
-          latitude: 51.520642,
-          longitude: -0.128724
+          country: "France"
         },
-        "e5a631e2-07bd-449e-8d01-f12cd58dbc4f" => {
+        "0c8bcde1-ce37-5e48-8b8e-e848c398aff0" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "University of London Worldwide",
           country: "England",
-          postcode: "WC1E 7HU",
-          latitude: 51.520642,
-          longitude: -0.128724
+          postcode: "WC1E 7HU"
         },
-        "334ad490-91a3-40af-8ef1-40b6d1b1356d" => {
+        "1f0f9bbe-b0e6-53a3-a594-706e692d7c50" => {
           provider_name: "University of London (Institutes and activities)",
           ukprn: "10007797",
           instid: "0151",
           name: "Warburg Institute",
           country: "England",
-          postcode: "WC1H 0AB",
-          latitude: 51.523271,
-          longitude: -0.130648
+          postcode: "WC1H 0AB"
         },
-        "7bdecdd6-38eb-4a33-b27a-b7e539d088f1" => {
+        "58e46c85-90c0-5f0f-abe8-76387334648a" => {
           provider_name: "University of London Institute in Paris",
           ukprn: "10007812",
           instid: "7007",
           name: "Main campus",
-          country: "France {includes Corsica}",
-          latitude: -3.0,
-          longitude: -3.0
+          country: "France {includes Corsica}"
         },
-        "fd485ad5-8e49-4b8c-929f-0404974adb8a" => {
+        "19848127-2718-5792-966f-94eeab658e1e" => {
           provider_name: "University of Northumbria at Newcastle",
           ukprn: "10001282",
           instid: "0069",
           name: "Amsterdam",
-          country: "Netherlands",
-          latitude: 54.976634,
-          longitude: -1.60745
+          country: "Netherlands"
         },
-        "1761921e-588f-4363-9fb3-a3144459c302" => {
+        "14003c76-3582-596b-90e1-b848d5dd2921" => {
           provider_name: "University of Northumbria at Newcastle",
           ukprn: "10001282",
           instid: "0069",
           name: "Coach Lane",
           country: "England",
-          postcode: "NE7 7XA",
-          latitude: 55.003283,
-          longitude: -1.574001
+          postcode: "NE7 7XA"
         },
-        "9dac70d9-ab0e-4bad-a8bd-cf9ad6589692" => {
+        "6fb858b2-54b5-5f6a-889b-54b2b47d7312" => {
           provider_name: "University of Northumbria at Newcastle",
           ukprn: "10001282",
           instid: "0069",
           name: "London",
           country: "England",
-          postcode: "E1 7HT",
-          latitude: 51.517807,
-          longitude: -0.077974
+          postcode: "E1 7HT"
         },
-        "2b906316-d3ac-42a5-88c0-5e44a471f360" => {
+        "13bdc750-766b-5764-a544-574af540319c" => {
           provider_name: "University of Northumbria at Newcastle",
           ukprn: "10001282",
           instid: "0069",
           name: "Main campus",
           country: "England",
-          postcode: "NE1 8ST",
-          latitude: 54.976634,
-          longitude: -1.60745
+          postcode: "NE1 8ST"
         },
-        "2f0a6903-914b-4bc2-afd3-6955e2373322" => {
+        "4b082d75-8088-5119-b188-e8210721d9ae" => {
           provider_name: "University of Nottingham",
           ukprn: "10007154",
           instid: "0155",
           name: "Boston Education Centre",
           country: "England",
-          postcode: "PE21 9QS",
-          latitude: 52.991125,
-          longitude: -0.009968
+          postcode: "PE21 9QS"
         },
-        "de7795ce-5ea6-44f5-9741-46e35b4dd67c" => {
+        "42df38e7-4ca1-577b-bc3f-b63e3d83f1df" => {
           provider_name: "University of Nottingham",
           ukprn: "10007154",
           instid: "0155",
           name: "Derby Education Centre",
           country: "England",
-          postcode: "DE22 3DT",
-          latitude: 52.909021,
-          longitude: -1.51333
+          postcode: "DE22 3DT"
         },
-        "27da0304-9196-461e-94d9-b5c329a00447" => {
+        "cef3b503-85f5-56f8-9454-bee7f94b99f9" => {
           provider_name: "University of Nottingham",
           ukprn: "10007154",
           instid: "0155",
           name: "Lincoln Education Centre",
           country: "England",
-          postcode: "LN2 5QY",
-          latitude: 53.233575,
-          longitude: -0.519635
+          postcode: "LN2 5QY"
         },
-        "651e8919-a80a-45f7-9915-3c28203cbed3" => {
+        "f5b07e84-645c-5135-8c1d-414dd22a007c" => {
           provider_name: "University of Nottingham",
           ukprn: "10007154",
           instid: "0155",
           name: "Lincoln Medical School",
           country: "England",
-          postcode: "LN6 7TS",
-          latitude: 53.228487,
-          longitude: -0.547796
+          postcode: "LN6 7TS"
         },
-        "f53074a8-2aef-484c-acb2-817aa1371be2" => {
+        "495dddb3-1c35-5413-97ef-7e807b36b22e" => {
           provider_name: "University of Nottingham",
           ukprn: "10007154",
           instid: "0155",
           name: "Main campus",
           country: "England",
-          postcode: "NG7 2RD",
-          latitude: 52.940521,
-          longitude: -1.191193
+          postcode: "NG7 2RD"
         },
-        "4c9fdd9b-df11-4e43-94d7-e1d6dccfab82" => {
+        "115fce5a-b490-597a-ace4-15aa68c90cee" => {
           provider_name: "University of Nottingham",
           ukprn: "10007154",
           instid: "0155",
           name: "Mansfield Education Centre",
           country: "England",
-          postcode: "NG17 4JL",
-          latitude: 53.134573,
-          longitude: -1.233579
+          postcode: "NG17 4JL"
         },
-        "74ca72be-0c6d-463b-b12a-cdccf6acc746" => {
+        "4ac21dfc-b2fc-58f4-b9a7-05bcbb0ee846" => {
           provider_name: "University of Nottingham",
           ukprn: "10007154",
           instid: "0155",
           name: "University of Nottingham Malaysia",
-          country: "Malaysia",
-          latitude: 52.940521,
-          longitude: -1.191193
+          country: "Malaysia"
         },
-        "142a5858-cb53-4942-9b5c-0f4589d05c1d" => {
+        "6c330d11-8977-5411-9fdf-7ff6243979d1" => {
           provider_name: "University of Nottingham",
           ukprn: "10007154",
           instid: "0155",
           name: "University of Nottingham Ningbo",
-          country: "China",
-          latitude: 52.940521,
-          longitude: -1.191193
+          country: "China"
         },
-        "0b4d24df-271e-45da-bf17-0ecb135590af" => {
+        "f30784c9-45a6-5829-8fc2-674767c22bfb" => {
           provider_name: "University of Plymouth",
           ukprn: "10007801",
           instid: "0073",
           name: "Entire HEP",
           country: "England",
-          postcode: "PL4 8AA",
-          latitude: 50.375438,
-          longitude: -4.13794
+          postcode: "PL4 8AA"
         },
-        "00eace9f-209f-4578-9167-3642857a2023" => {
+        "97d8f66e-698a-5f28-95c4-30dd9bb878fc" => {
           provider_name: "University of South Wales",
           ukprn: "10007793",
           instid: "0090",
           name: "Caerleon Campus",
           country: "Wales",
-          postcode: "NP18 3QT",
-          latitude: 51.616517,
-          longitude: -2.961925
+          postcode: "NP18 3QT"
         },
-        "f8f0c5d6-220d-4e45-a02f-315a99edeb79" => {
+        "942445c3-ac38-5c9b-b62b-16aa1b26a5f0" => {
           provider_name: "University of South Wales",
           ukprn: "10007793",
           instid: "0090",
           name: "Cardiff Campus",
           country: "Wales",
-          postcode: "CF24 2FN",
-          latitude: 51.478786,
-          longitude: -3.170142
+          postcode: "CF24 2FN"
         },
-        "acf9a2b8-89d9-4e49-a38d-e25569a23d4d" => {
+        "3d8a8223-23d5-592d-bf45-03937e9a1867" => {
           provider_name: "University of South Wales",
           ukprn: "10007793",
           instid: "0090",
           name: "Glyntaff Campus",
           country: "Wales",
-          postcode: "CF37 4BE",
-          latitude: 51.594268,
-          longitude: -3.319309
+          postcode: "CF37 4BE"
         },
-        "a9eb5451-3dde-4e06-b80b-d6c5f188aa42" => {
+        "6cae95e9-e15e-5300-8e40-0851fe2b834d" => {
           provider_name: "University of South Wales",
           ukprn: "10007793",
           instid: "0090",
           name: "Main campus",
           country: "Wales",
-          postcode: "CF37 1DL",
-          latitude: 51.589204,
-          longitude: -3.326002
+          postcode: "CF37 1DL"
         },
-        "99f38668-d585-4050-bd40-d902eb0a2fe4" => {
+        "3b41fb8e-0074-5a05-b4a1-615462076794" => {
           provider_name: "University of South Wales",
           ukprn: "10007793",
           instid: "0090",
           name: "Merthyr College",
           country: "Wales",
-          postcode: "CF48 1AR",
-          latitude: 51.745022,
-          longitude: -3.383241
+          postcode: "CF48 1AR"
         },
-        "21573d76-c695-49bd-b44d-878dc7e8a835" => {
+        "8201d56f-8948-5cb8-9690-4e079df1e4ee" => {
           provider_name: "University of South Wales",
           ukprn: "10007793",
           instid: "0090",
           name: "Newport Campus",
           country: "Wales",
-          postcode: "NP20 2BP",
-          latitude: 51.583826,
-          longitude: -2.986671
+          postcode: "NP20 2BP"
         },
-        "70bee635-7815-4eb4-b0c5-d767fbd691b5" => {
+        "7a0985bc-465a-5f00-a042-76307410c6c8" => {
           provider_name: "University of South Wales",
           ukprn: "10007793",
           instid: "0090",
           name: "Renewable Hydrogen Research and Demonstration Cent",
           country: "Wales",
-          postcode: "SA12 7AX",
-          latitude: 51.61977,
-          longitude: -3.82217
+          postcode: "SA12 7AX"
         },
-        "0e2a7b64-84ec-4f5a-80d0-9d073620e0f9" => {
+        "ec411da0-0f9d-5da7-8024-367e85538888" => {
           provider_name: "University of South Wales",
           ukprn: "10007793",
           instid: "0090",
           name: "Royal Welsh College of Music and Drama",
           country: "Wales",
-          postcode: "CF10 3ER",
-          latitude: 51.486163,
-          longitude: -3.184152
+          postcode: "CF10 3ER"
         },
-        "beffa8ab-019c-402e-90af-99bd9629c7cb" => {
+        "4dc73f75-a5d8-5b5e-8908-3f75bb49402f" => {
           provider_name: "University of South Wales",
           ukprn: "10007793",
           instid: "0090",
           name: "The Centre for Automotive and Power Systems Engine",
           country: "Wales",
-          postcode: "CF44 0ND",
-          latitude: 51.757834,
-          longitude: -3.450428
+          postcode: "CF44 0ND"
         },
-        "ab1688cb-08ad-4b70-ae10-0f042f3c4702" => {
+        "5e672ce5-80b6-5763-a4fe-fcab963d97b1" => {
           provider_name: "University of St Mark and St John",
           ukprn: "10037449",
           instid: "0014",
           name: "Entire HEP",
           country: "England",
-          postcode: "PL6 8BH",
-          latitude: 50.420866,
-          longitude: -4.110758
+          postcode: "PL6 8BH"
         },
-        "fa8b9b7a-53c6-48e6-916a-ba172f0ed3c0" => {
+        "3c947abc-1974-5851-b3f0-078731244d4e" => {
           provider_name: "University of Staffordshire",
           ukprn: "10006299",
           instid: "0077",
           name: "Main campus",
           country: "England",
-          postcode: "ST4 2DF",
-          latitude: 53.009074,
-          longitude: -2.175522
+          postcode: "ST4 2DF"
         },
-        "666a47b6-9a5a-444b-bebb-e196ff5f5f89" => {
+        "56b513d6-b01f-5632-a96a-75b812adb96d" => {
           provider_name: "University of Suffolk",
           ukprn: "10014001",
           instid: "0210",
           name: "Entire HEP",
           country: "England",
-          postcode: "IP4 1QJ",
-          latitude: 52.052548,
-          longitude: 1.162595
+          postcode: "IP4 1QJ"
         },
-        "696f1c85-6614-43b1-870d-091f83a94dd4" => {
+        "25543ec5-c8cd-5840-b1f7-52690b708b91" => {
           provider_name: "University of the Arts, London",
           ukprn: "10007162",
           instid: "0024",
           name: "Entire HEP",
           country: "England",
-          postcode: "WC1V 7EY",
-          latitude: 51.517765,
-          longitude: -0.116388
+          postcode: "WC1V 7EY"
         },
-        "d298e5d6-550b-43a8-8ed8-6a90d1857b63" => {
+        "bd5351c7-d996-52ef-a0d4-4fc412d9345a" => {
           provider_name: "University of the Arts, London",
           ukprn: "10007162",
           instid: "0024",
           name: "Wimbledon College of Art",
           country: "England",
-          postcode: "SW19 3QA",
-          latitude: 51.413335,
-          longitude: -0.212374
+          postcode: "SW19 3QA"
         },
-        "d937867a-7d24-4fda-ac4c-f01eca097ee0" => {
+        "932a5bf6-dcb4-5b41-a2d0-7f6799628f42" => {
           provider_name: "University of the Built Environment",
           ukprn: "10008173",
           instid: "0294",
           name: "Entire HEP",
           country: "England",
-          postcode: "RG1 4BS",
-          latitude: 51.453236,
-          longitude: -0.963583
+          postcode: "RG1 4BS"
         },
-        "5213a16b-37f0-477f-834c-0804482ac94b" => {
+        "3db890e3-5736-561a-867f-e6f2e0eb25a4" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Argyll College UHI",
           country: "Scotland",
-          postcode: "PA23 7HP",
-          latitude: 55.946439,
-          longitude: -4.927075
+          postcode: "PA23 7HP"
         },
-        "3ecbd3ce-9f20-4fe8-a34d-adb2316be5a0" => {
-          provider_name: "University of the Highlands and Islands",
-          ukprn: "10007114",
-          instid: "0196",
-          name: "Argyll College UHI",
-          country: "Scotland",
-          postcode: "PA23 7HP",
-          latitude: 55.946439,
-          longitude: -4.927075
-        },
-        "bb292581-08cf-4e73-b76e-8b404aa7c366" => {
+        "af2584be-a7eb-51ed-a1a0-94248b2eb687" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Executive Office UHI",
           country: "Scotland",
-          postcode: "IV3 5SQ",
-          latitude: 57.469389,
-          longitude: -4.230244
+          postcode: "IV3 5SQ"
         },
-        "1c5af959-d2f9-4d4b-ab24-58f4c6bca1ce" => {
+        "2995865c-16c2-5228-93ab-a2a74bd6a1a9" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Highland Theological College UHI",
           country: "Scotland",
-          postcode: "G3 7PR",
-          latitude: 55.866448,
-          longitude: -4.275055
+          postcode: "G3 7PR"
         },
-        "646d6595-3bea-4264-a9a1-f1770b53d150" => {
+        "017fa5df-440c-5936-9874-f27562e699f6" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Highland Theological College UHI",
           country: "Scotland",
-          postcode: "IV15 9HA",
-          latitude: 57.594897,
-          longitude: -4.424619
+          postcode: "IV15 9HA"
         },
-        "f37d146a-15c4-43d8-b893-cd2b984c8791" => {
+        "4c1c239b-3c93-5d4e-a2bf-76e846158e75" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Inverness College UHI",
           country: "Scotland",
-          postcode: "IV2 5NA",
-          latitude: 57.477365,
-          longitude: -4.181591
+          postcode: "IV2 5NA"
         },
-        "e2102349-70f5-44b1-9264-36d45bd1730c" => {
+        "02a70777-9cd4-5aa6-8409-8f2bfc3dc91c" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Lews Castle College UHI",
           country: "Scotland",
-          postcode: "HS2 0XR",
-          latitude: 58.213516,
-          longitude: -6.396666
+          postcode: "HS2 0XR"
         },
-        "ddb39717-184f-43f2-bdce-ea5a97aa2d27" => {
+        "05682992-90c1-5189-9eac-8b5efb7db58c" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Moray College UHI",
           country: "Scotland",
-          postcode: "IV30 1JJ",
-          latitude: 57.645135,
-          longitude: -3.316553
+          postcode: "IV30 1JJ"
         },
-        "3a1ab3be-fb6e-4770-ade6-e79d437e48de" => {
+        "b5a8259a-2a7e-5e1a-947c-4754fb63c01c" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "NAFC Marine Centre UHI",
           country: "Scotland",
-          postcode: "ZE1 0UN",
-          latitude: 60.133297,
-          longitude: -1.286969
+          postcode: "ZE1 0UN"
         },
-        "d555d42f-2931-4442-9a42-78c4408e79a7" => {
+        "012c06e9-e819-5f64-a106-e404d63c700e" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Ness Foundation",
           country: "Scotland",
-          postcode: "IV3 8GY",
-          latitude: 57.421683,
-          longitude: -4.325257
+          postcode: "IV3 8GY"
         },
-        "c7691853-ac6f-488a-976d-97076b642e7b" => {
+        "0648cd56-e530-5ba1-b395-4d6e874a714b" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "North Highland College UHI",
           country: "Scotland",
-          postcode: "KW14 7EE",
-          latitude: 58.585698,
-          longitude: -3.534681
+          postcode: "KW14 7EE"
         },
-        "3e89230e-6676-404c-837c-2fffe4d4d035" => {
+        "4b24e7e5-d083-5135-ba60-1e20abfeb9c2" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "North Highland College UHI (Burgfield)",
           country: "Scotland",
-          postcode: "IV25 3HN",
-          latitude: 57.881552,
-          longitude: -4.034115
+          postcode: "IV25 3HN"
         },
-        "2f82adc9-5eb6-49c4-a43f-3d9305b7c598" => {
+        "04fd3d93-793a-5c2d-b0d8-d68e7a6633f2" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Orkney College UHI",
           country: "Scotland",
-          postcode: "KW15 1LX",
-          latitude: 58.984759,
-          longitude: -2.948483
+          postcode: "KW15 1LX"
         },
-        "3e3e97ec-7c09-40b1-b648-efc79da3e040" => {
+        "c67ffad8-c54b-5700-9c03-7aa6df0e0dce" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Perth College UHI",
           country: "Scotland",
-          postcode: "PH1 2NX",
-          latitude: 56.405604,
-          longitude: -3.460611
+          postcode: "PH1 2NX"
         },
-        "133434bd-bab9-48b5-a74c-7a4d57cdd799" => {
+        "16e678cb-e5e8-5536-a3a6-ca4af1276a84" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Sabhal Mor Ostaig UHI",
           country: "Scotland",
-          postcode: "IV44 8RQ",
-          latitude: 57.086198,
-          longitude: -5.879852
+          postcode: "IV44 8RQ"
         },
-        "6098f0fc-d8da-47c7-86bd-d650d9fa6e6e" => {
+        "f964ed3d-b54b-51a7-b8c8-f14c68333e88" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Scottish Association for Marine Science UHI",
           country: "Scotland",
-          postcode: "PA37 1QA",
-          latitude: 56.451314,
-          longitude: -5.440431
+          postcode: "PA37 1QA"
         },
-        "ec489e99-94e4-49bf-8103-0fc1b04585dc" => {
+        "894e08b3-1240-5fb6-a63b-13ae469eebba" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Shetland College UHI",
           country: "Scotland",
-          postcode: "ZE1 0PX",
-          latitude: 60.169353,
-          longitude: -1.166141
+          postcode: "ZE1 0PX"
         },
-        "3912ce00-c735-4111-8b3a-2815f79a044a" => {
+        "5aab6d5e-690f-55c4-9528-54c3683a2c7b" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "Sustainable Development Research Centre",
           country: "Scotland",
-          postcode: "IV36 2AB",
-          latitude: 57.614464,
-          longitude: -3.57289
+          postcode: "IV36 2AB"
         },
-        "6d8ac390-7d52-494c-98d4-c21aeee8518b" => {
+        "901b2957-9b37-5fe9-8ec2-adbca2cffbe4" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "UHI Centre for Health Science",
           country: "Scotland",
-          postcode: "IV2 3JH",
-          latitude: 57.476244,
-          longitude: -4.191332
+          postcode: "IV2 3JH"
         },
-        "479cd6c2-c59a-4c40-9dd1-654835e8b7a4" => {
+        "38031528-e5df-5a0a-ab00-87dd979fa3aa" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "West Highland College UHI",
           country: "Scotland",
-          postcode: "PH33 6FF",
-          latitude: 56.823417,
-          longitude: -5.106918
+          postcode: "PH33 6FF"
         },
-        "8b14b6ae-df79-448c-96d9-163a133e4b65" => {
+        "2f9199de-b519-5680-9b5b-fa2144e63bf0" => {
           provider_name: "University of the Highlands and Islands",
           ukprn: "10007114",
           instid: "0196",
           name: "West Highland College UHI (Portree)",
           country: "Scotland",
-          postcode: "IV51 9EG",
-          latitude: 57.414317,
-          longitude: -6.210008
+          postcode: "IV51 9EG"
         },
-        "a593091a-7a54-48b2-b8cc-fec0f57fdf50" => {
+        "e309d4a3-6e5d-5afd-b342-be6dba007a39" => {
           provider_name: "University of the West of England, Bristol",
           ukprn: "10007164",
           instid: "0081",
           name: "Entire HEP",
           country: "England",
-          postcode: "BS16 1QY",
-          latitude: 51.501079,
-          longitude: -2.547458
+          postcode: "BS16 1QY"
         },
-        "5badaade-4e1e-43e9-bb83-8c05c4ae1d63" => {
+        "21ab5d75-7a47-502f-98f1-c3db83a95e6c" => {
           provider_name: "University of Wales Trinity Saint David",
           ukprn: "10007858",
           instid: "0176",
           name: "Birmingham",
           country: "England",
-          postcode: "B11 4AR",
-          latitude: 52.449196,
-          longitude: -1.861994
+          postcode: "B11 4AR"
         },
-        "ebd3f7e1-0c52-418e-93dc-f812861ef22a" => {
+        "3c370a1f-b41d-5623-bd29-5e015936e44b" => {
           provider_name: "University of Wales Trinity Saint David",
           ukprn: "10007858",
           instid: "0176",
           name: "Cardiff",
           country: "Wales",
-          postcode: "CF10 3NS",
-          latitude: 51.485538,
-          longitude: -3.181031
+          postcode: "CF10 3NS"
         },
-        "2f7def04-9a3e-4666-bdfc-4603f99b4ad4" => {
+        "7ce63c05-6c5e-542a-921f-c79a6acb3b30" => {
           provider_name: "University of Wales Trinity Saint David",
           ukprn: "10007858",
           instid: "0176",
           name: "Coleg Sir Gar",
           country: "Wales",
-          postcode: "SA15 4DN",
-          latitude: 51.686417,
-          longitude: -4.188594
+          postcode: "SA15 4DN"
         },
-        "20362aae-339f-47db-81db-0d07b2761b0d" => {
+        "03552a08-f3e8-5663-9b33-a20c53c55985" => {
           provider_name: "University of Wales Trinity Saint David",
           ukprn: "10007858",
           instid: "0176",
           name: "Lampeter",
           country: "Wales",
-          postcode: "SA48 7ED",
-          latitude: 52.113836,
-          longitude: -4.076418
+          postcode: "SA48 7ED"
         },
-        "4e8c68e7-1496-4fae-9838-6eee4382ef17" => {
+        "0908a05f-0ec1-5b05-9ea0-5ef3f8fe5fbc" => {
           provider_name: "University of Wales Trinity Saint David",
           ukprn: "10007858",
           instid: "0176",
           name: "London",
           country: "England",
-          postcode: "SW9 6EJ",
-          latitude: 51.479817,
-          longitude: -0.109714
+          postcode: "SW9 6EJ"
         },
-        "5dd54056-7b47-4d7a-9b35-56d08b6b4f8d" => {
+        "719153dd-70ab-5a9d-9666-fd71657c5222" => {
           provider_name: "University of Wales Trinity Saint David",
           ukprn: "10007858",
           instid: "0176",
           name: "Main campus",
           country: "Wales",
-          postcode: "SA31 3EP",
-          latitude: 51.858361,
-          longitude: -4.328713
+          postcode: "SA31 3EP"
         },
-        "53c2ce20-f7f8-4143-abc0-4efcf6342a59" => {
+        "e963b397-d0e1-5cac-8ab1-3b0476627a8c" => {
           provider_name: "University of Wales Trinity Saint David",
           ukprn: "10007858",
           instid: "0176",
           name: "Swansea",
           country: "Wales",
-          postcode: "SA1 8EW",
-          latitude: 51.617356,
-          longitude: -3.9255
+          postcode: "SA1 8EW"
         },
-        "14106078-0cdb-464f-8ea5-3c908941286b" => {
+        "d5c9c92b-f3de-5617-bf2d-0c223c34e697" => {
           provider_name: "University of Wales Trinity Saint David",
           ukprn: "10007858",
           instid: "0176",
           name: "University of Wales (Central Functions)",
           country: "Wales",
-          postcode: "CF10 3NS",
-          latitude: 51.485538,
-          longitude: -3.181031
+          postcode: "CF10 3NS"
         },
-        "7e52aaae-c5f5-4df0-8774-fc906b60da21" => {
+        "6060d1ff-4b45-580a-9b01-34eb029b9989" => {
           provider_name: "University of Worcester",
           ukprn: "10007139",
           instid: "0046",
           name: "Entire HEP",
           country: "England",
-          postcode: "WR2 6AJ",
-          latitude: 52.197366,
-          longitude: -2.243085
+          postcode: "WR2 6AJ"
         },
-        "f2f351a0-147d-4da7-884a-04423826afc0" => {
+        "48432571-6c17-5089-8a7d-4c5a00e7107b" => {
           provider_name: "Walbrook Institute London Limited",
           ukprn: "10089591",
           instid: "0452",
           name: "Main campus",
           country: "England",
-          postcode: "EC3R 8LJ",
-          latitude: 51.509679,
-          longitude: -0.085219
+          postcode: "EC3R 8LJ"
         },
-        "37665fa4-8967-4f35-9166-5166e7d80c61" => {
+        "dfa68ebd-a1dd-5bce-9959-4e74bc326dd0" => {
           provider_name: "Walsall College",
           ukprn: "10007315",
           instid: "1017",
           name: "Main campus",
           country: "England",
-          postcode: "WS2 8ES",
-          latitude: 52.589449,
-          longitude: -1.982554
+          postcode: "WS2 8ES"
         },
-        "1550d52b-947d-4001-8daa-a509176e27c1" => {
+        "cc7b798c-f472-5d2e-a51d-b5a534dbc60a" => {
           provider_name: "Waltham Forest College",
           ukprn: "10007321",
           instid: "1016",
           name: "Main campus",
           country: "England",
-          postcode: "E17 4JB",
-          latitude: 51.591435,
-          longitude: -0.010378
+          postcode: "E17 4JB"
         },
-        "a62efba4-9af9-4a62-9c39-63f92977a864" => {
+        "56974bd0-b165-56c9-ac7f-bf03278cf284" => {
           provider_name: "Waltham International College Limited",
           ukprn: "10029843",
           instid: "0343",
           name: "Entire HEP",
           country: "England",
-          postcode: "IG11 7NR",
-          latitude: 51.53735,
-          longitude: 0.081555
+          postcode: "IG11 7NR"
         },
-        "76490711-18d9-418c-8861-011419ba4bd4" => {
+        "9b410f89-3835-51e8-bde3-e90df4b11976" => {
           provider_name: "Warrington & Vale Royal College",
           ukprn: "10007339",
           instid: "1020",
           name: "Main campus",
           country: "England",
-          postcode: "WA2 8QA",
-          latitude: 53.407537,
-          longitude: -2.59283
+          postcode: "WA2 8QA"
         },
-        "18821c3f-ffa3-4ff7-abb7-f2171c276b6b" => {
+        "3051badd-9347-5360-bd19-52e4b240b191" => {
           provider_name: "Warwickshire College",
           ukprn: "10007859",
           instid: "1015",
           name: "Main campus",
           country: "England",
-          postcode: "CV32 5JE",
-          latitude: 52.287561,
-          longitude: -1.549577
+          postcode: "CV32 5JE"
         },
-        "85e04ab3-b496-4616-8cf6-4e505ea55e6f" => {
+        "b9cae596-f349-5c7c-971c-31754ab412f0" => {
           provider_name: "Waverley Abbey College",
           ukprn: "10007361",
           instid: "0295",
           name: "Bradford",
           country: "England",
-          postcode: "BD10 8SA",
-          latitude: 53.824991,
-          longitude: -1.735387
+          postcode: "BD10 8SA"
         },
-        "eb1164bf-6886-4cab-b560-5e8c3b08dd4d" => {
+        "fe259463-0f8f-5997-8aed-981dd079179d" => {
           provider_name: "Waverley Abbey College",
           ukprn: "10007361",
           instid: "0295",
           name: "Main campus",
           country: "England",
-          postcode: "GU9 8EP",
-          latitude: 51.203363,
-          longitude: -0.757692
+          postcode: "GU9 8EP"
         },
-        "46b33e8e-be67-4555-8c35-203d35821572" => {
+        "97516d03-48a1-57d9-bebf-55fb1b879a83" => {
           provider_name: "West Dean College",
           ukprn: "10032288",
           instid: "0312",
           name: "Chelsea Harbour",
           country: "England",
-          postcode: "SW10 0XF",
-          latitude: 51.476339,
-          longitude: -0.182695
+          postcode: "SW10 0XF"
         },
-        "073c0add-0b31-4cbe-97f0-9b3a13a29464" => {
+        "471ebf48-a5e5-5a50-b66e-17f5483bcf34" => {
           provider_name: "West Dean College",
           ukprn: "10032288",
           instid: "0312",
           name: "Main campus",
           country: "England",
-          postcode: "PO18 0QZ",
-          latitude: 50.906435,
-          longitude: -0.775243
+          postcode: "PO18 0QZ"
         },
-        "191c18d7-8ae4-4332-b532-026e41293607" => {
+        "16ea2cc4-4d32-5518-9839-4cd8208f920c" => {
           provider_name: "West Herts College",
           ukprn: "10007417",
           instid: "1012",
           name: "Main campus",
           country: "England",
-          postcode: "WD17 3EZ",
-          latitude: 51.660054,
-          longitude: -0.406211
+          postcode: "WD17 3EZ"
         },
-        "9b309277-3aeb-4423-935c-d3fd3e30e210" => {
+        "1e3b107a-1fe8-5943-b810-20be2a441cb1" => {
           provider_name: "West Kent and Ashford College",
           ukprn: "10007419",
           instid: "1007",
           name: "Main campus",
           country: "England",
-          postcode: "TN9 2PW",
-          latitude: 51.186726,
-          longitude: 0.263001
+          postcode: "TN9 2PW"
         },
-        "4e02b45b-9458-41a0-963f-0eb17e0d9ce1" => {
+        "3ed22732-b996-5f25-976a-bf6637c03c48" => {
           provider_name: "West London College",
           ukprn: "10000939",
           instid: "0233",
           name: "Main campus",
           country: "England",
-          postcode: "W1U 1LN",
-          latitude: 51.514996,
-          longitude: -0.151525
+          postcode: "W1U 1LN"
         },
-        "cdf131f3-2051-41c4-8776-14698fbe5477" => {
+        "398aad3a-3110-5df6-97f0-4ad0788bfff5" => {
           provider_name: "West London College of Business and Management Sciences Limited",
           ukprn: "10023290",
           instid: "0275",
           name: "Main campus",
           country: "England",
-          postcode: "TW5 9WA",
-          latitude: 51.481278,
-          longitude: -0.413948
+          postcode: "TW5 9WA"
         },
-        "81391c00-9522-4105-9b3c-f1c967329e1d" => {
+        "7135481e-d3f5-5962-a147-9d0eee0ee269" => {
           provider_name: "West Nottinghamshire College",
           ukprn: "10007427",
           instid: "1006",
           name: "Main campus",
           country: "England",
-          postcode: "NG18 5BH",
-          latitude: 53.121674,
-          longitude: -1.191505
+          postcode: "NG18 5BH"
         },
-        "3948493e-9b65-4404-bf90-4ece05fb236d" => {
+        "9af94f15-4718-552e-b33f-b90720a0268e" => {
           provider_name: "West Suffolk College",
           ukprn: "10007431",
           instid: "1190",
           name: "Main campus",
           country: "England",
-          postcode: "IP33 3RL",
-          latitude: 52.249242,
-          longitude: 0.700211
+          postcode: "IP33 3RL"
         },
-        "88a0ec7f-45a4-43ef-9a17-f92140fa2af4" => {
+        "498bb8bb-4bc4-55c2-80ee-572e95d2f00b" => {
           provider_name: "West Thames College",
           ukprn: "10007434",
           instid: "1003",
           name: "Main campus",
           country: "England",
-          postcode: "TW7 4HS",
-          latitude: 51.475195,
-          longitude: -0.342176
+          postcode: "TW7 4HS"
         },
-        "0cf511c2-fcfe-4e5e-8d40-768a120cd034" => {
+        "4e380b3a-329f-5b11-9104-9a675b52b124" => {
           provider_name: "Weston College of Further and Higher Education",
           ukprn: "10007459",
           instid: "1014",
           name: "Main campus",
           country: "England",
-          postcode: "BS23 2AL",
-          latitude: 51.350953,
-          longitude: -2.981524
+          postcode: "BS23 2AL"
         },
-        "207e92bc-6fc3-4066-b6ea-79e7818e8021" => {
+        "418b9098-87d8-5f38-a8aa-06974db7178a" => {
           provider_name: "Weymouth College",
           ukprn: "10007469",
           instid: "1013",
           name: "Main campus",
           country: "England",
-          postcode: "DT4 7LQ",
-          latitude: 50.622896,
-          longitude: -2.451425
+          postcode: "DT4 7LQ"
         },
-        "dba87f72-9bb7-4963-a64e-5b488c822617" => {
+        "a0255c94-ae82-5705-bd10-066af92c5996" => {
           provider_name: "Wigan and Leigh College",
           ukprn: "10007500",
           instid: "1093",
           name: "Main campus",
           country: "England",
-          postcode: "WN1 9LB",
-          latitude: 53.546967,
-          longitude: -2.635089
+          postcode: "WN1 9LB"
         },
-        "813da015-2e05-4c91-9d21-7bd19d07feee" => {
+        "2dffcf94-351f-5200-85e7-d5620d821ff6" => {
           provider_name: "William Booth College",
           ukprn: "10021256",
           instid: "0316",
           name: "Entire HEP",
           country: "England",
-          postcode: "SE5 8BQ",
-          latitude: 51.467544,
-          longitude: -0.089302
+          postcode: "SE5 8BQ"
         },
-        "b0a55e41-d807-4f50-83af-c7126751e0cf" => {
+        "8d529f9f-db9a-5375-9fd4-d6481dc7824d" => {
           provider_name: "Wiltshire College and University Centre",
           ukprn: "10007527",
           instid: "1011",
           name: "Main campus",
           country: "England",
-          postcode: "SN15 3QD",
-          latitude: 51.463002,
-          longitude: -2.110726
+          postcode: "SN15 3QD"
         },
-        "f6ead82e-45fd-4127-b000-247a07f9cf28" => {
+        "1a6fc6e7-fc17-5921-bbd2-e7c32caba044" => {
           provider_name: "Wimbledon School of Art",
           ukprn: "10007532",
           instid: "0084",
           name: "Entire institution",
           country: "England",
-          postcode: "SW19 3QA",
-          latitude: 51.413335,
-          longitude: -0.212374
+          postcode: "SW19 3QA"
         },
-        "5cc531c4-bed9-44d9-8567-604f8a4f626e" => {
+        "9d052bd7-50b3-5ed0-ae35-7c2bbe519271" => {
           provider_name: "Wirral Metropolitan College",
           ukprn: "10007553",
           instid: "1009",
           name: "Main campus",
           country: "England",
-          postcode: "CH41 4NT",
-          latitude: 53.393088,
-          longitude: -3.021491
+          postcode: "CH41 4NT"
         },
-        "96e75301-39ce-452c-8d0f-c5559e7418c4" => {
+        "abc62aa2-e069-5ac1-b420-aa2fb8ab051a" => {
           provider_name: "Wrexham University",
           ukprn: "10007833",
           instid: "0087",
           name: "Flintshire",
           country: "Wales",
-          postcode: "CH7 6AA",
-          latitude: 53.211996,
-          longitude: -3.144851
+          postcode: "CH7 6AA"
         },
-        "6acda1e0-2850-485d-8a89-910eedfdf28d" => {
+        "4592746c-5681-58a4-ac16-97e27188f377" => {
           provider_name: "Wrexham University",
           ukprn: "10007833",
           instid: "0087",
           name: "London",
           country: "England",
-          postcode: "KT1 1TY",
-          latitude: 51.412286,
-          longitude: -0.305806
+          postcode: "KT1 1TY"
         },
-        "7aa0b7c8-fa9d-427e-8be3-68a2522dd6bf" => {
+        "1c785aef-2e4a-5809-be44-08cee588ff33" => {
           provider_name: "Wrexham University",
           ukprn: "10007833",
           instid: "0087",
           name: "Main campus",
           country: "Wales",
-          postcode: "LL11 2AW",
-          latitude: 53.052626,
-          longitude: -3.006109
+          postcode: "LL11 2AW"
         },
-        "bc0042d3-41d7-4003-bdaa-1e686e24bbee" => {
+        "6de6417d-4ff6-5939-80f9-63366b26be4c" => {
           provider_name: "Wrexham University",
           ukprn: "10007833",
           instid: "0087",
           name: "St Asaph",
           country: "Wales",
-          postcode: "LL17 0JD",
-          latitude: 53.255931,
-          longitude: -3.475585
+          postcode: "LL17 0JD"
         },
-        "c77e0cf1-77a1-4c89-b982-bf9c78e80233" => {
+        "76dbee44-c0a3-5825-845d-7f4d559bc165" => {
           provider_name: "Writtle University College",
           ukprn: "10007657",
           instid: "0189",
           name: "Entire HEP",
           country: "England",
-          postcode: "CM1 3RR",
-          latitude: 51.737196,
-          longitude: 0.428133
+          postcode: "CM1 3RR"
         },
-        "9f3d6a67-3a47-4ed5-8487-50989172a372" => {
+        "5ef68f9d-879c-5b13-a78b-3671f4ed98c3" => {
           provider_name: "Writtle University College",
           ukprn: "10007657",
           instid: "0189",
           name: "Shuttleworth College",
           country: "England",
-          postcode: "SG18 9EA",
-          latitude: 52.085577,
-          longitude: -0.325139
+          postcode: "SG18 9EA"
         },
-        "4ea2477f-b538-41bd-b55d-ade0720e12a9" => {
+        "df93451c-2221-5b0a-919f-c64fad4b943c" => {
           provider_name: "Yeovil College",
           ukprn: "10007696",
           instid: "1002",
           name: "Main campus",
           country: "England",
-          postcode: "BA21 4DR",
-          latitude: 50.948522,
-          longitude: -2.63778
+          postcode: "BA21 4DR"
         },
-        "a6ab075f-033c-4000-997c-f629664c74a1" => {
+        "802b7a33-cb8f-54a2-bb35-d0cf24340c6c" => {
           provider_name: "York College",
           ukprn: "10007709",
           instid: "1001",
           name: "Main campus",
           country: "England",
-          postcode: "YO23 2BB",
-          latitude: 53.929705,
-          longitude: -1.113609
+          postcode: "YO23 2BB"
         },
-        "04ea6ef1-6494-4c83-875a-84a9847f3915" => {
+        "c9e89898-e211-5aed-963a-0724fd25504f" => {
           provider_name: "York St John University",
           ukprn: "10007713",
           instid: "0013",
           name: "London Campus",
           country: "England",
-          postcode: "EC1A 4JT",
-          latitude: 51.521589,
-          longitude: -0.098028
+          postcode: "EC1A 4JT"
         },
-        "f6f24c36-37a6-481e-99f0-69576a070a8d" => {
+        "aeb58b0c-35b6-5bc0-847b-276aa9e3944a" => {
           provider_name: "York St John University",
           ukprn: "10007713",
           instid: "0013",
           name: "Main campus",
           country: "England",
-          postcode: "YO31 7EX",
-          latitude: 53.964844,
-          longitude: -1.079543
+          postcode: "YO31 7EX"
         }
       }.freeze
 
