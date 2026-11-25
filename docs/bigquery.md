@@ -2,13 +2,28 @@
 
 The following lists are, on each release, automatically written into BigQuery under `cross-teacher-services.dfe_reference_data`:
 
-| List                                                    | BigQuery base table name   |
-|---------------------------------------------------------|----------------------------|
-| `DfE::ReferenceData::Qualifications::QUALIFICATIONS`    | `qualifications`           |
-| `DfE::ReferenceData::Degrees::GRADES`                   | `degree_grades`            |
-| `DfE::ReferenceData::Degrees::INSTITUTIONS`             | `degree_institutions`      |
-| `DfE::ReferenceData::Degrees::SUBJECTS`                 | `degree_subjects`          |
-| `DfE::ReferenceData::Degrees::TYPES_INCLUDING_GENERICS` | `degree_types`             |
+| List                                                                            | BigQuery base table name                |
+|----------------------------------------------------------------------------------|------------------------------------------|
+| `DfE::ReferenceData::Qualifications::QUALIFICATIONS`                            | `qualifications`                         |
+| `DfE::ReferenceData::Degrees::GRADES`                                            | `degree_grades`                          |
+| `DfE::ReferenceData::Degrees::INSTITUTIONS`                                      | `degree_institutions`                    |
+| `DfE::ReferenceData::Degrees::SUBJECTS_INCLUDING_GENERICS`                       | `degree_subjects`                        |
+| `DfE::ReferenceData::Degrees::ALL_TYPES`                                         | `degree_types`                           |
+| `DfE::ReferenceData::ITT::SUBJECTS`                                              | `itt_subjects`                           |
+| `DfE::ReferenceData::ITT::INCENTIVES`                                            | `itt_incentives`                         |
+| `DfE::ReferenceData::ITT::CATEGORIES`                                            | `itt_categories`                         |
+| `DfE::ReferenceData::ITT::PUBLISH_CATEGORIES`                                    | `itt_publish_categories`                 |
+| `DfE::ReferenceData::ITT::REGISTER_CATEGORIES`                                   | `itt_register_categories`                |
+| `DfE::ReferenceData::ITT::TAD_CATEGORIES`                                        | `itt_tad_categories`                     |
+| `DfE::ReferenceData::ITT::CYCLES`                                                | `itt_cycles`                             |
+| `DfE::ReferenceData::EqualityAndDiversity::DISABILITIES_AND_HEALTH_CONDITIONS`   | `ead_disabilities_and_health_conditions` |
+| `DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L1`             | `cah_categories_l1`                      |
+| `DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L2`             | `cah_categories_l2`                      |
+| `DfE::ReferenceData::CommonAggregationHierarchy::CAH_CATEGORIES_L3`             | `cah_categories_l3`                      |
+| `DfE::ReferenceData::CommonAggregationHierarchy::HECOS_CAH_SUBJECT_MAPPINGS`    | `hecos_cah_subject_mappings`             |
+| `DfE::ReferenceData::BankHolidays::BANK_HOLIDAYS`                                | `bank_holidays`                          |
+| `DfE::ReferenceData::InternationalQualifications::INTERNATIONAL_QUALIFICATIONS` | `international_qualifications`           |
+| `DfE::ReferenceData::HesaProviderCampus::HESA_PROVIDER_CAMPUSES`                | `hesa_provider_campuses`                 |
 
 Edit `BIGQUERY_TABLES` in the Rakefile to change this list.
 
