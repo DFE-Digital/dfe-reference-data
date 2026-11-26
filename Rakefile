@@ -6,6 +6,8 @@ require 'rspec/core/rake_task'
 require_relative 'lib/dfe/reference_data'
 require_relative 'lib/dfe/reference_data/bigquery/importer'
 require_relative 'lib/dfe/reference_data/bigquery/converter'
+require_relative 'lib/dfe/reference_data/uptime'
+require_relative 'lib/dfe/reference_data/uptime/downloader'
 require_relative 'lib/dfe/reference_data/dqt/degree_types'
 require_relative 'lib/dfe/reference_data/helpers/v2/country_list_compiler'
 
@@ -110,6 +112,28 @@ task :update_bigquery_tables do
     config.table_name_suffix = '_latest'
 
     puts "Updating #{config.project}.#{config.dataset} with version #{config.version}:"
+  end
+
+  DfE::ReferenceData::BigQuery.update_tables
+end
+
+UPPTIME_SUMMARY_URL = 'https://raw.githubusercontent.com/DFE-Digital/teacher-services-upptime/refs/heads/master/history/summary.json'
+
+desc 'Download the latest Upptime summary data and push it into a BigQuery uptime table'
+task :update_uptime_table do
+  url = ENV['UPPTIME_SUMMARY_URL'] || UPPTIME_SUMMARY_URL
+  services = DfE::ReferenceData::Uptime::Downloader.download(url)
+  list = DfE::ReferenceData::Uptime.build_list(services)
+
+  DfE::ReferenceData::BigQuery::Config.configure do |config|
+    config.project = ENV['BIGQUERY_PROJECT'] || 'cross-teacher-services'
+    config.dataset = ENV['BIGQUERY_DATASET'] || 'dfe_reference_data_dev'
+    config.tables = [['uptime', list]]
+    config.version = DfE::ReferenceData::VERSION
+    config.commit = `git rev-parse HEAD`.chomp
+    config.table_name_suffix = '_latest'
+
+    puts "Updating #{config.project}.#{config.dataset} uptime table from #{url}:"
   end
 
   DfE::ReferenceData::BigQuery.update_tables
