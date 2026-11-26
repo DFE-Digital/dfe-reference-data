@@ -4425,13 +4425,12 @@ module DfE
           country: "England",
           postcode: "HA9 7EX"
         },
-        "605d7418-fd6c-5993-ac29-fb235fba2494" => {
+        "05e4192f-3e5c-55b4-9ba7-6442cdd181b1" => {
           provider_name: "Regents Theological College",
           ukprn: "10008457",
           instid: "0264",
           name: "Entire HEP",
-          country: "England",
-          postcode: "NULL"
+          country: "England"
         },
         "257f314d-23f9-58b1-aa99-757be828208c" => {
           provider_name: "Regents Theological College",

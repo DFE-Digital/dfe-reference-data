@@ -35,8 +35,11 @@ module DfE
 
           private
 
+          # A handful of rows carry the literal string "NULL" instead of
+          # leaving a field blank.
           def clean(value)
-            value.to_s.strip
+            value = value.to_s.strip
+            value == 'NULL' ? '' : value
           end
 
           # Derived from UKPRN, INSTID, campus name and postcode, so two

@@ -26,6 +26,12 @@ RSpec.describe DfE::ReferenceData::HesaProviderCampus::HESA_PROVIDER_CAMPUSES do
     expect(overseas.postcode).to be_nil
   end
 
+  it 'treats a literal "NULL" postcode in the source data as absent' do
+    regents = described_class.some(ukprn: '10008457', name: 'Entire HEP').first
+    expect(regents.postcode).to be_nil
+    expect(regents.country).to eq('England')
+  end
+
   it 'does not expose latitude or longitude' do
     campus = described_class.some(ukprn: '10021550', name: 'Main campus').first
     expect(campus.to_h).not_to include(:latitude, :longitude)

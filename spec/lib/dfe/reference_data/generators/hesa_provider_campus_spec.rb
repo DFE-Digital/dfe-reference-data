@@ -14,7 +14,7 @@ RSpec.describe DfE::ReferenceData::Generators::HesaProviderCampus do
     end
 
     it 'produces one record per distinct campus, collapsing exact duplicate rows' do
-      expect(dataset.size).to eq(8)
+      expect(dataset.size).to eq(9)
     end
 
     it 'generates the same ids every time, for the same input' do
@@ -46,6 +46,11 @@ RSpec.describe DfE::ReferenceData::Generators::HesaProviderCampus do
     it 'keeps a blank CampusName as an empty string rather than dropping the field' do
       nmite = dataset.values.find { |record| record[:ukprn] == '10067406' }
       expect(nmite).to include(name: '')
+    end
+
+    it 'treats a literal "NULL" postcode as blank and omits it' do
+      regents = dataset.values.find { |record| record[:ukprn] == '10008457' }
+      expect(regents).to eq(provider_name: 'Regents Theological College', ukprn: '10008457', instid: '0264', name: 'Entire HEP', country: 'England')
     end
 
     context 'with no argument' do
