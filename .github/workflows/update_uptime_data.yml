@@ -1,0 +1,27 @@
+name: Update Uptime Data
+
+# Runs on every push to a pull request branch for now, for easy testing.
+# TODO: switch this to a `schedule:` cron trigger once this is confirmed working.
+on:
+  pull_request:
+
+jobs:
+  update-uptime-table:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v5
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.4'
+          bundler-cache: true
+
+      - name: Push uptime data to BigQuery
+        run: bundle exec rake update_uptime_table
+        env:
+          BIGQUERY_CREDENTIALS: ${{ secrets.BIGQUERY_CREDENTIALS }}
+          BIGQUERY_PROJECT: cross-teacher-services
+          BIGQUERY_DATASET: dfe_reference_data_dev
