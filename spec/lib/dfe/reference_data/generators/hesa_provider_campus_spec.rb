@@ -1,0 +1,78 @@
+require 'bundler'
+
+RSpec.describe DfE::ReferenceData::Generators::HesaProviderCampus do
+  # A trimmed copy of the real CSV, see spec/fixtures/hesa_provider_campus/hesa_provider_campus.csv
+  let(:fixture_csv) do
+    Bundler.root.join('spec/fixtures/hesa_provider_campus/hesa_provider_campus.csv').to_s
+  end
+
+  describe '.generate' do
+    subject(:dataset) { described_class.generate(fixture_csv) }
+
+    it 'is keyed by a UUID-shaped id' do
+      expect(dataset.keys).to all(match(/\A[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\z/))
+    end
+
+    it 'produces one record per distinct campus, collapsing exact duplicate rows' do
+      expect(dataset.size).to eq(9)
+    end
+
+    it 'generates the same ids every time, for the same input' do
+      expect(described_class.generate(fixture_csv).keys).to eq(dataset.keys)
+    end
+
+    it 'stores each campus as a flat hash of its own columns, without coordinates' do
+      expect(dataset.values).to include(
+        { provider_name: 'AA School of Architecture', ukprn: '10008071', instid: '0323',
+          name: 'Hooke Park', country: 'England', postcode: 'DT8 3PH' }
+      )
+    end
+
+    it 'assigns distinct ids to campuses that share a name under the same provider but have different postcodes' do
+      midlands_ids = dataset.select { |_, record| record[:name] == 'Midlands' }.keys
+      expect(midlands_ids.uniq.size).to eq(2)
+    end
+
+    it 'keeps distinct records for a UKPRN with several INSTIDs' do
+      names = dataset.values.select { |record| record[:ukprn] == '10007773' }.map { |record| record[:provider_name] }
+      expect(names).to contain_exactly('The Open University in England', 'The Open University in Scotland')
+    end
+
+    it 'omits blank country/postcode from a campus' do
+      derby = dataset.values.find { |record| record[:ukprn] == '10007851' }
+      expect(derby).to eq(provider_name: 'University of Derby', ukprn: '10007851', instid: '0057', name: 'Overseas')
+    end
+
+    it 'keeps a blank CampusName as an empty string rather than dropping the field' do
+      nmite = dataset.values.find { |record| record[:ukprn] == '10067406' }
+      expect(nmite).to include(name: '')
+    end
+
+    it 'treats a literal "NULL" postcode as blank and omits it' do
+      regents = dataset.values.find { |record| record[:ukprn] == '10008457' }
+      expect(regents).to eq(provider_name: 'Regents Theological College', ukprn: '10008457', instid: '0264', name: 'Entire HEP', country: 'England')
+    end
+
+    context 'with no argument' do
+      subject(:dataset) { described_class.generate }
+
+      it 'reads the bundled raw data CSV' do
+        expect(dataset).not_to be_empty
+        expect(dataset.keys).to all(match(/\A[0-9a-f-]{36}\z/))
+      end
+    end
+  end
+
+  describe '.generate_ruby_literal' do
+    subject(:literal) { described_class.generate_ruby_literal(fixture_csv) }
+
+    it 'returns a frozen Ruby hash literal' do
+      expect(literal).to start_with('{').and end_with('}.freeze')
+    end
+
+    it 'round-trips to the same shape of data as .generate' do
+      literal_values = eval(literal).values # rubocop:disable Security/Eval
+      expect(literal_values).to match_array(described_class.generate(fixture_csv).values)
+    end
+  end
+end
